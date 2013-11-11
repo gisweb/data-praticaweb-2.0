@@ -1,0 +1,14 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[standard]
+table="#"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Protocollo;protocollo;25;text"
+data[]="Richiedente;richiedente;54;text"
+data[]="Foglio;foglio;5;text|Mappale;mappale;8;text"

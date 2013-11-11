@@ -1,0 +1,34 @@
+[general]
+table=""
+viewable=""
+editable="itec"
+
+[edit]
+table="oneri.c_monetario";
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Totale;totale;12;valuta"
+data[]="Corrispettivo Monetario;totale_noscomputo;12;valuta|Scomputo C.M.;scomputo;12;valuta"
+;data[]="Data Pagamento 1° rata;data_pagamento_1;10;data|N° Quietanza;n_rata_1;12;text"
+;data[]="Data Pagamento 2° rata;data_pagamento_2;10;data|N° Quietanza;n_rata_2;12;text"
+data[]="Fideiussione;fideiussione;12;valuta"
+data[]="Sup. Lotto;sup_lotto;12;superficie|Sup. Cessione;sup_cessione;12;superficie"
+data[]="Sup. Cessione Obbl.;sup_cessione_obbl;12;superficie|Sup. Cessione Proposta;sup_cessione_prop;12;superficie"
+data[]="Vol. Progetto;vol_progetto;12;volume|Vol. indice 3/1;vol_indice;12;volume"
+data[]="Vol. Esistente;vol_esistente;12;volume|Vol. Differenza;vol_differenza;12;volume"
+button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
+[view]
+table="oneri.c_monetario";
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Totale;totale;12;valuta"
+data[]="Corrispettivo Monetario;totale_noscomputo;12;valuta|Scomputo C.M.;scomputo;12;valuta"
+;data[]="1° Rata;rata_1;12;valuta|Scadenza;data_scadenza_1;10;data|Data Pagamento 1° rata;data_pagamento_1;10;data|N° Quietanza;n_rata_1;12;text"
+;data[]="2° Rata;rata_2;12;valuta|Scadenza;data_scadenza_2;10;data|Data Pagamento 2° rata;data_pagamento_2;10;data|N° Quietanza;n_rata_2;12;text"
+data[]="Fideiussione;fideiussione;12;valuta"
+data[]="Sup. Lotto;sup_lotto;12;superficie|Sup. Cessione;sup_cessione;12;superficie"
+data[]="Sup. Cessione Obbl.;sup_cessione_obbl;12;superficie|Sup. Cessione Proposta;sup_cessione_prop;12;superficie"
+data[]="Vol. Progetto;vol_progetto;12;volume|Vol. indice 3/1;vol_indice;12;volume"
+data[]="Vol. Esistente;vol_esistente;12;volume|Vol. Differenza;vol_differenza;12;volume"

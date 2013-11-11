@@ -1,0 +1,29 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable="itec;iamm"
+
+[edit]
+table="oneri.rate"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Importo;totale;12;valuta";
+data[]="Data Scadenza;data_scadenza;10;data"
+data[]="Avviso spedito il;data_avviso;10;data"
+data[]="Data Pagamento;data_pagata;10;data"
+data[]="Importo Versato;versato;12;valuta";
+data[]="Quietanza n°;quietanza;20;text"
+button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
+[view]
+table="oneri.rate"
+chiave="id"
+campi_ordinamento="rata"
+campi_obbligatori=""
+data[]="Rata;rata;xoneri.elenco_tiporate;selectdb|Importo;totale;12;valuta";
+data[]="Data Scadenza;data_scadenza;;data|Avviso spedito il;data_avviso;;data"
+data[]="Data Pagamento;data_pagata;;data|Importo Versato;versato;12;valuta|Quietanza n°;quietanza;;text"
+[list]
+
+[standard]

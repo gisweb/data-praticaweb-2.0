@@ -1,0 +1,44 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[new]
+table="ce.info_pratiche_discusse()"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Elimina;pratica;8%;delete"
+data[]="Numero pratica;numero;12%;text"
+data[]="Data;data_presentazione;10%;data"
+data[]="Oggetto;oggetto;50;text"
+[edit]
+table="ce.info_pratiche_discusse()"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Elimina;pratica;8%;delete"
+data[]="Numero pratica;numero;12%;text"
+data[]="Data;data_presentazione;10%;data"
+data[]="Oggetto;oggetto;50;text"
+[view]
+table="ce.info_pratiche_discusse()"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Numero pratica;numero;12%;text"
+data[]="Data;data_presentazione;10%;data"
+data[]="Oggetto;oggetto;78%;text"
+[list]
+
+[standard]
+
+[find]
+table="ce.pratiche_discusse_ric"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Numero pratica;numero;25;text"
+data[]="Pratiche presentate dal;data_dal;10;data"
+data[]="Pratiche presentate al;data_al;10;data"

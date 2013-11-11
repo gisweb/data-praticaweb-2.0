@@ -1,0 +1,21 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[new]
+
+[edit]
+
+[view]
+
+[list]
+
+[standard]
+table="pe.zone_elenco"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Seleziona;mapkey;80;checkbox"
+data[]="&nbsp;Aggiungi nuova zona di vincolo;descrizione;;text"

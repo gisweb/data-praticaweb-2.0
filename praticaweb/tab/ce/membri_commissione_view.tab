@@ -1,0 +1,5 @@
+ce.scheda_membro_commissione
+info,id,3%,info
+nominativo,nominativo,,text
+Ruolo,ruolo,,text
+Presente,presente,,yesno

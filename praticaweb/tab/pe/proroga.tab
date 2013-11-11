@@ -1,0 +1,29 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable="iamm"
+
+[edit]
+table="pe.proroga"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori="protocollo"
+data[]="Protocollo;protocollo;25;text|Data;data;10;data"
+data[]="Nuova scadenza inizio lavori;pro_scade_il;10;data"
+data[]="Nuova scadenza fine lavori;pro_scade_fl;10;data"
+data[]="Note;note;50x4;textarea"
+button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
+
+[view]
+table="pe.proroga"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Protocollo;protocollo;25;text|Data;data;10;data"
+data[]="Nuova scadenza inizio lavori;pro_scade_il;10;data"
+data[]="Nuova scadenza fine lavori;pro_scade_fl;10;data"
+data[]="Note;note;50x4;textarea"
+[list]
+
+[standard]

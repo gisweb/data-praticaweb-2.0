@@ -1,0 +1,20 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable="itec;iamm;ivigi;iagi"
+
+[new]
+
+[edit]
+
+[view]
+table="pe.doc_allegati1"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]=";id;5%#pe.scheda_documento;btn_info"
+data[]="Documenti mancanti;documento;100%;text"
+[list]
+
+[standard]

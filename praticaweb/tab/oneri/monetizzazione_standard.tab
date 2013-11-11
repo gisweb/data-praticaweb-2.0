@@ -1,0 +1,31 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[new]
+table="oneri.monetizzazione_standard"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Residenziale Valore aree - mc;residenziale1_mc;15;numero|Tariffa per mq;residenziale1_tariffa_mq;10;valuta"
+data[]="Residenziale Valore trasformazione - mc;residenziale2_mc;15;numero|Tariffa per mq;residenziale2_tariffa_mq;10;valuta"
+data[]="Commerciale/direzionale - mq;commerciale_mc;15;numero|Tariffa per mq;commerciale_tariffa_mq;10;valuta"
+data[]="Industriale/artigianale - mq;industriale_mc;15;numero|Tariffa per mq;industriale_tariffa_mq;10;valuta"
+button="Salva;azione;;submit|Elimina;azione;#confirmDelete;submit|Annulla;azione;;submit"
+[edit]
+table="oneri.monetizzazione_standard"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Residenziale Valore aree - mc;residenziale1_mc;15;numero|Tariffa per mq;residenziale1_tariffa_mq;10;valuta"
+data[]="Residenziale Valore trasformazione - mc;residenziale2_mc;15;numero|Tariffa per mq;residenziale2_tariffa_mq;10;valuta"
+data[]="Commerciale/direzionale - mq;commerciale_mc;15;numero|Tariffa per mq;commerciale_tariffa_mq;10;valuta"
+data[]="Industriale/artigianale - mq;industriale_mc;15;numero|Tariffa per mq;industriale_tariffa_mq;10;valuta"
+button="Salva;azione;;submit|Elimina;azione;#confirmDelete;submit|Annulla;azione;;submit"
+[view]
+
+[list]
+
+[standard]

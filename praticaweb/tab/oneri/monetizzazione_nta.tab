@@ -1,0 +1,25 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[new]
+table="oneri.monetizzazione_nta"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Mc;mc;15;numero|Tariffa per mq;tariffa_mq;10;valuta"
+button="Salva;azione;;submit|Elimina;azione;#confirmDelete;submit|Annulla;azione;;submit"
+[edit]
+table="oneri.monetizzazione_nta"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Mc;mc;15;numero|Tariffa per mq;tariffa_mq;10;valuta"
+button="Salva;azione;;submit|Elimina;azione;#confirmDelete;submit|Annulla;azione;;submit"
+[view]
+
+[list]
+
+[standard]

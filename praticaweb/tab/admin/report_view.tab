@@ -1,0 +1,8 @@
+pe.report()
+Numero,numero,,text
+Data Present.,data_presentazione,,data
+Tipo Pratica,tipo_pratica,,text
+Richiedenti,richiedenti,,text
+Ubicazione,ubicazione,,text
+Rilascio Titolo,data_titolo,,data
+Notifica Titolo,data_notifica_titolo,,data

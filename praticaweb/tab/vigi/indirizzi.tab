@@ -1,0 +1,42 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[new]
+table="vigi.indirizzi"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori="via"
+data[]="Via;via;50;text|Elenco vie >>;via;100xget_elenco;button"
+data[]="Civico;civico;10;text"
+data[]="Interno;interno;10;text|Scala;scala;10;text"
+data[]="Piano;piano;200xelenco_piani;select|Aggiungi indirizzo;aggiungi;130;submit"
+button="Salva;azione;;submit|Annulla;azione;;submit"
+[edit]
+table="vigi.indirizzi"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Canc.;id;30;delete"
+data[]="Via;via;;text"
+data[]="Civico;civico;70;text"
+data[]="Interno;interno;70;text"
+data[]="Scala;scala;100;text"
+data[]="Piano;piano;100;text"
+button="Salva;azione;;submit|Elimina;azione;#confirmDelete;submit|Annulla;azione;;submit"
+[view]
+table="vigi.indirizzi"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Mappa;id;7%;zoom"
+data[]="Via;via;43%;text"
+data[]="Civico;civico;10%;text"
+data[]="Interno;interno;10%;text"
+data[]="Scala;scala;10%;text"
+data[]="Piano;piano;20%;text"
+[list]
+
+[standard]

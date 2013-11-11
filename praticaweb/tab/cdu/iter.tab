@@ -1,0 +1,37 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable="cdu"
+
+[new]
+table="cdu.iter"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori="nota;data"
+data[]="Nota;nota;50;text|Elenco  >>;nota;100xget_elenco;button"
+data[]="Data;data;10;data"
+data[]=";pubblico;;checkbox|Aggiungi;aggiungi;130;submit"
+
+[edit]
+table="cdu.iter"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Canc.;id;30;delete"
+data[]=";pubblico;20;semaforo"
+data[]="Utente;utente;20;text"
+data[]="Data;data;10;data"
+data[]="Evento;nota_edit;500;text"
+button="Chiudi;azione;#goToView;submit"
+[view]
+table="cdu.iter"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Utente;utente;10%;text"
+data[]="Data;data;10%;data"
+data[]="Evento;nota;80%;text"
+[list]
+
+[standard]

@@ -1,0 +1,21 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[new]
+
+[edit]
+
+[view]
+
+[list]
+
+[standard]
+table="pe.elenco_civici"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]=";id;1;idriga"
+data[]="Numero;numero;;text"

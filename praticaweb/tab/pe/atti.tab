@@ -1,0 +1,37 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable="iamm;itec"
+
+
+[edit]
+table="pe.atti"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori="tipo;notaio;repertorio;reg_part;reg_ord"
+data[]="Tipo di Atto;tipo;400xtipo_atto;select"
+data[]="Numero;numero;10;text"
+data[]="Notaio;notaio;40;autosuggest"
+data[]="Repertorio;repertorio;18;text|Reg.Part.;reg_part;16;text|Reg.Ord.;reg_ord;10;text"
+data[]="Registrato a;loc_reg;37;text|Data;data_reg;10;data"
+data[]="Trascritto a;loc_tras;37;text|Data;data_tras;10;data"
+data[]="Note;note;50x4;textarea"
+button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
+
+
+[view]
+table="pe.atti"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Tipo di Atto;tipo;;text"
+data[]="Numero;numero;10;text"
+data[]="Notaio;notaio;;text"
+data[]="Repertorio;repertorio;18;text|Reg.Part.;reg_part;16;text|Reg.Ord.;reg_ord;10;text"
+data[]="Registrato a;loc_reg;37;text|Data;data_reg;10;data"
+data[]="Trascritto a;loc_tras;37;text|Data;data_tras;10;data"
+data[]="Note;note;50x4;textarea"
+[list]
+
+[standard]

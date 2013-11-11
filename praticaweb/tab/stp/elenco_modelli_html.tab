@@ -1,0 +1,20 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[new]
+
+[edit]
+
+[view]
+
+[list]
+table="stp.e_modelli"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]=";id;3%;info"
+data[]="Nome;nome;40%;text"
+data[]="Descrizione;descrizione;57%;text"

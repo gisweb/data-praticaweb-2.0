@@ -1,0 +1,21 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[new]
+
+[edit]
+
+[view]
+
+[list]
+
+[standard]
+table="pe.elenco_tecnici"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]=";id;30;info"
+data[]=";nominativo;100%;text"

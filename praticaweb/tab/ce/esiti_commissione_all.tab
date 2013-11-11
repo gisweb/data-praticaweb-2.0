@@ -1,0 +1,24 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[new]
+
+[edit]
+
+[view]
+
+[list]
+
+[standard]
+table="ce.esiti_discusse"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]=";id;3%;info"
+data[]="Pratica N°;numero;;text"
+data[]="Data Commissione;data_rich;;data"
+data[]="Parere;parere;;text"
+data[]=""

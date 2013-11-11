@@ -1,0 +1,39 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable="itec;iamm;iagi;ivigi"
+;print_form="pe.integrazioni"
+print_form="pe.avvioproc"
+
+[new]
+table="pe.integrazioni"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Prot. Richiesta;prot_rich;25;text|Data;data_rich;10;data"
+data[]="Prot. Integrazione;prot_integ;25;text|Data;data_integ;10;data"
+data[]="Termini;interrompe;;checkbox|;sospende;;checkbox"
+data[]="Note;note;50x3;textarea|;iter;;;idriga"
+button="Salva;azione;;submit|Elimina;azione;#confirmDelete;submit|Annulla;azione;;submit"
+[edit]
+table="pe.integrazioni"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Prot. Richiesta;prot_rich;25;text|Data;data_rich;10;data"
+data[]="Prot. Integrazione;prot_integ;25;text|Data;data_integ;10;data"
+data[]="Termini;interrompe;;checkbox|;sospende;;checkbox"
+data[]="Note;note;50x3;textarea|;iter;;;idriga"
+button="Salva;azione;;submit|Elimina;azione;#confirmDelete;submit|Annulla;azione;;submit"
+[view]
+table="pe.integrazioni"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Prot. Richiesta;prot_rich;25;text|Data;data_rich;10;data"
+data[]="Prot. Integrazione;prot_integ;25;text|Data;data_integ;10;data"
+data[]="Note;note;50x3;textarea"
+[list]
+
+[standard]

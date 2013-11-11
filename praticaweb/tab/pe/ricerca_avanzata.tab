@@ -1,0 +1,19 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[standard]
+table="####pe"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Altro soggetto;soggetto;200xpe.elenco_ruoli;selectdb|;nominativo;36;text"
+data[]="Tipo di pratica;tipo;400xpe.elenco_tipopratica_all;selectdb"
+data[]="Data di;data;210xpe.elenco_dataricerca;selectdb|dal;data_dal;10;data|al;data_al;10;data"
+data[]="Oggetto (parte);oggetto;54;text"
+data[]="Resp. procedimento;resp_proc;280xpe.elenco_ricerca_responsabili;selectdb"
+data[]="Resp. Istr. Tecn.;resp_it;280xadmin.elenco_utenti;selectdb"
+data[]="Resp. Istr. Amm.;resp_ia;280xadmin.elenco_utenti;selectdb"
+data[]="Certificato Agibilit;abitabi;20;text"

@@ -1,0 +1,5 @@
+ce.commissione,data_convocazione
+Tipo di commissione,tipo_comm,400xce.elenco_tipo_commissione,selectdb
+Sede,sede1,50,text|Elenco >>,sede1,100xget_elenco,button
+Data,data_convocazione,10,data|Orario,ora_convocazione,6,ora
+Note,note,60x4,textarea

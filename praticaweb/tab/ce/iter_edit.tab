@@ -1,0 +1,6 @@
+ce.iter
+Canc.,id,30,delete
+,pubblico,20,semaforo
+Utente,utente,20,text
+Data,data,10,data
+Evento,nota_edit,500,text

@@ -1,0 +1,23 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[new]
+
+[edit]
+
+[view]
+table="ce.e_membri"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]=";app;15;string|Nome;nome;20;string|Cognome;cognome;30;string"
+data[]="Tel.Fisso;telefono_fisso;20;string"
+data[]="Tel.Cellulare;telefono_cell;20;string"
+data[]="Citt;citta;25;string|CAP;cap;6;string"
+data[]="Indirizzo;indirizzo;50;string"
+[list]
+
+[standard]

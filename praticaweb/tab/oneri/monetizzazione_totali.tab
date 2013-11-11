@@ -1,0 +1,19 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[new]
+
+[edit]
+
+[view]
+table="oneri.vista_monetizzazione_totali"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Totale Monetizzazione;totale;;valuta|Quietanza;quietanza;;text|Data;data;;data"
+[list]
+
+[standard]

@@ -1,0 +1,27 @@
+[general]
+table=""
+viewable=""
+editable="itec"
+
+[edit]
+table="oneri.oneri_concessori";
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Oneri Urbanizzazione;oneri_urbanizzazione;12;valuta|Costo Costruzione;oneri_costruzione;12;valuta"
+data[]="Scomputo O.U.;scomputo_urb;12;valuta|Scomputo C.C.;scomputo_costr;12;valuta"
+data[]="Sanzione;sanzione;12;valuta|Data Sanzione;data_sanzione;10;data|N° Quietanza;n_sanzione;10;text"
+data[]="Fideiussione;fideiussione;12;valuta|Data Fideiussione;;data_fideiussione;10;data;N° fideiussione;n_indennità;text"
+data[]="Rateizzato;rateizzato;50;yesno";
+button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
+[view]
+table="oneri.oneri_concessori";
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Totale;totale;12;valuta"
+data[]="Oneri Urbanizzazione;oneri_urbanizzazione;12;valuta|Costo Costruzione;oneri_costruzione;12;valuta"
+data[]="Scomputo O.U.;scomputo_urb;12;valuta|Scomputo C.C.;scomputo_costr;12;valuta"
+data[]="Sanzione;sanzione;12;valuta|Data Sanzione;data_sanzione;10;data|N° Quietanza;n_sanzione;text"
+data[]="Fideiussione;fideiussione;12;valuta|"
+data[]="Rateizzato;rateizzato;50;yesno";

@@ -1,0 +1,33 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable="itec"
+
+
+[edit]
+table="pe.e_tipopratica_scadenze"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori="codice,tipo_pratica"
+data[]="Tipo Pratica;tipo_pratica;30;text"
+data[]="Scadenza;scadenza;25;text_box"
+data[]="Tabella;tabella;25;text_box"
+button="Chiudi;azione;#goToView;submit|Salva;azione;;submit"
+
+[view]
+table="pe.e_tipopratica_scadenze"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Tipo Pratica;tipo_pratica;30;text"
+data[]="Scadenza;scadenza;25;text"
+data[]="Tabella;tabella;25;text"
+button="Chiudi;azione;#goToView;submit"
+[list]
+table="pe.e_tipopratica_scadenze"
+chiave="id"
+data[]="info;id;3%#pe.e_tipopratica_scadenze;btn_view"
+data[]="info;id;3%#pe.e_tipopratica_scadenze;btn_edit"
+data[]="Scadenza;codice;10%;text"
+[standard]

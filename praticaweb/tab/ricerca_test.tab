@@ -1,0 +1,15 @@
+[general]
+table=""
+viewable=""
+editable=""
+
+[edit]
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Data Presentazione;data_presentazione;10;search_date"
+data[]="Numero;numero;12;search_text"
+data[]="Protocollo;protocollo;12;search_text"
+data[]="Oggetto;oggetto;20;search_text"
+data[]="Resp.Procedimento;nome_responsabile;12;search_text"
+button="Chiudi;azione;#closeWindow;button|Cerca;azione;#startSearch;button"

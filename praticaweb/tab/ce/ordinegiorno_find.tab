@@ -1,0 +1,22 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[new]
+
+[edit]
+
+[view]
+
+[list]
+
+[standard]
+table="ce.pratiche_discusse_ric"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Numero pratica;numero;25;text"
+data[]="Pratiche presentate dal;data_dal;10;data"
+data[]="Pratiche presentate al;data_al;10;data"

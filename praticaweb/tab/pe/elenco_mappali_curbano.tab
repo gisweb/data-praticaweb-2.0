@@ -1,0 +1,22 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[new]
+
+[edit]
+
+[view]
+
+[list]
+
+[standard]
+table="pe.e_curbano"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]=";id;1;idriga"
+data[]="Mappale;mappale;10;text"
+data[]="Sub;sub;10;text"
