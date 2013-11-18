@@ -1,6 +1,8 @@
 <?php
+$idPratica=(defined('FIELDS_LIST'))?(0):($this->pratica);
+
 $sql="SELECT A.*,B.dovuto as diritti_segreteria FROM cdu.richiesta A inner join cdu.diritti_segreteria B using(pratica) WHERE pratica=?";
-$ris=$db->fetchAll($sql,Array($this->pratica));
+$ris=$db->fetchAll($sql,Array($idPratica));
 array_walk_recursive($ris, 'decode');
 $customData["cdu_richiesta"]=$ris;
 $sql=<<<EOT
@@ -13,7 +15,7 @@ INNER JOIN vincoli.zona C on(vincolo=C.nome_vincolo AND tavola=C.nome_tavola AND
 INNER JOIN nct.sezioni D USING(sezione)
 WHERE pratica=? ORDER BY ordine_v,ordine_t,ordine_z
 EOT;
-$ris=$db->fetchAll($sql,Array($this->pratica));
+$ris=$db->fetchAll($sql,Array($idPratica));
 
 for($i=0;$i<count($ris);$i++){
 	$r=$ris[$i];
