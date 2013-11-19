@@ -1,5 +1,5 @@
 <?
-define('NOME_COMUNE','Comune di Sanremo - Pratiche Edilizie');//nome completo del comune che compare nell'intestazione
+define('NOME_COMUNE','Comune di Savona - Pratiche Edilizie');//nome completo del comune che compare nell'intestazione
 
 define('DEBUG', 1); // Debugging 0 off 1 on
 define('DB_DRIVER','pdo_pgsql');
