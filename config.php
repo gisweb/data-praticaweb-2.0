@@ -4,8 +4,8 @@ define('NOME_COMUNE','Comune di Sanremo - Pratiche Edilizie');//nome completo de
 define('DEBUG', 1); // Debugging 0 off 1 on
 define('DB_DRIVER','pdo_pgsql');
 define('DB_HOST','127.0.0.1');
-define('DB_PORT','5433');
-define('DB_NAME','gw_sanremo');
+define('DB_PORT','5432');
+define('DB_NAME','');
 define('DB_USER','postgres');
 define('DB_PWD','postgres');
 
@@ -28,7 +28,7 @@ define('SMB_MODELLI','file://'.REPO_PATH.'/modelli-pe/');
 define('URL_ALLEGATI','allegati/');//url relativo dei file allegati con / finale
 
 define('LOCAL_DOCUMENT',0);     //DEFINISCE SE I DOCUMENTI VENGONO APERTI SU PERCORSO LOCALE O WEB
-define('SMB_PATH','\\\\vmserver\\sanremo\\documenti\\');  // PERCORSO DI RETE DOVE APRIRE I DOCUMENTI
+//define('SMB_PATH','\\\\vmserver\\sanremo\\documenti\\');  // PERCORSO DI RETE DOVE APRIRE I DOCUMENTI
 define('DOCUMENTI',DATA_DIR."/praticaweb/documenti");
 
 define('LOCAL_DB',DATA_DIR."praticaweb".DIRECTORY_SEPARATOR."db".DIRECTORY_SEPARATOR);				//SALVATAGGI LOCALI DEI FILE
