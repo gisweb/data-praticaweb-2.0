@@ -4,11 +4,13 @@ define('NOME_COMUNE','Comune di Savona - Pratiche Edilizie');//nome completo del
 define('DEBUG', 1); // Debugging 0 off 1 on
 define('DB_DRIVER','pdo_pgsql');
 define('DB_HOST','127.0.0.1');
-define('DB_PORT','5432');
+define('DB_PORT','5434');
 define('DB_NAME','gw_savona');
 define('DB_USER','postgres');
 define('DB_PWD','postgres');
 
+define('ALWAYS_VIEWABLE',1);
+define('ALWAYS_EDITABLE',1);
 
 define('MENU',DATA_DIR."praticaweb/mnu/");//cartella contenente la  configurazione dei menu
 define('TAB',DATA_DIR."praticaweb/tab/");//cartella contenente la  configurazione dei forms via file tab
@@ -46,8 +48,8 @@ define('THE_GEOM','bordo_gb');
 define('MAPPA_PRATICHE','sanremo_riservata');
 define('LAYER_MAPPALI','particelle');
 define('OBJ_LAYER','2183:particelle');
-define('MAPSETID','sanremo_riservata');
-define('CDUMAPSETID','sanremo_cdu');
+define('MAPSETID','savona_osm');
+define('CDUMAPSETID','savona_osm');
 define('TEMPLATE','gisclient');
 define('GC_VERSION',2);
 define('QTID_PARTICELLE','8');
