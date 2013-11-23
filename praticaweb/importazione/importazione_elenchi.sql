@@ -39,6 +39,20 @@ FROM import."ELENCO_UTENTI" WHERE "ID">0 AND "ID"<>35
 DELETE FROM pe.e_enti;
 INSERT INTO pe.e_enti(id,nome,ordine,stampa,testo_stampa) (select distinct "ID","NOME","ORDINE","STAMPA"::int,"TESTO_STAMPA" FROM import."ELENCO_ENTI");
 
+UPDATE pe.e_enti SET interno=1 WHERE id IN (1,2,3,8,18,34,42,45,51,53,57,63,68,71,72,78,81,83,84,85,86);
+UPDATE pe.e_enti SET enabled=0 WHERE id IN (3,68,71);
+UPDATE pe.e_enti SET codice = 'ce' WHERE nome ILIKE '%commissione%edilizia%';
+UPDATE pe.e_enti SET codice = 'cei' WHERE nome ILIKE '%commissione%edilizia%integrata%';
+UPDATE pe.e_enti SET codice = 'clp' WHERE nome ILIKE '%commissione%paesaggio%';
+
+UPDATE pe.e_enti SET codice = 'cfs' WHERE nome ILIKE '%corpo%forestale%';
+UPDATE pe.e_enti SET codice = 'cp' WHERE nome ILIKE '%capitaneria%';
+UPDATE pe.e_enti SET codice = 'anas' WHERE replace(nome,'.','') ILIKE '%anas%';
+UPDATE pe.e_enti SET codice = 'arpal' WHERE replace(nome,'.','') ILIKE '%arpal%';
+UPDATE pe.e_enti SET codice = 'sba' WHERE nome ILIKE '%sopri%beni%archeo%';
+UPDATE pe.e_enti SET codice = 'fs' WHERE nome ILIKE '%ferrovie%';
+UPDATE pe.e_enti SET codice = 'sbap' WHERE nome ILIKE '%sopri%beni%architett%paes%';
+
 /*IMPORTANTE!!!!!!
 RICORDARSI DI SETTARE PARERI NON PIU' VALIDI, PARERI INTERNI*/
 
