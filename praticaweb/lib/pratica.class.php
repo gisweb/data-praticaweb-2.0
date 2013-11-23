@@ -96,7 +96,7 @@ class pratica extends generalPratica{
 			if(!file_exists($this->annodir)) {
 				mkdir($this->annodir);
 				chmod($this->annodir,0777);
-				print (!file_exists($this->annodir))?("Errore nella creazione della cartella $this->annodir\n"):("Cartella $this->annodir creata con successo\n");
+				print (!file_exists($this->annodir))?("Errore nella creazione della cartella $this->annodir\n"):("");
 			}
 			if(!file_exists($this->documenti)) {
 				mkdir($this->documenti);
