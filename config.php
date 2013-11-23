@@ -52,8 +52,8 @@ define('MAPSETID','savona_osm');
 define('CDUMAPSETID','savona_osm');
 define('TEMPLATE','gisclient');
 define('GC_VERSION',2);
-define('QTID_PARTICELLE','8');
-define('QTID_CIVICI','34');
+define('QTID_PARTICELLE','170');
+define('QTID_CIVICI','25');
 
 //in sessione per pmapper
 
