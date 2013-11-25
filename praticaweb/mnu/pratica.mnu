@@ -31,6 +31,6 @@ vigi,Vigilanza
 270,Provvedimenti Vigilanza,vigi.provvedimenti,vigi
 iter,Iter
 295,Scadenze,pe.scadenze,
-305,Annotazioni,pe.annotazioni,
+300,Annotazioni,pe.annotazioni,
 293,Documenti Prodotti,pe.documenti
-300,Accesso agli Atti,pe.visione,
+305,Accesso agli Atti,pe.visione,
