@@ -1,10 +1,10 @@
-<?
+<?php
 define('NOME_COMUNE','Comune di Sanremo - Pratiche Edilizie');//nome completo del comune che compare nell'intestazione
 
 define('DEBUG', 1); // Debugging 0 off 1 on
 define('DB_DRIVER','pdo_pgsql');
 define('DB_HOST','127.0.0.1');
-define('DB_PORT','5433');
+define('DB_PORT','5434');
 define('DB_NAME','gw_sanremo');
 define('DB_USER','postgres');
 define('DB_PWD','postgres');
@@ -65,4 +65,5 @@ ini_set('include_path',$incDir);
 //includo il file per il database in uso
 require_once (APPS_DIR."wrapdb/postgres.php");
 require_once (APPS_DIR."utils/debugutils.php");
+require_once (APPS_DIR."utils/miscellaneus.php");
 ?>
