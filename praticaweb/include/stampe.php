@@ -1,7 +1,8 @@
 <?php
 require_once APPS_DIR."/lib/php-sql-parser.php";
+require_once APPS_DIR."/login.php";
 
-function parse_query($sql,$title=""){
+/*function parse_query($sql,$title=""){
     $parser = new PHPSQLParser($sql, true);
     foreach ($parser->parsed["SELECT"] as $v){
         $key=($v["alias"])?($v["alias"]["name"]):($v["base_expr"]);
@@ -9,7 +10,7 @@ function parse_query($sql,$title=""){
     }
     asort($res);
     return ($title)?Array("title"=>$title,"isFolder"=>"true","key"=>$title,"children"=>array_values($res)):($res);
-}
+}*/
 /**************************************   Pratica  ***********************************************/
 $sql="SELECT  numero, B.nome as tipo, C.descrizione as intervento, anno, 
 		data_presentazione, protocollo, data_prot, protocollo_int, data_prot_int,  
