@@ -8,7 +8,7 @@ it,Istruttoria Tecnica
 70,Vincoli Presenti,pe.vincoli,it
 75,Informazioni DIA,pe.infodia,it
 80,Dati di Progetto,pe.progetto,it
-92,Ufficio Tecnico,pe.istruttoria,it
+92,Sospensioni,pe.sospensioni,it
 oc,Oneri
 110,Importi,oneri.importi,oc
 120,Rateizzazione,oneri.rate,oc
@@ -30,6 +30,7 @@ vigi,Vigilanza
 260,Esposti Vigilanza,vigi.esposti,vigi
 270,Provvedimenti Vigilanza,vigi.provvedimenti,vigi
 iter,Iter
-295,Iter della Pratica,pe.movimenti,
-305,Scadenze,pe.gantt,
-300,Accesso agli Atti,pe.visione,
+295,Scadenze,pe.scadenze,
+300,Annotazioni,pe.annotazioni,
+293,Documenti Prodotti,pe.documenti
+305,Accesso agli Atti,pe.visione,
