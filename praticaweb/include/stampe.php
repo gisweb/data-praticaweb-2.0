@@ -163,7 +163,7 @@ $customFields["prescrizioni_ce"]=Array("title"=>"prescizioni_ce");
 $customFields["data_cei"]=Array("title"=>"data_cei"); 
 $customFields["prescizioni_cei"]=Array("title"=>"prescizioni_cei"); 
 /**************************************   Allegati  ***********************************************/
-$sql="SELECT coalesce(B.descrizione,B.nome) as documento,allegato,mancante,integrato,sostituito
+/*$sql="SELECT coalesce(B.descrizione,B.nome) as documento,allegato,mancante,integrato,sostituito
 	FROM pe.allegati A INNER JOIN pe.e_documenti B ON(A.documento=B.id) 
 	WHERE pratica=?";
 $ris=$db->fetchAll($sql,Array($this->pratica));
@@ -175,7 +175,7 @@ for($i=0;$i<count($ris);$i++){
 	if ($documento["mancante"]) $mancanti[]=Array("nome"=>$documento["documento"]);
 }
 $customData["allegati"]=$allegati;
-$customData["allegati_mancanti"]=$mancanti;
+$customData["allegati_mancanti"]=$mancanti;*/
 
 /**************************************   Agibilità  ***********************************************/
 $sql="SELECT numero_rich as numero_richiesta_agi,prot_rich as prot_richiesta_agi,data_rich as data_richiesta_agi,numero_doc as numero_agi,prot_doc as protocollo_agi,data_ril as data_agi
