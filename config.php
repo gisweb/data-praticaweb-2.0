@@ -9,6 +9,8 @@ define('DB_NAME','gw_sanremo');
 define('DB_USER','postgres');
 define('DB_PWD','postgres');
 
+define('ALWAYS_VIEWABLE',1);
+define('ALWAYS_EDITABLE',1);
 
 define('MENU',DATA_DIR."praticaweb/mnu/");//cartella contenente la  configurazione dei menu
 define('TAB',DATA_DIR."praticaweb/tab/");//cartella contenente la  configurazione dei forms via file tab
