@@ -2,9 +2,9 @@
 [general]
 table=""
 viewable=""
-editable="iagi"
+editable=""
 ;print_form="pe.abitabi"
-print_form="pe.avvioproc"
+print_form="pe.abitabi"
 
 [edit]
 table="pe.abitabi"

@@ -2,9 +2,8 @@
 [general]
 table=""
 viewable=""
-editable="itec;iamm;iagi;ivigi"
-;print_form="pe.integrazioni"
-print_form="pe.avvioproc"
+editable=""
+print_form="pe.integrazioni"
 
 [new]
 table="pe.integrazioni"

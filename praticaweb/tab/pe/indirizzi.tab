@@ -2,7 +2,7 @@
 [general]
 table=""
 viewable=""
-editable="ipre;itec"
+editable=""
 
 [new]
 table="pe.indirizzi"

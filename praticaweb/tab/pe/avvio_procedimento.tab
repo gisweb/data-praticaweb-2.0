@@ -2,14 +2,14 @@
 [general]
 table=""
 viewable=""
-editable="rdp;iamm"
+editable=""
 print_form="pe.avvioproc"
 [new]
 table="pe.avvioproc"
 chiave="id"
 campi_ordinamento=""
 campi_obbligatori="tipo;data_presentazione"
-data[]="Tipo di pratica;tipo;400xpe.elenco_tipopratica_all;selectdb"
+data[]="Tipo di pratica;tipo;400xpe.elenco_tipopratica;selectdb"
 data[]="Qualifica dell'intervento;intervento;400xpe.elenco_tipointervento;selectdb"
 data[]="Numero Pratica;numero;25;text|Data presentazione;data_presentazione;10;data"
 data[]="Prot. gen. ;protocollo;25;text|Data;data_prot;10;data"

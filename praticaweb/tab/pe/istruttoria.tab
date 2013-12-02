@@ -2,9 +2,8 @@
 [general]
 table=""
 viewable=""
-editable="itec"
-;print_form="pe.istruttoria"
-print_form="pe.avvioproc"
+editable=""
+print_form="pe.istruttoria"
 [new]
 table="pe.pareri"
 chiave="id"

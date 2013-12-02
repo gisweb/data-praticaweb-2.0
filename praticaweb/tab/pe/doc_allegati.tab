@@ -2,9 +2,9 @@
 [general]
 table=""
 viewable=""
-editable="itec;iamm;ivigi;iagi"
-;print_form="pe.allegati"
-print_form="pe.avvioproc"
+editable=""
+print_form="pe.allegati"
+
 [edit]
 table="pe.doc_allegati"
 chiave="id"

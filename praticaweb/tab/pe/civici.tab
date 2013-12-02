@@ -2,7 +2,7 @@
 [general]
 table=""
 viewable=""
-editable="ipre;itec;iamm"
+editable=""
 
 [new]
 table="pe.elenco_civici"

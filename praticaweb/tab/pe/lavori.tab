@@ -2,9 +2,8 @@
 [general]
 table=""
 viewable=""
-editable="ilav"
-;print_form="pe.lavori"
-print_form="pe.avvioproc"
+editable=""
+print_form="pe.lavori"
 
 [edit]
 table="pe.lavori"
