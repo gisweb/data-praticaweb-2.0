@@ -1,0 +1,27 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+
+[edit]
+table="stp.stampe"
+chiave="id"
+campi_obbligatori="nome"
+data[]="Nome;file_doc;100;text"
+data[]="Descrizione;descrizione;60x3;textarea"
+data[]="File;file;50;upload"
+button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
+
+[list]
+table="stp.stampe"
+chiave="id"
+campi_ordinamento="data_creazione_doc,file_doc"
+campi_obbligatori=""
+data[]=";id;2%#stp.modelli;btn_view"
+data[]=";id;2%#stp.modelli;btn_edit"
+data[]="Data;data_creazione_doc;10%;data"
+data[]="Nome;file_doc;20%;text"
+data[]="Descrizione;descrizione;50%;text"
+
