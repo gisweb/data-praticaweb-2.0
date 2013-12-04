@@ -1,0 +1,35 @@
+
+26-11-13	14:29:02
+	insert into oneri.calcolati (anno,tabella,intervento,perc,sup,c1,c2,c3,c4,d1,d2,degradato,note,pratica,chk,uidins,tmsins) values (2012,'A',100.00,0,100,0.00,0.00,0.00,0.00,20.00,0.00,0,NULL,16956,1,1,1385476142)
+26-11-13	14:36:13
+	update oneri.calcolati set anno=2012,tabella='A',intervento=100.00,perc=0,sup=100.0000,c1=0.00,c2=0.00,c3=0.00,c4=0.00,d1=0.00,d2=0.00,degradato=0,note=NULL,chk=2,uidupd=1,tmsupd=1385476573 where id=1769
+27-11-13	15:47:03
+	insert into pe.indirizzi (via,civico,scala,occ_suolo_pubblico,mq_occ,gg_occ,pratica,chk,uidins,tmsins) values ('STRADA SOLARO RAPALIN','31',NULL,0,0,0,17992,1,1,1385567223)
+28-11-13	15:29:25
+	insert into oneri.calcolati (anno,tabella,intervento,perc,sup,c1,c2,c3,c4,d1,d2,degradato,note,pratica,chk,uidins,tmsins) values (2012,'A',100.00,0,123,0.00,0.00,0.00,0.00,0.00,0.00,0,NULL,17123,1,1,1385652565)
+28-11-13	16:32:36
+	insert into oneri.calcolati (anno,tabella,intervento,perc,sup,c1,c2,c3,c4,d1,d2,degradato,note,pratica,chk,uidins,tmsins) values (2012,'A',100.00,0,5,20.00,0.00,0.00,0.00,0.00,0.00,0,NULL,17123,1,1,1385656356)
+2-12-13	07:27:06
+	insert into pe.e_scadenze (codice,nome,testo,ordine,id) values ('vigiterm','Termine per la determinazione','Termine per la determinazione',0,(SELECT coalesce(max(id),0)+1 FROM pe.e_scadenze))
+2-12-13	07:28:42
+	insert into pe.scadenze (codice,scadenza,note,pratica,chk,uidins,tmsins) values ('vigiterm','20/12/2013','fqwfewqfweqfewq',18027,1,1,1385969322)
+2-12-13	07:34:13
+	insert into vigi.esposti (origine,data_presentazione,oggetto,data_determinazione,termine_verifica,note,pratica,chk,uidins,tmsins) values ('vigili','08/12/2013','aACaccASCac',NULL,NULL,NULL,18027,1,1,1385969653)
+3-12-13	07:59:12
+	update pe.scadenze set codice='vigiterm',scadenza='05/12/2013',note='fqwfewqfweqfewq',chk=2,uidupd=1,tmsupd=1386057552 where id=1
+3-12-13	08:05:53
+	update pe.scadenze set codice='vigiterm',scadenza='20/12/2013',note='fqwfewqfweqfewq',chk=3,uidupd=1,tmsupd=1386057953 where id=1
+4-12-13	16:29:18
+	update pe.avvioproc set tipo=11000,intervento=0,numero='164/2013',data_presentazione='22/02/2013',protocollo='12892',data_prot='28/02/2013',rif_pratica=NULL,rif_aut_amb=NULL,resp_proc=5,data_resp=NULL,com_resp=NULL,data_com_resp=NULL,oggetto='rinnovo P.C. 477/2004 per recupero sottotetto a fini abitativi',note=NULL,chk=2,uidupd=1,tmsupd=1386174558 where id=17814
+4-12-13	16:35:25
+	insert into pe.soggetti (cognome,nome,indirizzo,comune,prov,cap,telefono,email,pec,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albonumero,note,proprietario,richiedente,concessionario,economia_diretta,progettista,direttore,sicurezza,collaudatore,esecutore,geologo,progettista_ca,collaudatore_ca,comunicazioni,pratica,chk,uidins,tmsins) values (NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'SAN REMO','IM','27/05/1965','M','RSSGCM65E27I138J',NULL,'ROSSI Giacomo','Impresa','Via ugo Secondo 57/59','BADALUCCO','IM','18010',NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,0,0,0,0,1,0,0,0,1,18027,1,1,1386174925)
+4-12-13	16:36:15
+	insert into pe.soggetti (cognome,nome,indirizzo,comune,prov,cap,telefono,email,pec,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albonumero,note,proprietario,richiedente,concessionario,economia_diretta,progettista,direttore,sicurezza,collaudatore,esecutore,geologo,progettista_ca,collaudatore_ca,comunicazioni,pratica,chk,uidins,tmsins) values (NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'M',NULL,NULL,'GEOM. FRONTERO IVANO',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,1,1,1,0,0,0,0,0,1,18027,1,1,1386174975)
+4-12-13	16:36:45
+	insert into pe.cterreni (sezione,foglio,mappale,sub,note,pratica,chk,uidins,tmsins) values ('A','36','951',NULL,NULL,18027,1,1,1386175005)
+4-12-13	16:38:11
+	insert into pe.pareri (ente,resp_parere,prot_rich,data_rich,data_ricezione_richiesta,note,pratica,chk,uidins,tmsins) values (2,41,'122112','03/12/2013',NULL,NULL,18027,1,1,1386175091)
+4-12-13	16:38:26
+	update pe.pareri set resp_parere=41,prot_rich='122112',data_rich='03/12/2013',data_ricezione_richiesta=NULL,prot_ril='1221211',data_ril='04/12/2013',prot_rice=NULL,data_rice=NULL,numero_doc=NULL,parere=1,prescrizioni='DaDADadaDA',testo='dadA',note=NULL,chk=2,uidupd=1,tmsupd=1386175106 where id=217710
+4-12-13	16:38:51
+	update pe.avvioproc set tipo=11000,intervento=0,numero='164/2013',data_presentazione='22/02/2013',protocollo='12892',data_prot='28/02/2013',rif_pratica=NULL,rif_aut_amb=NULL,resp_proc=5,data_resp=NULL,com_resp=NULL,data_com_resp=NULL,oggetto='rinnovo P.C. 477/2004 per recupero sottotetto a fini abitativi',note=NULL,chk=3,uidupd=1,tmsupd=1386175131 where id=17814

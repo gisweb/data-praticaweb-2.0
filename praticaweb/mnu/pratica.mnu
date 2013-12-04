@@ -1,34 +1,34 @@
 prei,PreIstruttoria
-10,Avvio Procedimento,pe.avvioproc,prei
-20,Soggetti Interessati,pe.elenco_soggetti,prei
-50,Ubicazione Intervento,pe.ubicazione,prei
-40,Elenco Allegati,pe.allegati,prei
-45,Integrazione Documenti,pe.integrazioni,prei
+10,Avvio Procedimento,pe.avvioproc,
+20,Soggetti Interessati,pe.elenco_soggetti,
+50,Ubicazione Intervento,pe.ubicazione,
+40,Elenco Allegati,pe.allegati,
+45,Integrazione Documenti,pe.integrazioni,
 it,Istruttoria Tecnica
-70,Vincoli Presenti,pe.vincoli,it
-75,Informazioni DIA,pe.infodia,it
-80,Dati di Progetto,pe.progetto,it
-92,Sospensioni,pe.sospensioni,it
+70,Vincoli Presenti,pe.vincoli,
+80,Dati di Progetto,pe.progetto,
+92,Sospensioni,pe.sospensioni,
 oc,Oneri
-110,Importi,oneri.importi,oc
-120,Rateizzazione,oneri.rate,oc
-130,Fideiussioni,oneri.fidi,oc
-135,Sanzioni,oneri.sanzioni,oc
+110,Importi,oneri.importi,
+120,Rateizzazione,oneri.rate,
+130,Fideiussioni,oneri.fidi,
+135,Sanzioni,oneri.sanzioni,
 ia,Istruttoria Amministrativa
-100,Richiesta Pareri,pe.pareri,ia
-90,Asservimenti,pe.asservimenti,ia
-91,Atti e Titoli,pe.atti,ia
-160,Rilascio Titolo,pe.titolo,ia
+101,Commissione Edilizia,pe.commissione_edilizia,
+100,Richiesta Pareri,pe.pareri,
+90,Asservimenti,pe.asservimenti,
+91,Atti e Titoli,pe.atti,
+160,Rilascio Titolo,pe.titolo,
 lav,Lavori
-170,Esecuzione Lavori,pe.lavori,lav
-180,Sopralluoghi,pe.sopralluoghi,lav
+170,Esecuzione Lavori,pe.lavori,
+180,Sopralluoghi,pe.sopralluoghi,
 agi,Agibilità
-200,Collaudo,pe.collaudo,agi
-210,Agibilità,pe.abitabi,agi
+200,Collaudo,pe.collaudo,
+210,Agibilità,pe.abitabi,
 vigi,Vigilanza
-250,Sopralluoghi Vigilanza,vigi.sopralluoghi,vigi
-260,Esposti Vigilanza,vigi.esposti,vigi
-270,Provvedimenti Vigilanza,vigi.provvedimenti,vigi
+250,Sopralluoghi Vigilanza,vigi.sopralluoghi,
+260,Esposti Vigilanza,vigi.esposti,
+270,Provvedimenti Vigilanza,vigi.provvedimenti,
 iter,Iter
 295,Scadenze,pe.scadenze,
 300,Annotazioni,pe.annotazioni,
