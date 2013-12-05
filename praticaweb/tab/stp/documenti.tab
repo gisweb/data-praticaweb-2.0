@@ -3,7 +3,7 @@
 table=""
 viewable=""
 editable=""
-
+print_form="pe.avvioproc"
 
 [edit]
 table="stp.stampe"
@@ -23,4 +23,6 @@ data[]=";id;2%#stp.documenti;btn_edit"
 data[]="Data;data_creazione_doc;10%;data"
 data[]="Nome;file_doc;20%;stampe"
 data[]="Descrizione;descrizione;50%;text"
+data[]=";;pe.avvioproc;stampa"
+
 
