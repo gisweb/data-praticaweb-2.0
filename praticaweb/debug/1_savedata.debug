@@ -1,35 +1,103 @@
 
-26-11-13	14:29:02
-	insert into oneri.calcolati (anno,tabella,intervento,perc,sup,c1,c2,c3,c4,d1,d2,degradato,note,pratica,chk,uidins,tmsins) values (2012,'A',100.00,0,100,0.00,0.00,0.00,0.00,20.00,0.00,0,NULL,16956,1,1,1385476142)
-26-11-13	14:36:13
-	update oneri.calcolati set anno=2012,tabella='A',intervento=100.00,perc=0,sup=100.0000,c1=0.00,c2=0.00,c3=0.00,c4=0.00,d1=0.00,d2=0.00,degradato=0,note=NULL,chk=2,uidupd=1,tmsupd=1385476573 where id=1769
-27-11-13	15:47:03
-	insert into pe.indirizzi (via,civico,scala,occ_suolo_pubblico,mq_occ,gg_occ,pratica,chk,uidins,tmsins) values ('STRADA SOLARO RAPALIN','31',NULL,0,0,0,17992,1,1,1385567223)
-28-11-13	15:29:25
-	insert into oneri.calcolati (anno,tabella,intervento,perc,sup,c1,c2,c3,c4,d1,d2,degradato,note,pratica,chk,uidins,tmsins) values (2012,'A',100.00,0,123,0.00,0.00,0.00,0.00,0.00,0.00,0,NULL,17123,1,1,1385652565)
-28-11-13	16:32:36
-	insert into oneri.calcolati (anno,tabella,intervento,perc,sup,c1,c2,c3,c4,d1,d2,degradato,note,pratica,chk,uidins,tmsins) values (2012,'A',100.00,0,5,20.00,0.00,0.00,0.00,0.00,0.00,0,NULL,17123,1,1,1385656356)
-2-12-13	07:27:06
-	insert into pe.e_scadenze (codice,nome,testo,ordine,id) values ('vigiterm','Termine per la determinazione','Termine per la determinazione',0,(SELECT coalesce(max(id),0)+1 FROM pe.e_scadenze))
-2-12-13	07:28:42
-	insert into pe.scadenze (codice,scadenza,note,pratica,chk,uidins,tmsins) values ('vigiterm','20/12/2013','fqwfewqfweqfewq',18027,1,1,1385969322)
-2-12-13	07:34:13
-	insert into vigi.esposti (origine,data_presentazione,oggetto,data_determinazione,termine_verifica,note,pratica,chk,uidins,tmsins) values ('vigili','08/12/2013','aACaccASCac',NULL,NULL,NULL,18027,1,1,1385969653)
-3-12-13	07:59:12
-	update pe.scadenze set codice='vigiterm',scadenza='05/12/2013',note='fqwfewqfweqfewq',chk=2,uidupd=1,tmsupd=1386057552 where id=1
-3-12-13	08:05:53
-	update pe.scadenze set codice='vigiterm',scadenza='20/12/2013',note='fqwfewqfweqfewq',chk=3,uidupd=1,tmsupd=1386057953 where id=1
-4-12-13	16:29:18
-	update pe.avvioproc set tipo=11000,intervento=0,numero='164/2013',data_presentazione='22/02/2013',protocollo='12892',data_prot='28/02/2013',rif_pratica=NULL,rif_aut_amb=NULL,resp_proc=5,data_resp=NULL,com_resp=NULL,data_com_resp=NULL,oggetto='rinnovo P.C. 477/2004 per recupero sottotetto a fini abitativi',note=NULL,chk=2,uidupd=1,tmsupd=1386174558 where id=17814
-4-12-13	16:35:25
-	insert into pe.soggetti (cognome,nome,indirizzo,comune,prov,cap,telefono,email,pec,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albonumero,note,proprietario,richiedente,concessionario,economia_diretta,progettista,direttore,sicurezza,collaudatore,esecutore,geologo,progettista_ca,collaudatore_ca,comunicazioni,pratica,chk,uidins,tmsins) values (NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'SAN REMO','IM','27/05/1965','M','RSSGCM65E27I138J',NULL,'ROSSI Giacomo','Impresa','Via ugo Secondo 57/59','BADALUCCO','IM','18010',NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,0,0,0,0,1,0,0,0,1,18027,1,1,1386174925)
-4-12-13	16:36:15
-	insert into pe.soggetti (cognome,nome,indirizzo,comune,prov,cap,telefono,email,pec,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albonumero,note,proprietario,richiedente,concessionario,economia_diretta,progettista,direttore,sicurezza,collaudatore,esecutore,geologo,progettista_ca,collaudatore_ca,comunicazioni,pratica,chk,uidins,tmsins) values (NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'M',NULL,NULL,'GEOM. FRONTERO IVANO',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,1,1,1,0,0,0,0,0,1,18027,1,1,1386174975)
-4-12-13	16:36:45
-	insert into pe.cterreni (sezione,foglio,mappale,sub,note,pratica,chk,uidins,tmsins) values ('A','36','951',NULL,NULL,18027,1,1,1386175005)
-4-12-13	16:38:11
-	insert into pe.pareri (ente,resp_parere,prot_rich,data_rich,data_ricezione_richiesta,note,pratica,chk,uidins,tmsins) values (2,41,'122112','03/12/2013',NULL,NULL,18027,1,1,1386175091)
-4-12-13	16:38:26
-	update pe.pareri set resp_parere=41,prot_rich='122112',data_rich='03/12/2013',data_ricezione_richiesta=NULL,prot_ril='1221211',data_ril='04/12/2013',prot_rice=NULL,data_rice=NULL,numero_doc=NULL,parere=1,prescrizioni='DaDADadaDA',testo='dadA',note=NULL,chk=2,uidupd=1,tmsupd=1386175106 where id=217710
-4-12-13	16:38:51
-	update pe.avvioproc set tipo=11000,intervento=0,numero='164/2013',data_presentazione='22/02/2013',protocollo='12892',data_prot='28/02/2013',rif_pratica=NULL,rif_aut_amb=NULL,resp_proc=5,data_resp=NULL,com_resp=NULL,data_com_resp=NULL,oggetto='rinnovo P.C. 477/2004 per recupero sottotetto a fini abitativi',note=NULL,chk=3,uidupd=1,tmsupd=1386175131 where id=17814
+30-11-13	03:44:40
+	insert into pe.avvioproc (tipo,intervento,numero,data_presentazione,protocollo,data_prot,rif_pratica,rif_aut_amb,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,chk,uidins,tmsins) values (11000,2,NULL,'30/11/2013','65879','30/11/2013',NULL,NULL,5,'30/11/2013',NULL,NULL,'TEST INSERIMENTO',NULL,1,1,1385783080)
+30-11-13	03:56:00
+	insert into pe.avvioproc (tipo,intervento,numero,data_presentazione,protocollo,data_prot,rif_pratica,rif_aut_amb,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,chk,uidins,tmsins) values (11000,3,NULL,'30/11/2013','68956','30/11/2013',NULL,NULL,5,NULL,NULL,NULL,'gggggg',NULL,1,1,1385783760)
+30-11-13	04:01:00
+	insert into pe.avvioproc (tipo,intervento,numero,data_presentazione,protocollo,data_prot,rif_pratica,rif_aut_amb,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,chk,uidins,tmsins) values (11000,3,NULL,'30/11/2013','68596','30/11/2013',NULL,NULL,26,'30/11/2013',NULL,NULL,'ioioio',NULL,1,1,1385784060)
+30-11-13	04:01:39
+	insert into pe.soggetti (app,cognome,nome,indirizzo,comune,prov,cap,telefono,email,pec,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albonumero,note,proprietario,richiedente,concessionario,economia_diretta,progettista,direttore,sicurezza,collaudatore,esecutore,geologo,progettista_ca,collaudatore_ca,comunicazioni,pratica,chk,uidins,tmsins) values ('Sig.','ROSSI','Adriano','Via XX Settembre 52','L\'Aquila','AQ','67100',NULL,NULL,NULL,'Bordighera','IM','19/03/1936','M','RSSDRN36C19A984K','Proprietario',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,1,1,0,0,0,0,0,0,0,0,0,1,19001,1,1,1385784099)
+30-11-13	04:02:46
+	insert into pe.soggetti (app,cognome,nome,indirizzo,comune,prov,cap,telefono,email,pec,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albonumero,note,proprietario,richiedente,concessionario,economia_diretta,progettista,direttore,sicurezza,collaudatore,esecutore,geologo,progettista_ca,collaudatore_ca,comunicazioni,pratica,chk,uidins,tmsins) values ('Geom.','CAVIGLIA','Luigi','Via Piva 5','Borgio Verezzi','SV','17022',NULL,'luigi.caviglia@geopec.it',NULL,'Savona','SV','01/11/1968','M','CVGLGU68S01I480S','Progettista',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,1,1,0,0,0,0,0,0,1,19001,1,1,1385784166)
+30-11-13	04:03:09
+	insert into pe.indirizzi (via,civico,scala,piano,occ_suolo_pubblico,mq_occ,gg_occ,pratica,chk,uidins,tmsins) values ('VIA L. ARIOSTO','8',NULL,'Terra',0,0,0,19001,1,1,1385784189)
+30-11-13	04:03:32
+	insert into pe.cterreni (sezione,foglio,mappale,sub,note,pratica,chk,uidins,tmsins) values ('A','16','30','2',NULL,19001,1,1,1385784212)
+30-11-13	05:33:18
+	insert into pe.cterreni (sezione,foglio,mappale,sub,note,pratica,chk,uidins,tmsins) values ('A','16','31',NULL,NULL,19001,1,1,1385789598)
+30-11-13	05:33:36
+	insert into oneri.calcolati (anno,tabella,intervento,perc,sup,c1,c2,c3,c4,d1,d2,degradato,note,pratica,chk,uidins,tmsins) values (2013,'A',100.00,0,56,20.00,null,null,null,null,null,0,NULL,19001,1,1,1385789616)
+30-11-13	05:33:56
+	insert into oneri.calcolati (anno,tabella,intervento,perc,sup,c1,c2,c3,c4,d1,d2,degradato,note,pratica,chk,uidins,tmsins) values (2013,'E',100.00,0,30,null,null,null,null,null,null,0,NULL,19001,1,1,1385789636)
+30-11-13	05:34:18
+	insert into pe.progetto (destuso1,destuso2,tavole,note,pratica,chk,uidins,tmsins) values ('Residenziale','Parcheggio e Depositi','4',NULL,19001,1,1,1385789658)
+30-11-13	05:34:58
+	insert into pe.sospensioni (tipo,protocollo_richiesta,data_richiesta,data_ricezione_richiesta,motivo_richiesta,protocollo_integrazione,data_integrazione,note_integrazione,pratica,chk,uidins,tmsins) values (1,'3131','30/11/2013',NULL,'Mancanza documentazione',NULL,NULL,NULL,19001,1,1,1385789698)
+30-11-13	05:35:20
+	insert into pe.pareri (ente,resp_parere,prot_rich,data_rich,data_ricezione_richiesta,note,pratica,chk,uidins,tmsins) values (2,null,NULL,'30/11/2013','30/11/2013',NULL,19001,1,1,1385789720)
+30-11-13	05:35:49
+	update pe.pareri set resp_parere=null,prot_rich=NULL,data_rich='30/11/2013',data_ricezione_richiesta='30/11/2013',prot_ril='afssf',data_ril='30/11/2013',prot_rice=NULL,data_rice=NULL,numero_doc='32/25',parere=1,prescrizioni='gss',testo='gaggdgdasd',note=NULL,chk=2,uidupd=1,tmsupd=1385789749 where id=217710
+30-11-13	05:36:03
+	insert into pe.pareri (ente,resp_parere,prot_rich,data_rich,data_ricezione_richiesta,note,pratica,chk,uidins,tmsins) values (7,null,NULL,'30/11/2013',NULL,NULL,19001,1,1,1385789763)
+30-11-13	05:36:36
+	update pe.pareri set resp_parere=null,prot_rich=NULL,data_rich='30/11/2013',data_ricezione_richiesta=NULL,prot_ril='qeq',data_ril='30/11/2013',prot_rice=NULL,data_rice=NULL,numero_doc=NULL,parere=1,prescrizioni='qwr',testo='qwwrqwqr',note=NULL,chk=2,uidupd=1,tmsupd=1385789796 where id=217711
+30-11-13	05:36:59
+	insert into pe.titolo (data_rilascio,protocollo,data_notifica,data_ritiro,intervento,note,pratica,chk,uidins,tmsins) values ('30/11/2013','131134','13/12/2013','05/12/2013','eq','eq',19001,1,1,1385789819)
+30-11-13	05:43:09
+	insert into pe.titolo (data_rilascio,protocollo,data_notifica,data_ritiro,intervento,note,pratica,chk,uidins,tmsins) values ('30/11/2013','65879','01/12/2013','01/12/2013','geswgesw','gswgswgd',19001,1,1,1385790189)
+30-11-13	05:58:39
+	insert into pe.pareri (ente,resp_parere,prot_rich,data_rich,data_ricezione_richiesta,note,pratica,chk,uidins,tmsins) values (8,null,'1233131','30/11/2013',NULL,NULL,19001,1,1,1385791119)
+30-11-13	05:58:57
+	update pe.pareri set resp_parere=null,prot_rich='1233131',data_rich='30/11/2013',data_ricezione_richiesta=NULL,prot_ril='qdqddq',data_ril='30/11/2013',prot_rice=NULL,data_rice=NULL,numero_doc='12313',parere=1,prescrizioni='sfwqafsfs',testo='fsasfafsa',note=NULL,chk=2,uidupd=1,tmsupd=1385791137 where id=217712
+1-12-13	17:59:38
+	insert into pe.curbano (sezione,foglio,mappale,sub,note,pratica,chk,uidins,tmsins) values ('A','32','45',NULL,NULL,19001,1,1,1385920778)
+2-12-13	06:16:38
+	insert into pe.annotazioni (data_annotazione,note,pratica,chk,uidins,tmsins) values ('17/12/2013','iuguiguiuio',19001,1,1,1385964998)
+3-12-13	04:09:33
+	insert into pe.scadenze (codice,scadenza,note,pratica,chk,uidins,tmsins) values ('altro','06/12/2013','test scadenza personalizzata',19001,1,1,1386043773)
+3-12-13	04:17:30
+	update pe.scadenze set codice='rdp',scadenza='01/12/2013',note=NULL,chk=2,uidupd=1,tmsupd=1386044250 where id=1
+3-12-13	04:18:04
+	update pe.scadenze set codice='rdp',scadenza='01/12/2013',note=NULL,chk=3,uidupd=1,tmsupd=1386044284 where id=1
+4-12-13	03:23:09
+	insert into stp.e_modelli (nome,form,descrizione,proprietario,id) values ('Accertamento compatibilità paesistica.docx','pe.avvioproc','Accertamento compatibilità paesistica',NULL,(SELECT coalesce(max(id),0)+1 FROM stp.e_modelli))
+4-12-13	03:23:43
+	insert into stp.e_modelli (nome,form,descrizione,proprietario,id) values ('Accertamento Conformità e Permesso Costruire.docx','pe.avvioproc','Accertamento Conformità e Permesso Costruire',NULL,(SELECT coalesce(max(id),0)+1 FROM stp.e_modelli))
+4-12-13	04:01:27
+	insert into stp.e_modelli (nome,form,descrizione,proprietario,id) values ('Accertamento conformita.docx','pe.avvioproc','Accertamento conformità',NULL,(SELECT coalesce(max(id),0)+1 FROM stp.e_modelli))
+4-12-13	04:02:09
+	insert into stp.e_modelli (nome,form,descrizione,proprietario,id) values ('Ai Controlli per Sanzione.docx','pe.avvioproc','Ai Controlli per Sanzione',NULL,(SELECT coalesce(max(id),0)+1 FROM stp.e_modelli))
+4-12-13	04:02:35
+	insert into stp.e_modelli (nome,form,descrizione,proprietario,id) values ('Ai Servizi Vari.docx','pe.avvioproc','Ai Servizi Vari',NULL,(SELECT coalesce(max(id),0)+1 FROM stp.e_modelli))
+4-12-13	04:03:17
+	insert into stp.e_modelli (nome,form,descrizione,proprietario,id) values ('AP Semplificata - SilenzioAssenso.docx','pe.avvioproc','Autorizzazione Paesaggistica Semplificata - Silenzio Assenso',NULL,(SELECT coalesce(max(id),0)+1 FROM stp.e_modelli))
+4-12-13	04:03:41
+	insert into stp.e_modelli (nome,form,descrizione,proprietario,id) values ('Archiviazione - No Vincolo Idrogeologico.docx','pe.avvioproc','Archiviazione - No Vincolo Idrogeologico',NULL,(SELECT coalesce(max(id),0)+1 FROM stp.e_modelli))
+4-12-13	04:04:01
+	insert into stp.e_modelli (nome,form,descrizione,proprietario,id) values ('Articolo 22 - Lettera.docx','pe.avvioproc','Articolo 22 - Lettera',NULL,(SELECT coalesce(max(id),0)+1 FROM stp.e_modelli))
+4-12-13	04:04:32
+	insert into stp.e_modelli (nome,form,descrizione,proprietario,id) values ('Integrazioni Agibilita.docx','pe.avvioproc','Integrazioni Agibilità',NULL,(SELECT coalesce(max(id),0)+1 FROM stp.e_modelli))
+5-12-13	04:33:26
+	update pe.avvioproc set tipo=10000,intervento=0,numero='1107/2013',data_presentazione='13/11/2013',protocollo='62072',data_prot='18/11/2013',rif_pratica=NULL,rif_aut_amb=NULL,resp_proc=null,data_resp=NULL,com_resp=NULL,data_com_resp=NULL,oggetto='realizzazione box auto pertinenziale interrato',note=NULL,chk=2,uidupd=1,tmsupd=1386218006 where id=18752
+5-12-13	04:51:10
+	insert into pe.visione (nominativo,motivo,data,copia,pratica,chk,uidins,tmsins) values ('Gian Paolo','fasfas','24/12/2013',1,18481,1,1,1386219070)
+5-12-13	04:51:26
+	update pe.avvioproc set tipo=8200,intervento=0,numero='616/2013',data_presentazione='28/06/2013',protocollo='37981',data_prot='04/07/2013',rif_pratica=NULL,rif_aut_amb=NULL,resp_proc=null,data_resp=NULL,com_resp=NULL,data_com_resp=NULL,oggetto='demolizione e ricostruzione di fabbricato con sistemazione terreno adiacente',note=NULL,chk=2,uidupd=1,tmsupd=1386219086 where id=18260
+5-12-13	05:33:58
+	insert into stp.stampe (file_doc,descrizione,chk,uidins,tmsins) values ('ai Servizi Vari.doc','gsagds',1,1,1386221638)
+5-12-13	05:36:10
+	insert into stp.stampe (file_doc,descrizione,chk,uidins,tmsins) values ('ai Servizi Vari.doc','gsagds',1,1,1386221770)
+5-12-13	05:36:15
+	insert into stp.stampe (file_doc,descrizione,chk,uidins,tmsins) values ('ai Servizi Vari.doc','gsagds',1,1,1386221775)
+5-12-13	05:36:37
+	insert into stp.stampe (file_doc,descrizione,pratica,chk,uidins,tmsins) values ('ai Servizi Vari.doc','aaaa',18481,1,1,1386221797)
+5-12-13	05:37:12
+	insert into stp.stampe (file_doc,descrizione,pratica,chk,uidins,tmsins) values ('ai Servizi Vari.doc',NULL,18481,1,1,1386221832)
+5-12-13	05:42:21
+	insert into stp.stampe (file_doc,descrizione,pratica,chk,uidins,tmsins) values ('ai Servizi Vari.doc',NULL,18481,1,1,1386222141)
+5-12-13	05:45:35
+	insert into stp.stampe (file_doc,descrizione,pratica,chk,uidins,tmsins) values (NULL,'fsaasffas',18481,1,1,1386222335)
+5-12-13	05:46:32
+	insert into stp.stampe (file_doc,descrizione,pratica,chk,uidins,tmsins) values (NULL,NULL,18481,1,1,1386222392)
+5-12-13	05:49:36
+	insert into stp.stampe (file_doc,descrizione,pratica,chk,uidins,tmsins) values (NULL,NULL,18481,1,1,1386222576)
+5-12-13	05:51:00
+	insert into stp.stampe (file_doc,descrizione,pratica,chk,uidins,tmsins) values ('accertamento conformità e permesso costruire.docx',NULL,18481,1,1,1386222660)
+5-12-13	05:54:37
+	insert into stp.stampe (file_doc,descrizione,pratica,chk,uidins,tmsins) values ('ai Servizi Vari.doc',NULL,18481,1,1,1386222877)
+5-12-13	05:55:45
+	insert into stp.stampe (file_doc,descrizione,pratica,chk,uidins,tmsins) values ('accertamento conformità.docx',NULL,18481,1,1,1386222945)
+5-12-13	06:30:18
+	insert into stp.stampe (file_doc,descrizione,pratica,chk,uidins,tmsins) values ('accertamento conformità.docx',NULL,18481,1,1,1386225018)
+5-12-13	06:31:10
+	insert into stp.stampe (file_doc,descrizione,pratica,chk,uidins,tmsins) values ('ACCERTAMENTO COMPATIBILITA\' PAESAGGISTICA.docx',NULL,18481,1,1,1386225070)
