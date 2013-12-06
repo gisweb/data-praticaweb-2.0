@@ -43,15 +43,15 @@ class utils {
         return $conn;
     }
     static function writeJS(){
-        foreach($this->js as $js){
-           $tag=sprintf("\n\t\t<SCRIPT language=\"javascript\" src=\"%sjs/%s.js\"/>",self::jsURL,$js);
+        foreach(self::$js as $js){
+           $tag=sprintf("\n\t\t<SCRIPT language=\"javascript\" src=\"%s/%s.js\"></script>",self::jsURL,$js);
            echo $tag;
         }
         
     }
     static function writeCSS(){
-        foreach($this->css as $css){
-           $tag=sprintf("\n\t\t<LINK media=\"screen\" href=\"%s/%s.css\" type=\"text/css\" rel=\"stylesheet\"/>",self::jsURL,$js);
+        foreach(self::$css as $css){
+           $tag=sprintf("\n\t\t<LINK media=\"screen\" href=\"%s/%s.css\" type=\"text/css\" rel=\"stylesheet\"></link>",self::cssURL,$css);
            echo $tag;
         }
         
