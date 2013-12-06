@@ -1,7 +1,20 @@
-10,Avvio Procedimento,vigi.avvioproc
-20,Esposti Vigilanza,vigi.esposti
-30,Soggetti Interessati,vigi.elenco_soggetti
-40,Ubicazione Intervento,vigi.ubicazione
-----------
+prei,Istruttoria
+10,Avvio Procedimento,pe.avvioproc,
+20,Soggetti Interessati,pe.elenco_soggetti,
+50,Ubicazione Intervento,pe.ubicazione,
+40,Elenco Allegati,pe.allegati,
+45,Integrazione Documenti,pe.integrazioni,
+70,Vincoli Presenti,pe.vincoli,
+80,Dati di Progetto,pe.progetto,
+92,Sospensioni,pe.sospensioni,
+vigi,Vigilanza
 250,Sopralluoghi Vigilanza,vigi.sopralluoghi
-260,Provvedimenti Vigilanza,vigi.provvedimenti
+260,Esposti Vigilanza,vigi.esposti,
+270,Provvedimenti Vigilanza,vigi.provvedimenti,
+,Titolo
+160,Rilascio Titolo,pe.titolo,
+iter,Iter
+295,Scadenze,pe.scadenze,
+300,Annotazioni,pe.annotazioni,
+293,Documenti Prodotti,stp.documenti
+305,Accesso agli Atti,pe.visione,
