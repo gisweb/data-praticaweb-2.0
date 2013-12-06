@@ -1,0 +1,12 @@
+id|form|opzione|stampa
+1|pe.avvioproc|Avvio del Procedimento|1
+2|pe.allegati|Documenti Allegati|2
+3|pe.pareri|Pareri Enti Esterni|3
+9|ce.commissione|Commissione Edilizia|9
+4|pe.comm_edilizia|Pareri Commissione Edilizia|4
+7|oneri.importi|Oneri Concessori|5
+6|pe.titolo|Rilascio del Titolo|7
+8|cdu.vincoli|CDU|8
+10|pe.istruttoria|Istruttoria Ufficio Tecnico|10
+11|pe.lavori|Inizio Lavori|
+5|pe.abitabi|Abitabilit&agrave;|6

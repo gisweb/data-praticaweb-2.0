@@ -1,0 +1,85 @@
+id|codice|tabella|valore|descrizione|ordine
+1|20|A|20.00|Ristrutturazione  (20%)|0
+2|65|D|65.00|Ristrutturazione  (65%)|0
+3|110|C|10.00|Sistemazioni esterne (10%)|0
+4|40|A|40.00|Ristrutturazione  (40%)|0
+5|1|F|100.00|Nuova costruzione (100%)|0
+6|1|H|100.00|Nuova costruzione (100%)|0
+7|90|D|90.00|Ristrutturazione  (90%)|0
+8|130|B|30.00|Sistemazioni esterne (30%)|0
+9|1|G|100.00|Nuova costruzione (100%)|0
+10|90|A|90.00|Ristrutturazione  (90%)|0
+11|130|C|30.00|Sistemazioni esterne (30%)|0
+12|40|D|40.00|Ristrutturazione  (40%)|0
+13|110|B|10.00|Sistemazioni esterne (10%)|0
+14|20|D|20.00|Ristrutturazione  (20%)|0
+15|65|A|65.00|Ristrutturazione  (65%)|0
+16|130|F|30.00|Sistemazioni esterne (30%)|0
+17|0|D|0.00|Percentuale libera|0
+18|130|G|30.00|Sistemazioni esterne (30%)|0
+19|1|B|100.00|Nuova costruzione (100%)|0
+20|140|A|40.00|Sistemazioni esterne (40%)|0
+21|30|A|30.00|Ristrutturazione  (30%)|0
+22|160|D|60.00|Sistemazioni esterne (60%)|0
+23|10|D|10.00|Ristrutturazione  (10%)|0
+24|130|H|30.00|Sistemazioni esterne (30%)|0
+25|30|D|30.00|Ristrutturazione  (30%)|0
+26|140|D|40.00|Sistemazioni esterne (40%)|0
+27|1|C|100.00|Nuova costruzione (100%)|0
+28|110|F|10.00|Sistemazioni esterne (10%)|0
+29|160|A|60.00|Sistemazioni esterne (60%)|0
+30|10|A|10.00|Ristrutturazione  (10%)|0
+31|110|H|10.00|Sistemazioni esterne (10%)|0
+32|110|G|10.00|Sistemazioni esterne (10%)|0
+33|0|A|0.00|Percentuale libera|0
+34|130|D|30.00|Sistemazioni esterne (30%)|0
+35|10|H|10.00|Ristrutturazione  (10%)|0
+36|160|H|60.00|Sistemazioni esterne (60%)|0
+37|10|G|10.00|Ristrutturazione  (10%)|0
+38|160|G|60.00|Sistemazioni esterne (60%)|0
+39|0|F|0.00|Percentuale libera|0
+40|90|B|90.00|Ristrutturazione  (90%)|0
+41|0|H|0.00|Percentuale libera|0
+42|160|F|60.00|Sistemazioni esterne (60%)|0
+43|10|F|10.00|Ristrutturazione  (10%)|0
+44|65|B|65.00|Ristrutturazione  (65%)|0
+45|20|C|20.00|Ristrutturazione  (20%)|0
+46|0|G|0.00|Percentuale libera|0
+47|40|C|40.00|Ristrutturazione  (40%)|0
+48|110|A|10.00|Sistemazioni esterne (10%)|0
+49|30|F|30.00|Ristrutturazione  (30%)|0
+50|140|F|40.00|Sistemazioni esterne (40%)|0
+51|110|D|10.00|Sistemazioni esterne (10%)|0
+52|40|B|40.00|Ristrutturazione  (40%)|0
+53|20|B|20.00|Ristrutturazione  (20%)|0
+54|65|C|65.00|Ristrutturazione  (65%)|0
+55|30|G|30.00|Ristrutturazione  (30%)|0
+56|130|A|30.00|Sistemazioni esterne (30%)|0
+57|140|G|40.00|Sistemazioni esterne (40%)|0
+58|140|H|40.00|Sistemazioni esterne (40%)|0
+59|90|C|90.00|Ristrutturazione  (90%)|0
+60|30|H|30.00|Ristrutturazione  (30%)|0
+61|160|B|60.00|Sistemazioni esterne (60%)|0
+62|65|F|65.00|Ristrutturazione  (65%)|0
+63|10|B|10.00|Ristrutturazione  (10%)|0
+64|90|G|90.00|Ristrutturazione  (90%)|0
+65|140|C|40.00|Sistemazioni esterne (40%)|0
+66|1|D|100.00|Nuova costruzione (100%)|0
+67|90|H|90.00|Ristrutturazione  (90%)|0
+68|30|C|30.00|Ristrutturazione  (30%)|0
+69|65|G|65.00|Ristrutturazione  (65%)|0
+70|0|B|0.00|Percentuale libera|0
+71|90|F|90.00|Ristrutturazione  (90%)|0
+72|65|H|65.00|Ristrutturazione  (65%)|0
+73|40|G|40.00|Ristrutturazione  (40%)|0
+74|0|C|0.00|Percentuale libera|0
+75|20|G|20.00|Ristrutturazione  (20%)|0
+76|20|H|20.00|Ristrutturazione  (20%)|0
+77|40|H|40.00|Ristrutturazione  (40%)|0
+78|40|F|40.00|Ristrutturazione  (40%)|0
+79|20|F|20.00|Ristrutturazione  (20%)|0
+80|160|C|60.00|Sistemazioni esterne (60%)|0
+81|10|C|10.00|Ristrutturazione  (10%)|0
+82|30|B|30.00|Ristrutturazione  (30%)|0
+83|140|B|40.00|Sistemazioni esterne (40%)|0
+84|1|A|100.00|Nuova costruzione (100%)|0

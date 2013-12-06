@@ -1,0 +1,28 @@
+id|nome|link|ordine|codice|default_ins|tipo_pratica
+1|Superficie Lotto ( mq ) ||1||0|
+2|Superficie Coperta ( mq ) ||1||0|
+3|Rapporto Sup.Cop / Sup.Lotto ( % ) ||1||0|
+4|Volume ( mc ) ||1||0|
+5|Rapporto Volume / Sup.Lotto ( mc/mq ) ||1||0|
+6|Altezza Massima ( mt ) ||1||0|
+7|N. Piani fuori terra ( n. ) ||1||0|
+9|Dist. dai conf. di propr. ( mt ) ||1||0|
+10|Dist. dai conf. di zona ( mt ) ||1||0|
+11|Dist. dai fabbricati ( mt ) ||1||0|
+13|Dist. dalle linee funiviarie ( mt ) ||1||0|
+14|Dist. dalle linee eletriche ( mt ) ||1||0|
+15|Dist. dalle linee ferroviarie ( mt ) ||1||0|
+16|Dist. Da metanodotto ( mt ) ||1||0|
+17|Dist. Dai cimiteri ( mt ) ||1||0|
+22|Spazi per attiv. collett. ( % ) ||1||0|
+28|Superfici Speciali (  ) ||1||0|
+31|parcheggi pertinenziali ( mq/mc ) ||1||0|
+34|distanza da strada vicinale ( mt ) ||1||0|
+36|parcheggio pubblico ( mq/mc ) ||1||0|
+37|aree per servizi zonali (pubblico) ( mq/mc ) ||1||0|
+38|verde privato ( mq/mc ) ||1||0|
+39|parcheggio privato insediam. residenz. ( mq/mc ) ||1||0|
+40|parcheggio privato altri insed. ( mq/mc ) ||1||0|
+41|verde e parcheggio privati ( % ) ||1||0|
+72|Volume Residenziale ( mc ) ||1||0|
+73|Volume non Residenziale ( mc ) ||1||0|

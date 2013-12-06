@@ -1,0 +1,38 @@
+userid|nome|username|enc_pwd|info|data_creazione|permessi|attivato|tmp_acad_pwd|pwd|data_modifica|ultimo_accesso|num_tel|gruppi|gisclient|cognome|nominativo|app
+1|Sig. Carbone Marco|mamo|df9722f372add85d213cbcb377cda515|""|28/08/2012|1|1||pipino|01/02/2013|06/12/2013 10:57:03.5|""|8,7|1|Carbone|Marco|Sig.
+2| Amministratore Locale|local_admin|674f40c1b03c1d26b299d4f899fc5649|""|22/11/2013|2|1||savona|22/11/2013|22/11/2013 15:30:48.5|""|4,3,1|0|Amministratore|Locale|""
+11|Arch. Venturi Sandra|sventuri|9ee2bd81c6f4206a7d8b4b1ad53b9cba||23/11/2013|3|1||sventuri||||1,3,4|0|Venturi|Sandra|Arch.
+12|Geom. Delfino Franco|fdelfino|6f72748e617992ac7ddb415bb79785e9||23/11/2013|3|1||fdelfino||||3,4|0|Delfino|Franco|Geom.
+13|Geom. Imassi Simonetta|simassi|af3a2281bc63a2338094299428994af8||23/11/2013|3|1||simassi||||3,4|0|Imassi|Simonetta|Geom.
+14|Geom. Cerruti Marco|mcerruti|2acb54f2d47501a91266a563aeb095ed||23/11/2013|3|1||mcerruti||||3,4|0|Cerruti|Marco|Geom.
+15|Geom. Ascheri Gioachino|gascheri|534ad8cf558854a7a728eb5e5e60e0f4||23/11/2013|3|1||gascheri||||3,4|0|Ascheri|Gioachino|Geom.
+16|Geom. Norcini Ondina|onorcini|26c0d9772349feb41e28c374b7c2a0bf||23/11/2013|3|1||onorcini||||3,4|0|Norcini|Ondina|Geom.
+17|Geom. Maffioli Ivo|imaffioli|3b252f2b2d91a98c388bf21372d82d08||23/11/2013|3|1||imaffioli||||1,3,4|0|Maffioli|Ivo|Geom.
+18|Geom. Musso Alberto|amusso|1cd298f23631aa013367dcbf61844d26||23/11/2013|3|1||amusso||||3,4|0|Musso|Alberto|Geom.
+3|Dott. Starnini Roberto|roby|cc5b62b3ce919e70488fdeb6b4818add||30/08/2012|1|1||umby64||29/05/2013 09:12:59.9|||0|Starnini|Roberto|Dott.
+19|Geom. Lorenzini Paolo|plorenzini|a504d382516217361662d14ceed6c4ab||23/11/2013|3|1||plorenzini||||3,4|0|Lorenzini|Paolo|Geom.
+20|Geom.  Vincenzo|vincenzo|0a6486a8a0b85697eba71588fbc44522||23/11/2013|3|1||vincenzo||||3,4|0|""|Vincenzo|Geom.
+21|Arch. Macario Giovanna|gmacario|998fd30cabef990a68eae7a88fcf2ed5||23/11/2013|3|1||gmacario||||3,4|0|Macario|Giovanna|Arch.
+22|Sig. Genovese Lucia|lgenovese|3a369558c0690c392cd37127635719b7||23/11/2013|3|1||lgenovese||||3,4|0|Genovese|Lucia|Sig.
+23|Geom Milito Paolo|pmilito|25ba80e9599e3d54728ea80e7f383afd||23/11/2013|3|1||pmilito||||3,4|0|Milito|Paolo|Geom
+24|Arch. Curti Caterina|ccurti|644d0b367b82d4d16b1a90c1e88b61dd||23/11/2013|3|1||ccurti||||3,4|0|Curti|Caterina|Arch.
+25|Rodolfo Arch. Orgiu|oarch.|0a03a9be5e968ae9fd28526aa2faad1d||23/11/2013|3|1||oarch.||||3,4|0|Arch.|Orgiu|Rodolfo
+26|Sig. Longagna Danila|dlongagna|58e8a9f194ba73676023fe7940487ac9||23/11/2013|3|1||dlongagna||||3,4|0|Longagna|Danila|Sig.
+27|Arch. Patrone Aurelia|apatrone|cfda973315250a56879438e2d43943ac||23/11/2013|3|1||apatrone||||3,4|0|Patrone|Aurelia|Arch.
+28|geom. Lucconi Stefania|slucconi|a4c01176c3b9ed470d8672f9548fc0f4||23/11/2013|3|1||slucconi||||3,4|0|Lucconi|Stefania|geom.
+29|Eugenia  Scarone|scarone|3f53f2dd530fb6c0e412c5d271c1c640||23/11/2013|3|1||scarone||||3,4|0|""|Scarone|Eugenia
+30|Geom. Siccardo Matteo|msiccardo|a965d4c4dd9d12f4606c1b760a8cf971||23/11/2013|3|1||msiccardo||||3,4|0|Siccardo|Matteo|Geom.
+31|Geom. Salerno Silvano|ssalerno|38e00ed392dbe5c9f81d795963403424||23/11/2013|3|1||ssalerno||||3,4|0|Salerno|Silvano|Geom.
+32|Geom. Andrea Gavaldo|gandrea|ffefc330dda897843890948a5279d6c5||23/11/2013|3|1||gandrea||||3,4|0|Andrea|Gavaldo|Geom.
+33|Geom. Spagnol Davide|dspagnol|28d2871279fd086d9651ca68ab291565||23/11/2013|3|1||dspagnol||||3,4|0|Spagnol|Davide|Geom.
+34|sig.ra Gabriella Calandria|cgabriella|4dceb6324c54059a8ee6dd24be497ccd||23/11/2013|3|1||cgabriella||||3,4|0|Gabriella|Calandria|sig.ra
+35|Sig. Barbagallo Agata|abarbagallo|742890718f75a8f61b5a594726acdacd||23/11/2013|3|1||abarbagallo||||3,4|0|Barbagallo|Agata|Sig.
+36|Ing. Laura J.|jlaura|3a5a59f2ff063a229d68297bff382518||23/11/2013|3|1||jlaura||||3,4|0|Laura|J.|Ing.
+37|Geom. Mariotti Mirco|mmariotti|e480b4ba2d8561f3809a5bfc218bba74||23/11/2013|3|1||mmariotti||||3,4|0|Mariotti|Mirco|Geom.
+38|Geom. Ricco Rosalia|rricco|b27e65b2b5b35007a61e6320347ea951||23/11/2013|3|1||rricco||||3,4|0|Ricco|Rosalia|Geom.
+39|Dott.ssa Fulvia Ferraro|ffulvia|30291acb9d2bbd0607dfda495b49bec0||23/11/2013|3|1||ffulvia||||3,4|0|Fulvia|Ferraro|Dott.ssa
+40|Geom. Caterina Bogliolo|bcaterina|6ce3ae955f1fe45383bfe1cb747c7df7||23/11/2013|3|1||bcaterina||||3,4|0|Caterina|Bogliolo|Geom.
+41|Geom. Laura Simoncini|slaura|cf53178edfdd96e72703fe3f6351ba7c||23/11/2013|3|1||slaura||||3,4|0|Laura|Simoncini|Geom.
+42|Arch. Andrea Berruti|bandrea|c470d367849daec7504ce2536d0ea686||23/11/2013|3|1||bandrea||||3,4|0|Andrea|Berruti|Arch.
+43|Arch. Tenente Susanna|stenente|1464b72bc030ef8380edfea6827b8cab||23/11/2013|3|1||stenente||||3,4|0|Tenente|Susanna|Arch.
+44|Arch. Marino Antonella|amarino|be5ff86c1f0d508e3c2a325b9d592b39||23/11/2013|3|1||amarino||||3,4|0|Marino|Antonella|Arch.

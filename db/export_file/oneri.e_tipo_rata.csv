@@ -1,0 +1,5 @@
+id|tipo|descrizione|scadenza|ordine
+1|ONERI|1° rata oneri di urbanizzazione e costo costruzione|0 year|1
+2|ONERI|2° rata oneri di urbanizzazione e costo costruzione|1 year|2
+3|ONERI|3° rata oneri di urbanizzazione e costo costruzione|3 year|3
+4|ONERI|Rata unica oneri di urbanizzazione e costo costruzione|0 year|4

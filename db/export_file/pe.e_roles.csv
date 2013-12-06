@@ -1,0 +1,11 @@
+id|codice|nome|descrizione|ordine
+1|dir|Dirigente||1
+2|rds|Responsabile del Servizio||2
+3|rdp|Responsabile del Procedimento||3
+7|icdu|Istruttore CDU||
+4|itec|Istruttore Tecnico||4
+5|iamm|Istruttore Amministrativo||
+6|ivig|Istruttore Vigilanza||
+8|iagi|Istruttore Agibilità||
+9|ipre|Istruttore Preliminare||
+10|ilav|Istruttore Lavori||

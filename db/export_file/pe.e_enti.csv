@@ -1,0 +1,53 @@
+id|nome|stampa|ordine|descrizione|enabled|interno|silenzio_assenso|codice|testo_stampa
+46|Agenzia del Demanio|1|46||1|0|||l parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+54|Consorzio Depurazione Acque|1|8||1|0|||il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+62|Agenzia delle Dogane di Savona|1|10||1|0|||l’autorizzazione del direttore della Circoscrizione Doganale ai sensi e per gli effetti dell’articolo 19 del decreto legislativo 8 novembre 1990, n. 374 recepita agli atti del Comune il @DATA_PER prot. n° @PROT_RIL del @DATA_RIL;
+84|Commissione per il Paesaggio|1|4||1|0||| il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+34|Servizio Ambiente|1|34||1|0|||il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+13|RESPONSABILE DISTRETTO SOCIO SANITARIO|1|37||1|0|||il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+79|Soprintendenza per i Beni Archeologici della Liguria|1|79||1|0|||il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+67|Provincia di Savona - Settore viabilità|1|67||1|0|||il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+32|Soprintendenza per i Beni Archeologici della Liguria|1|32||1|0|||il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+72|Servizio Legale / Espropri|1|72||1|0|||il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+80|Regione Liguria - Dipartimento Pianificazione Territoriale|1|80||1|0|||il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+8|Commissione Edilizia Integrata|1|4||1|0|||il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+1|Settore Qualità e Dotazioni Urbane|1|1||1|0|||il parere @PARERE espresso dal Settore Qualità e Dotazioni Urbane in data @DATA_RIL @PRESCRIZIONI
+81|Consiglio Comunale|1|81||1|0|||il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+45|Settore Risorse Tributarie e Strumentali - Servizio Patrimonio|1|45||1|0|||il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+73|Provincia di Savona-Settore Difesa del Suolo-Servizio Autorizzazioni|1|73||1|0|||il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+42|Settore Difesa del Suolo e Tutela Ambientale - Servizio Piani di Bacino|1|42||1|0|||il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+78|Settore Qualità e Dotazioni Urbane e Polizia Municipale|1|78||1|0|||Il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+75|Regione Liguria - Dipartimento Ambiente- Settore Valutazione di impatto ambientale|1|75||1|0|||il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+3|Commissione Edilizia Integrata|1|18||1|0|||il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+9|GIUNTA COMUNALE|1|19||1|0|||il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+11|CAPITANERIA DI PORTO|1|21||1|0|||il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+51|Settore Qualità e Dotazioni Urbane - Servizio Fognature|1|51||1|0|||il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+41|Provincia di Savona - Sett. Difesa del Suolo eTutela Ambientale|1|6||1|0|||l'autorizzazione della Provincia di Savona - Servizio Vincolo Idrogeologico n° @NUMERO del @DATA_RIL per movimento terreno in zona vincolata idrogeologicamente, recepita agli atti del Comune il @DATA_PER prot. n° @PROT_RIL  del @DATA_RIL;
+83|Settore Servizi alla Persona - Attività culturali, turistiche ed educative|1|83||1|0|||Il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+74|Provincia di Savona-Servizio Procedimenti concertativi|1|74||1|0|||il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+33|A.R.P.A.L.|1|33||1|0|||il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+52|Regione Liguria Dipartimento pianificazione territoriale paesistica ambientale|1|7||1|0|||l’autorizzazione rilasciata dalla Regione Liguria - Dipartimento Pianificazione Territoriale ed Urbanistica - Ufficio tutela Paesistica ai sensi del D.Lgs.42/04 con nota n.@NUMERO del @DATA_RIL , recepita agli atti al prot. n. @PROT_RIL in data @DATA_PER e successiva nota della Soprintendenza per i Beni Architettonici e per il Paesaggio della Liguria nota n.* del *, recepita agli atti al prot. n. * in data *, con la quale si dichiara l’inesistenza di elementi tali da richiedere la procedura di annullamento
+69|Provincia di Savona|1|69||1|0|||il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+86|Servizio Tributi|1|86||1|0||| il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+30|A.N.A.S.|1|30||1|0|||il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+63|Settore Affari Istituzionali - Servizio Patrimonio|1|63||1|0|||il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+26|POLIZIA AMMINISTRATIVA|1|26||1|0|||il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+53|Settore Servizi Demografici - Commercio  Ufficio Concessioni Cimiteriali|1|53||1|0|||il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+2|Commissione Edilizia|1|2||1|0|||il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+5|CORPO FORESTALE DELLO STATO|1|20||1|0|||il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+60|Autorità Portuale di Savona|1|11||1|0|||l’autorizzazione dell’Autorità Portuale ai sensi e per gli effetti dell’articolo 55 del codice della navigazione recepita agli atti del Comune il @DATA_PER  prot. n° @PROT_RIL del @DATA_RIL;
+65|FERROVIE DELLO STATO S.p.A.|1|65||1|0|||l’autorizzazione, ai sensi del D.P.R. dell’11/07/80 n. 753, rilasciata dalle Ferrovie dello Stato S.p.A. in data @DATA_RIL e pervenuta agli atti in data @DATA_PER al protocollo n° @PROT_RIL del @DATA_RIL;
+31|Regione Liguria - Ispettorato rip.le delle foreste|1|31||1|0|||il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+39|A.S.L. n° 2 del Savonese - U.O. Igiene e Sanità Pubblica|1|5||1|0|||il parere @PARERE espresso dall’Azienda Sanitaria Locale n. 2 del  Savonese - Ufficio Igiene Pubblica con nota n° @NUMERO in data @DATA_RIL recepito agli atti al prot. n. @PROT_RIL  in data @DATA_RIL @PRESCRIZIONI;
+66|PROVINCIA DI SAVONA - Servizio Idrogeologico e Derivazioni d'acqua|1|66||1|0|||il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+82|Genio Civile|1|82||1|0|||Il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+37|Soprintendenza per i Beni Architettonici e per il Paesaggio della Liguria|1|13||1|0|||l’autorizzazione rilasciata dalla Soprintendenza per i Beni Architettonici e per il Paesaggio della Liguria ai sensi del D.Lgs.42/04 con nota n.@NUMERO del @DATA_RIL , recepita agli atti al prot. n. @PROT_RIL in data @DATA_PER;
+77|Società Autostrade|1|77||1|0|||il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+85|Settore Politiche culturali, turistiche, del commercio ed Attività educative - Servizio Commercio e Mercati|1|85||1|0|||il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+17|Comunità Montana|1|17||1|0|||il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+18|Polizia Municipale|1|3||1|0|||il parere @PARERE espresso dal Settore di Polizia Municipale in data @DATA_RIL @PRESCRIZIONI
+68|Commissione Edilizia Integrata|1|68||1|0|||Commissione Edilizia Integrata
+71|Commissione Edilizia integrata 2° parere|1|71||1|0|||il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+19|Comando Provinciale dei Vigili del Fuoco di Savona|1|9||1|0|||il parere preventivo rilasciato dal Comando Provinciale dei Vigili del Fuoco di Savona con nota n.@NUMERO del @DATA_RIL, recepito agli atti al prot. n. @PROT_RIL in data @DATA_PER;
+57|Settore Qualità e Dotazioni Urbane - Servizio Strade|1|57||1|0|||il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI
+76|Regione Liguria - Dipartimento Ambiente- Settore Ecosistema Costiero|1|76||1|0|||il parere @PARERE espresso dal @NOME_ENTE in data @DATA_RIL @PRESCRIZIONI

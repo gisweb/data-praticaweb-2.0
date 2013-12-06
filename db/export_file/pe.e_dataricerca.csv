@@ -1,0 +1,10 @@
+ordine|campo|titolo
+1|avvioproc.data_presentazione|Data di presentazione
+2|avvioproc.data_prot|Data protocollo generale
+3|avvioproc.data_prot_int|Data protocollo interno
+4|avvioproc.data_resp|Data assegnazione responsabile
+5|avvioproc.data_com_resp|Data comunicazione responsabile
+6|titolo.data_rilascio|Data rilascio titolo
+7|titolo.data_ritiro|Data ritiro titolo
+8|titolo.data_notifica|Data notifica titolo
+0|0|Seleziona ----->

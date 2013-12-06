@@ -1,0 +1,108 @@
+
+23-11-13	09:32:09
+	stp/stampe.tab
+select nome,descrizione,proprietario,id,pratica,chk from stp.e_modelli where form='pe.avvioproc' AND (coalesce(proprietario,'pubblico')='pubblico' or proprietario='mamo') AND (coalesce(tipo_pratica,'0')='0' or '110'=ANY(string_to_array(coalesce(tipo_pratica,''),',')) or '11000'=ANY(string_to_array(coalesce(tipo_pratica,''),','))) AND NOT id IN (SELECT DISTINCT modello FROM stp.stampe A INNER JOIN stp.e_modelli B ON (B.id=A.modello) WHERE A.pratica=20802 and multiple=0)  ORDER BY nome
+23-11-13	09:32:11
+	pe/iter.tab
+select pubblico,data,nota_edit,id,pratica,chk from pe.iter where pratica = 20802 
+23-11-13	09:32:27
+	pe/iter.tab
+select pubblico,utente,data,nota_edit,id,pratica,chk from pe.iter where pratica=20802 
+23-11-13	09:32:30
+	pe/iter.tab
+select pubblico,utente,data,nota_edit,id,pratica,chk from pe.iter where pratica=20802 
+23-11-13	09:33:02
+	pe/iter.tab
+select pubblico,data,nota_edit,id,pratica,chk from pe.iter where pratica = 20802 
+23-11-13	09:33:03
+	pe/avvio_procedimento.tab
+select numero,data_presentazione,tipo,intervento,protocollo,data_prot,rif_pratica,riferimento,rif_aut_amb,aut_amb,resp_proc,data_resp,resp_it,data_resp_it,com_resp,data_com_resp,oggetto,note,id,pratica,chk from pe.avvioproc where pratica=20802 
+23-11-13	09:33:05
+	stp/stampe.tab
+select nome,descrizione,proprietario,id,pratica,chk from stp.e_modelli where form='pe.avvioproc' AND (coalesce(proprietario,'pubblico')='pubblico' or proprietario='mamo') AND (coalesce(tipo_pratica,'0')='0' or '110'=ANY(string_to_array(coalesce(tipo_pratica,''),',')) or '11000'=ANY(string_to_array(coalesce(tipo_pratica,''),','))) AND NOT id IN (SELECT DISTINCT modello FROM stp.stampe A INNER JOIN stp.e_modelli B ON (B.id=A.modello) WHERE A.pratica=20802 and multiple=0)  ORDER BY nome
+23-11-13	09:33:08
+	pe/iter.tab
+select pubblico,data,nota_edit,id,pratica,chk from pe.iter where pratica = 20802 
+5-12-13	13:40:00
+	select id,opzione from pe.elenco_vie
+5-12-13	13:40:00
+	select id,opzione from pe.elenco_ruoli
+5-12-13	13:40:00
+	select id,opzione from pe.elenco_tipopratica_all
+5-12-13	13:40:01
+	select id,opzione from pe.elenco_dataricerca
+5-12-13	13:40:01
+	select id,opzione from pe.elenco_ricerca_responsabili
+5-12-13	13:40:01
+	select id,opzione from admin.elenco_utenti
+5-12-13	13:40:01
+	select id,opzione from admin.elenco_utenti
+5-12-13	13:40:07
+	pe/iter_pratica.tab
+select ,id,pratica,chk from  where pratica = 20802 
+5-12-13	13:40:41
+	pe/scadenze.tab
+select ,id,pratica,chk from  where pratica=20802 
+5-12-13	13:40:43
+	pe/annotazioni.tab
+select ,id,pratica,chk from  where pratica=20802 
+5-12-13	13:40:46
+	pe/iter_pratica.tab
+select ,id,pratica,chk from  where pratica = 20802 
+5-12-13	13:40:47
+	vigi/sanzioni.tab
+select data_avvio_proc,sanzione,importo,data_scadenza,quietanza,data_pagamento,data_iscrizione_ruolo,data_atti,note,id,pratica,chk from vigi.sanzioni where pratica=20802 
+5-12-13	13:40:47
+	vigi/ord_sospensione.tab
+select protocollo,data_ordinanza,registro,data_sospensione,data_multi,data_ins_fascicolo,data_atti,note,id,pratica,chk from vigi.ordinanze where pratica=20802 and tipo=2; 
+5-12-13	13:40:47
+	vigi/ord_demolizione.tab
+select data_avvio_proc,protocollo,data_ordinanza,registro,data_sospensione,data_multi,data_ins_fascicolo,data_atti,note,id,pratica,chk from vigi.ordinanze where pratica=20802 and tipo=3; 
+5-12-13	13:40:49
+	vigi/esposti.tab
+select origine,data_presentazione,oggetto,data_determinazione,termine_verifica,note,id,pratica,chk from vigi.esposti where pratica=20802 
+5-12-13	13:40:50
+	vigi/sanzioni.tab
+select data_avvio_proc,sanzione,importo,data_scadenza,quietanza,data_pagamento,data_iscrizione_ruolo,data_atti,note,id,pratica,chk from vigi.sanzioni where pratica=20802 
+5-12-13	13:40:50
+	vigi/ord_sospensione.tab
+select protocollo,data_ordinanza,registro,data_sospensione,data_multi,data_ins_fascicolo,data_atti,note,id,pratica,chk from vigi.ordinanze where pratica=20802 and tipo=2; 
+5-12-13	13:40:50
+	vigi/ord_demolizione.tab
+select data_avvio_proc,protocollo,data_ordinanza,registro,data_sospensione,data_multi,data_ins_fascicolo,data_atti,note,id,pratica,chk from vigi.ordinanze where pratica=20802 and tipo=3; 
+5-12-13	13:40:51
+	vigi/sopralluoghi.tab
+select motivo_v,data,note,id,pratica,chk from vigi.sopralluoghi where pratica=20802 order by data 
+5-12-13	13:40:53
+	pe/abitabi.tab
+select numero_rich,data_rich,prot_rich,numero_doc,data_doc,prot_rich,data_ril,note,id,pratica,chk from pe.abitabi where pratica=20802 
+5-12-13	13:40:57
+	oneri/totali.tab
+select calcolo,totale,quietanza,data,indennita,q_indennita,data_indennita,oblazione,q_oblazione,data_oblazione,id,pratica,chk from oneri.vista_totali where pratica=20802 
+5-12-13	13:40:57
+	oneri/monetizzazione.tab
+select label,qta,importo,totale,id,pratica,chk from oneri.vista_monetizzazione where pratica=20802 
+5-12-13	13:41:20
+	oneri/totali.tab
+select calcolo,totale,quietanza,data,indennita,q_indennita,data_indennita,oblazione,q_oblazione,data_oblazione,id,pratica,chk from oneri.vista_totali where pratica=20802 
+5-12-13	13:41:20
+	oneri/importi.tab
+select label,importo,scomputo,totale,id,pratica,chk from oneri.vista_importi where pratica=20802 
+5-12-13	13:41:20
+	oneri/monetizzazione.tab
+select label,qta,importo,totale,id,pratica,chk from oneri.vista_monetizzazione where pratica=20802 
+5-12-13	13:41:26
+	oneri/rate.tab
+select rata,totale,data_scadenza,data_avviso,data_pagata,versato,quietanza,id,pratica,chk from oneri.rate where pratica=20802  ORDER BY rata
+5-12-13	13:41:30
+	oneri/fidi.tab
+select tipo_fido,importo,numero,data,intestatario,indirizzo_int,citta_int,cap_int,istituto,indirizzo_ist,citta_ist,cap_ist,note,id,pratica,chk from oneri.fidi where pratica=20802 
+5-12-13	13:41:31
+	oneri/rate.tab
+select rata,totale,data_scadenza,data_avviso,data_pagata,versato,quietanza,id,pratica,chk from oneri.rate where pratica=20802  ORDER BY rata
+5-12-13	13:41:33
+	oneri/fidi.tab
+select tipo_fido,importo,numero,data,intestatario,indirizzo_int,citta_int,cap_int,istituto,indirizzo_ist,citta_ist,cap_ist,note,id,pratica,chk from oneri.fidi where pratica=20802 
+5-12-13	13:42:05
+	pe/scadenze.tab
+select ,id,pratica,chk from  where pratica=20802 

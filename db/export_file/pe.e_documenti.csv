@@ -1,0 +1,77 @@
+id|iter|nome|descrizione|tipo_pratica|inizio|default_ins
+121|10|Stralcio planimetrico 1:5000||||1
+123|10|Documentazione catastale||||1
+124|10|Tavole grafiche 1:100||||1
+125|10|Doc. impianti legge 46/90||||1
+129|10|Stralcio CTR scala 1:5000||||1
+130|10|Stralcio PRG/PUC||||1
+132|10|Planimetria progetto 1:200||||1
+133|10|Sovraposizione 1:200||||1
+134|10|Sezioni terreno 1:200||||1
+135|10|Piante sezioni 1:100||||1
+140|10|Planimetrie catastali 1:200||||1
+144|10|Risparmio energetico||||1
+146|10|Mappa catastale 1:2000||||1
+150|10|Parere DM 16/02/82 VV.FF.||||1
+151|10|Elenco documenti||||1
+152|10|Versamento tesoreria||||1
+153|10|Stralcio CTR 1:5000|"
+ stralcio planimetrico della Carta Tecnica Regionale in scala 1:5000, con inserimento sullo stesso dell’opera  in progetto;"|||1
+156|10|Doc. fotografica||||1
+161|10|Rilievo area 1:200||||1
+162|10|Planimetria 1:200||||1
+170|10|Schema fognatura||||1
+171|10|Planimetria catastale 1:200||||1
+172|10|Rilievo stato di fatto 1:100||||1
+173|10|Particolari archit. 1.20||||1
+174|10|RELAZIONE TECNICA|·relazione tecnico illustrativa delle opere in progetto con esplicito riferimento alla loro conformità agli strumenti urbanistici comunali e sovracomunali nonché ai regolamenti ed alle norme vigenti, comprese quelle di sicurezza ed igienico-sanitarie, con indicazione dei vincoli gravanti sulla zona interessata e  le modalità di approvvigionamento di acqua potabile, di smaltimento delle acque bianche e nere a norma di legge e di allaccio ai pubblici servizi; nella relazione devono essere specificati caratteristiche tipologiche e strutturali, materiali, cromatismi;|||1
+180|10|Doc. titolo richiedente||||1
+182|10|Documentazione fotografica||||1
+185|10|Planimetria di progetto||||1
+186|10|Sovraposizione quotata||||1
+187|10|Sezioni del terreno 1:200||||1
+188|10|Piante piani e copertura 1:100||||1
+189|10|Viste assonometriche||||1
+190|10|Elaborati urbanizzazioni||||1
+191|10|Doc. realizzazione strade||||1
+192|10|Computo dei volumi||||1
+193|10|Planimetria asservimenti||||1
+194|10|Computo sup.rif. LR 25/95||||1
+200|10|Standard urbanistici||||1
+201|10|Barriere architettoniche|Descrizione lunga di barrierre archi.....|||1
+202|10|Indagine geologica||||1
+205|10|Compatibilità amb. legge 22/94||||1
+208|10|Modello ISTAT||||1
+210|10|Rilievo edificio 1:100||||1
+211|10|Demolizioni/ricostruzioni||||1
+223|20|Atti vincolo||||1
+224|40|Collaudo opere C.A.||||1
+225|30|Certificato VV.FF||||1
+226|30|Dichiarazione Dir. lavori||||1
+227|30|Iscrizione al catasto||||1
+234|50|Punti Fissi||||1
+235|50|Legge 10/91||||1
+236|50|Istat||||1
+237|50|CTR||||1
+238|60|1 rata oblazione||||1
+239|60|2 rata oblazione||||1
+240|60|3 rata oblazione||||1
+241|60|1 rata oneri accessori||||1
+242|60|2 rata oneri accessori||||1
+243|60|3 rata oneri accessori||||1
+244|60|10% oblazione Regione Liguria||||1
+245|60|Documentazione fotografica||||1
+246|60|Dichiarazione ai sensi dell'art. 47 D.P.R. 445/00||||1
+247|60|Dichiarazione antimafia||||1
+248|60|Elaborati grafici||||1
+249|60|Relazione tecnica||||1
+250|60|Relazione geologica||||1
+251|60|Conteggio volumi e superfici||||1
+252|60|Cartografia||||1
+253|60|Cartografia piani di bacino||||1
+254|60|Accatastamento||||1
+255|60|Denuncia I.C.I.||||1
+256|60|Denuncia T.A.R.S.U.||||1
+257|60|Certificazione L.n°46/90||||1
+258|60|Dichiarazione scarico fognario||||1
+259|60|Richiesto parere per vincolo||||1

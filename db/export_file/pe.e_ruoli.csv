@@ -1,0 +1,13 @@
+ordine|titolo|ruolo
+1|Richiedente|richiedente
+2|Concessionario|concessionario
+3|Proprietario|proprietario
+4|Progettista|progettista
+5|Direttore|direttore
+6|Ditta Esecutrice|esecutore
+7|Responsabile alla sicurezza|sicurezza
+8|Tecnico collaudatore|collaudatore
+9|Geologo|geologo
+10|Collaudatore Cementi Armati|collaudatore_ca
+11|Progettista Cementi Armati|progettista_ca
+12|Economina Diretta|economia_diretta

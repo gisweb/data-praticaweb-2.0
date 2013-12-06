@@ -1,0 +1,11 @@
+id|codice|nome|testo|ordine
+1|sil|Scadenza Inizio Lavori||0
+2|sfl|Scadenza Fine Lavori||0
+3|il|Inizio Lavori||0
+4|fl|Fine Lavori||0
+5|rdp|Scadenza Comunicazione Responsabile del Procedimento||0
+6|rt|Scadenza Rilascio Titolo||0
+7|integr|Scadenza Comunicazione Integrazione||0
+8|istr|Scadenza Istruttoria||0
+9|sas|Scadenza Silenzio Assenso Soprintendenza||0
+10|sae|Scadenza Silenzio Assenso Enti||0

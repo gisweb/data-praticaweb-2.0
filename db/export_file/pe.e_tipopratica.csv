@@ -1,0 +1,39 @@
+id|nome|ordine|menu_file|menu_default|scadenza_il|scadenza_fl|scadenza_rilasciotitolo|scadenza_ril_tit|scadenza_com_rdp|scadenza_com_integr|scadenza_istr|tipologia|enabled
+10100|Variante alla Denuncia di Inizio Attività|0|pratica|10,20,40,50,70,92,100,110,170,210,295,300|""|""||""|15 days|30 days|""|dia|1
+10000|Denuncia di Inizio Attività|0|pratica|10,20,40,50,70,92,100,110,170,210,295,300|""|""||""|15 days|30 days|""|dia|1
+1000|Dia (Non Onerosa)|0|pratica|10,20,40,50,70,92,100,110,170,210,295,300||||||||dia|0
+100|Voltura|0|pratica|10,20|""|""||""|""|""|""|""|0
+1010|Condono|0|pratica||||||||||0
+1100|DIA (Onerosa)|0|pratica|10,20,40,50,70,92,100,110,170,210,295,300||||||||dia|0
+9002|Comunicazione art.21 LR 16/08|0|pratica||||||||||0
+9003|Comunicazione art.22 LR 16/08 [opere già  eseguite]|0|pratica||||||||||0
+9004|Comunicazione Dlgs. 115/08 [fonti rinnovabili]|0|pratica||||||||||0
+9005|Comunicazione art. 48|0|pratica||||||||||0
+9006|Parere/Deroga|0|pratica||||||||||0
+12000|Voltura|0|pratica|10,20|""|""||""|""|""|""|""|0
+20000|Controllo Edilizio|0|pratica|10,20|""|""||""|""|""|""|""|0
+300|Opere interne|0|pratica|10,20,40,50,70,92,100,110,170,205,210,295,300|""|""||""|""|""|""|""|1
+2100|Concessione|0|pratica|10,20,40,50,70,80,90,91,92,100,110,160,170,210,250,260,270,295,300|""|""||90 days|10 days|30 days|60 days|pratica|1
+10200|Segnalazione Certificata di Inizio Attività|0|pratica|10,20,40,50,70,92,100,110,170,210,295,300|""|""||""|""|""|""|scia|1
+3100|Variante alla Concessione|0|pratica|10,20,40,50,70,80,90,91,92,100,110,160,170,210,250,260,270,295,300|""|""||90 days|10 days|30 days|60 days|pratica|1
+6100|Variante alla Concessione in Sanatoria|0|pratica|10,20,40,50,70,80,90,91,92,100,110,160,170,210,250,260,270,295,300|""|""||90 days|10 days|30 days|60 days|pratica|1
+4100|Rinnovo Concessione|0|pratica|10,20,40,50,70,80,90,91,92,100,110,160,170,210,250,260,270,295,300||||||||pratica|1
+11100|Variante al Permesso di Costruire|0|pratica|10,20,40,50,70,80,90,91,92,100,110,160,170,210,250,260,270,295,300|""|""||90 days|10 days|30 days|60 days|pratica|1
+2000|Autorizzazione|0|pratica|10,20,40,50,70,80,90,91,92,100,110,160,170,210,250,260,270,295,300|""|""||90 days|10 days|30 days|60 days|pratica|1
+11220|Permesso di Costruire in Sanatoria|0|pratica|10,20,40,50,70,80,90,91,92,100,110,160,170,210,250,260,270,295,300|""|""||90 days|10 days|30 days|60 days|pratica|1
+11300|Variante al Permesso di Costruire in Sanatoria|0|pratica|10,20,40,50,70,80,90,91,92,100,110,160,170,210,250,260,270,295,300|""|""||90 days|10 days|30 days|60 days|pratica|1
+11400|Proroga al Permesso di Costruire|0|pratica|10,20,40,50,70,80,90,91,92,100,110,160,170,210,250,260,270,295,300|""|""||90 days|10 days|30 days|60 days|pratica|1
+11000|Permesso di Costruire|0|pratica|10,20,40,50,70,80,90,91,92,100,110,160,170,210,250,260,270,295,300|""|""||90 days|10 days|30 days|60 days|pratica|1
+3000|Variante alla Autorizzazione|0|pratica|10,20,40,50,70,80,90,91,92,100,110,160,170,210,250,260,270,295,300|""|""||90 days|10 days|30 days|60 days|pratica|1
+6000|Variante alla Autorizzazione in Sanatoria|0|pratica|10,20,40,50,70,80,90,91,92,100,110,160,170,210,250,260,270,295,300|""|""||90 days|10 days|30 days|60 days|pratica|1
+11110|Autorizzazione paesistico ambientale|0|pratica|10,20,40,50,70,80,90,91,92,100,110,160,170,210,250,260,270,295,300|||||15 days|30 days||pratica|1
+11200|Rinnovo Permesso di costruire|0|pratica|10,20,40,50,70,80,90,91,92,100,110,160,170,210,250,260,270,295,300||||||||pratica|1
+4000|Rinnovo Autorizzazione|0|pratica|10,20,40,50,70,80,90,91,92,100,110,160,170,210,250,260,270,295,300||||||||pratica|1
+11001|Permesso di Costruire - art. 6 L.R.49/09|0|pratica|10,20,40,50,70,80,90,91,92,100,110,160,170,210,250,260,270,295,300||||||||pratica|1
+11002|Permesso di Costruire - art. 7 L.R.49/09|0|pratica|10,20,40,50,70,80,90,91,92,100,110,160,170,210,250,260,270,295,300||||||||pratica|1
+10300|Denuncia di Inizio Attività - art. 3 L.R.49/09|0|pratica|10,20,40,50,70,92,100,110,170,210,295,300||||||||dia|1
+200|Comunicazione|0|pratica|10,20||||||||comunicazione|0
+5000|Autorizzazione in Sanatoria|0|pratica|10,20,40,50,70,80,90,91,92,100,110,160,170,210,250,260,270,295,300|""|""||90 days|10 days|30 days|60 days|pratica|0
+5100|Concessione in Sanatoria|0|pratica|10,20,40,50,70,80,90,91,92,100,110,160,170,210,250,260,270,295,300|""|""||90 days|10 days|30 days|60 days|pratica|0
+9000|Comunicazione|0|pratica|10,20||||||||comunicazione|0
+9001|Comunicazione impianti teleradiocomunicazione|0|pratica|10,20|||||||||0
