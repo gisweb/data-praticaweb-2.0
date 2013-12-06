@@ -1,9 +1,0 @@
-
-30-11-13	05:33:36
-	update oneri.calcolati set cc=2637.6,b1=3560.648,b2=1533.8176 where id=1869;
-30-11-13	05:33:56
-	update oneri.calcolati set cc=0,b1=1739.1,b2=0 where id=1870;
-30-11-13	05:35:20
-	UPDATE pe.pareri SET data_ril='30-11-2013'::date WHERE id=
-30-11-13	05:58:39
-	UPDATE pe.pareri SET data_ril='30-11-2013'::date WHERE id=
