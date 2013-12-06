@@ -51,6 +51,8 @@ data[]="Iscrizione CC.I.AA.;ccia;;text|Prov;cciaprov;;text"
 data[]="Cassa edile;cedile;20;text|Prov;cedileprov;;text"
 data[]="Note;note;;text"
 data[]="Invio comunicazioni;comunicazioni;;yesno"
+button="Chiudi;azione;#pe.elenco_soggetti;submit"
+
 [list]
 
 [standard]
