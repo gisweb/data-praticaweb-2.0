@@ -51,7 +51,7 @@ define('SELF',$_SERVER["PHP_SELF"]);
 define('NEW_VINCOLI',1);
 
 define('THE_GEOM','bordo_gb');
-define('MAPPA_PRATICHE','sanremo_riservata');
+define('MAPPA_PRATICHE','savona_osm');
 define('LAYER_MAPPALI','particelle');
 define('OBJ_LAYER','2183:particelle');
 define('MAPSETID','savona_osm');
