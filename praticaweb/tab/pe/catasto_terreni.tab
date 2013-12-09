@@ -13,6 +13,7 @@ data[]="Foglio;foglio;10##sezione;autosuggest"
 data[]="Mappale;mappale;10##foglio#sezione;autosuggest"
 data[]="Sub.;sub;10;text"
 data[]="Note;note;40x4;textarea"
+data[]="Sez. Censimento;sez_censimento;16;text"
 button="Chiudi;azione;#goToView;button|Aggiungi;azione;;submit"
 [edit]
 table="pe.cterreni"
@@ -23,6 +24,7 @@ data[]="Canc.;id;3%;delete"
 data[]="Foglio;foglio;15%;text"
 data[]="Mappale;mappale;15%;text"
 data[]="Subalterno;sub;15%;text"
+data[]="Sez. Censimento;sez_censimento;16;text"
 data[]="Note;note;;text"
 
 [view]
@@ -34,6 +36,7 @@ data[]="Mappa;mapkey;7%;zoom_gc"
 data[]="Foglio;foglio;30%;text"
 data[]="Mappale;mappale;30%;text"
 data[]="Subalterno;sub;30%;text"
+data[]="Sez. Censimento;sez_censimento;16;text"
 [list]
 
 [standard]

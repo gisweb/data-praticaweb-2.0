@@ -12,7 +12,9 @@ campi_obbligatori="sezione;foglio;mappale"
 data[]="Foglio;foglio;5;text"
 data[]="Mappale;mappale;5;text"
 data[]="Sub.;sub;10;text"
+data[]="Sez. Censimento;sez_censimento;16;text"
 data[]="Note;note;40x4;textarea"
+
 button="Chiudi;azione;#goToView;button|Aggiungi;azione;;submit"
 [edit]
 table="pe.curbano"
@@ -23,6 +25,7 @@ data[]="Canc.;id;3%;delete"
 data[]="Foglio;foglio;15%;text"
 data[]="Mappale;mappale;15%;text"
 data[]="Subalterno;sub;15%;text"
+data[]="Sez. Censimento;sez_censimento;16;text"
 data[]="Note;note;;text"
 
 [view]
@@ -35,7 +38,7 @@ data[]=";id;7%;idriga"
 data[]="Foglio;foglio;30%;text"
 data[]="Mappale;mappale;30%;text"
 data[]="Subalterno;sub;30%;text"
-
+data[]="Sez. Censimento;sez_censimento;16;text"
 [list]
 
 [standard]

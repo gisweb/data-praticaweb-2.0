@@ -23,7 +23,7 @@ campi_obbligatori=""
 data[]="Tipo Pratica;tipo_pratica;30;text"
 data[]="Scadenza;scadenza;25;text"
 data[]="Tabella;tabella;25;text"
-button="Chiudi;azione;#goToView;submit"
+button="Chiudi;azione;#goToView#pe.e_scadenze#mode=list;submit"
 [list]
 table="pe.e_tipopratica_scadenze"
 chiave="id"
