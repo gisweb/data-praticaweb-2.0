@@ -151,28 +151,23 @@ class pratica extends generalPratica{
 		// se ho giÃƒÂ  il record esco
 		
 		if(!$res){
-			$sql="SELECT tipo FROM pe.avvioproc WHERE pratica=$this->pratica;";
+			$sql="SELECT tipologia FROM pe.avvioproc INNER JOIN pe.e_tipopratica ON(avvioproc.tipo=e_tipopratica.id) WHERE pratica=$this->pratica;";
 			$db->sql_query($sql);
-			$tipo=$db->sql_fetchfield('tipo');
+			$tipo=$db->sql_fetchfield('tipologia');
 			switch($tipo){
-				case "2000":
-				case "2050":
-                case "2070":
-				case "2100":
-				case "2150":
-				case "2170":
-                case "2180":
-                case "2190":
+				case "pratica":
 					$sql="insert into pe.lavori (pratica,scade_il,scade_fl,uidins,tmsins) values ($this->pratica,'$data'::date + INTERVAL '1 year', '$data'::date + INTERVAL '3 year',".$_SESSION["USER_ID"].",".time().");";
 		
 					$db->sql_query($sql);
 					//INSERIMENTO SCADENZE RATE ONERI URBANIZZAZIONE E CORRISPETTIVO MONETARIO
 					//$db->sql_query($sql);
 					break;
-				case "10000":
-				case "10100":
+				case "dia":
 					$sql="insert into pe.lavori (pratica,scade_il,scade_fl,uidins,tmsins) values ($this->pratica,('$data'::date + INTERVAL '1 year 30 day')::date, ('$data'::date + INTERVAL '3 year 30 day')::date,".$_SESSION["USER_ID"].",".time().");";
-					$db->sql_query($sql);
+					
+                                        break;
+                                case "scia":
+                                        $sql="insert into pe.lavori (pratica,scade_il,scade_fl,uidins,tmsins) values ($this->pratica,('$data'::date + INTERVAL '1 year')::date, ('$data'::date + INTERVAL '3 year')::date,".$_SESSION["USER_ID"].",".time().");";
 					//INSERIMENTO SCADENZE RATE ONERI URBANIZZAZIONE E CORRISPETTIVO MONETARIO
 					//$this->setDateRateCM($data);
 					//$this->setDateRateOC($data);
@@ -180,6 +175,7 @@ class pratica extends generalPratica{
 				default:
 					break;
 			}
+                        $db->sql_query($sql);
 			//INSERIMENTO SCADENZE DATE INIZIO E FINE LAVORI
 			
 			
