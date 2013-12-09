@@ -35,7 +35,7 @@ data[]="GG. Occupazione;gg_occ;2;text"
 
 [view]
 table="pe.indirizzi"
-chiave="id"
+chiave=""
 campi_ordinamento=""
 campi_obbligatori=""
 data[]="Mappa;id;7%;zoom_gc"
