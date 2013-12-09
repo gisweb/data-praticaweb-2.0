@@ -306,12 +306,12 @@ UNION
 )
 UNION
 (SELECT $this->pratica as pratica,4 as rata,totale/4,$this->userid,$t FROM oneri.vista_totali WHERE pratica=$this->pratica)
-);";
+;";
 		else
 			$sql="DELETE FROM oneri.rate WHERE pratica=$this->pratica and rata in (1,2,3,4);
-INSERT INTO oneri.rate(pratica,rata,totale,uidins,tmsins) (SELECT $this->pratica as pratica,4 as rata,totale,$this->userid,$t FROM oneri.vista_totali WHERE pratica=$this->pratica);";
+INSERT INTO oneri.rate(pratica,rata,totale,uidins,tmsins) (SELECT $this->pratica as pratica,5 as rata,totale,$this->userid,$t FROM oneri.vista_totali WHERE pratica=$this->pratica);";
         $db->sql_query($sql);
-		
+	
 		$menu=new Menu('pratica','pe');
 		$menu->add_menu($this->pratica,'120');
         $menu->add_menu($this->pratica,'130');
