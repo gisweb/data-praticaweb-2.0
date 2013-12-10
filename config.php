@@ -10,6 +10,7 @@ if (file_exists(DATA_DIR.'config.local.php')){
 }
 else{
 	define('DB_PORT','5432');
+}
 define('DB_NAME','gw_sanremo');
 define('DB_USER','postgres');
 define('DB_PWD','postgres');
