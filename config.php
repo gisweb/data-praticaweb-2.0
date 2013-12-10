@@ -4,7 +4,12 @@ define('NOME_COMUNE','Comune di Sanremo - Pratiche Edilizie');//nome completo de
 define('DEBUG', 1); // Debugging 0 off 1 on
 define('DB_DRIVER','pdo_pgsql');
 define('DB_HOST','127.0.0.1');
-define('DB_PORT','5434');
+if (file_exists(DATA_DIR.'config.local.php')){
+	/*LOCAL CONFIGURATION FOR TEST*/
+	include DATA_DIR.'config.local.php';
+}
+else{
+	define('DB_PORT','5432');
 define('DB_NAME','gw_sanremo');
 define('DB_USER','postgres');
 define('DB_PWD','postgres');
@@ -15,7 +20,7 @@ define('ALWAYS_EDITABLE',1);
 define('MENU',DATA_DIR."praticaweb/mnu/");//cartella contenente la  configurazione dei menu
 define('TAB',DATA_DIR."praticaweb/tab/");//cartella contenente la  configurazione dei forms via file tab
 define('TAB_ELENCO',DATA_DIR."praticaweb/tab_elenco/");//cartella con elenchi testuali
-define('LIB',DATA_DIR."praticaweb/lib/");//cartella contenente la  configurazione dei forms via file tab
+define('LIB',APPS_DIR."lib/");//cartella contenente la  configurazione dei forms via file tab
 
 define('MODELLI',DATA_DIR."praticaweb/modelli/");//cartella con i modelli di stampa 
 define('STAMPE',DATA_DIR."praticaweb/documenti/");//cartella con le stampe
