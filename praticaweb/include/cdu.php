@@ -24,15 +24,15 @@ for($i=0;$i<count($ris);$i++){
 	$mappali[$r["key"]]["mappale"]=$r["mappale"];
 	if(!is_array($mappali[$r["key"]]["piani"])) $mappali[$r["key"]]["piani"]=Array();
 	$r["perc_area"]=($r["perc_area"]==100)?(''):('in parte');
-	if(in_array($r["gruppo"],Array('1','2'))){
-		$mappali[$r["key"]]["piani"][]=Array(
-			"vincolo"=>$r["descrizione_vincolo"],
-			"tavola"=>$r["descrizione_tavola"],
-			"zona"=>$r["descrizione_zona"],
-			"sigla"=>$r["sigla"],
-			"percentuale"=>$r["perc_area"]
-		);
-	}
+	//if(in_array($r["gruppo"],Array('1','2'))){
+        $mappali[$r["key"]]["piani"][]=Array(
+                "vincolo"=>$r["descrizione_vincolo"],
+                "tavola"=>$r["descrizione_tavola"],
+                "zona"=>$r["descrizione_zona"],
+                "sigla"=>$r["sigla"],
+                "percentuale"=>$r["perc_area"]
+        );
+	//}
 	
 }
 $customData["mappali"]=array_values($mappali);	
