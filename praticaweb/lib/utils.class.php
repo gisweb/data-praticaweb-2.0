@@ -1,15 +1,7 @@
 <?php
+use Doctrine\Common\ClassLoader;
+require_once APPS_DIR.'plugins/Doctrine/Common/ClassLoader.php';
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- * Description of utils
- *
- * @author marco
- */
 class utils {
     const jsURL = "/js";
     const cssURL="/css";
@@ -37,10 +29,25 @@ class utils {
     static function resizeImages($prms=Array()) {
         
     }
-    static function getDb($params=Array()){
+    static function getPDODb($params=Array()){
         $dsn = sprintf('pgsql:dbname=%s;host=%s;port=%s',DB_NAME,DB_HOST,DB_PORT);
 		$conn = new PDO($dsn, DB_USER, DB_PWD);
         return $conn;
+    }
+    static function getDoctrineDB($params=Array()){
+        $classLoader = new ClassLoader('Doctrine', APPS_DIR.'plugins/');
+		$classLoader->register();
+		$config = new \Doctrine\DBAL\Configuration();
+		$connectionParams = array(
+			'dbname' => DB_NAME,
+			'user' => DB_USER,
+			'password' => DB_PWD,
+			'host' => DB_HOST,
+			'port' => DB_PORT,
+			'driver' => DB_DRIVER,
+		);
+		$conn = \Doctrine\DBAL\DriverManager::getConnection($connectionParams, $config);
+		return $conn;
     }
     static function writeJS(){
         foreach(self::$js as $js){
