@@ -1,19 +1,27 @@
-<?
+<?php
 define('NOME_COMUNE','Comune di Sanremo - Pratiche Edilizie');//nome completo del comune che compare nell'intestazione
 
 define('DEBUG', 1); // Debugging 0 off 1 on
 define('DB_DRIVER','pdo_pgsql');
 define('DB_HOST','127.0.0.1');
-define('DB_PORT','5432');
-define('DB_NAME','');
+if (file_exists(DATA_DIR.'config.local.php')){
+	/*LOCAL CONFIGURATION FOR TEST*/
+	include DATA_DIR.'config.local.php';
+}
+else{
+	define('DB_PORT','5432');
+}
+define('DB_NAME','gw_sanremo');
 define('DB_USER','postgres');
 define('DB_PWD','postgres');
 
+define('ALWAYS_VIEWABLE',1);
+define('ALWAYS_EDITABLE',1);
 
 define('MENU',DATA_DIR."praticaweb/mnu/");//cartella contenente la  configurazione dei menu
 define('TAB',DATA_DIR."praticaweb/tab/");//cartella contenente la  configurazione dei forms via file tab
 define('TAB_ELENCO',DATA_DIR."praticaweb/tab_elenco/");//cartella con elenchi testuali
-define('LIB',DATA_DIR."praticaweb/lib/");//cartella contenente la  configurazione dei forms via file tab
+define('LIB',APPS_DIR."lib/");//cartella contenente la  configurazione dei forms via file tab
 
 define('MODELLI',DATA_DIR."praticaweb/modelli/");//cartella con i modelli di stampa 
 define('STAMPE',DATA_DIR."praticaweb/documenti/");//cartella con le stampe
@@ -28,7 +36,7 @@ define('SMB_MODELLI','file://'.REPO_PATH.'/modelli-pe/');
 define('URL_ALLEGATI','allegati/');//url relativo dei file allegati con / finale
 
 define('LOCAL_DOCUMENT',0);     //DEFINISCE SE I DOCUMENTI VENGONO APERTI SU PERCORSO LOCALE O WEB
-//define('SMB_PATH','\\\\vmserver\\sanremo\\documenti\\');  // PERCORSO DI RETE DOVE APRIRE I DOCUMENTI
+define('SMB_PATH','\\\\vmserver\\sanremo\\documenti\\');  // PERCORSO DI RETE DOVE APRIRE I DOCUMENTI
 define('DOCUMENTI',DATA_DIR."/praticaweb/documenti");
 
 define('LOCAL_DB',DATA_DIR."praticaweb".DIRECTORY_SEPARATOR."db".DIRECTORY_SEPARATOR);				//SALVATAGGI LOCALI DEI FILE
@@ -63,6 +71,7 @@ $tmpDir=(in_array('/apps/includes',explode(':',$tmpDir)))?($tmpDir):($tmpDir.':/
 $incDir=(in_array('/apps/includes/utils',explode(':',$tmpDir)))?($tmpDir):($tmpDir.':/apps/includes/utils');
 ini_set('include_path',$incDir);
 //includo il file per il database in uso
-require_once (APPS_DIR."wrapdb/postgres.php");
+/*require_once (APPS_DIR."wrapdb/postgres.php");
 require_once (APPS_DIR."utils/debugutils.php");
+require_once (APPS_DIR."utils/miscellaneus.php");*/
 ?>

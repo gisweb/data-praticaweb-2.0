@@ -1,0 +1,86 @@
+{
+    "general":{
+        "table":"pe.avvioproc",
+        "viewable":[],
+        "editable":[],
+        "print_form":"",
+        "table_list":0
+    },
+    "view":{
+        "primary-key":["id"],
+        "campi_ordinamento":[],
+        "campi_obbligatori":[],
+        "rows":[
+            [
+                {
+                    "label":"Numero Pratica",
+                    "field":"numero",
+                    "fieldType":"text",
+                    "span":"4",
+                    "html5":{"title":"Numero di Pratica"}
+                },
+                {
+                    "label":"Data di Presentazione",
+                    "field":"data_presentazione",
+                    "fieldType":"text",
+                    "span":"4"   
+                }
+            ],
+            [
+                {
+                    "label":"Tipo di pratica",
+                    "field":"tipo",
+                    "fieldType":"select",
+                    "span":"4",
+                    "source":"pe.elenco_pratica_all",
+                    "source-key":"id",
+                    "source-label":"opzione",
+                    "source-order":"ordine",
+                    "html5":{"source":"pe.elenco_pratica_all"}
+                },
+                {
+                    "label":"Tipo di Intervento",
+                    "field":"intervento",
+                    "fieldType":"select",
+                    "span":"4",
+                    "source":"pe.elenco_tipointervento",
+                    "source-key":"id",
+                    "source-label":"opzione",
+                    "source-order":"ordine"
+                }
+            ],
+            [
+                {
+                    "label":"Protocollo Generale",
+                    "field":"protocollo",
+                    "fieldType":"text",
+                    "span":"4"
+                },
+                {
+                    "label":"Data di Protocollo",
+                    "field":"data_prot",
+                    "fieldType":"text",
+                    "span":"4"   
+                }
+            ],
+            [
+                {
+                    "label":"Oggetto",
+                    "field":"oggetto",
+                    "fieldType":"text",
+                    "span":"8"
+                }
+            ],          
+            [
+                {
+                    "label":"Note",
+                    "field":"note",
+                    "fieldType":"text",
+                    "span":"8"
+                }
+            ]
+        ]
+    },
+    "edit":{},
+    "new":{}
+}
