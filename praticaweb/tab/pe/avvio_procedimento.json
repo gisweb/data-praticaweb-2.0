@@ -6,10 +6,10 @@
         "print_form":"",
         "table_list":0
     },
-    "view":{
+    "standard":{
         "primary-key":["id"],
         "campi_ordinamento":[],
-        "campi_obbligatori":[],
+        "campi_obbligatori":["data_protocollo","oggetto","tipo"],
         "rows":[
             [
                 {
@@ -17,13 +17,15 @@
                     "field":"numero",
                     "fieldType":"text",
                     "span":"4",
+                    
                     "html5":{"title":"Numero di Pratica"}
                 },
                 {
                     "label":"Data di Presentazione",
                     "field":"data_presentazione",
-                    "fieldType":"text",
-                    "span":"4"   
+                    "fieldType":"date",
+                    "span":"4",
+                    "offset":"2"
                 }
             ],
             [
@@ -31,22 +33,23 @@
                     "label":"Tipo di pratica",
                     "field":"tipo",
                     "fieldType":"select",
-                    "span":"4",
-                    "source":"pe.elenco_pratica_all",
-                    "source-key":"id",
-                    "source-label":"opzione",
-                    "source-order":"ordine",
-                    "html5":{"source":"pe.elenco_pratica_all"}
-                },
+                    "span":"6",
+                    "source":"pe.elenco_tipopratica",
+                    "source_key":"id",
+                    "source_label":"opzione",
+                    "style":{"width":"400px"}
+                }
+            ],
+            [
                 {
                     "label":"Tipo di Intervento",
                     "field":"intervento",
                     "fieldType":"select",
-                    "span":"4",
+                    "span":"6",
                     "source":"pe.elenco_tipointervento",
-                    "source-key":"id",
-                    "source-label":"opzione",
-                    "source-order":"ordine"
+                    "source_key":"id",
+                    "source_label":"opzione",
+                    "style":{"width":"400px"}
                 }
             ],
             [
@@ -59,28 +62,31 @@
                 {
                     "label":"Data di Protocollo",
                     "field":"data_prot",
-                    "fieldType":"text",
-                    "span":"4"   
+                    "fieldType":"date",
+                    "span":"4",
+                    "offset":"2"
                 }
             ],
             [
                 {
                     "label":"Oggetto",
                     "field":"oggetto",
-                    "fieldType":"text",
-                    "span":"8"
+                    "fieldType":"textarea",
+                    "span":"10",
+                    "rows":"4",
+                    "style":{"width":"99%"}
                 }
             ],          
             [
                 {
                     "label":"Note",
                     "field":"note",
-                    "fieldType":"text",
-                    "span":"8"
+                    "fieldType":"textarea",
+                    "span":"10",
+                    "rows":"4",
+                    "style":{"width":"99%"}
                 }
             ]
         ]
-    },
-    "edit":{},
-    "new":{}
+    }
 }

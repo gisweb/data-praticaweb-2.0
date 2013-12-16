@@ -1,0 +1,2 @@
+pe/avvio_procedimento.json
+select * from pe.avvioproc where pratica=12569 
