@@ -37,7 +37,8 @@
                     "source":"pe.elenco_tipopratica",
                     "source_key":"id",
                     "source_label":"opzione",
-                    "style":{"width":"400px"}
+                    "style":{"width":"400px"},
+                    "html5":{"pratica":"@pratica@"}
                 }
             ],
             [
@@ -87,6 +88,24 @@
                     "style":{"width":"99%"}
                 }
             ]
+        ]
+    },
+    "edit":{
+        "title":"Pratica N° @numero@ - Modifica dati di avvio procedimento",
+        "buttons":[
+            {"id":"btn_cancel","label":"Annulla","value":"cancel","icon":"icon-circle-arrow-left"},
+            {"id":"btn_delete","label":"Elimina","value":"delete","icon":"icon-remove-sign"},
+            {"id":"btn_save","label":"Salva","value":"save","icon":"icon-ok-sign"}
+        ]
+    },
+    "view":{
+        "title":"Pratica N° @numero@ - Dati di avvio procedimento"
+    },
+    "new":{
+        "title":"Nuova Pratica",
+        "buttons":[
+            {"id":"btn_cancel","label":"Annulla","value":"cancel","icon":"icon-circle-arrow-left"},
+            {"id":"btn_save","label":"Salva","value":"save","icon":"icon-ok-sign"}
         ]
     }
 }
