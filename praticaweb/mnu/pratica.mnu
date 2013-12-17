@@ -20,14 +20,11 @@ ia,Istruttoria Amministrativa
 160,Rilascio Titolo,pe.titolo,ia
 lav,Lavori
 170,Esecuzione Lavori,pe.lavori,lav
-180,Sopralluoghi,pe.sopralluoghi,lav
+250,Sopralluoghi,pe.sopralluoghi,lav
+270,Sanzioni,pe.sanzioni,
 agi,Agibilità
 200,Collaudo,pe.collaudo,agi
 210,Agibilità,pe.abitabi,agi
-vigi,Vigilanza
-250,Sopralluoghi Vigilanza,vigi.sopralluoghi,vigi
-260,Esposti Vigilanza,vigi.esposti,vigi
-270,Provvedimenti Vigilanza,vigi.provvedimenti,vigi
 iter,Iter
 295,Scadenze,pe.scadenze,
 300,Annotazioni,pe.annotazioni,

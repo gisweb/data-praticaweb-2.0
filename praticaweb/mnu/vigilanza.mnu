@@ -5,14 +5,12 @@ prei,Istruttoria
 40,Elenco Allegati,pe.allegati,
 45,Integrazione Documenti,pe.integrazioni,
 70,Vincoli Presenti,pe.vincoli,
-80,Dati di Progetto,pe.progetto,
-92,Sospensioni,pe.sospensioni,
 vigi,Vigilanza
-250,Sopralluoghi Vigilanza,vigi.sopralluoghi
-260,Esposti Vigilanza,vigi.esposti,
-270,Provvedimenti Vigilanza,vigi.provvedimenti,
-,Titolo
-160,Rilascio Titolo,pe.titolo,
+260,Esposti Vigilanza,pe.esposti,
+250,Sopralluoghi Vigilanza,pe.sopralluoghi
+270,Sanzioni,pe.sanzioni,
+92,Sospensioni,pe.sospensioni,
+280,Ordinanze,pe.ordinanze
 iter,Iter
 295,Scadenze,pe.scadenze,
 300,Annotazioni,pe.annotazioni,
