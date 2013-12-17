@@ -2,7 +2,7 @@
 [general]
 table=""
 viewable=""
-editable=""
+editable="ivig"
 
 [edit]
 table="pe.sopralluoghi"

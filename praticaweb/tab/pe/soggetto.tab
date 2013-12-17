@@ -2,7 +2,7 @@
 [general]
 table=""
 viewable=""
-editable=""
+editable="ipre;itec;iamm"
 
 
 
@@ -15,8 +15,8 @@ data[]="Tit.;app;65xelenco_tit;select|Cognome;cognome;35;text|Nome;nome;25;text"
 data[]="Indirizzo e civico;indirizzo;74;text"
 data[]="Città;comune;40;autosuggest|Prov;prov;2;text|CAP;cap;5;text"
 data[]="Telefono;telefono;40;text"
-data[]="E-mail;email;40;text"
-data[]="PEC;pec;40;text"
+data[]="E-mail;email;80;text"
+data[]="PEC;pec;80;text"
 data[]="Città nascita;comunato;40;autosuggest|Prov;provnato;2;text"
 data[]="Data nascita;datanato;10;data;data-defaultDate=-40y#data-yearRange=c-60y:c+40y#|Sesso;sesso;40xelenco_sesso;select|C.F.;codfis;16;text|<< Calcola codice fiscale >>;comunato;213xcalcola_cf;button"
 data[]="Titolo soggetto;titolo;62;autosuggest"

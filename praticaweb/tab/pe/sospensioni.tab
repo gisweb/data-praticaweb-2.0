@@ -3,6 +3,7 @@
 table=""
 viewable=""
 editable=""
+;print_form="pe.sospensioni"
 print_form="pe.sospensioni"
 
 [edit]

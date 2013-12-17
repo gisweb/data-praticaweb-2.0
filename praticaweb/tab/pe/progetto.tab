@@ -2,7 +2,7 @@
 [general]
 table=""
 viewable=""
-editable=""
+editable="itec"
 
 [edit]
 table="pe.progetto"

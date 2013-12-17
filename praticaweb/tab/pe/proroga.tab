@@ -2,7 +2,7 @@
 [general]
 table=""
 viewable=""
-editable=""
+editable="iamm"
 
 [edit]
 table="pe.proroga"

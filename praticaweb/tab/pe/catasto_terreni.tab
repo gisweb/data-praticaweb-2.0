@@ -2,7 +2,7 @@
 [general]
 table=""
 viewable=""
-editable=""
+editable="ipre;itec"
 
 [new]
 table="pe.cterreni"

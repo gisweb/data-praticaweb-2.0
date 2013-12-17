@@ -1,10 +1,16 @@
 <?
-define('NOME_COMUNE','Comune di Sanremo - Pratiche Edilizie');//nome completo del comune che compare nell'intestazione
+define('NOME_COMUNE','Comune di ....... - Pratiche Edilizie');//nome completo del comune che compare nell'intestazione
 
 define('DEBUG', 1); // Debugging 0 off 1 on
 define('DB_DRIVER','pdo_pgsql');
 define('DB_HOST','127.0.0.1');
-define('DB_PORT','5432');
+if (file_exists(DATA_DIR.'config.local.php')){
+	/*LOCAL CONFIGURATION FOR TEST*/
+	include DATA_DIR.'config.local.php';
+}
+else{
+	define('DB_PORT','5432');
+}
 define('DB_NAME','');
 define('DB_USER','postgres');
 define('DB_PWD','postgres');
@@ -43,11 +49,9 @@ define('SELF',$_SERVER["PHP_SELF"]);
 define('NEW_VINCOLI',1);
 
 define('THE_GEOM','bordo_gb');
-define('MAPPA_PRATICHE','sanremo_riservata');
-define('LAYER_MAPPALI','particelle');
-define('OBJ_LAYER','2183:particelle');
-define('MAPSETID','sanremo_riservata');
-define('CDUMAPSETID','sanremo_cdu');
+
+define('MAPSETID','MAPPA DELLE PRATICHE');
+define('CDUMAPSETID','MAPPA DEL CDU');
 define('TEMPLATE','gisclient');
 define('GC_VERSION',2);
 define('QTID_PARTICELLE','8');

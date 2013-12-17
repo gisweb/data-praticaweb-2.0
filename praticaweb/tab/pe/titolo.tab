@@ -2,9 +2,9 @@
 [general]
 table=""
 viewable=""
-editable=""
-print_form="pe.titolo"
-
+editable="iamm"
+;print_form="pe.titolo"
+print_form="pe.avvioproc"
 
 [edit]
 table="pe.titolo"
