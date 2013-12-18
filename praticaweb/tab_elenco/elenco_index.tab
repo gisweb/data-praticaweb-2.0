@@ -3,6 +3,7 @@ pareri,dirigente,rdp,itec,iamm,cdu-4@Gestione pratiche
 pareri,dirigente,rdp,itec,iamm,cdu-4@NewWindow@'pe.ricerca.php?new=1','ricercaPraticaweb',0,0,'yes'@Apri pratica esistente@Modalit&agrave; di ricerca di una pratica archiviata.
 rdp,itec,iamm-4@NewWindow@'pe.recenti.php','ricercaPraticaweb',0,0,'yes'@Pratiche recenti@Elenco delle ultime 10 pratiche consultate
 rdp,itec,iamm-4@NewWindow@'pe.avvioproc.php?mode=new','Praticaweb',0,0,'yes'@Nuova Pratica Edilizia@Inserisce una nuova pratica.
+rdp,itec,iamm-4@NewWindow@'vigi.avvioproc.php?mode=new','Praticaweb',0,0,'yes'@Nuova Pratica di Controllo Edilizio@Inserisce una nuova pratica.
 rdp,itec,iamm-3@NewWindow@'pe.eliminapratica.php?ricerca=1','Praticaweb',0,0,'yes'@Elimina Pratica@Individua ed elimina la pratica scelta.
 -2@NewWindow@'admin.pwd.php?mode=edit','PraticawebUtenti',0,0,'yes'@Gestione PassWord Utenti@- Modifica password dell'utente.
 -3@Praticaweb Navigator per la cartografia

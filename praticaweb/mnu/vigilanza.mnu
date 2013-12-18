@@ -6,11 +6,12 @@ prei,Istruttoria
 45,Integrazione Documenti,pe.integrazioni,
 70,Vincoli Presenti,pe.vincoli,
 80,Dati di Progetto,pe.progetto,
-92,Sospensioni,pe.sospensioni,
 vigi,Vigilanza
-250,Sopralluoghi Vigilanza,vigi.sopralluoghi
 260,Esposti Vigilanza,vigi.esposti,
-270,Provvedimenti Vigilanza,vigi.provvedimenti,
+92,Sospensioni,pe.sospensioni,
+250,Sopralluoghi Vigilanza,vigi.sopralluoghi
+270,Sanzioni,pe.sanzioni,
+280,Demolizioni,vigi.demolizioni
 ,Titolo
 160,Rilascio Titolo,pe.titolo,
 iter,Iter
