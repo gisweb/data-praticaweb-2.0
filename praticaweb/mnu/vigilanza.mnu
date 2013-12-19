@@ -1,19 +1,17 @@
 prei,Istruttoria
-10,Avvio Procedimento,pe.avvioproc,
+10,Avvio Procedimento,vigi.avvioproc,
 20,Soggetti Interessati,pe.elenco_soggetti,
 50,Ubicazione Intervento,pe.ubicazione,
 40,Elenco Allegati,pe.allegati,
 45,Integrazione Documenti,pe.integrazioni,
 70,Vincoli Presenti,pe.vincoli,
-80,Dati di Progetto,pe.progetto,
 vigi,Vigilanza
-260,Esposti Vigilanza,vigi.esposti,
-92,Sospensioni,pe.sospensioni,
-250,Sopralluoghi Vigilanza,vigi.sopralluoghi
+260,Esposti Vigilanza,pe.esposti,
+92,Sospensioni Lavori,pe.sospensioni,
+250,Sopralluoghi Vigilanza,pe.sopralluoghi
 270,Sanzioni,pe.sanzioni,
-280,Demolizioni,vigi.demolizioni
-,Titolo
-160,Rilascio Titolo,pe.titolo,
+280,Demolizioni,pe.demolizioni
+
 iter,Iter
 295,Scadenze,pe.scadenze,
 300,Annotazioni,pe.annotazioni,
