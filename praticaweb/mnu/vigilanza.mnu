@@ -10,8 +10,7 @@ vigi,Vigilanza
 92,Sospensioni Lavori,pe.sospensioni,
 250,Sopralluoghi Vigilanza,pe.sopralluoghi
 270,Sanzioni,pe.sanzioni,
-280,Demolizioni,pe.demolizioni
-
+280,Ordinanze,pe.ordinanze
 iter,Iter
 295,Scadenze,pe.scadenze,
 300,Annotazioni,pe.annotazioni,

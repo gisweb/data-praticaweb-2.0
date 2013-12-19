@@ -76,5 +76,14 @@ class utils {
         // Return the string
         return $string;
     }
+    static function debug($file,$data,$mode='w+'){
+	$f=fopen(DEBUG_DIR.$file.".debug",$mode);
+	ob_start();
+	print_r($data);
+	$result=ob_get_contents();
+	ob_end_clean();
+	fwrite($f,$result."\n");
+	fclose($f);
+    }
 }
 ?>
