@@ -4,16 +4,25 @@ table=""
 viewable=""
 editable=""
 
+[new]
+
+[edit]
+
+[view]
+
+[list]
+
 [standard]
-table="####pe"
+table="#"
 chiave="id"
 campi_ordinamento=""
 campi_obbligatori=""
-data[]="Altro soggetto;soggetto;200xpe.elenco_ruoli;selectdb|;nominativo;36;text"
-data[]="Tipo di pratica;tipo;400xpe.elenco_tipopratica_all;selectdb"
-data[]="Data di;data;210xpe.elenco_dataricerca;selectdb|dal;data_dal;10;data|al;data_al;10;data"
-data[]="Oggetto (parte);oggetto;54;text"
-data[]="Resp. procedimento;resp_proc;280xpe.elenco_ricerca_responsabili;selectdb"
-data[]="Resp. Istr. Tecn.;resp_it;280xadmin.elenco_utenti;selectdb"
-data[]="Resp. Istr. Amm.;resp_ia;280xadmin.elenco_utenti;selectdb"
-data[]="Certificato Agibilit;abitabi;20;text"
+data[]="Pratica;pe.avvioproc.numero;25;search_text_equal"
+data[]="Protocollo;pe.avvioproc.protocollo;25;search_text_equal"
+data[]="Titolo;pe.titolo.numero_doc;25;search_text_equal"
+data[]="Richiedente;pe.elenco_richiedenti.nominativo;54;search_text"
+data[]="Progettista;pe.elenco_progettisti.nominativo;54;search_text"
+data[]="Data Presentazione;pe.avvioproc.data_presentazione;10;search_date"
+data[]="Via;pe.indirizzi.via;50;search_text"
+data[]="Cat. Terreni :<br> Foglio;pe.cterreni.foglio;5;search_text_equal|Mappale;pe.cterreni.mappale;8;search_text_equal"
+data[]="Cat. Urbano :<br> Foglio;pe.curbano.foglio;5;search_text_equal|Mappale;pe.curbano.mappale;8;search_text_equal"
