@@ -328,5 +328,91 @@ class appUtils {
             catch(Exception $e){}
         }
     }
+    /*funzione di Raggruppamento dei dati*/
+    static function groupData($mode,$res){
+        $result=Array();
+        switch($mode){
+            case "civico":
+                for($i=0;$i<count($res);$i++){
+                    $rec=$res[$i];
+                    $codvia=preg_replace("/[^A-Za-z0-9]/", '', strtolower($rec["via"]));
+                    $via=$rec["via"];
+                    $civico=preg_replace("([\\/]+)","-",$rec["civico"]);
+                    $civico=preg_replace("([\.]+)","",$civico);
+                    $descrizione=sprintf("Pratica n° %s del %s",$rec["numero"],$rec["data_presentazione"]);
+                    $ct=$rec["elenco_ct"];
+                    $cu=$rec["elenco_cu"];
+                    $linkToPratica=$rec["pratica"];
+                    $r[$codvia][$civico][$rec["pratica"]]=Array("via"=>$via,"civico"=>$civico,"info"=>Array("id"=>$rec["pratica"],"name"=>$descrizione,"descrizione"=>$descrizione,"ct"=>$ct,"cu"=>$cu,"civico"=>"","via"=>"","pratica"=>$linkToPratica,"oggetto"=>$rec["oggetto"]));
+
+                }
+                foreach($r as $codvia=>$values){
+                    $civici=Array();
+                    foreach($values as $civ=>$vals){
+                        $pratiche=Array();
+                        foreach($vals as $pr=>$data){
+                            $pratiche[]=$data["info"];
+                            $via=$data["via"];
+                        }
+                        $civico=Array("id"=>"$codvia-$civ","name"=>$civ,"civico"=>"$civ","via"=>"$via","descrizione"=>"","ct"=>"","cu"=>"","children"=>$pratiche,"oggetto"=>"","pratica"=>"","state"=>"closed");
+                        $civici[]=$civico;
+                    }
+                    $via=Array("id"=>"$codvia","civico"=>"","name"=>$via,"via"=>"$via","oggetto"=>"","descrizione"=>"","ct"=>"","cu"=>"","pratica"=>"","state"=>"closed","children"=>$civici);
+                    $result[]=$via;
+                }
+
+                break;
+            case "particella-terreni":
+            case "particella-urbano":
+                for($i=0;$i<count($res);$i++){
+                    $rec=$res[$i];
+                    $sez=preg_replace("/[^A-Za-z0-9 ]/", '', strtolower($rec["sezione"]));
+                    $fg=preg_replace("/[^A-Za-z0-9 ]/", '',$rec["foglio"]);
+                    $mp=preg_replace("/[^A-Za-z0-9 ]/", '',$rec["mappale"]);
+                    $descrizione=sprintf("Pratica n° %s del %s",$rec["numero"],$rec["data_presentazione"]);
+                    $ubicazione=$rec["ubicazione"];
+                    $cu=$rec["elenco_cu"];
+                    $r[$sez][$fg][$mp][$rec["pratica"]]=Array(
+                        "sezione"=>$sez,
+                        "foglio"=>$fg,
+                        "mappale"=>$mp,
+                        "info"=>Array(
+                            "id"=>$rec["pratica"],
+                            "name"=>$descrizione,
+                            "descrizione"=>$descrizione,
+                            "ubicazione"=>$ubicazione,
+                            "cu"=>$cu,
+                            "pratica"=>$rec["pratica"],
+                            "oggetto"=>$rec["oggetto"]
+                        )
+                    );
+
+                }
+                $sezioni=Array();
+                foreach($r as $sez=>$values){
+                    $fogli=Array();
+                    foreach($values as $fgs=>$v){
+                        $mappali=Array();
+                        foreach($v as $maps=>$vals){
+
+                            $pratiche=Array();
+                            foreach($vals as $pr=>$data){
+                                $pratiche[]=$data["info"];
+                                $mappale=$data["mappale"];
+                            }
+                            $mappale=Array("id"=>sprintf("%s-%s-%s",$sez,$fgs,$maps),"name"=>"Mappale $maps","descrizione"=>"","ubicazione"=>"","cu"=>"","children"=>$pratiche,"oggetto"=>"","pratica"=>"","state"=>"closed");
+                            $mappali[]=$mappale;
+                        }
+                        $foglio=Array("id"=>sprintf("%s-%s",$sez,$fgs),"name"=>"Foglio $fgs","descrizione"=>"","ubicazione"=>"","cu"=>"","children"=>$mappali,"oggetto"=>"","pratica"=>"","state"=>"closed");
+                        $fogli[]=$foglio;
+                    }
+                    $sezione=Array("id"=>sprintf("%s",$sez),"name"=>"Sezione $sez","descrizione"=>"","ubicazione"=>"","cu"=>"","children"=>$fogli,"oggetto"=>"","pratica"=>"","state"=>"closed");
+                    $result[]=$sezione;
+                }
+                break;
+        }
+        return $result;
+
+    }
 }
 ?>
