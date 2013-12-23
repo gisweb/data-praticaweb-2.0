@@ -76,7 +76,7 @@ class utils {
         // Return the string
         return $string;
     }
-    static function debug($file,$data,$mode='w+'){
+    static function debug($file,$data,$mode='a+'){
 	$f=fopen(DEBUG_DIR.$file.".debug",$mode);
 	ob_start();
 	print_r($data);
