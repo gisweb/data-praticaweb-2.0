@@ -24,6 +24,12 @@ lav,Lavori
 agi,Agibilità
 200,Collaudo,pe.collaudo,agi
 210,Agibilità,pe.abitabi,agi
+vigi,Vigilanza
+260,Esposti Vigilanza,pe.esposti,
+92,Sospensioni Lavori,pe.sospensioni,
+250,Sopralluoghi Vigilanza,pe.sopralluoghi
+270,Sanzioni,vigi.sanzioni,
+280,Ordinanze,pe.ordinanze
 iter,Iter
 295,Scadenze,pe.scadenze,
 300,Annotazioni,pe.annotazioni,
