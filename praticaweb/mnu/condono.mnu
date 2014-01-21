@@ -7,7 +7,6 @@
 45,Integrazione Documenti,pe.integrazioni,prei
 it,Istruttoria Tecnica
 70,Vincoli Presenti,pe.vincoli,it
-75,Informazioni DIA,pe.infodia,it
 80,Dati di Progetto,pe.progetto,it
 oc,Oneri
 110,Importi,oneri.importi,oc
@@ -21,6 +20,7 @@ ia,Istruttoria Amministrativa
 135,Sanzioni,pe.sanzioni,
 lav,Lavori
 170,Esecuzione Lavori,pe.lavori,lav
+180,Sopralluoghi,pe.sopralluoghi,lav
 agi,Agibilità
 200,Collaudo,pe.collaudo,agi
 210,Agibilità,pe.abitabi,agi
