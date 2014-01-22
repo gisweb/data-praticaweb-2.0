@@ -294,7 +294,7 @@ UNION
 		if($rateizzato==1)	// <---- MODIFICA DEL 21/06/2012
 			$sql="DELETE FROM oneri.rate WHERE pratica=$this->pratica and rata in (1,2,3,4);
 INSERT INTO oneri.rate(pratica,rata,totale,versato,uidins,tmsins) (
-(SELECT $this->pratica as pratica,1 as rata,totale/4,totale/4$this->userid,$t FROM oneri.vista_totali WHERE pratica=$this->pratica)
+(SELECT $this->pratica as pratica,1 as rata,totale/4,totale/4,$this->userid,$t FROM oneri.vista_totali WHERE pratica=$this->pratica)
 UNION
 (SELECT $this->pratica as pratica,2 as rata,totale/4,totale/4,$this->userid,$t FROM oneri.vista_totali WHERE pratica=$this->pratica)
 UNION
