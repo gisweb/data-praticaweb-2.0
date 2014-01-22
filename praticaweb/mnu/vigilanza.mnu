@@ -3,14 +3,15 @@ prei,Istruttoria
 20,Soggetti Interessati,pe.elenco_soggetti,
 50,Ubicazione Intervento,pe.ubicazione,
 40,Elenco Allegati,pe.allegati,
+92,Sospensioni Lavori,pe.sospensioni,
 45,Integrazione Documenti,pe.integrazioni,
 70,Vincoli Presenti,pe.vincoli,
 vigi,Vigilanza
 260,Esposti Vigilanza,pe.esposti,
-92,Sospensioni Lavori,pe.sospensioni,
 250,Sopralluoghi Vigilanza,pe.sopralluoghi
-270,Sanzioni,pe.sanzioni,
 280,Ordinanze,pe.ordinanze
+,Sanzioni
+135,Sanzioni,pe.sanzioni,
 iter,Iter
 295,Scadenze,pe.scadenze,
 300,Annotazioni,pe.annotazioni,
