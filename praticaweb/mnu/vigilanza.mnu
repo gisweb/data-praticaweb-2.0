@@ -5,7 +5,7 @@ prei,Istruttoria
 40,Elenco Allegati,pe.allegati,
 92,Sospensioni Lavori,pe.sospensioni,
 45,Integrazione Documenti,pe.integrazioni,
-70,Vincoli Presenti,pe.vincoli,
+70,Pianificazione e Vincoli,pe.vincoli,
 vigi,Vigilanza
 260,Esposti Vigilanza,pe.esposti,
 250,Sopralluoghi Vigilanza,pe.sopralluoghi

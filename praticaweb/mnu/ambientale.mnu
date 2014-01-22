@@ -5,7 +5,7 @@ prei,PreIstruttoria
 40,Elenco Allegati,pe.allegati,prei
 45,Integrazione Documenti,pe.integrazioni,prei
 it,Istruttoria Tecnica
-70,Vincoli Presenti,pe.vincoli,it
+70,Pianificazione e Vincoli,pe.vincoli,it
 80,Dati di Progetto,pe.progetto,it
 92,Sospensioni,pe.sospensioni,it
 ,Oneri
