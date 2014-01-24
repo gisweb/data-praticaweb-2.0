@@ -1,0 +1,4885 @@
+
+23-01-14	20:35:48	 --- STAMPA DI UN ARRAY ---
+	Array
+(
+    [pratica] => 30003
+    [ubicazione] => VIA PIETRO PALEOCAPA 3
+    [numero] => 36589/2014
+    [tipo_pratica] => Permesso di Costruire
+    [intervento] => Manuntenzione ordinaria
+    [anno] => 2014
+    [data_presentazione] => 10/01/2014
+    [protocollo] => 36589
+    [data_protocollo] => 10/01/2014
+    [protocollo_int] => 
+    [data_prot_int] => 
+    [responsabile_procedimento] => Geom. Delfino Franco
+    [data_responsabile] => 
+    [protocollo_com_rdp] => 
+    [data_comunicazione_responsabile] => 
+    [istruttore_tecnico] => 
+    [data_responsabile_it] => 
+    [numero_autorizzazione_amb] => 
+    [oggetto] => dadaddada
+    [note] => 
+    [numero_pratica_precedente] => 
+    [diritti_segreteria] => 
+    [riduzione_diritti] => 0
+    [pagamento_diritti] => 1
+    [elenco_richiedenti] => Sig. ROSSI Carlo
+    [soggetti] => Array
+        (
+            [0] => Array
+                (
+                    [pratica] => 30003
+                    [app] => Sig.
+                    [cognome] => ROSSI
+                    [nome] => Carlo
+                    [nominativo] => Sig. ROSSI Carlo
+                    [indirizzo] => via Quintana 11/4
+                    [comune] => SAVONA
+                    [prov] => SV
+                    [cap] => 17100
+                    [comunato] => ALBISOLA SUPERIORE
+                    [provnato] => SV
+                    [datanato] => 22/11/1938
+                    [sesso] => M
+                    [codfis] => RSSCRL38S22A166K
+                    [titolo] => Proprietario
+                    [telefono] => 
+                    [email] => 
+                    [pec] => 
+                    [titolod] => 
+                    [ragsoc] => 
+                    [sede] => 
+                    [comuned] => 
+                    [provd] => 
+                    [capd] => 
+                    [piva] => 
+                    [ccia] => 
+                    [cciaprov] => 
+                    [inail] => 
+                    [inailprov] => 
+                    [inps] => 
+                    [inpsprov] => 
+                    [cedile] => 
+                    [cedileprov] => 
+                    [albo] => 
+                    [albonumero] => 
+                    [alboprov] => 
+                    [voltura] => 0
+                    [comunicazioni] => 1
+                    [note] => 
+                    [proprietario] => 1
+                    [richiedente] => 1
+                    [concessionario] => 0
+                    [progettista] => 0
+                    [direttore] => 0
+                    [esecutore] => 0
+                    [sicurezza] => 0
+                    [collaudatore] => 0
+                    [geologo] => 0
+                    [collaudatore_ca] => 0
+                    [progettista_ca] => 0
+                    [economia_diretta] => 0
+                )
+
+        )
+
+    [richiedenti] => Array
+        (
+            [0] => Array
+                (
+                    [pratica] => 30003
+                    [app] => Sig.
+                    [cognome] => ROSSI
+                    [nome] => Carlo
+                    [nominativo] => Sig. ROSSI Carlo
+                    [indirizzo] => via Quintana 11/4
+                    [comune] => SAVONA
+                    [prov] => SV
+                    [cap] => 17100
+                    [comunato] => ALBISOLA SUPERIORE
+                    [provnato] => SV
+                    [datanato] => 22/11/1938
+                    [sesso] => M
+                    [codfis] => RSSCRL38S22A166K
+                    [titolo] => Proprietario
+                    [telefono] => 
+                    [email] => 
+                    [pec] => 
+                    [titolod] => 
+                    [ragsoc] => 
+                    [sede] => 
+                    [comuned] => 
+                    [provd] => 
+                    [capd] => 
+                    [piva] => 
+                    [ccia] => 
+                    [cciaprov] => 
+                    [inail] => 
+                    [inailprov] => 
+                    [inps] => 
+                    [inpsprov] => 
+                    [cedile] => 
+                    [cedileprov] => 
+                    [albo] => 
+                    [albonumero] => 
+                    [alboprov] => 
+                    [voltura] => 0
+                    [comunicazioni] => 1
+                    [note] => 
+                    [proprietario] => 1
+                    [richiedente] => 1
+                    [concessionario] => 0
+                    [progettista] => 0
+                    [direttore] => 0
+                    [esecutore] => 0
+                    [sicurezza] => 0
+                    [collaudatore] => 0
+                    [geologo] => 0
+                    [collaudatore_ca] => 0
+                    [progettista_ca] => 0
+                    [economia_diretta] => 0
+                )
+
+        )
+
+    [concessionari] => Array
+        (
+        )
+
+    [progettista] => Array
+        (
+        )
+
+    [particelle_cu] => Array
+        (
+        )
+
+    [particelle_ct] => Array
+        (
+        )
+
+    [pareri] => Array
+        (
+            [0] => Array
+                (
+                    [pratica] => 30003
+                    [protocollo_richiesta] => 
+                    [data_richiesta] => 16/01/2014
+                    [protocollo_sollecito] => 
+                    [data_sollecito] => 
+                    [protocollo_rilascio] => 
+                    [data_rilascio] => 
+                    [protocollo_ricezione] => 
+                    [data_ricezione] => 
+                    [parere] => Non ancora espresso
+                    [testo] => 
+                    [prescrizioni] => 
+                    [note] => 
+                    [numero_parere] => 
+                    [ente] => Commissione Edilizia
+                    [codice_ente] => ce
+                )
+
+        )
+
+    [oneri_calcolati] => Array
+        (
+        )
+
+    [indirizzi] => Array
+        (
+            [0] => Array
+                (
+                    [pratica] => 30003
+                    [via] => VIA PIETRO PALEOCAPA
+                    [civico] => 3
+                    [interno] => 
+                    [scala] => 
+                    [piano] => 
+                )
+
+        )
+
+    [documenti_mancanti] => Array
+        (
+        )
+
+    [allegati] => Array
+        (
+            [0] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Stralcio planimetrico 1:5000
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [1] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Documentazione catastale
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [2] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Tavole grafiche 1:100
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [3] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Doc. impianti legge 46/90
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [4] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Stralcio CTR scala 1:5000
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [5] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Stralcio PRG/PUC
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [6] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Planimetria progetto 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [7] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Sovraposizione 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [8] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Sezioni terreno 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [9] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Piante sezioni 1:100
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [10] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Planimetrie catastali 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [11] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Risparmio energetico
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [12] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Mappa catastale 1:2000
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [13] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Parere DM 16/02/82 VV.FF.
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [14] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Elenco documenti
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [15] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Versamento tesoreria
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [16] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 
+ stralcio planimetrico della Carta Tecnica Regionale in scala 1:5000, con inserimento sullo stesso dell’opera  in progetto;
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [17] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Doc. fotografica
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [18] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Rilievo area 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [19] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Planimetria 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [20] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Schema fognatura
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [21] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Planimetria catastale 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [22] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Rilievo stato di fatto 1:100
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [23] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Particolari archit. 1.20
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [24] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => ·relazione tecnico illustrativa delle opere in progetto con esplicito riferimento alla loro conformità agli strumenti urbanistici comunali e sovracomunali nonché ai regolamenti ed alle norme vigenti, comprese quelle di sicurezza ed igienico-sanitarie, con indicazione dei vincoli gravanti sulla zona interessata e  le modalità di approvvigionamento di acqua potabile, di smaltimento delle acque bianche e nere a norma di legge e di allaccio ai pubblici servizi; nella relazione devono essere specificati caratteristiche tipologiche e strutturali, materiali, cromatismi;
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [25] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Doc. titolo richiedente
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [26] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Documentazione fotografica
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [27] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Planimetria di progetto
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [28] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Sovraposizione quotata
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [29] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Sezioni del terreno 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [30] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Piante piani e copertura 1:100
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [31] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Viste assonometriche
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [32] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Elaborati urbanizzazioni
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [33] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Doc. realizzazione strade
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [34] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Computo dei volumi
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [35] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Planimetria asservimenti
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [36] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Computo sup.rif. LR 25/95
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [37] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Standard urbanistici
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [38] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Descrizione lunga di barrierre archi.....
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [39] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Indagine geologica
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [40] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Compatibilità amb. legge 22/94
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [41] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Modello ISTAT
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [42] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Rilievo edificio 1:100
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [43] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Demolizioni/ricostruzioni
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [44] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Atti vincolo
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [45] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Collaudo opere C.A.
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [46] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Certificato VV.FF
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [47] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Dichiarazione Dir. lavori
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [48] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Iscrizione al catasto
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [49] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Punti Fissi
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [50] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Legge 10/91
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [51] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Istat
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [52] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => CTR
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [53] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 1 rata oblazione
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [54] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 2 rata oblazione
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [55] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 3 rata oblazione
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [56] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 1 rata oneri accessori
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [57] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 2 rata oneri accessori
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [58] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 3 rata oneri accessori
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [59] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 10% oblazione Regione Liguria
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [60] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Documentazione fotografica
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [61] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Dichiarazione ai sensi dell'art. 47 D.P.R. 445/00
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [62] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Dichiarazione antimafia
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [63] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Elaborati grafici
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [64] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Relazione tecnica
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [65] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Relazione geologica
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [66] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Conteggio volumi e superfici
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [67] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Cartografia
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [68] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Cartografia piani di bacino
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [69] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Accatastamento
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [70] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Denuncia I.C.I.
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [71] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Denuncia T.A.R.S.U.
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [72] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Certificazione L.n°46/90
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [73] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Dichiarazione scarico fognario
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [74] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Richiesto parere per vincolo
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+        )
+
+    [oneri_dettaglio] => Array
+        (
+        )
+
+    [esecutore] => Array
+        (
+        )
+
+    [direttore] => Array
+        (
+        )
+
+)
+
+23-01-14	20:47:52	 --- STAMPA DI UN ARRAY ---
+	Array
+(
+    [pratica] => 30003
+    [ubicazione] => VIA PIETRO PALEOCAPA 3
+    [numero] => 36589/2014
+    [tipo_pratica] => Permesso di Costruire
+    [intervento] => Manuntenzione ordinaria
+    [anno] => 2014
+    [data_presentazione] => 10/01/2014
+    [protocollo] => 36589
+    [data_protocollo] => 10/01/2014
+    [protocollo_int] => 
+    [data_prot_int] => 
+    [responsabile_procedimento] => Geom. Delfino Franco
+    [data_responsabile] => 
+    [protocollo_com_rdp] => 
+    [data_comunicazione_responsabile] => 
+    [istruttore_tecnico] => 
+    [data_responsabile_it] => 
+    [numero_autorizzazione_amb] => 
+    [oggetto] => dadaddada
+    [note] => 
+    [numero_pratica_precedente] => 
+    [diritti_segreteria] => 
+    [riduzione_diritti] => 0
+    [pagamento_diritti] => 1
+    [elenco_richiedenti] => Sig. ROSSI Carlo
+    [soggetti] => Array
+        (
+            [0] => Array
+                (
+                    [pratica] => 30003
+                    [app] => Sig.
+                    [cognome] => ROSSI
+                    [nome] => Carlo
+                    [nominativo] => Sig. ROSSI Carlo
+                    [indirizzo] => via Quintana 11/4
+                    [comune] => SAVONA
+                    [prov] => SV
+                    [cap] => 17100
+                    [comunato] => ALBISOLA SUPERIORE
+                    [provnato] => SV
+                    [datanato] => 22/11/1938
+                    [sesso] => M
+                    [codfis] => RSSCRL38S22A166K
+                    [titolo] => Proprietario
+                    [telefono] => 
+                    [email] => 
+                    [pec] => 
+                    [titolod] => 
+                    [ragsoc] => 
+                    [sede] => 
+                    [comuned] => 
+                    [provd] => 
+                    [capd] => 
+                    [piva] => 
+                    [ccia] => 
+                    [cciaprov] => 
+                    [inail] => 
+                    [inailprov] => 
+                    [inps] => 
+                    [inpsprov] => 
+                    [cedile] => 
+                    [cedileprov] => 
+                    [albo] => 
+                    [albonumero] => 
+                    [alboprov] => 
+                    [voltura] => 0
+                    [comunicazioni] => 1
+                    [note] => 
+                    [proprietario] => 1
+                    [richiedente] => 1
+                    [concessionario] => 0
+                    [progettista] => 0
+                    [direttore] => 0
+                    [esecutore] => 0
+                    [sicurezza] => 0
+                    [collaudatore] => 0
+                    [geologo] => 0
+                    [collaudatore_ca] => 0
+                    [progettista_ca] => 0
+                    [economia_diretta] => 0
+                )
+
+        )
+
+    [richiedenti] => Array
+        (
+            [0] => Array
+                (
+                    [pratica] => 30003
+                    [app] => Sig.
+                    [cognome] => ROSSI
+                    [nome] => Carlo
+                    [nominativo] => Sig. ROSSI Carlo
+                    [indirizzo] => via Quintana 11/4
+                    [comune] => SAVONA
+                    [prov] => SV
+                    [cap] => 17100
+                    [comunato] => ALBISOLA SUPERIORE
+                    [provnato] => SV
+                    [datanato] => 22/11/1938
+                    [sesso] => M
+                    [codfis] => RSSCRL38S22A166K
+                    [titolo] => Proprietario
+                    [telefono] => 
+                    [email] => 
+                    [pec] => 
+                    [titolod] => 
+                    [ragsoc] => 
+                    [sede] => 
+                    [comuned] => 
+                    [provd] => 
+                    [capd] => 
+                    [piva] => 
+                    [ccia] => 
+                    [cciaprov] => 
+                    [inail] => 
+                    [inailprov] => 
+                    [inps] => 
+                    [inpsprov] => 
+                    [cedile] => 
+                    [cedileprov] => 
+                    [albo] => 
+                    [albonumero] => 
+                    [alboprov] => 
+                    [voltura] => 0
+                    [comunicazioni] => 1
+                    [note] => 
+                    [proprietario] => 1
+                    [richiedente] => 1
+                    [concessionario] => 0
+                    [progettista] => 0
+                    [direttore] => 0
+                    [esecutore] => 0
+                    [sicurezza] => 0
+                    [collaudatore] => 0
+                    [geologo] => 0
+                    [collaudatore_ca] => 0
+                    [progettista_ca] => 0
+                    [economia_diretta] => 0
+                )
+
+        )
+
+    [concessionari] => Array
+        (
+        )
+
+    [progettisti] => Array
+        (
+        )
+
+    [particelle_cu] => Array
+        (
+        )
+
+    [particelle_ct] => Array
+        (
+        )
+
+    [pareri] => Array
+        (
+            [0] => Array
+                (
+                    [pratica] => 30003
+                    [protocollo_richiesta] => 
+                    [data_richiesta] => 16/01/2014
+                    [protocollo_sollecito] => 
+                    [data_sollecito] => 
+                    [protocollo_rilascio] => 
+                    [data_rilascio] => 
+                    [protocollo_ricezione] => 
+                    [data_ricezione] => 
+                    [parere] => Non ancora espresso
+                    [testo] => 
+                    [prescrizioni] => 
+                    [note] => 
+                    [numero_parere] => 
+                    [ente] => Commissione Edilizia
+                    [codice_ente] => ce
+                )
+
+        )
+
+    [oneri_calcolati] => Array
+        (
+        )
+
+    [indirizzi] => Array
+        (
+            [0] => Array
+                (
+                    [pratica] => 30003
+                    [via] => VIA PIETRO PALEOCAPA
+                    [civico] => 3
+                    [interno] => 
+                    [scala] => 
+                    [piano] => 
+                )
+
+        )
+
+    [documenti_mancanti] => Array
+        (
+        )
+
+    [allegati] => Array
+        (
+            [0] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Stralcio planimetrico 1:5000
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [1] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Documentazione catastale
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [2] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Tavole grafiche 1:100
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [3] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Doc. impianti legge 46/90
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [4] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Stralcio CTR scala 1:5000
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [5] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Stralcio PRG/PUC
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [6] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Planimetria progetto 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [7] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Sovraposizione 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [8] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Sezioni terreno 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [9] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Piante sezioni 1:100
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [10] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Planimetrie catastali 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [11] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Risparmio energetico
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [12] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Mappa catastale 1:2000
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [13] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Parere DM 16/02/82 VV.FF.
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [14] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Elenco documenti
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [15] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Versamento tesoreria
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [16] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 
+ stralcio planimetrico della Carta Tecnica Regionale in scala 1:5000, con inserimento sullo stesso dell’opera  in progetto;
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [17] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Doc. fotografica
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [18] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Rilievo area 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [19] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Planimetria 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [20] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Schema fognatura
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [21] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Planimetria catastale 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [22] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Rilievo stato di fatto 1:100
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [23] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Particolari archit. 1.20
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [24] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => ·relazione tecnico illustrativa delle opere in progetto con esplicito riferimento alla loro conformità agli strumenti urbanistici comunali e sovracomunali nonché ai regolamenti ed alle norme vigenti, comprese quelle di sicurezza ed igienico-sanitarie, con indicazione dei vincoli gravanti sulla zona interessata e  le modalità di approvvigionamento di acqua potabile, di smaltimento delle acque bianche e nere a norma di legge e di allaccio ai pubblici servizi; nella relazione devono essere specificati caratteristiche tipologiche e strutturali, materiali, cromatismi;
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [25] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Doc. titolo richiedente
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [26] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Documentazione fotografica
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [27] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Planimetria di progetto
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [28] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Sovraposizione quotata
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [29] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Sezioni del terreno 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [30] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Piante piani e copertura 1:100
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [31] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Viste assonometriche
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [32] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Elaborati urbanizzazioni
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [33] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Doc. realizzazione strade
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [34] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Computo dei volumi
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [35] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Planimetria asservimenti
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [36] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Computo sup.rif. LR 25/95
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [37] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Standard urbanistici
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [38] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Descrizione lunga di barrierre archi.....
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [39] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Indagine geologica
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [40] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Compatibilità amb. legge 22/94
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [41] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Modello ISTAT
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [42] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Rilievo edificio 1:100
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [43] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Demolizioni/ricostruzioni
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [44] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Atti vincolo
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [45] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Collaudo opere C.A.
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [46] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Certificato VV.FF
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [47] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Dichiarazione Dir. lavori
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [48] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Iscrizione al catasto
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [49] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Punti Fissi
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [50] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Legge 10/91
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [51] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Istat
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [52] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => CTR
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [53] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 1 rata oblazione
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [54] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 2 rata oblazione
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [55] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 3 rata oblazione
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [56] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 1 rata oneri accessori
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [57] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 2 rata oneri accessori
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [58] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 3 rata oneri accessori
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [59] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 10% oblazione Regione Liguria
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [60] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Documentazione fotografica
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [61] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Dichiarazione ai sensi dell'art. 47 D.P.R. 445/00
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [62] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Dichiarazione antimafia
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [63] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Elaborati grafici
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [64] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Relazione tecnica
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [65] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Relazione geologica
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [66] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Conteggio volumi e superfici
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [67] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Cartografia
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [68] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Cartografia piani di bacino
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [69] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Accatastamento
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [70] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Denuncia I.C.I.
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [71] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Denuncia T.A.R.S.U.
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [72] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Certificazione L.n°46/90
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [73] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Dichiarazione scarico fognario
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [74] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Richiesto parere per vincolo
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+        )
+
+    [oneri_dettaglio] => Array
+        (
+        )
+
+    [esecutore] => Array
+        (
+        )
+
+    [direttore] => Array
+        (
+        )
+
+)
+
+23-01-14	20:49:22	 --- STAMPA DI UN ARRAY ---
+	Array
+(
+    [pratica] => 30003
+    [ubicazione] => VIA PIETRO PALEOCAPA 3
+    [numero] => 36589/2014
+    [tipo_pratica] => Permesso di Costruire
+    [intervento] => Manuntenzione ordinaria
+    [anno] => 2014
+    [data_presentazione] => 10/01/2014
+    [protocollo] => 36589
+    [data_protocollo] => 10/01/2014
+    [protocollo_int] => 
+    [data_prot_int] => 
+    [responsabile_procedimento] => Geom. Delfino Franco
+    [data_responsabile] => 
+    [protocollo_com_rdp] => 
+    [data_comunicazione_responsabile] => 
+    [istruttore_tecnico] => 
+    [data_responsabile_it] => 
+    [numero_autorizzazione_amb] => 
+    [oggetto] => dadaddada
+    [note] => 
+    [numero_pratica_precedente] => 
+    [diritti_segreteria] => 
+    [riduzione_diritti] => 0
+    [pagamento_diritti] => 1
+    [elenco_richiedenti] => Sig. ROSSI Carlo
+    [soggetti] => Array
+        (
+            [0] => Array
+                (
+                    [pratica] => 30003
+                    [app] => Sig.
+                    [cognome] => ROSSI
+                    [nome] => Carlo
+                    [nominativo] => Sig. ROSSI Carlo
+                    [indirizzo] => via Quintana 11/4
+                    [comune] => SAVONA
+                    [prov] => SV
+                    [cap] => 17100
+                    [comunato] => ALBISOLA SUPERIORE
+                    [provnato] => SV
+                    [datanato] => 22/11/1938
+                    [sesso] => M
+                    [codfis] => RSSCRL38S22A166K
+                    [titolo] => Proprietario
+                    [telefono] => 
+                    [email] => 
+                    [pec] => 
+                    [titolod] => 
+                    [ragsoc] => 
+                    [sede] => 
+                    [comuned] => 
+                    [provd] => 
+                    [capd] => 
+                    [piva] => 
+                    [ccia] => 
+                    [cciaprov] => 
+                    [inail] => 
+                    [inailprov] => 
+                    [inps] => 
+                    [inpsprov] => 
+                    [cedile] => 
+                    [cedileprov] => 
+                    [albo] => 
+                    [albonumero] => 
+                    [alboprov] => 
+                    [voltura] => 0
+                    [comunicazioni] => 1
+                    [note] => 
+                    [proprietario] => 1
+                    [richiedente] => 1
+                    [concessionario] => 0
+                    [progettista] => 0
+                    [direttore] => 0
+                    [esecutore] => 0
+                    [sicurezza] => 0
+                    [collaudatore] => 0
+                    [geologo] => 0
+                    [collaudatore_ca] => 0
+                    [progettista_ca] => 0
+                    [economia_diretta] => 0
+                )
+
+        )
+
+    [richiedenti] => Array
+        (
+            [0] => Array
+                (
+                    [pratica] => 30003
+                    [app] => Sig.
+                    [cognome] => ROSSI
+                    [nome] => Carlo
+                    [nominativo] => Sig. ROSSI Carlo
+                    [indirizzo] => via Quintana 11/4
+                    [comune] => SAVONA
+                    [prov] => SV
+                    [cap] => 17100
+                    [comunato] => ALBISOLA SUPERIORE
+                    [provnato] => SV
+                    [datanato] => 22/11/1938
+                    [sesso] => M
+                    [codfis] => RSSCRL38S22A166K
+                    [titolo] => Proprietario
+                    [telefono] => 
+                    [email] => 
+                    [pec] => 
+                    [titolod] => 
+                    [ragsoc] => 
+                    [sede] => 
+                    [comuned] => 
+                    [provd] => 
+                    [capd] => 
+                    [piva] => 
+                    [ccia] => 
+                    [cciaprov] => 
+                    [inail] => 
+                    [inailprov] => 
+                    [inps] => 
+                    [inpsprov] => 
+                    [cedile] => 
+                    [cedileprov] => 
+                    [albo] => 
+                    [albonumero] => 
+                    [alboprov] => 
+                    [voltura] => 0
+                    [comunicazioni] => 1
+                    [note] => 
+                    [proprietario] => 1
+                    [richiedente] => 1
+                    [concessionario] => 0
+                    [progettista] => 0
+                    [direttore] => 0
+                    [esecutore] => 0
+                    [sicurezza] => 0
+                    [collaudatore] => 0
+                    [geologo] => 0
+                    [collaudatore_ca] => 0
+                    [progettista_ca] => 0
+                    [economia_diretta] => 0
+                )
+
+        )
+
+    [concessionari] => Array
+        (
+        )
+
+    [progettisti] => Array
+        (
+        )
+
+    [particelle_cu] => Array
+        (
+        )
+
+    [particelle_ct] => Array
+        (
+        )
+
+    [pareri] => Array
+        (
+            [0] => Array
+                (
+                    [pratica] => 30003
+                    [protocollo_richiesta] => 
+                    [data_richiesta] => 16/01/2014
+                    [protocollo_sollecito] => 
+                    [data_sollecito] => 
+                    [protocollo_rilascio] => 
+                    [data_rilascio] => 
+                    [protocollo_ricezione] => 
+                    [data_ricezione] => 
+                    [parere] => Non ancora espresso
+                    [testo] => 
+                    [prescrizioni] => 
+                    [note] => 
+                    [numero_parere] => 
+                    [ente] => Commissione Edilizia
+                    [codice_ente] => ce
+                )
+
+        )
+
+    [oneri_calcolati] => Array
+        (
+        )
+
+    [indirizzi] => Array
+        (
+            [0] => Array
+                (
+                    [pratica] => 30003
+                    [via] => VIA PIETRO PALEOCAPA
+                    [civico] => 3
+                    [interno] => 
+                    [scala] => 
+                    [piano] => 
+                )
+
+        )
+
+    [documenti_mancanti] => Array
+        (
+        )
+
+    [allegati] => Array
+        (
+            [0] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Stralcio planimetrico 1:5000
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [1] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Documentazione catastale
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [2] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Tavole grafiche 1:100
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [3] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Doc. impianti legge 46/90
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [4] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Stralcio CTR scala 1:5000
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [5] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Stralcio PRG/PUC
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [6] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Planimetria progetto 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [7] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Sovraposizione 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [8] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Sezioni terreno 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [9] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Piante sezioni 1:100
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [10] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Planimetrie catastali 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [11] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Risparmio energetico
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [12] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Mappa catastale 1:2000
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [13] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Parere DM 16/02/82 VV.FF.
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [14] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Elenco documenti
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [15] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Versamento tesoreria
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [16] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 
+ stralcio planimetrico della Carta Tecnica Regionale in scala 1:5000, con inserimento sullo stesso dell’opera  in progetto;
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [17] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Doc. fotografica
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [18] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Rilievo area 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [19] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Planimetria 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [20] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Schema fognatura
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [21] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Planimetria catastale 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [22] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Rilievo stato di fatto 1:100
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [23] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Particolari archit. 1.20
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [24] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => ·relazione tecnico illustrativa delle opere in progetto con esplicito riferimento alla loro conformità agli strumenti urbanistici comunali e sovracomunali nonché ai regolamenti ed alle norme vigenti, comprese quelle di sicurezza ed igienico-sanitarie, con indicazione dei vincoli gravanti sulla zona interessata e  le modalità di approvvigionamento di acqua potabile, di smaltimento delle acque bianche e nere a norma di legge e di allaccio ai pubblici servizi; nella relazione devono essere specificati caratteristiche tipologiche e strutturali, materiali, cromatismi;
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [25] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Doc. titolo richiedente
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [26] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Documentazione fotografica
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [27] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Planimetria di progetto
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [28] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Sovraposizione quotata
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [29] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Sezioni del terreno 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [30] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Piante piani e copertura 1:100
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [31] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Viste assonometriche
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [32] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Elaborati urbanizzazioni
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [33] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Doc. realizzazione strade
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [34] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Computo dei volumi
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [35] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Planimetria asservimenti
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [36] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Computo sup.rif. LR 25/95
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [37] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Standard urbanistici
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [38] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Descrizione lunga di barrierre archi.....
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [39] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Indagine geologica
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [40] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Compatibilità amb. legge 22/94
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [41] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Modello ISTAT
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [42] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Rilievo edificio 1:100
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [43] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Demolizioni/ricostruzioni
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [44] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Atti vincolo
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [45] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Collaudo opere C.A.
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [46] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Certificato VV.FF
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [47] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Dichiarazione Dir. lavori
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [48] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Iscrizione al catasto
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [49] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Punti Fissi
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [50] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Legge 10/91
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [51] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Istat
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [52] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => CTR
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [53] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 1 rata oblazione
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [54] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 2 rata oblazione
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [55] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 3 rata oblazione
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [56] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 1 rata oneri accessori
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [57] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 2 rata oneri accessori
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [58] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 3 rata oneri accessori
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [59] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 10% oblazione Regione Liguria
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [60] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Documentazione fotografica
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [61] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Dichiarazione ai sensi dell'art. 47 D.P.R. 445/00
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [62] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Dichiarazione antimafia
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [63] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Elaborati grafici
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [64] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Relazione tecnica
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [65] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Relazione geologica
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [66] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Conteggio volumi e superfici
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [67] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Cartografia
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [68] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Cartografia piani di bacino
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [69] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Accatastamento
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [70] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Denuncia I.C.I.
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [71] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Denuncia T.A.R.S.U.
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [72] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Certificazione L.n°46/90
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [73] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Dichiarazione scarico fognario
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [74] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Richiesto parere per vincolo
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+        )
+
+    [oneri_dettaglio] => Array
+        (
+        )
+
+    [esecutore] => Array
+        (
+        )
+
+    [direttore] => Array
+        (
+        )
+
+)
+
+23-01-14	20:51:51	 --- STAMPA DI UN ARRAY ---
+	Array
+(
+    [pratica] => 30003
+    [ubicazione] => VIA PIETRO PALEOCAPA 3
+    [numero] => 36589/2014
+    [tipo_pratica] => Permesso di Costruire
+    [intervento] => Manuntenzione ordinaria
+    [anno] => 2014
+    [data_presentazione] => 10/01/2014
+    [protocollo] => 36589
+    [data_protocollo] => 10/01/2014
+    [protocollo_int] => 
+    [data_prot_int] => 
+    [responsabile_procedimento] => Geom. Delfino Franco
+    [data_responsabile] => 
+    [protocollo_com_rdp] => 
+    [data_comunicazione_responsabile] => 
+    [istruttore_tecnico] => 
+    [data_responsabile_it] => 
+    [numero_autorizzazione_amb] => 
+    [oggetto] => dadaddada
+    [note] => 
+    [numero_pratica_precedente] => 
+    [diritti_segreteria] => 
+    [riduzione_diritti] => 0
+    [pagamento_diritti] => 1
+    [elenco_richiedenti] => Sig. ROSSI Carlo
+    [soggetti] => Array
+        (
+            [0] => Array
+                (
+                    [pratica] => 30003
+                    [app] => Sig.
+                    [cognome] => ROSSI
+                    [nome] => Carlo
+                    [nominativo] => Sig. ROSSI Carlo
+                    [indirizzo] => via Quintana 11/4
+                    [comune] => SAVONA
+                    [prov] => SV
+                    [cap] => 17100
+                    [comunato] => ALBISOLA SUPERIORE
+                    [provnato] => SV
+                    [datanato] => 22/11/1938
+                    [sesso] => M
+                    [codfis] => RSSCRL38S22A166K
+                    [titolo] => Proprietario
+                    [telefono] => 
+                    [email] => 
+                    [pec] => 
+                    [titolod] => 
+                    [ragsoc] => 
+                    [sede] => 
+                    [comuned] => 
+                    [provd] => 
+                    [capd] => 
+                    [piva] => 
+                    [ccia] => 
+                    [cciaprov] => 
+                    [inail] => 
+                    [inailprov] => 
+                    [inps] => 
+                    [inpsprov] => 
+                    [cedile] => 
+                    [cedileprov] => 
+                    [albo] => 
+                    [albonumero] => 
+                    [alboprov] => 
+                    [voltura] => 0
+                    [comunicazioni] => 1
+                    [note] => 
+                    [proprietario] => 1
+                    [richiedente] => 1
+                    [concessionario] => 0
+                    [progettista] => 0
+                    [direttore] => 0
+                    [esecutore] => 0
+                    [sicurezza] => 0
+                    [collaudatore] => 0
+                    [geologo] => 0
+                    [collaudatore_ca] => 0
+                    [progettista_ca] => 0
+                    [economia_diretta] => 0
+                )
+
+        )
+
+    [richiedenti] => Array
+        (
+            [0] => Array
+                (
+                    [pratica] => 30003
+                    [app] => Sig.
+                    [cognome] => ROSSI
+                    [nome] => Carlo
+                    [nominativo] => Sig. ROSSI Carlo
+                    [indirizzo] => via Quintana 11/4
+                    [comune] => SAVONA
+                    [prov] => SV
+                    [cap] => 17100
+                    [comunato] => ALBISOLA SUPERIORE
+                    [provnato] => SV
+                    [datanato] => 22/11/1938
+                    [sesso] => M
+                    [codfis] => RSSCRL38S22A166K
+                    [titolo] => Proprietario
+                    [telefono] => 
+                    [email] => 
+                    [pec] => 
+                    [titolod] => 
+                    [ragsoc] => 
+                    [sede] => 
+                    [comuned] => 
+                    [provd] => 
+                    [capd] => 
+                    [piva] => 
+                    [ccia] => 
+                    [cciaprov] => 
+                    [inail] => 
+                    [inailprov] => 
+                    [inps] => 
+                    [inpsprov] => 
+                    [cedile] => 
+                    [cedileprov] => 
+                    [albo] => 
+                    [albonumero] => 
+                    [alboprov] => 
+                    [voltura] => 0
+                    [comunicazioni] => 1
+                    [note] => 
+                    [proprietario] => 1
+                    [richiedente] => 1
+                    [concessionario] => 0
+                    [progettista] => 0
+                    [direttore] => 0
+                    [esecutore] => 0
+                    [sicurezza] => 0
+                    [collaudatore] => 0
+                    [geologo] => 0
+                    [collaudatore_ca] => 0
+                    [progettista_ca] => 0
+                    [economia_diretta] => 0
+                )
+
+        )
+
+    [concessionari] => Array
+        (
+        )
+
+    [progettisti] => Array
+        (
+        )
+
+    [particelle_cu] => Array
+        (
+        )
+
+    [particelle_ct] => Array
+        (
+        )
+
+    [pareri] => Array
+        (
+            [0] => Array
+                (
+                    [pratica] => 30003
+                    [protocollo_richiesta] => 
+                    [data_richiesta] => 16/01/2014
+                    [protocollo_sollecito] => 
+                    [data_sollecito] => 
+                    [protocollo_rilascio] => 
+                    [data_rilascio] => 
+                    [protocollo_ricezione] => 
+                    [data_ricezione] => 
+                    [parere] => Non ancora espresso
+                    [testo] => 
+                    [prescrizioni] => 
+                    [note] => 
+                    [numero_parere] => 
+                    [ente] => Commissione Edilizia
+                    [codice_ente] => ce
+                )
+
+        )
+
+    [oneri_calcolati] => Array
+        (
+        )
+
+    [indirizzi] => Array
+        (
+            [0] => Array
+                (
+                    [pratica] => 30003
+                    [via] => VIA PIETRO PALEOCAPA
+                    [civico] => 3
+                    [interno] => 
+                    [scala] => 
+                    [piano] => 
+                )
+
+        )
+
+    [documenti_mancanti] => Array
+        (
+        )
+
+    [allegati] => Array
+        (
+            [0] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Stralcio planimetrico 1:5000
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [1] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Documentazione catastale
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [2] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Tavole grafiche 1:100
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [3] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Doc. impianti legge 46/90
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [4] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Stralcio CTR scala 1:5000
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [5] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Stralcio PRG/PUC
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [6] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Planimetria progetto 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [7] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Sovraposizione 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [8] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Sezioni terreno 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [9] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Piante sezioni 1:100
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [10] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Planimetrie catastali 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [11] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Risparmio energetico
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [12] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Mappa catastale 1:2000
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [13] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Parere DM 16/02/82 VV.FF.
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [14] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Elenco documenti
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [15] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Versamento tesoreria
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [16] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 
+ stralcio planimetrico della Carta Tecnica Regionale in scala 1:5000, con inserimento sullo stesso dell’opera  in progetto;
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [17] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Doc. fotografica
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [18] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Rilievo area 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [19] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Planimetria 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [20] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Schema fognatura
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [21] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Planimetria catastale 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [22] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Rilievo stato di fatto 1:100
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [23] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Particolari archit. 1.20
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [24] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => ·relazione tecnico illustrativa delle opere in progetto con esplicito riferimento alla loro conformità agli strumenti urbanistici comunali e sovracomunali nonché ai regolamenti ed alle norme vigenti, comprese quelle di sicurezza ed igienico-sanitarie, con indicazione dei vincoli gravanti sulla zona interessata e  le modalità di approvvigionamento di acqua potabile, di smaltimento delle acque bianche e nere a norma di legge e di allaccio ai pubblici servizi; nella relazione devono essere specificati caratteristiche tipologiche e strutturali, materiali, cromatismi;
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [25] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Doc. titolo richiedente
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [26] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Documentazione fotografica
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [27] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Planimetria di progetto
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [28] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Sovraposizione quotata
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [29] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Sezioni del terreno 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [30] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Piante piani e copertura 1:100
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [31] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Viste assonometriche
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [32] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Elaborati urbanizzazioni
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [33] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Doc. realizzazione strade
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [34] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Computo dei volumi
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [35] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Planimetria asservimenti
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [36] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Computo sup.rif. LR 25/95
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [37] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Standard urbanistici
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [38] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Descrizione lunga di barrierre archi.....
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [39] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Indagine geologica
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [40] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Compatibilità amb. legge 22/94
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [41] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Modello ISTAT
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [42] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Rilievo edificio 1:100
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [43] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Demolizioni/ricostruzioni
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [44] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Atti vincolo
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [45] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Collaudo opere C.A.
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [46] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Certificato VV.FF
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [47] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Dichiarazione Dir. lavori
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [48] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Iscrizione al catasto
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [49] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Punti Fissi
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [50] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Legge 10/91
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [51] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Istat
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [52] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => CTR
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [53] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 1 rata oblazione
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [54] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 2 rata oblazione
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [55] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 3 rata oblazione
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [56] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 1 rata oneri accessori
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [57] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 2 rata oneri accessori
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [58] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 3 rata oneri accessori
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [59] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 10% oblazione Regione Liguria
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [60] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Documentazione fotografica
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [61] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Dichiarazione ai sensi dell'art. 47 D.P.R. 445/00
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [62] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Dichiarazione antimafia
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [63] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Elaborati grafici
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [64] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Relazione tecnica
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [65] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Relazione geologica
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [66] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Conteggio volumi e superfici
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [67] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Cartografia
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [68] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Cartografia piani di bacino
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [69] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Accatastamento
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [70] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Denuncia I.C.I.
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [71] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Denuncia T.A.R.S.U.
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [72] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Certificazione L.n°46/90
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [73] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Dichiarazione scarico fognario
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [74] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Richiesto parere per vincolo
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+        )
+
+    [oneri_dettaglio] => Array
+        (
+        )
+
+    [esecutore] => Array
+        (
+        )
+
+    [direttore] => Array
+        (
+        )
+
+)
+
+23-01-14	20:52:55	 --- STAMPA DI UN ARRAY ---
+	Array
+(
+    [pratica] => 30003
+    [ubicazione] => VIA PIETRO PALEOCAPA 3
+    [numero] => 36589/2014
+    [tipo_pratica] => Permesso di Costruire
+    [intervento] => Manuntenzione ordinaria
+    [anno] => 2014
+    [data_presentazione] => 10/01/2014
+    [protocollo] => 36589
+    [data_protocollo] => 10/01/2014
+    [protocollo_int] => 
+    [data_prot_int] => 
+    [responsabile_procedimento] => Geom. Delfino Franco
+    [data_responsabile] => 
+    [protocollo_com_rdp] => 
+    [data_comunicazione_responsabile] => 
+    [istruttore_tecnico] => 
+    [data_responsabile_it] => 
+    [numero_autorizzazione_amb] => 
+    [oggetto] => dadaddada
+    [note] => 
+    [numero_pratica_precedente] => 
+    [diritti_segreteria] => 
+    [riduzione_diritti] => 0
+    [pagamento_diritti] => 1
+    [elenco_richiedenti] => Sig. ROSSI Carlo
+    [soggetti] => Array
+        (
+            [0] => Array
+                (
+                    [pratica] => 30003
+                    [app] => Sig.
+                    [cognome] => ROSSI
+                    [nome] => Carlo
+                    [nominativo] => Sig. ROSSI Carlo
+                    [indirizzo] => via Quintana 11/4
+                    [comune] => SAVONA
+                    [prov] => SV
+                    [cap] => 17100
+                    [comunato] => ALBISOLA SUPERIORE
+                    [provnato] => SV
+                    [datanato] => 22/11/1938
+                    [sesso] => M
+                    [codfis] => RSSCRL38S22A166K
+                    [titolo] => Proprietario
+                    [telefono] => 
+                    [email] => 
+                    [pec] => 
+                    [titolod] => 
+                    [ragsoc] => 
+                    [sede] => 
+                    [comuned] => 
+                    [provd] => 
+                    [capd] => 
+                    [piva] => 
+                    [ccia] => 
+                    [cciaprov] => 
+                    [inail] => 
+                    [inailprov] => 
+                    [inps] => 
+                    [inpsprov] => 
+                    [cedile] => 
+                    [cedileprov] => 
+                    [albo] => 
+                    [albonumero] => 
+                    [alboprov] => 
+                    [voltura] => 0
+                    [comunicazioni] => 1
+                    [note] => 
+                    [proprietario] => 1
+                    [richiedente] => 1
+                    [concessionario] => 0
+                    [progettista] => 0
+                    [direttore] => 0
+                    [esecutore] => 0
+                    [sicurezza] => 0
+                    [collaudatore] => 0
+                    [geologo] => 0
+                    [collaudatore_ca] => 0
+                    [progettista_ca] => 0
+                    [economia_diretta] => 0
+                )
+
+        )
+
+    [richiedenti] => Array
+        (
+            [0] => Array
+                (
+                    [pratica] => 30003
+                    [app] => Sig.
+                    [cognome] => ROSSI
+                    [nome] => Carlo
+                    [nominativo] => Sig. ROSSI Carlo
+                    [indirizzo] => via Quintana 11/4
+                    [comune] => SAVONA
+                    [prov] => SV
+                    [cap] => 17100
+                    [comunato] => ALBISOLA SUPERIORE
+                    [provnato] => SV
+                    [datanato] => 22/11/1938
+                    [sesso] => M
+                    [codfis] => RSSCRL38S22A166K
+                    [titolo] => Proprietario
+                    [telefono] => 
+                    [email] => 
+                    [pec] => 
+                    [titolod] => 
+                    [ragsoc] => 
+                    [sede] => 
+                    [comuned] => 
+                    [provd] => 
+                    [capd] => 
+                    [piva] => 
+                    [ccia] => 
+                    [cciaprov] => 
+                    [inail] => 
+                    [inailprov] => 
+                    [inps] => 
+                    [inpsprov] => 
+                    [cedile] => 
+                    [cedileprov] => 
+                    [albo] => 
+                    [albonumero] => 
+                    [alboprov] => 
+                    [voltura] => 0
+                    [comunicazioni] => 1
+                    [note] => 
+                    [proprietario] => 1
+                    [richiedente] => 1
+                    [concessionario] => 0
+                    [progettista] => 0
+                    [direttore] => 0
+                    [esecutore] => 0
+                    [sicurezza] => 0
+                    [collaudatore] => 0
+                    [geologo] => 0
+                    [collaudatore_ca] => 0
+                    [progettista_ca] => 0
+                    [economia_diretta] => 0
+                )
+
+        )
+
+    [concessionari] => Array
+        (
+        )
+
+    [progettisti] => Array
+        (
+        )
+
+    [particelle_cu] => Array
+        (
+        )
+
+    [particelle_ct] => Array
+        (
+        )
+
+    [pareri] => Array
+        (
+            [0] => Array
+                (
+                    [pratica] => 30003
+                    [protocollo_richiesta] => 
+                    [data_richiesta] => 16/01/2014
+                    [protocollo_sollecito] => 
+                    [data_sollecito] => 
+                    [protocollo_rilascio] => 
+                    [data_rilascio] => 
+                    [protocollo_ricezione] => 
+                    [data_ricezione] => 
+                    [parere] => Non ancora espresso
+                    [testo] => 
+                    [prescrizioni] => 
+                    [note] => 
+                    [numero_parere] => 
+                    [ente] => Commissione Edilizia
+                    [codice_ente] => ce
+                )
+
+        )
+
+    [oneri_calcolati] => Array
+        (
+        )
+
+    [indirizzi] => Array
+        (
+            [0] => Array
+                (
+                    [pratica] => 30003
+                    [via] => VIA PIETRO PALEOCAPA
+                    [civico] => 3
+                    [interno] => 
+                    [scala] => 
+                    [piano] => 
+                )
+
+        )
+
+    [documenti_mancanti] => Array
+        (
+        )
+
+    [allegati] => Array
+        (
+            [0] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Stralcio planimetrico 1:5000
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [1] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Documentazione catastale
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [2] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Tavole grafiche 1:100
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [3] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Doc. impianti legge 46/90
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [4] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Stralcio CTR scala 1:5000
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [5] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Stralcio PRG/PUC
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [6] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Planimetria progetto 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [7] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Sovraposizione 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [8] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Sezioni terreno 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [9] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Piante sezioni 1:100
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [10] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Planimetrie catastali 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [11] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Risparmio energetico
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [12] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Mappa catastale 1:2000
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [13] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Parere DM 16/02/82 VV.FF.
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [14] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Elenco documenti
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [15] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Versamento tesoreria
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [16] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 
+ stralcio planimetrico della Carta Tecnica Regionale in scala 1:5000, con inserimento sullo stesso dell’opera  in progetto;
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [17] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Doc. fotografica
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [18] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Rilievo area 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [19] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Planimetria 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [20] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Schema fognatura
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [21] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Planimetria catastale 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [22] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Rilievo stato di fatto 1:100
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [23] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Particolari archit. 1.20
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [24] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => ·relazione tecnico illustrativa delle opere in progetto con esplicito riferimento alla loro conformità agli strumenti urbanistici comunali e sovracomunali nonché ai regolamenti ed alle norme vigenti, comprese quelle di sicurezza ed igienico-sanitarie, con indicazione dei vincoli gravanti sulla zona interessata e  le modalità di approvvigionamento di acqua potabile, di smaltimento delle acque bianche e nere a norma di legge e di allaccio ai pubblici servizi; nella relazione devono essere specificati caratteristiche tipologiche e strutturali, materiali, cromatismi;
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [25] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Doc. titolo richiedente
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [26] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Documentazione fotografica
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [27] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Planimetria di progetto
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [28] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Sovraposizione quotata
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [29] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Sezioni del terreno 1:200
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [30] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Piante piani e copertura 1:100
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [31] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Viste assonometriche
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [32] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Elaborati urbanizzazioni
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [33] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Doc. realizzazione strade
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [34] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Computo dei volumi
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [35] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Planimetria asservimenti
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [36] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Computo sup.rif. LR 25/95
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [37] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Standard urbanistici
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [38] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Descrizione lunga di barrierre archi.....
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [39] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Indagine geologica
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [40] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Compatibilità amb. legge 22/94
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [41] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Modello ISTAT
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [42] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Rilievo edificio 1:100
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [43] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Demolizioni/ricostruzioni
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [44] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Atti vincolo
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [45] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Collaudo opere C.A.
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [46] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Certificato VV.FF
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [47] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Dichiarazione Dir. lavori
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [48] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Iscrizione al catasto
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [49] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Punti Fissi
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [50] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Legge 10/91
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [51] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Istat
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [52] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => CTR
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [53] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 1 rata oblazione
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [54] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 2 rata oblazione
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [55] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 3 rata oblazione
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [56] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 1 rata oneri accessori
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [57] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 2 rata oneri accessori
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [58] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 3 rata oneri accessori
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [59] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => 10% oblazione Regione Liguria
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [60] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Documentazione fotografica
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [61] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Dichiarazione ai sensi dell'art. 47 D.P.R. 445/00
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [62] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Dichiarazione antimafia
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [63] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Elaborati grafici
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [64] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Relazione tecnica
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [65] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Relazione geologica
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [66] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Conteggio volumi e superfici
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [67] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Cartografia
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [68] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Cartografia piani di bacino
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [69] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Accatastamento
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [70] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Denuncia I.C.I.
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [71] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Denuncia T.A.R.S.U.
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [72] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Certificazione L.n°46/90
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [73] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Dichiarazione scarico fognario
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+            [74] => Array
+                (
+                    [pratica] => 30003
+                    [documento] => Richiesto parere per vincolo
+                    [allegato] => 1
+                    [mancante] => 0
+                    [integrato] => 0
+                    [sostituito] => 0
+                )
+
+        )
+
+    [oneri_dettaglio] => Array
+        (
+        )
+
+    [esecutore] => Array
+        (
+        )
+
+    [direttore] => Array
+        (
+        )
+
+)
