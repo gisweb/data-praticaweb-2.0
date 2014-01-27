@@ -332,6 +332,28 @@ class appUtils {
     static function groupData($mode,$res){
         $result=Array();
         switch($mode){
+            case "modelli":
+                for($i=0;$i<count($res);$i++){
+                    $rec=$res[$i];
+                    $idtipo=$rec["idtipo"];
+                    
+                    $r["$idtipo"][$rec["id"]]=Array("tipo"=>$rec["tipo_pratica"],"modello"=>$rec["modello"],"info"=>Array("id"=>$rec["id"],"text"=>$rec["modello"],"descrizione"=>$rec["modello"]));
+
+                }
+                foreach($r as $idTipo=>$values){
+                    $modelli=Array();
+                    foreach($values as $idMod=>$data){
+                        $modelli[]=$data["info"];
+                        $tipoPratica=$data["tipo"];
+                    }   
+                    $tipo=Array("id"=>$idTipo,"text"=>$tipoPratica,"state"=>"closed","children"=>$modelli);
+                    $tipi[$idTipo]=$tipo;    
+                        
+                }
+                
+                $result=  array_values($tipi);
+                
+                break;
             case "civico":
                 for($i=0;$i<count($res);$i++){
                     $rec=$res[$i];
