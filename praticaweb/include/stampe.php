@@ -1,4 +1,4 @@
 <?php
 
-$customFields["richiedente"]=$customFields["richiedenti"];
+$customData["richiedente"]=$customData["richiedenti"];
 ?>
