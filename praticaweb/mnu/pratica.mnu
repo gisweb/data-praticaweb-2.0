@@ -30,6 +30,7 @@ vigi,Vigilanza
 250,Sopralluoghi Vigilanza,pe.sopralluoghi
 280,Ordinanze,pe.ordinanze
 iter,Iter
+285,Verifiche,pe.verifiche
 295,Scadenze,pe.scadenze,
 300,Annotazioni,pe.annotazioni,
 293,Documenti Prodotti,stp.documenti
