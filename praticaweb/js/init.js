@@ -1,1 +1,1 @@
-var baseURL='/gisclient/template/savona/';
+var baseURL='/gisclient/template/';
