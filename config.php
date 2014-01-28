@@ -56,7 +56,7 @@ define('LAYER_MAPPALI','particelle');
 define('OBJ_LAYER','2183:particelle');
 define('MAPSETID','savona_osm');
 define('CDUMAPSETID','savona_osm');
-define('TEMPLATE','gisclient');
+define('TEMPLATE','savona');
 define('GC_VERSION',2);
 define('QTID_PARTICELLE','170');
 define('QTID_CIVICI','25');
