@@ -317,8 +317,8 @@ INSERT INTO oneri.rate(pratica,rata,totale,versato,uidins,tmsins) (SELECT $this-
 		$db=$this->db;
 		if($data){
 			$sql="UPDATE oneri.rate SET data_scadenza='$data'::date WHERE pratica=$this->pratica and rata=1;";
-			$sql.="UPDATE oneri.rate SET data_scadenza='$data'::date + INTERVAL '1 year' WHERE pratica=$this->pratica and rata=2;";
-			$sql.="UPDATE oneri.rate SET data_scadenza='$data'::date + INTERVAL '3 year' WHERE pratica=$this->pratica and rata=3;";
+			//$sql.="UPDATE oneri.rate SET data_scadenza='$data'::date + INTERVAL '1 year' WHERE pratica=$this->pratica and rata=2;";
+			//$sql.="UPDATE oneri.rate SET data_scadenza='$data'::date + INTERVAL '3 year' WHERE pratica=$this->pratica and rata=3;";
 			$db->sql_query($sql);
 		}
 	}
