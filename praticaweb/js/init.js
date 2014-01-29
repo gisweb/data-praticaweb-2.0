@@ -1,1 +1,1 @@
-var baseURL='http://mappe.serververgis.it/gisclient2/template/';
+var baseURL='http://sanremo.praticaweb.rr.nu/template/';
