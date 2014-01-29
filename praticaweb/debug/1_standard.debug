@@ -1,0 +1,3 @@
+
+29-01-14	09:43:35
+	update oneri.calcolati set cc=4891,b1=6604,b2=3556 where id=2483;
