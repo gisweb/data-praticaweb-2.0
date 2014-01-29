@@ -1,1 +1,1 @@
-var baseURL='http://sanremo.praticaweb.rr.nu/gisclient/template/';
+var baseURL='http://savona.praticaweb.rr.nu/gisclient/template/';
