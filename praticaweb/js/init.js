@@ -1,1 +1,1 @@
-var baseURL='/gisclient/template/';
+var baseURL='http://mappe.serververgis.it/gisclient2/template/';
