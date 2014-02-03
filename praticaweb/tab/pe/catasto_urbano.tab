@@ -4,7 +4,7 @@ table=""
 viewable=""
 editable="ipre;itec"
 
-[new]
+[edit]
 table="pe.curbano"
 chiave="id"
 campi_ordinamento=""
@@ -14,13 +14,14 @@ data[]="Mappale;mappale;5;text"
 data[]="Sub.;sub;10;text"
 data[]="Sez. Censimento;sez_censimento;16;text"
 data[]="Note;note;40x4;textarea"
-
-button="Chiudi;azione;#goToView;button|Aggiungi;azione;;submit"
-[edit]
+;button="Chiudi;azione;#goToView;button|Aggiungi;azione;;submit"
+button="Annulla;azione;#goToView;button|Elimina;azione;;submit|Salva;azione;;submit"
+[edit1111]
 table="pe.curbano"
 chiave="id"
 campi_ordinamento=""
 campi_obbligatori=""
+
 data[]="Canc.;id;3%;delete"
 data[]="Foglio;foglio;15%;text"
 data[]="Mappale;mappale;15%;text"
@@ -33,8 +34,8 @@ table="pe.curbano"
 chiave="id"
 campi_ordinamento=""
 campi_obbligatori=""
-data[]=";id;7%;idriga"
-
+data[]=";id;3%;idriga"
+data[]=";id;3%#pe.ubicazione.php?tab=catasto_urbano#;btn_edit"
 data[]="Foglio;foglio;30%;text"
 data[]="Mappale;mappale;30%;text"
 data[]="Subalterno;sub;30%;text"

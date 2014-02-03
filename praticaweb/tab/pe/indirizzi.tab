@@ -4,7 +4,7 @@ table=""
 viewable=""
 editable="ipre;itec"
 
-[new]
+[edit]
 table="pe.indirizzi"
 chiave="id"
 campi_ordinamento=""
@@ -16,9 +16,10 @@ data[]="Piano;piano;200xelenco_piani;select"
 data[]="Occ. Suolo Pubblico;occ_suolo_pubblico;;noyes"
 data[]="Mq Occupazione;mq_occ;8;numero"
 data[]="GG. Occupazione;gg_occ;2;numero"
-button="Chiudi;azione;#goToView;button|Aggiungi;azione;;submit"
+;button="Chiudi;azione;#goToView;button|Aggiungi;azione;;submit"
+button="Annulla;azione;#goToView;button|Elimina;azione;;submit|Salva;azione;;submit"
 
-[edit]
+[edit111]
 table="pe.indirizzi"
 chiave="id"
 campi_ordinamento=""
@@ -39,7 +40,8 @@ table="pe.indirizzi"
 chiave=""
 campi_ordinamento=""
 campi_obbligatori=""
-data[]="Mappa;id;7%;zoom_gc"
+data[]="Mappa;id;3%;zoom_gc"
+data[]=";id;3%#pe.ubicazione.php?tab=indirizzi#;btn_edit"
 data[]="Via;via;30%;text"
 data[]="Numero;civico;10%;text"
 data[]="Interno;interno;10%;text"
