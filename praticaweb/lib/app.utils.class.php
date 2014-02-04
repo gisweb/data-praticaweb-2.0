@@ -332,6 +332,42 @@ class appUtils {
     static function groupData($mode,$res){
         $result=Array();
         switch($mode){
+            case "pratiche-civici":
+                for($i=0;$i<count($res);$i++){
+                    $rec=$res[$i];
+                    $via=$rec["via"];
+                    $civico=($rec["civico"])?($rec["civico"]):('n.c.');;
+                    $interno=($rec["interno"])?($rec["interno"]):('n.i.');
+                    $r[$via][$civico][$interno][]=Array("pratica"=>$rec["pratica"],"interno"=>$interno,"via"=>$via,"civico"=>$civico,"info"=>Array("id"=>$rec["pratica"],"text"=>sprintf("%s n° %s del %s - Richiedenti : %s",$rec["tipo"],$rec["numero"],$rec["data"],$rec["richiedente"])));
+
+                }
+                
+                $vie=Array();
+                foreach($r as $ind=>$values){
+                    $civici=Array();
+                    
+                    foreach($values as $civ=>$vals){
+                        
+                        $interni=Array();
+                        foreach ($vals as $i=>$v){
+                            
+                            $pratiche=Array();
+                            foreach($v as $p){
+                                $pratiche[]=$p["info"];
+                            }
+                            $interni[]=Array("id"=>$i,"text"=>$i,"state"=>"closed","children"=>$pratiche);
+                        }
+
+                        $civici[]=Array("id"=>$civ,"text"=>$civ,"state"=>"open","children"=>$interni);
+                        
+                    } 
+                    
+                    $vie[]=Array("id"=>$ind,"text"=>$via,"state"=>"open","children"=>$civici);   
+                        
+                }
+                
+                $result=  array_values($vie);
+                break;
             case "modelli":
                 for($i=0;$i<count($res);$i++){
                     $rec=$res[$i];
