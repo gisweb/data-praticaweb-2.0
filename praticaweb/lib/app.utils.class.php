@@ -338,7 +338,7 @@ class appUtils {
                     $via=$rec["via"];
                     $civico=($rec["civico"])?($rec["civico"]):('n.c.');;
                     $interno=($rec["interno"])?($rec["interno"]):('n.i.');
-                    $r[$via][$civico][$interno][]=Array("pratica"=>$rec["pratica"],"interno"=>$interno,"via"=>$via,"civico"=>$civico,"info"=>Array("id"=>$rec["pratica"],"text"=>sprintf("%s n° %s del %s - Richiedenti : %s",$rec["tipo"],$rec["numero"],$rec["data"],$rec["richiedente"])));
+                    $r[$via][$civico][$interno][]=Array("pratica"=>$rec["pratica"],"interno"=>$interno,"via"=>$via,"civico"=>$civico,"info"=>Array("id"=>$rec["pratica"],"civico"=>$rec["civico"],"interno"=>$rec["interno"],"numero"=>$rec["numero"],"text"=>sprintf("%s n° %s del %s - Richiedenti : %s",$rec["tipo"],$rec["numero"],$rec["data"],$rec["richiedente"])));
 
                 }
                 
@@ -355,13 +355,14 @@ class appUtils {
                             foreach($v as $p){
                                 $pratiche[]=$p["info"];
                             }
+							$state=(count($pratiche)>1)?("closed"):("open");
                             $interni[]=Array("id"=>$i,"text"=>$i,"state"=>"closed","children"=>$pratiche);
                         }
-
-                        $civici[]=Array("id"=>$civ,"text"=>$civ,"state"=>"open","children"=>$interni);
+						$state=(count($interni)>1)?("closed"):("open");
+                        $civici[]=Array("id"=>$civ,"text"=>$civ,"state"=>"closed","children"=>$interni);
                         
                     } 
-                    
+                    $state=(count($civici)>1)?("closed"):("open");
                     $vie[]=Array("id"=>$ind,"text"=>$via,"state"=>"open","children"=>$civici);   
                         
                 }

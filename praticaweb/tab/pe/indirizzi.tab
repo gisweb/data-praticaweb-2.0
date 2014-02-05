@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ;Example file tab
 [general]
 table=""
@@ -9,11 +8,11 @@ editable="ipre;itec"
 table="pe.indirizzi"
 chiave="id"
 campi_ordinamento=""
-campi_obbligatori="via;civico"
+campi_obbligatori="via"
 data[]="Via;via;40;autosuggest"
 data[]="Civico;civico;10##via;autosuggest|Interno;interno;2;text"
 data[]="Scala;scala;10;text"
-data[]="Piano;piano;200xelenco_piani;select"
+;data[]="Piano;piano;200xelenco_piani;select"
 data[]="Occ. Suolo Pubblico;occ_suolo_pubblico;;noyes"
 data[]="Mq Occupazione;mq_occ;8;numero"
 data[]="GG. Occupazione;gg_occ;2;numero"
@@ -54,20 +53,19 @@ data[]="GG. Occupazione;gg_occ;5%;text"
 [list]
 
 [standard]
-=======
 ;Example file tab
 [general]
 table=""
 viewable=""
 editable="ipre;itec"
 
-[new]
+[edit]
 table="pe.indirizzi"
 chiave="id"
 campi_ordinamento=""
 campi_obbligatori="via;civico"
-data[]="Via;via;40;autosuggest"
-data[]="Civico;civico;10##via;autosuggest|Interno;interno;2;text"
+data[]="Via;via;40;combosuggest"
+data[]="Civico;civico;10##via;combosuggest|Interno;interno;2;text"
 data[]="Scala;scala;10;text"
 data[]="Piano;piano;200xelenco_piani;select"
 data[]="Occ. Suolo Pubblico;occ_suolo_pubblico;;noyes"
@@ -75,7 +73,7 @@ data[]="Mq Occupazione;mq_occ;8;numero"
 data[]="GG. Occupazione;gg_occ;2;numero"
 button="Chiudi;azione;#goToView;button|Aggiungi;azione;;submit"
 
-[edit]
+[edit1111]
 table="pe.indirizzi"
 chiave="id"
 campi_ordinamento=""
@@ -96,12 +94,13 @@ table="pe.indirizzi"
 chiave=""
 campi_ordinamento=""
 campi_obbligatori=""
-data[]="Mappa;id;3%;zoom_gc"
-data[]="Via;via;20%;text"
-data[]="Via Importata;via_old;20%;text"
+data[]="Mappa;id;2%;zoom_gc"
+data[]=";id;2%#pe.ubicazione.php?tab=indirizzi#;btn_edit"
+data[]="Via;via;30%;text"
+data[]="Via Importata;via_old;30%;text"
 data[]="Numero;civico;5%;text"
 data[]="Interno;interno;5%;text"
-;data[]="Scala;scala;10%;text"
+data[]="Scala;scala;10%;text"
 ;data[]="Piano;piano;10%;text"
 ;data[]="Occ. Suolo Pubblico;occ_suolo_pubblico;5%;text"
 ;data[]="Mq Occupazione;mq_occ;5%;text"
@@ -109,4 +108,4 @@ data[]="Interno;interno;5%;text"
 [list]
 
 [standard]
->>>>>>> 0ef83f211641f625c74a443fc1ed1da2b74d63b3
+
