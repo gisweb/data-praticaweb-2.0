@@ -363,7 +363,7 @@ class appUtils {
                                     $pratiche[]=$p["info"];
                                 }
                                 $state=(count($pratiche)>1)?("closed"):("open");
-                                $folders[]=Array("id"=>$fld,"text"=>$fld,"state"=>"closed","children"=>$pratiche);
+                                $folders[]=Array("id"=>$fld,"text"=>$p["info"]["text"],"state"=>"closed","children"=>$pratiche);
                             }
                                 
                             $state=(count($folders)>1)?("closed"):("open");
