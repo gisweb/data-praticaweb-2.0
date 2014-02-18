@@ -17,7 +17,7 @@ data[]="Silenzio Assenso gg.;silenzio_assenzo;10;text"
 data[]="In Stampa Unione;stampa;40;yesno"
 data[]="Attivato;enabled;40;yesno"
 data[]="Ordine di visualizzazione;ordine;3;intero"
-button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
+button="Salva;azione;;submit|Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit"
 [view]
 table="pe.e_enti"
 chiave="id"

@@ -17,7 +17,7 @@ data[]="Repertorio;repertorio;18;text|Reg.Part.;reg_part;16;text|Reg.Ord.;reg_or
 data[]="Registrato a;loc_reg;37;text|Data;data_reg;10;data"
 data[]="Trascritto a;loc_tras;37;text|Data;data_tras;10;data"
 data[]="Note;note;50x4;textarea"
-button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
+button="Salva;azione;;submit|Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit"
 
 
 [view]

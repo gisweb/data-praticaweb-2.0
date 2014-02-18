@@ -3,7 +3,6 @@ prei,Istruttoria
 20,Soggetti Interessati,pe.elenco_soggetti,
 50,Ubicazione Intervento,pe.ubicazione,
 40,Elenco Allegati,pe.allegati,
-92,Sospensioni Lavori,pe.sospensioni,
 45,Integrazione Documenti,pe.integrazioni,
 70,Pianificazione e Vincoli,pe.vincoli,
 vigi,Vigilanza

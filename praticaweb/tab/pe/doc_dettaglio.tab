@@ -13,7 +13,7 @@ data[]="Nome Documento;documento;;string"
 data[]="Descrizione;descrizione;;string"
 data[]="Prot.;protocollo;10;text|Data Prot.;data_protocollo;10;data"
 data[]="Note;note;55x3;textarea"
-button="Annulla;azione;;submit|Salva;azione;;submit"
+button="Salva;azione;;submit|Annulla;azione;;submit"
 
 [view]
 table="pe.doc_dettaglio"

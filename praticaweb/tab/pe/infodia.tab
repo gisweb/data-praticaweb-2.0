@@ -14,7 +14,7 @@ data[]="Diniego DIA;diniego;;checkbox"
 data[]="Notifica diniego;diniego_prot;25;text"
 data[]="Data notifica;diniego_data;10;data"
 data[]="Note;note;50x3;textarea"
-button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
+button="Salva;azione;;submit|Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit"
 [view]
 table="pe.informazioni_dia"
 chiave="id"
