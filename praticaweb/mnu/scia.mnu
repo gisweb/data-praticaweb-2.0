@@ -27,6 +27,7 @@ agi,Agibilità
 vigi,Sorveglianza
 260,Esposti,pe.esposti,
 250,Sopralluoghi Vigilanza,pe.sopralluoghi
+280,Ordinanze,pe.ordinanze
 iter,Iter
 285,Verifiche,pe.verifiche
 295,Scadenze,pe.scadenze,
