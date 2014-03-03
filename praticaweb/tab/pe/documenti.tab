@@ -14,7 +14,7 @@ campi_obbligatori="iter;nome"
 data[]="Iter;iter;200xpe.elenco_iter;selectdb"
 data[]="Nome;nome;50;text"
 data[]="Descrizione;descrizione;50x6;textarea"
-button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
+button="Salva;azione;;submit|Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit"
 [view]
 table="pe.e_documenti"
 chiave="id"

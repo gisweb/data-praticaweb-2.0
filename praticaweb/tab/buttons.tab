@@ -1,0 +1,5 @@
+[edit]
+table=""
+viewable=""
+editable=""
+button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"

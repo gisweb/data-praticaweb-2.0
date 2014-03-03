@@ -2,29 +2,31 @@
 [general]
 table=""
 viewable=""
-editable=""
+editable="ipre;itec"
 
-[new]
-table="pe.curbano"
-chiave="id"
-campi_ordinamento=""
-campi_obbligatori="sezione;foglio;mappale"
-data[]="Sezione;sezione;200xnct.elenco_sezioni;selectdb"
-data[]="Foglio;foglio;5;text"
-data[]="Mappale;mappale;5;text"
-data[]="Sub.;sub;10;text"
-data[]="Note;note;40x4;textarea"
-button="Chiudi;azione;#goToView;button|Aggiungi;azione;;submit"
 [edit]
 table="pe.curbano"
 chiave="id"
 campi_ordinamento=""
+campi_obbligatori="sezione;foglio;mappale"
+data[]="Foglio;foglio;5;text"
+data[]="Mappale;mappale;5;text"
+data[]="Sub.;sub;10;text"
+data[]="Sez. Censimento;sez_censimento;16;text"
+data[]="Note;note;40x4;textarea"
+;button="Chiudi;azione;#goToView;button|Aggiungi;azione;;submit"
+button="Salva;azione;;submit|Annulla;azione;#goToView;button|Elimina;azione;;submit"
+[edit1111]
+table="pe.curbano"
+chiave="id"
+campi_ordinamento=""
 campi_obbligatori=""
+
 data[]="Canc.;id;3%;delete"
-data[]="Sezione;sezione;10%xnct.elenco_sezioni;selectdb"
 data[]="Foglio;foglio;15%;text"
 data[]="Mappale;mappale;15%;text"
 data[]="Subalterno;sub;15%;text"
+data[]="Sez. Censimento;sez_censimento;16;text"
 data[]="Note;note;;text"
 
 [view]
@@ -32,12 +34,12 @@ table="pe.curbano"
 chiave="id"
 campi_ordinamento=""
 campi_obbligatori=""
-data[]=";id;7%;idriga"
-data[]="Sezione;sezione;10%xnct.elenco_sezioni;selectdb"
+data[]=";id;3%;idriga"
+data[]=";id;3%#pe.ubicazione.php?tab=catasto_urbano#;btn_edit"
 data[]="Foglio;foglio;30%;text"
 data[]="Mappale;mappale;30%;text"
 data[]="Subalterno;sub;30%;text"
-
+data[]="Sez. Censimento;sez_censimento;16;text"
 [list]
 
 [standard]

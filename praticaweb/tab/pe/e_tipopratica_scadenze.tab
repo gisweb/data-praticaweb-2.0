@@ -2,7 +2,7 @@
 [general]
 table=""
 viewable=""
-editable=""
+editable="itec"
 
 
 [edit]
@@ -13,7 +13,7 @@ campi_obbligatori="codice,tipo_pratica"
 data[]="Tipo Pratica;nome;60%;text"
 data[]="Scadenza;scadenza;20%;text_box"
 data[]="Tabella;tabella;20%;text_box"
-button="Chiudi;goToList;;button|Salva;azione;;submit"
+button="Salva;azione;;submit|Chiudi;goToList;;button"
 
 [view]
 table="pe.e_tipopratica_scadenze"
@@ -23,7 +23,7 @@ campi_obbligatori=""
 data[]="Tipo Pratica;tipo_pratica;30;text"
 data[]="Scadenza;scadenza;25;text"
 data[]="Tabella;tabella;25;text"
-button="Chiudi;azione;#goToView;submit"
+button="Chiudi;azione;#goToView#pe.e_scadenze#mode=list;submit"
 [list]
 table="pe.e_tipopratica_scadenze"
 chiave="id"

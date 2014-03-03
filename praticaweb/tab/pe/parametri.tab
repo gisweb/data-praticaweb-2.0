@@ -2,7 +2,7 @@
 [general]
 table=""
 viewable=""
-editable=""
+editable="itec"
 
 
 [new]
@@ -23,7 +23,7 @@ data[]=";id;3%;delete"
 data[]="Parametro;parametro;85%;text"
 data[]="Valore;valore;12;text_box"
 data[]="Conformità;conforme;50;multiple_yesno"
-button="Chiudi;azione;#goToView;submit|Salva;azione;;submit"
+button="Salva;azione;;submit|Chiudi;azione;#goToView;submit"
 [view]
 table="pe.parametri_progetto"
 chiave="id"

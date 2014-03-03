@@ -2,7 +2,7 @@
 [general]
 table=""
 viewable=""
-editable=""
+editable="itec"
 
 [edit]
 table="pe.progetto"
@@ -13,7 +13,7 @@ data[]="Destinazione d'uso principale;destuso1;50;autosuggest"
 data[]="Destinazione d'uso secondaria;destuso2;50;autosuggest"
 data[]="Numero tavole di progetto;tavole;4;text"
 data[]="Note;note;60x10;textarea"
-button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
+button="Salva;azione;;submit|Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit"
 [view]
 table="pe.progetto"
 chiave="id"
