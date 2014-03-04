@@ -1,1 +1,1 @@
-var baseURL='http://savona.praticaweb.rr.nu/gisclient/template/';
+var baseURL='http://10.132.48.68//gisclient2/template/';
