@@ -132,11 +132,11 @@ class pratica extends generalPratica{
 		
 	}
 	private function setAllegati($list=Array()){
-		if(!$list){
+		/*if(!$list){
 			$db=$this->db1;
 			$ris=$db->fetchAll("select $this->pratica as pratica,id as documento,1 as allegato,$this->userid as uidins,".time()." as tmsins from pe.e_documenti where default_ins=1");
 			for ($i=0;$i<count($ris);$i++) $db->insert("pe.allegati",$ris[$i]);
-		}
+		}*/
 	}
     
 /*********************************************************************************************************/	
