@@ -12,7 +12,7 @@ campi_obbligatori="codice;scadenza"
 data[]="Tipo Scadenza;codice;250xpe.elenco_tiposcadenze;selectdb"
 data[]="Data Scadenza;scadenza;10;data"
 data[]="Note;note;55x8;textarea"
-button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
+button="Salva;azione;;submit|Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit"
 
 [view]
 

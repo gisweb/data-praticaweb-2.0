@@ -13,7 +13,7 @@ data[]="Codice;codice;8;text"
 data[]="Scadenza;nome;50;text"
 data[]="Testo;testo;50x6;textarea"
 data[]="Ordine di visualizzazione;ordine;3;intero"
-button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
+button="Salva;azione;;submit|Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit"
 [view]
 table="pe.e_scadenze"
 chiave="id"

@@ -4,44 +4,36 @@ table=""
 viewable=""
 editable="ipre;itec"
 
-[new]
-table="pe.indirizzi"
-chiave="id"
-campi_ordinamento=""
-campi_obbligatori="via;civico"
-data[]="Via;via;40;autosuggest"
-data[]="Civico;civico;10##via;autosuggest"
-data[]="Interno;interno;3;text"
-data[]="Scala;scala;10;text"
-data[]="Piano;piano;200xelenco_piani;select"
-button="Chiudi;azione;#goToView;button|Aggiungi;azione;;submit"
-
 [edit]
 table="pe.indirizzi"
 chiave="id"
 campi_ordinamento=""
-campi_obbligatori=""
-data[]="Canc.;id;5%;delete"
-data[]="Via;via;30%;text"
-data[]="Numero;civico;20%;text"
-data[]="Interno;interno;3;text"
-data[]="Scala;scala;10%;text"
-data[]="Piano;piano;10%;text"
-
-
+campi_obbligatori="via"
+data[]="Via;via;40;autosuggest"
+data[]="Civico;civico;10##via;autosuggest|Interno;interno;2;text"
+data[]="Scala;scala;10;text"
+;data[]="Piano;piano;200xelenco_piani;select"
+data[]="Occ. Suolo Pubblico;occ_suolo_pubblico;;noyes"
+data[]="Mq Occupazione;mq_occ;8;numero"
+data[]="GG. Occupazione;gg_occ;2;numero"
+;button="Chiudi;azione;#goToView;button|Aggiungi;azione;;submit"
+button="Salva;azione;;submit|Annulla;azione;#goToView;button|Elimina;azione;;submit"
 
 [view]
 table="pe.indirizzi"
-chiave="id"
+chiave=""
 campi_ordinamento=""
 campi_obbligatori=""
-data[]="Mappa;id;7%;zoom_gc"
+data[]="Mappa;id;3%;zoom_gc"
+data[]=";id;3%#pe.ubicazione.php?tab=indirizzi#;btn_edit"
 data[]="Via;via;30%;text"
 data[]="Numero;civico;10%;text"
-data[]="Interno;interno;5%;text"
+data[]="Interno;interno;10%;text"
 data[]="Scala;scala;10%;text"
-data[]="Piano;piano;20%;text"
-
+data[]="Piano;piano;10%;text"
+data[]="Occ. Suolo Pubblico;occ_suolo_pubblico;5%;text"
+data[]="Mq Occupazione;mq_occ;5%;text"
+data[]="GG. Occupazione;gg_occ;5%;text"
 [list]
 
 [standard]
