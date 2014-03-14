@@ -98,8 +98,8 @@ class utils {
                 $cssLocalURL=sprintf("http://%s%s/%s.css",$_SERVER["HTTP_HOST"],self::cssLocalURL,$css);
                 $cssURL=sprintf("http://%s%s/%s.css",$_SERVER["HTTP_HOST"],self::cssURL,$css);
                 
-                $localFileCss=sprintf("%s/praticaweb/css/%s.css",DATA_DIR,$js);
-                $fileCss=sprintf("%s/css/%s.css",APPS_DIR,$js);
+                $localFileCss=sprintf("%s/praticaweb/css/%s.css",DATA_DIR,$css);
+                $fileCss=sprintf("%s/css/%s.css",APPS_DIR,$css);
                 if (file_exists($localeFileCss))
                     $tag=sprintf("\n\t\t<LINK media=\"screen\" href=\"%s\" type=\"text/css\" rel=\"stylesheet\"></link>",$cssLocalURL);
                 elseif(file_exists($fileCss))
