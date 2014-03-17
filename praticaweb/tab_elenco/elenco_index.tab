@@ -8,11 +8,8 @@ rdp,itec,iamm-4@NewWindow@'pe.avvioproc.php?mode=new','Praticaweb',0,0,'yes'@Nuo
 -1@NewWindow@'pe.raggruppamenti.php','ricercaPraticaweb',0,0,'yes'@Raggruppamenti di pratiche @Modalit&agrave; di ricerca di pratiche raggruppate per indirizzo/particella.
 -3@NewWindow@'report.scadenze.php','Praticaweb',0,0,'yes'@Elenco delle Scadenze@Elenco delle Scadenze.
 rdp,itec,iamm-3@NewWindow@'pe.eliminapratica.php?ricerca=1','Praticaweb',0,0,'yes'@Elimina Pratica@Individua ed elimina la pratica scelta.
--2@NewWindow@'admin.pwd.php?mode=edit','PraticawebUtenti',0,0,'yes'@Gestione PassWord Utenti@- Modifica password dell'utente.
--3@Praticaweb Navigator per la cartografia
--3@ApriMappa@'andora_pubblica','gisclient'@Accedi alla cartografia del comune@Quadro d'unione del catastale Piano Regolatore e vincoli
-cdu-3@NewWindow@'cdu.richiesta.php?mode=new','Praticaweb',0,0,'yes'@Nuovo Certificato di Destinazione Urbanistica@
-cdu-4@NewWindow@'cdu.ricerca.php','Praticaweb',0,0,'yes'@Ricerca Certificato di Destinazione Urbanistica@
+-3@NewWindow@'admin.pwd.php?mode=edit','PraticawebUtenti',0,0,'yes'@Gestione PassWord Utenti@- Modifica password dell'utente.
+
 -2@Amministrazione Sistema
 -2@NewWindow@'admin.utenti.php?mode=list','PraticawebUtenti',0,0,'yes'@Gestione Profili Utenti@- Aggiunta, Cancellazione, Modifica di un profilo utente.
 -2@NewWindow@'admin.gruppi.php?mode=list','PraticawebUtenti',0,0,'yes'@Gestione Profili Gruppi@- Aggiunta, Cancellazione, Modifica di un profilo gruppo di utenti.
