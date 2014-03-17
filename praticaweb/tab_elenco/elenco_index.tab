@@ -7,7 +7,7 @@ rdp,itec,iamm-4@NewWindow@'pe.avvioproc.php?mode=new','Praticaweb',0,0,'yes'@Nuo
 -1@NewWindow@'pe.e_verifiche','Praticaweb',0,0,'yes'@Sorteggi@Sorteggi e Elenco Pratiche sorteggiate.
 -1@NewWindow@'pe.raggruppamenti.php','ricercaPraticaweb',0,0,'yes'@Raggruppamenti di pratiche @Modalit&agrave; di ricerca di pratiche raggruppate per indirizzo/particella.
 -3@NewWindow@'report.scadenze.php','Praticaweb',0,0,'yes'@Elenco delle Scadenze@Elenco delle Scadenze.
-rdp,itec,iamm-3@NewWindow@'pe.eliminapratica.php?ricerca=1','Praticaweb',0,0,'yes'@Elimina Pratica@Individua ed elimina la pratica scelta.
+rdp-3@NewWindow@'pe.eliminapratica.php?ricerca=1','Praticaweb',0,0,'yes'@Elimina Pratica@Individua ed elimina la pratica scelta.
 -3@NewWindow@'admin.pwd.php?mode=edit','PraticawebUtenti',0,0,'yes'@Gestione PassWord Utenti@- Modifica password dell'utente.
 
 -2@Amministrazione Sistema
