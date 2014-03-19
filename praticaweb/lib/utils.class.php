@@ -69,7 +69,7 @@ class utils {
                 
                 $localFileJs=sprintf("%s/praticaweb/js/%s.js",DATA_DIR,$js);
                 $fileJs=sprintf("%s/js/%s.js",APPS_DIR,$js);
-                if (file_exists($localeFileJs))
+                if (file_exists($localFileJs))
                     $tag=sprintf("\n\t\t<SCRIPT language=\"javascript\" src=\"%s\"></script>",$jsLocalURL);
                 elseif(file_exists($fileJs))
                     $tag=sprintf("\n\t\t<SCRIPT language=\"javascript\" src=\"%s\"></script>",$jsURL);
@@ -82,7 +82,7 @@ class utils {
             foreach($f as $js){
                 $jsLocalURL=sprintf("http://%s%s/%s.js",$_SERVER["HTTP_HOST"],self::jsLocalURL,$js);
                 $jsURL=sprintf("http://%s%s/%s.js",$_SERVER["HTTP_HOST"],self::jsURL,$js);
-                if (file_exists($localeFileJs))
+                if (file_exists($localFileJs))
                     $tag=sprintf("\n\t\t<SCRIPT language=\"javascript\" src=\"%s\"></script>",$jsLocalURL);
                 elseif(file_exists($fileJs))
                     $tag=sprintf("\n\t\t<SCRIPT language=\"javascript\" src=\"%s\"></script>",$jsURL);
@@ -100,7 +100,7 @@ class utils {
                 
                 $localFileCss=sprintf("%s/praticaweb/css/%s.css",DATA_DIR,$css);
                 $fileCss=sprintf("%s/css/%s.css",APPS_DIR,$css);
-                if (file_exists($localeFileCss))
+                if (file_exists($localFileCss))
                     $tag=sprintf("\n\t\t<LINK media=\"screen\" href=\"%s\" type=\"text/css\" rel=\"stylesheet\"></link>",$cssLocalURL);
                 elseif(file_exists($fileCss))
                     $tag=sprintf("\n\t\t<LINK media=\"screen\" href=\"%s\" type=\"text/css\" rel=\"stylesheet\"></link>",$cssURL);
@@ -113,7 +113,7 @@ class utils {
             foreach($f as $css){
                 $cssLocalURL=sprintf("http://%s%s/%s.css",$_SERVER["HTTP_HOST"],self::cssLocalURL,$css);
                 $cssURL=sprintf("http://%s%s/%s.css",$_SERVER["HTTP_HOST"],self::cssURL,$css);
-                if (file_exists($localeFileCss))
+                if (file_exists($localFileCss))
                     $tag=sprintf("\n\t\t<LINK media=\"screen\" href=\"%s\" type=\"text/css\" rel=\"stylesheet\"></link>",$cssLocalURL);
                 elseif(file_exists($fileCss))
                     $tag=sprintf("\n\t\t<LINK media=\"screen\" href=\"%s\" type=\"text/css\" rel=\"stylesheet\"></link>",$cssURL);
