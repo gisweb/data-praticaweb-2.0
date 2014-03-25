@@ -10,4 +10,5 @@ chiave="id"
 campi_ordinamento=""
 campi_obbligatori=""
 
-data[]="Scadenza;pe.scadenze.scadenza;10;search_date"
+data[]="Data Scadenza;pe.scadenze.scadenza;10;search_date"
+data[]="Tipo Scadenza;pe.scadenze.codice;400x300xpe.elenco_tiposcadenzexordine>=0;search_multilist"
