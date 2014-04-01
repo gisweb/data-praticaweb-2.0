@@ -332,6 +332,76 @@ class appUtils {
     static function groupData($mode,$res){
         $result=Array();
         switch($mode){
+            case "print-field":
+                for($i=0;$i<count($res);$i++){
+                    $result[]=$res[$i];
+                }
+                break;
+            case "pratiche-civici":
+                for($i=0;$i<count($res);$i++){
+                    $rec=$res[$i];
+                    $via=$rec["via"];
+                    $cartella=($rec["cartella"])?($rec["cartella"]):($rec["pratica"]);
+                    $civico=($rec["civico"])?($rec["civico"]):('n.c.');
+                    $interno=($rec["interno"])?($rec["interno"]):('n.i.');
+                    $r[$via][$civico][$interno][$cartella][]=Array("pratica"=>$rec["pratica"],"interno"=>$interno,"via"=>$via,"civico"=>$civico,"info"=>Array("id"=>$rec["pratica"],"civico"=>$rec["civico"],"interno"=>$rec["interno"],"numero"=>$rec["numero"],"cartella"=>$rec["cartella"],"text"=>sprintf("%s n° %s del %s - Richiedenti : %s",$rec["tipo"],$rec["numero"],$rec["data"],$rec["richiedente"])));
+
+                }
+                
+                $vie=Array();
+                foreach($r as $ind=>$values){
+                    $civici=Array();
+                    
+                    foreach($values as $civ=>$vals){
+                        
+                        $interni=Array();
+                        foreach ($vals as $i=>$v){
+                            $folders=Array();
+                            foreach($v as $fld=>$prs){
+                                $pratiche=Array();
+                                foreach($prs as $p){
+                                    $pratiche[]=$p["info"];
+                                }
+                                $state=(count($pratiche)>1)?("closed"):("open");
+                                $folders[]=Array("id"=>$fld,"text"=>$p["info"]["text"],"state"=>"closed","children"=>$pratiche);
+                            }
+                                
+                            $state=(count($folders)>1)?("closed"):("open");
+                            $interni[]=Array("id"=>$i,"text"=>$i,"state"=>"closed","children"=>$folders);
+                        }
+			$state=(count($interni)>1)?("closed"):("open");
+                        $civici[]=Array("id"=>$civ,"text"=>$civ,"state"=>"closed","children"=>$interni);
+                        
+                    } 
+                    $state=(count($civici)>1)?("closed"):("open");
+                    $vie[]=Array("id"=>$ind,"text"=>$via,"state"=>"open","children"=>$civici);   
+                        
+                }
+                
+                $result=  array_values($vie);
+                break;
+            case "modelli":
+                for($i=0;$i<count($res);$i++){
+                    $rec=$res[$i];
+                    $idtipo=$rec["idtipo"];
+                    
+                    $r["$idtipo"][$rec["id"]]=Array("tipo"=>$rec["tipo_pratica"],"modello"=>$rec["modello"],"info"=>Array("id"=>$rec["id"],"text"=>$rec["modello"],"descrizione"=>$rec["modello"]));
+
+                }
+                foreach($r as $idTipo=>$values){
+                    $modelli=Array();
+                    foreach($values as $idMod=>$data){
+                        $modelli[]=$data["info"];
+                        $tipoPratica=$data["tipo"];
+                    }   
+                    $tipo=Array("id"=>$idTipo,"text"=>$tipoPratica,"state"=>"closed","children"=>$modelli);
+                    $tipi[$idTipo]=$tipo;    
+                        
+                }
+                
+                $result=  array_values($tipi);
+                
+                break;
             case "civico":
                 for($i=0;$i<count($res);$i++){
                     $rec=$res[$i];
@@ -413,6 +483,21 @@ class appUtils {
         }
         return $result;
 
+    }
+    static function titoloPratica($req){
+
+        if (!$_REQUEST["pratica"]) return "";
+        $pr=$_REQUEST["pratica"];
+        if ($_REQUEST["cdu"]){
+            $sql="SELECT 'Certificato di Destinazione Urbanitica Prot n° '||protocollo as titolo FROM cdu.richiesta WHERE pratica=?";
+        }
+        else{
+            $sql="SELECT B.nome|| coalesce(' - '||C.nome,'') ||' n° '||A.numero as titolo FROM pe.avvioproc A INNER JOIN pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN pe.e_categoriapratica C ON (coalesce(A.categoria,0)=C.id)  WHERE pratica=?;";
+        }
+        //echo $pr;
+        $db=self::getDb();
+        $result=$db->fetchAll($sql,Array($pr));
+        return $result[0]["titolo"];
     }
 }
 ?>
