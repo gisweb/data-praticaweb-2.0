@@ -34,11 +34,7 @@ table="pe.curbano"
 chiave="id"
 campi_ordinamento=""
 campi_obbligatori=""
-data[]=";id;3%;idriga"
-data[]=";id;3%#pe.ubicazione.php?tab=catasto_urbano#;btn_edit"
-data[]="Foglio;foglio;30%;text"
-data[]="Mappale;mappale;30%;text"
-data[]="Subalterno;sub;30%;text"
+
 data[]="Sez. Censimento;sez_censimento;16;text"
 [list]
 
