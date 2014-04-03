@@ -11,7 +11,7 @@ campi_ordinamento=""
 campi_obbligatori=""
 data[]="Parcheggi n°;parc_n;15;numero|Euro a parcheggio;i_parc_n;8;numero"
 data[]="Parcheggi mq.;parc_mq;10;superficie|Euro a mq;i_parc_mq;8;numero"
-data[]="Verde pubblico mq.;verde_mq;10;numero|Euro a mq;8;numero"
+data[]="Verde pubblico mq.;verde_mq;10;numero|Euro a mq;i_verde_mq;8;numero"
 button="Salva;azione;;submit|Elimina;azione;#confirmDelete;submit|Annulla;azione;;submit"
 [edit]
 table="oneri.monetizzazione"
