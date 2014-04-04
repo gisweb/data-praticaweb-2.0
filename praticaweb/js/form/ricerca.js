@@ -59,6 +59,9 @@ $(document).ready(function(){
                 return '<div class="ddv" style="padding:5px 0;background-color:#EEF7FF"></div>';
             },*/
             onLoadSuccess:function(data){
+                if(data['elenco_id'].length==1){
+                    window.location='/praticaweb.php?pratica='+data['elenco_id'][0];
+                }
                 $('#elenco').val(data['elenco_id']);
             }
 
