@@ -10,6 +10,7 @@ chiave="id"
 campi_ordinamento=""
 campi_obbligatori="data_annotazione;note"
 data[]="Data;data_annotazione;10;data"
+data[]="Utente;utente;200xadmin.elenco_utenti;selectdb"
 data[]="Nota;note;55x8;textarea"
 button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
 
@@ -22,6 +23,7 @@ campi_ordinamento="data_annotazione DESC;tmsins DESC"
 campi_obbligatori=""
 data[]="info;id;3%#pe.annotazioni;btn_edit"
 data[]="Data;data_annotazione;15%;data"
+data[]="Utente;utente;200xadmin.elenco_utenti;selectdb"
 data[]="Note;note;;text"
 
 [standard]
