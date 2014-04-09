@@ -26,9 +26,9 @@ campi_obbligatori=""
 data[]=";id;3%;idriga"
 data[]=";id;3%#pe.ubicazione.php?tab=catasto_urbano#;btn_edit"
 data[]="Sezione;sezione;200xnct.elenco_sezioni;selectdb"
-data[]="Foglio;foglio;30%;text"
-data[]="Mappale;mappale;30%;text"
-data[]="Subalterno;sub;30%;text"
+data[]="Foglio;foglio;20%;text"
+data[]="Mappale;mappale;20%;text"
+data[]="Subalterno;sub;20%;text"
 data[]="Sez. Censimento;sez_censimento;16;text"
 [list]
 
