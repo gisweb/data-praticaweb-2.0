@@ -1,0 +1,272 @@
+------- DEBUG DEL 03/04/2014 10:24:45 -------
+SELECT DISTINCT A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata')  as responsabile,E.richiedente,F.progettista,G.elenco_ct,H.elenco_cu,I.ubicazione
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND voltura=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND voltura=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text)) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE numero::varchar ilike '3395')) 
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 03/04/2014 10:24:59 -------
+SELECT DISTINCT A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata')  as responsabile,E.richiedente,F.progettista,G.elenco_ct,H.elenco_cu,I.ubicazione
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND voltura=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND voltura=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text)) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE protocollo::varchar ilike '6105')) 
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 03/04/2014 10:25:48 -------
+SELECT DISTINCT A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata')  as responsabile,E.richiedente,F.progettista,G.elenco_ct,H.elenco_cu,I.ubicazione
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND voltura=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND voltura=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text)) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE numero::varchar ilike '3100')) 
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 03/04/2014 10:25:59 -------
+SELECT DISTINCT A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata')  as responsabile,E.richiedente,F.progettista,G.elenco_ct,H.elenco_cu,I.ubicazione
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND voltura=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND voltura=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text)) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE numero::varchar ilike '3100')) 
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 03/04/2014 10:27:27 -------
+SELECT DISTINCT A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata')  as responsabile,E.richiedente,F.progettista,G.elenco_ct,H.elenco_cu,I.ubicazione
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND voltura=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND voltura=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text)) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE numero::varchar ilike '3100' AND data_presentazione > '22-04-2014'::date)) 
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 03/04/2014 10:27:49 -------
+SELECT DISTINCT A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata')  as responsabile,E.richiedente,F.progettista,G.elenco_ct,H.elenco_cu,I.ubicazione
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND voltura=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND voltura=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text)) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE numero::varchar ilike '3100' AND data_presentazione > '22-04-2014'::date)) 
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 03/04/2014 10:34:24 -------
+SELECT DISTINCT A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata')  as responsabile,E.richiedente,F.progettista,G.elenco_ct,H.elenco_cu,I.ubicazione
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND voltura=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND voltura=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text)) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE numero::varchar ilike '3100')) 
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 03/04/2014 10:34:39 -------
+SELECT DISTINCT A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata')  as responsabile,E.richiedente,F.progettista,G.elenco_ct,H.elenco_cu,I.ubicazione
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND voltura=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND voltura=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text)) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE numero::varchar ilike '3395')) 
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 07/04/2014 08:23:43 -------
+SELECT DISTINCT A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata')  as responsabile,E.richiedente,F.progettista,G.elenco_ct,H.elenco_cu,I.ubicazione
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND voltura=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND voltura=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text)) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE protocollo::varchar ilike '674/12')) 
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 07/04/2014 08:24:20 -------
+SELECT DISTINCT A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata')  as responsabile,E.richiedente,F.progettista,G.elenco_ct,H.elenco_cu,I.ubicazione
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND voltura=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND voltura=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text)) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE protocollo::varchar ilike '716/17')) 
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 07/04/2014 08:24:27 -------
+SELECT DISTINCT A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata')  as responsabile,E.richiedente,F.progettista,G.elenco_ct,H.elenco_cu,I.ubicazione
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND voltura=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND voltura=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text)) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE protocollo::varchar ilike '716/17')) 
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 07/04/2014 08:24:48 -------
+SELECT DISTINCT A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata')  as responsabile,E.richiedente,F.progettista,G.elenco_ct,H.elenco_cu,I.ubicazione
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND voltura=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND voltura=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text)) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.titolo WHERE titolo::varchar ilike '716/17')) 
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 07/04/2014 08:37:53 -------
+SELECT DISTINCT A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata')  as responsabile,E.richiedente,F.progettista,G.elenco_ct,H.elenco_cu,I.ubicazione
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND voltura=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND voltura=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text)) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.elenco_richiedenti WHERE nominativo ilike '%ros%')) 
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 07/04/2014 08:51:57 -------
+SELECT DISTINCT A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata')  as responsabile,E.richiedente,F.progettista,G.elenco_ct,H.elenco_cu,I.ubicazione
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND voltura=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND voltura=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text)) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE numero::varchar ilike '772/6')) 
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 07/04/2014 08:52:18 -------
+SELECT DISTINCT A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata')  as responsabile,E.richiedente,F.progettista,G.elenco_ct,H.elenco_cu,I.ubicazione
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND voltura=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND voltura=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text)) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.titolo WHERE titolo::varchar ilike '772/6')) 
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 07/04/2014 12:57:43 -------
+SELECT DISTINCT A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata')  as responsabile,E.richiedente,F.progettista,G.elenco_ct,H.elenco_cu,I.ubicazione
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND voltura=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND voltura=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text)) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.titolo WHERE titolo::varchar ilike '783/8')) 
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 07/04/2014 12:58:01 -------
+SELECT DISTINCT A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata')  as responsabile,E.richiedente,F.progettista,G.elenco_ct,H.elenco_cu,I.ubicazione
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND voltura=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND voltura=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text)) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE numero::varchar ilike '5232')) 
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
