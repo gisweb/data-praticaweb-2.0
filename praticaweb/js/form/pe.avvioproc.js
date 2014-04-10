@@ -4,7 +4,7 @@ $(document).ready(function(){
     if (mode=='new') {
         $('#tipo').trigger('change');
         $("#form-avvioproc").bind('submit',function(){
-            var wait =$('<div><center style="font-size:16px;font-weight:bold;">Attendere prego, salvataggio in corso.....</center></div>').dialog({
+            $('<div id="wait-div"><center style="font-size:16px;font-weight:bold;">Attendere prego, salvataggio in corso.....</center></div>').dialog({
                 height:200,
                 width:400,
                 title:'Attendere'
@@ -19,7 +19,7 @@ $(document).ready(function(){
                 async : false,
                 method:'post',
                 success:function(data){
-                    wait.dialog('destroy');
+                    $('#wait-div').dialog('destroy');
                     if (data['total']>0) {
                         save = false;
                         testo = sprintf('La <b style="font-size:13px">%(tipo_pratica)s</b> numero <b>%(numero)s</b> con oggetto <b style="font-size:13px">"%(oggetto)s"</b> assegnata a <b style="font-size:13px">%(responsabile)s</b> è gia stata inserita.',data['rows'][0]);
