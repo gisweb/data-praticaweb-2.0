@@ -39,7 +39,6 @@ $(document).ready(function(){
       minLength:1,
       source: suggestUrl+'?field=rif_pratica',
       select: function( event, ui ) {
-          console.log(ui);
           $('#riferimento').val(ui['item']['id']);
       }
       
