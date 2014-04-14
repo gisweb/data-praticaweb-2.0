@@ -33,6 +33,7 @@ data[]="Parcheggi n°;parc_n;15;string|Euro a parcheggio;i_parc_n;8;string|Total
 data[]="Parcheggi mq.;parc_mq;10;superficie|Euro a mq;i_parc_mq;8;string|Totale;tot_parc_mq;15;valuta"
 data[]="Verde pubblico mq.;verde_mq;10;string|Euro a mq;i_verde_mq;8;numero|Totale;tot_verde_mq;15;valuta"
 data[]="Totale;totale;;valuta"
+data[]="Quietanza;quietanza;15;text|Data;data;10;data"
 [list]
 
 [standard]
