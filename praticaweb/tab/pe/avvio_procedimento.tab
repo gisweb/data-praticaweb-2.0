@@ -71,7 +71,6 @@ data[]="Oggetto;oggetto;;text"
 data[]="Note;note;;text"
 ;data[]="Diritti Segreteria;diritti_segreteria;400xpe.elenco_diritti_segreteria;selectdb"
 ;data[]="Pagamento D.S.;pagamento_diritti;;yesno|Riduzione D.S.;riduzione_diritti;;yesno"
-;data[]=";;pe.avvioproc;stampa"
 [list]
 
 [standard]
