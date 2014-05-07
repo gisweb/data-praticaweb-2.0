@@ -12,7 +12,7 @@ campi_ordinamento=""
 campi_obbligatori="iter;nome"
 
 data[]="Iter;iter;200xpe.elenco_iter;selectdb"
-data[]="Nome;nome;50;text"
+data[]="Nome;nome;100;text"
 data[]="Descrizione;descrizione;50x6;textarea"
 data[]="Gruppo;gruppo;50;text"
 data[]="Ordine;ordine;3;intero"
