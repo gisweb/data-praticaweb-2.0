@@ -27,6 +27,9 @@ var myview = $.extend({}, $.fn.datagrid.defaults.view, {
             cc.push('<td field="progettista">');
             cc.push('<div style="height:auto;" class=""><span class="c-label">Progettisti : </span>' + (rowData["progettista"] || '') + '</div>');
             cc.push('</td>');
+            cc.push('<td field="esecutore">');
+            cc.push('<div style="height:auto;" class=""><span class="c-label">Esecutori : </span>' + (rowData["esecutore"] || '') + '</div>');
+            cc.push('</td>');
             cc.push('</tr>');
             
             cc.push('<tr class="">');
