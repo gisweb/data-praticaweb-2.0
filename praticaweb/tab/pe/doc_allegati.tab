@@ -21,7 +21,8 @@ chiave="id"
 campi_ordinamento=""
 campi_obbligatori=""
 data[]=";id;5%#pe.scheda_documento;btn_info"
-data[]="Documenti allegati;documento;100%;text"
+data[]="Documenti;documento;40%;text"
+data[]="Allegati;doc;55%;text"
 [list]
 
 [standard]
