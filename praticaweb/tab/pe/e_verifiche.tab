@@ -1,0 +1,42 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+table_list="1"
+[edit]
+table="pe.e_verifiche"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori="nome;codice"
+
+data[]="Verifica;nome;50;text"
+data[]="Codice;codice;50;text"
+data[]="Tipo Pratica;tipo_pratica;400xpe.elenco_tipipratiche_stampe;multiselectdb"
+data[]="Attivato;enabled;40;yesno"
+data[]="Sorteggio;sorteggio;40;yesno"
+data[]="Ordine di visualizzazione;ordine;3;intero"
+button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
+[view]
+table="pe.e_verifiche"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Verifica;nome;50;text"
+data[]="Codice;codice;50;text"
+data[]="Tipo Pratica;tipo_pratica;400xpe.elenco_tipipratiche_stampe;multiselectdb"
+data[]="Attivato;enabled;40;yesno"
+data[]="Sorteggio;sorteggio;40;yesno"
+data[]="Ordine di visualizzazione;ordine;3;intero"
+button="Chiudi;azione;##;submit"
+[list]
+table="pe.e_enti"
+chiave="id"
+campi_ordinamento="ordine;nome"
+campi_obbligatori=""
+data[]="info;id;3%#pe.e_verifiche;btn_view"
+data[]="info;id;3%#pe.e_verifiche;btn_edit"
+data[]="Codice;codice;30%;text"
+data[]="Nome;nome;50%;text"
+data[]="Ordine;ordine;5%;text"
+[standard]
