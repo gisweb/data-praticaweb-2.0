@@ -28,4 +28,4 @@ cdu-4@NewWindow@'cdu.ricerca.php','Praticaweb',0,0,'yes'@Ricerca Certificato di 
 -2@NewWindow@'pe.e_stati.php?mode=list','ComuniPraticaweb',0,0,'yes'@Stati Pratica@Elenco dei possibili stati della pratica.
 -2@NewWindow@'pe.e_enti.php?mode=list','ComuniPraticaweb',0,0,'yes'@Elenco Enti@Elenco dei possibili Enti ai quali richiedere pareri.
 -2@NewWindow@'pe.e_scadenze.php?mode=list','ComuniPraticaweb',0,0,'yes'@Elenco Scadenze@Elenco delle possibili Scadenze.
--1@NewWindow@'oneri.tariffe.php?mode=new','OneriPraticaweb',0,0,'yes'@Oneri@Elenco tariffe impostate.
+-1@NewWindow@'oneri.e_tariffe.php','OneriPraticaweb',0,0,'yes'@Oneri@Elenco tariffe impostate.
