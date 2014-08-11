@@ -35,5 +35,20 @@ for($i=0;$i<count($ris);$i++){
 	//}
 	
 }
+
 $customData["mappali"]=array_values($mappali);	
+
+$sql="SELECT * FROM stp.normativa_pianodibacino WHERE pratica=?";
+$ris=$db->fetchAll($sql,Array($idPratica));
+$customData["normativa_pianodibacino"]=$ris;
+$sql="SELECT * FROM stp.normativa_prg WHERE pratica=?";
+$ris=$db->fetchAll($sql,Array($idPratica));
+$customData["normativa_prg"]=$ris;
+$sql="SELECT * FROM stp.normativa_ptcp WHERE pratica=?";
+$ris=$db->fetchAll($sql,Array($idPratica));
+$customData["normativa_ptcp"]=$ris;
+$sql="SELECT * FROM stp.normativa_vincoli WHERE pratica=?";
+$ris=$db->fetchAll($sql,Array($idPratica));
+$customData["normativa_vincoli"]=$ris;
+
 ?>
