@@ -1,0 +1,126 @@
+------- DEBUG DEL 11/08/2014 07:50:31 -------
+select id,pubblico,utente,data,nota_edit,id,pratica,chk from cdu.iter where pratica=795 
+-------------------------
+------- DEBUG DEL 11/08/2014 07:50:34 -------
+select protocollo,data,data_certificazione,richiedente,indirizzo,titolo,note,id,pratica,chk from cdu.richiesta where pratica = 795 
+-------------------------
+------- DEBUG DEL 11/08/2014 07:50:34 -------
+select mapkey,sezione,foglio,mappale,id,pratica,chk from cdu.vista_mappali where pratica=795 
+-------------------------
+------- DEBUG DEL 11/08/2014 07:50:42 -------
+select utente,data,nota,id,pratica,chk from cdu.iter where pratica = 795 
+-------------------------
+------- DEBUG DEL 11/08/2014 07:50:44 -------
+select ,id,pratica,chk from  where id>0 
+-------------------------
+------- DEBUG DEL 11/08/2014 07:50:54 -------
+select protocollo,data,data_certificazione,richiedente,indirizzo,titolo,note,id,pratica,chk from cdu.richiesta where pratica = 795 
+-------------------------
+------- DEBUG DEL 11/08/2014 07:50:54 -------
+select mapkey,sezione,foglio,mappale,id,pratica,chk from cdu.vista_mappali where pratica=795 
+-------------------------
+------- DEBUG DEL 11/08/2014 07:58:45 -------
+select utente,data,nota,id,pratica,chk from cdu.iter where pratica = 795 
+-------------------------
+------- DEBUG DEL 11/08/2014 07:58:47 -------
+select id,pubblico,utente,data,nota_edit,id,pratica,chk from cdu.iter where pratica=795 
+-------------------------
+------- DEBUG DEL 11/08/2014 07:58:50 -------
+select id,pubblico,utente,data,nota_edit,id,pratica,chk from cdu.iter where pratica=795 
+-------------------------
+------- DEBUG DEL 11/08/2014 07:58:54 -------
+select protocollo,data,data_certificazione,richiedente,indirizzo,titolo,note,id,pratica,chk from cdu.richiesta where pratica = 795 
+-------------------------
+------- DEBUG DEL 11/08/2014 07:58:54 -------
+select mapkey,sezione,foglio,mappale,id,pratica,chk from cdu.vista_mappali where pratica=795 
+-------------------------
+------- DEBUG DEL 11/08/2014 07:58:55 -------
+select ,id,pratica,chk from  where id>0 
+-------------------------
+------- DEBUG DEL 11/08/2014 07:59:12 -------
+select protocollo,data,data_certificazione,richiedente,indirizzo,titolo,note,id,pratica,chk from cdu.richiesta where pratica = 795 
+-------------------------
+------- DEBUG DEL 11/08/2014 07:59:12 -------
+select mapkey,sezione,foglio,mappale,id,pratica,chk from cdu.vista_mappali where pratica=795 
+-------------------------
+------- DEBUG DEL 11/08/2014 07:59:14 -------
+select utente,data,nota,id,pratica,chk from cdu.iter where pratica = 795 
+-------------------------
+------- DEBUG DEL 11/08/2014 07:59:17 -------
+select id,pubblico,utente,data,nota_edit,id,pratica,chk from cdu.iter where pratica=795 
+-------------------------
+------- DEBUG DEL 08/10/2014 01:30:57 -------
+select id,row_form,row_class,nome,data,testo,id,pratica,chk from pe.vista_iter where pratica = 15077  ORDER BY data
+-------------------------
+------- DEBUG DEL 08/10/2014 01:30:59 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where richiedente=1 and pratica=15077  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 08/10/2014 01:30:59 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where richiedente=-1 and pratica=15077  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 08/10/2014 01:30:59 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where concessionario=1 and pratica=15077  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 08/10/2014 01:30:59 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where concessionario=-1 and pratica=15077  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 08/10/2014 01:30:59 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where proprietario=1 and pratica=15077  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 08/10/2014 01:30:59 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where proprietario=-1 and pratica=15077  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 08/10/2014 01:30:59 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista=1 and pratica=15077  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 08/10/2014 01:30:59 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista=-1 and pratica=15077  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 08/10/2014 01:30:59 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore=1 and pratica=15077  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 08/10/2014 01:30:59 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore=-1 and pratica=15077  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 08/10/2014 01:30:59 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where esecutore=1 and pratica=15077  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 08/10/2014 01:30:59 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where esecutore=-1 and pratica=15077  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 08/10/2014 01:30:59 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where sicurezza=1 and pratica=15077  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 08/10/2014 01:30:59 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where sicurezza=-1 and pratica=15077  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 08/10/2014 01:30:59 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore=1 and pratica=15077  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 08/10/2014 01:30:59 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore=-1 and pratica=15077  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 08/10/2014 01:30:59 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where geologo=1 and pratica=15077  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 08/10/2014 01:30:59 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where geologo=-1 and pratica=15077  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 08/10/2014 01:30:59 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore_ca=1 and pratica=15077  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 08/10/2014 01:31:00 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore_ca=-1 and pratica=15077  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 08/10/2014 01:31:00 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista_ca=1 and pratica=15077  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 08/10/2014 01:31:00 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista_ca=-1 and pratica=15077  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 08/10/2014 01:31:00 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where economia_diretta=1 and pratica=15077  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 08/10/2014 01:31:00 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where economia_diretta=-1 and pratica=15077  ORDER BY soggetto
+-------------------------

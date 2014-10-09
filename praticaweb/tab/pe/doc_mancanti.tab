@@ -13,7 +13,7 @@ table="pe.doc_allegati1"
 chiave="id"
 campi_ordinamento=""
 campi_obbligatori=""
-data[]=";id;5%#pe.scheda_documento;btn_info"
+data[]=";id;5%#pe.scheda_documento.php;btn_info"
 data[]="Documenti mancanti;documento;100%;text"
 [list]
 

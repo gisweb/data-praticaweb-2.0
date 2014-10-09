@@ -1,0 +1,24 @@
+------- DEBUG DEL 08/10/2014 01:24:41 -------
+select id,opzione from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 08/10/2014 01:24:41 -------
+select id,opzione from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 08/10/2014 01:24:41 -------
+select id,opzione from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 08/10/2014 01:24:41 -------
+select id,opzione from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 08/10/2014 01:30:15 -------
+select id,opzione from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 08/10/2014 01:30:15 -------
+select id,opzione from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 08/10/2014 01:30:15 -------
+select id,opzione from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 08/10/2014 01:30:15 -------
+select id,opzione from admin.elenco_utenti
+-------------------------

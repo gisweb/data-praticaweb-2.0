@@ -1,0 +1,1343 @@
+
+11-08-14	07:50:52	 --- STAMPA DI UN ARRAY ---
+	Array
+(
+    [allegati] => Array
+        (
+        )
+
+    [allegati_mancanti] => Array
+        (
+        )
+
+    [concessionari] => Array
+        (
+        )
+
+    [direttori] => Array
+        (
+        )
+
+    [documenti_mancanti] => Array
+        (
+        )
+
+    [esecutori] => Array
+        (
+        )
+
+    [indirizzi] => Array
+        (
+        )
+
+    [oneri_calcolati] => Array
+        (
+        )
+
+    [oneri_dettaglio] => Array
+        (
+        )
+
+    [pareri] => Array
+        (
+        )
+
+    [particelle_ct] => Array
+        (
+        )
+
+    [particelle_cu] => Array
+        (
+        )
+
+    [progettisti] => Array
+        (
+        )
+
+    [richiedenti] => Array
+        (
+        )
+
+    [soggetti] => Array
+        (
+        )
+
+    [cdu_richiesta] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 795
+                    [protocollo] => 40050
+                    [data] => 25/07/2014
+                    [richiedente] => Arch. Urbini Alessio
+                    [indirizzo] => 
+                    [titolo] => 
+                    [note] => 
+                    [pratica] => 795
+                    [chk] => 1
+                    [uidins] => 8
+                    [tmsins] => 1407493960
+                    [uidupd] => 0
+                    [tmsupd] => 0
+                    [app] => 
+                    [data_certificazione] => 21/01/2010
+                    [diritti_segreteria] => 10
+                )
+
+        )
+
+    [mappali] => Array
+        (
+            [0] => Array
+                (
+                    [sezione] => Sanremo
+                    [foglio] => 36
+                    [mappale] => 1354
+                    [piani] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [vincolo] => Piano Regolatore Generale
+                                    [tavola] => Zonizzazione P.R.G.
+                                    [zona] => La zona Bc1 è definita "zona di completamento" (art. 25 delle Norme di Attuazione).
+                                    [sigla] => Bc1
+                                    [percentuale] => 
+                                )
+
+                            [1] => Array
+                                (
+                                    [vincolo] => Piano Regolatore Generale
+                                    [tavola] => Rischio sismico
+                                    [zona] => Zona 2A
+                                    [sigla] => 2a
+                                    [percentuale] => 
+                                )
+
+                            [2] => Array
+                                (
+                                    [vincolo] => Piano Territoriale di Coordinamento Paesistico
+                                    [tavola] => Assetto insediativo
+                                    [zona] => Tessuto Urbano
+                                    [sigla] => TU
+                                    [percentuale] => 
+                                )
+
+                            [3] => Array
+                                (
+                                    [vincolo] => Piano Territoriale di Coordinamento Paesistico
+                                    [tavola] => Assetto geomorfologico
+                                    [zona] => Modificabilità di tipo B
+                                    [sigla] => MO-B
+                                    [percentuale] => 
+                                )
+
+                            [4] => Array
+                                (
+                                    [vincolo] => Piano Territoriale di Coordinamento Paesistico
+                                    [tavola] => Assetto vegetazionale
+                                    [zona] => Colture: Insediamenti diffusi serre - Consolidamento
+                                    [sigla] => COL-IDS-CO
+                                    [percentuale] => 
+                                )
+
+                            [5] => Array
+                                (
+                                    [vincolo] => Piano di Bacino
+                                    [tavola] => Ambiti
+                                    [zona] => Sanremese (ambito n. 3)
+                                    [sigla] => Amb. 3
+                                    [percentuale] => 
+                                )
+
+                            [6] => Array
+                                (
+                                    [vincolo] => Piano di Bacino
+                                    [tavola] => Bacini
+                                    [zona] => Bacino San Francesco
+                                    [sigla] => Bac. S. F.
+                                    [percentuale] => 
+                                )
+
+                            [7] => Array
+                                (
+                                    [vincolo] => Piano di Bacino
+                                    [tavola] => Regimi del bacino San Francesco
+                                    [zona] => Ambiti di versante urbano - Mantenimento
+                                    [sigla] => VU/MA
+                                    [percentuale] => 
+                                )
+
+                            [8] => Array
+                                (
+                                    [vincolo] => Vincoli ambientali
+                                    [tavola] => DLgs 42/2004 art.136 c.1 lett d (ex Bellezze d'Insieme)
+                                    [zona] => Decreto ministeriale n. 9 del 29/08/1953
+                                    [sigla] => Decr. Min.
+                                    [percentuale] => 
+                                )
+
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [sezione] => Sanremo
+                    [foglio] => 36
+                    [mappale] => 2082
+                    [piani] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [vincolo] => Piano Regolatore Generale
+                                    [tavola] => Zonizzazione P.R.G.
+                                    [zona] => La zona Bc1 è definita "zona di completamento" (art. 25 delle Norme di Attuazione).
+                                    [sigla] => Bc1
+                                    [percentuale] => 
+                                )
+
+                            [1] => Array
+                                (
+                                    [vincolo] => Piano Regolatore Generale
+                                    [tavola] => Rischio sismico
+                                    [zona] => Zona 2A
+                                    [sigla] => 2a
+                                    [percentuale] => 
+                                )
+
+                            [2] => Array
+                                (
+                                    [vincolo] => Piano Territoriale di Coordinamento Paesistico
+                                    [tavola] => Assetto insediativo
+                                    [zona] => Tessuto Urbano
+                                    [sigla] => TU
+                                    [percentuale] => 
+                                )
+
+                            [3] => Array
+                                (
+                                    [vincolo] => Piano Territoriale di Coordinamento Paesistico
+                                    [tavola] => Assetto geomorfologico
+                                    [zona] => Modificabilità di tipo B
+                                    [sigla] => MO-B
+                                    [percentuale] => 
+                                )
+
+                            [4] => Array
+                                (
+                                    [vincolo] => Piano Territoriale di Coordinamento Paesistico
+                                    [tavola] => Assetto vegetazionale
+                                    [zona] => Colture: Insediamenti diffusi serre - Consolidamento
+                                    [sigla] => COL-IDS-CO
+                                    [percentuale] => 
+                                )
+
+                            [5] => Array
+                                (
+                                    [vincolo] => Piano di Bacino
+                                    [tavola] => Ambiti
+                                    [zona] => Sanremese (ambito n. 3)
+                                    [sigla] => Amb. 3
+                                    [percentuale] => 
+                                )
+
+                            [6] => Array
+                                (
+                                    [vincolo] => Piano di Bacino
+                                    [tavola] => Bacini
+                                    [zona] => Bacino San Francesco
+                                    [sigla] => Bac. S. F.
+                                    [percentuale] => 
+                                )
+
+                            [7] => Array
+                                (
+                                    [vincolo] => Piano di Bacino
+                                    [tavola] => Regimi del bacino San Francesco
+                                    [zona] => Ambiti di versante urbano - Mantenimento
+                                    [sigla] => VU/MA
+                                    [percentuale] => 
+                                )
+
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [sezione] => Sanremo
+                    [foglio] => 36
+                    [mappale] => 2095
+                    [piani] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [vincolo] => Piano Regolatore Generale
+                                    [tavola] => Zonizzazione P.R.G.
+                                    [zona] => La zona Bc1 è definita "zona di completamento" (art. 25 delle Norme di Attuazione).
+                                    [sigla] => Bc1
+                                    [percentuale] => 
+                                )
+
+                            [1] => Array
+                                (
+                                    [vincolo] => Piano Regolatore Generale
+                                    [tavola] => Rischio sismico
+                                    [zona] => Zona 2A
+                                    [sigla] => 2a
+                                    [percentuale] => 
+                                )
+
+                            [2] => Array
+                                (
+                                    [vincolo] => Piano Territoriale di Coordinamento Paesistico
+                                    [tavola] => Assetto insediativo
+                                    [zona] => Tessuto Urbano
+                                    [sigla] => TU
+                                    [percentuale] => 
+                                )
+
+                            [3] => Array
+                                (
+                                    [vincolo] => Piano Territoriale di Coordinamento Paesistico
+                                    [tavola] => Assetto geomorfologico
+                                    [zona] => Modificabilità di tipo B
+                                    [sigla] => MO-B
+                                    [percentuale] => 
+                                )
+
+                            [4] => Array
+                                (
+                                    [vincolo] => Piano Territoriale di Coordinamento Paesistico
+                                    [tavola] => Assetto vegetazionale
+                                    [zona] => Colture: Insediamenti diffusi serre - Consolidamento
+                                    [sigla] => COL-IDS-CO
+                                    [percentuale] => 
+                                )
+
+                            [5] => Array
+                                (
+                                    [vincolo] => Piano di Bacino
+                                    [tavola] => Ambiti
+                                    [zona] => Sanremese (ambito n. 3)
+                                    [sigla] => Amb. 3
+                                    [percentuale] => 
+                                )
+
+                            [6] => Array
+                                (
+                                    [vincolo] => Piano di Bacino
+                                    [tavola] => Bacini
+                                    [zona] => Bacino San Francesco
+                                    [sigla] => Bac. S. F.
+                                    [percentuale] => 
+                                )
+
+                            [7] => Array
+                                (
+                                    [vincolo] => Piano di Bacino
+                                    [tavola] => Regimi del bacino San Francesco
+                                    [zona] => Ambiti di versante urbano - Mantenimento
+                                    [sigla] => VU/MA
+                                    [percentuale] => 
+                                )
+
+                            [8] => Array
+                                (
+                                    [vincolo] => Vincoli ambientali
+                                    [tavola] => DLgs 42/2004 art.136 c.1 lett d (ex Bellezze d'Insieme)
+                                    [zona] => Decreto ministeriale n. 9 del 29/08/1953
+                                    [sigla] => Decr. Min.
+                                    [percentuale] => in parte
+                                )
+
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [sezione] => Sanremo
+                    [foglio] => 36
+                    [mappale] => 2096
+                    [piani] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [vincolo] => Piano Regolatore Generale
+                                    [tavola] => Zonizzazione P.R.G.
+                                    [zona] => La zona Bc1 è definita "zona di completamento" (art. 25 delle Norme di Attuazione).
+                                    [sigla] => Bc1
+                                    [percentuale] => 
+                                )
+
+                            [1] => Array
+                                (
+                                    [vincolo] => Piano Regolatore Generale
+                                    [tavola] => Rischio sismico
+                                    [zona] => Zona 2A
+                                    [sigla] => 2a
+                                    [percentuale] => 
+                                )
+
+                            [2] => Array
+                                (
+                                    [vincolo] => Piano Territoriale di Coordinamento Paesistico
+                                    [tavola] => Assetto insediativo
+                                    [zona] => Tessuto Urbano
+                                    [sigla] => TU
+                                    [percentuale] => 
+                                )
+
+                            [3] => Array
+                                (
+                                    [vincolo] => Piano Territoriale di Coordinamento Paesistico
+                                    [tavola] => Assetto geomorfologico
+                                    [zona] => Modificabilità di tipo B
+                                    [sigla] => MO-B
+                                    [percentuale] => 
+                                )
+
+                            [4] => Array
+                                (
+                                    [vincolo] => Piano Territoriale di Coordinamento Paesistico
+                                    [tavola] => Assetto vegetazionale
+                                    [zona] => Colture: Insediamenti diffusi serre - Consolidamento
+                                    [sigla] => COL-IDS-CO
+                                    [percentuale] => 
+                                )
+
+                            [5] => Array
+                                (
+                                    [vincolo] => Piano di Bacino
+                                    [tavola] => Ambiti
+                                    [zona] => Sanremese (ambito n. 3)
+                                    [sigla] => Amb. 3
+                                    [percentuale] => 
+                                )
+
+                            [6] => Array
+                                (
+                                    [vincolo] => Piano di Bacino
+                                    [tavola] => Bacini
+                                    [zona] => Bacino San Francesco
+                                    [sigla] => Bac. S. F.
+                                    [percentuale] => 
+                                )
+
+                            [7] => Array
+                                (
+                                    [vincolo] => Piano di Bacino
+                                    [tavola] => Regimi del bacino San Francesco
+                                    [zona] => Ambiti di versante urbano - Mantenimento
+                                    [sigla] => VU/MA
+                                    [percentuale] => 
+                                )
+
+                            [8] => Array
+                                (
+                                    [vincolo] => Vincoli ambientali
+                                    [tavola] => DLgs 42/2004 art.136 c.1 lett d (ex Bellezze d'Insieme)
+                                    [zona] => Decreto ministeriale n. 9 del 29/08/1953
+                                    [sigla] => Decr. Min.
+                                    [percentuale] => 
+                                )
+
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [sezione] => Sanremo
+                    [foglio] => 36
+                    [mappale] => 338
+                    [piani] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [vincolo] => Piano Regolatore Generale
+                                    [tavola] => Zonizzazione P.R.G.
+                                    [zona] => La zona Bc1 è definita "zona di completamento" (art. 25 delle Norme di Attuazione).
+                                    [sigla] => Bc1
+                                    [percentuale] => 
+                                )
+
+                            [1] => Array
+                                (
+                                    [vincolo] => Piano Regolatore Generale
+                                    [tavola] => Rischio sismico
+                                    [zona] => Zona 2A
+                                    [sigla] => 2a
+                                    [percentuale] => 
+                                )
+
+                            [2] => Array
+                                (
+                                    [vincolo] => Piano Territoriale di Coordinamento Paesistico
+                                    [tavola] => Assetto insediativo
+                                    [zona] => Tessuto Urbano
+                                    [sigla] => TU
+                                    [percentuale] => 
+                                )
+
+                            [3] => Array
+                                (
+                                    [vincolo] => Piano Territoriale di Coordinamento Paesistico
+                                    [tavola] => Assetto geomorfologico
+                                    [zona] => Modificabilità di tipo B
+                                    [sigla] => MO-B
+                                    [percentuale] => 
+                                )
+
+                            [4] => Array
+                                (
+                                    [vincolo] => Piano Territoriale di Coordinamento Paesistico
+                                    [tavola] => Assetto vegetazionale
+                                    [zona] => Colture: Insediamenti diffusi serre - Consolidamento
+                                    [sigla] => COL-IDS-CO
+                                    [percentuale] => 
+                                )
+
+                            [5] => Array
+                                (
+                                    [vincolo] => Piano di Bacino
+                                    [tavola] => Ambiti
+                                    [zona] => Sanremese (ambito n. 3)
+                                    [sigla] => Amb. 3
+                                    [percentuale] => 
+                                )
+
+                            [6] => Array
+                                (
+                                    [vincolo] => Piano di Bacino
+                                    [tavola] => Bacini
+                                    [zona] => Bacino San Francesco
+                                    [sigla] => Bac. S. F.
+                                    [percentuale] => 
+                                )
+
+                            [7] => Array
+                                (
+                                    [vincolo] => Piano di Bacino
+                                    [tavola] => Regimi del bacino San Francesco
+                                    [zona] => Ambiti di versante urbano - Mantenimento
+                                    [sigla] => VU/MA
+                                    [percentuale] => 
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+11-08-14	07:59:10	 --- STAMPA DI UN ARRAY ---
+	Array
+(
+    [allegati] => Array
+        (
+        )
+
+    [allegati_mancanti] => Array
+        (
+        )
+
+    [concessionari] => Array
+        (
+        )
+
+    [direttori] => Array
+        (
+        )
+
+    [documenti_mancanti] => Array
+        (
+        )
+
+    [esecutori] => Array
+        (
+        )
+
+    [indirizzi] => Array
+        (
+        )
+
+    [oneri_calcolati] => Array
+        (
+        )
+
+    [oneri_dettaglio] => Array
+        (
+        )
+
+    [pareri] => Array
+        (
+        )
+
+    [particelle_ct] => Array
+        (
+        )
+
+    [particelle_cu] => Array
+        (
+        )
+
+    [progettisti] => Array
+        (
+        )
+
+    [richiedenti] => Array
+        (
+        )
+
+    [soggetti] => Array
+        (
+        )
+
+    [cdu_richiesta] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 795
+                    [protocollo] => 40050
+                    [data] => 25/07/2014
+                    [richiedente] => Arch. Urbini Alessio
+                    [indirizzo] => 
+                    [titolo] => 
+                    [note] => 
+                    [pratica] => 795
+                    [chk] => 1
+                    [uidins] => 8
+                    [tmsins] => 1407493960
+                    [uidupd] => 0
+                    [tmsupd] => 0
+                    [app] => 
+                    [data_certificazione] => 21/01/2010
+                    [diritti_segreteria] => 10
+                )
+
+        )
+
+    [mappali] => Array
+        (
+            [0] => Array
+                (
+                    [sezione] => Sanremo
+                    [foglio] => 36
+                    [mappale] => 1354
+                    [piani] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [vincolo] => Piano Regolatore Generale
+                                    [tavola] => Zonizzazione P.R.G.
+                                    [zona] => La zona Bc1 è definita "zona di completamento" (art. 25 delle Norme di Attuazione).
+                                    [sigla] => Bc1
+                                    [percentuale] => 
+                                )
+
+                            [1] => Array
+                                (
+                                    [vincolo] => Piano Regolatore Generale
+                                    [tavola] => Rischio sismico
+                                    [zona] => Zona 2A
+                                    [sigla] => 2a
+                                    [percentuale] => 
+                                )
+
+                            [2] => Array
+                                (
+                                    [vincolo] => Piano Territoriale di Coordinamento Paesistico
+                                    [tavola] => Assetto insediativo
+                                    [zona] => Tessuto Urbano
+                                    [sigla] => TU
+                                    [percentuale] => 
+                                )
+
+                            [3] => Array
+                                (
+                                    [vincolo] => Piano Territoriale di Coordinamento Paesistico
+                                    [tavola] => Assetto geomorfologico
+                                    [zona] => Modificabilità di tipo B
+                                    [sigla] => MO-B
+                                    [percentuale] => 
+                                )
+
+                            [4] => Array
+                                (
+                                    [vincolo] => Piano Territoriale di Coordinamento Paesistico
+                                    [tavola] => Assetto vegetazionale
+                                    [zona] => Colture: Insediamenti diffusi serre - Consolidamento
+                                    [sigla] => COL-IDS-CO
+                                    [percentuale] => 
+                                )
+
+                            [5] => Array
+                                (
+                                    [vincolo] => Piano di Bacino
+                                    [tavola] => Ambiti
+                                    [zona] => Sanremese (ambito n. 3)
+                                    [sigla] => Amb. 3
+                                    [percentuale] => 
+                                )
+
+                            [6] => Array
+                                (
+                                    [vincolo] => Piano di Bacino
+                                    [tavola] => Bacini
+                                    [zona] => Bacino San Francesco
+                                    [sigla] => Bac. S. F.
+                                    [percentuale] => 
+                                )
+
+                            [7] => Array
+                                (
+                                    [vincolo] => Piano di Bacino
+                                    [tavola] => Regimi del bacino San Francesco
+                                    [zona] => Ambiti di versante urbano - Mantenimento
+                                    [sigla] => VU/MA
+                                    [percentuale] => 
+                                )
+
+                            [8] => Array
+                                (
+                                    [vincolo] => Vincoli ambientali
+                                    [tavola] => DLgs 42/2004 art.136 c.1 lett d (ex Bellezze d'Insieme)
+                                    [zona] => Decreto ministeriale n. 9 del 29/08/1953
+                                    [sigla] => Decr. Min.
+                                    [percentuale] => 
+                                )
+
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [sezione] => Sanremo
+                    [foglio] => 36
+                    [mappale] => 2082
+                    [piani] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [vincolo] => Piano Regolatore Generale
+                                    [tavola] => Zonizzazione P.R.G.
+                                    [zona] => La zona Bc1 è definita "zona di completamento" (art. 25 delle Norme di Attuazione).
+                                    [sigla] => Bc1
+                                    [percentuale] => 
+                                )
+
+                            [1] => Array
+                                (
+                                    [vincolo] => Piano Regolatore Generale
+                                    [tavola] => Rischio sismico
+                                    [zona] => Zona 2A
+                                    [sigla] => 2a
+                                    [percentuale] => 
+                                )
+
+                            [2] => Array
+                                (
+                                    [vincolo] => Piano Territoriale di Coordinamento Paesistico
+                                    [tavola] => Assetto insediativo
+                                    [zona] => Tessuto Urbano
+                                    [sigla] => TU
+                                    [percentuale] => 
+                                )
+
+                            [3] => Array
+                                (
+                                    [vincolo] => Piano Territoriale di Coordinamento Paesistico
+                                    [tavola] => Assetto geomorfologico
+                                    [zona] => Modificabilità di tipo B
+                                    [sigla] => MO-B
+                                    [percentuale] => 
+                                )
+
+                            [4] => Array
+                                (
+                                    [vincolo] => Piano Territoriale di Coordinamento Paesistico
+                                    [tavola] => Assetto vegetazionale
+                                    [zona] => Colture: Insediamenti diffusi serre - Consolidamento
+                                    [sigla] => COL-IDS-CO
+                                    [percentuale] => 
+                                )
+
+                            [5] => Array
+                                (
+                                    [vincolo] => Piano di Bacino
+                                    [tavola] => Ambiti
+                                    [zona] => Sanremese (ambito n. 3)
+                                    [sigla] => Amb. 3
+                                    [percentuale] => 
+                                )
+
+                            [6] => Array
+                                (
+                                    [vincolo] => Piano di Bacino
+                                    [tavola] => Bacini
+                                    [zona] => Bacino San Francesco
+                                    [sigla] => Bac. S. F.
+                                    [percentuale] => 
+                                )
+
+                            [7] => Array
+                                (
+                                    [vincolo] => Piano di Bacino
+                                    [tavola] => Regimi del bacino San Francesco
+                                    [zona] => Ambiti di versante urbano - Mantenimento
+                                    [sigla] => VU/MA
+                                    [percentuale] => 
+                                )
+
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [sezione] => Sanremo
+                    [foglio] => 36
+                    [mappale] => 2095
+                    [piani] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [vincolo] => Piano Regolatore Generale
+                                    [tavola] => Zonizzazione P.R.G.
+                                    [zona] => La zona Bc1 è definita "zona di completamento" (art. 25 delle Norme di Attuazione).
+                                    [sigla] => Bc1
+                                    [percentuale] => 
+                                )
+
+                            [1] => Array
+                                (
+                                    [vincolo] => Piano Regolatore Generale
+                                    [tavola] => Rischio sismico
+                                    [zona] => Zona 2A
+                                    [sigla] => 2a
+                                    [percentuale] => 
+                                )
+
+                            [2] => Array
+                                (
+                                    [vincolo] => Piano Territoriale di Coordinamento Paesistico
+                                    [tavola] => Assetto insediativo
+                                    [zona] => Tessuto Urbano
+                                    [sigla] => TU
+                                    [percentuale] => 
+                                )
+
+                            [3] => Array
+                                (
+                                    [vincolo] => Piano Territoriale di Coordinamento Paesistico
+                                    [tavola] => Assetto geomorfologico
+                                    [zona] => Modificabilità di tipo B
+                                    [sigla] => MO-B
+                                    [percentuale] => 
+                                )
+
+                            [4] => Array
+                                (
+                                    [vincolo] => Piano Territoriale di Coordinamento Paesistico
+                                    [tavola] => Assetto vegetazionale
+                                    [zona] => Colture: Insediamenti diffusi serre - Consolidamento
+                                    [sigla] => COL-IDS-CO
+                                    [percentuale] => 
+                                )
+
+                            [5] => Array
+                                (
+                                    [vincolo] => Piano di Bacino
+                                    [tavola] => Ambiti
+                                    [zona] => Sanremese (ambito n. 3)
+                                    [sigla] => Amb. 3
+                                    [percentuale] => 
+                                )
+
+                            [6] => Array
+                                (
+                                    [vincolo] => Piano di Bacino
+                                    [tavola] => Bacini
+                                    [zona] => Bacino San Francesco
+                                    [sigla] => Bac. S. F.
+                                    [percentuale] => 
+                                )
+
+                            [7] => Array
+                                (
+                                    [vincolo] => Piano di Bacino
+                                    [tavola] => Regimi del bacino San Francesco
+                                    [zona] => Ambiti di versante urbano - Mantenimento
+                                    [sigla] => VU/MA
+                                    [percentuale] => 
+                                )
+
+                            [8] => Array
+                                (
+                                    [vincolo] => Vincoli ambientali
+                                    [tavola] => DLgs 42/2004 art.136 c.1 lett d (ex Bellezze d'Insieme)
+                                    [zona] => Decreto ministeriale n. 9 del 29/08/1953
+                                    [sigla] => Decr. Min.
+                                    [percentuale] => in parte
+                                )
+
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [sezione] => Sanremo
+                    [foglio] => 36
+                    [mappale] => 2096
+                    [piani] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [vincolo] => Piano Regolatore Generale
+                                    [tavola] => Zonizzazione P.R.G.
+                                    [zona] => La zona Bc1 è definita "zona di completamento" (art. 25 delle Norme di Attuazione).
+                                    [sigla] => Bc1
+                                    [percentuale] => 
+                                )
+
+                            [1] => Array
+                                (
+                                    [vincolo] => Piano Regolatore Generale
+                                    [tavola] => Rischio sismico
+                                    [zona] => Zona 2A
+                                    [sigla] => 2a
+                                    [percentuale] => 
+                                )
+
+                            [2] => Array
+                                (
+                                    [vincolo] => Piano Territoriale di Coordinamento Paesistico
+                                    [tavola] => Assetto insediativo
+                                    [zona] => Tessuto Urbano
+                                    [sigla] => TU
+                                    [percentuale] => 
+                                )
+
+                            [3] => Array
+                                (
+                                    [vincolo] => Piano Territoriale di Coordinamento Paesistico
+                                    [tavola] => Assetto geomorfologico
+                                    [zona] => Modificabilità di tipo B
+                                    [sigla] => MO-B
+                                    [percentuale] => 
+                                )
+
+                            [4] => Array
+                                (
+                                    [vincolo] => Piano Territoriale di Coordinamento Paesistico
+                                    [tavola] => Assetto vegetazionale
+                                    [zona] => Colture: Insediamenti diffusi serre - Consolidamento
+                                    [sigla] => COL-IDS-CO
+                                    [percentuale] => 
+                                )
+
+                            [5] => Array
+                                (
+                                    [vincolo] => Piano di Bacino
+                                    [tavola] => Ambiti
+                                    [zona] => Sanremese (ambito n. 3)
+                                    [sigla] => Amb. 3
+                                    [percentuale] => 
+                                )
+
+                            [6] => Array
+                                (
+                                    [vincolo] => Piano di Bacino
+                                    [tavola] => Bacini
+                                    [zona] => Bacino San Francesco
+                                    [sigla] => Bac. S. F.
+                                    [percentuale] => 
+                                )
+
+                            [7] => Array
+                                (
+                                    [vincolo] => Piano di Bacino
+                                    [tavola] => Regimi del bacino San Francesco
+                                    [zona] => Ambiti di versante urbano - Mantenimento
+                                    [sigla] => VU/MA
+                                    [percentuale] => 
+                                )
+
+                            [8] => Array
+                                (
+                                    [vincolo] => Vincoli ambientali
+                                    [tavola] => DLgs 42/2004 art.136 c.1 lett d (ex Bellezze d'Insieme)
+                                    [zona] => Decreto ministeriale n. 9 del 29/08/1953
+                                    [sigla] => Decr. Min.
+                                    [percentuale] => 
+                                )
+
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [sezione] => Sanremo
+                    [foglio] => 36
+                    [mappale] => 338
+                    [piani] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [vincolo] => Piano Regolatore Generale
+                                    [tavola] => Zonizzazione P.R.G.
+                                    [zona] => La zona Bc1 è definita "zona di completamento" (art. 25 delle Norme di Attuazione).
+                                    [sigla] => Bc1
+                                    [percentuale] => 
+                                )
+
+                            [1] => Array
+                                (
+                                    [vincolo] => Piano Regolatore Generale
+                                    [tavola] => Rischio sismico
+                                    [zona] => Zona 2A
+                                    [sigla] => 2a
+                                    [percentuale] => 
+                                )
+
+                            [2] => Array
+                                (
+                                    [vincolo] => Piano Territoriale di Coordinamento Paesistico
+                                    [tavola] => Assetto insediativo
+                                    [zona] => Tessuto Urbano
+                                    [sigla] => TU
+                                    [percentuale] => 
+                                )
+
+                            [3] => Array
+                                (
+                                    [vincolo] => Piano Territoriale di Coordinamento Paesistico
+                                    [tavola] => Assetto geomorfologico
+                                    [zona] => Modificabilità di tipo B
+                                    [sigla] => MO-B
+                                    [percentuale] => 
+                                )
+
+                            [4] => Array
+                                (
+                                    [vincolo] => Piano Territoriale di Coordinamento Paesistico
+                                    [tavola] => Assetto vegetazionale
+                                    [zona] => Colture: Insediamenti diffusi serre - Consolidamento
+                                    [sigla] => COL-IDS-CO
+                                    [percentuale] => 
+                                )
+
+                            [5] => Array
+                                (
+                                    [vincolo] => Piano di Bacino
+                                    [tavola] => Ambiti
+                                    [zona] => Sanremese (ambito n. 3)
+                                    [sigla] => Amb. 3
+                                    [percentuale] => 
+                                )
+
+                            [6] => Array
+                                (
+                                    [vincolo] => Piano di Bacino
+                                    [tavola] => Bacini
+                                    [zona] => Bacino San Francesco
+                                    [sigla] => Bac. S. F.
+                                    [percentuale] => 
+                                )
+
+                            [7] => Array
+                                (
+                                    [vincolo] => Piano di Bacino
+                                    [tavola] => Regimi del bacino San Francesco
+                                    [zona] => Ambiti di versante urbano - Mantenimento
+                                    [sigla] => VU/MA
+                                    [percentuale] => 
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [normativa_pianodibacino] => Array
+        (
+            [0] => Array
+                (
+                    [pratica] => 795
+                    [testo] => </w:t>
+</w:r>
+<w:r>
+<w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:b/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr>
+<w:t>AMBITO SANREMESE
+                    [ordine] => 933
+                )
+
+            [1] => Array
+                (
+                    [pratica] => 795
+                    [testo] => </w:t>
+</w:r>
+<w:r>
+<w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:b/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr>
+<w:t>Piano di Bacino SAN FRANCESCO</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr><w:spacing w:after="0" w:line="240" w:lineRule="auto"/><w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr></w:pPr>
+<w:r>
+<w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr>
+<w:t>Stralcio riguardante la difesa idraulica ed idrogeologica dell'Ambito n.3, approvato con deliberazione del Consiglio Provinciale n. 6 del 30/01/2003 e s.m.i.
+                    [ordine] => 956
+                )
+
+            [2] => Array
+                (
+                    [pratica] => 795
+                    [testo] => </w:t>
+</w:r>
+<w:r>
+<w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:b/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr>
+<w:t>REGIME
+                    [ordine] => 964
+                )
+
+            [3] => Array
+                (
+                    [pratica] => 795
+                    [testo] => </w:t>
+</w:r>
+<w:r>
+<w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:b/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr>
+<w:t>VU</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr><w:spacing w:after="0" w:line="240" w:lineRule="auto"/><w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr></w:pPr>
+<w:r>
+<w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr>
+<w:t>ambiti di Versante Urbano (</w:t>
+</w:r>
+<w:r>
+<w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:i/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr>
+<w:t>art.8 delle Norme di Attuazione - Individuazione e Categoria di aree</w:t>
+</w:r>
+<w:r>
+<w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr>
+<w:t>).</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr><w:spacing w:after="0" w:line="240" w:lineRule="auto"/><w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr></w:pPr>
+<w:r>
+<w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr>
+<w:t>Parti di territorio interessato da tessuto edificato di carattere urbano.
+                    [ordine] => 970
+                )
+
+            [4] => Array
+                (
+                    [pratica] => 795
+                    [testo] => </w:t>
+</w:r>
+<w:r>
+<w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:b/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr>
+<w:t>MA</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr><w:spacing w:after="0" w:line="240" w:lineRule="auto"/><w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr></w:pPr>
+<w:r>
+<w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr>
+<w:t>Mantenimento (</w:t>
+</w:r>
+<w:r>
+<w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:i/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr>
+<w:t>art.9 delle Norme di Attuazione - Regimi Normativi</w:t>
+</w:r>
+<w:r>
+<w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr>
+<w:t>).</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr><w:spacing w:after="0" w:line="240" w:lineRule="auto"/><w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr></w:pPr>
+<w:r>
+<w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr>
+<w:t>Si applica a quelle parti di territorio ove i fattori idraulici, idro-geomorfologici e vegetazionali, considerati singolarmente, per parti o complessivamente hanno raggiunto un ivello di equilibrio sufficiente, ma senza margini di sicurezza. Sono consentiti interventi di utilizzazione del territorio, anche di tipo insediativo, nel rispetto delle norme specifiche del presente Piano.
+                    [ordine] => 971
+                )
+
+        )
+
+    [normativa_prg] => Array
+        (
+            [0] => Array
+                (
+                    [pratica] => 795
+                    [testo] => </w:t>
+</w:r>
+<w:r>
+<w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:b/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr>
+<w:t>Zona Bc1</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr><w:spacing w:after="0" w:line="240" w:lineRule="auto"/><w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr></w:pPr>
+<w:r>
+<w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:b/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr>
+<w:t>PRG 80</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr><w:spacing w:after="0" w:line="240" w:lineRule="auto"/><w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr></w:pPr>
+<w:r>
+<w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr>
+<w:t>La zona Bc1 è definita "zona di completamento" (art. 25 delle Norme di Attuazione). Vincoli specifici: La zona è soggetta ad obbligo di Piano Particolareggiato.  </w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr><w:spacing w:after="0" w:line="240" w:lineRule="auto"/><w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr></w:pPr>
+<w:r>
+<w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr>
+<w:t>In via transitoria l'edificazione, a destinazione turistico-ricettiva,  è consentita mediante predisposizione di SUA esteso ad un lotto minimo di intervento di 10.000 mq, nel rispetto dei seguenti parametri: If. 1,00 mc/mq, h max. 14,50 ml, distanza dai confini h/2>=5,00 ml, distanza dalle costruzioni h>=10,00 ml, distanze minime dal ciglio delle strade pubbliche vedere p.to 3 dell'art. 9 del D.M. 02.04.1968.</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr><w:spacing w:after="0" w:line="240" w:lineRule="auto"/><w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr></w:pPr>
+<w:r>
+<w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:b/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr>
+<w:t>VARIANTE CARTOGRAFICA</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr><w:spacing w:after="0" w:line="240" w:lineRule="auto"/><w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr></w:pPr>
+<w:r>
+<w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr>
+<w:t>La zona Bc1 è definita "zona di completamento" (art. 25 delle Norme di Attuazione).</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr><w:spacing w:after="0" w:line="240" w:lineRule="auto"/><w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr></w:pPr>
+<w:r>
+<w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr>
+<w:t>Piano particolareggiato della zona Bc1 approvato con deliberazione C.C. n. 18 del 04.07.1983 e revocato con deliberazione del Consiglio Comunale n. 48 del 30/6/2011
+                    [ordine] => 26
+                )
+
+            [1] => Array
+                (
+                    [pratica] => 795
+                    [testo] => </w:t>
+</w:r>
+<w:r>
+<w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:b/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr>
+<w:t>Zonizzazione sismica 2a</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr><w:spacing w:after="0" w:line="240" w:lineRule="auto"/><w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr></w:pPr>
+<w:r>
+<w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr>
+<w:t>l'edificazione è subordinata al rispetto delle previsioni di cui all'art. 41 del P.R.G..
+                    [ordine] => 352
+                )
+
+        )
+
+    [normativa_ptcp] => Array
+        (
+            [0] => Array
+                (
+                    [pratica] => 795
+                    [testo] => </w:t>
+</w:r>
+<w:r>
+<w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:b/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr>
+<w:t>Assetto geomorfologico MO-B</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr><w:spacing w:after="0" w:line="240" w:lineRule="auto"/><w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr></w:pPr>
+<w:r>
+<w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr>
+<w:t>Modificabilità di tipo B (art.67 delle Norme di Attuazione).</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr><w:spacing w:after="0" w:line="240" w:lineRule="auto"/><w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr></w:pPr>
+<w:r>
+<w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr>
+<w:t>Tale regime si applica nelle parti del territorio non assoggettati ad altro regime normativo.
+                    [ordine] => 406
+                )
+
+            [1] => Array
+                (
+                    [pratica] => 795
+                    [testo] => </w:t>
+</w:r>
+<w:r>
+<w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:b/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr>
+<w:t>Assetto insediativo TU</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr><w:spacing w:after="0" w:line="240" w:lineRule="auto"/><w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr></w:pPr>
+<w:r>
+<w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr>
+<w:t>Tessuto Urbano (Art.38 delle Norme di Attuazione).</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr><w:spacing w:after="0" w:line="240" w:lineRule="auto"/><w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr></w:pPr>
+<w:r>
+<w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr>
+<w:t>Aree Urbane.
+                    [ordine] => 433
+                )
+
+            [2] => Array
+                (
+                    [pratica] => 795
+                    [testo] => </w:t>
+</w:r>
+<w:r>
+<w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:b/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr>
+<w:t>Assetto vegetazionale COL,IDS-CO</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr><w:spacing w:after="0" w:line="240" w:lineRule="auto"/><w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr></w:pPr>
+<w:r>
+<w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr>
+<w:t>Colture Agricole, Impianti Diffusi di Serre-Consolidamento (artt.58 e 59 delle Norme di Attuazione).
+                    [ordine] => 444
+                )
+
+        )
+
+    [normativa_vincoli] => Array
+        (
+            [0] => Array
+                (
+                    [pratica] => 795
+                    [testo] => </w:t>
+</w:r>
+<w:r>
+<w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/><w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr>
+<w:t>Tutela delle bellezze naturali di cui alla Parte III del Codice dei Beni Culturali e del Paesaggio (art. 136 comma 1 lett c) d) del D.Lgs. n. 42 del 22/01/2004). Vincolo imposto con DM 24/04/85.
+                    [ordine] => 1
+                    [nome_vincolo] => VINCOLI_AMBIENTALI
+                )
+
+        )
+
+)
