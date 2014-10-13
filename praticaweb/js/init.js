@@ -1,1 +1,0 @@
-var appBaseUrl = '/praticaweb';
