@@ -1,0 +1,24 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable="rdp;iamm"
+[edit]
+table="pe.titolo"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+
+button="Salva;azione;;submit|Annulla;azione;;submit"
+[view]
+table="pe.titolo"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+
+
+data[]="Allegati;id;#ui-icon-folder-open#Carica#action:stp.documenti#plugins:open-page#tipo_documento:allegato#direzione:0#mode:new#pratica;folder";
+
+[list]
+
+[standard]
