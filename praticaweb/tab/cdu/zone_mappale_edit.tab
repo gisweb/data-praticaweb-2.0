@@ -1,0 +1,5 @@
+cdu.zone_mappale
+Canc.,id,2%,delete
+Sigla,sigla,23%,text
+Descrizione,descrizione,65%,text
+Percentuale,percentuale,10,text

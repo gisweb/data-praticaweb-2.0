@@ -2,7 +2,7 @@
 [general]
 table=""
 viewable=""
-editable="cdu"
+editable=""
 
 [new]
 table="cdu.mappali"

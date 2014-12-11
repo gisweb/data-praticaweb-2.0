@@ -1,0 +1,20 @@
+[search]
+table="#"
+chiave="id"
+data[]="Tipologia Pratica;tipo;250xreport.elenco_tipo_pratica;selectdb;"
+data[]="Data Protocollo Inizio - Fine;data_prot_in;10;data|;data_prot_fi;10;data"
+data[]="Data Rilascio Inizio - Fine;data_ril_in;10;data|;data_ril_fi;10;data"
+data[]="Titolo Rilasciato;titolo_rilasciato;50;yesno"
+button="Chiudi;azione;#closeWindow;button|Cerca;azione;#search;submit|Report;azione;#printReport;submit"
+
+[list]
+table="report.search_ap"
+chiave="id"
+campi_ordinamento="data_prot"
+;data[]=";pratica;2%#praticaweb#pratica;btn_view;"
+data[]="Pratica;numero;5%;text;"
+data[]="Data;data_prot;5%;data"
+data[]="N.Prot;protocollo;5%;text"
+data[]="Nominativo;nominativo;25%;text"
+data[]="Localizzazione;localizzazione;25%;text"
+data[]="Oggetto;oggetto;30%;text"

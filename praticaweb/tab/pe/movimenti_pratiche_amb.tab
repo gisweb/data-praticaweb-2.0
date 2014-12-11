@@ -29,7 +29,7 @@ data[]="Note;note;60;text"
 
 
 [view]
-table="pe.wf_transizioni"
+table="pe.elenco_wf_transizioni"
 chiave="id"
 campi_ordinamento="data;tmsins"
 campi_obbligatori=""

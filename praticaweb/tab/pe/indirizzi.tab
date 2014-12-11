@@ -11,9 +11,11 @@ campi_ordinamento=""
 campi_obbligatori="via;civico"
 data[]="Via;via;40;autosuggest"
 data[]="Civico;civico;10##via;autosuggest"
-data[]="Interno;interno;3;text"
 data[]="Scala;scala;10;text"
 data[]="Piano;piano;200xelenco_piani;select"
+data[]="Occ. Suolo Pubblico;occ_suolo_pubblico;;noyes"
+data[]="Mq Occupazione;mq_occ;8;numero"
+data[]="GG. Occupazione;gg_occ;2;numero"
 button="Chiudi;azione;#goToView;button|Aggiungi;azione;;submit"
 
 [edit]
@@ -24,10 +26,11 @@ campi_obbligatori=""
 data[]="Canc.;id;5%;delete"
 data[]="Via;via;30%;text"
 data[]="Numero;civico;20%;text"
-data[]="Interno;interno;3;text"
 data[]="Scala;scala;10%;text"
 data[]="Piano;piano;10%;text"
-
+data[]="Occ. Suolo Pubblico;occ_suolo_pubblico;;text"
+data[]="Mq Occupazione;mq_occ;8;text"
+data[]="GG. Occupazione;gg_occ;2;text"
 
 
 [view]
@@ -38,10 +41,11 @@ campi_obbligatori=""
 data[]="Mappa;id;7%;zoom_gc"
 data[]="Via;via;30%;text"
 data[]="Numero;civico;10%;text"
-data[]="Interno;interno;5%;text"
 data[]="Scala;scala;10%;text"
 data[]="Piano;piano;20%;text"
-
+data[]="Occ. Suolo Pubblico;occ_suolo_pubblico;;noyes"
+data[]="Mq Occupazione;mq_occ;8;text"
+data[]="GG. Occupazione;gg_occ;2;text"
 [list]
 
 [standard]

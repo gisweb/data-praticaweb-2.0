@@ -1,21 +1,17 @@
-<?
-define('NOME_COMUNE','Comune di ....... - Pratiche Edilizie');//nome completo del comune che compare nell'intestazione
+<?php
+define('NOME_COMUNE','Comune di Alghero');//nome completo del comune che compare nell'intestazione
 
 define('DEBUG', 1); // Debugging 0 off 1 on
 define('DB_DRIVER','pdo_pgsql');
+define('DB_PORT','5434');
 define('DB_HOST','127.0.0.1');
-if (file_exists(DATA_DIR.'config.local.php')){
-	/*LOCAL CONFIGURATION FOR TEST*/
-	include DATA_DIR.'config.local.php';
-}
-else{
-	define('DB_PORT','5432');
-}
-define('DB_NAME','');
+
+define('DB_NAME','sit_alghero');
 define('DB_USER','postgres');
 define('DB_PWD','postgres');
 
 
+define('APPS_DIR',implode(DIRECTORY_SEPARATOR,Array("D:","Applicazioni","apps","praticaweb-alghero")).DIRECTORY_SEPARATOR);
 define('MENU',DATA_DIR."praticaweb/mnu/");//cartella contenente la  configurazione dei menu
 define('TAB',DATA_DIR."praticaweb/tab/");//cartella contenente la  configurazione dei forms via file tab
 define('TAB_ELENCO',DATA_DIR."praticaweb/tab_elenco/");//cartella con elenchi testuali
@@ -24,24 +20,13 @@ define('LIB',DATA_DIR."praticaweb/lib/");//cartella contenente la  configurazion
 define('MODELLI',DATA_DIR."praticaweb/modelli/");//cartella con i modelli di stampa 
 define('STAMPE',DATA_DIR."praticaweb/documenti/");//cartella con le stampe
 
-
-define('REPO_PATH','D');
+//define('SAMBA_URL','\\\\192.168.56.9\\documenti\\');
 define('DEBUG_DIR',DATA_DIR."praticaweb/debug/");//cartella con i debug
 define('ALLEGATI',DATA_DIR."praticaweb/documenti/");//cartella dei file allegati sotto praticaweb
-
-
-define('SMB_MODELLI','file://'.REPO_PATH.'/modelli-pe/');
+define('SMB_PATH','file://srv-gis/documenti-pe/');
+define('SMB_MODELLI','file://srv-gis/modelli-pe/');
 define('URL_ALLEGATI','allegati/');//url relativo dei file allegati con / finale
-
-define('LOCAL_DOCUMENT',0);     //DEFINISCE SE I DOCUMENTI VENGONO APERTI SU PERCORSO LOCALE O WEB
-//define('SMB_PATH','\\\\vmserver\\sanremo\\documenti\\');  // PERCORSO DI RETE DOVE APRIRE I DOCUMENTI
-define('DOCUMENTI',DATA_DIR."/praticaweb/documenti");
-
-define('LOCAL_DB',DATA_DIR."praticaweb".DIRECTORY_SEPARATOR."db".DIRECTORY_SEPARATOR);				//SALVATAGGI LOCALI DEI FILE
-define('LOCAL_LIB',DATA_DIR."praticaweb".DIRECTORY_SEPARATOR."lib".DIRECTORY_SEPARATOR); 			//LIBRERIE LOCALI
-define('LOCAL_INCLUDE',DATA_DIR."praticaweb".DIRECTORY_SEPARATOR."include".DIRECTORY_SEPARATOR); 	//INCLUDE LOCALI
-
-
+define('DOCUMENTI',DATA_DIR."praticaweb/documenti/");
 define('AREA_MIN','5');//area minima di intersezione per le query di overlay
 
 define('SELF',$_SERVER["PHP_SELF"]);
@@ -49,13 +34,14 @@ define('SELF',$_SERVER["PHP_SELF"]);
 define('NEW_VINCOLI',1);
 
 define('THE_GEOM','bordo_gb');
-
-define('MAPSETID','MAPPA DELLE PRATICHE');
-define('CDUMAPSETID','MAPPA DEL CDU');
-define('TEMPLATE','gisclient');
+define('MAPPA_PRATICHE','alghero');
+define('LAYER_MAPPALI','particelle');
+define('OBJ_LAYER','2183:particelle');
+define('MAPSETID','pratiche_edilizie');
+define('TEMPLATE','alghero');
 define('GC_VERSION',2);
-define('QTID_PARTICELLE','8');
-define('QTID_CIVICI','34');
+define('QTID_PARTICELLE','133');
+define('QTID_CIVICI','1');
 
 //in sessione per pmapper
 
@@ -68,5 +54,5 @@ $incDir=(in_array('/apps/includes/utils',explode(':',$tmpDir)))?($tmpDir):($tmpD
 ini_set('include_path',$incDir);
 //includo il file per il database in uso
 require_once (APPS_DIR."wrapdb/postgres.php");
-require_once (APPS_DIR."utils/debugutils.php");
+require_once (APPS_DIR."utils/debug.php");
 ?>

@@ -4,19 +4,10 @@ table=""
 viewable=""
 editable=""
 
+[new]
+
 [edit]
-table="oneri.totali"
-campi_obbligatori="cc;b1;b2"
-data[]="Costo costruzione;cc;15;valuta"
-data[]="Primaria (B1);b1;15;valuta"
-data[]="B1 a scomputo;scb1;15;valuta"
-data[]="Secondaria (B2);b2;15;valuta"
-data[]="B2 a scomputo;scb2;15;valuta"
-data[]="Quietanza;quietanza;15;text|Data;data;10;data"
-data[]="Oblazione Sanat.;oblazione;15;valuta|Quietanza;q_oblazione;15;text|Data;data_oblazione;10;data"
-data[]="Sanzione ambientale;indennita;15;valuta|Quietanza;q_indennita;15;text|Data;data_indennita;10;data"
-data[]="Pagamento;rateizzato;;checkbox|;fideiussione;;checkbox"
-button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
+
 [view]
 table="oneri.vista_totali"
 chiave="id"

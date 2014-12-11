@@ -12,6 +12,7 @@ data[]="Oneri Urbanizzazione;oneri_urbanizzazione;12;valuta|Costo Costruzione;on
 data[]="Scomputo O.U.;scomputo_urb;12;valuta|Scomputo C.C.;scomputo_costr;12;valuta"
 data[]="Sanzione;sanzione;12;valuta|Data Sanzione;data_sanzione;10;data|N° Quietanza;n_sanzione;10;text"
 data[]="Fideiussione;fideiussione;12;valuta|Data Fideiussione;;data_fideiussione;10;data;N° fideiussione;n_indennità;text"
+data[]="Monetizzazione Posti Auto;postiauto;12;valuta|<br>Data;data_postiauto;10;data|N° Quietanza;n_postiauto;10;text"
 data[]="Rateizzato;rateizzato;50;yesno";
 button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
 [view]
@@ -24,4 +25,5 @@ data[]="Oneri Urbanizzazione;oneri_urbanizzazione;12;valuta|Costo Costruzione;on
 data[]="Scomputo O.U.;scomputo_urb;12;valuta|Scomputo C.C.;scomputo_costr;12;valuta"
 data[]="Sanzione;sanzione;12;valuta|Data Sanzione;data_sanzione;10;data|N° Quietanza;n_sanzione;text"
 data[]="Fideiussione;fideiussione;12;valuta|"
+data[]="Monetizzazione<br>Posti Auto;postiauto;12;valuta|Data;data_postiauto;10;data|N° Quietanza;n_postiauto;10;text"
 data[]="Rateizzato;rateizzato;50;yesno";

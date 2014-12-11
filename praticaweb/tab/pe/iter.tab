@@ -7,7 +7,7 @@ editable=""
 [edit]
 table="pe.iter"
 chiave="id"
-campi_ordinamento=""
+campi_ordinamento="data;tmsins"
 campi_obbligatori=""
 data[]="Canc.;id;30;delete"
 data[]=";pubblico;20;semaforo"
@@ -18,11 +18,11 @@ data[]="Evento;nota_edit;500;text"
 [view]
 table="pe.iter"
 chiave="id"
-campi_ordinamento=""
+campi_ordinamento="data;tmsins"
 campi_obbligatori=""
 data[]=";pubblico;30;semaforo"
 data[]="Data;data;80;data"
-data[]="Evento;nota_edit;600;text"
+data[]="Evento;nota;600;text"
 [list]
 
 [standard]

@@ -20,8 +20,10 @@ chiave="id"
 campi_ordinamento=""
 campi_obbligatori=""
 data[]=";id;3%;delete"
-data[]="Parametro;parametro;85%;text"
+data[]="Parametro;parametro;20%;text"
+data[]="Note;note;50%;text"
 data[]="Valore;valore;12;text_box"
+
 data[]="Conformità;conforme;50;multiple_yesno"
 button="Chiudi;azione;#goToView;submit|Salva;azione;;submit"
 [view]

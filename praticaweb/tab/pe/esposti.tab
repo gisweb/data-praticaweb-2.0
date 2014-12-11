@@ -2,28 +2,42 @@
 [general]
 table=""
 viewable=""
-editable="ivig"
+editable=""
 
+[new]
+table="pe.esposti"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori="origine_p;data_presentazione"
+data[]="Origine;origine_p;50;text|Voce in elenco >>;origine_p;150xget_elenco;button"
+data[]="Data presentazione;data_presentazione;10;data"
+data[]="Oggetto;oggetto;60x4;textarea"
+data[]="Data determinazione;data_determinazione;10;data"
+data[]="Note;note;60x6;textarea"
+button="Salva;azione;;submit|Annulla;azione;;submit"
 [edit]
 table="pe.esposti"
 chiave="id"
 campi_ordinamento=""
-campi_obbligatori="origine;data_esposto"
-data[]="Data presentazione;data_esposto;10;data"
-data[]="Origine;origine;200xpe.elenco_origine_esposti;selectdb"
+campi_obbligatori="origine_p;data_presentazione"
+data[]="Origine;origine_p;50;text|Voce in elenco >>;origine_p;150xget_elenco;button"
+data[]="Data presentazione;data_presentazione;10;data"
 data[]="Oggetto;oggetto;60x4;textarea"
+data[]="Data determinazione;data_determinazione;10;data"
+data[]="Termine;termine_verifica;10;data"
 data[]="Note;note;60x6;textarea"
-button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
-
+button="Salva;azione;;submit|Elimina;azione;#confirmDelete;submit|Annulla;azione;;submit"
 [view]
-table="pe.esposti"
+table="pe.vista_esposti"
 chiave="id"
 campi_ordinamento=""
 campi_obbligatori=""
-data[]="Data presentazione;data_presentazione_esposto;10;data"
-data[]="Origine;origine;200xpe.elenco_origine_esposti;selectdb"
-data[]="Oggetto;oggetto;60x4;textarea"
-data[]="Note;note;60x6;textarea"
-
+data[]="Origine;origine_p;;text"
+data[]="Data presentazione;data_presentazione;;data|Termine verifica;termine_verifica;;data"
+data[]="Oggetto;oggetto;;text"
+data[]="Data determinazione;data_determinazione;;data"
+data[]="Provvedimento;provvedimento;;text"
+data[]="Note;note;;text"
 [list]
 
+[standard]

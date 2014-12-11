@@ -2,7 +2,7 @@
 [general]
 table=""
 viewable=""
-editable="cdu"
+editable=""
 
 [new]
 table="cdu.iter"
@@ -25,13 +25,13 @@ data[]="Data;data;10;data"
 data[]="Evento;nota_edit;500;text"
 button="Chiudi;azione;#goToView;submit"
 [view]
-table="cdu.iter"
+table="cdu.vista_iter"
 chiave="id"
 campi_ordinamento=""
 campi_obbligatori=""
-data[]="Utente;utente;10%;text"
-data[]="Data;data;10%;data"
-data[]="Evento;nota;80%;text"
+data[]=";pubblico;30;semaforo"
+data[]="Data;data;80;data"
+data[]="Evento;nota;600;text"
 [list]
 
 [standard]

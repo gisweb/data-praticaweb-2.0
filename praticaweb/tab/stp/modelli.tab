@@ -3,44 +3,19 @@
 table=""
 viewable=""
 editable=""
-table_list = "1"
+
+[new]
 
 [edit]
-table="stp.e_modelli"
-chiave="id"
-campi_obbligatori="nome"
-data[]="Nome;nome;100;text"
-data[]="Form;form;200xstp.elenco_form;selectdb"
-data[]="Descrizione;descrizione;60x4;textarea"
-data[]="Proprietario;proprietario;50;text"
-data[]="Tipo Pratica;tipo_pratica;400xpe.elenco_tipipratiche_stampe;multiselectdb"
-data[]="Viste;views;400xstp.elenco_viste;multiselectdb"
-data[]="Funzioni;functions;400xstp.elenco_funzioni;multiselectdb"
-data[]="File;file;50;upload"
-button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
 
 [view]
-table="stp.e_modelli"
-chiave="id"
-campi_obbligatori="nome"
-data[]="Nome;nome;100;text"
-data[]="Form;form;200xstp.elenco_form;selectdb"
-data[]="Descrizione;descrizione;60x4;textarea"
-data[]="Proprietario;proprietario;50;text"
-data[]="Tipo Pratica;tipo_pratica;400xpe.elenco_tipipratiche_stampe;multiselectdb"
-data[]="Viste;views;100;text"
-data[]="Funzioni;functions;100;text"
-button="Annulla;azione;;submit|preview;azione;#preview;button"
 
 [list]
 table="stp.e_modelli"
 chiave="id"
 campi_ordinamento="nome"
 campi_obbligatori=""
-data[]=";nome;2%#stp.modelli;btn_modelli"
-data[]=";id;2%#stp.modelli;btn_view"
-data[]=";id;2%#stp.modelli;btn_edit"
-data[]="Nome;nome;200;text"
-data[]="Form;form;200xelenco_form;selectdb"
+data[]=";id;3%;radio1"
+data[]="Nome;nome;200;link"
 data[]="Descrizione;descrizione;50%;text"
-
+data[]="Proprietario;proprietario;12%;text"

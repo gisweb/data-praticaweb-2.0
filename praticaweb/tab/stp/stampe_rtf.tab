@@ -1,0 +1,24 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[new]
+
+[edit]
+
+[view]
+
+[list]
+
+[standard]
+table="stp.stampe"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]=";file_doc;40;delete"
+data[]=";file_doc;40;radio1"
+data[]="Nome del documento;file_doc;480;link"
+data[]="Data creazione;data_creazione_doc;100;text"
+data[]="Creato da;utente_doc;100;text"
