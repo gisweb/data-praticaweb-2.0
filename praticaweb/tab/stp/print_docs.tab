@@ -1,0 +1,6 @@
+[search]
+table="#"
+chiave="id"
+data[]="Tipologia Pratica;tipo;250xpe.elenco_tipopratica_all;selectdb;"
+data[]="Numero Pratica Inizio - Fine;numero_in;12;text|;numero_fi;12;text"
+button="Chiudi;azione;#closeWindow;button|Cerca;azione;;button|Stampa;print;;button"

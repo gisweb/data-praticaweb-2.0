@@ -14,6 +14,7 @@ cdu-3@NewWindow@'cdu.richiesta.php?mode=new','Praticaweb',0,0,'yes'@Nuovo Certif
 cdu-4@NewWindow@'cdu.ricerca.php','Praticaweb',0,0,'yes'@Ricerca Certificato di Destinazione Urbanistica@
 -1@Reportistica
 -1@NewWindow@'report.index.php','PraticawebUtenti',0,0,'yes'@Report delle Pratiche@Riepilogo delle Pratiche inserite per data di presentazione e di inserimento
+-2@NewWindow@'stp.print_docs.php','PraticawebStampe',0,0,'yes'@Stampa documenti multipli@Stampa di documenti per molteplici pratiche'
 istruttori-2@Amministrazione Sistema
 istruttori-2@NewWindow@'admin.utenti.php?mode=list','PraticawebUtenti',0,0,'yes'@Gestione Profili Utenti@- Aggiunta, Cancellazione, Modifica di un profilo utente.
 istruttori-2@NewWindow@'admin.gruppi.php?mode=list','PraticawebUtenti',0,0,'yes'@Gestione Profili Gruppi@- Aggiunta, Cancellazione, Modifica di un profilo gruppo di utenti.
