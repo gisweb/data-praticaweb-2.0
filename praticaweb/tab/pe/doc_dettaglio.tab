@@ -17,7 +17,7 @@ data[]="Note;note;55x3;textarea"
 data[]="Allegato;nome_file;100;allegati"
 data[]="Nuovo Allegato;file_allegato;50;upload"
 
-button="Salva;azione;;submit|Annulla;azione;;submit"
+button="Salva;azione;;submit|Annulla;azione;;submit|Elimina;azione;;submit"
 
 [view]
 table="pe.doc_dettaglio"
@@ -33,11 +33,11 @@ button="Chiudi;azione;#pe.allegati;submit"
 table="pe.doc_dettaglio"
 chiave="id"
 campi_ordinamento="data_protocollo"
-data[]=";idfile;3%#pe.scheda_documento#idfile;btn_view"
+
 data[]=";idfile;3%#pe.scheda_documento.php#idfile;btn_edit"
 data[]="Nome Documento;documento;20%;text"
 data[]="Prot.;protocollo;12%;text"
 data[]="Data Prot.;data_protocollo;12%;data"
 data[]="Stato;stato_allegato;15%;text"
-data[]="Allegato;nome_file;15%;allegati"
+data[]="Allegato;nome_file;;allegati"
 [standard]
