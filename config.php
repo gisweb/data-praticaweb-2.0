@@ -68,6 +68,10 @@ define('QTID_CIVICI','25');
 $_SESSION['USER_DATA']=DATA_DIR;
 
 
+//LIMITI
+define('UPPER_LIMIT',15);
+define('LOWER_LIMIT',15);
+
 $tmpDir=ini_get('include_path');
 $tmpDir=(in_array('/apps/includes',explode(':',$tmpDir)))?($tmpDir):($tmpDir.':/apps/includes');
 $incDir=(in_array('/apps/includes/utils',explode(':',$tmpDir)))?($tmpDir):($tmpDir.':/apps/includes/utils');
