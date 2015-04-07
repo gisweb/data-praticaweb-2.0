@@ -546,21 +546,5 @@ class appUtils extends generalAppUtils {
                 return Array("totali"=>count($res),"data"=>$res);
             }
     }
-    static function getAnnotazioni($userId){
-            $conn=utils::getDb();
-            //DETTAGLI DELLE SCADENZE
-            $lLimit=(defined('LOWER_LIMIT'))?(LOWER_LIMIT):(5);
-            $uLimit=(defined('UPPER_LIMIT'))?(UPPER_LIMIT):(3);
-            $sql="select * from pe.vista_verifiche_utenti where $userId = ANY(interessati);";
-            
-            $stmt=$conn->prepare($sql);
-            if(!$stmt->execute()){
-                return Array("errore"=>1,"query"=>$sql);
-            }
-            else{
-                $res=$stmt->fetchAll(PDO::FETCH_ASSOC);
-                return Array("totali"=>0,"data"=>Array());
-            }
-    }
-}
+}   
 ?>
