@@ -546,5 +546,13 @@ class appUtils extends generalAppUtils {
                 return Array("totali"=>count($res),"data"=>$res);
             }
     }
+    static function chooseRespVerifiche($tipo){
+        $res = 'NULL';
+        if ($tipo == 4){
+            $res = 50;
+        }
+        return $res;
+        
+    }
 }   
 ?>
