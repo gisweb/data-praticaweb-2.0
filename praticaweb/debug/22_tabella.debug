@@ -1,0 +1,49 @@
+
+23-06-08	11:26:03
+	select id,opzione from pe.elenco_ruoli
+23-06-08	11:26:03
+	select id,opzione from pe.elenco_tipopratica
+23-06-08	11:26:03
+	select id,opzione from pe.elenco_dataricerca
+23-06-08	11:26:03
+	select id,opzione from pe.elenco_ricerca_responsabili
+23-06-08	11:26:20
+	pe/iter_view.tab
+select pubblico,data,nota,id,pratica,chk from pe.iter
+ where pratica = 7960
+23-06-08	11:26:26
+	pe/avvio_procedimento_view.tab
+select numero,data_presentazione,tipo_pratica,tipo_intervento,protocollo,data_prot,protocollo_int,data_prot_int,rif_pratica,nome_responsabile,data_resp,com_resp,data_com_resp,oggetto,note,id,pratica,chk from pe.avvio_procedimento
+ where pratica=7960
+23-06-08	11:26:45
+	pe/iter_view.tab
+select pubblico,data,nota,id,pratica,chk from pe.iter
+ where pratica = 7831
+23-06-08	11:26:48
+	pe/avvio_procedimento_view.tab
+select numero,data_presentazione,tipo_pratica,tipo_intervento,protocollo,data_prot,protocollo_int,data_prot_int,rif_pratica,nome_responsabile,data_resp,com_resp,data_com_resp,oggetto,note,id,pratica,chk from pe.avvio_procedimento
+ where pratica=7831
+23-06-08	11:26:53
+	pe/comm_edil_view.tab
+select nome_ente,prot_ril,data_ril,prot_rice,data_rice,numero_doc,parere,testo,prescrizioni,note,id,pratica,chk from pe.elenco_pareri_comm
+ where pratica=7831 and ente in (2,8)
+25-06-08	18:10:41
+	ce/convocazione_view.tab
+select tipo,sede1,data_convocazione,ora_convocazione,note,id,pratica,chk from ce.comm_edilizia
+ where pratica=16
+25-06-08	18:10:42
+	ce/membri_commissione_view.tab
+select nominativo,ruolo,presente,id,pratica,chk from ce.scheda_membro_commissione
+ where commissione=16 order by id_ruolo
+25-06-08	18:10:42
+	ce/stampa.tab
+select ,id,pratica,chk from ce.commissione
+ where id>0
+25-06-08	18:10:45
+	ce/convocazione_view.tab
+select tipo,sede1,data_convocazione,ora_convocazione,note,id,pratica,chk from ce.comm_edilizia
+ where pratica=16
+25-06-08	18:10:45
+	ce/ordinegiorno_view.tab
+select * from ce.info_pratiche_discusse
+(16) where id>0

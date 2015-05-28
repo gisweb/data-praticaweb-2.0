@@ -1,0 +1,1545 @@
+
+29-05-09	12:23:41
+	select id,opzione from pe.elenco_ruoli
+29-05-09	12:23:41
+	select id,opzione from pe.elenco_tipopratica
+29-05-09	12:23:41
+	select id,opzione from pe.elenco_dataricerca
+29-05-09	12:23:41
+	select id,opzione from pe.elenco_ricerca_responsabili
+29-05-09	12:24:19
+	pe/iter_view.tab
+select pubblico,data,nota,id,pratica,chk from pe.iter
+ where pratica = 8069
+29-05-09	12:24:23
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where richiedente=1 and pratica=8069
+29-05-09	12:24:23
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where richiedente=-1 and pratica=8069
+29-05-09	12:24:23
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where concessionario=1 and pratica=8069
+29-05-09	12:24:23
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where concessionario=-1 and pratica=8069
+29-05-09	12:24:23
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where proprietario=1 and pratica=8069
+29-05-09	12:24:23
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where proprietario=-1 and pratica=8069
+29-05-09	12:24:23
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where progettista=1 and pratica=8069
+29-05-09	12:24:23
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where progettista=-1 and pratica=8069
+29-05-09	12:24:23
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where direttore=1 and pratica=8069
+29-05-09	12:24:23
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where direttore=-1 and pratica=8069
+29-05-09	12:24:23
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where esecutore=1 and pratica=8069
+29-05-09	12:24:23
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where esecutore=-1 and pratica=8069
+29-05-09	12:24:23
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where sicurezza=1 and pratica=8069
+29-05-09	12:24:23
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where sicurezza=-1 and pratica=8069
+29-05-09	12:24:23
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where collaudatore=1 and pratica=8069
+29-05-09	12:24:23
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where collaudatore=-1 and pratica=8069
+29-05-09	12:24:26
+	pe/richiedente_view.tab
+select app,cognome,nome,indirizzo,comune,prov,cap,telefono,email,datanato,sesso,comunato,provnato,codfis,piva,titolo,ragsoc,sede,comuned,provd,capd,ccia,cciaprov,titolod,note,comunicazioni,id,pratica,chk from pe.soggetti
+ where id = 5676
+29-05-09	12:24:55
+	pe/iter_view.tab
+select pubblico,data,nota,id,pratica,chk from pe.iter
+ where pratica = 7834
+29-05-09	12:24:59
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where richiedente=1 and pratica=7834
+29-05-09	12:24:59
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where richiedente=-1 and pratica=7834
+29-05-09	12:24:59
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where concessionario=1 and pratica=7834
+29-05-09	12:24:59
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where concessionario=-1 and pratica=7834
+29-05-09	12:24:59
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where proprietario=1 and pratica=7834
+29-05-09	12:24:59
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where proprietario=-1 and pratica=7834
+29-05-09	12:24:59
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where progettista=1 and pratica=7834
+29-05-09	12:24:59
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where progettista=-1 and pratica=7834
+29-05-09	12:24:59
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where direttore=1 and pratica=7834
+29-05-09	12:24:59
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where direttore=-1 and pratica=7834
+29-05-09	12:24:59
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where esecutore=1 and pratica=7834
+29-05-09	12:24:59
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where esecutore=-1 and pratica=7834
+29-05-09	12:24:59
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where sicurezza=1 and pratica=7834
+29-05-09	12:24:59
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where sicurezza=-1 and pratica=7834
+29-05-09	12:24:59
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where collaudatore=1 and pratica=7834
+29-05-09	12:24:59
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where collaudatore=-1 and pratica=7834
+29-05-09	12:25:05
+	pe/tecnico_view.tab
+select app,cognome,nome,indirizzo,ragsoc,sede,comune,prov,cap,telefono,email,codfis,piva,albo,alboprov,albonumero,inail,ccia,cciaprov,cedile,cedileprov,note,comunicazioni,id,pratica,chk from pe.soggetti
+ where id = 5142
+29-05-09	12:26:15
+	select id,opzione from pe.elenco_ruoli
+29-05-09	12:26:15
+	select id,opzione from pe.elenco_tipopratica
+29-05-09	12:26:15
+	select id,opzione from pe.elenco_dataricerca
+29-05-09	12:26:15
+	select id,opzione from pe.elenco_ricerca_responsabili
+29-05-09	12:26:35
+	pe/iter_view.tab
+select pubblico,data,nota,id,pratica,chk from pe.iter
+ where pratica = 7699
+29-05-09	12:26:38
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where richiedente=1 and pratica=7699
+29-05-09	12:26:38
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where richiedente=-1 and pratica=7699
+29-05-09	12:26:38
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where concessionario=1 and pratica=7699
+29-05-09	12:26:38
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where concessionario=-1 and pratica=7699
+29-05-09	12:26:38
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where proprietario=1 and pratica=7699
+29-05-09	12:26:38
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where proprietario=-1 and pratica=7699
+29-05-09	12:26:38
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where progettista=1 and pratica=7699
+29-05-09	12:26:38
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where progettista=-1 and pratica=7699
+29-05-09	12:26:38
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where direttore=1 and pratica=7699
+29-05-09	12:26:38
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where direttore=-1 and pratica=7699
+29-05-09	12:26:38
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where esecutore=1 and pratica=7699
+29-05-09	12:26:38
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where esecutore=-1 and pratica=7699
+29-05-09	12:26:38
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where sicurezza=1 and pratica=7699
+29-05-09	12:26:38
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where sicurezza=-1 and pratica=7699
+29-05-09	12:26:38
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where collaudatore=1 and pratica=7699
+29-05-09	12:26:38
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where collaudatore=-1 and pratica=7699
+29-05-09	12:26:42
+	pe/tecnico_view.tab
+select app,cognome,nome,indirizzo,ragsoc,sede,comune,prov,cap,telefono,email,codfis,piva,albo,alboprov,albonumero,inail,ccia,cciaprov,cedile,cedileprov,note,comunicazioni,id,pratica,chk from pe.soggetti
+ where id = 4737
+6-11-09	13:29:03
+	select id,opzione from pe.elenco_ruoli
+6-11-09	13:29:04
+	select id,opzione from pe.elenco_tipopratica
+6-11-09	13:29:04
+	select id,opzione from pe.elenco_dataricerca
+6-11-09	13:29:04
+	select id,opzione from pe.elenco_ricerca_responsabili
+6-11-09	13:29:27
+	select id,opzione from pe.elenco_ruoli
+6-11-09	13:29:27
+	select id,opzione from pe.elenco_tipopratica
+6-11-09	13:29:27
+	select id,opzione from pe.elenco_dataricerca
+6-11-09	13:29:27
+	select id,opzione from pe.elenco_ricerca_responsabili
+6-11-09	13:29:44
+	pe/iter_view.tab
+select pubblico,data,nota,id,pratica,chk from pe.iter
+ where pratica = 7832
+6-11-09	13:30:06
+	pe/progetto_view.tab
+select destuso1,destuso2,tavole,note,id,pratica,chk from pe.progetto
+ where pratica = 7832
+6-11-09	13:30:06
+	pe/parametri_view.tab
+select parametro,valore,conforme,id,pratica,chk from pe.parametri_progetto
+ where pratica=7832;
+6-11-09	13:30:14
+	pe/indirizzi_view.tab
+select via,civico,interno,scala,piano,id,pratica,chk from pe.indirizzi
+ where pratica=7832;
+6-11-09	13:30:14
+	pe/catasto_terreni_view.tab
+select mapkey,foglio,mappale,sub,note,id,pratica,chk from pe.ct_info
+ where pratica=7832;
+6-11-09	13:30:14
+	pe/catasto_urbano_view.tab
+select foglio,mappale,sub,note,id,pratica,chk from pe.curbano
+ where pratica=7832;
+6-11-09	13:30:22
+	pe/doc_allegati_view.tab
+select documento,id,pratica,chk from pe.doc_allegati
+ where pratica=7832 and iter=10 and allegato=1
+6-11-09	13:30:22
+	pe/doc_mancanti_view.tab
+select documento,id,pratica,chk from pe.doc_allegati1
+ where pratica=7832 and iter=10 and mancante=1
+6-11-09	13:30:22
+	pe/doc_allegati_view.tab
+select documento,id,pratica,chk from pe.doc_allegati
+ where pratica=7832 and iter=20 and allegato=1
+6-11-09	13:30:22
+	pe/doc_mancanti_view.tab
+select documento,id,pratica,chk from pe.doc_allegati1
+ where pratica=7832 and iter=20 and mancante=1
+6-11-09	13:30:22
+	pe/doc_allegati_view.tab
+select documento,id,pratica,chk from pe.doc_allegati
+ where pratica=7832 and iter=30 and allegato=1
+6-11-09	13:30:22
+	pe/doc_mancanti_view.tab
+select documento,id,pratica,chk from pe.doc_allegati1
+ where pratica=7832 and iter=30 and mancante=1
+6-11-09	13:30:22
+	pe/doc_allegati_view.tab
+select documento,id,pratica,chk from pe.doc_allegati
+ where pratica=7832 and iter=40 and allegato=1
+6-11-09	13:30:22
+	pe/doc_mancanti_view.tab
+select documento,id,pratica,chk from pe.doc_allegati1
+ where pratica=7832 and iter=40 and mancante=1
+6-11-09	13:30:22
+	pe/doc_allegati_view.tab
+select documento,id,pratica,chk from pe.doc_allegati
+ where pratica=7832 and iter=50 and allegato=1
+6-11-09	13:30:22
+	pe/doc_mancanti_view.tab
+select documento,id,pratica,chk from pe.doc_allegati1
+ where pratica=7832 and iter=50 and mancante=1
+6-11-09	13:30:24
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where richiedente=1 and pratica=7832
+6-11-09	13:30:24
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where richiedente=-1 and pratica=7832
+6-11-09	13:30:24
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where concessionario=1 and pratica=7832
+6-11-09	13:30:24
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where concessionario=-1 and pratica=7832
+6-11-09	13:30:24
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where proprietario=1 and pratica=7832
+6-11-09	13:30:24
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where proprietario=-1 and pratica=7832
+6-11-09	13:30:24
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where progettista=1 and pratica=7832
+6-11-09	13:30:24
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where progettista=-1 and pratica=7832
+6-11-09	13:30:24
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where direttore=1 and pratica=7832
+6-11-09	13:30:24
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where direttore=-1 and pratica=7832
+6-11-09	13:30:24
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where esecutore=1 and pratica=7832
+6-11-09	13:30:24
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where esecutore=-1 and pratica=7832
+6-11-09	13:30:24
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where sicurezza=1 and pratica=7832
+6-11-09	13:30:24
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where sicurezza=-1 and pratica=7832
+6-11-09	13:30:24
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where collaudatore=1 and pratica=7832
+6-11-09	13:30:24
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where collaudatore=-1 and pratica=7832
+6-11-09	13:30:29
+	pe/avvio_procedimento_view.tab
+select numero,data_presentazione,tipo_pratica,tipo_intervento,protocollo,data_prot,protocollo_int,data_prot_int,rif_pratica,nome_responsabile,data_resp,com_resp,data_com_resp,oggetto,note,id,pratica,chk from pe.avvio_procedimento
+ where pratica=7832
+6-11-09	13:31:12
+	pe/comm_edil_view.tab
+select nome_ente,prot_ril,data_ril,prot_rice,data_rice,numero_doc,parere,testo,prescrizioni,note,id,pratica,chk from pe.elenco_pareri_comm
+ where pratica=7832 and ente in (2,8)
+6-11-09	13:31:15
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where richiedente=1 and pratica=7832
+6-11-09	13:31:15
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where richiedente=-1 and pratica=7832
+6-11-09	13:31:15
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where concessionario=1 and pratica=7832
+6-11-09	13:31:15
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where concessionario=-1 and pratica=7832
+6-11-09	13:31:15
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where proprietario=1 and pratica=7832
+6-11-09	13:31:15
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where proprietario=-1 and pratica=7832
+6-11-09	13:31:15
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where progettista=1 and pratica=7832
+6-11-09	13:31:15
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where progettista=-1 and pratica=7832
+6-11-09	13:31:15
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where direttore=1 and pratica=7832
+6-11-09	13:31:15
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where direttore=-1 and pratica=7832
+6-11-09	13:31:15
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where esecutore=1 and pratica=7832
+6-11-09	13:31:15
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where esecutore=-1 and pratica=7832
+6-11-09	13:31:15
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where sicurezza=1 and pratica=7832
+6-11-09	13:31:15
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where sicurezza=-1 and pratica=7832
+6-11-09	13:31:15
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where collaudatore=1 and pratica=7832
+6-11-09	13:31:15
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where collaudatore=-1 and pratica=7832
+6-11-09	13:31:18
+	pe/richiedente_view.tab
+select app,cognome,nome,indirizzo,comune,prov,cap,telefono,email,datanato,sesso,comunato,provnato,codfis,piva,titolo,ragsoc,sede,comuned,provd,capd,ccia,cciaprov,titolod,note,comunicazioni,id,pratica,chk from pe.soggetti
+ where id = 5137
+6-11-09	13:31:23
+	pe/doc_allegati_view.tab
+select documento,id,pratica,chk from pe.doc_allegati
+ where pratica=7832 and iter=10 and allegato=1
+6-11-09	13:31:23
+	pe/doc_mancanti_view.tab
+select documento,id,pratica,chk from pe.doc_allegati1
+ where pratica=7832 and iter=10 and mancante=1
+6-11-09	13:31:23
+	pe/doc_allegati_view.tab
+select documento,id,pratica,chk from pe.doc_allegati
+ where pratica=7832 and iter=20 and allegato=1
+6-11-09	13:31:23
+	pe/doc_mancanti_view.tab
+select documento,id,pratica,chk from pe.doc_allegati1
+ where pratica=7832 and iter=20 and mancante=1
+6-11-09	13:31:23
+	pe/doc_allegati_view.tab
+select documento,id,pratica,chk from pe.doc_allegati
+ where pratica=7832 and iter=30 and allegato=1
+6-11-09	13:31:23
+	pe/doc_mancanti_view.tab
+select documento,id,pratica,chk from pe.doc_allegati1
+ where pratica=7832 and iter=30 and mancante=1
+6-11-09	13:31:23
+	pe/doc_allegati_view.tab
+select documento,id,pratica,chk from pe.doc_allegati
+ where pratica=7832 and iter=40 and allegato=1
+6-11-09	13:31:23
+	pe/doc_mancanti_view.tab
+select documento,id,pratica,chk from pe.doc_allegati1
+ where pratica=7832 and iter=40 and mancante=1
+6-11-09	13:31:23
+	pe/doc_allegati_view.tab
+select documento,id,pratica,chk from pe.doc_allegati
+ where pratica=7832 and iter=50 and allegato=1
+6-11-09	13:31:23
+	pe/doc_mancanti_view.tab
+select documento,id,pratica,chk from pe.doc_allegati1
+ where pratica=7832 and iter=50 and mancante=1
+6-11-09	13:31:24
+	pe/indirizzi_view.tab
+select via,civico,interno,scala,piano,id,pratica,chk from pe.indirizzi
+ where pratica=7832;
+6-11-09	13:31:24
+	pe/catasto_terreni_view.tab
+select mapkey,foglio,mappale,sub,note,id,pratica,chk from pe.ct_info
+ where pratica=7832;
+6-11-09	13:31:24
+	pe/catasto_urbano_view.tab
+select foglio,mappale,sub,note,id,pratica,chk from pe.curbano
+ where pratica=7832;
+6-11-09	13:31:32
+	pe/zone_pratica_view.tab
+select zona,descrizione,id,pratica,chk from pe.zone_pratica
+ where pratica=7832 and vincolo='prg'
+6-11-09	13:31:32
+	pe/zone_pratica_view.tab
+select zona,descrizione,id,pratica,chk from pe.zone_pratica
+ where pratica=7832 and vincolo='suscettivita'
+6-11-09	13:31:32
+	pe/zone_pratica_view.tab
+select zona,descrizione,id,pratica,chk from pe.zone_pratica
+ where pratica=7832 and vincolo='ptcp_veg'
+6-11-09	13:31:32
+	pe/zone_pratica_view.tab
+select zona,descrizione,id,pratica,chk from pe.zone_pratica
+ where pratica=7832 and vincolo='ptcp_ins'
+6-11-09	13:31:32
+	pe/zone_pratica_view.tab
+select zona,descrizione,id,pratica,chk from pe.zone_pratica
+ where pratica=7832 and vincolo='ptcp_geo'
+6-11-09	13:31:32
+	pe/zone_pratica_view.tab
+select zona,descrizione,id,pratica,chk from pe.zone_pratica
+ where pratica=7832 and vincolo='scarto'
+6-11-09	13:31:32
+	pe/zone_pratica_view.tab
+select zona,descrizione,id,pratica,chk from pe.zone_pratica
+ where pratica=7832 and vincolo='paesistico'
+6-11-09	13:31:32
+	pe/zone_pratica_view.tab
+select zona,descrizione,id,pratica,chk from pe.zone_pratica
+ where pratica=7832 and vincolo='FUOCO'
+6-11-09	13:31:32
+	pe/zone_pratica_view.tab
+select zona,descrizione,id,pratica,chk from pe.zone_pratica
+ where pratica=7832 and vincolo='acustica'
+6-11-09	13:31:34
+	pe/progetto_view.tab
+select destuso1,destuso2,tavole,note,id,pratica,chk from pe.progetto
+ where pratica = 7832
+6-11-09	13:31:34
+	pe/parametri_view.tab
+select parametro,valore,conforme,id,pratica,chk from pe.parametri_progetto
+ where pratica=7832;
+6-11-09	13:31:36
+	pe/asservimenti_view.tab
+select tipo,numero,notaio,repertorio,reg_part,reg_ord,loc_reg,data_reg,loc_tras,data_tras,loc,note,id,pratica,chk from pe.vista_asservimenti
+ where pratica = 7832
+6-11-09	13:31:39
+	pe/pareri_view.tab
+select nome_ente,prot_rich,data_rich,prot_soll,data_soll,prot_ril,data_ril,prot_rice,data_rice,numero_doc,parere,testo,prescrizioni,note,id,pratica,chk from pe.elenco_pareri
+ where pratica=7832
+6-11-09	13:31:42
+	oneri/totali_view.tab
+select calcolo,totale,quietanza,data,indennita,q_indennita,data_indennita,oblazione,q_oblazione,data_oblazione,id,pratica,chk from oneri.vista_totali
+ where pratica=7832
+6-11-09	13:31:42
+	oneri/monetizzazione_totali_view.tab
+select totale,quietanza,data,id,pratica,chk from oneri.vista_monetizzazione_totali
+ where pratica=7832
+6-11-09	13:31:46
+	pe/titolo_view.tab
+select titolo,protocollo,data_rilascio,data_notifica,data_ritiro,intervento,note,id,pratica,chk from pe.titolo
+ where pratica=7832
+6-11-09	13:31:48
+	pe/lavori_view.tab
+select scade_il,il,scade_fl,fl,note,id,pratica,chk from pe.lavori
+ where pratica=7832
+6-11-09	13:31:50
+	pe/abitabi.tab
+select prot_rich,data_rich,prot_doc,data_doc,data_ril,note,id,pratica,chk from pe.abitabi
+ where pratica=7832
+6-11-09	13:31:51
+	vigi/sopralluoghi_view.tab
+select motivo_v,data,note,id,pratica,chk from vigi.sopralluoghi
+ where pratica=7832 order by data
+6-11-09	13:31:55
+	pe/iter_view.tab
+select pubblico,data,nota,id,pratica,chk from pe.iter
+ where pratica = 7832
+6-11-09	13:32:20
+	select id,opzione from pe.elenco_ruoli
+6-11-09	13:32:20
+	select id,opzione from pe.elenco_tipopratica
+6-11-09	13:32:20
+	select id,opzione from pe.elenco_dataricerca
+6-11-09	13:32:20
+	select id,opzione from pe.elenco_ricerca_responsabili
+6-11-09	13:37:39
+	pe/iter_view.tab
+select pubblico,data,nota,id,pratica,chk from pe.iter
+ where pratica = 2106
+6-11-09	13:38:02
+	pe/iter_view.tab
+select pubblico,data,nota,id,pratica,chk from pe.iter
+ where pratica = 2166
+6-11-09	13:38:05
+	pe/doc_allegati_view.tab
+select documento,id,pratica,chk from pe.doc_allegati
+ where pratica=2166 and iter=10 and allegato=1
+6-11-09	13:38:05
+	pe/doc_mancanti_view.tab
+select documento,id,pratica,chk from pe.doc_allegati1
+ where pratica=2166 and iter=10 and mancante=1
+6-11-09	13:38:05
+	pe/doc_allegati_view.tab
+select documento,id,pratica,chk from pe.doc_allegati
+ where pratica=2166 and iter=20 and allegato=1
+6-11-09	13:38:05
+	pe/doc_mancanti_view.tab
+select documento,id,pratica,chk from pe.doc_allegati1
+ where pratica=2166 and iter=20 and mancante=1
+6-11-09	13:38:05
+	pe/doc_allegati_view.tab
+select documento,id,pratica,chk from pe.doc_allegati
+ where pratica=2166 and iter=30 and allegato=1
+6-11-09	13:38:05
+	pe/doc_mancanti_view.tab
+select documento,id,pratica,chk from pe.doc_allegati1
+ where pratica=2166 and iter=30 and mancante=1
+6-11-09	13:38:05
+	pe/doc_allegati_view.tab
+select documento,id,pratica,chk from pe.doc_allegati
+ where pratica=2166 and iter=40 and allegato=1
+6-11-09	13:38:05
+	pe/doc_mancanti_view.tab
+select documento,id,pratica,chk from pe.doc_allegati1
+ where pratica=2166 and iter=40 and mancante=1
+6-11-09	13:38:05
+	pe/doc_allegati_view.tab
+select documento,id,pratica,chk from pe.doc_allegati
+ where pratica=2166 and iter=50 and allegato=1
+6-11-09	13:38:05
+	pe/doc_mancanti_view.tab
+select documento,id,pratica,chk from pe.doc_allegati1
+ where pratica=2166 and iter=50 and mancante=1
+6-11-09	13:38:07
+	pe/indirizzi_view.tab
+select via,civico,interno,scala,piano,id,pratica,chk from pe.indirizzi
+ where pratica=2166;
+6-11-09	13:38:07
+	pe/catasto_terreni_view.tab
+select mapkey,foglio,mappale,sub,note,id,pratica,chk from pe.ct_info
+ where pratica=2166;
+6-11-09	13:38:07
+	pe/catasto_urbano_view.tab
+select foglio,mappale,sub,note,id,pratica,chk from pe.curbano
+ where pratica=2166;
+6-11-09	13:38:09
+	pe/doc_allegati_view.tab
+select documento,id,pratica,chk from pe.doc_allegati
+ where pratica=2166 and iter=10 and allegato=1
+6-11-09	13:38:09
+	pe/doc_mancanti_view.tab
+select documento,id,pratica,chk from pe.doc_allegati1
+ where pratica=2166 and iter=10 and mancante=1
+6-11-09	13:38:09
+	pe/doc_allegati_view.tab
+select documento,id,pratica,chk from pe.doc_allegati
+ where pratica=2166 and iter=20 and allegato=1
+6-11-09	13:38:09
+	pe/doc_mancanti_view.tab
+select documento,id,pratica,chk from pe.doc_allegati1
+ where pratica=2166 and iter=20 and mancante=1
+6-11-09	13:38:09
+	pe/doc_allegati_view.tab
+select documento,id,pratica,chk from pe.doc_allegati
+ where pratica=2166 and iter=30 and allegato=1
+6-11-09	13:38:09
+	pe/doc_mancanti_view.tab
+select documento,id,pratica,chk from pe.doc_allegati1
+ where pratica=2166 and iter=30 and mancante=1
+6-11-09	13:38:09
+	pe/doc_allegati_view.tab
+select documento,id,pratica,chk from pe.doc_allegati
+ where pratica=2166 and iter=40 and allegato=1
+6-11-09	13:38:09
+	pe/doc_mancanti_view.tab
+select documento,id,pratica,chk from pe.doc_allegati1
+ where pratica=2166 and iter=40 and mancante=1
+6-11-09	13:38:09
+	pe/doc_allegati_view.tab
+select documento,id,pratica,chk from pe.doc_allegati
+ where pratica=2166 and iter=50 and allegato=1
+6-11-09	13:38:09
+	pe/doc_mancanti_view.tab
+select documento,id,pratica,chk from pe.doc_allegati1
+ where pratica=2166 and iter=50 and mancante=1
+6-11-09	13:41:55
+	pe/iter_view.tab
+select pubblico,data,nota,id,pratica,chk from pe.iter
+ where pratica = 2106
+6-11-09	13:46:58
+	select id,opzione from pe.elenco_ruoli
+6-11-09	13:46:58
+	select id,opzione from pe.elenco_tipopratica
+6-11-09	13:46:58
+	select id,opzione from pe.elenco_dataricerca
+6-11-09	13:46:58
+	select id,opzione from pe.elenco_ricerca_responsabili
+24-11-09	10:36:41
+	select id,opzione from pe.elenco_ruoli
+24-11-09	10:36:41
+	select id,opzione from pe.elenco_tipopratica
+24-11-09	10:36:41
+	select id,opzione from pe.elenco_dataricerca
+24-11-09	10:36:41
+	select id,opzione from pe.elenco_ricerca_responsabili
+24-11-09	10:38:45
+	pe/iter_view.tab
+select pubblico,data,nota,id,pratica,chk from pe.iter
+ where pratica = 1208
+24-11-09	10:38:55
+	pe/progetto_view.tab
+select destuso1,destuso2,tavole,note,id,pratica,chk from pe.progetto
+ where pratica = 1208
+24-11-09	10:38:55
+	pe/parametri_view.tab
+select parametro,valore,conforme,id,pratica,chk from pe.parametri_progetto
+ where pratica=1208;
+24-11-09	10:39:10
+	pe/avvio_procedimento_view.tab
+select numero,data_presentazione,tipo_pratica,tipo_intervento,protocollo,data_prot,protocollo_int,data_prot_int,rif_pratica,nome_responsabile,data_resp,com_resp,data_com_resp,oggetto,note,id,pratica,chk from pe.avvio_procedimento
+ where pratica=1208
+24-02-11	15:34:54
+	select id,opzione from pe.elenco_ruoli
+24-02-11	15:34:54
+	select id,opzione from pe.elenco_tipopratica
+24-02-11	15:34:54
+	select id,opzione from pe.elenco_dataricerca
+24-02-11	15:34:54
+	select id,opzione from pe.elenco_ricerca_responsabili
+24-02-11	15:35:05
+	pe/iter_view.tab
+select pubblico,data,nota,id,pratica,chk from pe.vista_iter
+ where pratica = 8005
+24-02-11	15:35:12
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where richiedente=1 and pratica=8005
+24-02-11	15:35:12
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where richiedente=-1 and pratica=8005
+24-02-11	15:35:12
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where concessionario=1 and pratica=8005
+24-02-11	15:35:12
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where concessionario=-1 and pratica=8005
+24-02-11	15:35:12
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where proprietario=1 and pratica=8005
+24-02-11	15:35:12
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where proprietario=-1 and pratica=8005
+24-02-11	15:35:12
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where progettista=1 and pratica=8005
+24-02-11	15:35:12
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where progettista=-1 and pratica=8005
+24-02-11	15:35:12
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where direttore=1 and pratica=8005
+24-02-11	15:35:12
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where direttore=-1 and pratica=8005
+24-02-11	15:35:12
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where esecutore=1 and pratica=8005
+24-02-11	15:35:12
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where esecutore=-1 and pratica=8005
+24-02-11	15:35:12
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where sicurezza=1 and pratica=8005
+24-02-11	15:35:12
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where sicurezza=-1 and pratica=8005
+24-02-11	15:35:12
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where collaudatore=1 and pratica=8005
+24-02-11	15:35:12
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where collaudatore=-1 and pratica=8005
+24-02-11	15:35:30
+	select id,opzione from pe.elenco_ruoli
+24-02-11	15:35:30
+	select id,opzione from pe.elenco_tipopratica
+24-02-11	15:35:30
+	select id,opzione from pe.elenco_dataricerca
+24-02-11	15:35:30
+	select id,opzione from pe.elenco_ricerca_responsabili
+24-02-11	15:35:52
+	select id,opzione from pe.elenco_ruoli
+24-02-11	15:35:52
+	select id,opzione from pe.elenco_tipopratica
+24-02-11	15:35:52
+	select id,opzione from pe.elenco_dataricerca
+24-02-11	15:35:52
+	select id,opzione from pe.elenco_ricerca_responsabili
+24-02-11	15:36:02
+	select id,opzione from pe.elenco_ruoli
+24-02-11	15:36:02
+	select id,opzione from pe.elenco_tipopratica
+24-02-11	15:36:02
+	select id,opzione from pe.elenco_dataricerca
+24-02-11	15:36:02
+	select id,opzione from pe.elenco_ricerca_responsabili
+24-02-11	15:36:11
+	select id,opzione from pe.elenco_ruoli
+24-02-11	15:36:11
+	select id,opzione from pe.elenco_tipopratica
+24-02-11	15:36:11
+	select id,opzione from pe.elenco_dataricerca
+24-02-11	15:36:11
+	select id,opzione from pe.elenco_ricerca_responsabili
+4-08-11	08:59:59
+	select id,opzione from pe.elenco_ruoli
+4-08-11	08:59:59
+	select id,opzione from pe.elenco_tipopratica
+4-08-11	08:59:59
+	select id,opzione from pe.elenco_dataricerca
+4-08-11	08:59:59
+	select id,opzione from pe.elenco_ricerca_responsabili
+4-08-11	09:00:05
+	select id,opzione from pe.elenco_ruoli
+4-08-11	09:00:05
+	select id,opzione from pe.elenco_tipopratica
+4-08-11	09:00:05
+	select id,opzione from pe.elenco_dataricerca
+4-08-11	09:00:05
+	select id,opzione from pe.elenco_ricerca_responsabili
+4-08-11	09:00:21
+	select id,opzione from pe.elenco_ruoli
+4-08-11	09:00:21
+	select id,opzione from pe.elenco_tipopratica
+4-08-11	09:00:21
+	select id,opzione from pe.elenco_dataricerca
+4-08-11	09:00:21
+	select id,opzione from pe.elenco_ricerca_responsabili
+4-08-11	09:00:37
+	select id,opzione from pe.elenco_ruoli
+4-08-11	09:00:37
+	select id,opzione from pe.elenco_tipopratica
+4-08-11	09:00:37
+	select id,opzione from pe.elenco_dataricerca
+4-08-11	09:00:37
+	select id,opzione from pe.elenco_ricerca_responsabili
+4-08-11	09:01:11
+	pe/iter_view.tab
+select pubblico,data,nota,id,pratica,chk from pe.vista_iter
+ where pratica = 8346
+4-08-11	09:01:55
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where richiedente=1 and pratica=8346
+4-08-11	09:01:55
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where richiedente=-1 and pratica=8346
+4-08-11	09:01:55
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where concessionario=1 and pratica=8346
+4-08-11	09:01:55
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where concessionario=-1 and pratica=8346
+4-08-11	09:01:55
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where proprietario=1 and pratica=8346
+4-08-11	09:01:55
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where proprietario=-1 and pratica=8346
+4-08-11	09:01:55
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where progettista=1 and pratica=8346
+4-08-11	09:01:55
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where progettista=-1 and pratica=8346
+4-08-11	09:01:55
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where direttore=1 and pratica=8346
+4-08-11	09:01:55
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where direttore=-1 and pratica=8346
+4-08-11	09:01:55
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where esecutore=1 and pratica=8346
+4-08-11	09:01:55
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where esecutore=-1 and pratica=8346
+4-08-11	09:01:55
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where sicurezza=1 and pratica=8346
+4-08-11	09:01:55
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where sicurezza=-1 and pratica=8346
+4-08-11	09:01:55
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where collaudatore=1 and pratica=8346
+4-08-11	09:01:55
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where collaudatore=-1 and pratica=8346
+4-08-11	09:02:31
+	pe/richiedente_view.tab
+select app,cognome,nome,indirizzo,comune,prov,cap,telefono,email,datanato,sesso,comunato,provnato,codfis,piva,titolo,ragsoc,sede,comuned,provd,capd,ccia,cciaprov,titolod,note,comunicazioni,id,pratica,chk from pe.soggetti
+ where id = 6403
+4-08-11	09:02:38
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where richiedente=1 and pratica=8346
+4-08-11	09:02:38
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where richiedente=-1 and pratica=8346
+4-08-11	09:02:38
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where concessionario=1 and pratica=8346
+4-08-11	09:02:38
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where concessionario=-1 and pratica=8346
+4-08-11	09:02:38
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where proprietario=1 and pratica=8346
+4-08-11	09:02:38
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where proprietario=-1 and pratica=8346
+4-08-11	09:02:38
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where progettista=1 and pratica=8346
+4-08-11	09:02:38
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where progettista=-1 and pratica=8346
+4-08-11	09:02:38
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where direttore=1 and pratica=8346
+4-08-11	09:02:38
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where direttore=-1 and pratica=8346
+4-08-11	09:02:38
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where esecutore=1 and pratica=8346
+4-08-11	09:02:38
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where esecutore=-1 and pratica=8346
+4-08-11	09:02:38
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where sicurezza=1 and pratica=8346
+4-08-11	09:02:38
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where sicurezza=-1 and pratica=8346
+4-08-11	09:02:38
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where collaudatore=1 and pratica=8346
+4-08-11	09:02:38
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where collaudatore=-1 and pratica=8346
+4-08-11	09:02:41
+	pe/avvio_procedimento_view.tab
+select numero,data_presentazione,tipo_pratica,tipo_intervento,protocollo,data_prot,protocollo_int,data_prot_int,rif_pratica,nome_responsabile,data_resp,com_resp,data_com_resp,oggetto,note,id,pratica,chk from pe.avvio_procedimento
+ where pratica=8346
+4-08-11	09:02:55
+	pe/titolo_view.tab
+select titolo,protocollo,data_rilascio,data_notifica,data_ritiro,intervento,note,id,pratica,chk from pe.titolo
+ where pratica=8346
+4-08-11	09:02:58
+	oneri/totali_view.tab
+select calcolo,totale,quietanza,data,indennita,q_indennita,data_indennita,oblazione,q_oblazione,data_oblazione,id,pratica,chk from oneri.vista_totali
+ where pratica=8346
+4-08-11	09:02:58
+	oneri/monetizzazione_totali_view.tab
+select totale,quietanza,data,id,pratica,chk from oneri.vista_monetizzazione_totali
+ where pratica=8346
+4-08-11	09:03:00
+	pe/pareri_view.tab
+select nome_ente,prot_rich,data_rich,prot_soll,data_soll,prot_ril,data_ril,prot_rice,data_rice,numero_doc,parere,testo,prescrizioni,note,id,pratica,chk from pe.elenco_pareri
+ where pratica=8346
+4-08-11	09:03:01
+	pe/comm_edil_view.tab
+select nome_ente,prot_ril,data_ril,prot_rice,data_rice,numero_doc,parere,testo,prescrizioni,note,id,pratica,chk from pe.elenco_pareri_comm
+ where pratica=8346 and ente in (2,8)
+4-08-11	09:03:02
+	pe/asservimenti_view.tab
+select tipo,numero,notaio,repertorio,reg_part,reg_ord,loc_reg,data_reg,loc_tras,data_tras,loc,note,id,pratica,chk from pe.vista_asservimenti
+ where pratica = 8346
+4-08-11	09:03:04
+	pe/progetto_view.tab
+select destuso1,destuso2,tavole,note,id,pratica,chk from pe.progetto
+ where pratica = 8346
+4-08-11	09:03:06
+	pe/zone_pratica_view.tab
+select zona,descrizione,id,pratica,chk from pe.zone_pratica
+ where pratica=8346 and vincolo='PRG'
+4-08-11	09:03:06
+	pe/zone_pratica_view.tab
+select zona,descrizione,id,pratica,chk from pe.zone_pratica
+ where pratica=8346 and vincolo='PTCP'
+4-08-11	09:03:06
+	pe/zone_pratica_view.tab
+select zona,descrizione,id,pratica,chk from pe.zone_pratica
+ where pratica=8346 and vincolo='PIANO_DI_BACINO'
+4-08-11	09:03:06
+	pe/zone_pratica_view.tab
+select zona,descrizione,id,pratica,chk from pe.zone_pratica
+ where pratica=8346 and vincolo='BENI_PAESAGGISTICI'
+4-08-11	09:03:06
+	pe/zone_pratica_view.tab
+select zona,descrizione,id,pratica,chk from pe.zone_pratica
+ where pratica=8346 and vincolo='INCENDI'
+4-08-11	09:03:06
+	pe/zone_pratica_view.tab
+select zona,descrizione,id,pratica,chk from pe.zone_pratica
+ where pratica=8346 and vincolo='VINCOLO_IDROGEOLOGICO'
+4-08-11	09:03:06
+	pe/zone_pratica_view.tab
+select zona,descrizione,id,pratica,chk from pe.zone_pratica
+ where pratica=8346 and vincolo='ZONIZZAZIONE_ACUSTICA'
+4-08-11	09:03:17
+	pe/zone_pratica_view.tab
+select zona,descrizione,id,pratica,chk from pe.zone_pratica
+ where pratica=8346 and vincolo='PRG'
+4-08-11	09:03:17
+	pe/zone_pratica_view.tab
+select zona,descrizione,id,pratica,chk from pe.zone_pratica
+ where pratica=8346 and vincolo='PTCP'
+4-08-11	09:03:17
+	pe/zone_pratica_view.tab
+select zona,descrizione,id,pratica,chk from pe.zone_pratica
+ where pratica=8346 and vincolo='PIANO_DI_BACINO'
+4-08-11	09:03:17
+	pe/zone_pratica_view.tab
+select zona,descrizione,id,pratica,chk from pe.zone_pratica
+ where pratica=8346 and vincolo='BENI_PAESAGGISTICI'
+4-08-11	09:03:17
+	pe/zone_pratica_view.tab
+select zona,descrizione,id,pratica,chk from pe.zone_pratica
+ where pratica=8346 and vincolo='INCENDI'
+4-08-11	09:03:17
+	pe/zone_pratica_view.tab
+select zona,descrizione,id,pratica,chk from pe.zone_pratica
+ where pratica=8346 and vincolo='VINCOLO_IDROGEOLOGICO'
+4-08-11	09:03:17
+	pe/zone_pratica_view.tab
+select zona,descrizione,id,pratica,chk from pe.zone_pratica
+ where pratica=8346 and vincolo='ZONIZZAZIONE_ACUSTICA'
+4-08-11	09:03:19
+	pe/doc_allegati_view.tab
+select documento,id,pratica,chk from pe.doc_allegati
+ where pratica=8346 and iter=10 and allegato=1
+4-08-11	09:03:19
+	pe/doc_mancanti_view.tab
+select documento,id,pratica,chk from pe.doc_allegati1
+ where pratica=8346 and iter=10 and mancante=1
+4-08-11	09:03:19
+	pe/doc_allegati_view.tab
+select documento,id,pratica,chk from pe.doc_allegati
+ where pratica=8346 and iter=20 and allegato=1
+4-08-11	09:03:19
+	pe/doc_mancanti_view.tab
+select documento,id,pratica,chk from pe.doc_allegati1
+ where pratica=8346 and iter=20 and mancante=1
+4-08-11	09:03:19
+	pe/doc_allegati_view.tab
+select documento,id,pratica,chk from pe.doc_allegati
+ where pratica=8346 and iter=30 and allegato=1
+4-08-11	09:03:19
+	pe/doc_mancanti_view.tab
+select documento,id,pratica,chk from pe.doc_allegati1
+ where pratica=8346 and iter=30 and mancante=1
+4-08-11	09:03:19
+	pe/doc_allegati_view.tab
+select documento,id,pratica,chk from pe.doc_allegati
+ where pratica=8346 and iter=40 and allegato=1
+4-08-11	09:03:19
+	pe/doc_mancanti_view.tab
+select documento,id,pratica,chk from pe.doc_allegati1
+ where pratica=8346 and iter=40 and mancante=1
+4-08-11	09:03:19
+	pe/doc_allegati_view.tab
+select documento,id,pratica,chk from pe.doc_allegati
+ where pratica=8346 and iter=50 and allegato=1
+4-08-11	09:03:19
+	pe/doc_mancanti_view.tab
+select documento,id,pratica,chk from pe.doc_allegati1
+ where pratica=8346 and iter=50 and mancante=1
+4-08-11	09:03:24
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where richiedente=1 and pratica=8346
+4-08-11	09:03:24
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where richiedente=-1 and pratica=8346
+4-08-11	09:03:24
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where concessionario=1 and pratica=8346
+4-08-11	09:03:24
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where concessionario=-1 and pratica=8346
+4-08-11	09:03:24
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where proprietario=1 and pratica=8346
+4-08-11	09:03:24
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where proprietario=-1 and pratica=8346
+4-08-11	09:03:24
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where progettista=1 and pratica=8346
+4-08-11	09:03:24
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where progettista=-1 and pratica=8346
+4-08-11	09:03:24
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where direttore=1 and pratica=8346
+4-08-11	09:03:24
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where direttore=-1 and pratica=8346
+4-08-11	09:03:24
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where esecutore=1 and pratica=8346
+4-08-11	09:03:24
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where esecutore=-1 and pratica=8346
+4-08-11	09:03:24
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where sicurezza=1 and pratica=8346
+4-08-11	09:03:24
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where sicurezza=-1 and pratica=8346
+4-08-11	09:03:24
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where collaudatore=1 and pratica=8346
+4-08-11	09:03:24
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where collaudatore=-1 and pratica=8346
+4-08-11	09:03:25
+	pe/avvio_procedimento_view.tab
+select numero,data_presentazione,tipo_pratica,tipo_intervento,protocollo,data_prot,protocollo_int,data_prot_int,rif_pratica,nome_responsabile,data_resp,com_resp,data_com_resp,oggetto,note,id,pratica,chk from pe.avvio_procedimento
+ where pratica=8346
+4-08-11	09:03:33
+	pe/lavori_view.tab
+select scade_il,il,scade_fl,fl,note,id,pratica,chk from pe.lavori
+ where pratica=8346
+4-08-11	09:03:54
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where richiedente=1 and pratica=8346
+4-08-11	09:03:54
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where richiedente=-1 and pratica=8346
+4-08-11	09:03:54
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where concessionario=1 and pratica=8346
+4-08-11	09:03:54
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where concessionario=-1 and pratica=8346
+4-08-11	09:03:54
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where proprietario=1 and pratica=8346
+4-08-11	09:03:54
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where proprietario=-1 and pratica=8346
+4-08-11	09:03:54
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where progettista=1 and pratica=8346
+4-08-11	09:03:54
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where progettista=-1 and pratica=8346
+4-08-11	09:03:54
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where direttore=1 and pratica=8346
+4-08-11	09:03:54
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where direttore=-1 and pratica=8346
+4-08-11	09:03:54
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where esecutore=1 and pratica=8346
+4-08-11	09:03:54
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where esecutore=-1 and pratica=8346
+4-08-11	09:03:54
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where sicurezza=1 and pratica=8346
+4-08-11	09:03:54
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where sicurezza=-1 and pratica=8346
+4-08-11	09:03:54
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where collaudatore=1 and pratica=8346
+4-08-11	09:03:54
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where collaudatore=-1 and pratica=8346
+4-08-11	09:03:58
+	pe/tecnico_view.tab
+select app,cognome,nome,indirizzo,ragsoc,sede,comune,prov,cap,telefono,email,codfis,piva,albo,alboprov,albonumero,inail,ccia,cciaprov,cedile,cedileprov,note,comunicazioni,id,pratica,chk from pe.soggetti
+ where id = 6404
+4-08-11	09:04:22
+	pe/avvio_procedimento_view.tab
+select numero,data_presentazione,tipo_pratica,tipo_intervento,protocollo,data_prot,protocollo_int,data_prot_int,rif_pratica,nome_responsabile,data_resp,com_resp,data_com_resp,oggetto,note,id,pratica,chk from pe.avvio_procedimento
+ where pratica=8346
+4-08-11	09:04:34
+	pe/indirizzi_view.tab
+select via,civico,interno,scala,piano,id,pratica,chk from pe.indirizzi
+ where pratica=8346;
+4-08-11	09:04:34
+	pe/catasto_terreni_view.tab
+select mapkey,foglio,mappale,sub,note,id,pratica,chk from pe.ct_info
+ where pratica=8346;
+4-08-11	09:04:34
+	pe/catasto_urbano_view.tab
+select foglio,mappale,sub,note,id,pratica,chk from pe.curbano
+ where pratica=8346;
+4-08-11	09:04:42
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where richiedente=1 and pratica=8346
+4-08-11	09:04:42
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where richiedente=-1 and pratica=8346
+4-08-11	09:04:42
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where concessionario=1 and pratica=8346
+4-08-11	09:04:42
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where concessionario=-1 and pratica=8346
+4-08-11	09:04:42
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where proprietario=1 and pratica=8346
+4-08-11	09:04:42
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where proprietario=-1 and pratica=8346
+4-08-11	09:04:42
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where progettista=1 and pratica=8346
+4-08-11	09:04:42
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where progettista=-1 and pratica=8346
+4-08-11	09:04:42
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where direttore=1 and pratica=8346
+4-08-11	09:04:42
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where direttore=-1 and pratica=8346
+4-08-11	09:04:42
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where esecutore=1 and pratica=8346
+4-08-11	09:04:42
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where esecutore=-1 and pratica=8346
+4-08-11	09:04:42
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where sicurezza=1 and pratica=8346
+4-08-11	09:04:42
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where sicurezza=-1 and pratica=8346
+4-08-11	09:04:42
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where collaudatore=1 and pratica=8346
+4-08-11	09:04:42
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where collaudatore=-1 and pratica=8346
+4-08-11	09:04:42
+	pe/avvio_procedimento_view.tab
+select numero,data_presentazione,tipo_pratica,tipo_intervento,protocollo,data_prot,protocollo_int,data_prot_int,rif_pratica,nome_responsabile,data_resp,com_resp,data_com_resp,oggetto,note,id,pratica,chk from pe.avvio_procedimento
+ where pratica=8346
+17-11-11	08:20:04
+	select id,opzione from pe.elenco_ruoli
+17-11-11	08:20:04
+	select id,opzione from pe.elenco_tipopratica
+17-11-11	08:20:04
+	select id,opzione from pe.elenco_dataricerca
+17-11-11	08:20:04
+	select id,opzione from pe.elenco_ricerca_responsabili
+14-11-13	10:03:18
+	select id,opzione from pe.elenco_ruoli
+14-11-13	10:03:18
+	select id,opzione from pe.elenco_tipopratica
+14-11-13	10:03:18
+	select id,opzione from pe.elenco_dataricerca
+14-11-13	10:03:18
+	select id,opzione from pe.elenco_ricerca_responsabili
+14-11-13	10:03:50
+	pe/iter_view.tab
+select pubblico,data,nota,id,pratica,chk from pe.vista_iter
+ where pratica = 7992
+14-11-13	10:04:08
+	pe/iter_view.tab
+select pubblico,data,nota,id,pratica,chk from pe.vista_iter
+ where pratica = 7992
+14-11-13	10:04:17
+	select id,opzione from pe.elenco_ruoli
+14-11-13	10:04:17
+	select id,opzione from pe.elenco_tipopratica
+14-11-13	10:04:17
+	select id,opzione from pe.elenco_dataricerca
+14-11-13	10:04:17
+	select id,opzione from pe.elenco_ricerca_responsabili
+14-11-13	10:05:02
+	pe/iter_view.tab
+select pubblico,data,nota,id,pratica,chk from pe.vista_iter
+ where pratica = 8028
+14-11-13	10:05:41
+	pe/lavori_view.tab
+select scade_il,il,scade_fl,fl,note,id,pratica,chk from pe.lavori
+ where pratica=8028
+14-11-13	10:05:44
+	pe/indirizzi_view.tab
+select via,civico,interno,scala,piano,id,pratica,chk from pe.indirizzi
+ where pratica=8028;
+14-11-13	10:05:44
+	pe/catasto_terreni_view.tab
+select mapkey,foglio,mappale,sub,note,id,pratica,chk from pe.ct_info
+ where pratica=8028;
+14-11-13	10:05:44
+	pe/catasto_urbano_view.tab
+select foglio,mappale,sub,note,id,pratica,chk from pe.curbano
+ where pratica=8028;
+14-11-13	10:05:47
+	pe/doc_allegati_view.tab
+select documento,id,pratica,chk from pe.doc_allegati
+ where pratica=8028 and iter=10 and allegato=1
+14-11-13	10:05:47
+	pe/doc_mancanti_view.tab
+select documento,id,pratica,chk from pe.doc_allegati1
+ where pratica=8028 and iter=10 and mancante=1
+14-11-13	10:05:47
+	pe/doc_allegati_view.tab
+select documento,id,pratica,chk from pe.doc_allegati
+ where pratica=8028 and iter=20 and allegato=1
+14-11-13	10:05:47
+	pe/doc_mancanti_view.tab
+select documento,id,pratica,chk from pe.doc_allegati1
+ where pratica=8028 and iter=20 and mancante=1
+14-11-13	10:05:47
+	pe/doc_allegati_view.tab
+select documento,id,pratica,chk from pe.doc_allegati
+ where pratica=8028 and iter=30 and allegato=1
+14-11-13	10:05:47
+	pe/doc_mancanti_view.tab
+select documento,id,pratica,chk from pe.doc_allegati1
+ where pratica=8028 and iter=30 and mancante=1
+14-11-13	10:05:47
+	pe/doc_allegati_view.tab
+select documento,id,pratica,chk from pe.doc_allegati
+ where pratica=8028 and iter=40 and allegato=1
+14-11-13	10:05:47
+	pe/doc_mancanti_view.tab
+select documento,id,pratica,chk from pe.doc_allegati1
+ where pratica=8028 and iter=40 and mancante=1
+14-11-13	10:05:47
+	pe/doc_allegati_view.tab
+select documento,id,pratica,chk from pe.doc_allegati
+ where pratica=8028 and iter=50 and allegato=1
+14-11-13	10:05:47
+	pe/doc_mancanti_view.tab
+select documento,id,pratica,chk from pe.doc_allegati1
+ where pratica=8028 and iter=50 and mancante=1
+14-11-13	10:05:49
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where richiedente=1 and pratica=8028
+14-11-13	10:05:49
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where richiedente=-1 and pratica=8028
+14-11-13	10:05:49
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where concessionario=1 and pratica=8028
+14-11-13	10:05:49
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where concessionario=-1 and pratica=8028
+14-11-13	10:05:49
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where proprietario=1 and pratica=8028
+14-11-13	10:05:49
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where proprietario=-1 and pratica=8028
+14-11-13	10:05:49
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where progettista=1 and pratica=8028
+14-11-13	10:05:49
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where progettista=-1 and pratica=8028
+14-11-13	10:05:49
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where direttore=1 and pratica=8028
+14-11-13	10:05:49
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where direttore=-1 and pratica=8028
+14-11-13	10:05:49
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where esecutore=1 and pratica=8028
+14-11-13	10:05:49
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where esecutore=-1 and pratica=8028
+14-11-13	10:05:49
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where sicurezza=1 and pratica=8028
+14-11-13	10:05:49
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where sicurezza=-1 and pratica=8028
+14-11-13	10:05:49
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where collaudatore=1 and pratica=8028
+14-11-13	10:05:49
+	pe/elenco_soggetti.tab
+select soggetto,id,pratica,chk from pe.elenco_soggetti
+ where collaudatore=-1 and pratica=8028
+14-11-13	10:06:01
+	vigi/sopralluoghi_view.tab
+select motivo_v,data,note,id,pratica,chk from vigi.sopralluoghi
+ where pratica=8028 order by data
+14-11-13	10:06:03
+	pe/abitabi.tab
+select prot_rich,data_rich,prot_doc,data_doc,data_ril,note,id,pratica,chk from pe.abitabi
+ where pratica=8028
+14-11-13	10:06:05
+	pe/lavori_view.tab
+select scade_il,il,scade_fl,fl,note,id,pratica,chk from pe.lavori
+ where pratica=8028
+14-11-13	10:06:07
+	pe/titolo_view.tab
+select titolo,protocollo,data_rilascio,data_notifica,data_ritiro,intervento,note,id,pratica,chk from pe.titolo
+ where pratica=8028
+14-11-13	10:06:08
+	oneri/totali_view.tab
+select calcolo,totale,quietanza,data,indennita,q_indennita,data_indennita,oblazione,q_oblazione,data_oblazione,id,pratica,chk from oneri.vista_totali
+ where pratica=8028
+14-11-13	10:06:08
+	oneri/monetizzazione_totali_view.tab
+select totale,quietanza,data,id,pratica,chk from oneri.vista_monetizzazione_totali
+ where pratica=8028
+14-11-13	10:06:10
+	pe/pareri_view.tab
+select nome_ente,prot_rich,data_rich,prot_soll,data_soll,prot_ril,data_ril,prot_rice,data_rice,numero_doc,parere,testo,prescrizioni,note,id,pratica,chk from pe.elenco_pareri
+ where pratica=8028
+14-11-13	10:06:12
+	pe/comm_edil_view.tab
+select nome_ente,prot_ril,data_ril,prot_rice,data_rice,numero_doc,parere,testo,prescrizioni,note,id,pratica,chk from pe.elenco_pareri_comm
+ where pratica=8028 and ente in (2,8)

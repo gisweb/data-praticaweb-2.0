@@ -1,0 +1,1066 @@
+------- DEBUG DEL 10/04/2015 02:44:00 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE tipo IN ('11000')))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 10/04/2015 02:44:16 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE tipo IN ('10000')))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 10/04/2015 02:49:16 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE tipo IN ('10000')))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 10/04/2015 02:50:02 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE data_presentazione > '01-06-2014'::date))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 10/04/2015 02:50:55 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE data_presentazione > '01-06-2014'::date))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 10                 
+-------------------------
+------- DEBUG DEL 10/04/2015 02:51:17 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE data_presentazione > '01-06-2014'::date))
+ORDER BY data_prot DESC LIMIT 50 OFFSET 50                 
+-------------------------
+------- DEBUG DEL 10/04/2015 02:51:20 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE data_presentazione > '01-06-2014'::date))
+ORDER BY data_prot DESC LIMIT 50 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 10/04/2015 03:14:23 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE data_presentazione > '01-01-2014'::date))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 10/04/2015 03:14:31 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE data_presentazione > '01-01-2014'::date))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 10                 
+-------------------------
+------- DEBUG DEL 10/04/2015 03:14:33 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE data_presentazione > '01-01-2014'::date))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 20                 
+-------------------------
+------- DEBUG DEL 10/04/2015 03:17:21 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE data_presentazione > '01-01-2014'::date))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 20                 
+-------------------------
+------- DEBUG DEL 10/04/2015 03:17:21 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE data_presentazione > '01-01-2014'::date))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 10/04/2015 03:17:44 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE data_presentazione > '01-12-2014'::date))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 10/04/2015 03:18:33 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE data_presentazione > '01-12-2014'::date))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 22/04/2015 02:27:23 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE online::varchar ilike '1'))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 22/04/2015 02:27:32 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE online::varchar ilike '1'))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 22/04/2015 02:28:09 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE online::varchar ilike '1'))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 23/04/2015 11:26:17 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE online::varchar ilike '1'))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 23/04/2015 11:26:20 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE online::varchar ilike '1'))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 23/04/2015 12:08:59 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE online::varchar ilike '1'))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 23/04/2015 12:16:05 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE online::varchar ilike '1'))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 23/04/2015 12:26:21 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE online::varchar ilike '1'))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 23/04/2015 05:00:17 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE online::varchar ilike '1'))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 24/04/2015 11:43:05 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE online::varchar ilike '1'))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 24/04/2015 11:57:43 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE online::varchar ilike '1'))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 28/04/2015 11:15:15 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE online::varchar ilike '1'))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 28/04/2015 11:15:29 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE online::varchar ilike '1'))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 28/04/2015 11:20:45 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE online::varchar ilike '1'))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 28/04/2015 11:20:56 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE online::varchar ilike '1'))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 28/04/2015 11:21:12 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE online::varchar ilike '1'))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 28/04/2015 11:22:08 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE online::varchar ilike '1'))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 29/04/2015 04:53:06 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE online::varchar ilike '1'))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 29/04/2015 05:16:36 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE online::varchar ilike '1'))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 30/04/2015 12:05:04 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE online::varchar ilike '1'))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 30/04/2015 12:06:30 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE online::varchar ilike '1'))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 11/05/2015 12:23:47 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE online::varchar ilike '1'))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 27/05/2015 10:41:03 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE online::varchar ilike '1'))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 27/05/2015 10:41:19 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE online::varchar ilike '1'))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 27/05/2015 10:41:23 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE online::varchar ilike '1'))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 27/05/2015 10:43:54 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE online::varchar ilike '1'))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------
+------- DEBUG DEL 27/05/2015 11:19:00 -------
+SELECT DISTINCT 
+    A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
+    CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
+    --,coalesce(O.nome,'non assegnata') as responsabile_it,coalesce(P.nome,'non assegnata') as responsabile_ia
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND coalesce(voltura,0)=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND coalesce(voltura,0)=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as esecutore FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) L USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_ct) G USING(pratica) LEFT JOIN
+(SELECT * FROM pe.grp_particelle_cu) H USING(pratica) LEFT JOIN
+(SELECT indirizzi.pratica, array_to_string(array_agg((COALESCE(indirizzi.via, ''::character varying)::text || COALESCE(' '::text || indirizzi.civico::text,'')) || COALESCE(' int.'::text || indirizzi.interno::text, ''::text)), ', '::text) AS ubicazione
+   FROM pe.indirizzi
+  GROUP BY indirizzi.pratica) I USING(pratica) LEFT JOIN
+(SELECT pratica,titolo,data_rilascio FROM pe.titolo) M USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(cip::varchar),',')) as cip FROM pe.soggetti WHERE esecutore=1 AND coalesce(voltura,0)=0 GROUP BY pratica) N USING(pratica) 
+--LEFT JOIN admin.users O ON(A.resp_it=D.userid) LEFT JOIN
+--admin.users P ON(A.resp_ia=D.userid)
+WHERE pratica IN ((SELECT DISTINCT pratica FROM pe.avvioproc WHERE online::varchar ilike '1'))
+ORDER BY data_prot DESC LIMIT 10 OFFSET 0                 
+-------------------------

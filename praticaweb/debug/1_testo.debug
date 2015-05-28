@@ -1,0 +1,634 @@
+
+7-01-08	11:44:12
+	<head><LINK media="screen" href="./src/modelli.css" type="text/css" rel="stylesheet"></head><div align="center"><img src="images/pieveligure.png" border="0" alt=" " width="70" height="95" /><br /><br /></div><div align="center"><font face="arial,helvetica,sans-serif" size="5"><strong>COMUNE DI PIEVE LIGURE<br />PROVINCIA DI GENOVA<br />___________________________<br /><br />SERVIZIO&nbsp;TECNICO</strong></font></div><div align="center"><strong><font face="Arial" size="3"></font></strong></div><div align="left"><font face="Arial" size="3"></font></div><font face="arial,helvetica,sans-serif" size="3"><div align="left"><br /><br />Prot n&deg; ______<font face="arial,helvetica,sans-serif" size="3">&nbsp;</font></div></font><p><font face="arial,helvetica,sans-serif" size="3"></font></p><p align="center"><font face="arial,helvetica,sans-serif" size="3"><strong>CERTIFICATO DI DESTINAZIONE URBANISTICA</strong></font></p><p align="left"><br /><font face="arial,helvetica,sans-serif" size="3">A richiesta di <span class="valore">F.info_cdu.richiedente</span> ;<br /><br />VISTO l&#39;Art. 107 del D. Lgs. 18 Agosto 2000, n&deg; 267, &quot;Testo Unico della Legge sull&#39;ordinamento degli Enti locali&quot;;<br /><br />VISTA la richiesta in data <span class="valore">F.info_cdu.data_prot</span>&nbsp; prot. n&deg; <span class="valore">F.info_cdu.protocollo</span>&nbsp; da parte di <span class="valore">F.info_cdu.richiedente</span> , per ottenere il certificato di destinazione urbanistica dell&#39;area sita nel territorio di questo Comune contraddistinta al C.T. come segue:</font><br /></p><font face="arial,helvetica,sans-serif" size="3"><div align="left"><span class="valore">F.info_cdu.tabella_cat_ter</span> </div><div align="left">VISTE le prescrizioni urbanistiche vigenti riguardanti l&#39;area interessata;<br /><br />VISTA la normativa vigente in materia;<font face="arial,helvetica,sans-serif" size="3"></font><br /></div></font><font face="arial,helvetica,sans-serif" size="3"><div align="center"><br /><strong><font face="arial,helvetica,sans-serif" size="3">CERTIFICA<strong><font face="arial,helvetica,sans-serif" size="3">&nbsp;</font></strong></font></strong></div></font><font face="arial,helvetica,sans-serif" size="3"><p align="left">che le suddette aree, come sopra identificate,Piano Regolatore vigente approvato con D.P.G.R. n&deg;190 in data 27.03.1997,<font size="3"> risultano appartenere alle zone urbanistiche specificate nella tabella che segue, restando di conseguenza sottoposte alla disposizioni per le rispettive zone determinate dalle Norme Tecniche di Attuazione del P.R.G. i cui stralci di competenza vengono allegati al presente certificato. <br /><br /></font><span class="valore">F.info_cdu.tabella_prg</span> <br /></p><p align="left">che, oltre alle sopra richiamate disposizioni urbanistiche, gli interventi di trasformazione delle predette aree sono altres&igrave; soggetti, alla osservanza della Disciplina Paesistica annessa al P.R.G. costituente livello puntuale del P.T.C.P., recante specifiche disposizioni di controllo paesistico ed ambientale alle quali viene formato espresso richiamo; <br /></p><p align="left"><span class="valore">F.info_cdu.tabella_ptcp</span>&nbsp;<br /><font face="arial,helvetica,sans-serif" size="3"><br /></font><font face="arial,helvetica,sans-serif" size="3"><span class="valore">F.info_cdu.normativa</span>&nbsp;&nbsp;</font></p></font><p><font face="arial,helvetica,sans-serif" size="3">Per quanto non espressamente disciplinato nel presente certificato, valgono le disposizioni di legge vigenti in materia ed i relativi vincoli.<br /><br />Si rilascia il presente certificato in carta USO BOLLO a richiesta&nbsp;<span class="valore">F.info_cdu.richiedente</span> , ai sensi ed agli effetti del D.P.R. 06 Giugno 2001, n&deg;380.</font> </p><p align="left"><font face="arial,helvetica,sans-serif" size="3">&nbsp; <table border="0" width="100%" align="center"><tbody><tr><td style="width: 50%"><font face="arial,helvetica,sans-serif" size="3">&nbsp;Pieve Ligure&nbsp;&nbsp;<span class="valore">D.data.data</span> </font></td><td style="width: 50%"><font face="arial,helvetica,sans-serif" size="3">&nbsp; </font></td></tr><tr><td><font face="arial,helvetica,sans-serif" size="3">&nbsp; </font></td><td align="center"><font face="arial,helvetica,sans-serif"><font size="3">Il Responsabile del Servizio<br /><em>(Geom. Giorgio Leverone)</em></font></font></td></tr></tbody></table></font></p>
+17-01-08	15:30:34
+	<html>
+	<head>
+		<LINK media="screen" href="./src/modelli.css" type="text/css" rel="stylesheet">
+		<style>
+			$definizione
+		</style>
+	</head>
+	<body>
+		<span style="font-size: 12pt;font-family:garamond;"><b>Oggetto:</b></span>
+<span style="font-size: 12pt;font-family:garamond;padding-left:5px;">
+<span class="valore">V.avv_procedimento.oggetto</span>&nbsp; - <span class="valore">V.ubicazione.indirizzo</span> - Foglio <span class="valore">V.zone_mappale.foglio</span> Mappale <span class="valore">V.zone_mappale.mappale</span> N.C.T.<br>
+</span>
+<span style="font-size: 12pt;">
+<p><font face="garamond">Richiedenti: <font size="3"><span class="iniziocicli">IN_CICLO</span> <span class="valore">V.richiedenti.app</span> <span class="valore">V.richiedenti.nominativo</span> <span class="finecicli">FI_CICLO</span> </font></font></p>
+</span></p>
+<p><span style="font-size: 12pt; font-family: garamond;">Pratica Edilizia n.<span class="valore">V.avv_procedimento.numero</span> </span></p>
+<p>
+<p><span style="font-size: 12pt; font-family: garamond;">Visto il D. Lgs. n: 42 del 22 gennaio 2004 concernente la protezione e valorizzazione dei beni culturali e paesaggistici.</span></p>
+<p><span style="font-size: 12pt; font-family: garamond;">Viste le Leggi regionali 18/03/1980 n&deg; 15 e 19/11/1982 n&deg; 44 in materia di esercizio delle funzioni regionali nel rilascio delle autorizzazioni paesistico- ambientali.</span></p>
+<p>
+<span style="font-size: 12pt; font-family: garamond;">Visto il D.P.G.R n&deg; 190 del 23/03/1997 comportante approvazione della variante integrale al Piano Regolatore Generale contenente la disciplina paesistica di livello puntuale prevista dall&rsquo;art. 8 della L.R. 2 maggio 1991 n&deg; 6, e contestualmente subdelega al Comune di Pieve Ligure delle funzioni regionali in materia di rilascio delle autorizzazioni paesistico ambientali.</span></p>
+<p>
+<span style="font-size: 12pt; font-family: garamond;">Esaminati gli atti e gli elaborati progettuali a corredo dell&rsquo;istanza.</span></p>
+<p>
+<span style="font-size: 12pt; font-family: garamond;">Considerato che l&rsquo;intervento ricade nell&rsquo;ambito dell&rsquo;area classificata dal P.T.C.P., approvato con D.C.R. n&deg; 6 del 26/02/1990, relativamente all&rsquo;Assetto Insediativo con definizione <span class="iniziocicli">IN_CICLO</span> <span class="valore">V.zone_ptcpi.zona</span> <span class="finecicli">FI_CICLO</span> .</span></p>
+<p><span style="font-size: 12pt; font-family: garamond;">Visto il parere favorevole espresso dalla C. E. I. nella seduta del&nbsp;<span class="valore">V.pareri_ce_i.data_ril</span>&nbsp;di seguito riportato :</span></p>
+<p><span style="font-family: garamond;"><span class="valore">V.pareri_ce_i.testo</span> </span></p>
+<p><span style="font-size: 12pt; font-family: garamond;">Constatato quindi che l&rsquo;intervento in oggetto &egrave; tale da non compromettere gli equilibri ambientali della zona interessata e risulta del tutto compatibile con la normativa sul punto disposta dal P.T.C.P..</span></p>
+<span style="font-size: 12pt;"></span><span style="font-size: 12pt;">
+<p align="center"><strong><font face="garamond">s i&nbsp;&nbsp;&nbsp; d i s p o n e</font></strong></p>
+</span>
+<p><span style="font-family: garamond;"><font size="3">il rilascio dell&rsquo;autorizzazione di cui al capo IV art. 146 comma 2 del&nbsp; D. Lgs. n. 42 del 22 gennaio 2004, "Codice dei beni culturali e del paesaggio, ai sensi dell'articolo 10 della legge 6 luglio 2002, n. 137" e s.m.i. per l&rsquo;esecuzione degli interventi descritti in oggetto.</font> </span></p>
+<p><span style="font-size: 12pt; font-family: garamond;">Il presente provvedimento viene notificato alla Soprintendenza ai Beni Ambientali e del Paesaggio della Liguria ai sensi e per gli effetti del capo IV art. 146 comma 6 del D. Lgs. di cui sopra.</span></p>
+<span style="font-size: 12pt;"></span><span style="font-family: garamond;"><font size="3"><strong>Pieve Ligure, <span class="valore">D.data.data</span></strong> </font></span></p>
+<div style="padding-left: 320px;" align="center"><span style="font-size: 12pt; font-family: garamond;"> <strong>Il Responsabile del Servizio<br /> </strong><em>(Giorgio Leverone)</em></span></div>
+
+
+
+
+	</body>
+</html>	
+17-01-08	15:39:02
+	<html>
+	<head>
+		<LINK media="screen" href="./src/modelli.css" type="text/css" rel="stylesheet">
+		<style>
+			$definizione
+		</style>
+	</head>
+	<body>
+		<p><span style="font-size: 12pt; font-family: garamond;">Prot.n.</span></p>
+<div style="text-align: right;">
+<span style="font-size: 12pt; font-family: garamond;">Alla Soprintendenza per i Beni Ambientali <br>
+e del Paesaggio della Liguria<br>
+via Balbi, 10<br>
+16126&nbsp; GENOVA</span>
+</div>
+<div style="text-align: right;margin-top:5px;">
+<span style="font-size: 12pt; font-family: garamond;">e.p.c.<br>
+<span class="iniziocicli">IN_CICLO</span> 
+<span class="valore">V.richiedenti.app</span> <span class="valore">V.richiedenti.nominativo</span> <br>
+<span class="valore">V.richiedenti.indirizzo</span><br>
+<span class="valore">V.richiedenti.cap</span>&nbsp;- <span class="valore">V.richiedenti.comune</span>&nbsp;<br>
+<span class="finecicli">FI_CICLO</span> 
+</span></div>
+<span style="font-size: 12pt;font-family:garamond;"><b>Oggetto:</b></span>
+<span style="font-size: 12pt;font-family:garamond;padding-left:5px;">
+<span class="valore">V.avv_procedimento.oggetto</span>&nbsp; - <span class="valore">V.ubicazione.indirizzo</span> - Foglio <span class="valore">V.zone_mappale.foglio</span> Mappale <span class="valore">V.zone_mappale.mappale</span> N.C.T.<br>
+</span>
+<p>
+<span style="font-size: 12pt;garamond;">Richiedenti:
+ <span class="iniziocicli">IN_CICLO</span> 
+ <span class="valore">V.richiedenti.app</span> <span class="valore">V.richiedenti.nominativo</span> 
+ <span class="finecicli">FI_CICLO</span> </span><br>
+<span style="font-size: 12pt; font-family: garamond;">
+Pratica Edilizia n.<span class="valore">V.avv_procedimento.numero</span> </span>
+</p>
+<p>
+<span style="font-family: garamond;font-size: 12pt;">
+Si trasmette in allegato alla presente, unitamente all'autorizzazione ambientale, la documentazione relativa a quanto in oggetto ai sensi e per gli effetti del capo IV art. 146 comma 6 del D.Lgs. n. 42 del 22 gennaio 2004, "Codice dei beni culturali e del paesaggio, ai sensi dell'articolo 10 della legge 6 luglio 2002, n. 137" e s.m.i.<br>
+Si ricorda che l'autorizzazione resta sottoposta, ai sensi del comma 7 dell'art. 146 del D. Lgs. di cui sopra, alla decorrenza di gg. 60 senza che da parte della Soprintendenza intervenga l'annullamento e che comunque le opere in oggetto potranno essere eseguite solo a seguito del conseguimento del prescritto titolo edilizio o della decorrenza del tempo previsto per la DIA.
+</span>
+</p>
+<p>
+<span style="font-size: 12pt; font-family: garamond;">Distinti saluti.</span>
+</p>
+<p>
+<span style="font-family: garamond;font-size: 12pt;"><strong>Pieve Ligure, <span class="valore">D.data.data</span></strong></span>
+</p>
+<p style="padding-left: 390px; text-align: center;">
+<span style="font-family: garamond;font-size: 12pt;"><strong>Il Responsabile del Servizio</strong><br>
+<em>Giorgio Leverone</em></span>
+</p>
+<p><span style="font-size: 12pt; font-family: garamond;">Allegati: <br>
+autorizzazione ambientale<br>
+n. 1 copie degli elaborati di progetto</span></p>
+	</body>
+</html>	
+17-01-08	15:39:12
+	<html>
+	<head>
+		<LINK media="screen" href="./src/modelli.css" type="text/css" rel="stylesheet">
+		<style>
+			$definizione
+		</style>
+	</head>
+	<body>
+		<span style="font-size: 12pt;font-family:garamond;"><b>Oggetto:</b></span>
+<span style="font-size: 12pt;font-family:garamond;padding-left:5px;">
+<span class="valore">V.avv_procedimento.oggetto</span>&nbsp; - <span class="valore">V.ubicazione.indirizzo</span> - Foglio <span class="valore">V.zone_mappale.foglio</span> Mappale <span class="valore">V.zone_mappale.mappale</span> N.C.T.<br>
+</span>
+<span style="font-size: 12pt;">
+<p><font face="garamond">Richiedenti: <font size="3"><span class="iniziocicli">IN_CICLO</span> <span class="valore">V.richiedenti.app</span> <span class="valore">V.richiedenti.nominativo</span> <span class="finecicli">FI_CICLO</span> </font></font></p>
+</span></p>
+<p><span style="font-size: 12pt; font-family: garamond;">Pratica Edilizia n.<span class="valore">V.avv_procedimento.numero</span> </span></p>
+<p>
+<p><span style="font-size: 12pt; font-family: garamond;">Visto il D. Lgs. n: 42 del 22 gennaio 2004 concernente la protezione e valorizzazione dei beni culturali e paesaggistici.</span></p>
+<p><span style="font-size: 12pt; font-family: garamond;">Viste le Leggi regionali 18/03/1980 n&deg; 15 e 19/11/1982 n&deg; 44 in materia di esercizio delle funzioni regionali nel rilascio delle autorizzazioni paesistico- ambientali.</span></p>
+<p>
+<span style="font-size: 12pt; font-family: garamond;">Visto il D.P.G.R n&deg; 190 del 23/03/1997 comportante approvazione della variante integrale al Piano Regolatore Generale contenente la disciplina paesistica di livello puntuale prevista dall&rsquo;art. 8 della L.R. 2 maggio 1991 n&deg; 6, e contestualmente subdelega al Comune di Pieve Ligure delle funzioni regionali in materia di rilascio delle autorizzazioni paesistico ambientali.</span></p>
+<p>
+<span style="font-size: 12pt; font-family: garamond;">Esaminati gli atti e gli elaborati progettuali a corredo dell&rsquo;istanza.</span></p>
+<p>
+<span style="font-size: 12pt; font-family: garamond;">Considerato che l&rsquo;intervento ricade nell&rsquo;ambito dell&rsquo;area classificata dal P.T.C.P., approvato con D.C.R. n&deg; 6 del 26/02/1990, relativamente all&rsquo;Assetto Insediativo con definizione <span class="iniziocicli">IN_CICLO</span> <span class="valore">V.zone_ptcpi.zona</span> <span class="finecicli">FI_CICLO</span> .</span></p>
+<p><span style="font-size: 12pt; font-family: garamond;">Visto il parere favorevole espresso dalla C. E. I. nella seduta del&nbsp;<span class="valore">V.pareri_ce_i.data_ril</span>&nbsp;di seguito riportato :</span></p>
+<p><span style="font-family: garamond;"><span class="valore">V.pareri_ce_i.testo</span> </span></p>
+<p><span style="font-size: 12pt; font-family: garamond;">Constatato quindi che l&rsquo;intervento in oggetto &egrave; tale da non compromettere gli equilibri ambientali della zona interessata e risulta del tutto compatibile con la normativa sul punto disposta dal P.T.C.P..</span></p>
+<span style="font-size: 12pt;"></span><span style="font-size: 12pt;">
+<p align="center"><strong><font face="garamond">s i&nbsp;&nbsp;&nbsp; d i s p o n e</font></strong></p>
+</span>
+<p><span style="font-family: garamond;"><font size="3">il rilascio dell&rsquo;autorizzazione di cui al capo IV art. 146 comma 2 del&nbsp; D. Lgs. n. 42 del 22 gennaio 2004, "Codice dei beni culturali e del paesaggio, ai sensi dell'articolo 10 della legge 6 luglio 2002, n. 137" e s.m.i. per l&rsquo;esecuzione degli interventi descritti in oggetto.</font> </span></p>
+<p><span style="font-size: 12pt; font-family: garamond;">Il presente provvedimento viene notificato alla Soprintendenza ai Beni Ambientali e del Paesaggio della Liguria ai sensi e per gli effetti del capo IV art. 146 comma 6 del D. Lgs. di cui sopra.</span></p>
+<span style="font-size: 12pt;"></span><span style="font-family: garamond;"><font size="3"><strong>Pieve Ligure, <span class="valore">D.data.data</span></strong> </font></span></p>
+<div style="padding-left: 320px;" align="center"><span style="font-size: 12pt; font-family: garamond;"> <strong>Il Responsabile del Servizio<br /> </strong><em>(Giorgio Leverone)</em></span></div>
+
+
+
+
+	</body>
+</html>	
+21-01-08	16:18:26
+	<html>
+	<head>
+		<LINK media="screen" href="./src/modelli.css" type="text/css" rel="stylesheet">
+		<style>
+			$definizione
+		</style>
+	</head>
+	<body>
+		<span style="font-size: 12pt;font-family:garamond;"><b>Oggetto:</b></span>
+<span style="font-size: 12pt;font-family:garamond;padding-left:5px;">
+<span class="valore">V.avv_procedimento.oggetto</span>&nbsp; - <span class="valore">V.ubicazione.indirizzo</span> - Foglio <span class="valore">V.zone_mappale.foglio</span> Mappale <span class="valore">V.zone_mappale.mappale</span> N.C.T.<br>
+</span>
+<span style="font-size: 12pt;">
+<p><font face="garamond">Richiedenti: <font size="3"><span class="iniziocicli">IN_CICLO</span> <span class="valore">V.richiedenti.app</span> <span class="valore">V.richiedenti.nominativo</span> <span class="finecicli">FI_CICLO</span> </font></font></p>
+</span></p>
+<p><span style="font-size: 12pt; font-family: garamond;">Pratica Edilizia n.<span class="valore">V.avv_procedimento.numero</span> </span></p>
+<p>
+<p><span style="font-size: 12pt; font-family: garamond;">Visto il D. Lgs. n: 42 del 22 gennaio 2004 concernente la protezione e valorizzazione dei beni culturali e paesaggistici.</span></p>
+<p><span style="font-size: 12pt; font-family: garamond;">Viste le Leggi regionali 18/03/1980 n&deg; 15 e 19/11/1982 n&deg; 44 in materia di esercizio delle funzioni regionali nel rilascio delle autorizzazioni paesistico- ambientali.</span></p>
+<p>
+<span style="font-size: 12pt; font-family: garamond;">Visto il D.P.G.R n&deg; 190 del 23/03/1997 comportante approvazione della variante integrale al Piano Regolatore Generale contenente la disciplina paesistica di livello puntuale prevista dall'art. 8 della L.R. 2 maggio 1991 n&deg; 6, e contestualmente subdelega al Comune di Pieve Ligure delle funzioni regionali in materia di rilascio delle autorizzazioni paesistico ambientali.</span></p>
+<p>
+<span style="font-size: 12pt; font-family: garamond;">Esaminati gli atti e gli elaborati progettuali a corredo dell'istanza.</span></p>
+<p>
+<span style="font-size: 12pt; font-family: garamond;">Considerato che l'intervento ricade nell'ambito dell'area classificata dal P.T.C.P., approvato con D.C.R. n&deg; 6 del 26/02/1990, relativamente all'Assetto Insediativo con definizione <span class="iniziocicli">IN_CICLO</span> <span class="valore">V.zone_ptcpi.sigla</span> <span class="finecicli">FI_CICLO</span> .</span></p>
+<p><span style="font-size: 12pt; font-family: garamond;">Visto il parere favorevole espresso dalla C. E. I. nella seduta del&nbsp;<span class="valore">V.pareri_ce_i.data_ril</span>&nbsp;di seguito riportato :</span></p>
+<p><span style="font-family: garamond;"><span class="valore">V.pareri_ce_i.testo</span> </span></p>
+<p><span style="font-size: 12pt; font-family: garamond;">Constatato quindi che l'intervento in oggetto &egrave; tale da non compromettere gli equilibri ambientali della zona interessata e risulta del tutto compatibile con la normativa sul punto disposta dal P.T.C.P..</span></p>
+<span style="font-size: 12pt;"></span><span style="font-size: 12pt;">
+<p align="center"><strong><font face="garamond">s i&nbsp;&nbsp;&nbsp; d i s p o n e</font></strong></p>
+</span>
+<p><span style="font-family: garamond;"><font size="3">il rilascio dell'autorizzazione di cui al capo IV art. 146 comma 2 del&nbsp; D. Lgs. n. 42 del 22 gennaio 2004, "Codice dei beni culturali e del paesaggio, ai sensi dell'articolo 10 della legge 6 luglio 2002, n. 137" e s.m.i. per l'esecuzione degli interventi descritti in oggetto.</font> </span></p>
+<p><span style="font-size: 12pt; font-family: garamond;">Il presente provvedimento viene notificato alla Soprintendenza ai Beni Ambientali e del Paesaggio della Liguria ai sensi e per gli effetti del capo IV art. 146 comma 6 del D. Lgs. di cui sopra.</span></p>
+<span style="font-size: 12pt;"></span><span style="font-family: garamond;"><font size="3"><strong>Pieve Ligure, <span class="valore">D.data.data</span></strong> </font></span></p>
+<div style="padding-left: 320px;" align="center"><span style="font-size: 12pt; font-family: garamond;"> <strong>Il Responsabile del Servizio<br /> </strong><em>(Giorgio Leverone)</em></span></div>
+
+
+
+
+	</body>
+</html>	
+21-01-08	16:29:37
+	<html>
+	<head>
+		<LINK media="screen" href="./src/modelli.css" type="text/css" rel="stylesheet">
+		<style>
+			$definizione
+		</style>
+	</head>
+	<body>
+		<span style="font-size: 12pt;font-family:garamond;"><b>Oggetto:</b></span>
+<span style="font-size: 12pt;font-family:garamond;padding-left:5px;">
+<span class="valore">V.avv_procedimento.oggetto</span>&nbsp; - <span class="valore">V.ubicazione.indirizzo</span> - Foglio <span class="valore">V.zone_mappale.foglio</span> Mappale <span class="valore">V.zone_mappale.mappale</span> N.C.T.<br>
+</span>
+<span style="font-size: 12pt;">
+<p><font face="garamond">Richiedenti: <font size="3"><span class="iniziocicli">IN_CICLO</span> <span class="valore">V.richiedenti.app</span> <span class="valore">V.richiedenti.nominativo</span> <span class="finecicli">FI_CICLO</span> </font></font></p>
+</span></p>
+<p><span style="font-size: 12pt; font-family: garamond;">Pratica Edilizia n.<span class="valore">V.avv_procedimento.numero</span> </span></p>
+<p>
+<p><span style="font-size: 12pt; font-family: garamond;">Visto il D. Lgs. n: 42 del 22 gennaio 2004 concernente la protezione e valorizzazione dei beni culturali e paesaggistici.</span></p>
+<p><span style="font-size: 12pt; font-family: garamond;">Viste le Leggi regionali 18/03/1980 n&deg; 15 e 19/11/1982 n&deg; 44 in materia di esercizio delle funzioni regionali nel rilascio delle autorizzazioni paesistico- ambientali.</span></p>
+<p>
+<span style="font-size: 12pt; font-family: garamond;">Visto il D.P.G.R n&deg; 190 del 23/03/1997 comportante approvazione della variante integrale al Piano Regolatore Generale contenente la disciplina paesistica di livello puntuale prevista dall'art. 8 della L.R. 2 maggio 1991 n&deg; 6, e contestualmente subdelega al Comune di Pieve Ligure delle funzioni regionali in materia di rilascio delle autorizzazioni paesistico ambientali.</span></p>
+<p>
+<span style="font-size: 12pt; font-family: garamond;">Esaminati gli atti e gli elaborati progettuali a corredo dell'istanza.</span></p>
+<p>
+<span style="font-size: 12pt; font-family: garamond;">Considerato che l'intervento ricade nell'ambito dell'area classificata dal P.T.C.P., approvato con D.C.R. n&deg; 6 del 26/02/1990, relativamente all'Assetto Insediativo con definizione <span class="iniziocicli">IN_CICLO</span> <span class="valore">V.zone_ptcpi.sigla</span> <span class="finecicli">FI_CICLO</span> .</span></p>
+<p><span style="font-size: 12pt; font-family: garamond;">Visto il parere favorevole espresso dalla C. E. I. nella seduta del&nbsp;<span class="valore">V.pareri_ce_i.data_ril</span>&nbsp;di seguito riportato :</span></p>
+<p><span style="font-family: garamond;"><span class="valore">V.pareri_ce_i.testo</span> </span></p>
+<p><span style="font-size: 12pt; font-family: garamond;">Constatato quindi che l'intervento in oggetto &egrave; tale da non compromettere gli equilibri ambientali della zona interessata e risulta del tutto compatibile con la normativa sul punto disposta dal P.T.C.P..</span></p>
+<span style="font-size: 12pt;"></span><span style="font-size: 12pt;">
+<p align="center"><strong><font face="garamond">s i&nbsp;&nbsp;&nbsp; d i s p o n e</font></strong></p>
+</span>
+<p><span style="font-family: garamond;"><font size="3">il rilascio dell'autorizzazione di cui al capo IV art. 146 comma 2 del&nbsp; D. Lgs. n. 42 del 22 gennaio 2004, "Codice dei beni culturali e del paesaggio, ai sensi dell'articolo 10 della legge 6 luglio 2002, n. 137" e s.m.i. per l'esecuzione degli interventi descritti in oggetto.</font> </span></p>
+<p><span style="font-size: 12pt; font-family: garamond;">Il presente provvedimento viene notificato alla Soprintendenza ai Beni Ambientali e del Paesaggio della Liguria ai sensi e per gli effetti del capo IV art. 146 comma 6 del D. Lgs. di cui sopra.</span></p>
+<span style="font-size: 12pt;"></span><span style="font-family: garamond;"><font size="3"><strong>Pieve Ligure, <span class="valore">D.data.data</span></strong> </font></span></p>
+<div style="padding-left: 320px;" align="center"><span style="font-size: 12pt; font-family: garamond;"> <strong>Il Responsabile del Servizio<br /> </strong><em>(Giorgio Leverone)</em></span></div>
+
+
+
+
+	</body>
+</html>	
+21-01-08	16:36:55
+	<html>
+	<head>
+		<LINK media="screen" href="./src/modelli.css" type="text/css" rel="stylesheet">
+		<style>
+			$definizione
+		</style>
+	</head>
+	<body>
+		<span style="font-size: 12pt;font-family:garamond;"><b>Oggetto:</b></span>
+<span style="font-size: 12pt;font-family:garamond;padding-left:5px;">
+<span class="valore">V.avv_procedimento.oggetto</span>&nbsp; - <span class="valore">V.ubicazione.indirizzo</span> - Foglio <span class="valore">V.zone_mappale.foglio</span> Mappale <span class="valore">V.zone_mappale.mappale</span> N.C.T.<br>
+</span>
+<span style="font-size: 12pt;">
+<p><font face="garamond">Richiedenti: <font size="3"><span class="iniziocicli">IN_CICLO</span> <span class="valore">V.richiedenti.app</span> <span class="valore">V.richiedenti.nominativo</span> <span class="finecicli">FI_CICLO</span> </font></font></p>
+</span></p>
+<p><span style="font-size: 12pt; font-family: garamond;">Pratica Edilizia n.<span class="valore">V.avv_procedimento.numero</span> </span></p>
+<p>
+<p><span style="font-size: 12pt; font-family: garamond;">Visto il D. Lgs. n: 42 del 22 gennaio 2004 concernente la protezione e valorizzazione dei beni culturali e paesaggistici.</span></p>
+<p><span style="font-size: 12pt; font-family: garamond;">Viste le Leggi regionali 18/03/1980 n&deg; 15 e 19/11/1982 n&deg; 44 in materia di esercizio delle funzioni regionali nel rilascio delle autorizzazioni paesistico- ambientali.</span></p>
+<p>
+<span style="font-size: 12pt; font-family: garamond;">Visto il D.P.G.R n&deg; 190 del 23/03/1997 comportante approvazione della variante integrale al Piano Regolatore Generale contenente la disciplina paesistica di livello puntuale prevista dall'art. 8 della L.R. 2 maggio 1991 n&deg; 6, e contestualmente subdelega al Comune di Pieve Ligure delle funzioni regionali in materia di rilascio delle autorizzazioni paesistico ambientali.</span></p>
+<p>
+<span style="font-size: 12pt; font-family: garamond;">Esaminati gli atti e gli elaborati progettuali a corredo dell'istanza.</span></p>
+<p>
+<span style="font-size: 12pt; font-family: garamond;">Considerato che l'intervento ricade nell'ambito dell'area classificata dal P.T.C.P., approvato con D.C.R. n&deg; 6 del 26/02/1990, relativamente all'Assetto Insediativo con definizione <span class="iniziocicli">IN_CICLO</span> <span class="valore">V.zone_ptcpi.sigla</span> <span class="finecicli">FI_CICLO</span> .</span></p>
+<p><span style="font-size: 12pt; font-family: garamond;">Visto il parere favorevole espresso dalla C. E. I. nella seduta del&nbsp;<span class="valore">V.pareri_ce_i.data_ril</span>&nbsp;di seguito riportato :</span></p>
+<p><span style="font-family: garamond;"><span class="valore">V.pareri_ce_i.testo</span> </span></p>
+<p><span style="font-size: 12pt; font-family: garamond;">Constatato quindi che l'intervento in oggetto &egrave; tale da non compromettere gli equilibri ambientali della zona interessata e risulta del tutto compatibile con la normativa sul punto disposta dal P.T.C.P..</span></p>
+<span style="font-size: 12pt;"></span><span style="font-size: 12pt;">
+<p align="center"><strong><font face="garamond">s i&nbsp;&nbsp;&nbsp; d i s p o n e</font></strong></p>
+</span>
+<p><span style="font-family: garamond;"><font size="3">il rilascio dell'autorizzazione di cui al capo IV art. 146 comma 2 del&nbsp; D. Lgs. n. 42 del 22 gennaio 2004, "Codice dei beni culturali e del paesaggio, ai sensi dell'articolo 10 della legge 6 luglio 2002, n. 137" e s.m.i. per l'esecuzione degli interventi descritti in oggetto.</font> </span></p>
+<p><span style="font-size: 12pt; font-family: garamond;">Il presente provvedimento viene notificato alla Soprintendenza ai Beni Ambientali e del Paesaggio della Liguria ai sensi e per gli effetti del capo IV art. 146 comma 6 del D. Lgs. di cui sopra.</span></p>
+<span style="font-size: 12pt;"></span><span style="font-family: garamond;"><font size="3"><strong>Pieve Ligure, <span class="valore">D.data.data</span></strong> </font></span></p>
+<div style="padding-left: 320px;" align="center"><span style="font-size: 12pt; font-family: garamond;"> <strong>Il Responsabile del Servizio<br /> </strong><em>(Giorgio Leverone)</em></span></div>
+
+
+
+
+	</body>
+</html>	
+25-02-08	13:05:54
+	<html>
+		
+	<body>
+		<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: 12pt;font-family:garamond;"><strong>Oggetto:</strong></span> <span style="font-size: 12pt;font-family:garamond;padding-left:5px;"><span class="valore">V.avv_procedimento.oggetto</span>&nbsp; - <span class="valore">V.ubicazione.indirizzo</span> - Foglio <span class="valore">V.zone_mappale.foglio</span> Mappale <span class="valore">V.zone_mappale.mappale</span> N.C.T.<br>
+</span><span style="font-size: 12pt;"></span></p>
+<p><span style="font-family: garamond;"><span style="font-size: 12pt;">Richiedenti:</span> <span style="font-size: 12pt;"><span class="iniziocicli">IN_CICLO</span> <span class="valore">V.richiedenti.app</span>&nbsp;<span class="valore">V.richiedenti.nominativo</span>&nbsp; <span class="finecicli">FI_CICLO</span> </span></span></p>
+<p><span style="font-size: 12pt; font-family: garamond;">Pratica Edilizia n.<span class="valore">V.avv_procedimento.numero</span> </span></p>
+<p><span style="font-size: 12pt; font-family: garamond;">Visto il D. Lgs. n: 42 del 22 gennaio 2004 concernente la protezione e valorizzazione dei beni culturali e paesaggistici.</span></p>
+<p><span style="font-size: 12pt; font-family: garamond;">Viste le Leggi regionali 18/03/1980 n&deg; 15 e 19/11/1982 n&deg; 44 in materia di esercizio delle funzioni regionali nel rilascio delle autorizzazioni paesistico- ambientali.</span></p>
+<p><span style="font-size: 12pt; font-family: garamond;">Visto il D.P.G.R n&deg; 190 del 23/03/1997 comportante approvazione della variante integrale al Piano Regolatore Generale contenente la disciplina paesistica di livello puntuale prevista dall'art. 8 della L.R. 2 maggio 1991 n&deg; 6, e contestualmente subdelega al Comune di Pieve Ligure delle funzioni regionali in materia di rilascio delle autorizzazioni paesistico ambientali.</span></p>
+<p><span style="font-size: 12pt; font-family: garamond;">Esaminati gli atti e gli elaborati progettuali a corredo dell'istanza.</span></p>
+<p><span style="font-size: 12pt; font-family: garamond;">Considerato che l'intervento ricade nell'ambito dell'area classificata dal P.T.C.P., approvato con D.C.R. n&deg; 6 del 26/02/1990, relativamente all'Assetto Insediativo con definizione <span class="iniziocicli">IN_CICLO</span> <span class="valore">V.zone_ptcpi.sigla</span> <span class="finecicli">FI_CICLO</span> .</span></p>
+<p><span style="font-size: 12pt; font-family: garamond;">Visto il parere favorevole espresso dalla C. E. I. nella seduta del&nbsp;<span class="valore">V.pareri_ce_i.data_ril</span>&nbsp;di seguito riportato :</span></p>
+<p><span style="font-family: garamond;"><span class="valore">V.pareri_ce_i.testo</span> </span></p>
+<p><span style="font-size: 12pt; font-family: garamond;">Constatato quindi che l'intervento in oggetto &egrave; tale da non compromettere gli equilibri ambientali della zona interessata e risulta del tutto compatibile con la normativa sul punto disposta dal P.T.C.P..</span></p>
+<p align="center"><strong><span style="font-family: garamond;"><span style="font-size: 12pt;">s i&nbsp;&nbsp;&nbsp; d i s p o n e</span></span></strong></p>
+<p><span style="font-family: garamond;"><span style="font-size: 12pt;">il rilascio dell'autorizzazione di cui al capo IV art. 146 comma 2 del&nbsp; D. Lgs. n. 42 del 22 gennaio 2004, "Codice dei beni culturali e del paesaggio, ai sensi dell'articolo 10 della legge 6 luglio 2002, n. 137" e s.m.i. per l'esecuzione degli interventi descritti in oggetto.</span> </span></p>
+<p><span style="font-size: 12pt; font-family: garamond;">Il presente provvedimento viene notificato alla Soprintendenza ai Beni Ambientali e del Paesaggio della Liguria ai sensi e per gli effetti del capo IV art. 146 comma 6 del D. Lgs. di cui sopra.</span></p>
+<p><span style="font-size: 12pt;"></span><span style="font-family: garamond;"><span style="font-size: 12pt;"><strong>Pieve Ligure, <span class="valore">D.data.data</span></strong> </span></span></p>
+<p>&nbsp;</p>
+<div style="padding-left: 320px;"><span style="font-size: 12pt; font-family: garamond;"><strong>Il Responsabile del Servizio<br>
+</strong><em>(Giorgio Leverone)</em></span></div>
+<p>&nbsp;</p>
+<p><span style="font-family: garamond;"><span style="font-size: 12pt;"></span></span></p>
+<p>&nbsp;</p>
+<p align="center"><strong><span style="font-family: garamond;"></span></strong></p>
+
+	</body>
+</html>	
+5-03-08	11:49:35
+	<html>
+		
+	<body>
+		 <p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: 12pt; font-family: arial,helvetica,sans-serif;">Prot n&deg; ______<span style="font-size: 12pt; font-family: arial,helvetica,sans-serif;">&nbsp;</span></span></p>
+<p><span style="font-size: 12pt; font-family: arial,helvetica,sans-serif;"></span></p>
+<p style="text-align: center;"><span style="font-size: 12pt; font-family: arial,helvetica,sans-serif;"><strong>CERTIFICATO DI DESTINAZIONE URBANISTICA</strong></span></p>
+<p style="text-align: left;"><br /><span style="font-size: 12pt; font-family: arial,helvetica,sans-serif;">A richiesta di <span style="font-family: Arial;"><span style="font-family: Arial;"><span class="valore">F.info_cdu.richiedente</span> ;<br /><br />VISTO l'Art. 107 del D. Lgs. 18 Agosto 2000, n&deg; 267, "Testo Unico della Legge sull'ordinamento degli Enti locali";<br /><br />VISTA la richiesta in data <span class="valore">F.info_cdu.data_prot</span>&nbsp; prot. n&deg; <span class="valore">F.info_cdu.protocollo</span>&nbsp; da parte di <span class="valore">F.info_cdu.richiedente</span> , per ottenere il certificato di destinazione urbanistica dell'area sita nel territorio di questo Comune contraddistinta al C.T. come segue:</span></span></span></p>
+<p style="text-align: left;"><span style="font-size: 12pt; font-family: arial,helvetica,sans-serif;"></span><span style="font-size: 12pt; font-family: arial,helvetica,sans-serif;"><strong><span style="font-size: 12pt; font-family: arial,helvetica,sans-serif;"><strong><span style="font-size: 12pt; font-family: arial,helvetica,sans-serif;">&nbsp;<span style="font-family: Arial;"><span style="font-family: Arial;"><span class="valore">F.info_cdu.tabella_cat_ter</span> </span></span></span></strong></span></strong></span></p>
+<p style="text-align: left;"><span style="font-size: 12pt; font-family: arial,helvetica,sans-serif;"><span style="font-size: 12pt; font-family: arial,helvetica,sans-serif;"><span style="font-size: 12pt; font-family: arial,helvetica,sans-serif;">VISTE le prescrizioni urbanistiche vigenti riguardanti l'area interessata;</span></span></span></p>
+<p style="text-align: left;"><span style="font-size: 12pt; font-family: arial,helvetica,sans-serif;"><span style="font-size: 12pt; font-family: arial,helvetica,sans-serif;"><span style="font-size: 12pt; font-family: arial,helvetica,sans-serif;">VISTA la normativa vigente in materia;</span></span></span></p>
+<p style="text-align: center;"><span style="font-size: 12pt; font-family: arial,helvetica,sans-serif;"><strong>CERTIFICA</strong></span></p>
+<p style="text-align: center;"><span style="font-size: 12pt; font-family: arial,helvetica,sans-serif;"></span></p>
+<p style="text-align: left;"><span style="font-size: 12pt; font-family: arial,helvetica,sans-serif;">che le suddette aree, come sopra identificate,Piano Regolatore vigente approvato con D.P.G.R. n&deg;190 in data 27.03.1997, risultano appartenere alle zone urbanistiche specificate nella tabella che segue, restando di conseguenza sottoposte alla disposizioni per le rispettive zone determinate dalle Norme Tecniche di Attuazione del P.R.G. i cui stralci di competenza vengono allegati al presente certificato. </span></p>
+<p style="text-align: left;"><span style="font-size: 12pt; font-family: arial,helvetica,sans-serif;"><span style="font-size: 12pt;"></span></span></p>
+<p style="text-align: left;"><span style="font-size: 12pt; font-family: arial,helvetica,sans-serif;"><span style="font-size: 12pt;"></span></span></p>
+<p style="text-align: left;"><span style="font-size: 12pt; font-family: arial,helvetica,sans-serif;"><span style="font-size: 12pt;"></span></span><span style="font-size: 12pt; font-family: arial,helvetica,sans-serif;"><span style="font-size: 12pt;"><span style="font-family: Arial;"><span class="valore">F.info_cdu.tabella_prg</span> </span></span></span></p>
+<p style="text-align: left;"><span style="font-size: 12pt; font-family: arial,helvetica,sans-serif;"><span class="valore"><span style="font-family: Arial;"></span></span></span></p>
+<p><span style="font-size: 12pt;">che, oltre alle sopra richiamate disposizioni urbanistiche, gli interventi di trasformazione delle predette aree sono altres&igrave; soggetti, alla osservanza della Disciplina Paesistica annessa al P.R.G. costituente livello puntuale del P.T.C.P., recante specifiche disposizioni di controllo paesistico ed ambientale alle quali viene formato espresso richiamo;</span></p>
+<p><span style="font-size: 12pt;"></span></p>
+<p><span class="valore">F.info_cdu.tabella_ptcp</span></p>
+<p><span class="valore">F.info_cdu.normativa</span></p>
+<p style="text-align: left;"><span style="font-size: 12pt; font-family: arial,helvetica,sans-serif;"></span></p>
+<p><span style="font-size: 12pt; font-family: arial,helvetica,sans-serif;">Per quanto non espressamente disciplinato nel presente certificato, valgono le disposizioni di legge vigenti in materia ed i relativi vincoli.<br /><br />Si rilascia il presente certificato&nbsp;in carta USO BOLLO a richiesta <span class="valore">F.info_cdu.richiedente</span> , ai sensi ed agli effetti del D.P.R. 06 Giugno 2001, n&deg;380.</span></p>
+<p><span style="font-size: 12pt; font-family: arial,helvetica,sans-serif;"></span><span style="font-size: 12pt; font-family: arial,helvetica,sans-serif;"><br />&nbsp; </span></p>
+<p>
+<table style="text-align: center;" border="0" width="100%">
+<tbody>
+<tr>
+<td style="width: 50%"><span style="font-size: 12pt; font-family: arial,helvetica,sans-serif;">&nbsp;Pieve Ligure&nbsp;&nbsp;<span style="font-family: Arial;"><span style="font-family: Arial;"><span class="valore">D.data.data</span> </span></span></span></td>
+<td style="width: 50%"><span style="font-size: 12pt; font-family: arial,helvetica,sans-serif;">&nbsp; </span></td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt; font-family: arial,helvetica,sans-serif;">&nbsp; </span></td>
+<td style="text-align: center;"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 12pt;">Il Responsabile del Servizio<br /><br />Geom. Giorgio Leverone</span></span></td>
+</tr>
+</tbody>
+</table></p> 
+	</body>
+</html>	
+5-03-08	11:50:06
+	<p><span style="font-family: Garamond"><span style="font-size: 12pt">Prot n&deg; ______<span style="font-size: 12pt">&nbsp;</span></span></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center"><span style="font-family: Garamond"><span style="font-size: 12pt"><strong>CERTIFICATO DI DESTINAZIONE URBANISTICA</strong></span></span></p>
+<p style="text-align: left"><span style="font-family: Garamond"><br />
+<span style="font-size: 12pt">A richiesta di <span class="valore">F.info_cdu.richiedente</span> ;<br />
+<br />
+VISTO l'Art. 107 del D. Lgs. 18 Agosto 2000, n&deg; 267, &quot;Testo Unico della Legge sull'ordinamento degli Enti locali&quot;;<br />
+<br />
+VISTA la richiesta in data <span class="valore">F.info_cdu.data_prot</span>&nbsp; prot. n&deg; <span class="valore">F.info_cdu.protocollo</span>&nbsp; da parte di <span class="valore">F.info_cdu.richiedente</span> , per ottenere il certificato di destinazione urbanistica dell'area sita nel territorio di questo Comune contraddistinta al C.T. come segue:</span></span></p>
+<p style="text-align: left"><span style="font-family: Garamond"><span style="font-size: 12pt"><strong><span style="font-size: 12pt"><strong><span style="font-size: 12pt">&nbsp;<span class="valore">F.info_cdu.tabella_cat_ter</span> </span></strong></span></strong></span></span></p>
+<p style="text-align: left"><span style="font-family: Garamond"><span style="font-size: 12pt"><span style="font-size: 12pt"><span style="font-size: 12pt">VISTE le prescrizioni urbanistiche vigenti riguardanti l'area interessata;</span></span></span></span></p>
+<p style="text-align: left"><span style="font-family: Garamond"><span style="font-size: 12pt"><span style="font-size: 12pt"><span style="font-size: 12pt">VISTA la normativa vigente in materia;</span></span></span></span></p>
+<p style="text-align: center"><span style="font-family: Garamond"><span style="font-size: 12pt"><strong>CERTIFICA</strong></span></span></p>
+<p style="text-align: center">&nbsp;</p>
+<p style="text-align: left"><span style="font-family: Garamond"><span style="font-size: 12pt">che le suddette aree, come sopra identificate,Piano Regolatore vigente approvato con D.P.G.R. n&deg;190 in data 27.03.1997, risultano appartenere alle zone urbanistiche specificate nella tabella che segue, restando di conseguenza sottoposte alla disposizioni per le rispettive zone determinate dalle Norme Tecniche di Attuazione del P.R.G. i cui stralci di competenza vengono allegati al presente certificato. </span></span></p>
+<p style="text-align: left">&nbsp;</p>
+<p style="text-align: left">&nbsp;</p>
+<p style="text-align: left"><span style="font-family: Garamond"><span style="font-size: 12pt"><span style="font-size: 12pt"><span class="valore">F.info_cdu.tabella_prg</span> </span></span></span></p>
+<p style="text-align: left">&nbsp;</p>
+<p><span style="font-family: Garamond"><span style="font-size: 12pt">che, oltre alle sopra richiamate disposizioni urbanistiche, gli interventi di trasformazione delle predette aree sono altres&igrave; soggetti, alla osservanza della Disciplina Paesistica annessa al P.R.G. costituente livello puntuale del P.T.C.P., recante specifiche disposizioni di controllo paesistico ed ambientale alle quali viene formato espresso richiamo;</span></span></p>
+<p>&nbsp;</p>
+<p><span style="font-family: Garamond"><span class="valore">F.info_cdu.tabella_ptcp</span></span></p>
+<p><span style="font-family: Garamond"><span class="valore">F.info_cdu.normativa</span></span></p>
+<p style="text-align: left">&nbsp;</p>
+<p><span style="font-family: Garamond"><span style="font-size: 12pt">Per quanto non espressamente disciplinato nel presente certificato, valgono le disposizioni di legge vigenti in materia ed i relativi vincoli.<br />
+<br />
+Si rilascia il presente certificato&nbsp;in carta USO BOLLO a richiesta <span class="valore">F.info_cdu.richiedente</span> , ai sensi ed agli effetti del D.P.R. 06 Giugno 2001, n&deg;380.</span></span></p>
+<p><span style="font-family: Garamond"><span style="font-size: 12pt"><br />
+&nbsp; </span></span></p>
+<p>
+<table style="text-align: center" width="100%" border="0">
+    <tbody>
+        <tr>
+            <td style="width: 50%"><span style="font-family: Garamond"><span style="font-size: 12pt">&nbsp;Pieve Ligure&nbsp;&nbsp;<span class="valore">D.data.data</span> </span></span></td>
+            <td style="width: 50%"><span style="font-family: Garamond"><span style="font-size: 12pt">&nbsp; </span></span></td>
+        </tr>
+        <tr>
+            <td><span style="font-family: Garamond"><span style="font-size: 12pt">&nbsp; </span></span></td>
+            <td style="text-align: center"><span style="font-family: Garamond"><span style="font-size: 12pt">Il Responsabile del Servizio<br />
+            <br />
+            Geom. Giorgio Leverone</span></span></td>
+        </tr>
+    </tbody>
+</table>
+</p>
+5-03-08	11:52:18
+	<html>
+		
+	<body>
+		 <p><span style="font-family: Garamond"><span style="font-size: 12pt">Prot n&deg; ______<span style="font-size: 12pt">&nbsp;</span></span></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center"><span style="font-family: Garamond"><span style="font-size: 12pt"><strong>CERTIFICATO DI DESTINAZIONE URBANISTICA</strong></span></span></p>
+<p style="text-align: left"><span style="font-family: Garamond"><br />
+<span style="font-size: 12pt">A richiesta di <span class="valore">F.info_cdu.richiedente</span> ;<br />
+<br />
+VISTO l'Art. 107 del D. Lgs. 18 Agosto 2000, n&deg; 267, &quot;Testo Unico della Legge sull'ordinamento degli Enti locali&quot;;<br />
+<br />
+VISTA la richiesta in data <span class="valore">F.info_cdu.data_prot</span>&nbsp; prot. n&deg; <span class="valore">F.info_cdu.protocollo</span>&nbsp; da parte di <span class="valore">F.info_cdu.richiedente</span> , per ottenere il certificato di destinazione urbanistica dell'area sita nel territorio di questo Comune contraddistinta al C.T. come segue:</span></span></p>
+<p style="text-align: left"><span style="font-family: Garamond"><span style="font-size: 12pt"><strong><span style="font-size: 12pt"><strong><span style="font-size: 12pt">&nbsp;<span class="valore">F.info_cdu.tabella_cat_ter</span> </span></strong></span></strong></span></span></p>
+<p style="text-align: left"><span style="font-family: Garamond"><span style="font-size: 12pt"><span style="font-size: 12pt"><span style="font-size: 12pt">VISTE le prescrizioni urbanistiche vigenti riguardanti l'area interessata;</span></span></span></span></p>
+<p style="text-align: left"><span style="font-family: Garamond"><span style="font-size: 12pt"><span style="font-size: 12pt"><span style="font-size: 12pt">VISTA la normativa vigente in materia;</span></span></span></span></p>
+<p style="text-align: center"><span style="font-family: Garamond"><span style="font-size: 12pt"><strong>CERTIFICA</strong></span></span></p>
+<p style="text-align: center">&nbsp;</p>
+<p style="text-align: left"><span style="font-family: Garamond"><span style="font-size: 12pt">che le suddette aree, come sopra identificate,Piano Regolatore vigente approvato con D.P.G.R. n&deg;190 in data 27.03.1997, risultano appartenere alle zone urbanistiche specificate nella tabella che segue, restando di conseguenza sottoposte alla disposizioni per le rispettive zone determinate dalle Norme Tecniche di Attuazione del P.R.G. i cui stralci di competenza vengono allegati al presente certificato. </span></span></p>
+<p style="text-align: left">&nbsp;</p>
+<p style="text-align: left">&nbsp;</p>
+<p style="text-align: left"><span style="font-family: Garamond"><span style="font-size: 12pt"><span style="font-size: 12pt"><span class="valore">F.info_cdu.tabella_prg</span> </span></span></span></p>
+<p style="text-align: left">&nbsp;</p>
+<p><span style="font-family: Garamond"><span style="font-size: 12pt">che, oltre alle sopra richiamate disposizioni urbanistiche, gli interventi di trasformazione delle predette aree sono altres&igrave; soggetti, alla osservanza della Disciplina Paesistica annessa al P.R.G. costituente livello puntuale del P.T.C.P., recante specifiche disposizioni di controllo paesistico ed ambientale alle quali viene formato espresso richiamo;</span></span></p>
+<p>&nbsp;</p>
+<p><span style="font-family: Garamond"><span class="valore">F.info_cdu.tabella_ptcp</span></span></p>
+<p><span style="font-family: Garamond"><span class="valore">F.info_cdu.normativa</span></span></p>
+<p style="text-align: left">&nbsp;</p>
+<p><span style="font-family: Garamond"><span style="font-size: 12pt">Per quanto non espressamente disciplinato nel presente certificato, valgono le disposizioni di legge vigenti in materia ed i relativi vincoli.<br />
+<br />
+Si rilascia il presente certificato&nbsp;in carta USO BOLLO a richiesta <span class="valore">F.info_cdu.richiedente</span> , ai sensi ed agli effetti del D.P.R. 06 Giugno 2001, n&deg;380.</span></span></p>
+<p><span style="font-family: Garamond"><span style="font-size: 12pt"><br />
+&nbsp; </span></span></p>
+<p>
+<table style="text-align: center" width="100%" border="0">
+    <tbody>
+        <tr>
+            <td style="width: 50%"><span style="font-family: Garamond"><span style="font-size: 12pt">&nbsp;Pieve Ligure&nbsp;&nbsp;<span class="valore">D.data.data</span> </span></span></td>
+            <td style="width: 50%"><span style="font-family: Garamond"><span style="font-size: 12pt">&nbsp; </span></span></td>
+        </tr>
+        <tr>
+            <td><span style="font-family: Garamond"><span style="font-size: 12pt">&nbsp; </span></span></td>
+            <td style="text-align: center"><span style="font-family: Garamond"><span style="font-size: 12pt">Il Responsabile del Servizio<br />
+            <br />
+            Geom. Giorgio Leverone</span></span></td>
+        </tr>
+    </tbody>
+</table>
+</p> 
+	</body>
+</html>	
+5-03-08	11:53:01
+	<p><span style="font-family: Garamond"><span style="font-size: 12pt">Prot n&deg; ______<span style="font-size: 12pt">&nbsp;</span></span></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center"><span style="font-family: Garamond"><span style="font-size: 12pt"><strong>CERTIFICATO DI DESTINAZIONE URBANISTICA</strong></span></span></p>
+<p style="text-align: left"><span style="font-family: Garamond"><br />
+<span style="font-size: 12pt">A richiesta di <span class="valore">F.info_cdu.richiedente</span> ;<br />
+<br />
+VISTO l'Art. 107 del D. Lgs. 18 Agosto 2000, n&deg; 267, &quot;Testo Unico della Legge sull'ordinamento degli Enti locali&quot;;<br />
+<br />
+VISTA la richiesta in data <span class="valore">F.info_cdu.data_prot</span>&nbsp; prot. n&deg; <span class="valore">F.info_cdu.protocollo</span>&nbsp; da parte di <span class="valore">F.info_cdu.richiedente</span> , per ottenere il certificato di destinazione urbanistica dell'area sita nel territorio di questo Comune contraddistinta al C.T. come segue:</span></span></p>
+<p style="text-align: left"><span style="font-family: Garamond"><span style="font-size: 12pt"><strong><span style="font-size: 12pt"><strong><span style="font-size: 12pt">&nbsp;<span class="valore">F.info_cdu.tabella_cat_ter</span> </span></strong></span></strong></span></span></p>
+<p style="text-align: left"><span style="font-family: Garamond"><span style="font-size: 12pt"><span style="font-size: 12pt"><span style="font-size: 12pt">VISTE le prescrizioni urbanistiche vigenti riguardanti l'area interessata;</span></span></span></span></p>
+<p style="text-align: left"><span style="font-family: Garamond"><span style="font-size: 12pt"><span style="font-size: 12pt"><span style="font-size: 12pt">VISTA la normativa vigente in materia;</span></span></span></span></p>
+<p style="text-align: center"><span style="font-family: Garamond"><span style="font-size: 12pt"><strong>CERTIFICA</strong></span></span></p>
+<p style="text-align: center">&nbsp;</p>
+<p style="text-align: left"><span style="font-family: Garamond"><span style="font-size: 12pt">che le suddette aree, come sopra identificate,Piano Regolatore vigente approvato con D.P.G.R. n&deg;190 in data 27.03.1997, risultano appartenere alle zone urbanistiche specificate nella tabella che segue, restando di conseguenza sottoposte alla disposizioni per le rispettive zone determinate dalle Norme Tecniche di Attuazione del P.R.G. i cui stralci di competenza vengono allegati al presente certificato. </span></span></p>
+<p style="text-align: left">&nbsp;<span style="font-family: Garamond"><span style="font-size: 12pt"><span style="font-size: 12pt"><span class="valore">F.info_cdu.tabella_prg</span> </span></span></span></p>
+<p><span style="font-family: Garamond"><span style="font-size: 12pt">che, oltre alle sopra richiamate disposizioni urbanistiche, gli interventi di trasformazione delle predette aree sono altres&igrave; soggetti, alla osservanza della Disciplina Paesistica annessa al P.R.G. costituente livello puntuale del P.T.C.P., recante specifiche disposizioni di controllo paesistico ed ambientale alle quali viene formato espresso richiamo;</span></span></p>
+<p><span style="font-family: Garamond"><span class="valore">F.info_cdu.tabella_ptcp<br />
+</span></span></p>
+<p><span style="font-family: Garamond"><span class="valore">F.info_cdu.normativa</span></span></p>
+<p style="text-align: left">&nbsp;</p>
+<p><span style="font-family: Garamond"><span style="font-size: 12pt">Per quanto non espressamente disciplinato nel presente certificato, valgono le disposizioni di legge vigenti in materia ed i relativi vincoli.<br />
+<br />
+Si rilascia il presente certificato&nbsp;in carta USO BOLLO a richiesta <span class="valore">F.info_cdu.richiedente</span> , ai sensi ed agli effetti del D.P.R. 06 Giugno 2001, n&deg;380.</span></span></p>
+<p><span style="font-family: Garamond"><span style="font-size: 12pt"><br />
+&nbsp; </span></span></p>
+<p>
+<table style="text-align: center" width="100%" border="0">
+    <tbody>
+        <tr>
+            <td style="width: 50%"><span style="font-family: Garamond"><span style="font-size: 12pt">&nbsp;Pieve Ligure&nbsp;&nbsp;<span class="valore">D.data.data</span> </span></span></td>
+            <td style="width: 50%"><span style="font-family: Garamond"><span style="font-size: 12pt">&nbsp; </span></span></td>
+        </tr>
+        <tr>
+            <td><span style="font-family: Garamond"><span style="font-size: 12pt">&nbsp; </span></span></td>
+            <td style="text-align: center"><span style="font-family: Garamond"><span style="font-size: 12pt">Il Responsabile del Servizio<br />
+            <br />
+            Geom. Giorgio Leverone</span></span></td>
+        </tr>
+    </tbody>
+</table>
+</p>
+5-03-08	11:55:46
+	<html>
+		
+	<body>
+		 <p><span style="font-family: Garamond"><span style="font-size: 12pt">Prot n&deg; ______<span style="font-size: 12pt">&nbsp;</span></span></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center"><span style="font-family: Garamond"><span style="font-size: 12pt"><strong>CERTIFICATO DI DESTINAZIONE URBANISTICA</strong></span></span></p>
+<p style="text-align: left"><span style="font-family: Garamond"><br />
+<span style="font-size: 12pt">A richiesta di <span class="valore">F.info_cdu.richiedente</span> ;<br />
+<br />
+VISTO l'Art. 107 del D. Lgs. 18 Agosto 2000, n&deg; 267, &quot;Testo Unico della Legge sull'ordinamento degli Enti locali&quot;;<br />
+<br />
+VISTA la richiesta in data <span class="valore">F.info_cdu.data_prot</span>&nbsp; prot. n&deg; <span class="valore">F.info_cdu.protocollo</span>&nbsp; da parte di <span class="valore">F.info_cdu.richiedente</span> , per ottenere il certificato di destinazione urbanistica dell'area sita nel territorio di questo Comune contraddistinta al C.T. come segue:</span></span></p>
+<p style="text-align: left"><span style="font-family: Garamond"><span style="font-size: 12pt"><strong><span style="font-size: 12pt"><strong><span style="font-size: 12pt">&nbsp;<span class="valore">F.info_cdu.tabella_cat_ter</span> </span></strong></span></strong></span></span></p>
+<p style="text-align: left"><span style="font-family: Garamond"><span style="font-size: 12pt"><span style="font-size: 12pt"><span style="font-size: 12pt">VISTE le prescrizioni urbanistiche vigenti riguardanti l'area interessata;</span></span></span></span></p>
+<p style="text-align: left"><span style="font-family: Garamond"><span style="font-size: 12pt"><span style="font-size: 12pt"><span style="font-size: 12pt">VISTA la normativa vigente in materia;</span></span></span></span></p>
+<p style="text-align: center"><span style="font-family: Garamond"><span style="font-size: 12pt"><strong>CERTIFICA</strong></span></span></p>
+<p style="text-align: center">&nbsp;</p>
+<p style="text-align: left"><span style="font-family: Garamond"><span style="font-size: 12pt">che le suddette aree, come sopra identificate,Piano Regolatore vigente approvato con D.P.G.R. n&deg;190 in data 27.03.1997, risultano appartenere alle zone urbanistiche specificate nella tabella che segue, restando di conseguenza sottoposte alla disposizioni per le rispettive zone determinate dalle Norme Tecniche di Attuazione del P.R.G. i cui stralci di competenza vengono allegati al presente certificato. </span></span></p>
+<p style="text-align: left">&nbsp;<span style="font-family: Garamond"><span style="font-size: 12pt"><span style="font-size: 12pt"><span class="valore">F.info_cdu.tabella_prg</span> </span></span></span></p>
+<p><span style="font-family: Garamond"><span style="font-size: 12pt">che, oltre alle sopra richiamate disposizioni urbanistiche, gli interventi di trasformazione delle predette aree sono altres&igrave; soggetti, alla osservanza della Disciplina Paesistica annessa al P.R.G. costituente livello puntuale del P.T.C.P., recante specifiche disposizioni di controllo paesistico ed ambientale alle quali viene formato espresso richiamo;</span></span></p>
+<p><span style="font-family: Garamond"><span class="valore">F.info_cdu.tabella_ptcp<br />
+</span></span></p>
+<p><span style="font-family: Garamond"><span class="valore">F.info_cdu.normativa</span></span></p>
+<p style="text-align: left">&nbsp;</p>
+<p><span style="font-family: Garamond"><span style="font-size: 12pt">Per quanto non espressamente disciplinato nel presente certificato, valgono le disposizioni di legge vigenti in materia ed i relativi vincoli.<br />
+<br />
+Si rilascia il presente certificato&nbsp;in carta USO BOLLO a richiesta <span class="valore">F.info_cdu.richiedente</span> , ai sensi ed agli effetti del D.P.R. 06 Giugno 2001, n&deg;380.</span></span></p>
+<p><span style="font-family: Garamond"><span style="font-size: 12pt"><br />
+&nbsp; </span></span></p>
+<p>
+<table style="text-align: center" width="100%" border="0">
+    <tbody>
+        <tr>
+            <td style="width: 50%"><span style="font-family: Garamond"><span style="font-size: 12pt">&nbsp;Pieve Ligure&nbsp;&nbsp;<span class="valore">D.data.data</span> </span></span></td>
+            <td style="width: 50%"><span style="font-family: Garamond"><span style="font-size: 12pt">&nbsp; </span></span></td>
+        </tr>
+        <tr>
+            <td><span style="font-family: Garamond"><span style="font-size: 12pt">&nbsp; </span></span></td>
+            <td style="text-align: center"><span style="font-family: Garamond"><span style="font-size: 12pt">Il Responsabile del Servizio<br />
+            <br />
+            Geom. Giorgio Leverone</span></span></td>
+        </tr>
+    </tbody>
+</table>
+</p> 
+	</body>
+</html>	
+5-03-08	11:56:19
+	<p><span style="font-family: Garamond"><span style="font-size: 12pt">Prot n&deg; ______<span style="font-size: 12pt">&nbsp;</span></span></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center"><span style="font-family: Garamond"><span style="font-size: 12pt"><strong>CERTIFICATO DI DESTINAZIONE URBANISTICA</strong></span></span></p>
+<p style="text-align: left"><span style="font-family: Garamond"><br />
+<span style="font-size: 12pt">A richiesta di <span class="valore">F.info_cdu.richiedente</span> ;<br />
+<br />
+VISTO l'Art. 107 del D. Lgs. 18 Agosto 2000, n&deg; 267, &quot;Testo Unico della Legge sull'ordinamento degli Enti locali&quot;;<br />
+<br />
+VISTA la richiesta in data <span class="valore">F.info_cdu.data_prot</span>&nbsp; prot. n&deg; <span class="valore">F.info_cdu.protocollo</span>&nbsp; da parte di <span class="valore">F.info_cdu.richiedente</span> , per ottenere il certificato di destinazione urbanistica dell'area sita nel territorio di questo Comune contraddistinta al C.T. come segue:</span></span></p>
+<p style="text-align: left"><span style="font-family: Garamond"><span style="font-size: 12pt"><strong><span style="font-size: 12pt"><strong><span style="font-size: 12pt">&nbsp;<span class="valore">F.info_cdu.tabella_cat_ter</span> </span></strong></span></strong></span></span></p>
+<p style="text-align: left"><span style="font-family: Garamond"><span style="font-size: 12pt"><span style="font-size: 12pt"><span style="font-size: 12pt">VISTE le prescrizioni urbanistiche vigenti riguardanti l'area interessata;</span></span></span></span></p>
+<p style="text-align: left"><span style="font-family: Garamond"><span style="font-size: 12pt"><span style="font-size: 12pt"><span style="font-size: 12pt">VISTA la normativa vigente in materia;</span></span></span></span></p>
+<p style="text-align: center"><span style="font-family: Garamond"><span style="font-size: 12pt"><strong>CERTIFICA</strong></span></span></p>
+<p style="text-align: center">&nbsp;</p>
+<p style="text-align: left"><span style="font-family: Garamond"><span style="font-size: 12pt">che le suddette aree, come sopra identificate,Piano Regolatore vigente approvato con D.P.G.R. n&deg;190 in data 27.03.1997, risultano appartenere alle zone urbanistiche specificate nella tabella che segue, restando di conseguenza sottoposte alla disposizioni per le rispettive zone determinate dalle Norme Tecniche di Attuazione del P.R.G. i cui stralci di competenza vengono allegati al presente certificato. </span></span></p>
+<p style="text-align: left">&nbsp;<span style="font-family: Garamond"><span style="font-size: 12pt"><span style="font-size: 12pt"><span class="valore">F.info_cdu.tabella_prg</span> </span></span></span></p>
+<p><span style="font-family: Garamond"><span style="font-size: 12pt">che, oltre alle sopra richiamate disposizioni urbanistiche, gli interventi di trasformazione delle predette aree sono altres&igrave; soggetti, alla osservanza della Disciplina Paesistica annessa al P.R.G. costituente livello puntuale del P.T.C.P., recante specifiche disposizioni di controllo paesistico ed ambientale alle quali viene formato espresso richiamo;</span></span></p>
+<p><span style="font-family: Garamond"><span class="valore"><br />
+</span></span></p>
+<p><span class="valore">F.info_cdu.tabella_ptcp</span></p>
+<p><span style="font-family: Garamond"><span class="valore">F.info_cdu.normativa</span></span></p>
+<p style="text-align: left">&nbsp;</p>
+<p><span style="font-family: Garamond"><span style="font-size: 12pt">Per quanto non espressamente disciplinato nel presente certificato, valgono le disposizioni di legge vigenti in materia ed i relativi vincoli.<br />
+<br />
+Si rilascia il presente certificato&nbsp;in carta USO BOLLO a richiesta <span class="valore">F.info_cdu.richiedente</span> , ai sensi ed agli effetti del D.P.R. 06 Giugno 2001, n&deg;380.</span></span></p>
+<p><span style="font-family: Garamond"><span style="font-size: 12pt"><br />
+&nbsp; </span></span></p>
+<p>
+<table style="text-align: center" width="100%" border="0">
+    <tbody>
+        <tr>
+            <td style="width: 50%"><span style="font-family: Garamond"><span style="font-size: 12pt">&nbsp;Pieve Ligure&nbsp;&nbsp;<span class="valore">D.data.data</span> </span></span></td>
+            <td style="width: 50%"><span style="font-family: Garamond"><span style="font-size: 12pt">&nbsp; </span></span></td>
+        </tr>
+        <tr>
+            <td><span style="font-family: Garamond"><span style="font-size: 12pt">&nbsp; </span></span></td>
+            <td style="text-align: center"><span style="font-family: Garamond"><span style="font-size: 12pt">Il Responsabile del Servizio<br />
+            <br />
+            Geom. Giorgio Leverone</span></span></td>
+        </tr>
+    </tbody>
+</table>
+</p>
+5-03-08	11:56:23
+	<html>
+		
+	<body>
+		
+	</body>
+</html>	
+5-03-08	11:56:38
+	<html>
+		
+	<body>
+		 <p><span style="font-family: Garamond"><span style="font-size: 12pt">Prot n&deg; ______<span style="font-size: 12pt">&nbsp;</span></span></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center"><span style="font-family: Garamond"><span style="font-size: 12pt"><strong>CERTIFICATO DI DESTINAZIONE URBANISTICA</strong></span></span></p>
+<p style="text-align: left"><span style="font-family: Garamond"><br />
+<span style="font-size: 12pt">A richiesta di <span class="valore">F.info_cdu.richiedente</span> ;<br />
+<br />
+VISTO l'Art. 107 del D. Lgs. 18 Agosto 2000, n&deg; 267, &quot;Testo Unico della Legge sull'ordinamento degli Enti locali&quot;;<br />
+<br />
+VISTA la richiesta in data <span class="valore">F.info_cdu.data_prot</span>&nbsp; prot. n&deg; <span class="valore">F.info_cdu.protocollo</span>&nbsp; da parte di <span class="valore">F.info_cdu.richiedente</span> , per ottenere il certificato di destinazione urbanistica dell'area sita nel territorio di questo Comune contraddistinta al C.T. come segue:</span></span></p>
+<p style="text-align: left"><span style="font-family: Garamond"><span style="font-size: 12pt"><strong><span style="font-size: 12pt"><strong><span style="font-size: 12pt">&nbsp;<span class="valore">F.info_cdu.tabella_cat_ter</span> </span></strong></span></strong></span></span></p>
+<p style="text-align: left"><span style="font-family: Garamond"><span style="font-size: 12pt"><span style="font-size: 12pt"><span style="font-size: 12pt">VISTE le prescrizioni urbanistiche vigenti riguardanti l'area interessata;</span></span></span></span></p>
+<p style="text-align: left"><span style="font-family: Garamond"><span style="font-size: 12pt"><span style="font-size: 12pt"><span style="font-size: 12pt">VISTA la normativa vigente in materia;</span></span></span></span></p>
+<p style="text-align: center"><span style="font-family: Garamond"><span style="font-size: 12pt"><strong>CERTIFICA</strong></span></span></p>
+<p style="text-align: center">&nbsp;</p>
+<p style="text-align: left"><span style="font-family: Garamond"><span style="font-size: 12pt">che le suddette aree, come sopra identificate,Piano Regolatore vigente approvato con D.P.G.R. n&deg;190 in data 27.03.1997, risultano appartenere alle zone urbanistiche specificate nella tabella che segue, restando di conseguenza sottoposte alla disposizioni per le rispettive zone determinate dalle Norme Tecniche di Attuazione del P.R.G. i cui stralci di competenza vengono allegati al presente certificato. </span></span></p>
+<p style="text-align: left">&nbsp;<span style="font-family: Garamond"><span style="font-size: 12pt"><span style="font-size: 12pt"><span class="valore">F.info_cdu.tabella_prg</span> </span></span></span></p>
+<p><span style="font-family: Garamond"><span style="font-size: 12pt">che, oltre alle sopra richiamate disposizioni urbanistiche, gli interventi di trasformazione delle predette aree sono altres&igrave; soggetti, alla osservanza della Disciplina Paesistica annessa al P.R.G. costituente livello puntuale del P.T.C.P., recante specifiche disposizioni di controllo paesistico ed ambientale alle quali viene formato espresso richiamo;</span></span></p>
+<p><span style="font-family: Garamond"><span class="valore"><br />
+</span></span></p>
+<p><span class="valore">F.info_cdu.tabella_ptcp</span></p>
+<p><span style="font-family: Garamond"><span class="valore">F.info_cdu.normativa</span></span></p>
+<p style="text-align: left">&nbsp;</p>
+<p><span style="font-family: Garamond"><span style="font-size: 12pt">Per quanto non espressamente disciplinato nel presente certificato, valgono le disposizioni di legge vigenti in materia ed i relativi vincoli.<br />
+<br />
+Si rilascia il presente certificato&nbsp;in carta USO BOLLO a richiesta <span class="valore">F.info_cdu.richiedente</span> , ai sensi ed agli effetti del D.P.R. 06 Giugno 2001, n&deg;380.</span></span></p>
+<p><span style="font-family: Garamond"><span style="font-size: 12pt"><br />
+&nbsp; </span></span></p>
+<p>
+<table style="text-align: center" width="100%" border="0">
+    <tbody>
+        <tr>
+            <td style="width: 50%"><span style="font-family: Garamond"><span style="font-size: 12pt">&nbsp;Pieve Ligure&nbsp;&nbsp;<span class="valore">D.data.data</span> </span></span></td>
+            <td style="width: 50%"><span style="font-family: Garamond"><span style="font-size: 12pt">&nbsp; </span></span></td>
+        </tr>
+        <tr>
+            <td><span style="font-family: Garamond"><span style="font-size: 12pt">&nbsp; </span></span></td>
+            <td style="text-align: center"><span style="font-family: Garamond"><span style="font-size: 12pt">Il Responsabile del Servizio<br />
+            <br />
+            Geom. Giorgio Leverone</span></span></td>
+        </tr>
+    </tbody>
+</table>
+</p> 
+	</body>
+</html>	

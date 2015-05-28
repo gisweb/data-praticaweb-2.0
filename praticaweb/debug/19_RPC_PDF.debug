@@ -1,0 +1,420 @@
+
+24-01-08	18:04:47	 --- STAMPA DI UN ARRAY ---
+	Array
+(
+    [modello] => 6
+    [css] => 1
+    [pratica] => 1
+    [testo] => <html>
+	<head>
+		<LINK media=\"screen\" href=\"./src/modelli.css\" type=\"text/css\" rel=\"stylesheet\">
+		<style>
+			$definizione
+		</style>
+	</head>
+	<body>
+		<div align=\"center\"><img src=\"images/pieveligure.png\" border=\"0\" alt=\" \" width=\"70\" height=\"95\" /><br /><br /></div><div align=\"center\"><font face=\"arial,helvetica,sans-serif\" size=\"5\"><strong>COMUNE DI PIEVE LIGURE<br />PROVINCIA DI GENOVA<br />___________________________<br /><br />SERVIZIO TECNICO</strong></font></div><div align=\"center\"><strong><font face=\"Arial\" size=\"3\"></font></strong></div><div align=\"left\"><font face=\"Arial\" size=\"3\"></font></div><font face=\"arial,helvetica,sans-serif\" size=\"3\"><div align=\"left\"><br /><br />Prot n° ______<font face=\"arial,helvetica,sans-serif\" size=\"3\"> </font></div></font><p><font face=\"arial,helvetica,sans-serif\" size=\"3\"></font></p><p align=\"center\"><font face=\"arial,helvetica,sans-serif\" size=\"3\"><strong>CERTIFICATO DI DESTINAZIONE URBANISTICA</strong></font></p><p align=\"left\"><br /><font face=\"arial,helvetica,sans-serif\" size=\"3\">A richiesta di <span class=\"valore\">F.info_cdu.richiedente</span> ;<br /><br />VISTO l\'Art. 107 del D. Lgs. 18 Agosto 2000, n° 267, \"Testo Unico della Legge sull\'ordinamento degli Enti locali\";<br /><br />VISTA la richiesta in data <span class=\"valore\">F.info_cdu.data_prot</span>  prot. n° <span class=\"valore\">F.info_cdu.protocollo</span>  da parte di <span class=\"valore\">F.info_cdu.richiedente</span> , per ottenere il certificato di destinazione urbanistica dell\'area sita nel territorio di questo Comune contraddistinta al C.T. come segue:</font><br /></p><font face=\"arial,helvetica,sans-serif\" size=\"3\"><div align=\"left\"><span class=\"valore\">F.info_cdu.tabella_cat_ter</span> </div><div align=\"left\">VISTE le prescrizioni urbanistiche vigenti riguardanti l\'area interessata;<br /><br />VISTA la normativa vigente in materia;<font face=\"arial,helvetica,sans-serif\" size=\"3\"></font><br /></div></font><font face=\"arial,helvetica,sans-serif\" size=\"3\"><div align=\"center\"><br /><strong><font face=\"arial,helvetica,sans-serif\" size=\"3\">CERTIFICA<strong><font face=\"arial,helvetica,sans-serif\" size=\"3\"> </font></strong></font></strong></div></font><font face=\"arial,helvetica,sans-serif\" size=\"3\"><p align=\"left\">che le suddette aree, come sopra identificate,Piano Regolatore vigente approvato con D.P.G.R. n°190 in data 27.03.1997,<font size=\"3\"> risultano appartenere alle zone urbanistiche specificate nella tabella che segue, restando di conseguenza sottoposte alla disposizioni per le rispettive zone determinate dalle Norme Tecniche di Attuazione del P.R.G. i cui stralci di competenza vengono allegati al presente certificato. <br /><br /></font><span class=\"valore\">F.info_cdu.tabella_prg</span> <br /></p><p align=\"left\">che, oltre alle sopra richiamate disposizioni urbanistiche, gli interventi di trasformazione delle predette aree sono altresì soggetti, alla osservanza della Disciplina Paesistica annessa al P.R.G. costituente livello puntuale del P.T.C.P., recante specifiche disposizioni di controllo paesistico ed ambientale alle quali viene formato espresso richiamo; <br /></p><p align=\"left\"><span class=\"valore\">F.info_cdu.tabella_ptcp</span> <br /><font face=\"arial,helvetica,sans-serif\" size=\"3\"><br /></font><font face=\"arial,helvetica,sans-serif\" size=\"3\"><span class=\"valore\">F.info_cdu.normativa</span>  </font></p></font><p><font face=\"arial,helvetica,sans-serif\" size=\"3\">Per quanto non espressamente disciplinato nel presente certificato, valgono le disposizioni di legge vigenti in materia ed i relativi vincoli.<br /><br />Si rilascia il presente certificato in carta USO BOLLO a richiesta <span class=\"valore\">F.info_cdu.richiedente</span> , ai sensi ed agli effetti del D.P.R. 06 Giugno 2001, n°380.</font> </p><p align=\"left\"><font face=\"arial,helvetica,sans-serif\" size=\"3\">  <table border=\"0\" width=\"100%\" align=\"center\"><tbody><tr><td style=\"width: 50%\"><font face=\"arial,helvetica,sans-serif\" size=\"3\"> Pieve Ligure  <span class=\"valore\">D.data.data</span> </font></td><td style=\"width: 50%\"><font face=\"arial,helvetica,sans-serif\" size=\"3\">  </font></td></tr><tr><td><font face=\"arial,helvetica,sans-serif\" size=\"3\">  </font></td><td align=\"center\"><font face=\"arial,helvetica,sans-serif\"><font size=\"3\">Il Responsabile del Servizio<br /><em>(Geom. Giorgio Leverone)</em></font></font></td></tr></tbody></table></font></p>
+	</body>
+</html>	
+)
+
+24-01-08	18:04:49	 --- STAMPA DI UN ARRAY ---
+	Array
+(
+    [modello] => 6
+    [css] => 1
+    [pratica] => 1
+    [testo] => <html>
+	<head>
+		<LINK media=\"screen\" href=\"./src/modelli.css\" type=\"text/css\" rel=\"stylesheet\">
+		<style>
+			$definizione
+		</style>
+	</head>
+	<body>
+		<div align=\"center\"><img src=\"images/pieveligure.png\" border=\"0\" alt=\" \" width=\"70\" height=\"95\" /><br /><br /></div><div align=\"center\"><font face=\"arial,helvetica,sans-serif\" size=\"5\"><strong>COMUNE DI PIEVE LIGURE<br />PROVINCIA DI GENOVA<br />___________________________<br /><br />SERVIZIO TECNICO</strong></font></div><div align=\"center\"><strong><font face=\"Arial\" size=\"3\"></font></strong></div><div align=\"left\"><font face=\"Arial\" size=\"3\"></font></div><font face=\"arial,helvetica,sans-serif\" size=\"3\"><div align=\"left\"><br /><br />Prot n° ______<font face=\"arial,helvetica,sans-serif\" size=\"3\"> </font></div></font><p><font face=\"arial,helvetica,sans-serif\" size=\"3\"></font></p><p align=\"center\"><font face=\"arial,helvetica,sans-serif\" size=\"3\"><strong>CERTIFICATO DI DESTINAZIONE URBANISTICA</strong></font></p><p align=\"left\"><br /><font face=\"arial,helvetica,sans-serif\" size=\"3\">A richiesta di <span class=\"valore\">F.info_cdu.richiedente</span> ;<br /><br />VISTO l\'Art. 107 del D. Lgs. 18 Agosto 2000, n° 267, \"Testo Unico della Legge sull\'ordinamento degli Enti locali\";<br /><br />VISTA la richiesta in data <span class=\"valore\">F.info_cdu.data_prot</span>  prot. n° <span class=\"valore\">F.info_cdu.protocollo</span>  da parte di <span class=\"valore\">F.info_cdu.richiedente</span> , per ottenere il certificato di destinazione urbanistica dell\'area sita nel territorio di questo Comune contraddistinta al C.T. come segue:</font><br /></p><font face=\"arial,helvetica,sans-serif\" size=\"3\"><div align=\"left\"><span class=\"valore\">F.info_cdu.tabella_cat_ter</span> </div><div align=\"left\">VISTE le prescrizioni urbanistiche vigenti riguardanti l\'area interessata;<br /><br />VISTA la normativa vigente in materia;<font face=\"arial,helvetica,sans-serif\" size=\"3\"></font><br /></div></font><font face=\"arial,helvetica,sans-serif\" size=\"3\"><div align=\"center\"><br /><strong><font face=\"arial,helvetica,sans-serif\" size=\"3\">CERTIFICA<strong><font face=\"arial,helvetica,sans-serif\" size=\"3\"> </font></strong></font></strong></div></font><font face=\"arial,helvetica,sans-serif\" size=\"3\"><p align=\"left\">che le suddette aree, come sopra identificate,Piano Regolatore vigente approvato con D.P.G.R. n°190 in data 27.03.1997,<font size=\"3\"> risultano appartenere alle zone urbanistiche specificate nella tabella che segue, restando di conseguenza sottoposte alla disposizioni per le rispettive zone determinate dalle Norme Tecniche di Attuazione del P.R.G. i cui stralci di competenza vengono allegati al presente certificato. <br /><br /></font><span class=\"valore\">F.info_cdu.tabella_prg</span> <br /></p><p align=\"left\">che, oltre alle sopra richiamate disposizioni urbanistiche, gli interventi di trasformazione delle predette aree sono altresì soggetti, alla osservanza della Disciplina Paesistica annessa al P.R.G. costituente livello puntuale del P.T.C.P., recante specifiche disposizioni di controllo paesistico ed ambientale alle quali viene formato espresso richiamo; <br /></p><p align=\"left\"><span class=\"valore\">F.info_cdu.tabella_ptcp</span> <br /><font face=\"arial,helvetica,sans-serif\" size=\"3\"><br /></font><font face=\"arial,helvetica,sans-serif\" size=\"3\"><span class=\"valore\">F.info_cdu.normativa</span>  </font></p></font><p><font face=\"arial,helvetica,sans-serif\" size=\"3\">Per quanto non espressamente disciplinato nel presente certificato, valgono le disposizioni di legge vigenti in materia ed i relativi vincoli.<br /><br />Si rilascia il presente certificato in carta USO BOLLO a richiesta <span class=\"valore\">F.info_cdu.richiedente</span> , ai sensi ed agli effetti del D.P.R. 06 Giugno 2001, n°380.</font> </p><p align=\"left\"><font face=\"arial,helvetica,sans-serif\" size=\"3\">  <table border=\"0\" width=\"100%\" align=\"center\"><tbody><tr><td style=\"width: 50%\"><font face=\"arial,helvetica,sans-serif\" size=\"3\"> Pieve Ligure  <span class=\"valore\">D.data.data</span> </font></td><td style=\"width: 50%\"><font face=\"arial,helvetica,sans-serif\" size=\"3\">  </font></td></tr><tr><td><font face=\"arial,helvetica,sans-serif\" size=\"3\">  </font></td><td align=\"center\"><font face=\"arial,helvetica,sans-serif\"><font size=\"3\">Il Responsabile del Servizio<br /><em>(Geom. Giorgio Leverone)</em></font></font></td></tr></tbody></table></font></p>
+	</body>
+</html>	
+)
+
+25-01-08	16:45:03	 --- STAMPA DI UN ARRAY ---
+	Array
+(
+    [modello] => 7
+    [css] => 3
+    [pratica] => 1
+    [testo] => <html>
+	<head>
+		<LINK media=\"screen\" href=\"./src/modelli.css\" type=\"text/css\" rel=\"stylesheet\">
+		<style>
+			$definizione
+		</style>
+	</head>
+	<body>
+		<p> </p>
+<p> </p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">Prot n° ______<span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"> </span></span></p>
+<p><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"></span></p>
+<p style=\"text-align: center;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><strong>CERTIFICATO DI DESTINAZIONE URBANISTICA</strong></span></p>
+<p style=\"text-align: left;\"><br>
+<span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">A richiesta di <span style=\"font-family: Arial;\"><span class=\"valore\">F.info_cdu.richiedente</span> ;<br>
+<br>
+VISTO l\'Art. 107 del D. Lgs. 18 Agosto 2000, n° 267, \"Testo Unico della Legge sull\'ordinamento degli Enti locali\";<br>
+<br>
+VISTA la richiesta in data <span class=\"valore\">F.info_cdu.data_prot</span>  prot. n° <span class=\"valore\">F.info_cdu.protocollo</span>  da parte di <span class=\"valore\">F.info_cdu.richiedente</span> , per ottenere il certificato di destinazione urbanistica dell\'area sita nel territorio di questo Comune contraddistinta al C.T. come segue:</span></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"></span><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><strong><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><strong><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"> <span style=\"font-family: Arial;\"><span class=\"valore\">F.info_cdu.tabella_cat_ter</span> </span></span></strong></span></strong></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">VISTE le prescrizioni urbanistiche vigenti riguardanti l\'area interessata;</span></span></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">VISTA la normativa vigente in materia;</span></span></span></p>
+<p style=\"text-align: center;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><strong>CERTIFICA</strong></span></p>
+<p style=\"text-align: center;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">che le suddette aree, come sopra identificate,Piano Regolatore vigente approvato con D.P.G.R. n°190 in data 27.03.1997,<span style=\"font-size: 12pt;\"> risultano appartenere alle zone urbanistiche specificate nella tabella che segue, restando di conseguenza sottoposte alla disposizioni per le rispettive zone determinate dalle Norme Tecniche di Attuazione del P.R.G. i cui stralci di competenza vengono allegati al presente certificato. </span></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt;\"></span></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt;\"></span></span><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt;\"><span class=\"valore\">F.info_cdu.tabella_prg</span> </span></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span class=\"valore\"><span style=\"font-family: Arial;\"></span></span></span></p>
+<p><span style=\"font-size: 12pt;\">che, oltre alle sopra richiamate disposizioni urbanistiche, gli interventi di trasformazione delle predette aree sono altresì soggetti, alla osservanza della Disciplina Paesistica annessa al P.R.G. costituente livello puntuale del P.T.C.P., recante specifiche disposizioni di controllo paesistico ed ambientale alle quali viene formato espresso richiamo;</span></p>
+<p><span style=\"font-size: 12pt;\"></span></p>
+<p><span class=\"valore\">F.info_cdu.tabella_ptcp</span></p>
+<p><span class=\"valore\">F.info_cdu.normativa</span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"></span></p>
+<p><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">Per quanto non espressamente disciplinato nel presente certificato, valgono le disposizioni di legge vigenti in materia ed i relativi vincoli.<br>
+<br>
+Si rilascia il presente certificato a richiesta <span style=\"font-family: Arial;\"><span class=\"valore\">F.info_cdu.richiedente</span> , ai sensi ed agli effetti del D.P.R. 06 Giugno 2001, n°380.</span></span></p>
+<p><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"></span><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><br>
+  </span></p>
+<p>
+<table style=\"text-align: center;\" border=\"0\" width=\"100%\">
+<tbody>
+<tr>
+<td style=\"width: 50%\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"> Pieve Ligure  <span style=\"font-family: Arial;\"><span class=\"valore\">D.data.data</span> </span></span></td>
+<td style=\"width: 50%\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">  </span></td>
+</tr>
+<tr>
+<td><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">  </span></td>
+<td style=\"text-align: center;\"><span style=\"font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt;\">Il Responsabile del Servizio<br>
+<br>
+Geom. Giorgio Leverone</span></span></td>
+</tr>
+</tbody>
+</table></p>
+	</body>
+</html>	
+)
+
+25-01-08	16:45:13	 --- STAMPA DI UN ARRAY ---
+	Array
+(
+    [modello] => 7
+    [css] => 3
+    [pratica] => 1
+    [testo] => <html>
+	<head>
+		<LINK media=\"screen\" href=\"./src/modelli.css\" type=\"text/css\" rel=\"stylesheet\">
+		<style>
+			$definizione
+		</style>
+	</head>
+	<body>
+		<p> </p>
+<p> </p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">Prot n° ______<span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"> </span></span></p>
+<p><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"></span></p>
+<p style=\"text-align: center;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><strong>CERTIFICATO DI DESTINAZIONE URBANISTICA</strong></span></p>
+<p style=\"text-align: left;\"><br>
+<span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">A richiesta di <span style=\"font-family: Arial;\"><span class=\"valore\">F.info_cdu.richiedente</span> ;<br>
+<br>
+VISTO l\'Art. 107 del D. Lgs. 18 Agosto 2000, n° 267, \"Testo Unico della Legge sull\'ordinamento degli Enti locali\";<br>
+<br>
+VISTA la richiesta in data <span class=\"valore\">F.info_cdu.data_prot</span>  prot. n° <span class=\"valore\">F.info_cdu.protocollo</span>  da parte di <span class=\"valore\">F.info_cdu.richiedente</span> , per ottenere il certificato di destinazione urbanistica dell\'area sita nel territorio di questo Comune contraddistinta al C.T. come segue:</span></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"></span><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><strong><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><strong><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"> <span style=\"font-family: Arial;\"><span class=\"valore\">F.info_cdu.tabella_cat_ter</span> </span></span></strong></span></strong></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">VISTE le prescrizioni urbanistiche vigenti riguardanti l\'area interessata;</span></span></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">VISTA la normativa vigente in materia;</span></span></span></p>
+<p style=\"text-align: center;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><strong>CERTIFICA</strong></span></p>
+<p style=\"text-align: center;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">che le suddette aree, come sopra identificate,Piano Regolatore vigente approvato con D.P.G.R. n°190 in data 27.03.1997,<span style=\"font-size: 12pt;\"> risultano appartenere alle zone urbanistiche specificate nella tabella che segue, restando di conseguenza sottoposte alla disposizioni per le rispettive zone determinate dalle Norme Tecniche di Attuazione del P.R.G. i cui stralci di competenza vengono allegati al presente certificato. </span></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt;\"></span></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt;\"></span></span><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt;\"><span class=\"valore\">F.info_cdu.tabella_prg</span> </span></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span class=\"valore\"><span style=\"font-family: Arial;\"></span></span></span></p>
+<p><span style=\"font-size: 12pt;\">che, oltre alle sopra richiamate disposizioni urbanistiche, gli interventi di trasformazione delle predette aree sono altresì soggetti, alla osservanza della Disciplina Paesistica annessa al P.R.G. costituente livello puntuale del P.T.C.P., recante specifiche disposizioni di controllo paesistico ed ambientale alle quali viene formato espresso richiamo;</span></p>
+<p><span style=\"font-size: 12pt;\"></span></p>
+<p><span class=\"valore\">F.info_cdu.tabella_ptcp</span></p>
+<p><span class=\"valore\">F.info_cdu.normativa</span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"></span></p>
+<p><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">Per quanto non espressamente disciplinato nel presente certificato, valgono le disposizioni di legge vigenti in materia ed i relativi vincoli.<br>
+<br>
+Si rilascia il presente certificato a richiesta <span style=\"font-family: Arial;\"><span class=\"valore\">F.info_cdu.richiedente</span> , ai sensi ed agli effetti del D.P.R. 06 Giugno 2001, n°380.</span></span></p>
+<p><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"></span><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><br>
+  </span></p>
+<p>
+<table style=\"text-align: center;\" border=\"0\" width=\"100%\">
+<tbody>
+<tr>
+<td style=\"width: 50%\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"> Pieve Ligure  <span style=\"font-family: Arial;\"><span class=\"valore\">D.data.data</span> </span></span></td>
+<td style=\"width: 50%\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">  </span></td>
+</tr>
+<tr>
+<td><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">  </span></td>
+<td style=\"text-align: center;\"><span style=\"font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt;\">Il Responsabile del Servizio<br>
+<br>
+Geom. Giorgio Leverone</span></span></td>
+</tr>
+</tbody>
+</table></p>
+	</body>
+</html>	
+)
+
+25-01-08	16:45:24	 --- STAMPA DI UN ARRAY ---
+	Array
+(
+    [modello] => 7
+    [css] => 3
+    [pratica] => 1
+    [testo] => <html>
+	<head>
+		<LINK media=\"screen\" href=\"./src/modelli.css\" type=\"text/css\" rel=\"stylesheet\">
+		<style>
+			$definizione
+		</style>
+	</head>
+	<body>
+		<p> </p>
+<p> </p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">Prot n° ______<span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"> </span></span></p>
+<p><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"></span></p>
+<p style=\"text-align: center;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><strong>CERTIFICATO DI DESTINAZIONE URBANISTICA</strong></span></p>
+<p style=\"text-align: left;\"><br>
+<span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">A richiesta di <span style=\"font-family: Arial;\"><span class=\"valore\">F.info_cdu.richiedente</span> ;<br>
+<br>
+VISTO l\'Art. 107 del D. Lgs. 18 Agosto 2000, n° 267, \"Testo Unico della Legge sull\'ordinamento degli Enti locali\";<br>
+<br>
+VISTA la richiesta in data <span class=\"valore\">F.info_cdu.data_prot</span>  prot. n° <span class=\"valore\">F.info_cdu.protocollo</span>  da parte di <span class=\"valore\">F.info_cdu.richiedente</span> , per ottenere il certificato di destinazione urbanistica dell\'area sita nel territorio di questo Comune contraddistinta al C.T. come segue:</span></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"></span><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><strong><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><strong><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"> <span style=\"font-family: Arial;\"><span class=\"valore\">F.info_cdu.tabella_cat_ter</span> </span></span></strong></span></strong></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">VISTE le prescrizioni urbanistiche vigenti riguardanti l\'area interessata;</span></span></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">VISTA la normativa vigente in materia;</span></span></span></p>
+<p style=\"text-align: center;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><strong>CERTIFICA</strong></span></p>
+<p style=\"text-align: center;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">che le suddette aree, come sopra identificate,Piano Regolatore vigente approvato con D.P.G.R. n°190 in data 27.03.1997,<span style=\"font-size: 12pt;\"> risultano appartenere alle zone urbanistiche specificate nella tabella che segue, restando di conseguenza sottoposte alla disposizioni per le rispettive zone determinate dalle Norme Tecniche di Attuazione del P.R.G. i cui stralci di competenza vengono allegati al presente certificato. </span></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt;\"></span></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt;\"></span></span><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt;\"><span class=\"valore\">F.info_cdu.tabella_prg</span> </span></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span class=\"valore\"><span style=\"font-family: Arial;\"></span></span></span></p>
+<p><span style=\"font-size: 12pt;\">che, oltre alle sopra richiamate disposizioni urbanistiche, gli interventi di trasformazione delle predette aree sono altresì soggetti, alla osservanza della Disciplina Paesistica annessa al P.R.G. costituente livello puntuale del P.T.C.P., recante specifiche disposizioni di controllo paesistico ed ambientale alle quali viene formato espresso richiamo;</span></p>
+<p><span style=\"font-size: 12pt;\"></span></p>
+<p><span class=\"valore\">F.info_cdu.tabella_ptcp</span></p>
+<p><span class=\"valore\">F.info_cdu.normativa</span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"></span></p>
+<p><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">Per quanto non espressamente disciplinato nel presente certificato, valgono le disposizioni di legge vigenti in materia ed i relativi vincoli.<br>
+<br>
+Si rilascia il presente certificato a richiesta <span style=\"font-family: Arial;\"><span class=\"valore\">F.info_cdu.richiedente</span> , ai sensi ed agli effetti del D.P.R. 06 Giugno 2001, n°380.</span></span></p>
+<p><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"></span><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><br>
+  </span></p>
+<p>
+<table style=\"text-align: center;\" border=\"0\" width=\"100%\">
+<tbody>
+<tr>
+<td style=\"width: 50%\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"> Pieve Ligure  <span style=\"font-family: Arial;\"><span class=\"valore\">D.data.data</span> </span></span></td>
+<td style=\"width: 50%\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">  </span></td>
+</tr>
+<tr>
+<td><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">  </span></td>
+<td style=\"text-align: center;\"><span style=\"font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt;\">Il Responsabile del Servizio<br>
+<br>
+Geom. Giorgio Leverone</span></span></td>
+</tr>
+</tbody>
+</table></p>
+	</body>
+</html>	
+)
+
+25-01-08	16:48:06	 --- STAMPA DI UN ARRAY ---
+	Array
+(
+    [modello] => 7
+    [css] => 3
+    [pratica] => 1
+    [testo] => <p> </p>
+<p> </p>
+<p> </p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">Prot n° ______<span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"> </span></span></p>
+<p><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"></span></p>
+<p style=\"text-align: center;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><strong>CERTIFICATO DI DESTINAZIONE URBANISTICA</strong></span></p>
+<p style=\"text-align: left;\"><br>
+<span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">A richiesta di <span style=\"font-family: Arial;\"><span class=\"valore\">F.info_cdu.richiedente</span> ;<br>
+<br>
+VISTO l\'Art. 107 del D. Lgs. 18 Agosto 2000, n° 267, \"Testo Unico della Legge sull\'ordinamento degli Enti locali\";<br>
+<br>
+VISTA la richiesta in data <span class=\"valore\">F.info_cdu.data_prot</span>  prot. n° <span class=\"valore\">F.info_cdu.protocollo</span>  da parte di <span class=\"valore\">F.info_cdu.richiedente</span> , per ottenere il certificato di destinazione urbanistica dell\'area sita nel territorio di questo Comune contraddistinta al C.T. come segue:</span></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"></span><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><strong><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><strong><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"> <span style=\"font-family: Arial;\"><span class=\"valore\">F.info_cdu.tabella_cat_ter</span> </span></span></strong></span></strong></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">VISTE le prescrizioni urbanistiche vigenti riguardanti l\'area interessata;</span></span></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">VISTA la normativa vigente in materia;</span></span></span></p>
+<p style=\"text-align: center;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><strong>CERTIFICA</strong></span></p>
+<p style=\"text-align: center;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">che le suddette aree, come sopra identificate,Piano Regolatore vigente approvato con D.P.G.R. n°190 in data 27.03.1997,<span style=\"font-size: 12pt;\"> risultano appartenere alle zone urbanistiche specificate nella tabella che segue, restando di conseguenza sottoposte alla disposizioni per le rispettive zone determinate dalle Norme Tecniche di Attuazione del P.R.G. i cui stralci di competenza vengono allegati al presente certificato. </span></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt;\"></span></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt;\"></span></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt;\"></span></span><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt;\"><span class=\"valore\">F.info_cdu.tabella_prg</span> </span></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span class=\"valore\"><span style=\"font-family: Arial;\"></span></span></span></p>
+<p><span style=\"font-size: 12pt;\">che, oltre alle sopra richiamate disposizioni urbanistiche, gli interventi di trasformazione delle predette aree sono altresì soggetti, alla osservanza della Disciplina Paesistica annessa al P.R.G. costituente livello puntuale del P.T.C.P., recante specifiche disposizioni di controllo paesistico ed ambientale alle quali viene formato espresso richiamo;</span></p>
+<p><span style=\"font-size: 12pt;\"></span></p>
+<p><span class=\"valore\">F.info_cdu.tabella_ptcp</span></p>
+<p><span class=\"valore\">F.info_cdu.normativa</span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"></span></p>
+<p><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">Per quanto non espressamente disciplinato nel presente certificato, valgono le disposizioni di legge vigenti in materia ed i relativi vincoli.<br>
+<br>
+Si rilascia il presente certificato a richiesta <span style=\"font-family: Arial;\"><span class=\"valore\">F.info_cdu.richiedente</span> , ai sensi ed agli effetti del D.P.R. 06 Giugno 2001, n°380.</span></span></p>
+<p><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"></span><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><br>
+  </span></p>
+<p>
+<table style=\"text-align: center;\" border=\"0\" width=\"100%\">
+<tbody>
+<tr>
+<td style=\"width: 50%\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"> Pieve Ligure  <span style=\"font-family: Arial;\"><span class=\"valore\">D.data.data</span> </span></span></td>
+<td style=\"width: 50%\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">  </span></td>
+</tr>
+<tr>
+<td><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">  </span></td>
+<td style=\"text-align: center;\"><span style=\"font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt;\">Il Responsabile del Servizio<br>
+<br>
+Geom. Giorgio Leverone</span></span></td>
+</tr>
+</tbody>
+</table></p>
+<p> </p>
+<p> </p>
+
+)
+
+25-01-08	17:00:45	 --- STAMPA DI UN ARRAY ---
+	Array
+(
+    [modello] => 6
+    [css] => 3
+    [pratica] => 1
+    [testo] => <p> </p>
+<p> </p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">Prot n° ______<span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"> </span></span></p>
+<p><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"></span></p>
+<p style=\"text-align: center;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><strong>CERTIFICATO DI DESTINAZIONE URBANISTICA</strong></span></p>
+<p style=\"text-align: left;\"><br>
+<span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">A richiesta di <span style=\"font-family: Arial;\"><span style=\"font-family: Arial;\"><span class=\"valore\">F.info_cdu.richiedente</span> ;<br>
+<br>
+VISTO l\'Art. 107 del D. Lgs. 18 Agosto 2000, n° 267, \"Testo Unico della Legge sull\'ordinamento degli Enti locali\";<br>
+<br>
+VISTA la richiesta in data <span class=\"valore\">F.info_cdu.data_prot</span>  prot. n° <span class=\"valore\">F.info_cdu.protocollo</span>  da parte di <span class=\"valore\">F.info_cdu.richiedente</span> , per ottenere il certificato di destinazione urbanistica dell\'area sita nel territorio di questo Comune contraddistinta al C.T. come segue:</span></span></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"></span><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><strong><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><strong><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"> <span style=\"font-family: Arial;\"><span style=\"font-family: Arial;\"><span class=\"valore\">F.info_cdu.tabella_cat_ter</span> </span></span></span></strong></span></strong></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">VISTE le prescrizioni urbanistiche vigenti riguardanti l\'area interessata;</span></span></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">VISTA la normativa vigente in materia;</span></span></span></p>
+<p style=\"text-align: center;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><strong>CERTIFICA</strong></span></p>
+<p style=\"text-align: center;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">che le suddette aree, come sopra identificate,Piano Regolatore vigente approvato con D.P.G.R. n°190 in data 27.03.1997, risultano appartenere alle zone urbanistiche specificate nella tabella che segue, restando di conseguenza sottoposte alla disposizioni per le rispettive zone determinate dalle Norme Tecniche di Attuazione del P.R.G. i cui stralci di competenza vengono allegati al presente certificato. </span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt;\"></span></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt;\"></span></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt;\"></span></span><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt;\"><span style=\"font-family: Arial;\"><span class=\"valore\">F.info_cdu.tabella_prg</span> </span></span></span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><span class=\"valore\"><span style=\"font-family: Arial;\"></span></span></span></p>
+<p><span style=\"font-size: 12pt;\">che, oltre alle sopra richiamate disposizioni urbanistiche, gli interventi di trasformazione delle predette aree sono altresì soggetti, alla osservanza della Disciplina Paesistica annessa al P.R.G. costituente livello puntuale del P.T.C.P., recante specifiche disposizioni di controllo paesistico ed ambientale alle quali viene formato espresso richiamo;</span></p>
+<p><span style=\"font-size: 12pt;\"></span></p>
+<p><span class=\"valore\">F.info_cdu.tabella_ptcp</span></p>
+<p><span class=\"valore\">F.info_cdu.normativa</span></p>
+<p style=\"text-align: left;\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"></span></p>
+<p><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">Per quanto non espressamente disciplinato nel presente certificato, valgono le disposizioni di legge vigenti in materia ed i relativi vincoli.<br>
+<br>
+Si rilascia il presente certificato in carta USO BOLLO a richiesta <span style=\"font-family: Arial;\"><span style=\"font-family: Arial;\"><span class=\"valore\">F.info_cdu.richiedente</span> , ai sensi ed agli effetti del D.P.R. 06 Giugno 2001, n°380.</span></span></span></p>
+<p><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"></span><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"><br>
+  </span></p>
+<p>
+<table style=\"text-align: center;\" border=\"0\" width=\"100%\">
+<tbody>
+<tr>
+<td style=\"width: 50%\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\"> Pieve Ligure  <span style=\"font-family: Arial;\"><span style=\"font-family: Arial;\"><span class=\"valore\">D.data.data</span> </span></span></span></td>
+<td style=\"width: 50%\"><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">  </span></td>
+</tr>
+<tr>
+<td><span style=\"font-size: 12pt; font-family: arial,helvetica,sans-serif;\">  </span></td>
+<td style=\"text-align: center;\"><span style=\"font-family: arial,helvetica,sans-serif;\"><span style=\"font-size: 12pt;\">Il Responsabile del Servizio<br>
+<br>
+Geom. Giorgio Leverone</span></span></td>
+</tr>
+</tbody>
+</table></p>
+
+)
+
+28-01-08	15:52:04	 --- STAMPA DI UN ARRAY ---
+	Array
+(
+    [modello] => 3
+    [css] => 3
+    [pratica] => 1
+    [testo] => <html>
+	<head>
+		<LINK media=\"screen\" href=\"./src/modelli.css\" type=\"text/css\" rel=\"stylesheet\">
+		<style>
+			$definizione
+		</style>
+	</head>
+	<body>
+		<div align=\"center\"><strong><font face=\"Arial\" size=\"3\"></font></strong></div><font face=\"Arial\" size=\"3\"><div align=\"left\"><br /> </div></font><div align=\"left\"><table border=\"1\" cellspacing=\"0\" cellpadding=\"0\" width=\"60%\" align=\"center\"><tbody><tr><td><p align=\"center\"><font face=\"arial,helvetica,sans-serif\" size=\"3\"><strong>ORDINE DEL GIORNO DELLA<br /><span class=\"valore\">F.info_comm_edilizia.tipo</span> DEL <span class=\"valore\">F.info_comm_edilizia.data</span></strong> </font></p></td></tr></tbody></table></div><p align=\"center\"><br /><font face=\"arial,helvetica,sans-serif\" size=\"3\">NOTE: N° Prot.*: Pratiche già esaminate nelle commissioni precedenti.</font></p><p><span class=\"valore\">F.info_comm_edilizia.tab_ordine_giorno</span> </p>
+
+	</body>
+</html>	
+)
+
+28-01-08	15:52:07	 --- STAMPA DI UN ARRAY ---
+	Array
+(
+    [modello] => 3
+    [css] => 3
+    [pratica] => 1
+    [testo] => <html>
+	<head>
+		<LINK media=\"screen\" href=\"./src/modelli.css\" type=\"text/css\" rel=\"stylesheet\">
+		<style>
+			$definizione
+		</style>
+	</head>
+	<body>
+		<div align=\"center\"><strong><font face=\"Arial\" size=\"3\"></font></strong></div><font face=\"Arial\" size=\"3\"><div align=\"left\"><br /> </div></font><div align=\"left\"><table border=\"1\" cellspacing=\"0\" cellpadding=\"0\" width=\"60%\" align=\"center\"><tbody><tr><td><p align=\"center\"><font face=\"arial,helvetica,sans-serif\" size=\"3\"><strong>ORDINE DEL GIORNO DELLA<br /><span class=\"valore\">F.info_comm_edilizia.tipo</span> DEL <span class=\"valore\">F.info_comm_edilizia.data</span></strong> </font></p></td></tr></tbody></table></div><p align=\"center\"><br /><font face=\"arial,helvetica,sans-serif\" size=\"3\">NOTE: N° Prot.*: Pratiche già esaminate nelle commissioni precedenti.</font></p><p><span class=\"valore\">F.info_comm_edilizia.tab_ordine_giorno</span> </p>
+
+	</body>
+</html>	
+)
+
+28-01-08	15:52:12	 --- STAMPA DI UN ARRAY ---
+	Array
+(
+    [modello] => 3
+    [css] => 3
+    [pratica] => 1
+    [testo] => <html>
+	<head>
+		<LINK media=\"screen\" href=\"./src/modelli.css\" type=\"text/css\" rel=\"stylesheet\">
+		<style>
+			$definizione
+		</style>
+	</head>
+	<body>
+		<div align=\"center\"><strong><font face=\"Arial\" size=\"3\"></font></strong></div><font face=\"Arial\" size=\"3\"><div align=\"left\"><br /> </div></font><div align=\"left\"><table border=\"1\" cellspacing=\"0\" cellpadding=\"0\" width=\"60%\" align=\"center\"><tbody><tr><td><p align=\"center\"><font face=\"arial,helvetica,sans-serif\" size=\"3\"><strong>ORDINE DEL GIORNO DELLA<br /><span class=\"valore\">F.info_comm_edilizia.tipo</span> DEL <span class=\"valore\">F.info_comm_edilizia.data</span></strong> </font></p></td></tr></tbody></table></div><p align=\"center\"><br /><font face=\"arial,helvetica,sans-serif\" size=\"3\">NOTE: N° Prot.*: Pratiche già esaminate nelle commissioni precedenti.</font></p><p><span class=\"valore\">F.info_comm_edilizia.tab_ordine_giorno</span> </p>
+
+	</body>
+</html>	
+)
+
+28-01-08	16:38:54	 --- STAMPA DI UN ARRAY ---
+	Array
+(
+    [modello] => 5
+    [css] => 3
+    [pratica] => 1
+    [testo] => <html>
+	<head>
+		<LINK media=\"screen\" href=\"./src/modelli.css\" type=\"text/css\" rel=\"stylesheet\">
+		<style>
+			$definizione
+		</style>
+	</head>
+	<body>
+		<div align=\"center\"><img src=\"images/pieveligure.png\" border=\"0\" alt=\" \" width=\"49\" height=\"65\" /><br /><br /></div><div align=\"center\"><font face=\"arial,helvetica,sans-serif\" size=\"4\"><strong>COMUNE DI PIEVE LIGURE<br />PROVINCIA DI GENOVA<br />___________________________<br /><br />SERVIZIO TECNICO</strong></font></div><div align=\"center\"><strong><font face=\"Arial\" size=\"3\"></font></strong></div><font face=\"Arial\" size=\"3\"><div align=\"center\"><br /><strong>Verbale della <span class=\"valore\">F.info_comm_edilizia.tipo</span> del <span class=\"valore\">F.info_comm_edilizia.data</span></strong> </div><br /><div align=\"left\">Il <font size=\"3\"><span class=\"valore\">F.info_comm_edilizia.data</span>, alle ore <span class=\"valore\">F.info_comm_edilizia.orario</span>, nella sede di <span class=\"valore\">F.info_comm_edilizia.sede</span>, si è riunita la <span class=\"valore\">F.info_comm_edilizia.tipo</span> nominata dalla Giunta Comunale con deliberazione n° 75 del 6 Novembre 2007 :</font></div><div align=\"left\">Fatto l\'appello nominale risultano presenti :</div><p><font size=\"3\"><span class=\"valore\">F.info_comm_edilizia.elenco_membri_int</span> <br /></font><br />Assenti :</p><div align=\"left\"><font size=\"3\"><span class=\"valore\">F.info_comm_edilizia.elenco_assenti</span> </font></div><div align=\"left\"><font size=\"3\"></font></div><br /><div align=\"left\">Le funzioni di relatore e segretario vengono svolte, come previsto dalla delibera di Giunta Comunale n° 75 del 6 Novembre 2007, dal Responsabile del Servizio Urbanistico.<br />Il Presidente constatata la legalità dell\'adunanza dichiara aperta la seduta, si passa quindi ad esaminare le pratiche edilizie iscritte all\'ordine del giorno e si esprime per ogni pratica il relativo parere.<br /></div><div align=\"left\"><span class=\"valore\">F.info_comm_edilizia.elenco_pareri</span>  </div><br /><!--NewPage--><div align=\"left\">Letto, approvato e sottoscritto.</div><br /><div align=\"left\">Con la sottoscrizione del presente verbale i membri della commissione edilizia e gli esperti in materia di bellezze naturali dichiarano l\'inesistenza di cause di allontanamento a loro riguardo relative alle pratiche presentate nella presente seduta.</div><br /><div align=\"left\">Pieve Ligure, <font size=\"3\"><span class=\"valore\">D.data.data</span> </font></div><br /><div align=\"left\"><table border=\"0\" cellspacing=\"5\" width=\"100%\" align=\"left\"><tbody><tr><td style=\"width: 30%\"><font size=\"3\"><strong>Il Presidente</strong></font></td><td><p><font size=\"1\">  </font></p><p><font size=\"1\">__________________________________________________________</font></p></td></tr><tr><td><font size=\"3\"><strong>Il Segretario</strong></font></td><td><p>  </p><p>__________________________________________________________</p></td></tr><tr><td valign=\"top\"><font size=\"3\"><strong><br />La Commissione</strong></font></td><td><p>   </p><p> _________________________________________________________</p><p> __________________________________________________________</p><p> __________________________________________________________</p><p> __________________________________________________________</p><p> __________________________________________________________</p><p> __________________________________________________________</p><p> __________________________________________________________</p><p> __________________________________________________________</p></td></tr></tbody></table></div><div align=\"left\">         </div></font>
+	</body>
+</html>	
+)

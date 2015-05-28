@@ -1,0 +1,636 @@
+------- DEBUG DEL 10/04/2015 02:43:54 -------
+select id,opzione from admin.elenco_rdp
+-------------------------
+------- DEBUG DEL 10/04/2015 02:43:54 -------
+select id,opzione from admin.elenco_itec
+-------------------------
+------- DEBUG DEL 10/04/2015 02:43:54 -------
+select id,opzione from admin.elenco_iamm
+-------------------------
+------- DEBUG DEL 10/04/2015 02:43:54 -------
+select id,opzione from pe.elenco_tipopratica_all where not coalesce(id,0)=0
+-------------------------
+------- DEBUG DEL 10/04/2015 03:14:09 -------
+select id,opzione from admin.elenco_rdp
+-------------------------
+------- DEBUG DEL 10/04/2015 03:14:09 -------
+select id,opzione from admin.elenco_itec
+-------------------------
+------- DEBUG DEL 10/04/2015 03:14:09 -------
+select id,opzione from admin.elenco_iamm
+-------------------------
+------- DEBUG DEL 10/04/2015 03:14:09 -------
+select id,opzione from pe.elenco_tipopratica_all where not coalesce(id,0)=0
+-------------------------
+------- DEBUG DEL 10/04/2015 03:17:29 -------
+select id,opzione from admin.elenco_rdp
+-------------------------
+------- DEBUG DEL 10/04/2015 03:17:29 -------
+select id,opzione from admin.elenco_itec
+-------------------------
+------- DEBUG DEL 10/04/2015 03:17:29 -------
+select id,opzione from admin.elenco_iamm
+-------------------------
+------- DEBUG DEL 10/04/2015 03:17:29 -------
+select id,opzione from pe.elenco_tipopratica_all where not coalesce(id,0)=0
+-------------------------
+------- DEBUG DEL 10/04/2015 03:18:20 -------
+select id,opzione from admin.elenco_rdp
+-------------------------
+------- DEBUG DEL 10/04/2015 03:18:20 -------
+select id,opzione from admin.elenco_itec
+-------------------------
+------- DEBUG DEL 10/04/2015 03:18:20 -------
+select id,opzione from admin.elenco_iamm
+-------------------------
+------- DEBUG DEL 10/04/2015 03:18:20 -------
+select id,opzione from pe.elenco_tipopratica_all where not coalesce(id,0)=0
+-------------------------
+------- DEBUG DEL 10/04/2015 03:54:03 -------
+select id,opzione from oneri.elenco_anno
+-------------------------
+------- DEBUG DEL 10/04/2015 03:54:03 -------
+select id,opzione from oneri.elenco_funzione
+-------------------------
+------- DEBUG DEL 10/04/2015 03:54:03 -------
+select id,opzione from oneri.elenco_interventi where tabella=''
+-------------------------
+------- DEBUG DEL 10/04/2015 03:54:03 -------
+select id,opzione from oneri.elenco_c1 where tabella=''
+-------------------------
+------- DEBUG DEL 10/04/2015 03:54:03 -------
+select id,opzione from oneri.elenco_c2 where tabella=''
+-------------------------
+------- DEBUG DEL 10/04/2015 03:54:03 -------
+select id,opzione from oneri.elenco_c3 where tabella=''
+-------------------------
+------- DEBUG DEL 10/04/2015 03:54:03 -------
+select id,opzione from oneri.elenco_c4 where tabella=''
+-------------------------
+------- DEBUG DEL 10/04/2015 03:54:03 -------
+select id,opzione from oneri.elenco_c5 where tabella=''
+-------------------------
+------- DEBUG DEL 10/04/2015 03:54:03 -------
+select id,opzione from oneri.elenco_d1 where tabella=''
+-------------------------
+------- DEBUG DEL 10/04/2015 03:54:03 -------
+select id,opzione from oneri.elenco_d2 where tabella=''
+-------------------------
+------- DEBUG DEL 10/04/2015 04:06:00 -------
+select id,opzione from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 10/04/2015 04:06:00 -------
+select id,opzione from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 10/04/2015 04:06:00 -------
+select id,opzione from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 10/04/2015 04:06:00 -------
+select id,opzione from admin.elenco_rdp
+-------------------------
+------- DEBUG DEL 10/04/2015 04:06:00 -------
+select id,opzione from admin.elenco_itec
+-------------------------
+------- DEBUG DEL 10/04/2015 04:06:00 -------
+select id,opzione from admin.elenco_iamm
+-------------------------
+------- DEBUG DEL 10/04/2015 04:07:55 -------
+select id,opzione from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 10/04/2015 04:07:55 -------
+select id,opzione from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 10/04/2015 04:07:55 -------
+select id,opzione from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 10/04/2015 04:07:55 -------
+select id,opzione from admin.elenco_rdp
+-------------------------
+------- DEBUG DEL 10/04/2015 04:07:55 -------
+select id,opzione from admin.elenco_itec
+-------------------------
+------- DEBUG DEL 10/04/2015 04:07:55 -------
+select id,opzione from admin.elenco_iamm
+-------------------------
+------- DEBUG DEL 10/04/2015 04:09:03 -------
+select id,opzione from pe.elenco_enti_edit
+-------------------------
+------- DEBUG DEL 10/04/2015 04:09:03 -------
+select id,opzione from admin.elenco_altriuffici where attivato=1
+-------------------------
+------- DEBUG DEL 10/04/2015 04:28:03 -------
+select id,opzione from pe.elenco_parametri
+-------------------------
+------- DEBUG DEL 10/04/2015 04:28:17 -------
+select id,opzione from pe.elenco_parametri
+-------------------------
+------- DEBUG DEL 23/04/2015 11:26:41 -------
+select id,opzione from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 23/04/2015 11:26:41 -------
+select id,opzione from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 23/04/2015 11:26:41 -------
+select id,opzione from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 23/04/2015 11:26:41 -------
+select id,opzione from admin.elenco_rdp
+-------------------------
+------- DEBUG DEL 23/04/2015 11:26:41 -------
+select id,opzione from admin.elenco_itec
+-------------------------
+------- DEBUG DEL 23/04/2015 11:26:41 -------
+select id,opzione from admin.elenco_iamm
+-------------------------
+------- DEBUG DEL 23/04/2015 11:32:30 -------
+select id,opzione from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 23/04/2015 11:32:30 -------
+select id,opzione from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 23/04/2015 11:32:30 -------
+select id,opzione from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 23/04/2015 11:32:30 -------
+select id,opzione from admin.elenco_rdp
+-------------------------
+------- DEBUG DEL 23/04/2015 11:32:30 -------
+select id,opzione from admin.elenco_itec
+-------------------------
+------- DEBUG DEL 23/04/2015 11:32:30 -------
+select id,opzione from admin.elenco_iamm
+-------------------------
+------- DEBUG DEL 23/04/2015 11:37:31 -------
+select id,opzione from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 23/04/2015 11:37:31 -------
+select id,opzione from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 23/04/2015 11:37:31 -------
+select id,opzione from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 23/04/2015 11:37:31 -------
+select id,opzione from admin.elenco_rdp
+-------------------------
+------- DEBUG DEL 23/04/2015 11:37:31 -------
+select id,opzione from admin.elenco_itec
+-------------------------
+------- DEBUG DEL 23/04/2015 11:37:31 -------
+select id,opzione from admin.elenco_iamm
+-------------------------
+------- DEBUG DEL 23/04/2015 11:39:21 -------
+select id,opzione from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 23/04/2015 11:39:21 -------
+select id,opzione from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 23/04/2015 11:39:21 -------
+select id,opzione from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 23/04/2015 11:39:21 -------
+select id,opzione from admin.elenco_rdp
+-------------------------
+------- DEBUG DEL 23/04/2015 11:39:21 -------
+select id,opzione from admin.elenco_itec
+-------------------------
+------- DEBUG DEL 23/04/2015 11:39:21 -------
+select id,opzione from admin.elenco_iamm
+-------------------------
+------- DEBUG DEL 23/04/2015 11:39:56 -------
+select id,opzione from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 23/04/2015 11:39:56 -------
+select id,opzione from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 23/04/2015 11:39:56 -------
+select id,opzione from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 23/04/2015 11:39:56 -------
+select id,opzione from admin.elenco_rdp
+-------------------------
+------- DEBUG DEL 23/04/2015 11:39:56 -------
+select id,opzione from admin.elenco_itec
+-------------------------
+------- DEBUG DEL 23/04/2015 11:39:56 -------
+select id,opzione from admin.elenco_iamm
+-------------------------
+------- DEBUG DEL 23/04/2015 11:53:32 -------
+select id,opzione from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 23/04/2015 11:53:33 -------
+select id,opzione from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 23/04/2015 11:53:33 -------
+select id,opzione from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 23/04/2015 11:53:33 -------
+select id,opzione from admin.elenco_rdp
+-------------------------
+------- DEBUG DEL 23/04/2015 11:53:33 -------
+select id,opzione from admin.elenco_itec
+-------------------------
+------- DEBUG DEL 23/04/2015 11:53:33 -------
+select id,opzione from admin.elenco_iamm
+-------------------------
+------- DEBUG DEL 23/04/2015 11:54:02 -------
+select id,opzione from oneri.elenco_anno
+-------------------------
+------- DEBUG DEL 23/04/2015 11:54:02 -------
+select id,opzione from oneri.elenco_funzione
+-------------------------
+------- DEBUG DEL 23/04/2015 11:54:02 -------
+select id,opzione from oneri.elenco_interventi where tabella=''
+-------------------------
+------- DEBUG DEL 23/04/2015 11:54:02 -------
+select id,opzione from oneri.elenco_c1 where tabella=''
+-------------------------
+------- DEBUG DEL 23/04/2015 11:54:02 -------
+select id,opzione from oneri.elenco_c2 where tabella=''
+-------------------------
+------- DEBUG DEL 23/04/2015 11:54:02 -------
+select id,opzione from oneri.elenco_c3 where tabella=''
+-------------------------
+------- DEBUG DEL 23/04/2015 11:54:02 -------
+select id,opzione from oneri.elenco_c4 where tabella=''
+-------------------------
+------- DEBUG DEL 23/04/2015 11:54:02 -------
+select id,opzione from oneri.elenco_c5 where tabella=''
+-------------------------
+------- DEBUG DEL 23/04/2015 11:54:02 -------
+select id,opzione from oneri.elenco_d1 where tabella=''
+-------------------------
+------- DEBUG DEL 23/04/2015 11:54:02 -------
+select id,opzione from oneri.elenco_d2 where tabella=''
+-------------------------
+------- DEBUG DEL 23/04/2015 11:55:04 -------
+select id,opzione from vincoli.elenco_vincolipratiche
+-------------------------
+------- DEBUG DEL 23/04/2015 11:55:04 -------
+select id,opzione from 
+-------------------------
+------- DEBUG DEL 23/04/2015 11:55:04 -------
+select id,opzione from 
+-------------------------
+------- DEBUG DEL 23/04/2015 11:55:19 -------
+select id,opzione from vincoli.elenco_vincolipratiche
+-------------------------
+------- DEBUG DEL 23/04/2015 11:55:19 -------
+select id,opzione from 
+-------------------------
+------- DEBUG DEL 23/04/2015 11:55:19 -------
+select id,opzione from 
+-------------------------
+------- DEBUG DEL 23/04/2015 11:56:54 -------
+select id,opzione from vincoli.elenco_vincolipratiche
+-------------------------
+------- DEBUG DEL 23/04/2015 11:56:54 -------
+select id,opzione from 
+-------------------------
+------- DEBUG DEL 23/04/2015 11:56:54 -------
+select id,opzione from 
+-------------------------
+------- DEBUG DEL 23/04/2015 11:57:25 -------
+select id,opzione from vincoli.elenco_vincolipratiche
+-------------------------
+------- DEBUG DEL 23/04/2015 11:57:25 -------
+select id,opzione from 
+-------------------------
+------- DEBUG DEL 23/04/2015 11:57:25 -------
+select id,opzione from 
+-------------------------
+------- DEBUG DEL 23/04/2015 04:19:56 -------
+select id,opzione from stp.elenco_form
+-------------------------
+------- DEBUG DEL 23/04/2015 04:19:56 -------
+select id,opzione from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 23/04/2015 04:46:14 -------
+select id,opzione from stp.elenco_form
+-------------------------
+------- DEBUG DEL 23/04/2015 04:46:14 -------
+select id,opzione from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 23/04/2015 04:46:42 -------
+select id,opzione from stp.elenco_form
+-------------------------
+------- DEBUG DEL 23/04/2015 04:46:42 -------
+select id,opzione from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 24/04/2015 11:32:43 -------
+select id,opzione from admin.elenco_rdp
+-------------------------
+------- DEBUG DEL 24/04/2015 11:32:43 -------
+select id,opzione from admin.elenco_itec
+-------------------------
+------- DEBUG DEL 24/04/2015 11:32:43 -------
+select id,opzione from admin.elenco_iamm
+-------------------------
+------- DEBUG DEL 24/04/2015 11:32:43 -------
+select id,opzione from pe.elenco_tipopratica_all where not coalesce(id,0)=0
+-------------------------
+------- DEBUG DEL 24/04/2015 11:33:31 -------
+select id,opzione from admin.elenco_rdp
+-------------------------
+------- DEBUG DEL 24/04/2015 11:33:31 -------
+select id,opzione from admin.elenco_itec
+-------------------------
+------- DEBUG DEL 24/04/2015 11:33:31 -------
+select id,opzione from admin.elenco_iamm
+-------------------------
+------- DEBUG DEL 24/04/2015 11:33:31 -------
+select id,opzione from pe.elenco_tipopratica_all where not coalesce(id,0)=0
+-------------------------
+------- DEBUG DEL 24/04/2015 11:35:45 -------
+select id,opzione from pe.elenco_tiposcadenze where ordine>=0
+-------------------------
+------- DEBUG DEL 24/04/2015 11:39:29 -------
+select id,opzione from pe.elenco_tiposcadenze where ordine>=0
+-------------------------
+------- DEBUG DEL 24/04/2015 11:42:50 -------
+select id,opzione from admin.elenco_rdp
+-------------------------
+------- DEBUG DEL 24/04/2015 11:42:50 -------
+select id,opzione from admin.elenco_itec
+-------------------------
+------- DEBUG DEL 24/04/2015 11:42:50 -------
+select id,opzione from admin.elenco_iamm
+-------------------------
+------- DEBUG DEL 24/04/2015 11:42:50 -------
+select id,opzione from pe.elenco_tipopratica_all where not coalesce(id,0)=0
+-------------------------
+------- DEBUG DEL 24/04/2015 11:55:06 -------
+select id,opzione from stp.elenco_form
+-------------------------
+------- DEBUG DEL 24/04/2015 11:55:06 -------
+select id,opzione from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 24/04/2015 11:55:21 -------
+select id,opzione from stp.elenco_form
+-------------------------
+------- DEBUG DEL 24/04/2015 11:55:21 -------
+select id,opzione from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 24/04/2015 11:56:25 -------
+select id,opzione from stp.elenco_form
+-------------------------
+------- DEBUG DEL 24/04/2015 11:56:25 -------
+select id,opzione from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 24/04/2015 11:56:57 -------
+select id,opzione from stp.elenco_form
+-------------------------
+------- DEBUG DEL 24/04/2015 11:56:57 -------
+select id,opzione from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 24/04/2015 11:59:14 -------
+select id,opzione from pe.elenco_enti_edit
+-------------------------
+------- DEBUG DEL 24/04/2015 11:59:14 -------
+select id,opzione from admin.elenco_altriuffici where attivato=1
+-------------------------
+------- DEBUG DEL 24/04/2015 11:59:32 -------
+select id,opzione from pe.elenco_enti_edit
+-------------------------
+------- DEBUG DEL 24/04/2015 11:59:32 -------
+select id,opzione from admin.elenco_altriuffici where attivato=1
+-------------------------
+------- DEBUG DEL 24/04/2015 12:14:11 -------
+select id,opzione from pe.elenco_enti_edit
+-------------------------
+------- DEBUG DEL 24/04/2015 12:14:11 -------
+select id,opzione from admin.elenco_altriuffici where attivato=1
+-------------------------
+------- DEBUG DEL 24/04/2015 12:18:19 -------
+select id,opzione from admin.elenco_utenti_attivi
+-------------------------
+------- DEBUG DEL 24/04/2015 12:18:30 -------
+select id,opzione from admin.elenco_altriuffici where attivato=1
+-------------------------
+------- DEBUG DEL 24/04/2015 12:18:30 -------
+select id,opzione from pe.elenco_valoripareri
+-------------------------
+------- DEBUG DEL 27/04/2015 07:49:58 -------
+select id,opzione from pe.elenco_tipopratica where ordine>=0
+-------------------------
+------- DEBUG DEL 28/04/2015 11:19:32 -------
+select id,opzione from admin.elenco_rdp
+-------------------------
+------- DEBUG DEL 28/04/2015 11:19:32 -------
+select id,opzione from admin.elenco_itec
+-------------------------
+------- DEBUG DEL 28/04/2015 11:19:32 -------
+select id,opzione from admin.elenco_iamm
+-------------------------
+------- DEBUG DEL 28/04/2015 11:19:32 -------
+select id,opzione from pe.elenco_tipopratica_all where not coalesce(id,0)=0
+-------------------------
+------- DEBUG DEL 29/04/2015 08:26:47 -------
+select id,opzione from pe.elenco_tiposcadenze where ordine>=0
+-------------------------
+------- DEBUG DEL 29/04/2015 08:31:10 -------
+select id,opzione from admin.elenco_rdp
+-------------------------
+------- DEBUG DEL 29/04/2015 08:31:10 -------
+select id,opzione from admin.elenco_itec
+-------------------------
+------- DEBUG DEL 29/04/2015 08:31:10 -------
+select id,opzione from admin.elenco_iamm
+-------------------------
+------- DEBUG DEL 29/04/2015 08:31:10 -------
+select id,opzione from pe.elenco_tipopratica_all where not coalesce(id,0)=0
+-------------------------
+------- DEBUG DEL 29/04/2015 08:31:24 -------
+select id,opzione from pe.elenco_tiposcadenze where ordine>=0
+-------------------------
+------- DEBUG DEL 29/04/2015 08:40:32 -------
+select id,opzione from pe.elenco_origine_esposti
+-------------------------
+------- DEBUG DEL 29/04/2015 05:20:27 -------
+select id,opzione from admin.elenco_rdp
+-------------------------
+------- DEBUG DEL 29/04/2015 05:20:27 -------
+select id,opzione from admin.elenco_itec
+-------------------------
+------- DEBUG DEL 29/04/2015 05:20:27 -------
+select id,opzione from admin.elenco_iamm
+-------------------------
+------- DEBUG DEL 29/04/2015 05:20:27 -------
+select id,opzione from pe.elenco_tipopratica_all where not coalesce(id,0)=0
+-------------------------
+------- DEBUG DEL 11/05/2015 12:24:08 -------
+select id,opzione from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/05/2015 12:24:08 -------
+select id,opzione from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/05/2015 12:24:08 -------
+select id,opzione from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/05/2015 12:24:08 -------
+select id,opzione from admin.elenco_rdp
+-------------------------
+------- DEBUG DEL 11/05/2015 12:24:08 -------
+select id,opzione from admin.elenco_itec
+-------------------------
+------- DEBUG DEL 11/05/2015 12:24:08 -------
+select id,opzione from admin.elenco_iamm
+-------------------------
+------- DEBUG DEL 11/05/2015 12:24:08 -------
+select id,opzione from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/05/2015 12:24:08 -------
+select id,opzione from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/05/2015 12:24:08 -------
+select id,opzione from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/05/2015 12:24:08 -------
+select id,opzione from admin.elenco_rdp
+-------------------------
+------- DEBUG DEL 11/05/2015 12:24:08 -------
+select id,opzione from admin.elenco_itec
+-------------------------
+------- DEBUG DEL 11/05/2015 12:24:08 -------
+select id,opzione from admin.elenco_iamm
+-------------------------
+------- DEBUG DEL 28/05/2015 10:23:15 -------
+select id,opzione from pe.elenco_direzioni_documenti
+-------------------------
+------- DEBUG DEL 28/05/2015 10:23:15 -------
+select id,opzione from pe.elenco_tipo_documenti
+-------------------------
+------- DEBUG DEL 28/05/2015 10:24:20 -------
+select id,opzione from stp.elenco_form
+-------------------------
+------- DEBUG DEL 28/05/2015 10:24:20 -------
+select id,opzione from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 28/05/2015 10:26:48 -------
+select id,opzione from vincoli.elenco_vincolipratiche
+-------------------------
+------- DEBUG DEL 28/05/2015 10:26:48 -------
+select id,opzione from 
+-------------------------
+------- DEBUG DEL 28/05/2015 10:26:48 -------
+select id,opzione from 
+-------------------------
+------- DEBUG DEL 28/05/2015 10:38:51 -------
+select id,opzione from stp.elenco_form
+-------------------------
+------- DEBUG DEL 28/05/2015 10:38:51 -------
+select id,opzione from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 28/05/2015 10:42:18 -------
+select id,opzione from stp.elenco_form
+-------------------------
+------- DEBUG DEL 28/05/2015 10:42:18 -------
+select id,opzione from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 28/05/2015 11:03:41 -------
+select id,opzione from stp.elenco_form
+-------------------------
+------- DEBUG DEL 28/05/2015 11:03:41 -------
+select id,opzione from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 28/05/2015 11:06:16 -------
+select id,opzione from stp.elenco_form
+-------------------------
+------- DEBUG DEL 28/05/2015 11:06:16 -------
+select id,opzione from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 28/05/2015 11:20:40 -------
+select id,opzione from stp.elenco_form
+-------------------------
+------- DEBUG DEL 28/05/2015 11:20:40 -------
+select id,opzione from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 28/05/2015 11:22:50 -------
+select id,opzione from stp.elenco_form
+-------------------------
+------- DEBUG DEL 28/05/2015 11:22:50 -------
+select id,opzione from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 28/05/2015 11:45:17 -------
+select id,opzione from stp.elenco_form
+-------------------------
+------- DEBUG DEL 28/05/2015 11:45:17 -------
+select id,opzione from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 28/05/2015 11:45:57 -------
+select id,opzione from stp.elenco_form
+-------------------------
+------- DEBUG DEL 28/05/2015 11:45:57 -------
+select id,opzione from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 28/05/2015 11:55:49 -------
+select id,opzione from stp.elenco_form
+-------------------------
+------- DEBUG DEL 28/05/2015 11:55:49 -------
+select id,opzione from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 28/05/2015 12:00:07 -------
+select id,opzione from stp.elenco_form
+-------------------------
+------- DEBUG DEL 28/05/2015 12:00:07 -------
+select id,opzione from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 28/05/2015 12:14:40 -------
+select id,opzione from stp.elenco_form
+-------------------------
+------- DEBUG DEL 28/05/2015 12:14:40 -------
+select id,opzione from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 28/05/2015 12:23:38 -------
+select id,opzione from stp.elenco_form
+-------------------------
+------- DEBUG DEL 28/05/2015 12:23:38 -------
+select id,opzione from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 28/05/2015 12:27:29 -------
+select id,opzione from stp.elenco_form
+-------------------------
+------- DEBUG DEL 28/05/2015 12:27:29 -------
+select id,opzione from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 28/05/2015 12:27:56 -------
+select id,opzione from stp.elenco_form
+-------------------------
+------- DEBUG DEL 28/05/2015 12:27:56 -------
+select id,opzione from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 28/05/2015 12:30:19 -------
+select id,opzione from stp.elenco_form
+-------------------------
+------- DEBUG DEL 28/05/2015 12:30:19 -------
+select id,opzione from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 28/05/2015 12:31:49 -------
+select id,opzione from stp.elenco_form
+-------------------------
+------- DEBUG DEL 28/05/2015 12:31:49 -------
+select id,opzione from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 28/05/2015 12:34:38 -------
+select id,opzione from stp.elenco_form
+-------------------------
+------- DEBUG DEL 28/05/2015 12:34:38 -------
+select id,opzione from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 28/05/2015 12:57:12 -------
+select id,opzione from stp.elenco_form
+-------------------------
+------- DEBUG DEL 28/05/2015 12:57:12 -------
+select id,opzione from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 28/05/2015 01:01:03 -------
+select id,opzione from stp.elenco_form
+-------------------------
+------- DEBUG DEL 28/05/2015 01:01:03 -------
+select id,opzione from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 28/05/2015 01:01:12 -------
+select id,opzione from stp.elenco_form
+-------------------------
+------- DEBUG DEL 28/05/2015 01:01:12 -------
+select id,opzione from pe.elenco_tipipratiche_stampe
+-------------------------

@@ -1,0 +1,978 @@
+
+7-05-07	09:44:40
+	SELECT numero FROM pe.pareri left join pe.avvioproc on pareri.pratica=avvioproc.pratica WHERE pareri.id=640
+7-05-07	11:54:00
+	insert into pe.avvioproc (tipo,intervento,numero,data_presentazione,protocollo,data_prot,protocollo_int,data_prot_int,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,chk,uidins,tmsins) values (10000,80,NULL,'26/03/2007','1640/2007','26/03/2007',NULL,NULL,10,NULL,NULL,NULL,'opere interne',NULL,1,13,1178531640)
+7-05-07	11:54:00
+	select currval ('pe.avvioproc_id_seq')
+7-05-07	11:54:00
+	sessione ho 7925
+7-05-07	11:56:08
+	insert into pe.soggetti
+ (cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albonumero,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('ROSSI','Mirella','VIA PRIVATA ARGIROFFO 2/12','CHIAVARI','GE','16043',NULL,NULL,'PIEVE LIGURE','GE',NULL,'M','RSSMLL46A70D969K',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,1,0,0,0,0,0,0,1,7925,1,13,1178531768)
+7-05-07	11:56:09
+	select currval ('pe.soggetti_id_seq')
+7-05-07	11:56:09
+	sessione ho 5321
+7-05-07	11:57:09
+	insert into pe.soggetti
+ (app,cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albo,albonumero,alboprov,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('Arch.','ROSASCO','Enrico','VIA ROBINO 105/12','GENOVA','GE','16100','010 870101 - 348 2651101',NULL,NULL,NULL,NULL,'M',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'03594930103',NULL,NULL,NULL,NULL,'Ordine degli Architetti','1168','GE',NULL,0,0,0,1,1,0,0,0,1,7925,1,13,1178531829)
+7-05-07	11:57:10
+	select currval ('pe.soggetti_id_seq')
+7-05-07	11:57:10
+	sessione ho 5322
+7-05-07	11:57:48
+	insert into pe.indirizzi (via,civico,interno,scala,pratica,chk,uidins,tmsins) values ('Via Besso','14','3',NULL,7925,1,13,1178531868)
+7-05-07	11:57:48
+	select currval ('pe.indirizzi_id_seq')
+7-05-07	11:57:48
+	sessione ho 2520
+7-05-07	11:58:07
+	insert into pe.cterreni (foglio,mappale,sub,note,pratica,chk,uidins,tmsins) values ('6','1287',NULL,NULL,7925,1,13,1178531887)
+7-05-07	11:58:08
+	select currval ('pe.cterreni_id_seq')
+7-05-07	11:58:08
+	sessione ho 3062
+7-05-07	12:06:51
+	insert into pe.avvioproc (tipo,intervento,numero,data_presentazione,protocollo,data_prot,protocollo_int,data_prot_int,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,chk,uidins,tmsins) values (10000,80,NULL,'26/03/2007','1641/2007','26/03/2007',NULL,NULL,10,NULL,NULL,NULL,'OPERE INTERNE',NULL,1,13,1178532411)
+7-05-07	12:06:51
+	select currval ('pe.avvioproc_id_seq')
+7-05-07	12:06:51
+	sessione ho 7926
+7-05-07	12:08:37
+	insert into pe.soggetti
+ (cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albonumero,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('Mirelli','Marina Maria','via dei Franzone 6/9','Genova','Ge',NULL,NULL,NULL,'Genova','Ge','27/06/1950','F','MRLMNM50H67D969F','Proprietaria',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,1,0,0,0,0,0,0,1,7926,1,13,1178532517)
+7-05-07	12:08:38
+	select currval ('pe.soggetti_id_seq')
+7-05-07	12:08:38
+	sessione ho 5323
+7-05-07	12:09:02
+	insert into pe.soggetti
+ (app,cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albonumero,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('Arch.','ROSASCO','Enrico','VIA ROBINO 105/12','GENOVA','GE','16100','010 870101 - 348 2651101',NULL,NULL,NULL,NULL,'M',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'03594930103',NULL,NULL,NULL,NULL,'1168',NULL,0,0,0,1,1,0,0,0,1,7926,1,13,1178532542)
+7-05-07	12:09:02
+	select currval ('pe.soggetti_id_seq')
+7-05-07	12:09:02
+	sessione ho 5324
+7-05-07	12:09:31
+	insert into pe.indirizzi (via,civico,interno,scala,pratica,chk,uidins,tmsins) values ('Via Besso','14','2',NULL,7926,1,13,1178532571)
+7-05-07	12:09:32
+	select currval ('pe.indirizzi_id_seq')
+7-05-07	12:09:32
+	sessione ho 2521
+7-05-07	12:09:48
+	insert into pe.cterreni (foglio,mappale,sub,note,pratica,chk,uidins,tmsins) values ('6','1287',NULL,NULL,7926,1,13,1178532588)
+7-05-07	12:09:48
+	select currval ('pe.cterreni_id_seq')
+7-05-07	12:09:48
+	sessione ho 3063
+7-05-07	13:09:55
+	insert into pe.avvioproc (tipo,intervento,numero,data_presentazione,protocollo,data_prot,protocollo_int,data_prot_int,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,chk,uidins,tmsins) values (10100,0,NULL,'27/03/2007','1688/2007','27/03/2007',NULL,NULL,10,NULL,NULL,NULL,'Variante alla DIA 29/2006',NULL,1,13,1178536195)
+7-05-07	13:09:56
+	select currval ('pe.avvioproc_id_seq')
+7-05-07	13:09:56
+	sessione ho 7927
+7-05-07	13:10:19
+	insert into pe.soggetti
+ (cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albonumero,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('DAMIANI','Luca','via S. Giovanni Bono 3','CAMOGLI','GE','16032',NULL,NULL,'GENOVA','GE','28/04/1974','M','DMNLCU74D28D969T',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,0,0,0,0,1,7927,1,13,1178536219)
+7-05-07	13:10:19
+	select currval ('pe.soggetti_id_seq')
+7-05-07	13:10:19
+	sessione ho 5325
+7-05-07	13:10:58
+	insert into pe.soggetti
+ (app,cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albo,albonumero,alboprov,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('Geom.','VIACAVA','Michele','via XX Settembre 15','CAMOGLI','GE','16032',NULL,NULL,'GENOVA','GE','27/11/1960','M','VCVMHL60S27D969D',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Collegio dei Geometri','2359','GE',NULL,0,0,0,1,1,0,0,0,1,7927,1,13,1178536258)
+7-05-07	13:10:58
+	select currval ('pe.soggetti_id_seq')
+7-05-07	13:10:58
+	sessione ho 5326
+7-05-07	13:11:21
+	insert into pe.indirizzi (via,civico,interno,scala,pratica,chk,uidins,tmsins) values ('via San Bernardo','6',NULL,NULL,7927,1,13,1178536281)
+7-05-07	13:11:22
+	select currval ('pe.indirizzi_id_seq')
+7-05-07	13:11:22
+	sessione ho 2522
+7-05-07	13:11:35
+	insert into pe.cterreni (foglio,mappale,sub,note,pratica,chk,uidins,tmsins) values ('5','437',NULL,NULL,7927,1,13,1178536295)
+7-05-07	13:11:35
+	select currval ('pe.cterreni_id_seq')
+7-05-07	13:11:35
+	sessione ho 3064
+7-05-07	13:27:36
+	insert into pe.avvioproc (tipo,intervento,numero,data_presentazione,protocollo,data_prot,protocollo_int,data_prot_int,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,chk,uidins,tmsins) values (11000,80,NULL,'05/04/2007','1903/2007','05/04/2007',NULL,NULL,10,NULL,NULL,NULL,'riqualificazione manufatto agricolo',NULL,1,13,1178537256)
+7-05-07	13:27:36
+	select currval ('pe.avvioproc_id_seq')
+7-05-07	13:27:36
+	sessione ho 7928
+7-05-07	13:28:02
+	insert into pe.soggetti
+ (app,cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albonumero,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('Geom.','FABBRI','CLAUDIO',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'GE',NULL,'M','FBBCLD51P17G184D',NULL,'PIEVEMARE S.r.l.',NULL,'P.zza della Vittoria 12/17','GENOVA','GE','16100','01374750998',NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,0,0,0,0,1,7928,1,13,1178537282)
+7-05-07	13:28:02
+	select currval ('pe.soggetti_id_seq')
+7-05-07	13:28:02
+	sessione ho 5327
+7-05-07	13:28:26
+	insert into pe.soggetti
+ (app,cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albonumero,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('Arch.','FABBRI','Claudia','VIA 25 APRILE 107','PIEVE LIGURE','GE','16030','010 3460010',NULL,NULL,NULL,NULL,'F','FBBCLD78B61D969B',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'3279',NULL,0,0,0,1,0,0,0,0,1,7928,1,13,1178537306)
+7-05-07	13:28:27
+	select currval ('pe.soggetti_id_seq')
+7-05-07	13:28:27
+	sessione ho 5328
+7-05-07	13:28:49
+	insert into pe.indirizzi (via,civico,interno,scala,pratica,chk,uidins,tmsins) values ('via Banchero',NULL,NULL,NULL,7928,1,13,1178537329)
+7-05-07	13:28:50
+	select currval ('pe.indirizzi_id_seq')
+7-05-07	13:28:50
+	sessione ho 2523
+7-05-07	13:29:02
+	insert into pe.cterreni (foglio,mappale,sub,note,pratica,chk,uidins,tmsins) values ('5','10',NULL,NULL,7928,1,13,1178537342)
+7-05-07	13:29:03
+	select currval ('pe.cterreni_id_seq')
+7-05-07	13:29:03
+	sessione ho 3065
+7-05-07	14:36:04
+	insert into pe.avvioproc (tipo,intervento,numero,data_presentazione,protocollo,data_prot,protocollo_int,data_prot_int,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,chk,uidins,tmsins) values (11000,70,NULL,'10/04/2007','1971/2007','10/04/2007',NULL,NULL,10,NULL,NULL,NULL,'ampliamento edificio di civile abitazione',NULL,1,13,1178541364)
+7-05-07	14:36:04
+	select currval ('pe.avvioproc_id_seq')
+7-05-07	14:36:04
+	sessione ho 7929
+7-05-07	14:36:27
+	insert into pe.soggetti
+ (cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albonumero,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('COSTA','ADELIA','VIA ROMA, 186','PIEVE LIGURE','GE','16030',NULL,NULL,'BOGLIASCO','GE','29/05/1942','F','CSTDLA42E69A922P','Proprietaria',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,1,1,0,0,0,0,0,1,7929,1,13,1178541387)
+7-05-07	14:36:27
+	select currval ('pe.soggetti_id_seq')
+7-05-07	14:36:27
+	sessione ho 5329
+7-05-07	14:37:30
+	insert into pe.soggetti
+ (app,cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albonumero,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('Geom.','BELLAVISTA','ROBERTO',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'GE',NULL,'M','BLLRRT65R26F839W',NULL,'STUDIO TECNICO',NULL,'VIA BIAGIO ASSERETO, 53','RECCO','GE','16036',NULL,NULL,NULL,NULL,NULL,'2380',NULL,0,0,0,1,0,0,0,0,1,7929,1,13,1178541450)
+7-05-07	14:37:30
+	select currval ('pe.soggetti_id_seq')
+7-05-07	14:37:30
+	sessione ho 5330
+7-05-07	14:37:53
+	insert into pe.indirizzi (via,civico,interno,scala,pratica,chk,uidins,tmsins) values ('Via Roma','186',NULL,NULL,7929,1,13,1178541473)
+7-05-07	14:37:54
+	select currval ('pe.indirizzi_id_seq')
+7-05-07	14:37:54
+	sessione ho 2524
+7-05-07	14:38:09
+	insert into pe.cterreni (foglio,mappale,sub,note,pratica,chk,uidins,tmsins) values ('5','386',NULL,NULL,7929,1,13,1178541489)
+7-05-07	14:38:10
+	select currval ('pe.cterreni_id_seq')
+7-05-07	14:38:10
+	sessione ho 3066
+7-05-07	14:52:37
+	insert into pe.avvioproc (tipo,intervento,numero,data_presentazione,protocollo,data_prot,protocollo_int,data_prot_int,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,chk,uidins,tmsins) values (11100,80,NULL,'16/04/2007','2077/2007','16/04/2007',NULL,NULL,10,NULL,NULL,NULL,'variante al p.c. 42/2003',NULL,1,13,1178542357)
+7-05-07	14:52:38
+	select currval ('pe.avvioproc_id_seq')
+7-05-07	14:52:38
+	sessione ho 7930
+7-05-07	14:55:12
+	insert into pe.soggetti
+ (cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albonumero,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('Bisso','Franca','via alla Chiesa 21','Pieve Ligure','Ge','16030',NULL,NULL,'Etiopia',NULL,'27/01/1941','F','BSIFNC41A67Z315O','Proprietaria',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,1,0,0,0,0,0,0,1,7930,1,13,1178542512)
+7-05-07	14:55:14
+	select currval ('pe.soggetti_id_seq')
+7-05-07	14:55:14
+	sessione ho 5331
+7-05-07	14:55:36
+	insert into pe.soggetti
+ (app,cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albo,albonumero,alboprov,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('Geom.','VIACAVA','Michele','via XX Settembre 15','CAMOGLI','GE','16032',NULL,NULL,'GENOVA','GE','27/11/1960','M','VCVMHL60S27D969D',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Collegio dei Geometri','2359','GE',NULL,0,0,0,1,1,0,0,0,1,7930,1,13,1178542536)
+7-05-07	14:55:36
+	select currval ('pe.soggetti_id_seq')
+7-05-07	14:55:36
+	sessione ho 5332
+7-05-07	14:56:13
+	insert into pe.cterreni (foglio,mappale,sub,note,pratica,chk,uidins,tmsins) values ('5','211',NULL,NULL,7930,1,13,1178542573)
+7-05-07	14:56:13
+	select currval ('pe.cterreni_id_seq')
+7-05-07	14:56:13
+	sessione ho 3067
+7-05-07	14:56:39
+	insert into pe.cterreni (foglio,mappale,sub,note,pratica,chk,uidins,tmsins) values ('5','487',NULL,NULL,7930,1,13,1178542599)
+7-05-07	14:56:40
+	select currval ('pe.cterreni_id_seq')
+7-05-07	14:56:40
+	sessione ho 3068
+7-05-07	15:47:40
+	insert into pe.avvioproc (tipo,intervento,numero,data_presentazione,protocollo,data_prot,protocollo_int,data_prot_int,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,chk,uidins,tmsins) values (11000,80,NULL,'17/04/2007','2126/2007','17/04/2007',NULL,NULL,10,NULL,NULL,NULL,'RIQUALIFICAZIONE MAGAZZINO AGRICOLO',NULL,1,13,1178545660)
+7-05-07	15:47:40
+	select currval ('pe.avvioproc_id_seq')
+7-05-07	15:47:40
+	sessione ho 7931
+7-05-07	15:47:59
+	insert into pe.soggetti
+ (cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albonumero,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('CAMICIONE','Alessandro','viale G. Franchini 1E/3','GENOVA','GE','16100',NULL,NULL,'RECCO','GE','30/08/1940','M','CMCLSN40M30H212D','Proprietario',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,1,1,0,0,0,0,0,1,7931,1,13,1178545679)
+7-05-07	15:48:00
+	select currval ('pe.soggetti_id_seq')
+7-05-07	15:48:00
+	sessione ho 5333
+7-05-07	15:48:35
+	insert into pe.soggetti
+ (app,cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albo,albonumero,alboprov,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('Geom.','MARSANO','Giorgio','V.LE FRANCHINI, 20R','GENOVA','GE','16167',NULL,NULL,NULL,'GE',NULL,'M','MRSGRG70M03D969E',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Collegio dei Geometri','2538','GE',NULL,0,0,0,1,0,0,0,0,1,7931,1,13,1178545715)
+7-05-07	15:48:35
+	select currval ('pe.soggetti_id_seq')
+7-05-07	15:48:35
+	sessione ho 5334
+7-05-07	15:48:53
+	insert into pe.indirizzi (via,civico,interno,scala,pratica,chk,uidins,tmsins) values ('Via Pelato','3',NULL,NULL,7931,1,13,1178545733)
+7-05-07	15:48:53
+	select currval ('pe.indirizzi_id_seq')
+7-05-07	15:48:53
+	sessione ho 2525
+7-05-07	15:49:06
+	insert into pe.cterreni (foglio,mappale,sub,note,pratica,chk,uidins,tmsins) values ('5','156',NULL,NULL,7931,1,13,1178545746)
+7-05-07	15:49:06
+	select currval ('pe.cterreni_id_seq')
+7-05-07	15:49:06
+	sessione ho 3069
+7-05-07	16:20:54
+	insert into pe.cterreni (foglio,mappale,sub,note,pratica,chk,uidins,tmsins) values ('7','668',NULL,NULL,7897,1,13,1178547654)
+7-05-07	16:20:54
+	select currval ('pe.cterreni_id_seq')
+7-05-07	16:20:54
+	sessione ho 3070
+14-05-07	08:45:37
+	SELECT numero FROM pe.pareri left join pe.avvioproc on pareri.pratica=avvioproc.pratica WHERE pareri.id=669
+14-05-07	10:20:08
+	SELECT numero FROM pe.pareri left join pe.avvioproc on pareri.pratica=avvioproc.pratica WHERE pareri.id=665
+14-05-07	11:37:00
+	SELECT numero FROM pe.pareri left join pe.avvioproc on pareri.pratica=avvioproc.pratica WHERE pareri.id=666
+14-05-07	12:05:55
+	SELECT numero FROM pe.pareri left join pe.avvioproc on pareri.pratica=avvioproc.pratica WHERE pareri.id=667
+14-05-07	12:19:55
+	SELECT numero FROM pe.pareri left join pe.avvioproc on pareri.pratica=avvioproc.pratica WHERE pareri.id=668
+14-05-07	12:34:58
+	SELECT numero FROM pe.pareri left join pe.avvioproc on pareri.pratica=avvioproc.pratica WHERE pareri.id=670
+14-05-07	12:40:21
+	SELECT numero FROM pe.pareri left join pe.avvioproc on pareri.pratica=avvioproc.pratica WHERE pareri.id=671
+14-05-07	13:58:41
+	SELECT numero FROM pe.pareri left join pe.avvioproc on pareri.pratica=avvioproc.pratica WHERE pareri.id=672
+14-05-07	14:10:30
+	SELECT numero FROM pe.pareri left join pe.avvioproc on pareri.pratica=avvioproc.pratica WHERE pareri.id=673
+14-05-07	14:47:46
+	SELECT numero FROM pe.pareri left join pe.avvioproc on pareri.pratica=avvioproc.pratica WHERE pareri.id=674
+14-05-07	15:32:33
+	SELECT numero FROM pe.pareri left join pe.avvioproc on pareri.pratica=avvioproc.pratica WHERE pareri.id=675
+16-05-07	14:00:26
+	SELECT numero FROM pe.pareri left join pe.avvioproc on pareri.pratica=avvioproc.pratica WHERE pareri.id=673
+16-05-07	14:43:41
+	SELECT numero FROM pe.pareri left join pe.avvioproc on pareri.pratica=avvioproc.pratica WHERE pareri.id=676
+16-05-07	14:57:13
+	SELECT numero FROM pe.pareri left join pe.avvioproc on pareri.pratica=avvioproc.pratica WHERE pareri.id=665
+16-05-07	14:59:08
+	SELECT numero FROM pe.pareri left join pe.avvioproc on pareri.pratica=avvioproc.pratica WHERE pareri.id=669
+16-05-07	14:59:52
+	SELECT numero FROM pe.pareri left join pe.avvioproc on pareri.pratica=avvioproc.pratica WHERE pareri.id=670
+16-05-07	15:03:04
+	SELECT numero FROM pe.pareri left join pe.avvioproc on pareri.pratica=avvioproc.pratica WHERE pareri.id=669
+16-05-07	15:03:21
+	SELECT numero FROM pe.pareri left join pe.avvioproc on pareri.pratica=avvioproc.pratica WHERE pareri.id=668
+19-05-07	08:41:04
+	insert into pe.avvioproc (tipo,intervento,numero,data_presentazione,protocollo,data_prot,protocollo_int,data_prot_int,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,chk,uidins,tmsins) values (11000,70,NULL,'17/04/2007','2141/2007','17/04/2007',NULL,NULL,10,NULL,NULL,NULL,'ampliamento unità abitativa',NULL,1,13,1179556864)
+19-05-07	08:41:04
+	select currval ('pe.avvioproc_id_seq')
+19-05-07	08:41:04
+	sessione ho 7932
+19-05-07	08:43:07
+	insert into pe.soggetti
+ (cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albonumero,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('raggio','gianluca','via alla Chiesa 45','Pieve Ligure','ge','16030',NULL,NULL,'genova','ge','07/11/1968','M','RGGGLC68S07D969O','Proprietario',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,1,0,0,0,0,0,0,1,7932,1,13,1179556987)
+19-05-07	08:43:08
+	select currval ('pe.soggetti_id_seq')
+19-05-07	08:43:08
+	sessione ho 5335
+19-05-07	08:45:21
+	insert into pe.soggetti
+ (app,cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albo,albonumero,alboprov,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('Geom.','BELLAVISTA','ROBERTO',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'GE',NULL,'M','BLLRRT65R26F839W',NULL,NULL,NULL,'via cavour 4','Bogliasco','GE','16031',NULL,NULL,NULL,NULL,NULL,'Collegio dei Geometri','2380','GE',NULL,0,0,0,1,0,0,0,0,1,7932,1,13,1179557121)
+19-05-07	08:45:21
+	select currval ('pe.soggetti_id_seq')
+19-05-07	08:45:21
+	sessione ho 5336
+19-05-07	08:46:08
+	insert into pe.indirizzi (via,civico,interno,scala,pratica,chk,uidins,tmsins) values ('Via alla Chiesa','45',NULL,NULL,7932,1,13,1179557168)
+19-05-07	08:46:08
+	select currval ('pe.indirizzi_id_seq')
+19-05-07	08:46:08
+	sessione ho 2526
+19-05-07	08:51:00
+	insert into pe.cterreni (foglio,mappale,sub,note,pratica,chk,uidins,tmsins) values ('5','250',NULL,NULL,7932,1,13,1179557460)
+19-05-07	08:51:00
+	select currval ('pe.cterreni_id_seq')
+19-05-07	08:51:00
+	sessione ho 3072
+19-05-07	09:17:57
+	insert into pe.avvioproc (tipo,intervento,numero,data_presentazione,protocollo,data_prot,protocollo_int,data_prot_int,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,chk,uidins,tmsins) values (10050,0,NULL,'19/04/2007','2193/2007','19/04/2007',NULL,NULL,10,NULL,NULL,NULL,'realizzazione di gazebo in legno',NULL,1,13,1179559077)
+19-05-07	09:17:57
+	select currval ('pe.avvioproc_id_seq')
+19-05-07	09:17:57
+	sessione ho 7933
+19-05-07	09:18:40
+	insert into pe.soggetti
+ (cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albonumero,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('ROSA','GIOVANNI','VIA ROMA 297','PIEVE LIGURE',NULL,'16030',NULL,NULL,NULL,NULL,NULL,'M','RSOGNN35T14H384N',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,1,0,0,0,0,0,0,1,7933,1,13,1179559120)
+19-05-07	09:18:41
+	select currval ('pe.soggetti_id_seq')
+19-05-07	09:18:41
+	sessione ho 5337
+19-05-07	09:19:09
+	insert into pe.soggetti
+ (cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albonumero,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('KOSIR','ANNA MARIA','VIA ROMA 297','PIEVE LIGURE',NULL,'16030',NULL,NULL,NULL,NULL,NULL,'M','KSRNMR39C68D620N',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,1,0,0,0,0,0,0,1,7933,1,13,1179559149)
+19-05-07	09:19:09
+	select currval ('pe.soggetti_id_seq')
+19-05-07	09:19:09
+	sessione ho 5338
+19-05-07	09:22:31
+	insert into pe.soggetti
+ (cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albo,albonumero,alboprov,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('canepa','alessandro','VIA ROCCATAGLIATA CECCARDI 12/21','Lavagna','ge',NULL,NULL,NULL,NULL,NULL,NULL,'M','CNPLSN69C11I225L',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Collegio dei Geometri','2688','GE',NULL,0,0,0,1,0,0,0,0,1,7933,1,13,1179559351)
+19-05-07	09:22:31
+	select currval ('pe.soggetti_id_seq')
+19-05-07	09:22:31
+	sessione ho 5339
+19-05-07	09:23:18
+	insert into pe.indirizzi (via,civico,interno,scala,pratica,chk,uidins,tmsins) values ('Via Roma','295',NULL,NULL,7933,1,13,1179559398)
+19-05-07	09:23:18
+	select currval ('pe.indirizzi_id_seq')
+19-05-07	09:23:18
+	sessione ho 2527
+19-05-07	09:23:29
+	delete from pe.indirizzi where id=2527;
+19-05-07	09:23:44
+	insert into pe.indirizzi (via,civico,interno,scala,pratica,chk,uidins,tmsins) values ('Via Roma','297',NULL,NULL,7933,1,13,1179559424)
+19-05-07	09:23:44
+	select currval ('pe.indirizzi_id_seq')
+19-05-07	09:23:44
+	sessione ho 2528
+19-05-07	09:24:03
+	insert into pe.cterreni (foglio,mappale,sub,note,pratica,chk,uidins,tmsins) values ('5','970',NULL,NULL,7933,1,13,1179559443)
+19-05-07	09:24:03
+	select currval ('pe.cterreni_id_seq')
+19-05-07	09:24:03
+	sessione ho 3073
+19-05-07	09:32:28
+	insert into pe.avvioproc (tipo,intervento,numero,data_presentazione,protocollo,data_prot,protocollo_int,data_prot_int,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,chk,uidins,tmsins) values (10050,60,NULL,'24/04/2007','2363/2007','24/04/2007',NULL,NULL,10,NULL,NULL,NULL,'installazione pergolato e cancellata',NULL,1,13,1179559948)
+19-05-07	09:32:29
+	select currval ('pe.avvioproc_id_seq')
+19-05-07	09:32:29
+	sessione ho 7934
+19-05-07	09:32:56
+	insert into pe.soggetti
+ (cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albonumero,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('CHIESA','Ivana','VIA M. MASSONE, 2','PIEVE LIGURE','GE','16030',NULL,NULL,NULL,NULL,NULL,'F','CHSVNI49L52D969A','Proprietaria',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,1,1,0,0,0,0,0,1,7934,1,13,1179559976)
+19-05-07	09:32:56
+	select currval ('pe.soggetti_id_seq')
+19-05-07	09:32:56
+	sessione ho 5340
+19-05-07	09:33:27
+	insert into pe.soggetti
+ (app,cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albo,albonumero,alboprov,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('Geom.','ROMANO','Danilo','VIA VITTORIO VENETO 39/5','RECCO','GE','16036',NULL,NULL,'PIEVE LIGURE','GE',NULL,'M',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Collegio dei Geometri','2724','GE',NULL,0,0,0,1,0,0,0,0,1,7934,1,13,1179560007)
+19-05-07	09:33:28
+	select currval ('pe.soggetti_id_seq')
+19-05-07	09:33:28
+	sessione ho 5341
+19-05-07	09:33:52
+	insert into pe.indirizzi (via,civico,interno,scala,pratica,chk,uidins,tmsins) values ('via Massone','2',NULL,NULL,7934,1,13,1179560032)
+19-05-07	09:33:52
+	select currval ('pe.indirizzi_id_seq')
+19-05-07	09:33:52
+	sessione ho 2529
+19-05-07	09:34:11
+	insert into pe.cterreni (foglio,mappale,sub,note,pratica,chk,uidins,tmsins) values ('3','437',NULL,NULL,7934,1,13,1179560051)
+19-05-07	09:34:11
+	select currval ('pe.cterreni_id_seq')
+19-05-07	09:34:11
+	sessione ho 3074
+19-05-07	09:34:26
+	insert into pe.cterreni (foglio,mappale,sub,note,pratica,chk,uidins,tmsins) values ('3','440',NULL,NULL,7934,1,13,1179560066)
+19-05-07	09:34:26
+	select currval ('pe.cterreni_id_seq')
+19-05-07	09:34:26
+	sessione ho 3075
+19-05-07	10:02:46
+	insert into pe.avvioproc (tipo,intervento,numero,data_presentazione,protocollo,data_prot,protocollo_int,data_prot_int,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,chk,uidins,tmsins) values (11100,60,NULL,'03/05/2007','2486/2007','03/05/2007',NULL,NULL,10,NULL,NULL,NULL,'variante al P.C. 20/2002 (spostamento sedime locale agricolo interrato)',NULL,1,13,1179561766)
+19-05-07	10:02:46
+	select currval ('pe.avvioproc_id_seq')
+19-05-07	10:02:46
+	sessione ho 7935
+19-05-07	10:03:11
+	insert into pe.soggetti
+ (cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albonumero,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('FEMIA','VINCENZO',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'GE',NULL,'M','FMEVCN49A14I725M',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,1,0,0,0,0,0,0,1,7935,1,13,1179561791)
+19-05-07	10:03:11
+	select currval ('pe.soggetti_id_seq')
+19-05-07	10:03:11
+	sessione ho 5342
+19-05-07	10:03:38
+	insert into pe.soggetti
+ (app,cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albo,albonumero,alboprov,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('Geom.','BELLAVISTA','ROBERTO',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'GE',NULL,'M','BLLRRT65R26F839W',NULL,NULL,NULL,'via cavour 4','Bogliasco','GE','16031',NULL,NULL,NULL,NULL,NULL,'Collegio dei Geometri','2380','GE',NULL,0,0,0,1,0,0,0,0,1,7935,1,13,1179561818)
+19-05-07	10:03:38
+	select currval ('pe.soggetti_id_seq')
+19-05-07	10:03:38
+	sessione ho 5343
+19-05-07	10:04:24
+	insert into pe.indirizzi (via,civico,interno,scala,pratica,chk,uidins,tmsins) values ('Via delle Chiappe',NULL,NULL,NULL,7935,1,13,1179561864)
+19-05-07	10:04:25
+	select currval ('pe.indirizzi_id_seq')
+19-05-07	10:04:25
+	sessione ho 2530
+19-05-07	10:04:39
+	insert into pe.cterreni (foglio,mappale,sub,note,pratica,chk,uidins,tmsins) values ('3','933',NULL,NULL,7935,1,13,1179561879)
+19-05-07	10:04:40
+	select currval ('pe.cterreni_id_seq')
+19-05-07	10:04:40
+	sessione ho 3076
+19-05-07	10:09:55
+	delete from pe.cterreni where id=3076;
+19-05-07	10:10:04
+	insert into pe.cterreni (foglio,mappale,sub,note,pratica,chk,uidins,tmsins) values ('3','981',NULL,NULL,7935,1,13,1179562204)
+19-05-07	10:10:04
+	select currval ('pe.cterreni_id_seq')
+19-05-07	10:10:04
+	sessione ho 3077
+19-05-07	10:26:56
+	insert into pe.avvioproc (tipo,intervento,numero,data_presentazione,protocollo,data_prot,protocollo_int,data_prot_int,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,chk,uidins,tmsins) values (10050,60,NULL,'08/05/2007','2566/2007','08/05/2007',NULL,NULL,10,NULL,NULL,NULL,'realizzazione piscina privata',NULL,1,13,1179563216)
+19-05-07	10:26:57
+	select currval ('pe.avvioproc_id_seq')
+19-05-07	10:26:57
+	sessione ho 7936
+19-05-07	10:42:38
+	insert into pe.soggetti
+ (cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albonumero,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('consigliere','claudio','via Pollarola 8','Pieve Ligure','ge','16030',NULL,NULL,'Pieve Ligure',NULL,'18/02/1955','M','CNSCLD55B18G646N',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,1,0,0,0,0,0,0,1,7936,1,13,1179564158)
+19-05-07	10:42:39
+	select currval ('pe.soggetti_id_seq')
+19-05-07	10:42:39
+	sessione ho 5344
+19-05-07	10:43:21
+	insert into pe.soggetti
+ (app,cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albo,albonumero,alboprov,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('Arch.','FANTONI','Piero','via S. Lorenzo 8/26','Pieve Ligure','GE','16030',NULL,NULL,NULL,'GE',NULL,'M','FNTPRI54M16D969R',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Ordine degli Architetti','2147','GE',NULL,0,0,0,1,0,0,0,0,1,7936,1,13,1179564201)
+19-05-07	10:43:22
+	select currval ('pe.soggetti_id_seq')
+19-05-07	10:43:22
+	sessione ho 5345
+19-05-07	10:43:59
+	insert into pe.indirizzi (via,civico,interno,scala,pratica,chk,uidins,tmsins) values ('Via Pollarola','8',NULL,NULL,7936,1,13,1179564239)
+19-05-07	10:43:59
+	select currval ('pe.indirizzi_id_seq')
+19-05-07	10:43:59
+	sessione ho 2531
+19-05-07	10:44:18
+	insert into pe.cterreni (foglio,mappale,sub,note,pratica,chk,uidins,tmsins) values ('5','113',NULL,NULL,7936,1,13,1179564258)
+19-05-07	10:44:18
+	select currval ('pe.cterreni_id_seq')
+19-05-07	10:44:18
+	sessione ho 3078
+19-05-07	11:52:10
+	insert into pe.avvioproc (tipo,intervento,numero,data_presentazione,protocollo,data_prot,protocollo_int,data_prot_int,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,chk,uidins,tmsins) values (11100,80,NULL,'09/05/2007','2608/2007','09/05/2007',NULL,NULL,10,NULL,NULL,NULL,'variante al P.C. 6/2007',NULL,1,13,1179568330)
+19-05-07	11:52:11
+	select currval ('pe.avvioproc_id_seq')
+19-05-07	11:52:11
+	sessione ho 7937
+19-05-07	11:52:37
+	insert into pe.soggetti
+ (cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albonumero,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('RAINERI','Maria Guendalina','VIA R. OLCESE 13','PIEVE LIGURE','GE','16030',NULL,NULL,NULL,NULL,NULL,'M','RNRMGN58D62D969D',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,1,0,0,0,0,0,0,1,7937,1,13,1179568357)
+19-05-07	11:52:37
+	select currval ('pe.soggetti_id_seq')
+19-05-07	11:52:37
+	sessione ho 5346
+19-05-07	11:53:10
+	insert into pe.soggetti
+ (cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albo,albonumero,alboprov,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('DE GAETANO','Antonella',NULL,'PIEVE LIGURE','GE','16030',NULL,NULL,'PIEVE LIGURE','GE',NULL,'M',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Ordine degli Architetti','1528','GE',NULL,0,0,0,1,0,0,0,0,1,7937,1,13,1179568390)
+19-05-07	11:53:10
+	select currval ('pe.soggetti_id_seq')
+19-05-07	11:53:10
+	sessione ho 5347
+19-05-07	11:53:33
+	insert into pe.indirizzi (via,civico,interno,scala,pratica,chk,uidins,tmsins) values ('Via R. Olcese','12',NULL,NULL,7937,1,13,1179568413)
+19-05-07	11:53:34
+	select currval ('pe.indirizzi_id_seq')
+19-05-07	11:53:34
+	sessione ho 2532
+19-05-07	11:55:17
+	insert into pe.cterreni (foglio,mappale,sub,note,pratica,chk,uidins,tmsins) values ('3','416',NULL,NULL,7937,1,13,1179568517)
+19-05-07	11:55:18
+	select currval ('pe.cterreni_id_seq')
+19-05-07	11:55:18
+	sessione ho 3079
+19-05-07	11:59:07
+	insert into pe.avvioproc (tipo,intervento,numero,data_presentazione,protocollo,data_prot,protocollo_int,data_prot_int,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,chk,uidins,tmsins) values (10050,0,NULL,'10/05/2007','2624/2007','10/05/2007',NULL,NULL,10,NULL,NULL,NULL,'abbattimento leccio',NULL,1,13,1179568747)
+19-05-07	11:59:07
+	select currval ('pe.avvioproc_id_seq')
+19-05-07	11:59:07
+	sessione ho 7938
+19-05-07	11:59:41
+	insert into pe.soggetti
+ (cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albonumero,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('DE FRANCESCHINI','Marina',NULL,NULL,NULL,NULL,'010/3460507',NULL,'GENOVA','GE','28/05/1956','M','DFRMRN56E58D969B',NULL,'Immobiliare Santolina S.a.s.',NULL,'via Bozzo 14','PIEVE LIGURE','GE','16030','02433700156',NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,0,0,0,0,1,7938,1,13,1179568781)
+19-05-07	11:59:42
+	select currval ('pe.soggetti_id_seq')
+19-05-07	11:59:42
+	sessione ho 5348
+19-05-07	12:00:24
+	insert into pe.soggetti
+ (app,cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albo,albonumero,alboprov,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('Geom.','PUPPO','Silvio','Via A. Montetto, 2/3','GENOVA','GE','16166',NULL,NULL,NULL,'GE',NULL,'M','PPPSLV68A12D969P',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Collegio dei Geometri','2690','GE',NULL,0,0,0,1,0,0,0,0,1,7938,1,13,1179568824)
+19-05-07	12:00:25
+	select currval ('pe.soggetti_id_seq')
+19-05-07	12:00:25
+	sessione ho 5349
+19-05-07	12:00:56
+	insert into pe.indirizzi (via,civico,interno,scala,pratica,chk,uidins,tmsins) values ('via Bozzo','2',NULL,NULL,7938,1,13,1179568856)
+19-05-07	12:00:57
+	select currval ('pe.indirizzi_id_seq')
+19-05-07	12:00:57
+	sessione ho 2533
+19-05-07	12:01:19
+	insert into pe.cterreni (foglio,mappale,sub,note,pratica,chk,uidins,tmsins) values ('6','732',NULL,NULL,7938,1,13,1179568879)
+19-05-07	12:01:20
+	select currval ('pe.cterreni_id_seq')
+19-05-07	12:01:20
+	sessione ho 3080
+19-05-07	12:02:07
+	delete from pe.cterreni where id=3080;
+19-05-07	12:02:17
+	insert into pe.cterreni (foglio,mappale,sub,note,pratica,chk,uidins,tmsins) values ('6','469',NULL,NULL,7938,1,13,1179568937)
+19-05-07	12:02:18
+	select currval ('pe.cterreni_id_seq')
+19-05-07	12:02:18
+	sessione ho 3081
+21-05-07	10:07:27
+	insert into pe.avvioproc (tipo,intervento,numero,data_presentazione,protocollo,data_prot,protocollo_int,data_prot_int,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,chk,uidins,tmsins) values (10050,50,NULL,'18/05/2007','2801/2007','18/05/2007',NULL,NULL,10,NULL,NULL,NULL,'sostituzione manto di copertura con diverso materiale',NULL,1,13,1179734847)
+21-05-07	10:07:27
+	select currval ('pe.avvioproc_id_seq')
+21-05-07	10:07:27
+	sessione ho 7939
+21-05-07	10:08:45
+	insert into pe.soggetti
+ (cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albonumero,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('MANNORI','LORENZO','VIA T. INVREA, 14/8','GENOVA','GE','16100','010/582022',NULL,NULL,NULL,NULL,'M','MNNLNZ28E03I728A','Proprietario',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,1,1,0,0,0,0,0,1,7939,1,13,1179734925)
+21-05-07	10:08:46
+	select currval ('pe.soggetti_id_seq')
+21-05-07	10:08:46
+	sessione ho 5350
+21-05-07	10:10:03
+	update pe.soggetti
+ set cognome='MANNORI',nome='LORENZO',indirizzo='VIA T. INVREA, 14/8',comune='GENOVA',prov='GE',cap='16100',telefono='010/582022',email=NULL,comunato=NULL,provnato=NULL,datanato=NULL,sesso='M',codfis='MNNLNZ28E03I728A',titolo='Proprietario',ragsoc=NULL,sede=NULL,comuned=NULL,provd=NULL,capd=NULL,piva=NULL,ccia=NULL,titolod=NULL,note=NULL,proprietario=1,richiedente=1,concessionario=0,comunicazioni=1,chk=2,uidupd=13,tmsupd=1179735003 where id=5350
+21-05-07	10:10:56
+	insert into pe.soggetti
+ (app,cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albo,albonumero,alboprov,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('Arch.','OBERTO','PAOLO','VIA RIVOLI, 2/1','GENOVA','GE','16128',NULL,NULL,NULL,'GE',NULL,'M','BRTPLA57L14G273F',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Ordine degli Architetti','1379','GE',NULL,0,0,0,1,0,0,0,0,1,7939,1,13,1179735056)
+21-05-07	10:10:56
+	select currval ('pe.soggetti_id_seq')
+21-05-07	10:10:56
+	sessione ho 5351
+21-05-07	10:11:43
+	insert into pe.indirizzi (via,civico,interno,scala,pratica,chk,uidins,tmsins) values ('Salita alla Chiesa','20 b',NULL,NULL,7939,1,13,1179735103)
+21-05-07	10:11:43
+	select currval ('pe.indirizzi_id_seq')
+21-05-07	10:11:43
+	sessione ho 2534
+21-05-07	10:11:58
+	insert into pe.cterreni (foglio,mappale,sub,note,pratica,chk,uidins,tmsins) values ('5','397',NULL,NULL,7939,1,13,1179735118)
+21-05-07	10:11:58
+	select currval ('pe.cterreni_id_seq')
+21-05-07	10:11:59
+	sessione ho 3082
+21-05-07	10:43:53
+	insert into pe.avvioproc (tipo,intervento,numero,data_presentazione,protocollo,data_prot,protocollo_int,data_prot_int,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,chk,uidins,tmsins) values (10000,50,NULL,'23/04/2007','2311/2007','23/04/2007',NULL,NULL,10,NULL,NULL,NULL,'opere interne',NULL,1,13,1179737033)
+21-05-07	10:43:53
+	select currval ('pe.avvioproc_id_seq')
+21-05-07	10:43:53
+	sessione ho 7940
+21-05-07	10:45:51
+	insert into pe.soggetti
+ (cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albonumero,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('BIXIO','ELVIRA','salita S. Michele 5','PIEVE LIGURE','Ge','16030',NULL,NULL,'Bogliasco','Ge','06/12/1946','F','BXILVR46T46A923A',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,1,0,0,0,0,0,0,1,7940,1,13,1179737151)
+21-05-07	10:45:52
+	select currval ('pe.soggetti_id_seq')
+21-05-07	10:45:52
+	sessione ho 5352
+21-05-07	10:48:05
+	insert into pe.soggetti
+ (app,cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albo,albonumero,alboprov,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('Arch.','Secondo','Marco','Piazza Pellicceria 2/3','Genova','Ge','16123','010/261696',NULL,NULL,NULL,NULL,'M',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Ordine degli Architetti','1395','GE',NULL,0,0,0,1,0,0,0,0,1,7940,1,13,1179737285)
+21-05-07	10:48:05
+	select currval ('pe.soggetti_id_seq')
+21-05-07	10:48:05
+	sessione ho 5353
+21-05-07	10:48:37
+	insert into pe.indirizzi (via,civico,interno,scala,pratica,chk,uidins,tmsins) values ('Salita San Michele','5',NULL,NULL,7940,1,13,1179737317)
+21-05-07	10:48:37
+	select currval ('pe.indirizzi_id_seq')
+21-05-07	10:48:37
+	sessione ho 2535
+21-05-07	10:49:03
+	insert into pe.cterreni (foglio,mappale,sub,note,pratica,chk,uidins,tmsins) values ('5','473',NULL,NULL,7940,1,13,1179737343)
+21-05-07	10:49:03
+	select currval ('pe.cterreni_id_seq')
+21-05-07	10:49:03
+	sessione ho 3083
+21-05-07	10:59:11
+	insert into pe.avvioproc (tipo,intervento,numero,data_presentazione,protocollo,data_prot,protocollo_int,data_prot_int,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,chk,uidins,tmsins) values (10000,50,NULL,'27/04/2007','2400/2007','27/04/2007',NULL,NULL,10,NULL,NULL,NULL,'opere interne',NULL,1,13,1179737951)
+21-05-07	10:59:11
+	select currval ('pe.avvioproc_id_seq')
+21-05-07	10:59:11
+	sessione ho 7941
+21-05-07	11:05:27
+	insert into pe.soggetti
+ (cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albonumero,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('Moicano Canavese','Franca','via 25 Aprile 30','Pieve Ligure','Ge','16030','339/1277325',NULL,'Santa Margherita Ligure','Ge','15/04/1965','F','MCNFNC65D55I225K',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,1,0,0,0,0,0,0,1,7941,1,13,1179738327)
+21-05-07	11:05:28
+	select currval ('pe.soggetti_id_seq')
+21-05-07	11:05:28
+	sessione ho 5354
+21-05-07	11:06:36
+	insert into pe.soggetti
+ (app,cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albo,albonumero,alboprov,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('Geom.','DE ASTIS','SALVATORE','via dei Sansone 18/2','Genova','Ge','0',NULL,NULL,NULL,NULL,NULL,'M','DSTSVT47L28H645K',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Collegio dei Geometri','2138','GE',NULL,0,0,0,1,0,0,0,0,1,7941,1,13,1179738396)
+21-05-07	11:06:36
+	select currval ('pe.soggetti_id_seq')
+21-05-07	11:06:36
+	sessione ho 5355
+21-05-07	11:07:10
+	insert into pe.indirizzi (via,civico,interno,scala,pratica,chk,uidins,tmsins) values ('Via 25 aprile','139',NULL,NULL,7941,1,13,1179738430)
+21-05-07	11:07:10
+	select currval ('pe.indirizzi_id_seq')
+21-05-07	11:07:10
+	sessione ho 2536
+21-05-07	12:01:39
+	insert into pe.avvioproc (tipo,intervento,numero,data_presentazione,protocollo,data_prot,protocollo_int,data_prot_int,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,chk,uidins,tmsins) values (10200,50,NULL,'04/05/2007','2497/2007','04/05/2007',NULL,NULL,10,NULL,NULL,NULL,'opere interne in sanatoria',NULL,1,13,1179741699)
+21-05-07	12:01:39
+	select currval ('pe.avvioproc_id_seq')
+21-05-07	12:01:39
+	sessione ho 7942
+21-05-07	12:03:50
+	insert into pe.soggetti
+ (cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albonumero,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('CHIAVACCI','GIULIA','via Besso 13','Pieve Ligure','ge','16030',NULL,NULL,'sannicola',NULL,'28/05/1946','F','CHVGLI46E68I059U','Comproprietaria',NULL,NULL,NULL,'PIEVE LIGURE','GE','16030',NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,1,0,0,0,0,0,0,1,7942,1,13,1179741830)
+21-05-07	12:03:50
+	select currval ('pe.soggetti_id_seq')
+21-05-07	12:03:50
+	sessione ho 5356
+21-05-07	12:06:12
+	insert into pe.soggetti
+ (app,cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albo,albonumero,alboprov,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('Geom.','ALESSIO','ENRICO',NULL,NULL,NULL,'0',NULL,NULL,NULL,NULL,NULL,'M','LSSNRC63L22D969H',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Collegio dei Geometri','2187','GE',NULL,0,0,0,1,0,0,0,0,1,7942,1,13,1179741972)
+21-05-07	12:06:13
+	select currval ('pe.soggetti_id_seq')
+21-05-07	12:06:13
+	sessione ho 5357
+21-05-07	12:06:31
+	update pe.soggetti
+ set app='Geom.',cognome='ALESSIO',nome='ENRICO',indirizzo=NULL,comune=NULL,prov=NULL,cap='0',telefono=NULL,email=NULL,comunato=NULL,provnato=NULL,datanato=NULL,sesso='M',codfis='LSSNRC63L22D969H',titolo=NULL,ragsoc=NULL,titolod=NULL,sede=NULL,comuned=NULL,provd=NULL,capd=NULL,piva=NULL,ccia=NULL,inail=NULL,cedile=NULL,inps=NULL,albo='Collegio dei Geometri',albonumero='2187',alboprov='GE',note=NULL,proprietario=0,richiedente=0,concessionario=0,progettista=1,direttore=0,sicurezza=0,collaudatore=0,esecutore=0,comunicazioni=1,chk=2,uidupd=13,tmsupd=1179741991 where id=5357
+21-05-07	12:06:52
+	insert into pe.indirizzi (via,civico,interno,scala,pratica,chk,uidins,tmsins) values ('Via Besso','13',NULL,NULL,7942,1,13,1179742012)
+21-05-07	12:06:53
+	select currval ('pe.indirizzi_id_seq')
+21-05-07	12:06:53
+	sessione ho 2537
+21-05-07	12:07:13
+	insert into pe.cterreni (foglio,mappale,sub,note,pratica,chk,uidins,tmsins) values ('6','167',NULL,NULL,7942,1,13,1179742033)
+21-05-07	12:07:14
+	select currval ('pe.cterreni_id_seq')
+21-05-07	12:07:14
+	sessione ho 3084
+21-05-07	13:31:40
+	SELECT numero FROM pe.pareri left join pe.avvioproc on pareri.pratica=avvioproc.pratica WHERE pareri.id=665
+21-05-07	13:44:53
+	SELECT numero FROM pe.pareri left join pe.avvioproc on pareri.pratica=avvioproc.pratica WHERE pareri.id=669
+21-05-07	14:23:08
+	SELECT numero FROM pe.pareri left join pe.avvioproc on pareri.pratica=avvioproc.pratica WHERE pareri.id=670
+21-05-07	15:31:49
+	SELECT numero FROM pe.pareri left join pe.avvioproc on pareri.pratica=avvioproc.pratica WHERE pareri.id=675
+21-05-07	15:49:28
+	insert into ce.commissione (tipo_comm,sede1,data_convocazione,ora_convocazione,note,pratica,chk,uidins,tmsins) values (8,'Casa Comunale','24/05/2007',17.00,NULL,0,1,13,1179755368)
+21-05-07	15:49:28
+	select currval ('ce.commissione_id_seq')
+21-05-07	15:49:28
+	sessione ho 6
+21-05-07	15:51:26
+	update ce.commissione set tipo_comm=8,sede1='Casa Comunale',data_convocazione='24/05/2007',ora_convocazione=17.00,note=NULL,chk=2,uidupd=13,tmsupd=1179755486 where id=6
+21-05-07	15:53:34
+	SELECT tipo_comm,data_convocazione FROM ce.commissione WHERE id=6;
+21-05-07	15:53:34
+	INSERT INTO pe.pareri(pratica,ente,data_rich,data_ril,uidins,tmsins) VALUES(7831,8,'24/05/2007'::date,'24/05/2007'::date,13,1179755614)
+21-05-07	15:54:08
+	SELECT tipo_comm,data_convocazione FROM ce.commissione WHERE id=6;
+21-05-07	15:54:08
+	INSERT INTO pe.pareri(pratica,ente,data_rich,data_ril,uidins,tmsins) VALUES(7932,8,'24/05/2007'::date,'24/05/2007'::date,13,1179755648)
+21-05-07	15:54:33
+	SELECT tipo_comm,data_convocazione FROM ce.commissione WHERE id=6;
+21-05-07	15:54:33
+	INSERT INTO pe.pareri(pratica,ente,data_rich,data_ril,uidins,tmsins) VALUES(7933,8,'24/05/2007'::date,'24/05/2007'::date,13,1179755673)
+21-05-07	15:54:55
+	SELECT tipo_comm,data_convocazione FROM ce.commissione WHERE id=6;
+21-05-07	15:54:55
+	INSERT INTO pe.pareri(pratica,ente,data_rich,data_ril,uidins,tmsins) VALUES(7934,8,'24/05/2007'::date,'24/05/2007'::date,13,1179755695)
+21-05-07	15:55:18
+	SELECT tipo_comm,data_convocazione FROM ce.commissione WHERE id=6;
+21-05-07	15:55:18
+	INSERT INTO pe.pareri(pratica,ente,data_rich,data_ril,uidins,tmsins) VALUES(7935,8,'24/05/2007'::date,'24/05/2007'::date,13,1179755718)
+21-05-07	15:55:48
+	SELECT tipo_comm,data_convocazione FROM ce.commissione WHERE id=6;
+21-05-07	15:55:49
+	INSERT INTO pe.pareri(pratica,ente,data_rich,data_ril,uidins,tmsins) VALUES(7936,8,'24/05/2007'::date,'24/05/2007'::date,13,1179755748)
+21-05-07	15:56:10
+	SELECT tipo_comm,data_convocazione FROM ce.commissione WHERE id=6;
+21-05-07	15:56:10
+	INSERT INTO pe.pareri(pratica,ente,data_rich,data_ril,uidins,tmsins) VALUES(7937,8,'24/05/2007'::date,'24/05/2007'::date,13,1179755770)
+21-05-07	15:56:34
+	SELECT tipo_comm,data_convocazione FROM ce.commissione WHERE id=6;
+21-05-07	15:56:34
+	INSERT INTO pe.pareri(pratica,ente,data_rich,data_ril,uidins,tmsins) VALUES(7938,8,'24/05/2007'::date,'24/05/2007'::date,13,1179755794)
+21-05-07	16:04:56
+	SELECT tipo_comm,data_convocazione FROM ce.commissione WHERE id=6;
+21-05-07	16:04:56
+	INSERT INTO pe.pareri(pratica,ente,data_rich,data_ril,uidins,tmsins) VALUES(7939,8,'24/05/2007'::date,'24/05/2007'::date,13,1179756296)
+21-05-07	16:10:39
+	SELECT tipo_comm,data_convocazione FROM ce.commissione WHERE id=6;
+21-05-07	16:10:39
+	INSERT INTO pe.pareri(pratica,ente,data_rich,data_ril,uidins,tmsins) VALUES(7847,8,'24/05/2007'::date,'24/05/2007'::date,13,1179756639)
+23-05-07	13:47:45
+	SELECT numero FROM pe.pareri left join pe.avvioproc on pareri.pratica=avvioproc.pratica WHERE pareri.id=672
+4-06-07	08:27:52
+	(select pratica from ce.commissione order by data_convocazione)  
+4-06-07	08:28:05
+	SELECT numero FROM pe.pareri left join pe.avvioproc on pareri.pratica=avvioproc.pratica WHERE pareri.id=676
+4-06-07	08:44:22
+	SELECT numero FROM pe.pareri left join pe.avvioproc on pareri.pratica=avvioproc.pratica WHERE pareri.id=666
+4-06-07	09:39:22
+	(select pratica from ce.commissione order by data_convocazione)  
+4-06-07	16:02:52
+	(select pratica from ce.commissione order by data_convocazione)  
+4-06-07	16:03:02
+	SELECT numero FROM pe.pareri left join pe.avvioproc on pareri.pratica=avvioproc.pratica WHERE pareri.id=711
+11-06-07	08:28:16
+	insert into pe.avvioproc (tipo,intervento,numero,data_presentazione,protocollo,data_prot,protocollo_int,data_prot_int,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,chk,uidins,tmsins) values (10050,0,NULL,'18/05/2007','2800/2007','18/05/2007',NULL,NULL,10,NULL,NULL,NULL,'realizzazione pergolato in ferro, barbeque e piano di lavoro',NULL,1,13,1181543296)
+11-06-07	08:28:16
+	select currval ('pe.avvioproc_id_seq')
+11-06-07	08:28:16
+	sessione ho 7954
+11-06-07	08:28:50
+	insert into pe.soggetti
+ (cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albonumero,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('GORZIGLIA','ENRICO','VIA BARALLA 1','PIEVE LIGURE','GE','16030',NULL,NULL,'GENOVA','GE','17/11/1959','M','GRZNRC59S17D969Z','Proprietario',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,1,0,0,0,0,0,0,1,7954,1,13,1181543330)
+11-06-07	08:28:50
+	select currval ('pe.soggetti_id_seq')
+11-06-07	08:28:50
+	sessione ho 5380
+11-06-07	08:30:46
+	insert into pe.soggetti
+ (app,cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albo,albonumero,alboprov,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('Arch.','Borsese','Claudia','Salita San Leonardo 18/6','Genova','Ge',NULL,NULL,NULL,NULL,NULL,NULL,'F','BRSCLD71T68D969Q',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Ordine degli Architetti','2736','GE',NULL,0,0,0,1,0,0,0,0,1,7954,1,13,1181543446)
+11-06-07	08:30:46
+	select currval ('pe.soggetti_id_seq')
+11-06-07	08:30:46
+	sessione ho 5381
+11-06-07	08:31:50
+	insert into pe.indirizzi (via,civico,interno,scala,pratica,chk,uidins,tmsins) values ('Via Baralla','1',NULL,NULL,7954,1,13,1181543510)
+11-06-07	08:31:50
+	select currval ('pe.indirizzi_id_seq')
+11-06-07	08:31:50
+	sessione ho 2546
+11-06-07	08:32:04
+	insert into pe.cterreni (foglio,mappale,sub,note,pratica,chk,uidins,tmsins) values ('6','1299',NULL,NULL,7954,1,13,1181543524)
+11-06-07	08:32:04
+	select currval ('pe.cterreni_id_seq')
+11-06-07	08:32:04
+	sessione ho 3087
+11-06-07	08:38:21
+	insert into pe.avvioproc (tipo,intervento,numero,data_presentazione,protocollo,data_prot,protocollo_int,data_prot_int,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,chk,uidins,tmsins) values (10050,50,NULL,'18/05/2007','2802/2007','18/05/2007',NULL,NULL,10,NULL,NULL,NULL,'AMPLIAMENTO RAMPA CARRABILE',NULL,1,13,1181543901)
+11-06-07	08:38:21
+	select currval ('pe.avvioproc_id_seq')
+11-06-07	08:38:21
+	sessione ho 7955
+11-06-07	08:38:58
+	insert into pe.soggetti
+ (cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albonumero,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('PROVERA','ENRICO','VIA ROMA, 158','PIEVE LIGURE','GE','16030',NULL,NULL,'GENOVA','GE','24/03/1929','M','PRVNRC29C24D969E','Proprietario',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,1,0,0,0,0,0,0,1,7955,1,13,1181543938)
+11-06-07	08:38:58
+	select currval ('pe.soggetti_id_seq')
+11-06-07	08:38:58
+	sessione ho 5382
+11-06-07	08:41:44
+	insert into pe.soggetti
+ (cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albonumero,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('Bottino','Gabriella','via Roma 158','Pieve Ligure','Ge','16030',NULL,NULL,'Genova','Ge','02/06/1969','F','BTTGRL69H42D969D',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,1,0,0,0,0,0,0,1,7955,1,13,1181544104)
+11-06-07	08:41:45
+	select currval ('pe.soggetti_id_seq')
+11-06-07	08:41:45
+	sessione ho 5383
+11-06-07	08:42:45
+	insert into pe.soggetti
+ (app,cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albo,albonumero,alboprov,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('Ing.','SPALLAROSSA','GIUSEPPE','Sal. San Matteo, 19/8','GENOVA','GE','16123',NULL,NULL,NULL,NULL,NULL,'M','SPLGPP55M07A922G',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Ordine degli Ingenieri','5167','GE',NULL,0,0,0,1,0,0,0,0,1,7955,1,13,1181544165)
+11-06-07	08:42:45
+	select currval ('pe.soggetti_id_seq')
+11-06-07	08:42:45
+	sessione ho 5384
+11-06-07	08:43:19
+	insert into pe.indirizzi (via,civico,interno,scala,pratica,chk,uidins,tmsins) values ('Via Roma','158',NULL,NULL,7955,1,13,1181544199)
+11-06-07	08:43:19
+	select currval ('pe.indirizzi_id_seq')
+11-06-07	08:43:19
+	sessione ho 2547
+11-06-07	08:43:31
+	insert into pe.cterreni (foglio,mappale,sub,note,pratica,chk,uidins,tmsins) values ('6','422',NULL,NULL,7955,1,13,1181544211)
+11-06-07	08:43:31
+	select currval ('pe.cterreni_id_seq')
+11-06-07	08:43:31
+	sessione ho 3088
+11-06-07	09:04:37
+	insert into pe.avvioproc (tipo,intervento,numero,data_presentazione,protocollo,data_prot,protocollo_int,data_prot_int,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,chk,uidins,tmsins) values (11000,70,NULL,'25/05/2007',NULL,'25/05/2007',NULL,NULL,10,NULL,NULL,NULL,'ampliamento immobile',NULL,1,13,1181545477)
+11-06-07	09:04:37
+	select currval ('pe.avvioproc_id_seq')
+11-06-07	09:04:37
+	sessione ho 7956
+11-06-07	09:06:14
+	insert into pe.soggetti
+ (cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albonumero,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('Cavagliano','Laura','via delle Chiappe 14','Pieve Ligure','Ge','16030',NULL,NULL,NULL,NULL,NULL,'F','CVLLRA47P57D869U',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,1,0,0,0,0,0,0,1,7956,1,13,1181545574)
+11-06-07	09:06:14
+	select currval ('pe.soggetti_id_seq')
+11-06-07	09:06:14
+	sessione ho 5385
+11-06-07	09:06:49
+	insert into pe.soggetti
+ (app,cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albo,albonumero,alboprov,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('Arch.','ROBERTI','Cinzia','via Roma 126','PIEVE LIGURE','GE','16030',NULL,NULL,'PIEVE LIGURE','GE',NULL,'M',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Ordine degli Architetti','1166','GE',NULL,0,0,0,1,0,0,0,0,1,7956,1,13,1181545609)
+11-06-07	09:06:50
+	select currval ('pe.soggetti_id_seq')
+11-06-07	09:06:50
+	sessione ho 5386
+11-06-07	09:09:51
+	insert into pe.indirizzi (via,civico,interno,scala,pratica,chk,uidins,tmsins) values ('Via delle Chiappe','14',NULL,NULL,7956,1,13,1181545791)
+11-06-07	09:09:51
+	select currval ('pe.indirizzi_id_seq')
+11-06-07	09:09:51
+	sessione ho 2548
+11-06-07	09:10:07
+	insert into pe.cterreni (foglio,mappale,sub,note,pratica,chk,uidins,tmsins) values ('3','123',NULL,NULL,7956,1,13,1181545807)
+11-06-07	09:10:07
+	select currval ('pe.cterreni_id_seq')
+11-06-07	09:10:07
+	sessione ho 3089
+11-06-07	09:10:16
+	insert into pe.cterreni (foglio,mappale,sub,note,pratica,chk,uidins,tmsins) values ('3','124',NULL,NULL,7956,1,13,1181545816)
+11-06-07	09:10:16
+	select currval ('pe.cterreni_id_seq')
+11-06-07	09:10:16
+	sessione ho 3090
+11-06-07	09:24:35
+	insert into pe.avvioproc (tipo,intervento,numero,data_presentazione,protocollo,data_prot,protocollo_int,data_prot_int,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,chk,uidins,tmsins) values (11000,60,NULL,'30/05/2007','3035/2007','30/05/2007',NULL,NULL,10,NULL,NULL,NULL,'realizzazione nuovo balcone e lavori interni',NULL,1,13,1181546675)
+11-06-07	09:24:35
+	select currval ('pe.avvioproc_id_seq')
+11-06-07	09:24:35
+	sessione ho 7957
+11-06-07	09:26:30
+	insert into pe.soggetti
+ (cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albonumero,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('Bolognesi','Marcella','via Monte Pasubio 27','Novi Ligure','Al',NULL,NULL,NULL,'Novi Ligure','Al','12/10/1956','F','BLGMCL56R52F965G',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,1,0,0,0,0,0,0,1,7957,1,13,1181546790)
+11-06-07	09:26:31
+	select currval ('pe.soggetti_id_seq')
+11-06-07	09:26:31
+	sessione ho 5387
+11-06-07	09:30:04
+	insert into pe.soggetti
+ (app,cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albo,albonumero,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('Geom.','Gallina','Massimo','Corso Indipendenza 24','Casale Monferrato',NULL,NULL,'0142/71414','geomgallina@mgallina.191.it',NULL,NULL,NULL,'M','MSM57S27B885C',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Collegio dei Geometri','410',NULL,0,0,0,1,1,0,0,0,1,7957,1,13,1181547004)
+11-06-07	09:30:04
+	select currval ('pe.soggetti_id_seq')
+11-06-07	09:30:04
+	sessione ho 5388
+11-06-07	09:30:40
+	insert into pe.indirizzi (via,civico,interno,scala,pratica,chk,uidins,tmsins) values ('Scalinata Torre','5/A',NULL,NULL,7957,1,13,1181547040)
+11-06-07	09:30:40
+	select currval ('pe.indirizzi_id_seq')
+11-06-07	09:30:40
+	sessione ho 2549
+11-06-07	09:31:01
+	insert into pe.cterreni (foglio,mappale,sub,note,pratica,chk,uidins,tmsins) values ('4','88',NULL,NULL,7957,1,13,1181547061)
+11-06-07	09:31:01
+	select currval ('pe.cterreni_id_seq')
+11-06-07	09:31:01
+	sessione ho 3091
+11-06-07	10:16:23
+	insert into pe.avvioproc (tipo,intervento,numero,data_presentazione,protocollo,data_prot,protocollo_int,data_prot_int,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,chk,uidins,tmsins) values (10050,60,NULL,'07/06/2007','3247/2007','07/06/2007',NULL,NULL,10,NULL,NULL,NULL,'REALIZZAZIONE VELUX',NULL,1,13,1181549783)
+11-06-07	10:16:23
+	select currval ('pe.avvioproc_id_seq')
+11-06-07	10:16:23
+	sessione ho 7958
+11-06-07	10:18:02
+	insert into pe.soggetti
+ (cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albonumero,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('Tavilla','Stefano','via Priaruggia 11c/7','Pieve Ligure','Ge','16030',NULL,NULL,'Genova','Ge','20/05/1965','M','TVLSFN65E20D969K',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,1,0,0,0,0,0,0,1,7958,1,13,1181549882)
+11-06-07	10:18:02
+	select currval ('pe.soggetti_id_seq')
+11-06-07	10:18:02
+	sessione ho 5389
+11-06-07	10:21:33
+	insert into pe.soggetti
+ (app,cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albo,albonumero,alboprov,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('Geom.','Cavaleri','Stefano','Corso Torino 46/14','Genova','Ge','16129','010/587376    347/1036973','geom.stefanocavaleri@libero.it','Genova','Ge','21/09/1972','M','CVLSFN72P21D969T',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Collegio dei Geometri','2685','GE',NULL,0,0,0,1,0,0,0,0,1,7958,1,13,1181550093)
+11-06-07	10:21:34
+	select currval ('pe.soggetti_id_seq')
+11-06-07	10:21:34
+	sessione ho 5390
+11-06-07	10:22:05
+	insert into pe.indirizzi (via,civico,interno,scala,pratica,chk,uidins,tmsins) values ('Via Priaruggia','11 c','7',NULL,7958,1,13,1181550125)
+11-06-07	10:22:05
+	select currval ('pe.indirizzi_id_seq')
+11-06-07	10:22:05
+	sessione ho 2550
+11-06-07	10:22:18
+	insert into pe.cterreni (foglio,mappale,sub,note,pratica,chk,uidins,tmsins) values ('7','217',NULL,NULL,7958,1,13,1181550138)
+11-06-07	10:22:19
+	select currval ('pe.cterreni_id_seq')
+11-06-07	10:22:19
+	sessione ho 3092
+11-06-07	14:55:51
+	insert into pe.lavori
+ (scade_il,scade_fl,il,fl,note,pratica,chk,uidins,tmsins) values (NULL,NULL,NULL,'16/03/2007',NULL,7690,1,13,1181566551)
+11-06-07	14:55:51
+	select currval ('pe.lavori_id_seq')
+11-06-07	14:55:51
+	sessione ho 599
+11-06-07	15:02:49
+	insert into pe.lavori
+ (scade_il,scade_fl,il,fl,note,pratica,chk,uidins,tmsins) values (NULL,NULL,'12/04/2007',NULL,NULL,7853,1,13,1181566969)
+11-06-07	15:02:49
+	select currval ('pe.lavori_id_seq')
+11-06-07	15:02:49
+	sessione ho 600
+11-06-07	15:06:11
+	insert into pe.lavori
+ (scade_il,scade_fl,il,fl,note,pratica,chk,uidins,tmsins) values (NULL,NULL,'27/04/2007',NULL,'MESSA IN PRISTINO',7828,1,13,1181567171)
+11-06-07	15:06:11
+	select currval ('pe.lavori_id_seq')
+11-06-07	15:06:11
+	sessione ho 601
+11-06-07	15:09:25
+	insert into pe.lavori
+ (scade_il,scade_fl,il,fl,note,pratica,chk,uidins,tmsins) values (NULL,NULL,'27/04/2007',NULL,NULL,7891,1,13,1181567365)
+11-06-07	15:09:25
+	select currval ('pe.lavori_id_seq')
+11-06-07	15:09:25
+	sessione ho 602
+11-06-07	15:18:05
+	insert into pe.avvioproc (tipo,intervento,numero,data_presentazione,protocollo,data_prot,protocollo_int,data_prot_int,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,chk,uidins,tmsins) values (10050,0,NULL,'26/04/2007','2384/2007','26/04/2007',NULL,NULL,10,NULL,NULL,NULL,'realizzazione stazione radio base per telefonia cellulare',NULL,1,13,1181567885)
+11-06-07	15:18:05
+	select currval ('pe.avvioproc_id_seq')
+11-06-07	15:18:05
+	sessione ho 7959
+11-06-07	15:21:26
+	insert into pe.soggetti
+ (cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albonumero,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('Salvi','Paolo','Viuzzo dei Bruni 8','Firenze','Fi','50132',NULL,NULL,NULL,NULL,NULL,'M',NULL,NULL,'Telecom Italia S.p.a.','PROCURATORE SPECIALE',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,0,0,0,0,1,7959,1,13,1181568086)
+11-06-07	15:21:26
+	select currval ('pe.soggetti_id_seq')
+11-06-07	15:21:26
+	sessione ho 5391
+11-06-07	15:22:21
+	insert into pe.soggetti
+ (app,cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albo,albonumero,alboprov,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values ('Arch.','PASTORELLI','Daniele',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'GE',NULL,'M',NULL,NULL,'- STUDIO DI PROGETTAZIONE 2P',NULL,'Via Galata, 35/9','GENOVA','GE','16121',NULL,NULL,NULL,NULL,NULL,'Ordine degli Architetti','1967','GE',NULL,0,0,0,1,0,0,0,0,1,7959,1,13,1181568141)
+11-06-07	15:22:22
+	select currval ('pe.soggetti_id_seq')
+11-06-07	15:22:22
+	sessione ho 5392
+11-06-07	15:23:04
+	insert into pe.indirizzi (via,civico,interno,scala,pratica,chk,uidins,tmsins) values ('Via delle Chiappe','10',NULL,NULL,7959,1,13,1181568184)
+11-06-07	15:23:04
+	select currval ('pe.indirizzi_id_seq')
+11-06-07	15:23:04
+	sessione ho 2551
+11-06-07	15:23:22
+	insert into pe.cterreni (foglio,mappale,sub,note,pratica,chk,uidins,tmsins) values ('3','935',NULL,NULL,7959,1,13,1181568202)
+11-06-07	15:23:23
+	select currval ('pe.cterreni_id_seq')
+11-06-07	15:23:23
+	sessione ho 3093
+11-06-07	15:26:34
+	update pe.lavori
+ set scade_il=NULL,scade_fl=NULL,il='18/01/2006',fl='30/11/2006',note=NULL,chk=2,uidupd=13,tmsupd=1181568394 where id=568
+11-06-07	15:31:37
+	insert into pe.lavori
+ (scade_il,scade_fl,il,fl,note,pratica,chk,uidins,tmsins) values (NULL,NULL,'12/05/2007',NULL,NULL,7817,1,13,1181568697)
+11-06-07	15:31:37
+	select currval ('pe.lavori_id_seq')
+11-06-07	15:31:37
+	sessione ho 603
+11-06-07	15:32:57
+	insert into pe.soggetti
+ (cognome,nome,indirizzo,comune,prov,cap,telefono,email,comunato,provnato,datanato,sesso,codfis,titolo,ragsoc,titolod,sede,comuned,provd,capd,piva,ccia,inail,cedile,inps,albonumero,note,proprietario,richiedente,concessionario,progettista,direttore,sicurezza,collaudatore,esecutore,comunicazioni,pratica,chk,uidins,tmsins) values (NULL,NULL,'via Monti 73 r','Genova',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'M',NULL,NULL,'Nuova Edilservice',NULL,NULL,NULL,NULL,NULL,'03504640107',NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,0,0,0,1,1,7817,1,13,1181568777)
+11-06-07	15:32:57
+	select currval ('pe.soggetti_id_seq')
+11-06-07	15:32:57
+	sessione ho 5393

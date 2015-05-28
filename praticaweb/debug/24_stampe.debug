@@ -1,0 +1,307 @@
+
+26-01-11	10:52:20
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=20
+26-01-11	10:56:05
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=20
+26-01-11	11:26:53
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=20
+26-01-11	12:18:25
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=20
+26-01-11	12:23:36
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=20
+26-01-11	12:38:29
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=20
+26-01-11	12:46:35
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=20
+27-01-11	11:09:42
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=20
+27-01-11	11:30:59
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=20
+27-01-11	12:02:32
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=20
+27-01-11	12:11:21
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=20
+27-01-11	12:43:42
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=20
+28-01-11	08:42:18
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=20
+28-01-11	10:10:13
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=20
+7-02-11	09:16:32
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=20
+7-02-11	09:25:12
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=20
+7-02-11	09:58:28
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=20
+7-02-11	10:32:19
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=20
+11-02-11	10:58:18
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=24
+11-02-11	10:58:54
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=26
+11-02-11	12:19:53
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+14-02-11	09:10:24
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=26
+14-02-11	09:11:13
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=24
+14-02-11	09:38:06
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=24
+14-02-11	09:38:36
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=26
+14-02-11	09:43:51
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+14-02-11	09:50:27
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+14-02-11	10:01:29
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=24
+14-02-11	10:01:45
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=26
+14-02-11	10:15:54
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=26
+14-02-11	10:16:03
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=17
+14-02-11	10:17:25
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=24
+14-02-11	10:19:22
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=24
+14-02-11	10:19:43
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=26
+14-03-11	11:42:24
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=19
+28-03-11	10:39:35
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+31-03-11	11:52:30
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=28
+31-03-11	12:29:35
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=29
+11-04-11	12:57:36
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=12
+13-04-11	10:03:32
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=13
+13-04-11	10:09:31
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=13
+20-04-11	11:13:25
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=13
+20-04-11	11:15:33
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=13
+20-04-11	11:18:14
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=12
+4-05-11	12:29:13
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=13
+5-05-11	10:57:40
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=12
+6-05-11	10:31:42
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=28
+24-05-11	09:58:26
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+24-05-11	10:41:25
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+24-05-11	10:42:56
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+24-05-11	11:13:54
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+24-05-11	11:37:23
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+24-05-11	12:20:17
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+25-05-11	10:30:54
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+25-05-11	11:09:03
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+25-05-11	11:24:42
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+21-06-11	10:15:35
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=13
+21-06-11	10:16:26
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=13
+1-07-11	12:07:37
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+13-12-11	10:04:22
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+19-12-11	11:35:14
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+19-12-11	11:51:32
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+19-12-11	11:56:40
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+20-12-11	10:55:24
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+20-12-11	12:10:30
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+29-12-11	10:47:10
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=12
+13-01-12	10:33:30
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=22
+13-01-12	10:38:12
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=22
+13-01-12	10:43:47
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=23
+19-01-12	08:48:11
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=23
+19-01-12	08:53:16
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=24
+19-01-12	09:38:18
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=26
+19-01-12	09:39:04
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=17
+19-01-12	09:43:16
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=26
+19-01-12	09:48:28
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=26
+19-01-12	09:49:28
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=24
+19-01-12	10:04:09
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+19-01-12	10:04:27
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=24
+19-01-12	10:58:03
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=24
+19-01-12	10:58:29
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=26
+19-01-12	12:08:57
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=26
+19-01-12	12:09:07
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=24
+19-01-12	12:20:41
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=26
+19-01-12	12:20:51
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=24
+23-01-12	10:41:44
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+23-01-12	10:52:40
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+24-01-12	09:21:13
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+25-01-12	11:14:32
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+25-01-12	12:05:15
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+25-01-12	12:15:28
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+25-01-12	12:36:00
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+25-01-12	12:46:21
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+25-01-12	12:53:10
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+31-01-12	08:47:51
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+31-01-12	10:26:35
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=20
+31-01-12	11:36:58
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=20
+7-02-12	13:12:44
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+28-02-12	10:53:16
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=19
+28-02-12	11:09:08
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=23
+28-02-12	11:14:55
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=19
+28-02-12	11:18:37
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=23
+29-02-12	10:40:23
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=22
+29-02-12	10:46:43
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=23
+29-02-12	11:05:01
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=22
+29-02-12	11:05:09
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=23
+29-02-12	11:29:56
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=22
+29-02-12	11:30:06
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=23
+9-03-12	10:10:59
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=23
+9-03-12	10:19:13
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+9-03-12	10:26:41
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+9-03-12	11:33:52
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+12-03-12	10:08:37
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+12-03-12	10:45:02
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+12-03-12	10:52:41
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+12-03-12	10:58:40
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+12-03-12	11:11:40
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+12-03-12	12:26:54
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+13-03-12	11:49:46
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+13-03-12	12:00:12
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+13-03-12	12:23:45
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+13-03-12	12:32:10
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+19-03-12	11:41:49
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=20
+19-03-12	11:43:07
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=20
+19-03-12	11:58:52
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=20
+19-03-12	12:14:07
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=20
+19-03-12	12:29:46
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=20
+19-03-12	12:44:34
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=20
+21-03-12	09:52:39
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=17
+21-03-12	09:58:01
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=26
+21-03-12	09:59:21
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=24
+30-03-12	11:14:53
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+10-04-12	09:30:49
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=31
+10-04-12	10:42:54
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=20
+10-04-12	11:37:17
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+10-04-12	11:48:50
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=20
+10-04-12	11:55:03
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=20
+10-04-12	12:04:04
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+10-04-12	12:08:23
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+10-04-12	12:17:08
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=20
+10-04-12	13:11:31
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=20
+11-04-12	09:47:49
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+11-04-12	11:00:13
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+11-04-12	13:07:07
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+11-04-12	13:14:02
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+13-04-12	11:48:34
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+13-04-12	12:47:02
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=20
+16-04-12	12:08:30
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+14-05-12	10:20:30
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=13
+15-05-12	09:43:50
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+15-05-12	10:06:24
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+15-05-12	10:11:13
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+15-05-12	10:12:26
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16
+15-05-12	10:14:46
+	SELECT nome,print_type FROM stp.e_modelli WHERE id=16

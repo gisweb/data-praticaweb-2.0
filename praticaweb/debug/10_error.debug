@@ -1,0 +1,19 @@
+
+24-04-15	11:38:09
+	Errore Chiave Esterna
+SELECT opzione FROM elenco_form WHERE id='pe.pareri';
+24-04-15	11:38:09
+	Errore Chiave Esterna
+SELECT opzione FROM elenco_form WHERE id='pe.titolo';
+28-04-15	10:22:23
+	Errore Chiave Esterna
+SELECT opzione FROM elenco_form WHERE id='pe.pareri';
+28-04-15	10:22:23
+	Errore Chiave Esterna
+SELECT opzione FROM elenco_form WHERE id='pe.pareri';
+28-04-15	10:22:23
+	Errore Chiave Esterna
+SELECT opzione FROM elenco_form WHERE id='pe.titolo';
+28-04-15	10:22:23
+	Errore Chiave Esterna
+SELECT opzione FROM elenco_form WHERE id='pe.titolo';

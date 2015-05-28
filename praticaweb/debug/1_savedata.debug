@@ -1,0 +1,73 @@
+
+10-04-15	16:10:30
+	update pe.cterreni set foglio='5',mappale='491',note=NULL,sez_censimento=NULL,chk=2,uidupd=1,tmsupd=1428675030 where id=4498
+10-04-15	16:10:50
+	insert into pe.cterreni (foglio,mappale,note,sez_censimento,pratica,chk,uidins,tmsins) values ('5','30',NULL,NULL,8875,1,1,1428675050)
+10-04-15	16:27:57
+	insert into pe.progetto (destuso1,destuso2,note,pratica,chk,uidins,tmsins) values ('Residenziale',NULL,NULL,8875,1,1,1428676077)
+10-04-15	16:31:15
+	insert into pe.asservimenti (tipo,numero,notaio,repertorio,reg_part,reg_ord,loc_reg,data_reg,loc_tras,data_tras,loc,sup_particelle,sup_asservita,note,pratica,chk,uidins,tmsins) values ('ASSERVIMENTO P.R.G.','0098768/15','regio',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8875,1,1,1428676275)
+10-04-15	16:31:27
+	insert into pe.asservimenti_map (foglio,mappale,supass,asservimento,pratica,chk,uidins,tmsins) values ('3','30','23',2,8875,1,1,1428676287)
+10-04-15	16:53:58
+	insert into pe.asservimenti_map (foglio,mappale,supass,asservimento,pratica,chk,uidins,tmsins) values ('3','1',NULL,2,8875,1,1,1428677638)
+23-04-15	11:27:22
+	update pe.avvio_procedimento_indirizzi set tipo=21100,categoria=null,intervento=0,numero='3/2015',data_presentazione='23/04/2015',protocollo='234345',data_prot='23/04/2015',rif_pratica=NULL,via=NULL,civico=NULL,interno=NULL,resp_proc=null,data_resp=NULL,com_resp=NULL,data_com_resp=NULL,resp_it=null,data_resp_it=NULL,resp_ia=null,data_resp_ia=NULL,oggetto='Test Inserimento Domanda',note='opere di ristrutturazione edilizia, come definita dall\'articolo 10 della L.R.16/08, che comportano incremento della superficie all\'interno della singola unita\' immobiliare con eventuale modifica della disposizione delle bucature, ma realizzate nel rispetto delle caratteristiche formali dell\'edificio, con l\'esclusione del mutamento della destinazione d\'uso;',chk=2,uidupd=1,tmsupd=1429781242 where id=8883
+23-04-15	11:37:28
+	update pe.avvio_procedimento_indirizzi set tipo=21100,categoria=null,intervento=0,numero='3/2015',data_presentazione='23/04/2015',protocollo='234345',data_prot='23/04/2015',rif_pratica=NULL,via=NULL,civico=NULL,interno=NULL,resp_proc=null,data_resp=NULL,com_resp=NULL,data_com_resp=NULL,resp_it=null,data_resp_it=NULL,resp_ia=null,data_resp_ia=NULL,oggetto='Test Inserimento Domanda',note='opere di ristrutturazione edilizia, come definita dall\'articolo 10 della L.R.16/08, che comportano incremento della superficie all\'interno della singola unita\' immobiliare con eventuale modifica della disposizione delle bucature, ma realizzate nel rispetto delle caratteristiche formali dell\'edificio, con l\'esclusione del mutamento della destinazione d\'uso;',chk=2,uidupd=1,tmsupd=1429781848 where id=8883
+23-04-15	11:39:27
+	update pe.avvio_procedimento_indirizzi set tipo=21100,categoria=null,intervento=0,numero='3/2015',data_presentazione='23/04/2015',protocollo='234345',data_prot='23/04/2015',rif_pratica=NULL,via=NULL,civico=NULL,interno=NULL,resp_proc=10,data_resp=NULL,com_resp=NULL,data_com_resp=NULL,resp_it=null,data_resp_it=NULL,resp_ia=null,data_resp_ia=NULL,oggetto='Test Inserimento Domanda',note='opere di ristrutturazione edilizia, come definita dall\'articolo 10 della L.R.16/08, che comportano incremento della superficie all\'interno della singola unita\' immobiliare con eventuale modifica della disposizione delle bucature, ma realizzate nel rispetto delle caratteristiche formali dell\'edificio, con l\'esclusione del mutamento della destinazione d\'uso;',chk=3,uidupd=1,tmsupd=1429781967 where id=8883
+23-04-15	16:20:08
+	insert into stp.e_modelli (nome,form,descrizione,proprietario,multiple,id) values ('Permesso Costruire.docx','pe.titolo',NULL,NULL,0,(SELECT coalesce(max(id),0)+1 FROM stp.e_modelli))
+23-04-15	16:47:11
+	insert into stp.e_modelli (nome,form,descrizione,proprietario,multiple,id) values ('trasmissione parere ambientale.docx','pe.pareri',NULL,NULL,1,(SELECT coalesce(max(id),0)+1 FROM stp.e_modelli))
+24-04-15	11:56:09
+	insert into stp.e_modelli (nome,form,descrizione,proprietario,multiple,id) values ('Autorizzazione Paesaggistica senza parere.docx','pe.titolo',NULL,NULL,0,(SELECT coalesce(max(id),0)+1 FROM stp.e_modelli))
+24-04-15	11:56:46
+	insert into stp.e_modelli (nome,form,descrizione,proprietario,multiple,id) values ('Autorizzazione Paesaggistica con parere.docx','pe.titolo',NULL,NULL,0,(SELECT coalesce(max(id),0)+1 FROM stp.e_modelli))
+24-04-15	11:57:29
+	insert into stp.e_modelli (nome,form,descrizione,proprietario,multiple,id) values ('Invio Autorizzazione Paesaggistica.docx','pe.pareri',NULL,NULL,0,(SELECT coalesce(max(id),0)+1 FROM stp.e_modelli))
+24-04-15	11:59:30
+	insert into pe.pareri (ente,resp_parere,prot_rich,data_rich,data_ricezione_richiesta,note,pratica,chk,uidins,tmsins) values (78,null,NULL,'01/04/2015',NULL,NULL,8888,1,1,1429869570)
+24-04-15	11:59:53
+	insert into pe.pareri (ente,resp_parere,prot_rich,data_rich,data_ricezione_richiesta,note,pratica,chk,uidins,tmsins) values (78,null,'1212','01/04/2015',NULL,NULL,8888,1,1,1429869593)
+28-05-15	10:24:41
+	update stp.e_modelli set nome='Istruttoria Tecnica.docx',form='pe.avvioproc',descrizione='Istruttoria Tecnica',proprietario=NULL,multiple=1 where id=6
+28-05-15	10:26:38
+	insert into pe.cterreni (foglio,mappale,note,sez_censimento,pratica,chk,uidins,tmsins) values ('6','304',NULL,NULL,8646,1,1,1432801598)
+28-05-15	10:39:02
+	update stp.e_modelli set nome='Istruttoria Tecnica.docx',form='pe.avvioproc',descrizione='Istruttoria Tecnica',proprietario=NULL,multiple=1 where id=6
+28-05-15	10:42:26
+	update stp.e_modelli set nome='Istruttoria Tecnica.docx',form='pe.avvioproc',descrizione='Istruttoria Tecnica',proprietario=NULL,multiple=1 where id=6
+28-05-15	11:04:29
+	insert into stp.e_modelli (nome,form,descrizione,proprietario,multiple,id) values ('Preavviso di diniego (Commissione Edilizia).docx','pe.avvioproc','Preavviso di diniego (Commissione Edilizia)',NULL,1,(SELECT coalesce(max(id),0)+1 FROM stp.e_modelli))
+28-05-15	11:06:22
+	update stp.e_modelli set nome='Preavviso di diniego (Commissione Edilizia).docx',form='pe.avvioproc',descrizione='Preavviso di diniego (Commissione Edilizia)',proprietario=NULL,multiple=1 where id=7
+28-05-15	11:21:21
+	insert into stp.e_modelli (nome,form,descrizione,proprietario,multiple,id) values ('Istruttoria Tecnica (Paessaggistica Semplificata).docx','pe.avvioproc','Istruttoria Tecnica (Paessaggistica Semplificata)',NULL,1,(SELECT coalesce(max(id),0)+1 FROM stp.e_modelli))
+28-05-15	11:22:57
+	update stp.e_modelli set nome='Istruttoria Tecnica (Paessaggistica Semplificata).docx',form='pe.avvioproc',descrizione='Istruttoria Tecnica (Paessaggistica Semplificata)',proprietario=NULL,multiple=1 where id=8
+28-05-15	11:45:50
+	insert into stp.e_modelli (nome,form,descrizione,proprietario,multiple,id) values ('Richiesta integrazioni.docx','pe.avvioproc','Richiesta Integrazioni',NULL,1,(SELECT coalesce(max(id),0)+1 FROM stp.e_modelli))
+28-05-15	11:46:06
+	update stp.e_modelli set nome='Richiesta integrazioni.docx',form='pe.avvioproc',descrizione='Richiesta Integrazioni',proprietario=NULL,multiple=1 where id=9
+28-05-15	11:56:06
+	insert into stp.e_modelli (nome,form,descrizione,proprietario,multiple,id) values ('Preavviso di diniego (Soprintendenza).docx','pe.avvioproc','Preavviso di diniego (Soprintendenza)',NULL,1,(SELECT coalesce(max(id),0)+1 FROM stp.e_modelli))
+28-05-15	12:00:23
+	insert into stp.e_modelli (nome,form,descrizione,proprietario,multiple,id) values ('Preavviso di diniego (Commissione Locale per il paesaggio).docx','pe.avvioproc','Preavviso di diniego (Commissione Locale per il paesaggio)',NULL,1,(SELECT coalesce(max(id),0)+1 FROM stp.e_modelli))
+28-05-15	12:15:17
+	insert into stp.e_modelli (nome,form,descrizione,proprietario,multiple,id) values ('Parere CLP Istruttoria Paesaggistica.docx','pe.avvioproc','parere CLP istruttoria paesaggistica',NULL,1,(SELECT coalesce(max(id),0)+1 FROM stp.e_modelli))
+28-05-15	12:23:57
+	insert into stp.e_modelli (nome,form,descrizione,proprietario,multiple,id) values ('Richiesta parere Soprintendenza senza conferenza.docx','pe.pareri','Richiesta parere Soprintendenza senza conferenza',NULL,1,(SELECT coalesce(max(id),0)+1 FROM stp.e_modelli))
+28-05-15	12:27:51
+	insert into stp.e_modelli (nome,form,descrizione,proprietario,multiple,id) values ('Richiesta parere Soprintendenza senza conferenza.docx','pe.pareri',NULL,NULL,0,(SELECT coalesce(max(id),0)+1 FROM stp.e_modelli))
+28-05-15	12:28:16
+	update stp.e_modelli set nome='Richiesta parere Soprintendenza.docx',form='pe.pareri',descrizione=NULL,proprietario=NULL,multiple=1 where id=14
+28-05-15	12:30:38
+	insert into stp.e_modelli (nome,form,descrizione,proprietario,multiple,id) values ('Richiesta parere Soprintendenza senza conferenza (Aut paes semplificata).docx','pe.pareri','Richiesta parere Soprintendenza senza conferenza (Aut paes semplificata)',NULL,1,(SELECT coalesce(max(id),0)+1 FROM stp.e_modelli))
+28-05-15	12:32:21
+	insert into stp.e_modelli (nome,form,descrizione,proprietario,multiple,id) values ('Richiesta parere Soprintendenza senza conferenza sanatoria.docx','pe.pareri','Richiesta parere Soprintendenza senza conferenza sanatoria',NULL,1,(SELECT coalesce(max(id),0)+1 FROM stp.e_modelli))
+28-05-15	12:55:25
+	insert into stp.e_modelli (nome,form,descrizione,proprietario,multiple,id) values ('Parere Ambientale.docx','pe.comm_edilizia','Parere Ambientale',NULL,1,(SELECT coalesce(max(id),0)+1 FROM stp.e_modelli))
+28-05-15	13:01:38
+	insert into stp.e_modelli (nome,form,descrizione,proprietario,multiple,id) values ('Trasmissione Parere Ambientale.docx','pe.comm_edilizia',NULL,NULL,1,(SELECT coalesce(max(id),0)+1 FROM stp.e_modelli))

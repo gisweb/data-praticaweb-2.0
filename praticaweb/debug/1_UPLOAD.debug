@@ -1,0 +1,3 @@
+
+20-06-11	16:44:37
+	INSERT INTO pe.iter(pratica,data,utente,nota,nota_edit,uidins,tmsins) VALUES(8319,'20-06-11','mamo','Caricato il documento <img src="images/word.gif" border=0 onclick="window.open(\'stampe/PROBLEMATICHE AL 20 5 2011.doc\');">&nbsp;&nbsp;<a href="#" onclick="window.open(\'stampe/PROBLEMATICHE AL 20 5 2011.doc\');">frfrfrffr</a>','Caricato il documento <img src="images/word.gif" border=0 onclick="window.open(\'stampe/PROBLEMATICHE AL 20 5 2011.doc\');">&nbsp;&nbsp;<a href="#" onclick="window.open(\'stampe/PROBLEMATICHE AL 20 5 2011.doc\');">frfrfrffr</a>',1,1308581077);

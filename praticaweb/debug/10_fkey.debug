@@ -1,0 +1,25 @@
+
+24-04-15	11:38:09
+	SELECT opzione FROM elenco_form WHERE id='pe.pareri';
+24-04-15	11:38:09
+	SELECT opzione FROM elenco_form WHERE id='pe.titolo';
+28-04-15	10:22:23
+	SELECT opzione FROM elenco_form WHERE id='pe.pareri';
+28-04-15	10:22:23
+	SELECT opzione FROM elenco_form WHERE id='pe.pareri';
+28-04-15	10:22:23
+	SELECT opzione FROM elenco_form WHERE id='pe.titolo';
+28-04-15	10:22:23
+	SELECT opzione FROM elenco_form WHERE id='pe.titolo';
+29-04-15	08:37:01
+	SELECT opzione FROM pe.elenco_tipopratica_all WHERE id::varchar='21100';
+29-04-15	08:37:01
+	SELECT opzione FROM admin.elenco_rdp WHERE id::varchar='10';
+29-04-15	08:38:12
+	SELECT opzione FROM pe.elenco_tipopratica_all WHERE id::varchar='21100';
+29-04-15	08:38:12
+	SELECT opzione FROM admin.elenco_rdp WHERE id::varchar='10';
+29-04-15	08:41:30
+	SELECT opzione FROM pe.elenco_tipopratica_all WHERE id::varchar='21100';
+29-04-15	08:41:30
+	SELECT opzione FROM admin.elenco_rdp WHERE id::varchar='10';

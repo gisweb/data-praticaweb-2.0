@@ -1,0 +1,263 @@
+
+25-06-14	10:52:53
+	<html>
+		
+	<body>
+		 <p style="text-align: center"><b>RELAZIONE DEL RESPONSABILE DEL PROCEDIMENTO <br />
+IN MATERIA PAESAGGISTICA<br />
+</b></p>
+<table border="1" cellspacing="1" cellpadding="1" width="100%">
+    <tbody>
+        <tr>
+            <td><i>PRATICA N:</i></td>
+            <td><i><span class="valore">V.avv_procedimento.numero</span></i></td>
+            <td><em>QUALIFICA DELL'INTERVENTO:</em></td>
+            <td><i><span class="valore">V.avv_procedimento.tipo_intervento</span></i>&nbsp;</td>
+        </tr>
+        <tr>
+            <td><em>RICHIEDENTE:</em></td>
+            <td><em><span class="iniziocicli">IN_CICLO</span>&nbsp; <br />
+            <span class="valore">V.richiedenti.app</span>&nbsp; <span class="valore">V.richiedenti.nominativo</span><br />
+            <span class="finecicli">FI_CICLO</span></em></td>
+            <td><em>PROGETTISTA:</em></td>
+            <td><i><span class="iniziocicli">IN_CICLO</span><br />
+            <span class="valore">V.progettisti.app</span>&nbsp;<br />
+            <span class="valore">V.progettisti.nominativo</span>&nbsp;<br />
+            <span class="finecicli">FI_CICLO</span></i></td>
+        </tr>
+        <tr>
+            <td><i>DESCRIZIONE SOMMARIA DEL PROGETTO:</i></td>
+            <td>&nbsp; <i><span class="valore">V.avv_procedimento.oggetto</span></i></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+<p style="text-align: left"><b>1. DOCUMENTAZIONE PROGETTUALE AGLI ATTI:</b><br />
+<span class="iniziocicli">IN_CICLO</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="valore">V.allegati_check.presente</span>&nbsp;<span class="valore">V.allegati_check.nome</span> <br />
+<span class="finecicli">FI_CICLO</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Altro: _____________________________</p>
+<p><b>2. PROFILO STORICO DELLA PRATICA:</b> <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Prima presentazione <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pratica gi&agrave; esaminata:&nbsp;<br />
+<br />
+&nbsp;&nbsp;&nbsp; -precedente parere:</p>
+<p>_______________________________________________________________________________________<br />
+<br />
+_______________________________________________________________________________________<br />
+&nbsp;&nbsp;&nbsp;&nbsp;<br />
+<b>3. SOTTO IL PROFILO PAESAGGISTICO SONO RILEVANTI I SEGUENTI INTERVENTI:</b></p>
+<p><b>________________________________________________________________________________________</b></p>
+<p><b>________________________________________________________________________________________</b></p>
+<p><b>________________________________________________________________________________________</b></p>
+<p><b>4. CONFORMITA' DEL PROGETTO CON IL PIANO TERRITORIALE DI COORDINAMENTO PAESISTICO</b></p>
+<table border="1" cellspacing="1" cellpadding="1" width="100%">
+    <tbody>
+        <tr>
+            <td width="40%" nowrap="nowrap" align="center"><b>PTCP</b></td>
+            <td width="40%" nowrap="nowrap" align="center">&nbsp;<b>ZONA</b></td>
+        </tr>
+        <tr>
+            <td valign="middle" width="40%" nowrap="nowrap" align="left">ASSETTO INSEDIATIVO</td>
+            <td width="40%" nowrap="nowrap" align="left">
+            <p><span class="iniziocicli">IN_CICLO <br />
+            </span><span class="valore">V.zone_ptcpi.zona</span><br />
+            <span class="finecicli">FI_CICLO</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle" width="40%" nowrap="nowrap" align="left">ASSETTO GEOMORFOLOGICO</td>
+            <td width="40%" nowrap="nowrap" align="left"><span class="iniziocicli">IN_CICLO <br />
+            </span><span class="valore">V.zone_ptcpg.zona</span> <br />
+            <span class="finecicli">FI_CICLO</span></td>
+        </tr>
+        <tr>
+            <td valign="middle" width="40%" nowrap="nowrap" align="left">ASSETTO VEGETAZIONALE</td>
+            <td width="40%" nowrap="nowrap" align="left"><span class="iniziocicli">IN_CICLO<br />
+            </span><span class="valore">V.zone_ptcpv.zona</span> <br />
+            <span class="finecicli">FI_CICLO</span><span class="iniziocicli"> </span></td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>
+<p><b>5.1. CONFORMITA' AL PRG E AD ALTRI STRUMENTI DI PIANIFICAZIONE</b></p>
+<p>
+<table border="1" cellspacing="1" cellpadding="1" width="100%">
+    <tbody>
+        <tr>
+            <td valign="middle" width="30%" nowrap="nowrap" align="left">ZONA URBANISTICA</td>
+            <td valign="middle" width="40%" nowrap="nowrap" align="center">Valutazione di conformit&agrave;</td>
+        </tr>
+    </tbody>
+</table>
+<span class="iniziocicli">IN_CICLO</span>
+<table border="1" cellspacing="1" cellpadding="1" width="100%">
+    <tbody>
+        <tr>
+            <td width="40%" nowrap="nowrap"><span class="valore">V.zone_prg.zona</span></td>
+            <td width="40%" nowrap="nowrap">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+<span class="finecicli">FI_CICLO</span></p>
+<p><b>Problematiche specifiche:</b></p>
+<p><b>5.2.&nbsp;- CONFORMITA' ALLE DISPOSIZIONI DELLA <u>DISCIPLINA PAESISTICA</u>&nbsp; DI LIVELLO PUNTUALE</b></p>
+<p><span class="valore">F.vincoli_paesistici.vincoli_paesistici</span></p>
+<p><b>L'intervento rispetto della Disciplina Paesistica di livello puntuale allegata al P.R.G.:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [&nbsp; ]&nbsp; &egrave; pienamente conforme&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; [&nbsp; ]&nbsp; &egrave; parzialmente conforme&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; [&nbsp; ]&nbsp; non &eacute; conforme<br />
+<br />
+</b><b>5.3. VINCOLI</b></p>
+<p><span class="valore">F.vincoli_conformita.vincoli_conformita</span></p>
+<p>&nbsp;</p>
+<p>A conclusione dell'istruttoria della pratica e dell'esame della documentazione presentata <b>si segnalano all'attenzione della Commissione i seguenti aspetti del progetto:</b></p>
+<p><b>________________________________________________________________________________________</b></p>
+<p><b>________________________________________________________________________________________</b></p>
+<p><b>________________________________________________________________________________________</b></p>
+<p><b>________________________________________________________________________________________</b></p>
+<p><b>________________________________________________________________________________________</b></p>
+<p><b>________________________________________________________________________________________</b></p>
+<p><b>________________________________________________________________________________________</b></p>
+<p>e con le seguenti prescrizioni:</p>
+<p>________________________________________________________________________________________</p>
+<p>________________________________________________________________________________________</p>
+<p>________________________________________________________________________________________</p>
+<p>________________________________________________________________________________________</p>
+<p><b>e si propone alla Commissione di esprimere parere _____________________________________________</b></p>
+<p><i>Pieve Ligure,&nbsp; <span class="valore">D.data.data</span> </i></p>
+<p style="text-align: center"><b>Il Responsabile del Procedimento<br />
+</b><i>(Giorgio Leverone)</i></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="text-align: right">&nbsp;</p> 
+	</body>
+</html>	
+15-07-14	09:46:07
+	<html>
+		
+	<body>
+		 <p style="text-align: center"><b>RELAZIONE DEL RESPONSABILE DEL PROCEDIMENTO <br />
+IN MATERIA PAESAGGISTICA<br />
+</b></p>
+<table border="1" cellspacing="1" cellpadding="1" width="100%">
+    <tbody>
+        <tr>
+            <td><i>PRATICA N:</i></td>
+            <td><i><span class="valore">V.avv_procedimento.numero</span></i></td>
+            <td><em>QUALIFICA DELL'INTERVENTO:</em></td>
+            <td><i><span class="valore">V.avv_procedimento.tipo_intervento</span></i>&nbsp;</td>
+        </tr>
+        <tr>
+            <td><em>RICHIEDENTE:</em></td>
+            <td><em><span class="iniziocicli">IN_CICLO</span>&nbsp; <br />
+            <span class="valore">V.richiedenti.app</span>&nbsp; <span class="valore">V.richiedenti.nominativo</span><br />
+            <span class="finecicli">FI_CICLO</span></em></td>
+            <td><em>PROGETTISTA:</em></td>
+            <td><i><span class="iniziocicli">IN_CICLO</span><br />
+            <span class="valore">V.progettisti.app</span>&nbsp;<br />
+            <span class="valore">V.progettisti.nominativo</span>&nbsp;<br />
+            <span class="finecicli">FI_CICLO</span></i></td>
+        </tr>
+        <tr>
+            <td><i>DESCRIZIONE SOMMARIA DEL PROGETTO:</i></td>
+            <td>&nbsp; <i><span class="valore">V.avv_procedimento.oggetto</span></i></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+<p style="text-align: left"><b>1. DOCUMENTAZIONE PROGETTUALE AGLI ATTI:</b><br />
+<span class="iniziocicli">IN_CICLO</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="valore">V.allegati_check.presente</span>&nbsp;<span class="valore">V.allegati_check.nome</span> <br />
+<span class="finecicli">FI_CICLO</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Altro: _____________________________</p>
+<p><b>2. PROFILO STORICO DELLA PRATICA:</b> <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Prima presentazione <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pratica gi&agrave; esaminata:&nbsp;<br />
+<br />
+&nbsp;&nbsp;&nbsp; -precedente parere:</p>
+<p>_______________________________________________________________________________________<br />
+<br />
+_______________________________________________________________________________________<br />
+&nbsp;&nbsp;&nbsp;&nbsp;<br />
+<b>3. SOTTO IL PROFILO PAESAGGISTICO SONO RILEVANTI I SEGUENTI INTERVENTI:</b></p>
+<p><b>________________________________________________________________________________________</b></p>
+<p><b>________________________________________________________________________________________</b></p>
+<p><b>________________________________________________________________________________________</b></p>
+<p><b>4. CONFORMITA' DEL PROGETTO CON IL PIANO TERRITORIALE DI COORDINAMENTO PAESISTICO</b></p>
+<table border="1" cellspacing="1" cellpadding="1" width="100%">
+    <tbody>
+        <tr>
+            <td width="40%" nowrap="nowrap" align="center"><b>PTCP</b></td>
+            <td width="40%" nowrap="nowrap" align="center">&nbsp;<b>ZONA</b></td>
+        </tr>
+        <tr>
+            <td valign="middle" width="40%" nowrap="nowrap" align="left">ASSETTO INSEDIATIVO</td>
+            <td width="40%" nowrap="nowrap" align="left">
+            <p><span class="iniziocicli">IN_CICLO <br />
+            </span><span class="valore">V.zone_ptcpi.zona</span><br />
+            <span class="finecicli">FI_CICLO</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle" width="40%" nowrap="nowrap" align="left">ASSETTO GEOMORFOLOGICO</td>
+            <td width="40%" nowrap="nowrap" align="left"><span class="iniziocicli">IN_CICLO <br />
+            </span><span class="valore">V.zone_ptcpg.zona</span> <br />
+            <span class="finecicli">FI_CICLO</span></td>
+        </tr>
+        <tr>
+            <td valign="middle" width="40%" nowrap="nowrap" align="left">ASSETTO VEGETAZIONALE</td>
+            <td width="40%" nowrap="nowrap" align="left"><span class="iniziocicli">IN_CICLO<br />
+            </span><span class="valore">V.zone_ptcpv.zona</span> <br />
+            <span class="finecicli">FI_CICLO</span><span class="iniziocicli"> </span></td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>
+<p><b>5.1. CONFORMITA' AL PRG E AD ALTRI STRUMENTI DI PIANIFICAZIONE</b></p>
+<p>
+<table border="1" cellspacing="1" cellpadding="1" width="100%">
+    <tbody>
+        <tr>
+            <td valign="middle" width="30%" nowrap="nowrap" align="left">ZONA URBANISTICA</td>
+            <td valign="middle" width="40%" nowrap="nowrap" align="center">Valutazione di conformit&agrave;</td>
+        </tr>
+    </tbody>
+</table>
+<span class="iniziocicli">IN_CICLO</span>
+<table border="1" cellspacing="1" cellpadding="1" width="100%">
+    <tbody>
+        <tr>
+            <td width="40%" nowrap="nowrap"><span class="valore">V.zone_prg.zona</span></td>
+            <td width="40%" nowrap="nowrap">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+<span class="finecicli">FI_CICLO</span></p>
+<p><b>Problematiche specifiche:</b></p>
+<p><b>5.2.&nbsp;- CONFORMITA' ALLE DISPOSIZIONI DELLA <u>DISCIPLINA PAESISTICA</u>&nbsp; DI LIVELLO PUNTUALE</b></p>
+<p><span class="valore">F.vincoli_paesistici.vincoli_paesistici</span></p>
+<p><b>L'intervento rispetto della Disciplina Paesistica di livello puntuale allegata al P.R.G.:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [&nbsp; ]&nbsp; &egrave; pienamente conforme&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; [&nbsp; ]&nbsp; &egrave; parzialmente conforme&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; [&nbsp; ]&nbsp; non &eacute; conforme<br />
+<br />
+</b><b>5.3. VINCOLI</b></p>
+<p><span class="valore">F.vincoli_conformita.vincoli_conformita</span></p>
+<p>&nbsp;</p>
+<p>A conclusione dell'istruttoria della pratica e dell'esame della documentazione presentata <b>si segnalano all'attenzione della Commissione i seguenti aspetti del progetto:</b></p>
+<p><b>________________________________________________________________________________________</b></p>
+<p><b>________________________________________________________________________________________</b></p>
+<p><b>________________________________________________________________________________________</b></p>
+<p><b>________________________________________________________________________________________</b></p>
+<p><b>________________________________________________________________________________________</b></p>
+<p><b>________________________________________________________________________________________</b></p>
+<p><b>________________________________________________________________________________________</b></p>
+<p>e con le seguenti prescrizioni:</p>
+<p>________________________________________________________________________________________</p>
+<p>________________________________________________________________________________________</p>
+<p>________________________________________________________________________________________</p>
+<p>________________________________________________________________________________________</p>
+<p><b>e si propone alla Commissione di esprimere parere _____________________________________________</b></p>
+<p><i>Pieve Ligure,&nbsp; <span class="valore">D.data.data</span> </i></p>
+<p style="text-align: center"><b>Il Responsabile del Procedimento<br />
+</b><i>(Giorgio Leverone)</i></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="text-align: right">&nbsp;</p> 
+	</body>
+</html>	
