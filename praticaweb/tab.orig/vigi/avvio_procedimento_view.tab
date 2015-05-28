@@ -1,0 +1,10 @@
+vigi.avvio_procedimento
+Numero Pratica,numero,,text|Data di presentazione,data_presentazione,,data
+Protocollo generale,protocollo,,text|Data,data_prot,,data
+Protocollo interno,protocollo_int,,text|Data,data_prot_int,,data
+Riferimento pratica,rif_pratica,,text
+Resp. procedimento,nome_responsabile,,text|Data,data_resp,,data
+Comunicazione Resp.Proc,com_resp,,text|Data,data_com_resp,,data
+Oggetto,oggetto,,text
+Note,note,,text
+,,vigi.avvioproc,stampa

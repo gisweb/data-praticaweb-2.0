@@ -1,0 +1,5 @@
+admin.utenti
+,id,,radio1
+Nome,nome,30%,text
+UserName,username,30%,text
+

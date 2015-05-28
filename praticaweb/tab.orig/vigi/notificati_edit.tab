@@ -1,0 +1,4 @@
+vigi.vista_notificati
+,id,,delete
+Soggetto,nominativo,65%,text
+Data,data_notifica,10,data

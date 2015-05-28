@@ -1,0 +1,4 @@
+pe.doc_elenco
+Alleg.,allegato,30,radio
+Manc.,mancante,30,radio
+Nome del Documento,documento,,text

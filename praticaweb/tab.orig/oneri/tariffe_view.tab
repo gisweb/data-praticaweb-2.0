@@ -1,0 +1,7 @@
+oneri.vista_elenco_tariffe
+,funzione,20%,text
+Descrizione,descrizione,40%,text
+tr,tr,10%,valuta
+a,a,10%,valuta
+ie,ie,10%,text
+k,k,10%,text

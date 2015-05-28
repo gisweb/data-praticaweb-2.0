@@ -1,0 +1,5 @@
+oneri.vista_rate
+Totale Rata,totale,,valuta|Costo di Costruzione,cc,,valuta
+Urbanizzazione Primaria,b1,,valuta|Urbanizzazione Secondaria,b2,,valuta
+Data Scadenza,data_scadenza,,data|Avviso spedito il,data_avviso,,data
+Quietanza n°,quietanza,,text|Data Pagamento,data_pagata,,data|,titolo,,

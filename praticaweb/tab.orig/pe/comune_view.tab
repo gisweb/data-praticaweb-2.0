@@ -1,0 +1,5 @@
+pe.elenco_comuni
+Comune,nome,40,string
+CAP,cap,5,string
+Provincia,provincia,50,string|Sigla,sigla_prov,2,string
+Regione,regione,50,string

@@ -1,0 +1,33 @@
+Esempio File di configurazione : Permessi@Nome Tabella/Permessi@Nome Javascript@Parametri Javascript@Testo del Link@Testo descrittivo
+0@Gestione pratiche
+4@NewWindow@'pe.ricerca.php?new=1','ricercaPraticaweb',0,0,'yes'@Apri pratica esistente@Modalità di ricerca di una pratica archiviata.
+4@NewWindow@'pe.recenti.php','ricercaPraticaweb',0,0,'yes'@Pratiche recenti@Elenco delle ultime 10 pratiche consultate 
+3@NewWindow@'pe.avvioproc.php?mode=new','Praticaweb',0,0,'yes'@Nuova Pratica@Inserisce una nuova pratica.
+3@NewWindow@'pe.eliminapratica.php?ricerca=1','Praticaweb',0,0,'yes'@Elimina Pratica@Individua ed elimina la pratica scelta.
+0@Commissione Edilizia
+4@NewWindow@'ce.ricerca_commissione.php','ricercaCommissioneEdilizia',0,0,'yes'@Vedi Commissione Edilizia@Gestione delle sedute di Commissione Edilizia, convocazioni, verbali.... 
+3@NewWindow@'ce.commissione.php?pratica=0&comm=1&mode=new','CommissioneEdilizia',0,0,'yes'@Nuova Commissione Edilizia@Gestione delle sedute di Commissione Edilizia, convocazioni, verbali.... 
+3@NewWindow@'ce.ricerca_commissione.php?mode=cancella','CommissioneEdilizia',0,0,'yes'@Elimina Commissione Edilizia@Gestione delle sedute di Commissione Edilizia, convocazioni, verbali.... 
+0@Commissione Locale per il Paesaggio
+4@NewWindow@'ce.ricerca_commissione.php?comm_paesaggio=1','ricercaCommissioneEdilizia',0,0,'yes'@Vedi Commissione Locale per il Paesaggio@Gestione delle sedute di Commissione Locale per il Paesaggio, convocazioni, verbali.... 
+3@NewWindow@'ce.commissione_paesaggio.php?pratica=0&comm_paesaggio=1&mode=new','CommissionePaesaggio',0,0,'yes'@Nuova Commissione Locale per il Paesaggio@Gestione delle sedute di Commissione Locale per il Paesaggio, convocazioni, verbali....
+3@NewWindow@'ce.ricerca_commissione.php?mode=cancella&comm_paesaggio=1','CommissionePaesaggio',0,0,'yes'@Elimina Commissione Locale per il Paesaggio@Gestione delle sedute di Commissione Locale per il Paesaggio, convocazioni, verbali.... 
+0@Praticaweb Navigator per la cartografia
+4@OpenMapset@'pieveligure2','gisclient'@Accedi alla cartografia del comune@Quadro d'unione del catastale Piano Regolatore e vincoli
+3@NewWindow@'cdu.richiesta.php?mode=new','Praticaweb',0,0,'yes'@Nuovo Certificato di Destinazione Urbanistica@
+4@NewWindow@'cdu.ricerca.php','Praticaweb',0,0,'yes'@Ricerca Certificato di Destinazione Urbanistica@
+2@Amministrazione Sistema
+2@NewWindow@'admin.utenti.php?mode=all','PraticawebUtenti',0,0,'yes'@Gestione Profili@- Aggiunta, Cancellazione, Modifica di un profilo utente.
+2@NewWindow@'admin.report.php','PraticawebUtenti',0,0,'yes'@Report delle Pratiche@Riepilogo delle Pratiche inserite per data di presentazione e di inserimento
+2@NewWindow@'admin.report_lavori.php','PraticawebUtenti',0,0,'yes'@Report dei Lavori@Riepilogo dei lavori delle pratiche
+2@NewWindow@'admin.report_pareri.php','PraticawebUtenti',0,0,'yes'@Report dei Pareri delle Commissioni@Riepilogo delle pratiche con i relativi pareri espressi dalle commissioni
+2@NewWindow@'admin.report_cdu.php','PraticawebUtenti',0,0,'yes'@Report dei CDU@Riepilogo dei CDU richiesti
+2@NewWindow@'admin.report_dia_amb.php','PraticawebUtenti',0,0,'yes'@Report delle Dia Ambientali@Riepilogo delle DIA Ambientali richieste
+2@Gestione tabella
+1@NewWindow@'stp.elenco_css.php?mode=all','AdminPraticaweb',0,0,'yes'@Elenco CSS HTML@Gestione degli Stili di Stampa HTML.
+2@NewWindow@'stp.elenco_modelli.php?tipo=html','AdminPraticaweb',0,0,'yes'@Elenco Modelli HTML@Gestione dei modelli di stampa in formato HTML.
+2@NewWindow@'stp.elenco_modelli.php?tipo=rtf','AdminPraticaweb',0,0,'yes'@Elenco Modelli RTF@Gestione dei modelli di stampa in formato RTF.
+2@NewWindow@'pe.documenti.php?mode=view_all','ComuniPraticaweb',0,0,'yes'@Allegati@Elenco dei possibili allegati alla pratica.
+2@NewWindow@'oneri.tariffe.php?mode=new','OneriPraticaweb',0,0,'yes'@Oneri@Elenco tariffe impostate.
+2@NewWindow@'ce.membri.php?mode=all','membri_CE_Praticaweb',0,0,'yes'@Membri C.E.@Elenco membri commissione edilizia.
+2@NewWindow@'ce.membri_paes.php?mode=all','membri_CLP_Praticaweb',0,0,'yes'@Membri C.L.P.@Elenco membri commissione locale per il paesaggio.

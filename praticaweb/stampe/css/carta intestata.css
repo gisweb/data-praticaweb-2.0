@@ -1,0 +1,17 @@
+body{
+    margin-top:4.5cm;
+    margin-left:1.5cm;
+    margin-right:1.5cm;
+    margin-bottom:3.5cm;
+
+    font-family:garamond;
+    font-size:8px;
+}
+TABLE{
+ border-collapse:collapse;
+ border:1px solid black;
+}
+TD{
+  font-family:garamond;
+}
+

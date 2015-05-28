@@ -1,0 +1,14 @@
+oneri.vista_calcoli
+Tariffa anno,anno,,text
+Destinazione d'uso,destuso,,text
+Tipo di intervento,intervento,,text
+Superficie utile,sup,8,text
+Mancato Aggravio carico insediativo,c1,,text
+Incentivo Comunale,c2,,text
+Riuso Aree (>10 ha),c3,,text
+Riuso Aree (<10 ha),c4,,text
+Caratteristiche tipologiche superiori,d1,,text
+Intervento in area SUA,d2,,text
+Riduzione 10% edifici degradati,degradato,,yesno
+Primaria (B1),b1,,valuta|Secondaria (B2),b2,,valuta|Costo di costruzione,cc,,valuta
+Note,note,,textarea|,calcolo,,id

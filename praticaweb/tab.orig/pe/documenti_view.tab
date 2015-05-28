@@ -1,0 +1,4 @@
+pe.elenco_documenti
+Documento,nome,25%,string
+Iter,iter,25%,string
+Descrizione,descrizione,50%,string

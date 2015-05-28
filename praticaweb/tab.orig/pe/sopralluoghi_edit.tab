@@ -1,0 +1,4 @@
+pe.sopralluoghi
+Motivo,motivo,60,text|Elenco  >>,motivo,100xget_elenco,button
+Data,data,10,data
+Note,note,50x3,textarea

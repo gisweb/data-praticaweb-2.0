@@ -1,0 +1,5 @@
+pe.proroga
+Protocollo,protocollo,25,text|Data,data,10,data
+Nuova scadenza inizio lavori,pro_scade_il,10,data
+Nuova scadenza fine lavori,pro_scade_fl,10,data
+Note,note,50x4,textarea

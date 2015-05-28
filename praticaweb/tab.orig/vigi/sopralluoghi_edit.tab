@@ -1,0 +1,4 @@
+vigi.sopralluoghi
+Motivo,motivo_v,60,text|Scegli >>,motivo_v,80xget_elenco,button
+Data,data,10,data
+Note,note,50x3,textarea

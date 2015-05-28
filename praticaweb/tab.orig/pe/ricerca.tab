@@ -1,0 +1,7 @@
+#
+Pratica,numero,25,text|Protocollo,protocollo,25,text
+Titolo,titolo,25,text
+Richiedente,richiedente,54,text
+Progettista,progettista,54,text
+Via,via,33,text|Civico,civico,7,text|Elenco>>,via,70xget_elenco,button
+Foglio,foglio,5,text|Mappale,mappale,8,text|,nct,,checkbox|,nceu,,checkbox

@@ -1,0 +1,7 @@
+vigi.ordinanze
+Data avvio procedimento,data_avvio_proc,10,data|Protocollo,protocollo,25,text
+Data ordinanza,data_ordinanza,10,data|Registro,registro,25,text
+Data sospensione,data_sospensione,10,data|Data demolizione,data_multi,10,data
+Data inserimento fascicolo,data_ins_fascicolo,10,data|Data atti,data_atti,10,data
+Note,note,200,text
+Notifiche,,,

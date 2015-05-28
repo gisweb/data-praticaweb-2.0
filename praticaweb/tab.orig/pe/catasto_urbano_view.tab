@@ -1,0 +1,6 @@
+pe.curbano
+,id,2%,idriga
+Foglio,foglio,15%,text
+Mappale,mappale,15%,text
+Subalterno,sub,15%,text
+Note,note,50%,text

@@ -1,0 +1,5 @@
+admin.utenti
+info,id,10%,info
+nome,nome,30%,text
+utente,username,30%,text
+tipo utente,desc_permessi,30%,text

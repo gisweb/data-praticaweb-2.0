@@ -1,0 +1,7 @@
+vigi.esposti,origine,data_presentazione
+Origine,origine,50,text|Voce in elenco >>,origine,150xget_elenco,button
+Data presentazione,data_presentazione,10,data
+Oggetto,oggetto,60x4,textarea
+Data determinazione,data_determinazione,10,data
+Termine,termine_verifica,10,data
+Note,note,60x6,textarea

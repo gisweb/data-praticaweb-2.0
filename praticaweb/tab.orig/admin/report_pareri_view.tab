@@ -1,0 +1,7 @@
+pe.report()
+Numero,numero,,text
+Data Present.,data_presentazione,,data
+Richiedenti,richiedenti,,text
+Ubicazione,ubicazione,,text
+Parere Commissione,parere,,text
+Data rilascio parere,data_ril_parere,,data

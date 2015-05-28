@@ -1,0 +1,10 @@
+pe.vista_lavori
+Numero,numero,,text
+Data Present.,data_protocollo,,data
+Tipo Pratica,tipo_pratica,,text
+Richiedenti,richiedenti,,text
+Proprietari,proprietari,,text
+Esecutori,esecutori,,text
+Ubicazione,ubicazione,,text
+Inizio Lavori,inizio_lavori,,text
+Fine Lavori,fine_lavori,,text

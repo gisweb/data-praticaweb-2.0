@@ -1,0 +1,9 @@
+pe.elenco_pareri_comm
+Ente,nome_ente,,text
+Prot.Rilascio,prot_ril,,text|Data Commissione,data_ril,,data
+Prot.Ricezione,prot_rice,,text|Data,data_rice,,data
+Numero doc.,numero_doc,,text
+Parere espresso,parere,,text
+Testo,testo,,textarea
+Prescrizioni,prescrizioni,,textarea
+Note,note,,textarea

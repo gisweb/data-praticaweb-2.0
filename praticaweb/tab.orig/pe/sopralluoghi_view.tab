@@ -1,0 +1,4 @@
+pe.sopralluoghi
+Motivo,motivo,60,text
+Data,data,10,data
+Note,note,50x3,textarea

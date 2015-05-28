@@ -1,0 +1,5 @@
+admin.utenti
+,id,,checkbox
+Nome,nome,100,text
+UserName,username,25,text
+

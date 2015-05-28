@@ -1,0 +1,5 @@
+####vigi
+Altro soggetto,soggetto,200xvigi.elenco_ruoli,selectdb|,nominativo,36,text
+Data di,data,210xvigi.elenco_dataricerca,selectdb|dal,data_dal,10,text|al,data_al,10,text
+Oggetto (parte),oggetto,54,text
+Resp. procedimento,resp_proc,280xpe.elenco_ricerca_responsabili,selectdb

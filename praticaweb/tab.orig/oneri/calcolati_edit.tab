@@ -1,0 +1,13 @@
+oneri.calcolati
+Tariffa anno,anno,140xoneri.elenco_annox xload_elenco,selectRPC
+Destinazione d'uso,tabella,300xoneri.elenco_funzionex xload_elenco,selectRPC
+Tipo di intervento,intervento,300xoneri.elenco_interventixtabellaxset_perc,selectRPC|,perc,2,numero
+Superficie utile,sup,8,numero
+Manc. Aggravio carico ins.,c1,300xoneri.elenco_c1xtabella,selectdb
+Incentivo Comunale,c2,300xoneri.elenco_c2xtabella,selectdb
+Riuso Aree (>10 ha),c3,300xoneri.elenco_c3xtabella,selectdb
+Riuso Aree (<10 ha),c4,300xoneri.elenco_c4xtabella,selectdb
+Caratt. Tipologiche sup.,d1,300xoneri.elenco_d1xtabella,selectdb
+Intervento area SUA,d2,300xoneri.elenco_d2xtabella,selectdb
+Edificio degradato,degradato,45,noyes
+Note,note,50x3,textarea 

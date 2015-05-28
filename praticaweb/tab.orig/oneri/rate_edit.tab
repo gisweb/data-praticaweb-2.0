@@ -1,0 +1,8 @@
+oneri.rate
+Costo di Costruzione,cc,20,valuta
+Urbanizzazione Primaria,b1,20,valuta
+Urbanizzazione Secondaria,b2,20,valuta
+Data Scadenza,data_scadenza,10,data
+Avviso spedito il,data_avviso,10,data
+Data Pagamento,data_pagata,10,data
+Quietanza n°,quietanza,20,text

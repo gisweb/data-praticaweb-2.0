@@ -1,0 +1,6 @@
+oneri.fidi,istituto
+Istituto,istituto,70,text
+Importo,importo,20,valuta
+Numero Fideiussione,numero,20,text|Data,data,10,data
+Dirigenziale n°,diri,20,text|Data,datadiri,10,data
+Note,note,50x5,textarea

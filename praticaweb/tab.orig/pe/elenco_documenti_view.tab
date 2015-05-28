@@ -1,0 +1,5 @@
+pe.elenco_documenti
+,id,4%,info
+Documento,nome,23%,text
+Iter,iter,13%,text
+Descrizione,descrizione,60%,text

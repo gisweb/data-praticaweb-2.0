@@ -1,0 +1,4 @@
+oneri.e_tariffe
+Anno di partenza,base,75xoneri.elenco_anno,selectdb
+Incremento %,inc,5,text
+Anno di Aggiornamento,anno,4,text

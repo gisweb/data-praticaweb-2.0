@@ -1,0 +1,5 @@
+pe.progetto,destuso1
+Destinazione d'uso principale,destuso1,50,text|Elenco completo >>,destuso1,130xget_elenco,button
+Destinazione d'uso secondaria,destuso2,50,text|Elenco completo >>,destuso2,130xget_elenco,button
+Numero tavole di progetto,tavole,4,text
+Note,note,60x10,textarea 

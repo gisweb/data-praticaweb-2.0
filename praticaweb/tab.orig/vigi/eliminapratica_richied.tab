@@ -1,0 +1,4 @@
+vigi.soggetti
+,app,10%,text
+Cognome,cognome,50%,text
+Nome,nome,40%,text

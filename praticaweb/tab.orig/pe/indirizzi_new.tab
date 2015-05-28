@@ -1,0 +1,5 @@
+pe.indirizzi,via
+Via,via,50,text|Elenco vie >>,via,100xget_elenco,button
+Civico,civico,10,text
+Interno,interno,10,text|Scala,scala,10,text
+Piano,piano,200xelenco_piani,select|Aggiungi indirizzo,aggiungi,130,submit

@@ -1,0 +1,5 @@
+pe.parametri_progetto
+,id,5,idriga
+Parametro,parametro,200,text
+Valore progetto,valore,100,text
+Conformità,conforme,70,yesno

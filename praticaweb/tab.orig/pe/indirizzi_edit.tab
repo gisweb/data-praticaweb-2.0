@@ -1,0 +1,7 @@
+pe.indirizzi
+Canc.,id,30,delete
+Via,via,,text
+Civico,civico,70,text
+Interno,interno,70,text
+Scala,scala,100,text
+Piano,piano,100,text

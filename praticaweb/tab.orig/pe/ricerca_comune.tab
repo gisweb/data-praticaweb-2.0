@@ -1,0 +1,5 @@
+pe.e_vie
+Comune,nome,30,text
+CAP,cap,5,text
+Provincia,provincia,20,text
+Regione,regione,30,text

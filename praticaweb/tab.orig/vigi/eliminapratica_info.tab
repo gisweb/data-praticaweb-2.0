@@ -1,0 +1,5 @@
+vigi.avvio_procedimento
+Numero,numero,10%,text
+Data di presentazione,data_presentazione,20%,text
+Oggetto,oggetto,50%,text
+Nome Responsabile,nome_responsabile,20%,text

@@ -1,0 +1,6 @@
+stp.stampe
+,file_doc,40,delete
+,file_doc,40,radio1
+Nome del documento,file_doc,480,link
+Data creazione,data_creazione_doc,100,text
+Creato da,utente_doc,100,text

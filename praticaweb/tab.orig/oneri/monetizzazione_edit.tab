@@ -1,0 +1,5 @@
+oneri.monetizzazione
+Parcheggi n°,parc_n,15,numero
+Parcheggi mq.,parc_mq,15,numero
+Verde pubblico mq.,verde_mq,15,numero
+Quietanza,quietanza,15,text|Data,data,10,data

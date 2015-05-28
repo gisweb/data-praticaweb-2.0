@@ -1,0 +1,4 @@
+pe.lavori
+Scadenza Inizio Lavori,scade_il,10,data|Data Inizio Lavori,il,10,data
+Scadenza Fine Lavori,scade_fl,10,data|Data Fine Lavori,fl,10,data
+Note,note,50x3,textarea

@@ -1,0 +1,6 @@
+pe.elenco_comuni
+codice,codice,4,text
+comune,nome,40,text
+CAP,cap,5,text
+provincia,provincia,50,text|Sigla,sigla_prov,2,text
+regione,regione,50,text

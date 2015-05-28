@@ -1,0 +1,6 @@
+no tabella
+Cognome,cognome,60,text
+Nome,nome,60,text
+Ditta,ragsoc,60,text
+Partita IVA,piva,20,text
+Codice Fiscale,codfis,20,text

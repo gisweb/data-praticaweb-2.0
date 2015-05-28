@@ -1,0 +1,7 @@
+vigi.sanzioni
+Data avvio procedimento,data_avvio_proc,10,data|Sanzione n°,sanzione,25,text
+Importo,importo,15,valuta|Scadenza,data_scadenza,10,data
+Quietanza,quietanza,25,text|Data,data_pagamento,10,data
+Data iscrizione a ruolo,data_iscrizione_ruolo,10,data|Data atti,data_atti,10,data
+Note,note,200,text
+

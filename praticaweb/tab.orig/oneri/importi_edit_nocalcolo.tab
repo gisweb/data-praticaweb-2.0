@@ -1,0 +1,10 @@
+oneri.totali
+Costo costruzione,cc,15,valuta
+Primaria (B1),b1,15,valuta
+B1 a scomputo,scb1,15,valuta
+Secondaria (B2),b2,15,valuta
+B2 a scomputo,scb2,15,valuta
+Quietanza,quietanza,15,text|Data,data,10,data
+Oblazione Sanat.,oblazione,15,valuta|Quietanza,q_oblazione,15,text|Data,data_oblazione,10,data
+Indennità Risarc.,indennita,15,valuta|Quietanza,q_indennita,15,text|Data,data_indennita,10,data
+Pagamento,rateizzato,,checkbox|,fideiussione,,checkbox

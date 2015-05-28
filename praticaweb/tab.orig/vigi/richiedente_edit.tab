@@ -1,0 +1,17 @@
+vigi.soggetti
+Tit.,app,65xelenco_tit,select|Cognome,cognome,35,text|Nome,nome,25,text
+Indirizzo e civico,indirizzo,74,text
+Città,comune,40,text|Prov,prov,2,text|CAP,cap,5,text|Elenco Comuni >>,comune,135xget_elenco,button
+Telefono,telefono,40,text
+E-mail,email,40,text
+Città nascita,comunato,40,text|Prov,provnato,2,text|Elenco Comuni >>,comunato,135xget_elenco,button
+Data nascita,datanato,10,data|Sesso,sesso,40xelenco_sesso,select|C.F.,codfis,16,text|<< Calcola codice fiscale >>,comunato,213xcalcola_cf,button
+Titolo soggetto,titolo,62,text|Elenco >>,titolo,75xget_elenco,button
+Ragione Sociale,ragsoc,74,text
+Sede Legale,sede,74,text
+Città,comuned,40,text|Prov,provd,2,text|CAP,capd,5,text|Elenco Comuni >>,comuned,135xget_elenco,button
+P.IVA,piva,20,text|CC.I.AA. n°,ccia,23,text|Prov,cciaprov,45xelenco_prov,select
+Titolo ditta,titolod,62,text|Elenco >>,titolo,75xget_elenco,button
+Note,note,65x2,textarea
+Ruolo,proprietario,,checkbox
+Invio comunicazioni,comunicazioni,45,yesno|,id,,idriga|,voltura,,

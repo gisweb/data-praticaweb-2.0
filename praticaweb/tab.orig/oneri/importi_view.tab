@@ -1,0 +1,6 @@
+oneri.vista_importi
+,id,10,info
+,label,210,text
+Importo,importo,100,valuta
+Scomputo,scomputo,100,valuta
+Totale,totale,,valuta

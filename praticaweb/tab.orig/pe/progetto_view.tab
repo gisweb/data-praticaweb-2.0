@@ -1,0 +1,5 @@
+pe.progetto
+Destinazione d'uso principale,destuso1,,text
+Destinazione d'uso secondaria,destuso2,,text
+Numero tavole di progetto,tavole,4,text
+Note,note,60x10,textarea 

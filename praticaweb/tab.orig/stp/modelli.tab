@@ -1,0 +1,5 @@
+stp.e_modelli
+,id,3%,radio1
+Nome,nome,200,link
+Descrizione,descrizione,50%,text
+Proprietario,proprietario,12%,text
