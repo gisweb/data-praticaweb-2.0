@@ -10,9 +10,9 @@ chiave="id"
 campi_ordinamento=""
 campi_obbligatori="codice;scadenza"
 data[]="Tipo Scadenza;codice;250xpe.elenco_tiposcadenze;selectdb"
-data[]="Data Scadenza;scadenza;10;data"
+data[]="Data Scadenza;scadenza;10;data|Completata;completata;50;yesno"
 data[]="Note;note;55x8;textarea"
-button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
+button="Salva;azione;;submit|Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit"
 
 [view]
 
@@ -24,6 +24,7 @@ campi_obbligatori=""
 data[]="info;id;3%#pe.scadenze;btn_edit"
 data[]="Data Scadenza;scadenza;15%;data"
 data[]="Scadenza;nome;25%;text"
+data[]="Completata;completata;10%;yesno"
 data[]="Note;note;;text"
 
 [standard]
