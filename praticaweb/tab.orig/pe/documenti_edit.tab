@@ -1,4 +1,0 @@
-pe.elenco_documenti
-Documento,nome,50,text
-Iter,id_iter,200xpe.elenco_iter,selectdb
-Descrizione,descrizione,50x6,textarea

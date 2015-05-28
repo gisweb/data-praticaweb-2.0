@@ -1,8 +1,0 @@
-ce.e_membri
-,app,15,string|Nome,nome,20,string|Cognome,cognome,30,string
-Tel.Fisso,telefono_fisso,20,string
-Tel.Cellulare,telefono_cell,20,string
-Fax,fax,20,string
-Città,citta,25,string|CAP,cap,6,string
-Indirizzo,indirizzo,50,string
-In Carica,attuale,,yesno

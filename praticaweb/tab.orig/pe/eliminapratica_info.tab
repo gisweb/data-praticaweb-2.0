@@ -1,7 +1,0 @@
-pe.avvio_procedimento
-Numero,numero,15,string
-Data di presentazione,data_presentazione,10,string
-Tipo di pratica,tipo_pratica,50,string
-Qualifica dell'intervento,tipo_intervento,50,string
-Oggetto,oggetto,100,string
-Nome Responsabile,nome_responsabile,40,string

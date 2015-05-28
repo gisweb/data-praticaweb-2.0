@@ -1,4 +1,0 @@
-oneri.vista_totali
-,calcolo,,idriga|Totale Costo e Oneri,totale,,valuta|Quietanza,quietanza,,text|Data,data,,data
-Indennità Risarcitoria,indennita,,valuta|Quietanza,q_indennita,,text|Data,data_indennita,,data
-Oblazione per Sanatoria,oblazione,,valuta|Quietanza,q_oblazione,,text|Data,data_oblazione,,data

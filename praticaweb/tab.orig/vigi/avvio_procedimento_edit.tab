@@ -1,8 +1,0 @@
-vigi.avvioproc,data_presentazione
-Numero Pratica,numero,25,text|Data presentazione,data_presentazione,10,data
-Prot. gen. ,protocollo,25,text|Data,data_prot,10,data
-Prot. interno,protocollo_int,25,text|Data,data_prot_int,10,data
-Assegnazione&nbsp&nbsp   Resp. Proc.,resp_proc,280xpe.elenco_responsabili,selectdb|Data,data_resp,10,data
-Comunicazione Resp. Proc.,com_resp,25,text|Data,data_com_resp,10,data
-Oggetto,oggetto,50x5,textarea
-Note,note,50x2,textarea

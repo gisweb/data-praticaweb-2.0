@@ -1,6 +1,0 @@
-pe.infodia
-Tipo,opere,200xpe.elenco_operedia,selectdb
-Diniego DIA,diniego,,checkbox
-Notifica diniego,diniego_prot,25,text
-Data notifica,diniego_data,10,data
-Note,note,50x3,textarea

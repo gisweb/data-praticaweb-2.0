@@ -1,8 +1,0 @@
-admin.utenti
-Nome,nome,25,text
-Permessi,permessi,200xelenco_permessi,select
-UserName,username,25,text
-Password,pwd,25,pword
-Conferma password,pwd1,25,pword
-Attivato,attivato,,checkbox
-Informazioni,info,25x6,textarea

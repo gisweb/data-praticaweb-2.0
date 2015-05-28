@@ -1,7 +1,0 @@
-admin.users
-Nome,nome,25,text
-Permessi,permessi,25,text
-Attivato,attivato,25,text
-UserName,username,25,text
-Password,pwd,25,text
-Informazioni,info,25x6,textarea

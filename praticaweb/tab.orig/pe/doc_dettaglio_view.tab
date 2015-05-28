@@ -1,4 +1,0 @@
-pe.doc_dettaglio
-Nome Documento,documento,,string
-Descrizione,descrizione,,string
-Note,note,50x4,textarea

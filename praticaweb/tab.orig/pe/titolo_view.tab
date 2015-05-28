@@ -1,5 +1,0 @@
-pe.titolo
-Numero Titolo,titolo,25,text|Protocollo,protocollo,25,text
-Data Rilascio,data_rilascio,10,data|Data Notifica,data_notifica,10,data|Data Ritiro,data_ritiro,10,data
-Intervento Autorizzato,intervento,50x4,textarea
-Annotazioni o prescrizioni,note,50x4,textarea

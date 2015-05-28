@@ -1,7 +1,0 @@
-####pe
-Altro soggetto,soggetto,200xpe.elenco_ruoli,selectdb|,nominativo,36,text
-Tipo di pratica,tipo,400xpe.elenco_tipopratica,selectdb
-Data di,data,210xpe.elenco_dataricerca,selectdb|dal,data_dal,10,text|al,data_al,10,text
-Oggetto (parte),oggetto,54,text
-Resp. procedimento,resp_proc,280xpe.elenco_ricerca_responsabili,selectdb
-Certificato Agibilità,abitabi,20,text

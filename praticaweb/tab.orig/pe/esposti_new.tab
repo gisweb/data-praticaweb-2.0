@@ -1,6 +1,0 @@
-pe.esposti,origine_p,data_presentazione
-Origine,origine_p,50,text|Voce in elenco >>,origine_p,150xget_elenco,button
-Data presentazione,data_presentazione,10,data
-Oggetto,oggetto,60x4,textarea
-Data determinazione,data_determinazione,10,data
-Note,note,60x6,textarea

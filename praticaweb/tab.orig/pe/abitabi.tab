@@ -1,5 +1,0 @@
-pe.abitabi
-Richiesta n°,prot_rich,25,text|Data Richiesta,data_rich,10,data
-Certificato n°,prot_doc,25,text|Data Certificato,data_doc,10,data
-Data Rilascio,data_ril,10,data
-Note,note,50x3,textarea

@@ -1,4 +1,0 @@
-pe.parametri_prog,valore
-Parametro,parametro,400xpe.elenco_parametri,selectdb
-Valore,valore,51,text|,articolo,,idkey
-Aggiungi parametro all'elenco,aggiungi,200,submit

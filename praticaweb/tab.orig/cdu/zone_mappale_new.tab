@@ -1,6 +1,0 @@
-cdu.mappali
-Piano o Vincolo,vincolo,300xcdu.elenco_vincolixxgetVincoli,selectRPC
-Tavola,tavola,300,selectdb
-Zona o Vincolo,zona,50,text|Elenco zone >>,vincolo#tavola,130xget_elenco,button
-Percentuale,perc_area,5,numero
-Aggiungi Zona,aggiungi,155,submit

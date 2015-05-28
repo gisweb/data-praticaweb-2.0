@@ -1,6 +1,0 @@
-cdu.richiesta,protocollo
-Protocollo,protocollo,25,text|Data,data,10,data
-Richiedente,richiedente,50,text
-Indirizzo,indirizzo,50,text
-Titolo,titolo,50,text
-Note,note,50x4,textarea

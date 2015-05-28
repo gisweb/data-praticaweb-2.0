@@ -1,9 +1,0 @@
-admin.utenti
-Nome,nome,30,text
-Tipo Utente,permessi,200xadmin.e_permessi,selectdb
-Utente,username,20,text
-Password,pwd,20,pword
-Conferma Password,pwd1,20,pword
-Attivo,attivato,,checkbox
-N° Telefono,num_tel,15,text
-Informazioni,info,25x6,textarea

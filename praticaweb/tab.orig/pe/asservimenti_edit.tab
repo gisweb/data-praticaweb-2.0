@@ -1,9 +1,0 @@
-pe.asservimenti,tipo,notaio
-Tipo di Atto,tipo,400xtipo_asservimento,select
-Numero,numero,10,text
-Notaio,notaio,40,text|Apri elenco >>,notaio,100xget_elenco,button
-Repertorio,repertorio,18,text|Reg.Part.,reg_part,16,text|Reg.Ord.,reg_ord,10,text
-Registrato a,loc_reg,37,text|Data,data_reg,10,data
-Trascritto a,loc_tras,37,text|Data,data_tras,10,data
-Località,loc,50,text
-Note,note,50x4,textarea|,id,,idriga
