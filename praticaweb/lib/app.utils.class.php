@@ -505,14 +505,23 @@ class appUtils extends generalAppUtils {
 
         if (!$_REQUEST["pratica"]) return "";
         $pr=$_REQUEST["pratica"];
+	$db=self::getDb();
         if ($_REQUEST["cdu"]){
             $sql="SELECT 'Certificato di Destinazione Urbanitica Prot n° '||protocollo as titolo FROM cdu.richiesta WHERE pratica=?";
         }
         else{
-            $sql="SELECT B.nome|| coalesce(' - '||C.nome,'') ||' n° '||A.numero as titolo FROM pe.avvioproc A INNER JOIN pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN pe.e_categoriapratica C ON (coalesce(A.categoria,0)=C.id)  WHERE pratica=?;";
+            $sql = "SELECT * from pe.titolo WHERE pratica = ? and coalesce(titolo,'')<>'';";
+            $r=$db->fetchAll($sql,Array($pr));
+            if (count($r)){
+                $ntit=$r[0]["titolo"];
+                $datatit=$r[0]["data_rilascio"];
+                $sql="SELECT B.nome|| coalesce(' - '||C.nome,'') ||' n° $ntit del $datatit' as titolo FROM pe.avvioproc A INNER JOIN pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN pe.e_categoriapratica C ON (coalesce(A.categoria,0)=C.id)  WHERE pratica=?;";
+            }
+            else{
+                $sql="SELECT 'Istanza di '||B.nome|| coalesce(' - '||C.nome,'') ||' n° '||A.numero as titolo FROM pe.avvioproc A INNER JOIN pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN pe.e_categoriapratica C ON (coalesce(A.categoria,0)=C.id)  WHERE pratica=?;";
+            }
         }
         //echo $pr;
-        $db=self::getDb();
         $result=$db->fetchAll($sql,Array($pr));
         return $result[0]["titolo"];
     }
