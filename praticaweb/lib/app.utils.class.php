@@ -508,6 +508,14 @@ class appUtils extends generalAppUtils {
         if ($_REQUEST["cdu"]){
             $sql="SELECT 'Certificato di Destinazione Urbanitica Prot n° '||protocollo as titolo FROM cdu.richiesta WHERE pratica=?";
         }
+        elseif ($_REQUEST["comm"]){
+            $sql=<<<EOT
+WITH elenco_commissioni AS (
+    SELECT A.pratica,B.opzione,A.data_convocazione,A.ora_convocazione,A.sede1 FROM ce.commissione A INNER JOIN ce.elenco_tipo_commissione B ON(A.tipo_comm=B.id)                   
+)                    
+SELECT opzione || ' del ' || data_convocazione as titolo FROM elenco_commissioni WHERE pratica=?;
+EOT;
+        }
         else{
             $sql="SELECT B.nome|| coalesce(' - '||C.nome,'') ||' n° '||A.numero as titolo FROM pe.avvioproc A INNER JOIN pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN pe.e_categoriapratica C ON (coalesce(A.categoria,0)=C.id)  WHERE pratica=?;";
         }

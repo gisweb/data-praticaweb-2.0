@@ -1,4 +1,0 @@
-ce.iter,nota,data
-Nota,nota,50,text|Elenco  >>,nota,100xget_elenco,button
-Data,data,10,data
-,pubblico,,checkbox|Aggiungi,aggiungi,130,submit

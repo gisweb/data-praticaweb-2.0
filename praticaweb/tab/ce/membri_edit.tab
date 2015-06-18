@@ -1,7 +1,0 @@
-ce.e_membri
-Appellativo,app,10,text|Nome,nome,20,text|Cognome,cognome,30,text
-Tel.Fisso,telefono_fisso,12,text
-Tel.Cellulare,telefono_cell,12,text
-Fax,fax,12,text
-Città,citta,25,text|CAP,cap,6,text|Elenco Città >>,citta,135xget_elenco,button
-Indirizzo,indirizzo,50,text

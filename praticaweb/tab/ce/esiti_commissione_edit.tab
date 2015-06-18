@@ -1,5 +1,0 @@
-pe.pareri
-Parere espresso,parere,60,text|Scegli >>,parere,80xget_elenco,button
-Testo,testo,60x8,textarea
-Prescrizioni,prescrizioni,60x4,textarea
-Note,note,60x4,textarea
