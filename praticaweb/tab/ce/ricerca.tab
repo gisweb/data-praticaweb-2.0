@@ -1,0 +1,22 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[new]
+
+[edit]
+
+[view]
+
+[list]
+
+[standard]
+table="ce.comm_edilizia"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Pratica;ce.pratiche_discusse.numero;10;search_text_equal"
+data[]="Data Commissione;ce.commissione.data_convocazione;10;search_date"
+data[]="Tipo Commissione;ce.commissione.tipo_comm;400x100xce.elenco_tipo_commissionexnot coalesce(id,0)=0;search_multilist"
