@@ -29,7 +29,7 @@ table="pe.doc_allegati"
 chiave="id"
 campi_ordinamento=""
 campi_obbligatori=""
-data[]=";id;5%#pe.scheda_documento;btn_info"
+data[]=";id;5%#pe.scheda_documento.php;btn_info"
 data[]="Documenti integrati o sostituiti;documento;100%;text"
 [list]
 

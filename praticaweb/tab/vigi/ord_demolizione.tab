@@ -14,6 +14,8 @@ data[]="Data ordinanza;data_ordinanza;10;data|Registro;registro;25;text"
 data[]="Data sospensione;data_sospensione;10;data|Data demolizione;data_multi;10;data"
 data[]="Data inserimento fascicolo;data_ins_fascicolo;10;data|Data atti;data_atti;10;data"
 data[]="Note;note;50x4;textarea"
+data[]=";tipo;1;hidden"
+
 button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
 [view]
 table="vigi.ordinanze"
@@ -25,7 +27,6 @@ data[]="Data ordinanza;data_ordinanza;10;data|Registro;registro;25;text"
 data[]="Data sospensione;data_sospensione;10;data|Data demolizione;data_multi;10;data"
 data[]="Data inserimento fascicolo;data_ins_fascicolo;10;data|Data atti;data_atti;10;data"
 data[]="Note;note;200;text"
-data[]="Notifiche;;;"
 [list]
 
 [standard]

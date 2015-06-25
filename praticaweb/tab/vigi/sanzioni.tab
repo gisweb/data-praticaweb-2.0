@@ -27,7 +27,6 @@ data[]="Importo;importo;15;valuta|Scadenza;data_scadenza;10;data"
 data[]="Quietanza;quietanza;25;text|Data;data_pagamento;10;data"
 data[]="Data iscrizione a ruolo;data_iscrizione_ruolo;10;data|Data atti;data_atti;10;data"
 data[]="Note;note;200;text"
-data[]=""
 [list]
 
 [standard]

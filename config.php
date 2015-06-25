@@ -1,5 +1,5 @@
 <?
-define('NOME_COMUNE','Comune di ....... - Pratiche Edilizie');//nome completo del comune che compare nell'intestazione
+define('NOME_COMUNE','Comune di Sanremo Demo - Pratiche Edilizie');//nome completo del comune che compare nell'intestazione
 
 define('DEBUG', 1); // Debugging 0 off 1 on
 define('DB_DRIVER','pdo_pgsql');
@@ -11,7 +11,7 @@ if (file_exists(DATA_DIR.'config.local.php')){
 else{
 	define('DB_PORT','5432');
 }
-define('DB_NAME','');
+define('DB_NAME','gw_sanremodemo');
 define('DB_USER','postgres');
 define('DB_PWD','postgres');
 
