@@ -1,7 +1,12 @@
 var myview = $.extend({}, $.fn.datagrid.defaults.view, {
     renderRow: function(target, fields, frozen, rowIndex, rowData){
         var cc = [];
-        var titolo= sprintf('%(tipo_pratica)s n° %(numero)s del %(data_presentazione)s',rowData);
+        if(!rowData["titolo"]){
+            var titolo= sprintf('Istanza di %(tipo_pratica)s n° %(numero)s del %(data_presentazione)s',rowData);
+        }
+        else{
+            var titolo= sprintf('%(tipo_pratica)s n° %(titolo)s del %(data_rilascio)s Pratica n° %(numero)s',rowData);
+        }
         cc.push('<td colspan=' + fields.length + ' style="padding:0px 0px;">');
         if (!frozen){
             cc.push('<table style="float:left;margin-left:10px;width:1200px;" class="stiletabella">');
