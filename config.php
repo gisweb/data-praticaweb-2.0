@@ -1,6 +1,6 @@
 <?php
-define('NOME_COMUNE','Comune di Sanremo - Pratiche Edilizie');//nome completo del comune che compare nell'intestazione
-
+define('NOME_COMUNE','Comune di Sanremo Test - Pratiche Edilizie');//nome completo del comune che compare nell'intestazione
+error_reporting(E_ALL);
 define('DEBUG', 1); // Debugging 0 off 1 on
 define('DB_DRIVER','pdo_pgsql');
 define('DB_HOST','127.0.0.1');
@@ -11,7 +11,7 @@ if (file_exists(DATA_DIR.'config.local.php')){
 else{
 	define('DB_PORT','5432');
 }
-define('DB_NAME','gw_sanremo');
+define('DB_NAME','gw_sanremo_demo');
 define('DB_USER','postgres');
 define('DB_PWD','postgres');
 
@@ -62,6 +62,8 @@ define('QTID_PARTICELLE','8');
 define('QTID_CIVICI','34');
 
 //in sessione per pmapper
+define('UPDATE_SW',1);
+
 
 $_SESSION['USER_DATA']=DATA_DIR;
 
@@ -69,6 +71,7 @@ $_SESSION['USER_DATA']=DATA_DIR;
 $tmpDir=ini_get('include_path');
 $tmpDir=(in_array('/apps/includes',explode(':',$tmpDir)))?($tmpDir):($tmpDir.':/apps/includes');
 $incDir=(in_array('/apps/includes/utils',explode(':',$tmpDir)))?($tmpDir):($tmpDir.':/apps/includes/utils');
+
 ini_set('include_path',$incDir);
 //includo il file per il database in uso
 require_once (APPS_DIR."wrapdb/postgres.php");

@@ -39,6 +39,7 @@ $(document).ready(function(){
     }).bind('click',function(event){
 
         event.preventDefault();
+	var rString = randomString(12, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
         var oper=$('#op').val();
         dataPost=getSearchFilter();
         $('#ricerca').hide('slide',500);
@@ -53,7 +54,7 @@ $(document).ready(function(){
             pagination:true,
             autoRowHeight:true,
 
-            queryParams:{data:dataPost,action:'search',op:oper},
+            queryParams:{data:dataPost,action:'search',op:oper,random:rString},
             view: myview,
             /*detailFormatter:function(index,row){
                 return '<div class="ddv" style="padding:5px 0;background-color:#EEF7FF"></div>';
