@@ -1,6 +1,6 @@
 <?php
 define('NOME_COMUNE','Comune di Sanremo Test - Pratiche Edilizie');//nome completo del comune che compare nell'intestazione
-error_reporting(E_ALL);
+error_reporting(E_ERROR);
 define('DEBUG', 1); // Debugging 0 off 1 on
 define('DB_DRIVER','pdo_pgsql');
 define('DB_HOST','127.0.0.1');

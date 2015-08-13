@@ -2,16 +2,15 @@ prei,Istruttoria
 10,Avvio Procedimento,vigi.avvioproc,
 20,Soggetti Interessati,vigi.elenco_soggetti,
 50,Ubicazione Intervento,vigi.ubicazione,
-40,Elenco Allegati,vigi.allegati,
-45,Integrazione Documenti,vigi.integrazioni,
 70,Pianificazione e Vincoli,vigi.vincoli,
 vigi,Vigilanza
-250,Sopralluoghi Vigilanza,vigi.sopralluoghi
-280,Ordinanze,vigi.ordinanze
-,Sanzioni
-135,Sanzioni,vigi.sanzioni,
+100,Infrazioni,vigi.infrazioni,
+110,Sopralluoghi,vigi.sopralluoghi
+120,Sanzioni,vigi.sanzioni,
+130,Ordinanze,vigi.ordinanze
+115,Pagamenti,vigi.pagamenti,oc
 iter,Iter
-295,Scadenze,vigi.scadenze,
-300,Annotazioni,vigi.annotazioni,
-293,Documenti Prodotti,stp.documenti
-305,Accesso agli Atti,vigi.visione,
+200,Scadenze,vigi.scadenze,
+210,Annotazioni,vigi.annotazioni,
+220,Documenti Prodotti,stp.documenti
+230,Accesso agli Atti,vigi.visione,

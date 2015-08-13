@@ -1,0 +1,53 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable="rdp;iamm"
+print_form="pe.avvioproc"
+[new]
+table="pe.avvioproc"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori="tipo;data_presentazione"
+data[]="Tipo di pratica;tipo;400xpe.elenco_tipopratica_vigilanza;selectdb"
+data[]="Data presentazione;data_presentazione;10;data"
+data[]="Prot. gen. ;protocollo;25;text|Data;data_prot;10;data"
+data[]="Riferimento pratica;rif_pratica;25;pratica;data-plugins=suggest-pratica"
+data[]="Assegnazione&nbsp&nbsp   Resp. Proc.;resp_proc;280xadmin.elenco_rdp;selectdb|Data;data_resp;10;data"
+data[]="Prot. Comunicazione Resp. Proc.;com_resp;25;text|Data;data_com_resp;10;data"
+data[]="Oggetto;oggetto;50x5;textarea"
+data[]="Note;note;50x2;textarea"
+button="Salva;azione;;submit|Annulla;azione;#closeWindow;button"
+
+[edit]
+table="pe.avvioproc"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori="tipo;data_presentazione"
+data[]="Tipo di pratica;tipo;400xpe.elenco_tipopratica_vigilanza;selectdb"
+data[]="Numero Pratica;numero;25;text|Data presentazione;data_presentazione;10;data"
+data[]="Prot. gen. ;protocollo;25;text|Data;data_prot;10;data"
+data[]="Riferimento pratica;rif_pratica;25;pratica"
+data[]="Assegnazione Resp. Proc.;resp_proc;280xadmin.elenco_rdp;selectdb|Data;data_resp;10;data"
+data[]="Prot. Comunicazione Resp. Proc.;com_resp;25;text|Data;data_com_resp;10;data"
+data[]="Oggetto;oggetto;50x5;textarea"
+data[]="Note;note;50x2;textarea"
+button="Salva;azione;;submit|Annulla;azione;;submit"
+[view]
+table="pe.avvioproc"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Numero Pratica;numero;;text|Data di presentazione;data_presentazione;;data"
+data[]="Tipo di pratica;tipo;xpe.elenco_tipopratica_all;selectdb"
+data[]="Protocollo generale;protocollo;;text|Data;data_prot;;data"
+data[]="Riferimento pratica;rif_pratica;;text|;riferimento;#praticaweb;riferimento"
+data[]="Resp. procedimento;resp_proc;xadmin.elenco_rdp;selectdb|Data;data_resp;;data"
+data[]="Comunicazione Resp.Proc;com_resp;;text|Data;data_com_resp;;data"
+data[]="Oggetto;oggetto;;text"
+data[]="Note;note;;text"
+data[]=";;pe.avvioproc;stampa"
+[list]
+
+[standard]
+
