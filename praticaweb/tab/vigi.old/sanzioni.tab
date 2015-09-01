@@ -1,0 +1,33 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable="ivig"
+
+[edit]
+table="vigi.sanzioni"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Data avvio procedimento;data_avvio_proc;10;data"
+data[]="Sanzione n°;sanzione;25;text"
+data[]="Importo;importo;15;valuta|Scadenza;data_scadenza;10;data"
+data[]="Quietanza;quietanza;25;text|Data;data_pagamento;10;data"
+data[]="Data iscrizione a ruolo;data_iscrizione_ruolo;10;data|Data atti;data_atti;10;data"
+data[]="Note;note;50x4;textarea"
+button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
+[view]
+table="vigi.sanzioni"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Data avvio procedimento;data_avvio_proc;10;data"
+data[]="Sanzione n°;sanzione;25;text"
+data[]="Importo;importo;15;valuta|Scadenza;data_scadenza;10;data"
+data[]="Quietanza;quietanza;25;text|Data;data_pagamento;10;data"
+data[]="Data iscrizione a ruolo;data_iscrizione_ruolo;10;data|Data atti;data_atti;10;data"
+data[]="Note;note;200;text"
+data[]=""
+[list]
+
+[standard]

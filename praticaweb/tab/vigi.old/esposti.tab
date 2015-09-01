@@ -1,0 +1,29 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable="ivig"
+
+[edit]
+table="pe.esposti"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori="origine;data_presentazione"
+data[]="Origine;origine;200xpe.elenco_origine_esposti;selectdb"
+data[]="Data Esposto;data_esposto;10;data"
+data[]="Oggetto;oggetto;60x4;textarea"
+data[]="Note;note;60x6;textarea"
+button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
+
+[view]
+table="pe.esposti"
+chiave="id"
+campi_ordinamento="data_esposto"
+campi_obbligatori=""
+data[]="Origine;origine;200xpe.elenco_origine_esposti;selectdb"
+data[]="Data Esposto;data_esposto;10;data"
+data[]="Oggetto;oggetto;;text"
+data[]="Note;note;;text"
+
+[list]
+

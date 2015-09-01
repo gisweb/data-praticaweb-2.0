@@ -1,0 +1,19 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[new]
+
+[edit]
+
+[view]
+
+[list]
+
+[standard]
+table="vigi.avvioproc"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""

@@ -1,0 +1,23 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[new]
+
+[edit]
+
+[view]
+
+[list]
+
+[standard]
+table="#"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Pratica;numero;25;text|Protocollo;protocollo;25;text"
+data[]="Progettista;progettista;54;text"
+data[]="Via;via;33;text|Civico;civico;7;text|Elenco>>;via;70xget_elenco;button"
+data[]="Foglio;foglio;5;text|Mappale;mappale;8;text|;nct;;checkbox|;nceu;;checkbox"

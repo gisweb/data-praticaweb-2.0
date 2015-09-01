@@ -1,0 +1,23 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[new]
+
+[edit]
+
+[view]
+
+[list]
+
+[standard]
+table="####vigi"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Altro soggetto;soggetto;200xvigi.elenco_ruoli;selectdb|;nominativo;36;text"
+data[]="Data di;data;210xvigi.elenco_dataricerca;selectdb|dal;data_dal;10;text|al;data_al;10;text"
+data[]="Oggetto (parte);oggetto;54;text"
+data[]="Resp. procedimento;resp_proc;280xpe.elenco_ricerca_responsabili;selectdb"
