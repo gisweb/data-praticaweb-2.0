@@ -501,21 +501,7 @@ class appUtils extends generalAppUtils {
         return $result;
 
     }
-    static function titoloPratica($req){
-
-        if (!$_REQUEST["pratica"]) return "";
-        $pr=$_REQUEST["pratica"];
-        if ($_REQUEST["cdu"]){
-            $sql="SELECT 'Certificato di Destinazione Urbanitica Prot n° '||protocollo as titolo FROM cdu.richiesta WHERE pratica=?";
-        }
-        else{
-            $sql="SELECT B.nome|| coalesce(' - '||C.nome,'') ||' n° '||A.numero as titolo FROM pe.avvioproc A INNER JOIN pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN pe.e_categoriapratica C ON (coalesce(A.categoria,0)=C.id)  WHERE pratica=?;";
-        }
-        //echo $pr;
-        $db=self::getDb();
-        $result=$db->fetchAll($sql,Array($pr));
-        return $result[0]["titolo"];
-    }
+    
     static function getScadenze($userId){
             $conn=utils::getDb();
             //DETTAGLI DELLE SCADENZE

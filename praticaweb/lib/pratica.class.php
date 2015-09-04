@@ -4,7 +4,7 @@ require_once APPS_DIR.'plugins/Doctrine/Common/ClassLoader.php';
 require_once APPS_DIR.DIRECTORY_SEPARATOR.'lib'.DIRECTORY_SEPARATOR.'pratica.class.php';
 
 class pratica extends generalPratica{
-    private function initPratica(){
+    /*private function initPratica(){
 		$db=$this->db1;
 		if ($this->pratica && is_numeric($this->pratica)){
 			//INFORMAZIONI SULLA PRATICA
@@ -55,7 +55,7 @@ class pratica extends generalPratica{
 		
         $this->_setInfoUsers();
         //ESTRAGGO INFORMAZIONI SUL DIRIGENTE
-    }
+    }*/
     
     private function _setInfoUsers(){
         $db=$this->db1;    
