@@ -63,8 +63,8 @@ table="pe.elenco_soggetti"
 chiave="id"
 campi_ordinamento="soggetto"
 campi_obbligatori=""
-data[]=";id;2%#pe.scheda_soggetto.php;btn_view"
-data[]=";id;2%#pe.scheda_soggetto.php;btn_edit"
+data[]=";id;2%#pe.scheda_soggetto;btn_view"
+data[]=";id;2%#pe.scheda_soggetto;btn_edit"
 data[]="soggetto;soggetto;96%;text"
 
 [standard]

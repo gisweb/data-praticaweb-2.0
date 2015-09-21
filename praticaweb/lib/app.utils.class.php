@@ -515,6 +515,25 @@ class appUtils {
                 return Array("totali"=>count($res),"data"=>$res);
             }
     }
+
+    static function getNotifiche($userId){
+            $conn=utils::getDb();
+            //DETTAGLI DELLE SCADENZE
+            $lLimit=(defined('LOWER_LIMIT'))?(LOWER_LIMIT):(5);
+            $uLimit=(defined('UPPER_LIMIT'))?(UPPER_LIMIT):(3);
+            $sql="select A.id,A.pratica,B.numero,B.data_prot,testo as oggetto,ARRAY[soggetto_notificato] as interessati from pe.notifiche A inner join pe.avvioproc B using(pratica) where soggetto_notificato=$userId and visionato=0;";
+            
+            $stmt=$conn->prepare($sql);
+            if(!$stmt->execute()){
+                return Array("errore"=>1,"query"=>$sql);
+            }
+            else{
+                $res=$stmt->fetchAll(PDO::FETCH_ASSOC);
+                return Array("totali"=>count($res),"data"=>$res);
+            }
+    }
+
+
     static function getVerifiche($userId){
             $conn=utils::getDb();
 
@@ -544,6 +563,12 @@ class appUtils {
                 $res=$stmt->fetchAll(PDO::FETCH_ASSOC);
                 return Array("totali"=>0,"data"=>Array());
             }
+    }
+    static function setVisitata($id,$frm,$user){
+        $sql="INSERT INTO pe.pratiche_visitate(pratica,form,userid) VALUES(?,?,?)";
+        $conn=utils::getDb();
+        $stmt=$conn->prepare($sql);
+        $stmt->execute(Array($id,$frm,$user));
     }
 }
 ?>

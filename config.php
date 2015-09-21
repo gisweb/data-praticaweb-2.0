@@ -62,6 +62,8 @@ define('QTID_PARTICELLE','8');
 define('QTID_CIVICI','34');
 
 //in sessione per pmapper
+define('UPDATE_SW',1);
+
 
 $_SESSION['USER_DATA']=DATA_DIR;
 
@@ -69,6 +71,7 @@ $_SESSION['USER_DATA']=DATA_DIR;
 $tmpDir=ini_get('include_path');
 $tmpDir=(in_array('/apps/includes',explode(':',$tmpDir)))?($tmpDir):($tmpDir.':/apps/includes');
 $incDir=(in_array('/apps/includes/utils',explode(':',$tmpDir)))?($tmpDir):($tmpDir.':/apps/includes/utils');
+
 ini_set('include_path',$incDir);
 //includo il file per il database in uso
 require_once (APPS_DIR."wrapdb/postgres.php");

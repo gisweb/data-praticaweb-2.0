@@ -39,6 +39,7 @@ $(document).ready(function(){
     }).bind('click',function(event){
 
         event.preventDefault();
+//	var rString = randomString(12, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
         var oper=$('#op').val();
         dataPost=getSearchFilter();
         $('#ricerca').hide('slide',500);
