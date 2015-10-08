@@ -553,8 +553,11 @@ class appUtils extends generalAppUtils {
             //DETTAGLI DELLE SCADENZE
             $lLimit=(defined('LOWER_LIMIT'))?(LOWER_LIMIT):(5);
             $uLimit=(defined('UPPER_LIMIT'))?(UPPER_LIMIT):(3);
-            $sql="select A.id,A.pratica,B.numero,B.data_prot,testo as oggetto,ARRAY[soggetto_notificato] as interessati from pe.notifiche A inner join pe.avvioproc B using(pratica) where soggetto_notificato=$userId and visionato=0;";
-            
+            $sql=<<<EOT
+select A.id,A.pratica,B.numero,B.data_prot,testo as oggetto,ARRAY[soggetto_notificato] as interessati from pe.notifiche A inner join pe.avvioproc B using(pratica) where soggetto_notificato=$userId and visionato=0
+UNION ALL
+select A.id,A.pratica,B.numero,B.data_prot,testo as oggetto,ARRAY[soggetto_notificato] as interessati from vigi.notifiche A inner join vigi.avvioproc B using(pratica) where soggetto_notificato=$userId and visionato=0;
+EOT;
             $stmt=$conn->prepare($sql);
             if(!$stmt->execute()){
                 return Array("errore"=>1,"query"=>$sql);
