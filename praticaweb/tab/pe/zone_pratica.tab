@@ -29,9 +29,12 @@ chiave="id"
 campi_ordinamento=""
 campi_obbligatori=""
 data[]=";id;1%;idriga"
-data[]="Tavola;descrizione_tavola;40%;text"
-data[]="Zona;descrizione;40%;text"
+data[]=";file;2%#ui-icon-search##pratica#file#selector:link#dir:/norme/;folder"
+data[]="Norma;titolo;25%;text"
+data[]="Tavola;descrizione_tavola;25%;text"
+data[]="Zona;descrizione;25%;text"
 data[]="Sigla Zona;sigla;15%;text"
+
 
 [list]
 

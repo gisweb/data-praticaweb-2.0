@@ -17,7 +17,7 @@ data[]="Data Ricezione Richiesta;data_ricezione_richiesta;10;data"
 data[]="Motivo Richiesta;motivo_richiesta;55x8;textarea"
 data[]="Protocollo Integrazione;protocollo_integrazione;25;text|Data Integrazione;data_integrazione;10;data"
 data[]="Note Integrazione;note_integrazione;55x8;textarea"
-button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
+button="Salva;azione;;submit|Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit"
 
 [view]
 table="pe.sospensioni"
