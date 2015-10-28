@@ -1,0 +1,40 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[new]
+table="vigi.visione"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori="data;nominativo"
+data[]="Nominativo;nominativo;50;text"
+data[]="Motivo;motivo;50x3;textarea"
+data[]="Data;data;10;data"
+data[]="Copia;copia;40;yesno"
+button="Chiudi;azione;#goToView;button|Aggiungi;azione;;submit"
+
+[edit]
+table="vigi.visione"
+chiave="id"
+campi_ordinamento="data DESC;tmsins DESC"
+campi_obbligatori=""
+data[]=";id;3%;delete"
+data[]="Nominativo;nominativo;20%;text"
+data[]="Motivo;motivo;40%;text"
+data[]="Data;data;5%;text"
+
+
+[view]
+table="vigi.visione"
+chiave="id"
+campi_ordinamento="data DESC;tmsins DESC"
+campi_obbligatori=""
+data[]=";id;3%;semaforo"
+data[]="Nominativo;nominativo;20%;text"
+data[]="Motivo;motivo;40%;text"
+data[]="Data;data;5%;text"
+
+
+[standard]

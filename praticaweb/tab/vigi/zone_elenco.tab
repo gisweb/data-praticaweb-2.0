@@ -13,10 +13,9 @@ editable=""
 [list]
 
 [standard]
-table="vigi.soggetti"
+table="vigi.zone_elenco"
 chiave="id"
 campi_ordinamento=""
 campi_obbligatori=""
-data[]=";app;10%;text"
-data[]="Cognome;cognome;50%;text"
-data[]="Nome;nome;40%;text"
+data[]="Seleziona;mapkey;80;checkbox"
+data[]="&nbsp;Aggiungi nuova zona di vincolo;descrizione;;text"
