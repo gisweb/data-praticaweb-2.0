@@ -10,6 +10,10 @@ rdp,itec,iamm-4@NewWindow@'vigi.avvioproc.php?mode=new','Praticaweb',0,0,'yes'@N
 -3@NewWindow@'report.scadenze.php','Praticaweb',0,0,'yes'@Elenco delle Scadenze@Elenco delle Scadenze.
 rdp,itec,iamm-3@NewWindow@'pe.eliminapratica.php?ricerca=1','Praticaweb',0,0,'yes'@Elimina Pratica@Individua ed elimina la pratica scelta.
 -2@NewWindow@'admin.pwd.php?mode=edit','PraticawebUtenti',0,0,'yes'@Gestione PassWord Utenti@- Modifica password dell'utente.
+-4@Gestione Autorizzazioni Ambientali 
+-4@NewWindow@'pe.ricerca_amb.php?new=1','ricercaPraticaweb',0,0,'yes'@Apri Autorizzazione Paesaggistica esistente@Modalit&agrave; di ricerca di una Autorizzazione Paesaggistica archiviata.
+rdp,itec,iamm-4@NewWindow@'pe.avvioproc_amb.php?mode=new','Praticaweb',0,0,'yes'@Nuova Autorizzazione Paesaggistica@Inserisce una nuova Autorizzazione Paesaggistica.
+rdp,itec,iamm-3@NewWindow@'pe.eliminapratica.php?ricerca=1','Praticaweb',0,0,'yes'@Elimina Pratica@Individua ed elimina la pratica scelta.
 -4@Gestione pratiche Controlli Edilizi
 -4@NewWindow@'vigi.ricerca.php?new=1','ricercaPraticaweb',0,0,'yes'@Apri pratica esistente@Modalit&agrave; di ricerca di una pratica archiviata.
 rdp,itec,iamm-4@NewWindow@'vigi.avvioproc.php?mode=new','Praticaweb',0,0,'yes'@Nuova Pratica di Controllo Edilizio@Inserisce una nuova pratica.

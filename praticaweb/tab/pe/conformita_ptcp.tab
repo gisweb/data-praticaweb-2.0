@@ -1,0 +1,37 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable="itec;iamm"
+
+print_form="pe.avvioproc"
+
+
+[edit]
+table="pe.conformita"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Istruttore;resp_parere;460xadmin.elenco_istruttori;selectdb"
+data[]="Data Rilascio;data_ril;10;data"
+data[]="Parere espresso;parere;200xpe.elenco_valoripareri;selectdb"
+data[]="Prescrizioni;prescrizioni;55x8;textarea"
+data[]="Testo;testo;55x8;textarea"
+data[]="Note;note;55x4;textarea"
+button="Salva;azione;;submit|Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit"
+
+[view]
+table="pe.conformita"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Istruttore;resp_parere;460xadmin.elenco_istruttori;selectdb"
+data[]="Data Rilascio;data_ril;;data"
+data[]="Parere espresso;parere;xpe.elenco_valoripareri;selectdb"
+data[]="Prescrizioni;prescrizioni;;textarea"
+data[]="Testo;testo;;textarea"
+data[]="Note;note;;textarea"
+
+[list]
+
+[standard]
