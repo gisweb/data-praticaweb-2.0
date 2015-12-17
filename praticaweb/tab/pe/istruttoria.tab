@@ -12,7 +12,7 @@ campi_ordinamento=""
 campi_obbligatori=""
 data[]="Data Apertura Istruttoria;data_apertura;10;data"
 data[]="Data Chiusura Istruttoria;data_chiusura;10;data"
-data[]="Esito Istruttoria;esito;200xpe.elenco_esito_istruttoria;selectdb"
+data[]="Esito Istruttoria;esito;200xpe.elenco_esiti_istruttoria;selectdb"
 data[]="Note;note;55x2;textarea"
 button="Salva;azione;;submit|Annulla;azione;;submit"
 [view]
@@ -22,7 +22,7 @@ campi_ordinamento=""
 campi_obbligatori=""
 data[]="Data Apertura Istruttoria;data_apertura;10;data"
 data[]="Data Chiusura Istruttoria;data_chiusura;10;data"
-data[]="Esito Istruttoria;esito;200xpe.elenco_esito_istruttoria;selectdb"
+data[]="Esito Istruttoria;esito;200xpe.elenco_esiti_istruttoria;selectdb"
 data[]="Note;note;;text"
 [list]
 
