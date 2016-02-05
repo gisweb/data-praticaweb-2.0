@@ -17,7 +17,7 @@ data[]="Ragione Sociale;ragsoc;40;text"
 data[]="Partita IVA;piva;16;text"
 data[]="Oggetto;oggetto;50x5;textarea"
 data[]="Note;note;50x2;textarea"
-button="Salva;azione;;submit|Annulla;azione;#closeWindow;button"
+button="Salva;azione;;submit|Annulla;azione;;button"
 
 [view]
 table="storage.invio"
