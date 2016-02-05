@@ -1,0 +1,23 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+[view]
+table="storage.documentazione_inviata"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]=";id;2%#storage.documentazione_inviata;btn_edit"
+data[]=";id;2%#storage.documentazione_inviata;btn;data-class=ui-icon-link#data-plugins=inserisci-associazione-doc"
+data[]="Documento;filename;40%;text"
+data[]="Descrizione;descrizione;55%;text"
+[edit]
+table="storage.documentazione_inviata"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori="descrizione"
+data[]="Descrizione;descrizione;60;text"
+data[]="Nuovo Allegato;file_allegato;50;upload"
+data[]="Note;note;55x4;textarea"
+button="Salva;azione;;submit|Elimina;azione;submit|Annulla;azione;;submit"

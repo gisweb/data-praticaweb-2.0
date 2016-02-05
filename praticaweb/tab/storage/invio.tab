@@ -1,0 +1,37 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+print_form="storage.invio"
+[edit]
+table="storage.invio"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori="data_protocollo;protocollo;codfis"
+data[]="Data Invio;data_invio;10;data"
+data[]="Prot. gen. ;protocollo;15;text|Data;data_protocollo;10;data"
+data[]="Tit.;app;65xelenco_tit;select|Cognome;cognome;25;text|Nome;nome;25;text"
+data[]="Codice Fiscale;codfis;16;text"
+data[]="Ragione Sociale;ragsoc;40;text"
+data[]="Partita IVA;piva;16;text"
+data[]="Oggetto;oggetto;50x5;textarea"
+data[]="Note;note;50x2;textarea"
+button="Salva;azione;;submit|Annulla;azione;#closeWindow;button"
+
+[view]
+table="storage.invio"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Data Invio;data_invio;10;data"
+data[]="Prot. gen. ;protocollo;15;text|Data;data_protocollo;10;data"
+data[]="Tit.;app;;text|Cognome;cognome;;text|Nome;nome;;text"
+data[]="Codice Fiscale;codfis;16;text"
+data[]="Ragione Sociale;ragsoc;40;text"
+data[]="Partita IVA;piva;16;text"
+data[]="Oggetto;oggetto;50x5;textarea"
+data[]="Note;note;50x2;textarea"
+[list]
+
+[standard]

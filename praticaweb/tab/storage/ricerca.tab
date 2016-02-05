@@ -1,0 +1,27 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[new]
+
+[edit]
+
+[view]
+
+[list]
+
+[standard]
+table="#"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Protocollo;storage.invio.protocollo;10;search_text_equal"
+data[]="Data Invio;storage.invio.data_invio;10;search_date"
+data[]="Data Protocollo;storage.invio.data_protocollo;10;search_date"
+data[]="Cognome;storage.invio.cognome;50;search_text_contains"
+data[]="Ragione Sociale;storage.invio.ragsoc;50;search_text_contains"
+
+
+
