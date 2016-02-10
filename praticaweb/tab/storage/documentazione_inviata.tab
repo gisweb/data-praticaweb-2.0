@@ -10,7 +10,7 @@ campi_ordinamento=""
 campi_obbligatori=""
 data[]=";id;2%#storage.documentazione_inviata;btn_edit"
 data[]=";id;2%#storage.documentazione_inviata;btn;data-class=ui-icon-link#data-plugins=inserisci-associazione-doc"
-data[]="Documento;filename;40%;text"
+data[]="Documento;filename;40%;widget;data-url=storage.openDocument.php#data-id=@id#data-plugins=openDocument#class=underline-cursor"
 data[]="Descrizione;descrizione;55%;text"
 [edit]
 table="storage.documentazione_inviata"
