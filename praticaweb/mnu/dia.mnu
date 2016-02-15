@@ -6,7 +6,6 @@
 45,Integrazione Documenti,pe.integrazioni,prei
 it,Istruttoria Tecnica
 70,Vincoli Presenti,pe.vincoli,it
-75,Informazioni DIA,pe.infodia,it
 80,Dati di Progetto,pe.progetto,it
 92,Sospensioni,pe.sospensioni,it
 oc,Oneri
@@ -26,8 +25,6 @@ agi,Agibilità
 210,Agibilità,pe.abitabi,agi
 vigi,Vigilanza
 250,Sopralluoghi Vigilanza,vigi.sopralluoghi,vigi
-260,Esposti Vigilanza,vigi.esposti,vigi
-270,Provvedimenti Vigilanza,vigi.provvedimenti,vigi
 iter,Iter
 285,Verifiche,pe.verifiche
 295,Scadenze,pe.scadenze,
