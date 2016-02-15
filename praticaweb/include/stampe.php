@@ -26,9 +26,9 @@ $sql="SELECT  numero, B.nome as tipo, C.descrizione as intervento, anno,
   $customData=array_merge($ris[0],$customData);
 /************************************  Soggetti Interessati ***************************************/
 $sql="SELECT DISTINCT
-		 coalesce(app,'') as app, coalesce(cognome,'') as cognome, coalesce(nome,'') as nome,coalesce(app||' ','')||coalesce(cognome||' ','')||coalesce(nome,'') as nominativo, 
+		 coalesce(app,'') as app, coalesce(cognome,'') as cognome, coalesce(nome,'') as nome,coalesce(app||' ','')||coalesce(initcap(nome)||' ','')||coalesce(upper(cognome),'') as nominativo, 
 		coalesce(indirizzo,'') as indirizzo, coalesce(comune,'') as comune, coalesce(prov,'') as prov, coalesce(cap,'') as cap, 
-		comunato, provnato, datanato, sesso, codfis,titolo,
+		comunato, provnato, datanato, sesso, codfis, titolo,
 		telefono, email, pec, 
 		titolod, ragsoc, 
 		sede, comuned, provd, capd, 
@@ -48,11 +48,11 @@ for($i=0;$i<count($ris);$i++){
 	}
 	if ($soggetto["richiedente"] && !$soggetto["voltura"]) {
 		$customData["richiedente"][]=$soggetto;
-		$richiedenti[]="$nominativo, nato a $comune, il $datanato, C.F. $codfis";
+		$richiedenti[]="$nominativo, nato a $comunato, il $datanato, C.F. $codfis";
 	}
 	if ($soggetto["progettista"] && !$soggetto["voltura"]) {
 		$customData["progettista"][]=$soggetto;
-		$progettisti=="$nominativo, nato a $comune, il $datanato, C.F. $codfis";
+		$progettisti="$nominativo, nato a $comunato, il $datanato, C.F. $codfis";
 	}
 	if ($soggetto["progettista_ca"] && !$soggetto["voltura"]) {
 		$customData["progettista_ca"][]=$soggetto;

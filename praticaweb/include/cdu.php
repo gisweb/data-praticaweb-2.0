@@ -13,14 +13,14 @@ perc_area,
 A.descrizione as descrizione_vincolo, B.descrizione as descrizione_tavola, C.descrizione as descrizione_zona,
 
 case
-when A.nome_vincolo in ('PRG','PTCP','DISCIPLINA_PAESISTICA','PUC') then A.sigla||' '
+when A.nome_vincolo in ('PRG','PTCP','DISCIPLINA_PAESISTICA','PUC','PUC_2015') then A.sigla||' '
 when (A.nome_vincolo='PIANO_DI_BACINO' and B.nome_tavola!='AMBITO') or (A.nome_vincolo='VINCOLI') THEN ''
 else A.descrizione||' '
 end
 ||
 case
 when A.nome_vincolo='PRG' and B.nome_tavola='PIANO_C2' THEN 'Piano di Zona '
-when (A.nome_vincolo='DISCIPLINA_PAESISTICA') or (A.nome_vincolo='PRG' and B.nome_tavola in ('ZONIZZAZIONE','LOTTIZZAZIONI','SOTTOZONE')) or (A.nome_vincolo='PIANO_DI_BACINO' and (B.nome_tavola IN ('AMBITO','BACINO') or B.nome_tavola ilike 'regimi%')) or (A.nome_vincolo='VINCOLI' and B.nome_tavola in ('INCENDI','VINCOLO_IDROGEOLOGICO'))then ''::text
+when (A.nome_vincolo='PUC_2015') or (A.nome_vincolo='DISCIPLINA_PAESISTICA') or (A.nome_vincolo='PRG' and B.nome_tavola in ('ZONIZZAZIONE','LOTTIZZAZIONI','SOTTOZONE')) or (A.nome_vincolo='PIANO_DI_BACINO' and (B.nome_tavola IN ('AMBITO','BACINO') or B.nome_tavola ilike 'regimi%')) or (A.nome_vincolo='VINCOLI' and B.nome_tavola in ('INCENDI','VINCOLO_IDROGEOLOGICO'))then ''::text
 else B.descrizione||' '
 end
 ||
@@ -34,6 +34,14 @@ when A.nome_vincolo='VINCOLI' and B.nome_tavola!='INCENDI' then C.descrizione
 when (A.nome_vincolo='DISCIPLINA_PAESISTICA' and B.nome_tavola='ZONE_ISMA') then 'Sottozona Paesistica '|| C.sigla 
 when (A.nome_vincolo='DISCIPLINA_PAESISTICA' and B.nome_tavola='MACRO_UNITA') then 'Unità Paesistica n° '|| C.sigla
 when (A.nome_vincolo='PRG' and B.nome_tavola='SOTTOZONE') then 'sottozona '|| C.sigla
+when (A.nome_vincolo='PUC_2015' and B.nome_tavola='AMBITI_E_DISTRETTI' and not C.nome_zona ilike 'DT%') then 'ambito '|| C.sigla
+when (A.nome_vincolo='PUC_2015' and B.nome_tavola='AMBITI_E_DISTRETTI' and C.nome_zona ilike 'DT%') then 'distretto '|| C.sigla
+when (A.nome_vincolo='PUC_2015' and B.nome_tavola='SERVIZI_ED_INFRASTRUTTURE' and C.nome_zona ilike 'SERVIZI_ESISTENTI%') then 'servizio esistente '|| C.sigla
+when (A.nome_vincolo='PUC_2015' and B.nome_tavola='SERVIZI_ED_INFRASTRUTTURE' and C.nome_zona ilike 'SERVIZI_PROGETTO%') then 'servizio di progetto '|| C.sigla
+when (A.nome_vincolo='PUC_2015' and B.nome_tavola='SERVIZI_ED_INFRASTRUTTURE' and not C.nome_zona ilike 'SERVIZI_PROGETTO%' and not C.nome_zona ilike 'SERVIZI_ESISTENTI%') then 'infrastruttura '|| C.sigla
+when (A.nome_vincolo='PUC_2015' and B.nome_tavola='SOTTOAMBITI') then 'sottoambito '|| C.sigla
+when (A.nome_vincolo='PUC_2015' and B.nome_tavola='SUSCETTIVITA_D_USO_DEL_SUOLO') then 'uso suolo zona '|| C.sigla
+when (A.nome_vincolo='PUC_2015' and B.nome_tavola='VARIANTI_PRG') then 'variante '|| C.sigla
 when (A.nome_vincolo='VINCOLI_AMBIENTALI' and B.nome_tavola='DLGS_42_2004_ART_142_LETT_G') or (A.nome_vincolo='PRG' and B.nome_tavola='LOTTIZZAZIONI') or (A.nome_vincolo='PIANO_DI_BACINO' and B.nome_tavola='AMBITO') then C.sigla
 else 'zona '|| C.sigla
 end AS testo,
