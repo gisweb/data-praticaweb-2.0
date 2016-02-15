@@ -1,0 +1,7 @@
+/db/upgrade_db/*
+/praticaweb/documenti/vigi/*
+/praticaweb/documenti/pe/*
+/praticaweb/documenti/cdu/*
+/praticaweb/debug/*.debug
+/praticaweb/documenti/anagrafe_tributaria.txt
+config.local.php
