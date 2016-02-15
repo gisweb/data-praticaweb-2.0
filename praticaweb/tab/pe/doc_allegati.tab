@@ -3,8 +3,8 @@
 table=""
 viewable=""
 editable="itec;iamm;ivigi;iagi"
-;print_form="pe.allegati"
-print_form="pe.avvioproc"
+print_form="pe.allegati"
+;print_form="pe.avvioproc"
 [edit]
 table="pe.doc_allegati"
 chiave="id"
@@ -16,7 +16,7 @@ data[]="Manc.;mancante;30;radio"
 data[]="Nome del Documento;documento;;text"
 
 [view]
-table="pe.doc_allegati"
+table="pe.doc_allegati_all"
 chiave="id"
 campi_ordinamento=""
 campi_obbligatori=""

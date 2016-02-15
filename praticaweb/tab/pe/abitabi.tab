@@ -3,8 +3,8 @@
 table=""
 viewable=""
 editable="iagi"
-;print_form="pe.abitabi"
-print_form="pe.avvioproc"
+print_form="pe.abitabi"
+;print_form="pe.avvioproc"
 
 [edit]
 table="pe.abitabi"

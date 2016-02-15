@@ -14,7 +14,7 @@ data[]="Manc.;mancante;30;radio"
 data[]="Nome del Documento;documento;;text"
 
 [edit]
-table="pe.doc_elenco"
+table="pe.doc_elenco_all"
 chiave="id"
 campi_ordinamento=""
 campi_obbligatori=""

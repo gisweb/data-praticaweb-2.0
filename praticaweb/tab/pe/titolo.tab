@@ -3,8 +3,8 @@
 table=""
 viewable=""
 editable="iamm"
-;print_form="pe.titolo"
-print_form="pe.avvioproc"
+print_form="pe.titolo"
+;print_form="pe.avvioproc"
 
 [edit]
 table="pe.titolo"
