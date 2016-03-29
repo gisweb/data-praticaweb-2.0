@@ -10,7 +10,7 @@ chiave="id"
 campi_ordinamento=""
 campi_obbligatori="ordine;nome"
 
-data[]="Ente;nome;50;text"
+data[]="Ente;nome;150;text"
 data[]="Descrizione;descrizione;50x6;textarea"
 data[]="Parere Interno;interno;80;yesno"
 data[]="Silenzio Assenso gg.;silenzio_assenso;10;text"

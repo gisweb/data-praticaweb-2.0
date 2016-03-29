@@ -1,5 +1,5 @@
 Esempio File di configurazione : Gruppi-Permessi@Nome Tabella/Permessi@Nome Javascript@Parametri Javascript@Testo del Link@Testo descrittivo
--4@Gestione pratiche
+-4@Gestione pratiche Edilizia Privata
 -4@NewWindow@'pe.ricerca.php?new=1','ricercaPraticaweb',0,0,'yes'@Apri pratica esistente@Modalit&agrave; di ricerca di una pratica archiviata.
 -4@NewWindow@'pe.recenti.php','ricercaPraticaweb',0,0,'yes'@Pratiche recenti@Elenco delle ultime 10 pratiche consultate
 -4@NewWindow@'pe.ricerca_online.php','ricercaPraticaweb',0,0,'yes'@Pratiche Presentate Online@Elenco delle Pratiche presentate tramite la Procedura OnLine
@@ -10,6 +10,10 @@ rdp,itec,iamm-4@NewWindow@'vigi.avvioproc.php?mode=new','Praticaweb',0,0,'yes'@N
 -3@NewWindow@'report.scadenze.php','Praticaweb',0,0,'yes'@Elenco delle Scadenze@Elenco delle Scadenze.
 rdp,itec,iamm-3@NewWindow@'pe.eliminapratica.php?ricerca=1','Praticaweb',0,0,'yes'@Elimina Pratica@Individua ed elimina la pratica scelta.
 -2@NewWindow@'admin.pwd.php?mode=edit','PraticawebUtenti',0,0,'yes'@Gestione PassWord Utenti@- Modifica password dell'utente.
+-4@Gestione pratiche Certificati Agibilità
+-4@NewWindow@'agi.ricerca.php?new=1','ricercaPraticaweb',0,0,'yes'@Apri pratica esistente@Modalit&agrave; di ricerca di una pratica archiviata.
+rdp,itec,iamm-4@NewWindow@'agi.avvioproc.php?mode=new','Praticaweb',0,0,'yes'@Nuova Pratica Edilizia@Inserisce una nuova pratica.
+rdp,itec,iamm-3@NewWindow@'vigi.eliminapratica.php?ricerca=1','Praticaweb',0,0,'yes'@Elimina Pratica@Individua ed elimina la pratica scelta.
 -2@Anagrafe Tributaria
 -2@NewWindow@'anagrafe_tributaria.php?mode=view','AnagrafeTributaria',0,0,'yes'@Anagrafe Tributaria@Report della situazione delle pratiche di Anagrafe Tributaria.
 -3@Praticaweb Navigator per la cartografia
