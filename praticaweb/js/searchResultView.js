@@ -12,7 +12,7 @@ var myview = $.extend({}, $.fn.datagrid.defaults.view, {
             cc.push('<table style="float:left;margin-left:10px;width:1200px;" class="stiletabella">');
             cc.push('<tr class="">');
             cc.push('<td colspan="3" field="titolo" style="border:1px 1px 0px 0px dotted #CCCCCC;">');
-            cc.push('<div style="height:auto;" class=""><a href="praticaweb?pratica=' + rowData['pratica'] + '" target="Praticaweb">' + titolo +'</a></div>');
+            cc.push('<div style="height:auto;" class=""><a href="praticaweb.php?pratica=' + rowData['pratica'] + '" target="Praticaweb">' + titolo +'</a></div>');
             cc.push('</td>');
             cc.push('</tr>');
             cc.push('<tr class="">');
