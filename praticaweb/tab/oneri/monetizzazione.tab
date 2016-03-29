@@ -12,6 +12,7 @@ campi_obbligatori=""
 data[]="Parcheggi n°;parc_n;15;intero|Euro a parcheggio;i_parc_n;250xoneri.elenco_tariffe_mon_parch_n;selectdb"
 data[]="Parcheggi mq.;parc_mq;10;superficie|Euro a mq;i_parc_mq;250xoneri.elenco_tariffe_mon_parch_mq;selectdb"
 data[]="Verde pubblico mq.;verde_mq;10;superficie|Euro a mq;i_verde_mq;250xoneri.elenco_tariffe_mon_verde_mq;selectdb"
+data[]="Note;note;60x4;textarea"
 button="Salva;azione;;submit|Elimina;azione;#confirmDelete;submit|Annulla;azione;;submit"
 [edit]
 table="oneri.monetizzazione"
@@ -22,6 +23,7 @@ data[]="Parcheggi n°;parc_n;15;intero|Euro a parcheggio;i_parc_n;250xoneri.elen
 data[]="Parcheggi mq.;parc_mq;10;superficie|Euro a mq;i_parc_mq;250xoneri.elenco_tariffe_mon_parch_mq;selectdb|Totale;tot_parc_mq;15;valuta;data-plugins=field-disabled#data-editable=1"
 data[]="Verde pubblico mq.;verde_mq;10;superficie|Euro a mq;i_verde_mq;250xoneri.elenco_tariffe_mon_verde_mq;selectdb|Totale;tot_verde_mq;15;valuta;data-plugins=field-disabled#data-editable=1"
 data[]="Quietanza;quietanza;15;text|Data;data;10;data"
+data[]="Note;note;60x4;textarea"
 button="Salva;azione;;submit|Elimina;azione;#confirmDelete;submit|Annulla;azione;;submit"
 [view]
 table="oneri.monetizzazione"
@@ -34,6 +36,7 @@ data[]="Parcheggi mq.;parc_mq;10;superficie|Euro a mq;i_parc_mq;8;string|Totale;
 data[]="Verde pubblico mq.;verde_mq;10;string|Euro a mq;i_verde_mq;8;numero|Totale;tot_verde_mq;15;valuta"
 data[]="Totale;totale;;valuta"
 data[]="Quietanza;quietanza;15;text|Data;data;10;data"
+data[]="Note;note;;text"
 [list]
 
 [standard]

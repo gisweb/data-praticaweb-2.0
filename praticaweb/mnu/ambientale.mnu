@@ -9,10 +9,10 @@ prei,PreIstruttoria
 92,Sospensioni,pe.sospensioni,it
 70,Pianificazione e Vincoli,pe.vincoli,it
 80,Dati di Progetto,pe.progetto,it
-94,Istruttoria Paesaggistica,pe.conformita_ptcp,it
+94,Conformità Ambientale,pe.conformita_ptcp,it
+95,Conformità Urbanistica,pe.conformita_puc,it
 100,Pareri,pe.pareri,
 ,Titolo
-95,Verifica Finale Conformità Paesaggistica,pe.conformita_puc,
 160,Rilascio Titolo,pe.titolo,
 iter,Iter
 295,Scadenze,pe.scadenze,
