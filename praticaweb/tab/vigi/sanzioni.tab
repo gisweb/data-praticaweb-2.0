@@ -3,7 +3,7 @@
 table=""
 viewable=""
 editable=""
-
+print_form="vigi.sanzioni"
 [edit]
 table="vigi.sanzioni"
 chiave="id"

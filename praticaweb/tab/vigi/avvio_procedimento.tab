@@ -3,7 +3,7 @@
 table=""
 viewable=""
 editable=""
-
+print_form="vigi.avvioproc"
 [new]
 table="vigi.avvioproc"
 chiave="id"

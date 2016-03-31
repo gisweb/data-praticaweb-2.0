@@ -3,7 +3,7 @@
 table=""
 viewable=""
 editable=""
-
+print_form="vigi.infrazioni"
 [edit]
 table="vigi.infrazioni"
 chiave="id"
