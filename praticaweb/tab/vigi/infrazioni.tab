@@ -26,6 +26,7 @@ data[]="N. verb.;numero_verbale;25;text|Prot. verb.;protocollo_verbale;25;text"
 data[]="Descrizione;oggetto;50x4;textarea"
 data[]="Note;note;50x4;textarea"
 data[]="Stato;stato;;text"
+data[]="Allegati;id;#ui-icon-folder-open#Carica#action:vigi.documenti#plugins:open-page#tipo_documento:allegato#direzione:0#mode:new#pratica;folder";
 
 [list]
 

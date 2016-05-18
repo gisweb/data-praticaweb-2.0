@@ -24,6 +24,7 @@ data[]="Motivo;motivo;60;text"
 data[]="Data;data;10;data"
 data[]="Vigilanza;flag_vigilanza;50;yesno;"
 data[]="Note;note;50x3;textarea"
+data[]="Allegati;id;#ui-icon-folder-open#Carica#action:vigi.documenti#plugins:open-page#tipo_documento:allegato#direzione:0#mode:new#pratica;folder";
 [list]
 
 [standard]
