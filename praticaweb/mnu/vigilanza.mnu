@@ -12,5 +12,5 @@ vigi,Vigilanza
 iter,Iter
 200,Scadenze,vigi.scadenze,
 210,Annotazioni,vigi.annotazioni,
-220,Documenti Prodotti,stp.documenti
+220,Documenti Prodotti,vigi.documenti
 230,Accesso agli Atti,vigi.visione,
