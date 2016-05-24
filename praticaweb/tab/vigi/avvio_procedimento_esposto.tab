@@ -54,7 +54,7 @@ data[]="Oggetto;oggetto;;text"
 data[]="Note;note;;text"
 data[]="Stato;stato_pratica;400xvigi.elenco_statopratica_vigi;selectdb"
 data[]="Data di archiviazione;data_archiviazione;10;data"
-data[]="Esposto;id;#ui-icon-folder-open#Carica#action:vigi.documenti#plugins:open-page#tipo_documento:allegato#direzione:0#mode:new#form:vigi.esposto#pratica;folder";
+data[]="Esposto;id;#ui-icon-folder-open#Carica#action:vigi.documenti.php#plugins:open-page#tipo_documento:allegato#direzione:0#mode:new#form:vigi.esposto#pratica;folder";
 [list]
 
 [standard]
