@@ -3,7 +3,7 @@
 table=""
 viewable=""
 editable="ivig"
-
+print_form="vigi.esposti"
 [edit]
 table="pe.esposti"
 chiave="id"
