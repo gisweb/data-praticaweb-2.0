@@ -28,7 +28,7 @@ data[]="Data ordinanza;data_ordinanza;10;data|Protocollo;protocollo;25;text|Data
 data[]="Stato;stato;;text"
 data[]="Data demolizione;data_demolizione;10;data"
 data[]="Note;note;200;text"
-data[]="Allegati;id;#ui-icon-folder-open#Carica#action:vigi.documenti#plugins:open-page#tipo_documento:allegato#direzione:0#mode:new#pratica;folder";
+data[]="Allegati;id;#ui-icon-folder-open#Carica#action:vigi.documenti#plugins:open-page#tipo_documento:allegato#direzione:0#form:vigi.ordinanze#mode:new#pratica;folder";
 
 
 [list]
