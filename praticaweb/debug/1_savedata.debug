@@ -1,0 +1,61 @@
+
+26-08-15	13:58:29
+	insert into vigi.avvioproc (numero,data_presentazione,protocollo,data_prot,tipo,origine,riferimento,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,stato_pratica,data_archiviazione,chk,uidins,tmsins) values (NULL,'26/08/2015','12345','26/08/2015',20,1,NULL,null,NULL,NULL,NULL,'test',NULL,null,NULL,1,1,1440597509)
+26-08-15	13:58:36
+	update vigi.avvioproc set numero='ESP-1/15',data_presentazione='26/08/2015',protocollo='12345',data_prot='26/08/2015',tipo=20,origine=1,riferimento=NULL,resp_proc=null,data_resp=NULL,com_resp=NULL,data_com_resp=NULL,oggetto='test',note=NULL,stato_pratica=null,data_archiviazione=NULL,chk=2,uidupd=1,tmsupd=1440597516 where id=2
+26-08-15	14:05:56
+	insert into vigi.sopralluoghi (motivo,data,flag_vigilanza,note,pratica,chk,uidins,tmsins) values ('Segnalazione','26/08/2015',1,'v cndvcv',2,1,1,1440597956)
+26-08-15	14:21:35
+	insert into vigi.sopralluoghi (motivo,data,flag_vigilanza,note,pratica,chk,uidins,tmsins) values ('Esposto','26/08/2015',0,NULL,2,1,1,1440598895)
+26-08-15	14:37:37
+	update vigi.sopralluoghi set motivo='Esposto',data='26/08/2015',flag_vigilanza=0,note='rtetee',chk=2,uidupd=1,tmsupd=1440599857 where id=1
+26-08-15	14:37:58
+	update vigi.sopralluoghi set motivo='Esposto',data='26/08/2015',flag_vigilanza=0,note='rtetee',chk=3,uidupd=1,tmsupd=1440599878 where id=1
+26-08-15	14:38:11
+	insert into vigi.indirizzi (via,civico,interno,scala,pratica,chk,uidins,tmsins) values ('SALITA AL SANTUARIO','3',NULL,NULL,2,1,1,1440599891)
+26-08-15	14:39:29
+	insert into vigi.cterreni (sezione,foglio,mappale,note,sez_censimento,pratica,chk,uidins,tmsins) values ('B','4','2',NULL,NULL,2,1,1,1440599969)
+27-08-15	06:13:08
+	insert into vigi.avvioproc (numero,data_presentazione,protocollo,data_prot,tipo,origine,riferimento,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,stato_pratica,data_archiviazione,chk,uidins,tmsins) values (NULL,'27/08/2015','112121','27/08/2015',null,2,NULL,null,NULL,NULL,NULL,'test',NULL,null,NULL,1,1,1440655988)
+27-08-15	06:15:15
+	insert into vigi.avvioproc (numero,data_presentazione,protocollo,data_prot,tipo,origine,riferimento,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,stato_pratica,data_archiviazione,chk,uidins,tmsins) values (NULL,'27/08/2015','11610','27/08/2015',20,1,NULL,null,NULL,NULL,NULL,'Test',NULL,null,NULL,1,1,1440656115)
+27-08-15	06:18:16
+	insert into vigi.avvioproc (numero,data_presentazione,protocollo,data_prot,tipo,origine,riferimento,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,stato_pratica,data_archiviazione,chk,uidins,tmsins) values (NULL,'26/08/2015',NULL,'26/08/2015',20,1,NULL,null,NULL,NULL,NULL,'aaaaa',NULL,null,NULL,1,1,1440656296)
+27-08-15	06:19:52
+	insert into vigi.avvioproc (numero,data_presentazione,protocollo,data_prot,tipo,origine,riferimento,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,stato_pratica,data_archiviazione,chk,uidins,tmsins) values (NULL,'26/08/2015',NULL,'26/08/2015',20,1,NULL,null,NULL,NULL,NULL,'test',NULL,null,NULL,1,1,1440656392)
+27-08-15	06:25:42
+	insert into vigi.indirizzi (via,civico,interno,scala,pratica,chk,uidins,tmsins) values ('SALITA PRIMAVERA','6','3',NULL,8,1,1,1440656742)
+27-08-15	06:25:57
+	insert into vigi.cterreni (sezione,foglio,mappale,note,sez_censimento,pratica,chk,uidins,tmsins) values ('B','3','3',NULL,NULL,8,1,1,1440656757)
+27-08-15	06:28:34
+	insert into vigi.visione (nominativo,motivo,data,copia,pratica,chk,uidins,tmsins) values ('addada','x<x<<x','27/08/2015',1,8,1,1,1440656914)
+27-08-15	06:31:48
+	insert into vigi.avvioproc (numero,data_presentazione,protocollo,data_prot,tipo,riferimento_esposto,resp_proc,data_resp,com_resp,data_com_resp,data_preliminare_esposto,protocollo_preliminare_esposto,oggetto,note,stato_pratica,data_archiviazione,chk,uidins,tmsins) values (NULL,'27/08/2015',NULL,'27/08/2015',10,ARRAY[8],null,NULL,NULL,NULL,NULL,NULL,'test',NULL,null,NULL,1,1,1440657108)
+27-08-15	06:35:32
+	insert into vigi.avvioproc (numero,data_presentazione,protocollo,data_prot,tipo,riferimento_esposto,resp_proc,data_resp,com_resp,data_com_resp,data_preliminare_esposto,protocollo_preliminare_esposto,oggetto,note,stato_pratica,data_archiviazione,chk,uidins,tmsins) values (NULL,'27/08/2015',NULL,'27/08/2015',10,ARRAY[8],null,NULL,NULL,NULL,NULL,NULL,'test',NULL,null,NULL,1,1,1440657332)
+27-08-15	07:12:51
+	insert into vigi.infrazioni (tipo,data_verbale,numero_verbale,protocollo_verbale,oggetto,note,pratica,chk,uidins,tmsins) values (5,'27/08/2015','123',NULL,NULL,NULL,11,1,1,1440659571)
+27-08-15	07:31:50
+	insert into vigi.ordinanze (infrazione,tipo,data_ordinanza,protocollo,data_notifica,stato,data_demolizione,note,pratica,chk,uidins,tmsins) values (1,'esproprio','27/08/2015',NULL,NULL,'Non eseguita',NULL,NULL,11,1,1,1440660710)
+27-08-15	07:32:56
+	insert into vigi.infrazioni (tipo,data_verbale,numero_verbale,protocollo_verbale,oggetto,note,pratica,chk,uidins,tmsins) values (4,'20/08/2015','1234567',NULL,NULL,NULL,11,1,1,1440660776)
+27-08-15	07:39:11
+	insert into vigi.sanzioni (infrazione,tipo_sanzione,data_sanzione,importo,data_scadenza,quietanza,data_pagamento,note,pratica,chk,uidins,tmsins) values (1,1,'27/08/2015',0.00,NULL,NULL,NULL,NULL,11,1,1,1440661151)
+27-08-15	07:39:26
+	update vigi.sanzioni set infrazione=1,tipo_sanzione=1,data_sanzione='27/08/2015',importo=0.00,data_scadenza=NULL,quietanza=NULL,data_pagamento=NULL,note=NULL,chk=2,uidupd=1,tmsupd=1440661166 where id=1
+27-08-15	07:39:49
+	update vigi.sanzioni set infrazione=1,tipo_sanzione=1,data_sanzione='27/08/2015',importo=0.00,data_scadenza=NULL,quietanza=NULL,data_pagamento=NULL,note=NULL,chk=3,uidupd=1,tmsupd=1440661189 where id=1
+27-08-15	07:40:12
+	insert into vigi.sanzioni (infrazione,tipo_sanzione,data_sanzione,importo,data_scadenza,quietanza,data_pagamento,note,pratica,chk,uidins,tmsins) values (2,1,'26/08/2015',500,NULL,NULL,NULL,NULL,11,1,1,1440661212)
+6-10-15	08:53:07
+	insert into oneri.calcolati (anno,tabella_old,tabella,intervento,perc,sup,c1,c2,c3,c4,d1,d2,degradato,note,pratica,chk,uidins,tmsins) values (2015,'A','B',10.00,0,100,null,null,null,null,null,null,0,NULL,20676,1,1,1444121587)
+25-01-16	16:57:57
+	insert into vigi.infrazioni (tipo,data_verbale,numero_verbale,protocollo_verbale,oggetto,note,pratica,chk,uidins,tmsins) values (23,'06/01/2016',NULL,NULL,NULL,NULL,14,1,1,1453737477)
+25-01-16	16:58:25
+	insert into vigi.sopralluoghi (motivo,data,flag_vigilanza,note,pratica,chk,uidins,tmsins) values ('Verifica','20/01/2016',1,NULL,14,1,1,1453737505)
+25-01-16	16:58:45
+	insert into vigi.sanzioni (infrazione,tipo_sanzione,data_sanzione,importo,data_scadenza,quietanza,data_pagamento,note,pratica,chk,uidins,tmsins) values (13,1,'26/01/2016',666,'28/01/2016',NULL,NULL,NULL,14,1,1,1453737525)
+25-01-16	17:19:50
+	insert into vigi.sopralluoghi (motivo,data,flag_vigilanza,note,pratica,chk,uidins,tmsins) values ('Esposto','20/01/2016',0,NULL,8,1,1,1453738790)
+29-01-16	09:14:05
+	update vigi.avvioproc set numero='3/15',data_presentazione='09/10/2015',protocollo='99999',data_prot='09/10/2015',tipo=10,riferimento_esposto=ARRAY[2,12,15],resp_proc=null,data_resp='09/10/2015',com_resp='99998',data_com_resp='09/10/2015',data_verbale=NULL,numero_verbale=NULL,protocollo_verbale=NULL,data_preliminare_esposto=NULL,protocollo_preliminare_esposto=NULL,oggetto='testo libero.....',note='Testo Note',stato_pratica=9,data_archiviazione=NULL,chk=2,uidupd=1,tmsupd=1454055245 where id=14

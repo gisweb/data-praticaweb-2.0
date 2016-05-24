@@ -1,0 +1,1767 @@
+------- DEBUG DEL 26/08/2015 01:58:30 -------
+select numero,data_presentazione,tipo,origine,protocollo,data_prot,riferimento,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=2 
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:34 -------
+select numero,data_presentazione,protocollo,data_prot,tipo,origine,riferimento,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=2 
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:37 -------
+select numero,data_presentazione,tipo,origine,protocollo,data_prot,riferimento,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=2 
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:40 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where richiedente=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:40 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where richiedente=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:40 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where concessionario=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:40 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where concessionario=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:40 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where proprietario=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:40 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where proprietario=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:40 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:40 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:40 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where direttore=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:40 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where direttore=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:40 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where esecutore=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:40 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where esecutore=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:40 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where sicurezza=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:40 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where sicurezza=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:40 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:40 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:40 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where geologo=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:40 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where geologo=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:40 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore_ca=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:40 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore_ca=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:40 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista_ca=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:40 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista_ca=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:40 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where economia_diretta=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:40 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where economia_diretta=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:40 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where resp_abuso=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:40 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where resp_abuso=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:40 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where denunciante=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:40 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where denunciante=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:59:07 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where richiedente=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:59:07 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where richiedente=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:59:07 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where concessionario=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:59:07 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where concessionario=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:59:07 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where proprietario=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:59:07 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where proprietario=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:59:07 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:59:07 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:59:07 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where direttore=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:59:07 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where direttore=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:59:07 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where esecutore=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:59:07 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where esecutore=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:59:07 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where sicurezza=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:59:07 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where sicurezza=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:59:07 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:59:07 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:59:07 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where geologo=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:59:07 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where geologo=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:59:07 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore_ca=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:59:07 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore_ca=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:59:07 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista_ca=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:59:07 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista_ca=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:59:07 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where economia_diretta=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:59:07 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where economia_diretta=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:59:07 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where resp_abuso=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:59:07 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where resp_abuso=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:59:07 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where denunciante=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:59:07 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where denunciante=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 02:05:42 -------
+select id,id,via,civico,interno,scala,piano,id,pratica,chk from vigi.indirizzi where pratica=2; 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:05:42 -------
+select mapkey,id,foglio,mappale,note,id,pratica,chk from vigi.ct_info where pratica=2; 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:05:42 -------
+select id,id,foglio,mappale,sub,note,id,pratica,chk from vigi.curbano where pratica=2; 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:05:44 -------
+select motivo,data,flag_vigilanza,note,id,pratica,chk from vigi.sopralluoghi where pratica=2 order by data 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:05:57 -------
+select motivo,data,note,id,pratica,chk from pe.sopralluoghi where pratica=2 order by data 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:08:15 -------
+select motivo,data,note,id,pratica,chk from pe.sopralluoghi where pratica=2 order by data 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:08:15 -------
+select id,descrizione_tavola,descrizione,sigla,id,pratica,chk from pe.zone_pratica where pratica=2 and vincolo='PRG' 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:08:15 -------
+select id,descrizione_tavola,descrizione,sigla,id,pratica,chk from pe.zone_pratica where pratica=2 and vincolo='PUC' 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:08:15 -------
+select id,descrizione_tavola,descrizione,sigla,id,pratica,chk from pe.zone_pratica where pratica=2 and vincolo='PTCP' 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:08:16 -------
+select id,descrizione_tavola,descrizione,sigla,id,pratica,chk from pe.zone_pratica where pratica=2 and vincolo='DISCIPLINA_PAESISTICA' 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:08:16 -------
+select id,descrizione_tavola,descrizione,sigla,id,pratica,chk from pe.zone_pratica where pratica=2 and vincolo='PIANO_DI_BACINO' 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:08:16 -------
+select id,descrizione_tavola,descrizione,sigla,id,pratica,chk from pe.zone_pratica where pratica=2 and vincolo='VINCOLI' 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:08:16 -------
+select id,descrizione_tavola,descrizione,sigla,id,pratica,chk from pe.zone_pratica where pratica=2 and vincolo='VINCOLI_AMBIENTALI' 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:08:16 -------
+select id,descrizione_tavola,descrizione,sigla,id,pratica,chk from pe.zone_pratica where pratica=2 and vincolo='FASCE_DI_RISPETTO' 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:08:16 -------
+select id,descrizione_tavola,descrizione,sigla,id,pratica,chk from pe.zone_pratica where pratica=2 and vincolo='DELIMITAZIONE_CENTRI_ABITATI' 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:08:16 -------
+select id,descrizione_tavola,descrizione,sigla,id,pratica,chk from pe.zone_pratica where pratica=2 and vincolo='DELIMITAZIONE_CENTRI_EDIFICATI' 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:08:16 -------
+select id,descrizione_tavola,descrizione,sigla,id,pratica,chk from pe.zone_pratica where pratica=2 and vincolo='LIVELLI_AMMINISTRATIVI' 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:08:16 -------
+select id,descrizione_tavola,descrizione,sigla,id,pratica,chk from pe.zone_pratica where pratica=2 and vincolo='RETI_TECNOLOGICHE' 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:21:16 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from vigi.vista_iter where pratica = 2  ORDER BY data
+-------------------------
+------- DEBUG DEL 26/08/2015 02:21:19 -------
+select numero,data_presentazione,tipo,origine,protocollo,data_prot,riferimento,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=2 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:21:25 -------
+select motivo,data,flag_vigilanza,note,id,pratica,chk from vigi.sopralluoghi where pratica=2 order by data 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:21:36 -------
+select motivo,data,note,id,pratica,chk from pe.sopralluoghi where pratica=2 order by data 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:37:25 -------
+select motivo,data,flag_vigilanza,note,id,pratica,chk from vigi.sopralluoghi where pratica=2 order by data 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:37:28 -------
+select motivo,data,flag_vigilanza,note,id,pratica,chk from vigi.sopralluoghi where pratica=2 order by data 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:37:34 -------
+select motivo,data,flag_vigilanza,note,id,pratica,chk from vigi.sopralluoghi where id=1 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:37:38 -------
+select motivo,data,note,id,pratica,chk from pe.sopralluoghi where pratica=2 order by data 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:37:42 -------
+select motivo,data,flag_vigilanza,note,id,pratica,chk from vigi.sopralluoghi where pratica=2 order by data 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:37:56 -------
+select motivo,data,flag_vigilanza,note,id,pratica,chk from vigi.sopralluoghi where id=1 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:37:59 -------
+select motivo,data,note,id,pratica,chk from pe.sopralluoghi where pratica=2 order by data 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:38:01 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=2 and vincolo='PRG' 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:38:01 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=2 and vincolo='PUC' 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:38:01 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=2 and vincolo='PTCP' 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:38:01 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=2 and vincolo='DISCIPLINA_PAESISTICA' 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:38:01 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=2 and vincolo='PIANO_DI_BACINO' 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:38:01 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=2 and vincolo='VINCOLI' 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:38:01 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=2 and vincolo='VINCOLI_AMBIENTALI' 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:38:01 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=2 and vincolo='FASCE_DI_RISPETTO' 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:38:01 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=2 and vincolo='DELIMITAZIONE_CENTRI_ABITATI' 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:38:01 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=2 and vincolo='DELIMITAZIONE_CENTRI_EDIFICATI' 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:38:01 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=2 and vincolo='LIVELLI_AMMINISTRATIVI' 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:38:01 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=2 and vincolo='RETI_TECNOLOGICHE' 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:38:02 -------
+select id,id,via,civico,interno,scala,piano,id,pratica,chk from vigi.indirizzi where pratica=2; 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:38:02 -------
+select mapkey,id,foglio,mappale,note,id,pratica,chk from vigi.ct_info where pratica=2; 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:38:02 -------
+select id,id,foglio,mappale,sub,note,id,pratica,chk from vigi.curbano where pratica=2; 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:38:12 -------
+select id,id,via,civico,interno,scala,piano,id,pratica,chk from vigi.indirizzi where pratica=2; 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:38:12 -------
+select mapkey,id,foglio,mappale,note,id,pratica,chk from vigi.ct_info where pratica=2; 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:38:12 -------
+select id,id,foglio,mappale,sub,note,id,pratica,chk from vigi.curbano where pratica=2; 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:20 -------
+select id,id,via,civico,interno,scala,piano,id,pratica,chk from vigi.indirizzi where pratica=2; 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:20 -------
+select mapkey,id,foglio,mappale,note,id,pratica,chk from vigi.ct_info where pratica=2; 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:20 -------
+select id,id,foglio,mappale,sub,note,id,pratica,chk from vigi.curbano where pratica=2; 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:30 -------
+select id,id,via,civico,interno,scala,piano,id,pratica,chk from vigi.indirizzi where pratica=2; 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:30 -------
+select mapkey,id,foglio,mappale,note,id,pratica,chk from vigi.ct_info where pratica=2; 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:30 -------
+select id,id,foglio,mappale,sub,note,id,pratica,chk from vigi.curbano where pratica=2; 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:33 -------
+select id,id,via,civico,interno,scala,piano,id,pratica,chk from vigi.indirizzi where pratica=2; 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:33 -------
+select mapkey,id,foglio,mappale,note,id,pratica,chk from vigi.ct_info where pratica=2; 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:33 -------
+select id,id,foglio,mappale,sub,note,id,pratica,chk from vigi.curbano where pratica=2; 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:35 -------
+select id,id,via,civico,interno,scala,piano,id,pratica,chk from vigi.indirizzi where pratica=2; 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:35 -------
+select mapkey,id,foglio,mappale,note,id,pratica,chk from vigi.ct_info where pratica=2; 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:35 -------
+select id,id,foglio,mappale,sub,note,id,pratica,chk from vigi.curbano where pratica=2; 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:36 -------
+select id,id,via,civico,interno,scala,piano,id,pratica,chk from vigi.indirizzi where pratica=2; 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:36 -------
+select mapkey,id,foglio,mappale,note,id,pratica,chk from vigi.ct_info where pratica=2; 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:36 -------
+select id,id,foglio,mappale,sub,note,id,pratica,chk from vigi.curbano where pratica=2; 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:37 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where richiedente=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:37 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where richiedente=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:37 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where concessionario=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:37 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where concessionario=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:37 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where proprietario=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:37 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where proprietario=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:37 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:37 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:37 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where direttore=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:37 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where direttore=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:37 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where esecutore=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:37 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where esecutore=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:37 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where sicurezza=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:37 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where sicurezza=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:37 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:37 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:37 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where geologo=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:37 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where geologo=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:37 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore_ca=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:37 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore_ca=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:37 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista_ca=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:37 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista_ca=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:37 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where economia_diretta=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:37 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where economia_diretta=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:37 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where resp_abuso=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:37 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where resp_abuso=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:37 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where denunciante=1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:37 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where denunciante=-1 and pratica=2  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:41 -------
+select id,id,via,civico,interno,scala,piano,id,pratica,chk from vigi.indirizzi where pratica=2; 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:41 -------
+select mapkey,id,foglio,mappale,note,id,pratica,chk from vigi.ct_info where pratica=2; 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:41 -------
+select id,id,foglio,mappale,sub,note,id,pratica,chk from vigi.curbano where pratica=2; 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:45:01 -------
+select id,id,via,civico,interno,scala,piano,id,pratica,chk from vigi.indirizzi where pratica=2; 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:45:01 -------
+select mapkey,id,foglio,mappale,note,id,pratica,chk from vigi.ct_info where pratica=2; 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:45:01 -------
+select id,id,foglio,mappale,sub,note,id,pratica,chk from vigi.curbano where pratica=2; 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:45:35 -------
+select id,id,via,civico,interno,scala,piano,id,pratica,chk from vigi.indirizzi where pratica=2; 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:45:35 -------
+select mapkey,id,sezione,foglio,mappale,note,id,pratica,chk from vigi.ct_info where pratica=2; 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:45:35 -------
+select id,id,foglio,mappale,sub,note,id,pratica,chk from vigi.curbano where pratica=2; 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:45:38 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=2 and vincolo='PRG' 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:45:38 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=2 and vincolo='PUC' 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:45:38 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=2 and vincolo='PTCP' 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:45:38 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=2 and vincolo='DISCIPLINA_PAESISTICA' 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:45:38 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=2 and vincolo='PIANO_DI_BACINO' 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:45:38 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=2 and vincolo='VINCOLI' 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:45:38 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=2 and vincolo='VINCOLI_AMBIENTALI' 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:45:38 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=2 and vincolo='FASCE_DI_RISPETTO' 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:45:38 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=2 and vincolo='DELIMITAZIONE_CENTRI_ABITATI' 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:45:38 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=2 and vincolo='DELIMITAZIONE_CENTRI_EDIFICATI' 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:45:38 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=2 and vincolo='LIVELLI_AMMINISTRATIVI' 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:45:38 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=2 and vincolo='RETI_TECNOLOGICHE' 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:54:12 -------
+select id,id,via,civico,interno,scala,piano,id,pratica,chk from vigi.indirizzi where pratica=2; 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:54:12 -------
+select mapkey,id,sezione,foglio,mappale,note,id,pratica,chk from vigi.ct_info where pratica=2; 
+-------------------------
+------- DEBUG DEL 26/08/2015 02:54:12 -------
+select id,id,foglio,mappale,sub,note,id,pratica,chk from vigi.curbano where pratica=2; 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:15:16 -------
+select numero,data_presentazione,tipo,origine,protocollo,data_prot,riferimento,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=5 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:15:24 -------
+select id,scadenza,nome,completata,note,id,pratica,chk from vigi.vista_scadenze where pratica=5  ORDER BY scadenza
+-------------------------
+------- DEBUG DEL 27/08/2015 06:16:15 -------
+select id,scadenza,nome,completata,note,id,pratica,chk from vigi.vista_scadenze where pratica=5  ORDER BY scadenza
+-------------------------
+------- DEBUG DEL 27/08/2015 06:16:18 -------
+select id,scadenza,nome,completata,note,id,pratica,chk from vigi.vista_scadenze where pratica=5  ORDER BY scadenza
+-------------------------
+------- DEBUG DEL 27/08/2015 06:19:53 -------
+select numero,data_presentazione,tipo,origine,protocollo,data_prot,riferimento,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=8 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:19:56 -------
+select id,scadenza,nome,completata,note,id,pratica,chk from vigi.vista_scadenze where pratica=8  ORDER BY scadenza
+-------------------------
+------- DEBUG DEL 27/08/2015 06:23:15 -------
+select id,scadenza,nome,completata,note,id,pratica,chk from vigi.vista_scadenze where pratica=8  ORDER BY scadenza
+-------------------------
+------- DEBUG DEL 27/08/2015 06:23:19 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from vigi.vista_iter where pratica = 8  ORDER BY data
+-------------------------
+------- DEBUG DEL 27/08/2015 06:24:03 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from vigi.vista_iter where pratica = 8  ORDER BY data
+-------------------------
+------- DEBUG DEL 27/08/2015 06:24:12 -------
+select codice,scadenza,completata,note,id,pratica,chk from vigi.scadenze where id=2 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:24:16 -------
+select id,scadenza,nome,completata,note,id,pratica,chk from vigi.vista_scadenze where pratica=8  ORDER BY scadenza
+-------------------------
+------- DEBUG DEL 27/08/2015 06:24:18 -------
+select id,scadenza,nome,completata,note,id,pratica,chk from vigi.vista_scadenze where pratica=8  ORDER BY scadenza
+-------------------------
+------- DEBUG DEL 27/08/2015 06:24:21 -------
+select codice,scadenza,completata,note,id,pratica,chk from vigi.scadenze where id=2 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:01 -------
+select id,scadenza,nome,completata,note,id,pratica,chk from vigi.vista_scadenze where pratica=8  ORDER BY scadenza
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:04 -------
+select codice,scadenza,completata,note,id,pratica,chk from vigi.scadenze where id=2 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:08 -------
+select id,scadenza,nome,completata,note,id,pratica,chk from vigi.vista_scadenze where pratica=8  ORDER BY scadenza
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:10 -------
+select id,data_annotazione,utente,note,id,pratica,chk from vigi.annotazioni where pratica=8  ORDER BY data_annotazione DESC,tmsins DESC
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:15 -------
+select id,data_annotazione,utente,note,id,pratica,chk from vigi.annotazioni where pratica=8  ORDER BY data_annotazione DESC,tmsins DESC
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:19 -------
+select id,data_creazione_doc,file_doc,descrizione,id,pratica,chk from stp.stampe where pratica='8' AND NOT coalesce(form,'') IN ('cdu.vincoli')  ORDER BY data_creazione_doc,file_doc
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:21 -------
+select numero,data_presentazione,tipo,origine,protocollo,data_prot,riferimento,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=8 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:23 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where richiedente=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:23 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where richiedente=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:23 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where concessionario=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:23 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where concessionario=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:23 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where proprietario=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:23 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where proprietario=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:23 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:23 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:23 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where direttore=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:23 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where direttore=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:23 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where esecutore=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:23 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where esecutore=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:23 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where sicurezza=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:23 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where sicurezza=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:23 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:23 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:23 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where geologo=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:23 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where geologo=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:23 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore_ca=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:23 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore_ca=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:23 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista_ca=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:23 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista_ca=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:23 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where economia_diretta=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:23 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where economia_diretta=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:23 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where resp_abuso=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:23 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where resp_abuso=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:23 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where denunciante=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:23 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where denunciante=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:30 -------
+select id,id,via,civico,interno,scala,piano,id,pratica,chk from vigi.indirizzi where pratica=8; 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:30 -------
+select mapkey,id,sezione,foglio,mappale,note,id,pratica,chk from vigi.ct_info where pratica=8; 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:30 -------
+select id,id,foglio,mappale,sub,note,id,pratica,chk from vigi.curbano where pratica=8; 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:43 -------
+select id,id,via,civico,interno,scala,piano,id,pratica,chk from vigi.indirizzi where pratica=8; 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:43 -------
+select mapkey,id,sezione,foglio,mappale,note,id,pratica,chk from vigi.ct_info where pratica=8; 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:43 -------
+select id,id,foglio,mappale,sub,note,id,pratica,chk from vigi.curbano where pratica=8; 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:26:01 -------
+select id,id,via,civico,interno,scala,piano,id,pratica,chk from vigi.indirizzi where pratica=8; 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:26:01 -------
+select mapkey,id,sezione,foglio,mappale,note,id,pratica,chk from vigi.ct_info where pratica=8; 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:26:01 -------
+select id,id,foglio,mappale,sub,note,id,pratica,chk from vigi.curbano where pratica=8; 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:26:05 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=8 and vincolo='PRG' 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:26:05 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=8 and vincolo='PUC' 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:26:05 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=8 and vincolo='PTCP' 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:26:05 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=8 and vincolo='DISCIPLINA_PAESISTICA' 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:26:05 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=8 and vincolo='PIANO_DI_BACINO' 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:26:05 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=8 and vincolo='VINCOLI' 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:26:05 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=8 and vincolo='VINCOLI_AMBIENTALI' 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:26:05 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=8 and vincolo='FASCE_DI_RISPETTO' 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:26:05 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=8 and vincolo='DELIMITAZIONE_CENTRI_ABITATI' 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:26:05 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=8 and vincolo='DELIMITAZIONE_CENTRI_EDIFICATI' 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:26:05 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=8 and vincolo='LIVELLI_AMMINISTRATIVI' 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:26:05 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=8 and vincolo='RETI_TECNOLOGICHE' 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:27:34 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=8 and vincolo='PRG' 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:27:34 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=8 and vincolo='PUC' 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:27:34 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=8 and vincolo='PTCP' 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:27:34 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=8 and vincolo='DISCIPLINA_PAESISTICA' 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:27:34 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=8 and vincolo='PIANO_DI_BACINO' 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:27:34 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=8 and vincolo='VINCOLI' 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:27:34 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=8 and vincolo='VINCOLI_AMBIENTALI' 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:27:34 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=8 and vincolo='FASCE_DI_RISPETTO' 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:27:34 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=8 and vincolo='DELIMITAZIONE_CENTRI_ABITATI' 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:27:34 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=8 and vincolo='DELIMITAZIONE_CENTRI_EDIFICATI' 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:27:34 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=8 and vincolo='LIVELLI_AMMINISTRATIVI' 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:27:34 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=8 and vincolo='RETI_TECNOLOGICHE' 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:27:40 -------
+select motivo,data,flag_vigilanza,note,id,pratica,chk from vigi.sopralluoghi where pratica=8 order by data 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:27:42 -------
+select id,scadenza,nome,completata,note,id,pratica,chk from vigi.vista_scadenze where pratica=8  ORDER BY scadenza
+-------------------------
+------- DEBUG DEL 27/08/2015 06:27:43 -------
+select id,data_annotazione,utente,note,id,pratica,chk from vigi.annotazioni where pratica=8  ORDER BY data_annotazione DESC,tmsins DESC
+-------------------------
+------- DEBUG DEL 27/08/2015 06:27:45 -------
+select id,data_annotazione,utente,note,id,pratica,chk from vigi.annotazioni where pratica=8  ORDER BY data_annotazione DESC,tmsins DESC
+-------------------------
+------- DEBUG DEL 27/08/2015 06:27:45 -------
+select id,scadenza,nome,completata,note,id,pratica,chk from vigi.vista_scadenze where pratica=8  ORDER BY scadenza
+-------------------------
+------- DEBUG DEL 27/08/2015 06:27:46 -------
+select id,nominativo,motivo,data,id,pratica,chk from vigi.visione where pratica=8  ORDER BY data DESC,tmsins DESC
+-------------------------
+------- DEBUG DEL 27/08/2015 06:28:20 -------
+select id,nominativo,motivo,data,id,pratica,chk from vigi.visione where pratica=8  ORDER BY data DESC,tmsins DESC
+-------------------------
+------- DEBUG DEL 27/08/2015 06:28:22 -------
+select id,nominativo,motivo,data,id,pratica,chk from vigi.visione where pratica=8  ORDER BY data DESC,tmsins DESC
+-------------------------
+------- DEBUG DEL 27/08/2015 06:28:31 -------
+select id,nominativo,motivo,data,id,pratica,chk from vigi.visione where pratica=8  ORDER BY data DESC,tmsins DESC
+-------------------------
+------- DEBUG DEL 27/08/2015 06:28:35 -------
+select id,nominativo,motivo,data,id,pratica,chk from vigi.visione where pratica=8  ORDER BY data DESC,tmsins DESC
+-------------------------
+------- DEBUG DEL 27/08/2015 06:28:37 -------
+select id,nominativo,motivo,data,id,pratica,chk from vigi.visione where pratica=8  ORDER BY data DESC,tmsins DESC
+-------------------------
+------- DEBUG DEL 27/08/2015 06:28:41 -------
+select id,nominativo,motivo,data,id,pratica,chk from vigi.visione where pratica=8  ORDER BY data DESC,tmsins DESC
+-------------------------
+------- DEBUG DEL 27/08/2015 06:28:48 -------
+select id,nominativo,motivo,data,id,pratica,chk from vigi.visione where pratica=8  ORDER BY data DESC,tmsins DESC
+-------------------------
+------- DEBUG DEL 27/08/2015 06:28:50 -------
+select id,nominativo,motivo,data,id,pratica,chk from vigi.visione where pratica=8  ORDER BY data DESC,tmsins DESC
+-------------------------
+------- DEBUG DEL 27/08/2015 06:29:02 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where richiedente=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:29:02 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where richiedente=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:29:02 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where concessionario=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:29:02 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where concessionario=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:29:02 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where proprietario=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:29:02 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where proprietario=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:29:02 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:29:02 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:29:02 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where direttore=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:29:02 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where direttore=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:29:02 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where esecutore=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:29:02 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where esecutore=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:29:02 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where sicurezza=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:29:02 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where sicurezza=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:29:02 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:29:02 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:29:02 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where geologo=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:29:02 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where geologo=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:29:02 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore_ca=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:29:02 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore_ca=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:29:02 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista_ca=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:29:02 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista_ca=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:29:02 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where economia_diretta=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:29:02 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where economia_diretta=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:29:02 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where resp_abuso=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:29:02 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where resp_abuso=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:29:02 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where denunciante=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:29:02 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where denunciante=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:30:25 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where richiedente=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:30:25 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where richiedente=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:30:25 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where concessionario=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:30:25 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where concessionario=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:30:25 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where proprietario=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:30:25 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where proprietario=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:30:25 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:30:25 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:30:25 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where direttore=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:30:25 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where direttore=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:30:25 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where esecutore=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:30:25 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where esecutore=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:30:25 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where sicurezza=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:30:25 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where sicurezza=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:30:25 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:30:25 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:30:25 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where geologo=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:30:25 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where geologo=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:30:25 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore_ca=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:30:25 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore_ca=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:30:25 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista_ca=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:30:25 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista_ca=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:30:25 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where economia_diretta=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:30:25 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where economia_diretta=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:30:25 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where resp_abuso=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:30:25 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where resp_abuso=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:30:25 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where denunciante=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:30:25 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where denunciante=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:31:06 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where richiedente=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:31:06 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where richiedente=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:31:06 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where concessionario=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:31:06 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where concessionario=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:31:06 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where proprietario=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:31:06 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where proprietario=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:31:06 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:31:06 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:31:06 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where direttore=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:31:06 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where direttore=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:31:06 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where esecutore=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:31:06 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where esecutore=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:31:06 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where sicurezza=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:31:06 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where sicurezza=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:31:06 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:31:06 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:31:06 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where geologo=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:31:06 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where geologo=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:31:06 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore_ca=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:31:06 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore_ca=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:31:06 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista_ca=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:31:06 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista_ca=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:31:06 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where resp_abuso=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:31:06 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where resp_abuso=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:31:07 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where denunciante=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:31:07 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where denunciante=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:31:24 -------
+select id,scadenza,nome,completata,note,id,pratica,chk from vigi.vista_scadenze where pratica=8  ORDER BY scadenza
+-------------------------
+------- DEBUG DEL 27/08/2015 06:31:25 -------
+select id,data_annotazione,utente,note,id,pratica,chk from vigi.annotazioni where pratica=8  ORDER BY data_annotazione DESC,tmsins DESC
+-------------------------
+------- DEBUG DEL 27/08/2015 06:35:33 -------
+select numero,data_presentazione,tipo,protocollo,data_prot,riferimento_esposto,resp_proc,data_resp,com_resp,data_com_resp,data_verbale,numero_verbale,protocollo_verbale,data_preliminare_esposto,protocollo_preliminare_esposto,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=11 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:35:36 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from vigi.vista_iter where pratica = 11  ORDER BY data
+-------------------------
+------- DEBUG DEL 27/08/2015 06:35:39 -------
+select id,nominativo,motivo,data,id,pratica,chk from vigi.visione where pratica=11  ORDER BY data DESC,tmsins DESC
+-------------------------
+------- DEBUG DEL 27/08/2015 06:35:40 -------
+select id,data_creazione_doc,file_doc,descrizione,id,pratica,chk from stp.stampe where pratica='11' AND NOT coalesce(form,'') IN ('cdu.vincoli')  ORDER BY data_creazione_doc,file_doc
+-------------------------
+------- DEBUG DEL 27/08/2015 06:35:41 -------
+select id,data_annotazione,utente,note,id,pratica,chk from vigi.annotazioni where pratica=11  ORDER BY data_annotazione DESC,tmsins DESC
+-------------------------
+------- DEBUG DEL 27/08/2015 06:35:41 -------
+select id,scadenza,nome,completata,note,id,pratica,chk from vigi.vista_scadenze where pratica=11  ORDER BY scadenza
+-------------------------
+------- DEBUG DEL 27/08/2015 06:35:45 -------
+select infrazione,tipo,data_ordinanza,protocollo,data_notifica,stato,data_demolizione,note,id,pratica,chk from vigi.ordinanze where pratica=11  ORDER BY data_ordinanza
+-------------------------
+------- DEBUG DEL 27/08/2015 06:37:24 -------
+select infrazione,tipo,data_ordinanza,protocollo,data_notifica,stato,data_demolizione,note,id,pratica,chk from vigi.ordinanze where pratica=11  ORDER BY data_ordinanza
+-------------------------
+------- DEBUG DEL 27/08/2015 06:37:25 -------
+select infrazione,tipo,data_ordinanza,protocollo,data_notifica,stato,data_demolizione,note,id,pratica,chk from vigi.ordinanze where pratica=11  ORDER BY data_ordinanza
+-------------------------
+------- DEBUG DEL 27/08/2015 06:38:47 -------
+select infrazione,tipo,data_ordinanza,protocollo,data_notifica,stato,data_demolizione,note,id,pratica,chk from vigi.ordinanze where pratica=11  ORDER BY data_ordinanza
+-------------------------
+------- DEBUG DEL 27/08/2015 06:38:48 -------
+select infrazione,tipo_sanzione,data_sanzione,importo,data_scadenza,quietanza,data_pagamento,note,id,pratica,chk from vigi.sanzioni where pratica=11; 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:40:32 -------
+select infrazione,tipo_sanzione,data_sanzione,importo,data_scadenza,quietanza,data_pagamento,note,id,pratica,chk from vigi.sanzioni where pratica=11; 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:40:43 -------
+select infrazione,tipo_sanzione,data_sanzione,importo,data_scadenza,quietanza,data_pagamento,note,id,pratica,chk from vigi.sanzioni where pratica=11; 
+-------------------------
+------- DEBUG DEL 27/08/2015 06:40:45 -------
+select tipo,data_verbale,numero_verbale,protocollo_verbale,oggetto,note,stato,id,pratica,chk from vigi.infrazioni where pratica=11 
+-------------------------
+------- DEBUG DEL 27/08/2015 07:12:39 -------
+select tipo,data_verbale,numero_verbale,protocollo_verbale,oggetto,note,stato,id,pratica,chk from vigi.infrazioni where pratica=11 
+-------------------------
+------- DEBUG DEL 27/08/2015 07:12:52 -------
+select tipo,data_verbale,numero_verbale,protocollo_verbale,oggetto,note,stato,id,pratica,chk from vigi.infrazioni where pratica=11 
+-------------------------
+------- DEBUG DEL 27/08/2015 07:13:02 -------
+select infrazione,tipo_sanzione,data_sanzione,importo,data_scadenza,quietanza,data_pagamento,note,id,pratica,chk from vigi.sanzioni where pratica=11; 
+-------------------------
+------- DEBUG DEL 27/08/2015 07:14:17 -------
+select infrazione,tipo_sanzione,data_sanzione,importo,data_scadenza,quietanza,data_pagamento,note,id,pratica,chk from vigi.sanzioni where pratica=11; 
+-------------------------
+------- DEBUG DEL 27/08/2015 07:25:44 -------
+select infrazione,tipo_sanzione,data_sanzione,importo,data_scadenza,quietanza,data_pagamento,note,id,pratica,chk from vigi.sanzioni where pratica=11; 
+-------------------------
+------- DEBUG DEL 27/08/2015 07:25:49 -------
+select infrazione,tipo,data_ordinanza,protocollo,data_notifica,stato,data_demolizione,note,id,pratica,chk from vigi.ordinanze where pratica=11  ORDER BY data_ordinanza
+-------------------------
+------- DEBUG DEL 27/08/2015 07:26:42 -------
+select infrazione,tipo,data_ordinanza,protocollo,data_notifica,stato,data_demolizione,note,id,pratica,chk from vigi.ordinanze where pratica=11  ORDER BY data_ordinanza
+-------------------------
+------- DEBUG DEL 27/08/2015 07:27:03 -------
+select infrazione,tipo,data_ordinanza,protocollo,data_notifica,stato,data_demolizione,note,id,pratica,chk from vigi.ordinanze where pratica=11  ORDER BY data_ordinanza
+-------------------------
+------- DEBUG DEL 27/08/2015 07:27:56 -------
+select infrazione,tipo,data_ordinanza,protocollo,data_notifica,stato,data_demolizione,note,id,pratica,chk from vigi.ordinanze where pratica=11  ORDER BY data_ordinanza
+-------------------------
+------- DEBUG DEL 27/08/2015 07:31:24 -------
+select infrazione,tipo,data_ordinanza,protocollo,data_notifica,stato,data_demolizione,note,id,pratica,chk from vigi.ordinanze where pratica=11  ORDER BY data_ordinanza
+-------------------------
+------- DEBUG DEL 27/08/2015 07:31:52 -------
+select infrazione,tipo,data_ordinanza,protocollo,data_notifica,stato,data_demolizione,note,id,pratica,chk from vigi.ordinanze where pratica=11  ORDER BY data_ordinanza
+-------------------------
+------- DEBUG DEL 27/08/2015 07:31:55 -------
+select infrazione,tipo,data_ordinanza,protocollo,data_notifica,stato,data_demolizione,note,id,pratica,chk from vigi.ordinanze where id=1 
+-------------------------
+------- DEBUG DEL 27/08/2015 07:32:02 -------
+select infrazione,tipo,data_ordinanza,protocollo,data_notifica,stato,data_demolizione,note,id,pratica,chk from vigi.ordinanze where pratica=11  ORDER BY data_ordinanza
+-------------------------
+------- DEBUG DEL 27/08/2015 07:32:30 -------
+select infrazione,tipo,data_ordinanza,protocollo,data_notifica,stato,data_demolizione,note,id,pratica,chk from vigi.ordinanze where id=1 
+-------------------------
+------- DEBUG DEL 27/08/2015 07:32:37 -------
+select infrazione,tipo,data_ordinanza,protocollo,data_notifica,stato,data_demolizione,note,id,pratica,chk from vigi.ordinanze where pratica=11  ORDER BY data_ordinanza
+-------------------------
+------- DEBUG DEL 27/08/2015 07:32:39 -------
+select tipo,data_verbale,numero_verbale,protocollo_verbale,oggetto,note,stato,id,pratica,chk from vigi.infrazioni where pratica=11 
+-------------------------
+------- DEBUG DEL 27/08/2015 07:32:58 -------
+select tipo,data_verbale,numero_verbale,protocollo_verbale,oggetto,note,stato,id,pratica,chk from vigi.infrazioni where pratica=11 
+-------------------------
+------- DEBUG DEL 27/08/2015 07:33:03 -------
+select infrazione,tipo,data_ordinanza,protocollo,data_notifica,stato,data_demolizione,note,id,pratica,chk from vigi.ordinanze where pratica=11  ORDER BY data_ordinanza
+-------------------------
+------- DEBUG DEL 27/08/2015 07:33:20 -------
+select infrazione,tipo,data_ordinanza,protocollo,data_notifica,stato,data_demolizione,note,id,pratica,chk from vigi.ordinanze where pratica=11  ORDER BY data_ordinanza
+-------------------------
+------- DEBUG DEL 27/08/2015 07:33:23 -------
+select infrazione,tipo_sanzione,data_sanzione,importo,data_scadenza,quietanza,data_pagamento,note,id,pratica,chk from vigi.sanzioni where pratica=11; 
+-------------------------
+------- DEBUG DEL 27/08/2015 07:38:57 -------
+select infrazione,tipo_sanzione,data_sanzione,importo,data_scadenza,quietanza,data_pagamento,note,id,pratica,chk from vigi.sanzioni where pratica=11; 
+-------------------------
+------- DEBUG DEL 27/08/2015 07:39:13 -------
+select infrazione,tipo_sanzione,data_sanzione,importo,data_scadenza,quietanza,data_pagamento,note,id,pratica,chk from vigi.sanzioni where pratica=11; 
+-------------------------
+------- DEBUG DEL 27/08/2015 07:39:22 -------
+select infrazione,tipo_sanzione,data_sanzione,importo,data_scadenza,quietanza,data_pagamento,note,id,pratica,chk from vigi.sanzioni where id=1 
+-------------------------
+------- DEBUG DEL 27/08/2015 07:39:28 -------
+select infrazione,tipo_sanzione,data_sanzione,importo,data_scadenza,quietanza,data_pagamento,note,id,pratica,chk from vigi.sanzioni where pratica=11; 
+-------------------------
+------- DEBUG DEL 27/08/2015 07:39:47 -------
+select infrazione,tipo_sanzione,data_sanzione,importo,data_scadenza,quietanza,data_pagamento,note,id,pratica,chk from vigi.sanzioni where id=1 
+-------------------------
+------- DEBUG DEL 27/08/2015 07:39:51 -------
+select infrazione,tipo_sanzione,data_sanzione,importo,data_scadenza,quietanza,data_pagamento,note,id,pratica,chk from vigi.sanzioni where pratica=11; 
+-------------------------
+------- DEBUG DEL 27/08/2015 07:40:14 -------
+select infrazione,tipo_sanzione,data_sanzione,importo,data_scadenza,quietanza,data_pagamento,note,id,pratica,chk from vigi.sanzioni where pratica=11; 
+-------------------------
+------- DEBUG DEL 27/08/2015 07:41:26 -------
+select infrazione,tipo_sanzione,data_sanzione,importo,data_scadenza,quietanza,data_pagamento,note,id,pratica,chk from vigi.sanzioni where pratica=11; 
+-------------------------
+------- DEBUG DEL 06/10/2015 08:52:04 -------
+select id,row_form,row_class,nome,data,testo,id,pratica,chk from pe.vista_iter where pratica = 20677  ORDER BY data
+-------------------------
+------- DEBUG DEL 06/10/2015 08:52:07 -------
+select calcolo,totale,quietanza,data,indennita,q_indennita,data_indennita,oblazione,q_oblazione,data_oblazione,id,pratica,chk from oneri.vista_totali where pratica=20677 
+-------------------------
+------- DEBUG DEL 06/10/2015 08:52:07 -------
+select parc_n,i_parc_n,tot_parc_n,parc_mq,i_parc_mq,tot_parc_mq,verde_mq,i_verde_mq,tot_verde_mq,totale,id,pratica,chk from oneri.monetizzazione where pratica=20677 
+-------------------------
+------- DEBUG DEL 06/10/2015 08:52:13 -------
+select rata,totale,data_scadenza,data_avviso,data_pagata,versato,quietanza,id,pratica,chk from oneri.rate where pratica=20677  ORDER BY rata
+-------------------------
+------- DEBUG DEL 06/10/2015 08:52:29 -------
+select totale,data_scadenza,data_avviso,data_pagata,versato,quietanza,id,pratica,chk from oneri.rate where id=90 
+-------------------------
+------- DEBUG DEL 06/10/2015 08:52:32 -------
+select rata,totale,data_scadenza,data_avviso,data_pagata,versato,quietanza,id,pratica,chk from oneri.rate where pratica=20677  ORDER BY rata
+-------------------------
+------- DEBUG DEL 06/10/2015 08:52:47 -------
+select id,row_form,row_class,nome,data,testo,id,pratica,chk from pe.vista_iter where pratica = 20676  ORDER BY data
+-------------------------
+------- DEBUG DEL 06/10/2015 08:52:50 -------
+select calcolo,totale,quietanza,data,indennita,q_indennita,data_indennita,oblazione,q_oblazione,data_oblazione,id,pratica,chk from oneri.vista_totali where pratica=20676 
+-------------------------
+------- DEBUG DEL 06/10/2015 08:52:50 -------
+select parc_n,i_parc_n,tot_parc_n,parc_mq,i_parc_mq,tot_parc_mq,verde_mq,i_verde_mq,tot_verde_mq,totale,id,pratica,chk from oneri.monetizzazione where pratica=20676 
+-------------------------
+------- DEBUG DEL 06/10/2015 08:53:08 -------
+select anno,destuso,intervento,sup,c1,c2,c3,c4,d1,d2,degradato,b1,b2,cc,tot,tot_unitario,note,id,pratica,chk from oneri.vista_calcoli where pratica=20676 
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:49 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from vigi.vista_iter where pratica = 14  ORDER BY data
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:52 -------
+select numero,data_presentazione,tipo,protocollo,data_prot,riferimento_esposto,resp_proc,data_resp,com_resp,data_com_resp,data_verbale,numero_verbale,protocollo_verbale,data_preliminare_esposto,protocollo_preliminare_esposto,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=14 
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:54 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where richiedente=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:54 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where richiedente=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:54 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where concessionario=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:54 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where concessionario=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:54 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where proprietario=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:54 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where proprietario=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:54 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:54 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:54 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where direttore=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:54 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where direttore=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:54 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where esecutore=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:54 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where esecutore=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:54 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where sicurezza=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:54 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where sicurezza=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:54 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:54 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:54 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where geologo=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:54 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where geologo=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:54 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore_ca=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:54 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore_ca=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:54 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista_ca=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:54 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista_ca=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:54 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where resp_abuso=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:54 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where resp_abuso=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:54 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where denunciante=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:54 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where denunciante=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:55 -------
+select numero,data_presentazione,tipo,protocollo,data_prot,riferimento_esposto,resp_proc,data_resp,com_resp,data_com_resp,data_verbale,numero_verbale,protocollo_verbale,data_preliminare_esposto,protocollo_preliminare_esposto,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=14 
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:58 -------
+select numero,data_presentazione,protocollo,data_prot,tipo,riferimento_esposto,resp_proc,data_resp,com_resp,data_com_resp,data_verbale,numero_verbale,protocollo_verbale,data_preliminare_esposto,protocollo_preliminare_esposto,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=14 
+-------------------------
+------- DEBUG DEL 25/01/2016 04:09:03 -------
+select numero,data_presentazione,tipo,protocollo,data_prot,riferimento_esposto,resp_proc,data_resp,com_resp,data_com_resp,data_verbale,numero_verbale,protocollo_verbale,data_preliminare_esposto,protocollo_preliminare_esposto,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=14 
+-------------------------
+------- DEBUG DEL 25/01/2016 04:13:06 -------
+select numero,data_presentazione,tipo,protocollo,data_prot,riferimento_esposto,resp_proc,data_resp,com_resp,data_com_resp,data_verbale,numero_verbale,protocollo_verbale,data_preliminare_esposto,protocollo_preliminare_esposto,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=14 
+-------------------------
+------- DEBUG DEL 25/01/2016 04:13:56 -------
+select numero,data_presentazione,tipo,protocollo,data_prot,riferimento_esposto,resp_proc,data_resp,com_resp,data_com_resp,data_verbale,numero_verbale,protocollo_verbale,data_preliminare_esposto,protocollo_preliminare_esposto,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=14 
+-------------------------
+------- DEBUG DEL 25/01/2016 04:13:59 -------
+select numero,data_presentazione,tipo,protocollo,data_prot,riferimento_esposto,resp_proc,data_resp,com_resp,data_com_resp,data_verbale,numero_verbale,protocollo_verbale,data_preliminare_esposto,protocollo_preliminare_esposto,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=14 
+-------------------------
+------- DEBUG DEL 25/01/2016 04:14:38 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where richiedente=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:14:38 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where richiedente=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:14:38 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where concessionario=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:14:38 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where concessionario=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:14:38 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where proprietario=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:14:38 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where proprietario=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:14:38 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:14:38 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:14:38 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where direttore=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:14:38 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where direttore=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:14:38 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where esecutore=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:14:38 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where esecutore=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:14:38 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where sicurezza=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:14:38 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where sicurezza=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:14:38 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:14:38 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:14:38 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where geologo=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:14:38 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where geologo=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:14:38 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore_ca=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:14:38 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore_ca=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:14:38 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista_ca=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:14:38 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista_ca=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:14:38 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where resp_abuso=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:14:38 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where resp_abuso=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:14:38 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where denunciante=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:14:38 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where denunciante=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:14:40 -------
+select numero,data_presentazione,tipo,protocollo,data_prot,riferimento_esposto,resp_proc,data_resp,com_resp,data_com_resp,data_verbale,numero_verbale,protocollo_verbale,data_preliminare_esposto,protocollo_preliminare_esposto,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=14 
+-------------------------
+------- DEBUG DEL 25/01/2016 04:16:55 -------
+select numero,data_presentazione,tipo,protocollo,data_prot,riferimento_esposto,resp_proc,data_resp,com_resp,data_com_resp,data_verbale,numero_verbale,protocollo_verbale,data_preliminare_esposto,protocollo_preliminare_esposto,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=14 
+-------------------------
+------- DEBUG DEL 25/01/2016 04:20:03 -------
+select numero,data_presentazione,tipo,protocollo,data_prot,riferimento_esposto,resp_proc,data_resp,com_resp,data_com_resp,data_verbale,numero_verbale,protocollo_verbale,data_preliminare_esposto,protocollo_preliminare_esposto,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=14 
+-------------------------
+------- DEBUG DEL 25/01/2016 04:20:15 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from vigi.vista_iter where pratica = 15  ORDER BY data
+-------------------------
+------- DEBUG DEL 25/01/2016 04:20:19 -------
+select numero,data_presentazione,tipo,origine,protocollo,data_prot,riferimento,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=15 
+-------------------------
+------- DEBUG DEL 25/01/2016 04:20:25 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from vigi.vista_iter where pratica = 14  ORDER BY data
+-------------------------
+------- DEBUG DEL 25/01/2016 04:20:27 -------
+select numero,data_presentazione,tipo,protocollo,data_prot,riferimento_esposto,resp_proc,data_resp,com_resp,data_com_resp,data_verbale,numero_verbale,protocollo_verbale,data_preliminare_esposto,protocollo_preliminare_esposto,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=14 
+-------------------------
+------- DEBUG DEL 25/01/2016 04:40:40 -------
+select numero,data_presentazione,protocollo,data_prot,tipo,riferimento_esposto,resp_proc,data_resp,com_resp,data_com_resp,data_verbale,numero_verbale,protocollo_verbale,data_preliminare_esposto,protocollo_preliminare_esposto,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=14 
+-------------------------
+------- DEBUG DEL 25/01/2016 04:40:46 -------
+select numero,data_presentazione,tipo,protocollo,data_prot,riferimento_esposto,resp_proc,data_resp,com_resp,data_com_resp,data_verbale,numero_verbale,protocollo_verbale,data_preliminare_esposto,protocollo_preliminare_esposto,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=14 
+-------------------------
+------- DEBUG DEL 25/01/2016 04:41:00 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from vigi.vista_iter where pratica = 12  ORDER BY data
+-------------------------
+------- DEBUG DEL 25/01/2016 04:41:02 -------
+select numero,data_presentazione,tipo,origine,protocollo,data_prot,riferimento,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=12 
+-------------------------
+------- DEBUG DEL 25/01/2016 04:41:06 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from vigi.vista_iter where pratica = 14  ORDER BY data
+-------------------------
+------- DEBUG DEL 25/01/2016 04:41:09 -------
+select numero,data_presentazione,tipo,protocollo,data_prot,riferimento_esposto,resp_proc,data_resp,com_resp,data_com_resp,data_verbale,numero_verbale,protocollo_verbale,data_preliminare_esposto,protocollo_preliminare_esposto,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=14 
+-------------------------
+------- DEBUG DEL 25/01/2016 04:46:08 -------
+select numero,data_presentazione,tipo,protocollo,data_prot,riferimento_esposto,resp_proc,data_resp,com_resp,data_com_resp,data_verbale,numero_verbale,protocollo_verbale,data_preliminare_esposto,protocollo_preliminare_esposto,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=14 
+-------------------------
+------- DEBUG DEL 25/01/2016 04:46:09 -------
+select numero,data_presentazione,protocollo,data_prot,tipo,riferimento_esposto,resp_proc,data_resp,com_resp,data_com_resp,data_verbale,numero_verbale,protocollo_verbale,data_preliminare_esposto,protocollo_preliminare_esposto,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=14 
+-------------------------
+------- DEBUG DEL 25/01/2016 04:46:18 -------
+select numero,data_presentazione,tipo,protocollo,data_prot,riferimento_esposto,resp_proc,data_resp,com_resp,data_com_resp,data_verbale,numero_verbale,protocollo_verbale,data_preliminare_esposto,protocollo_preliminare_esposto,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=14 
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:11 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where richiedente=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:11 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where richiedente=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:11 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where concessionario=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:11 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where concessionario=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:11 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where proprietario=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:11 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where proprietario=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:11 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:11 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:11 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where direttore=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:11 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where direttore=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:11 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where esecutore=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:11 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where esecutore=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:11 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where sicurezza=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:11 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where sicurezza=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:11 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:11 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:11 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where geologo=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:11 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where geologo=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:11 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore_ca=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:11 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore_ca=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:11 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista_ca=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:11 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista_ca=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:11 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where resp_abuso=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:11 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where resp_abuso=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:11 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where denunciante=1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:11 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where denunciante=-1 and pratica=14  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:13 -------
+select tipo,data_verbale,numero_verbale,protocollo_verbale,oggetto,note,stato,id,pratica,chk from vigi.infrazioni where pratica=14 
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:15 -------
+select motivo,data,flag_vigilanza,note,id,pratica,chk from vigi.sopralluoghi where pratica=14 order by data 
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:16 -------
+select infrazione,tipo_sanzione,data_sanzione,importo,data_scadenza,quietanza,data_pagamento,note,id,pratica,chk from vigi.sanzioni where pratica=14; 
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:29 -------
+select infrazione,tipo_sanzione,data_sanzione,importo,data_scadenza,quietanza,data_pagamento,note,id,pratica,chk from vigi.sanzioni where pratica=14; 
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:33 -------
+select infrazione,tipo,data_ordinanza,protocollo,data_notifica,stato,data_demolizione,note,id,pratica,chk from vigi.ordinanze where pratica=14  ORDER BY data_ordinanza
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:44 -------
+select infrazione,tipo,data_ordinanza,protocollo,data_notifica,stato,data_demolizione,note,id,pratica,chk from vigi.ordinanze where pratica=14  ORDER BY data_ordinanza
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:46 -------
+select tipo,data_verbale,numero_verbale,protocollo_verbale,oggetto,note,stato,id,pratica,chk from vigi.infrazioni where pratica=14 
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:58 -------
+select tipo,data_verbale,numero_verbale,protocollo_verbale,oggetto,note,stato,id,pratica,chk from vigi.infrazioni where pratica=14 
+-------------------------
+------- DEBUG DEL 25/01/2016 04:58:11 -------
+select motivo,data,flag_vigilanza,note,id,pratica,chk from vigi.sopralluoghi where pratica=14 order by data 
+-------------------------
+------- DEBUG DEL 25/01/2016 04:58:26 -------
+select motivo,data,note,id,pratica,chk from pe.sopralluoghi where pratica=14 order by data 
+-------------------------
+------- DEBUG DEL 25/01/2016 04:58:29 -------
+select infrazione,tipo_sanzione,data_sanzione,importo,data_scadenza,quietanza,data_pagamento,note,id,pratica,chk from vigi.sanzioni where pratica=14; 
+-------------------------
+------- DEBUG DEL 25/01/2016 04:58:47 -------
+select infrazione,tipo_sanzione,data_sanzione,importo,data_scadenza,quietanza,data_pagamento,note,id,pratica,chk from vigi.sanzioni where pratica=14; 
+-------------------------
+------- DEBUG DEL 25/01/2016 04:58:50 -------
+select infrazione,tipo,data_ordinanza,protocollo,data_notifica,stato,data_demolizione,note,id,pratica,chk from vigi.ordinanze where pratica=14  ORDER BY data_ordinanza
+-------------------------
+------- DEBUG DEL 25/01/2016 04:58:52 -------
+select id,scadenza,nome,completata,note,id,pratica,chk from vigi.vista_scadenze where pratica=14  ORDER BY scadenza
+-------------------------
+------- DEBUG DEL 25/01/2016 04:58:59 -------
+select codice,scadenza,completata,note,id,pratica,chk from vigi.scadenze where id=20 
+-------------------------
+------- DEBUG DEL 25/01/2016 04:59:04 -------
+select id,scadenza,nome,completata,note,id,pratica,chk from vigi.vista_scadenze where pratica=14  ORDER BY scadenza
+-------------------------
+------- DEBUG DEL 25/01/2016 04:59:05 -------
+select id,nominativo,motivo,data,id,pratica,chk from vigi.visione where pratica=14  ORDER BY data DESC,tmsins DESC
+-------------------------
+------- DEBUG DEL 25/01/2016 04:59:06 -------
+select id,data_creazione_doc,file_doc,descrizione,id,pratica,chk from stp.stampe where pratica='14' AND NOT coalesce(form,'') IN ('cdu.vincoli')  ORDER BY data_creazione_doc,file_doc
+-------------------------
+------- DEBUG DEL 25/01/2016 04:59:08 -------
+select id,data_annotazione,utente,note,id,pratica,chk from vigi.annotazioni where pratica=14  ORDER BY data_annotazione DESC,tmsins DESC
+-------------------------
+------- DEBUG DEL 25/01/2016 04:59:10 -------
+select infrazione,tipo,data_ordinanza,protocollo,data_notifica,stato,data_demolizione,note,id,pratica,chk from vigi.ordinanze where pratica=14  ORDER BY data_ordinanza
+-------------------------
+------- DEBUG DEL 25/01/2016 04:59:11 -------
+select infrazione,tipo_sanzione,data_sanzione,importo,data_scadenza,quietanza,data_pagamento,note,id,pratica,chk from vigi.sanzioni where pratica=14; 
+-------------------------
+------- DEBUG DEL 25/01/2016 04:59:13 -------
+select infrazione,tipo,data_ordinanza,protocollo,data_notifica,stato,data_demolizione,note,id,pratica,chk from vigi.ordinanze where pratica=14  ORDER BY data_ordinanza
+-------------------------
+------- DEBUG DEL 25/01/2016 04:59:25 -------
+select id,row_form,row_class,nome,data,testo,id,pratica,chk from pe.vista_iter where pratica = 14  ORDER BY data
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:12 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from vigi.vista_iter where pratica = 11  ORDER BY data
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:14 -------
+select numero,data_presentazione,tipo,protocollo,data_prot,riferimento_esposto,resp_proc,data_resp,com_resp,data_com_resp,data_verbale,numero_verbale,protocollo_verbale,data_preliminare_esposto,protocollo_preliminare_esposto,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=11 
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:17 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from vigi.vista_iter where pratica = 8  ORDER BY data
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:20 -------
+select codice,scadenza,completata,note,id,pratica,chk from vigi.scadenze where id=2 
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:24 -------
+select id,scadenza,nome,completata,note,id,pratica,chk from vigi.vista_scadenze where pratica=8  ORDER BY scadenza
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:31 -------
+select numero,data_presentazione,tipo,origine,protocollo,data_prot,riferimento,resp_proc,data_resp,com_resp,data_com_resp,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=8 
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:32 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where richiedente=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:32 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where richiedente=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:32 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where concessionario=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:32 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where concessionario=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:32 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where proprietario=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:32 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where proprietario=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:32 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:32 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:32 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where direttore=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:32 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where direttore=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:32 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where esecutore=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:32 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where esecutore=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:32 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where sicurezza=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:32 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where sicurezza=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:32 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:32 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:32 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where geologo=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:32 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where geologo=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:32 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore_ca=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:32 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where collaudatore_ca=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:32 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista_ca=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:32 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where progettista_ca=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:32 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where resp_abuso=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:32 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where resp_abuso=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:32 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where denunciante=1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:32 -------
+select id,id,soggetto,id,pratica,chk from vigi.elenco_soggetti where denunciante=-1 and pratica=8  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:33 -------
+select id,id,via,civico,interno,scala,piano,id,pratica,chk from vigi.indirizzi where pratica=8; 
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:33 -------
+select mapkey,id,sezione,foglio,mappale,note,id,pratica,chk from vigi.ct_info where pratica=8; 
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:33 -------
+select id,id,foglio,mappale,sub,note,id,pratica,chk from vigi.curbano where pratica=8; 
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:35 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=8 and vincolo='PRG' 
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:35 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=8 and vincolo='PUC' 
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:35 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=8 and vincolo='PTCP' 
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:35 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=8 and vincolo='DISCIPLINA_PAESISTICA' 
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:35 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=8 and vincolo='PIANO_DI_BACINO' 
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:35 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=8 and vincolo='VINCOLI' 
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:35 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=8 and vincolo='VINCOLI_AMBIENTALI' 
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:35 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=8 and vincolo='FASCE_DI_RISPETTO' 
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:35 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=8 and vincolo='DELIMITAZIONE_CENTRI_ABITATI' 
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:35 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=8 and vincolo='DELIMITAZIONE_CENTRI_EDIFICATI' 
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:35 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=8 and vincolo='LIVELLI_AMMINISTRATIVI' 
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:35 -------
+select id,file,titolo,descrizione_tavola,descrizione,sigla,id,pratica,chk from vigi.zone_pratica where pratica=8 and vincolo='RETI_TECNOLOGICHE' 
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:38 -------
+select id,nominativo,motivo,data,id,pratica,chk from vigi.visione where pratica=8  ORDER BY data DESC,tmsins DESC
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:39 -------
+select motivo,data,flag_vigilanza,note,id,pratica,chk from vigi.sopralluoghi where pratica=8 order by data 
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:52 -------
+select motivo,data,note,id,pratica,chk from pe.sopralluoghi where pratica=8 order by data 
+-------------------------
+------- DEBUG DEL 29/01/2016 08:57:20 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from vigi.vista_iter where pratica = 14  ORDER BY data
+-------------------------
+------- DEBUG DEL 29/01/2016 08:57:22 -------
+select numero,data_presentazione,tipo,protocollo,data_prot,riferimento_esposto,resp_proc,data_resp,com_resp,data_com_resp,data_verbale,numero_verbale,protocollo_verbale,data_preliminare_esposto,protocollo_preliminare_esposto,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=14 
+-------------------------
+------- DEBUG DEL 29/01/2016 08:59:12 -------
+select numero,data_presentazione,protocollo,data_prot,tipo,riferimento_esposto,resp_proc,data_resp,com_resp,data_com_resp,data_verbale,numero_verbale,protocollo_verbale,data_preliminare_esposto,protocollo_preliminare_esposto,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=14 
+-------------------------
+------- DEBUG DEL 29/01/2016 08:59:34 -------
+select numero,data_presentazione,tipo,protocollo,data_prot,riferimento_esposto,resp_proc,data_resp,com_resp,data_com_resp,data_verbale,numero_verbale,protocollo_verbale,data_preliminare_esposto,protocollo_preliminare_esposto,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=14 
+-------------------------
+------- DEBUG DEL 29/01/2016 08:59:36 -------
+select numero,data_presentazione,protocollo,data_prot,tipo,riferimento_esposto,resp_proc,data_resp,com_resp,data_com_resp,data_verbale,numero_verbale,protocollo_verbale,data_preliminare_esposto,protocollo_preliminare_esposto,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=14 
+-------------------------
+------- DEBUG DEL 29/01/2016 09:00:03 -------
+select numero,data_presentazione,tipo,protocollo,data_prot,riferimento_esposto,resp_proc,data_resp,com_resp,data_com_resp,data_verbale,numero_verbale,protocollo_verbale,data_preliminare_esposto,protocollo_preliminare_esposto,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=14 
+-------------------------
+------- DEBUG DEL 29/01/2016 09:06:28 -------
+select numero,data_presentazione,protocollo,data_prot,tipo,riferimento_esposto,resp_proc,data_resp,com_resp,data_com_resp,data_verbale,numero_verbale,protocollo_verbale,data_preliminare_esposto,protocollo_preliminare_esposto,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=14 
+-------------------------
+------- DEBUG DEL 29/01/2016 09:13:42 -------
+select numero,data_presentazione,tipo,protocollo,data_prot,riferimento_esposto,resp_proc,data_resp,com_resp,data_com_resp,data_verbale,numero_verbale,protocollo_verbale,data_preliminare_esposto,protocollo_preliminare_esposto,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=14 
+-------------------------
+------- DEBUG DEL 29/01/2016 09:13:47 -------
+select numero,data_presentazione,protocollo,data_prot,tipo,riferimento_esposto,resp_proc,data_resp,com_resp,data_com_resp,data_verbale,numero_verbale,protocollo_verbale,data_preliminare_esposto,protocollo_preliminare_esposto,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=14 
+-------------------------
+------- DEBUG DEL 29/01/2016 09:14:06 -------
+select numero,data_presentazione,tipo,protocollo,data_prot,riferimento_esposto,resp_proc,data_resp,com_resp,data_com_resp,data_verbale,numero_verbale,protocollo_verbale,data_preliminare_esposto,protocollo_preliminare_esposto,oggetto,note,stato_pratica,data_archiviazione,id,pratica,chk from vigi.avvioproc where pratica=14 
+-------------------------

@@ -1,0 +1,195 @@
+
+26-08-15	13:58:30
+	SELECT opzione FROM vigi.elenco_tipopratica_all WHERE id::varchar='20';
+26-08-15	13:58:30
+	SELECT opzione FROM vigi.elenco_origine WHERE id::varchar='1';
+26-08-15	13:58:37
+	SELECT opzione FROM vigi.elenco_tipopratica_all WHERE id::varchar='20';
+26-08-15	13:58:37
+	SELECT opzione FROM vigi.elenco_origine WHERE id::varchar='1';
+26-08-15	14:21:19
+	SELECT opzione FROM vigi.elenco_tipopratica_all WHERE id::varchar='20';
+26-08-15	14:21:19
+	SELECT opzione FROM vigi.elenco_origine WHERE id::varchar='1';
+26-08-15	14:45:35
+	SELECT opzione FROM nct.elenco_sezioni WHERE id='B';
+26-08-15	14:54:12
+	SELECT opzione FROM nct.elenco_sezioni WHERE id='B';
+27-08-15	06:15:16
+	SELECT opzione FROM vigi.elenco_tipopratica_all WHERE id::varchar='20';
+27-08-15	06:15:16
+	SELECT opzione FROM vigi.elenco_origine WHERE id::varchar='1';
+27-08-15	06:19:53
+	SELECT opzione FROM vigi.elenco_tipopratica_all WHERE id::varchar='20';
+27-08-15	06:19:53
+	SELECT opzione FROM vigi.elenco_origine WHERE id::varchar='1';
+27-08-15	06:25:21
+	SELECT opzione FROM vigi.elenco_tipopratica_all WHERE id::varchar='20';
+27-08-15	06:25:21
+	SELECT opzione FROM vigi.elenco_origine WHERE id::varchar='1';
+27-08-15	06:26:01
+	SELECT opzione FROM nct.elenco_sezioni WHERE id='B';
+27-08-15	06:35:33
+	SELECT opzione FROM vigi.elenco_tipopratica_all WHERE id::varchar='10';
+27-08-15	07:12:52
+	SELECT opzione FROM vigi.elenco_violazioni WHERE id::varchar='5';
+27-08-15	07:31:52
+	SELECT opzione FROM vigi.elenco_infrazioni WHERE id::varchar='1';
+27-08-15	07:32:02
+	SELECT opzione FROM vigi.elenco_infrazioni WHERE id::varchar='1';
+27-08-15	07:32:37
+	SELECT opzione FROM vigi.elenco_infrazioni WHERE id::varchar='1';
+27-08-15	07:32:39
+	SELECT opzione FROM vigi.elenco_violazioni WHERE id::varchar='5';
+27-08-15	07:32:58
+	SELECT opzione FROM vigi.elenco_violazioni WHERE id::varchar='5';
+27-08-15	07:32:58
+	SELECT opzione FROM vigi.elenco_violazioni WHERE id::varchar='4';
+27-08-15	07:33:03
+	SELECT opzione FROM vigi.elenco_infrazioni WHERE id::varchar='1';
+27-08-15	07:33:20
+	SELECT opzione FROM vigi.elenco_infrazioni WHERE id::varchar='1';
+27-08-15	07:39:13
+	SELECT opzione FROM vigi.elenco_infrazioni_pratica WHERE id::varchar='1';
+27-08-15	07:39:13
+	SELECT opzione FROM vigi.elenco_tiposanzioni WHERE id::varchar='1';
+27-08-15	07:39:28
+	SELECT opzione FROM vigi.elenco_infrazioni_pratica WHERE id::varchar='1';
+27-08-15	07:39:28
+	SELECT opzione FROM vigi.elenco_tiposanzioni WHERE id::varchar='1';
+27-08-15	07:39:51
+	SELECT opzione FROM vigi.elenco_infrazioni WHERE id::varchar='1';
+27-08-15	07:39:51
+	SELECT opzione FROM vigi.elenco_tiposanzioni WHERE id::varchar='1';
+27-08-15	07:40:14
+	SELECT opzione FROM vigi.elenco_infrazioni WHERE id::varchar='2';
+27-08-15	07:40:14
+	SELECT opzione FROM vigi.elenco_tiposanzioni WHERE id::varchar='1';
+27-08-15	07:40:14
+	SELECT opzione FROM vigi.elenco_infrazioni WHERE id::varchar='1';
+27-08-15	07:40:14
+	SELECT opzione FROM vigi.elenco_tiposanzioni WHERE id::varchar='1';
+27-08-15	07:41:26
+	SELECT opzione FROM vigi.elenco_infrazioni WHERE id::varchar='2';
+27-08-15	07:41:26
+	SELECT opzione FROM vigi.elenco_tiposanzioni WHERE id::varchar='1';
+27-08-15	07:41:26
+	SELECT opzione FROM vigi.elenco_infrazioni WHERE id::varchar='1';
+27-08-15	07:41:26
+	SELECT opzione FROM vigi.elenco_tiposanzioni WHERE id::varchar='1';
+6-10-15	08:52:13
+	SELECT opzione FROM oneri.elenco_tiporate WHERE id::varchar='1';
+6-10-15	08:52:13
+	SELECT opzione FROM oneri.elenco_tiporate WHERE id::varchar='2';
+6-10-15	08:52:13
+	SELECT opzione FROM oneri.elenco_tiporate WHERE id::varchar='3';
+6-10-15	08:52:32
+	SELECT opzione FROM oneri.elenco_tiporate WHERE id::varchar='1';
+6-10-15	08:52:32
+	SELECT opzione FROM oneri.elenco_tiporate WHERE id::varchar='2';
+6-10-15	08:52:32
+	SELECT opzione FROM oneri.elenco_tiporate WHERE id::varchar='3';
+25-01-16	16:08:52
+	SELECT opzione FROM vigi.elenco_tipopratica_all WHERE id::varchar='10';
+25-01-16	16:08:52
+	SELECT opzione FROM vigi.elenco_statopratica_vigi WHERE id::varchar='9';
+25-01-16	16:08:55
+	SELECT opzione FROM vigi.elenco_tipopratica_all WHERE id::varchar='10';
+25-01-16	16:08:55
+	SELECT opzione FROM vigi.elenco_statopratica_vigi WHERE id::varchar='9';
+25-01-16	16:09:03
+	SELECT opzione FROM vigi.elenco_tipopratica_all WHERE id::varchar='10';
+25-01-16	16:09:03
+	SELECT opzione FROM vigi.elenco_statopratica_vigi WHERE id::varchar='9';
+25-01-16	16:13:06
+	SELECT opzione FROM vigi.elenco_tipopratica_all WHERE id::varchar='10';
+25-01-16	16:13:06
+	SELECT opzione FROM vigi.elenco_statopratica_vigi WHERE id::varchar='9';
+25-01-16	16:13:56
+	SELECT opzione FROM vigi.elenco_tipopratica_all WHERE id::varchar='10';
+25-01-16	16:13:56
+	SELECT opzione FROM vigi.elenco_statopratica_vigi WHERE id::varchar='9';
+25-01-16	16:13:59
+	SELECT opzione FROM vigi.elenco_tipopratica_all WHERE id::varchar='10';
+25-01-16	16:13:59
+	SELECT opzione FROM vigi.elenco_statopratica_vigi WHERE id::varchar='9';
+25-01-16	16:14:40
+	SELECT opzione FROM vigi.elenco_tipopratica_all WHERE id::varchar='10';
+25-01-16	16:14:40
+	SELECT opzione FROM vigi.elenco_statopratica_vigi WHERE id::varchar='9';
+25-01-16	16:16:55
+	SELECT opzione FROM vigi.elenco_tipopratica_all WHERE id::varchar='10';
+25-01-16	16:16:55
+	SELECT opzione FROM vigi.elenco_statopratica_vigi WHERE id::varchar='9';
+25-01-16	16:20:03
+	SELECT opzione FROM vigi.elenco_tipopratica_all WHERE id::varchar='10';
+25-01-16	16:20:03
+	SELECT opzione FROM vigi.elenco_statopratica_vigi WHERE id::varchar='9';
+25-01-16	16:20:19
+	SELECT opzione FROM vigi.elenco_tipopratica_all WHERE id::varchar='20';
+25-01-16	16:20:19
+	SELECT opzione FROM vigi.elenco_origine WHERE id::varchar='1';
+25-01-16	16:20:19
+	SELECT opzione FROM vigi.elenco_statopratica_vigi WHERE id::varchar='4';
+25-01-16	16:20:27
+	SELECT opzione FROM vigi.elenco_tipopratica_all WHERE id::varchar='10';
+25-01-16	16:20:27
+	SELECT opzione FROM vigi.elenco_statopratica_vigi WHERE id::varchar='9';
+25-01-16	16:40:46
+	SELECT opzione FROM vigi.elenco_tipopratica_all WHERE id::varchar='10';
+25-01-16	16:40:46
+	SELECT opzione FROM vigi.elenco_statopratica_vigi WHERE id::varchar='9';
+25-01-16	16:41:02
+	SELECT opzione FROM vigi.elenco_tipopratica_all WHERE id::varchar='20';
+25-01-16	16:41:02
+	SELECT opzione FROM vigi.elenco_origine WHERE id::varchar='1';
+25-01-16	16:41:09
+	SELECT opzione FROM vigi.elenco_tipopratica_all WHERE id::varchar='10';
+25-01-16	16:41:09
+	SELECT opzione FROM vigi.elenco_statopratica_vigi WHERE id::varchar='9';
+25-01-16	16:46:08
+	SELECT opzione FROM vigi.elenco_tipopratica_all WHERE id::varchar='10';
+25-01-16	16:46:08
+	SELECT opzione FROM vigi.elenco_statopratica_vigi WHERE id::varchar='9';
+25-01-16	16:46:18
+	SELECT opzione FROM vigi.elenco_tipopratica_all WHERE id::varchar='10';
+25-01-16	16:46:18
+	SELECT opzione FROM vigi.elenco_statopratica_vigi WHERE id::varchar='9';
+25-01-16	16:57:58
+	SELECT opzione FROM vigi.elenco_violazioni WHERE id::varchar='23';
+25-01-16	16:58:47
+	SELECT opzione FROM vigi.elenco_infrazioni WHERE id::varchar='13';
+25-01-16	16:58:47
+	SELECT opzione FROM vigi.elenco_tiposanzioni WHERE id::varchar='1';
+25-01-16	16:59:11
+	SELECT opzione FROM vigi.elenco_infrazioni WHERE id::varchar='13';
+25-01-16	16:59:11
+	SELECT opzione FROM vigi.elenco_tiposanzioni WHERE id::varchar='1';
+25-01-16	17:19:14
+	SELECT opzione FROM vigi.elenco_tipopratica_all WHERE id::varchar='10';
+25-01-16	17:19:31
+	SELECT opzione FROM vigi.elenco_tipopratica_all WHERE id::varchar='20';
+25-01-16	17:19:31
+	SELECT opzione FROM vigi.elenco_origine WHERE id::varchar='1';
+25-01-16	17:19:33
+	SELECT opzione FROM nct.elenco_sezioni WHERE id='B';
+29-01-16	08:57:22
+	SELECT opzione FROM vigi.elenco_tipopratica_all WHERE id::varchar='10';
+29-01-16	08:57:22
+	SELECT opzione FROM vigi.elenco_statopratica_vigi WHERE id::varchar='9';
+29-01-16	08:59:34
+	SELECT opzione FROM vigi.elenco_tipopratica_all WHERE id::varchar='10';
+29-01-16	08:59:34
+	SELECT opzione FROM vigi.elenco_statopratica_vigi WHERE id::varchar='9';
+29-01-16	09:00:03
+	SELECT opzione FROM vigi.elenco_tipopratica_all WHERE id::varchar='10';
+29-01-16	09:00:03
+	SELECT opzione FROM vigi.elenco_statopratica_vigi WHERE id::varchar='9';
+29-01-16	09:13:42
+	SELECT opzione FROM vigi.elenco_tipopratica_all WHERE id::varchar='10';
+29-01-16	09:13:42
+	SELECT opzione FROM vigi.elenco_statopratica_vigi WHERE id::varchar='9';
+29-01-16	09:14:06
+	SELECT opzione FROM vigi.elenco_tipopratica_all WHERE id::varchar='10';
+29-01-16	09:14:06
+	SELECT opzione FROM vigi.elenco_statopratica_vigi WHERE id::varchar='9';

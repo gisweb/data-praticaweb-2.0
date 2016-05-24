@@ -1,0 +1,30 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[edit]
+table="vigi.scadenze"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori="codice;scadenza"
+data[]="Tipo Scadenza;codice;250xvigi.elenco_tiposcadenze;selectdb"
+data[]="Data Scadenza;scadenza;10;data|Completata;completata;50;yesno"
+data[]="Note;note;55x8;textarea"
+button="Salva;azione;;submit|Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit"
+
+[view]
+
+[list]
+table="vigi.vista_scadenze"
+chiave="id"
+campi_ordinamento="scadenza"
+campi_obbligatori=""
+data[]="info;id;3%#vigi.scadenze;btn_edit"
+data[]="Data Scadenza;scadenza;15%;data"
+data[]="Scadenza;nome;25%;text"
+data[]="Completata;completata;10%;yesno"
+data[]="Note;note;;text"
+
+[standard]

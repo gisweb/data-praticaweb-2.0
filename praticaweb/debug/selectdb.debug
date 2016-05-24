@@ -1,0 +1,459 @@
+------- DEBUG DEL 26/08/2015 01:58:13 -------
+select id,opzione from vigi.elenco_tipopratica_esposto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:13 -------
+select id,opzione from vigi.elenco_origine
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:13 -------
+select id,opzione from vigi.select2_infrazioni where id = ANY(ARRAY[])
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:13 -------
+select id,opzione from admin.elenco_rdp_vigi
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:13 -------
+select id,opzione from vigi.elenco_statopratica
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:34 -------
+select id,opzione from vigi.elenco_tipopratica_esposto
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:34 -------
+select id,opzione from vigi.elenco_origine
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:34 -------
+select id,opzione from vigi.select2_infrazioni where id = ANY(ARRAY[])
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:34 -------
+select id,opzione from admin.elenco_rdp_vigi
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:34 -------
+select id,opzione from vigi.elenco_statopratica
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:46 -------
+select id,opzione from vigi.elenco_provincie
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:46 -------
+select id,opzione from vigi.elenco_provincie_regioni
+-------------------------
+------- DEBUG DEL 26/08/2015 01:58:46 -------
+select id,opzione from vigi.elenco_provincie
+-------------------------
+------- DEBUG DEL 26/08/2015 02:21:07 -------
+select id,opzione from admin.elenco_rdp
+-------------------------
+------- DEBUG DEL 26/08/2015 02:21:07 -------
+select id,opzione from vigi.elenco_tipopratica_all where not coalesce(id,0)=0
+-------------------------
+------- DEBUG DEL 26/08/2015 02:21:07 -------
+select id,opzione from vigi.elenco_ruoli
+-------------------------
+------- DEBUG DEL 26/08/2015 02:21:07 -------
+select id,opzione from vigi.elenco_dataricerca
+-------------------------
+------- DEBUG DEL 26/08/2015 02:21:07 -------
+select id,opzione from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 26/08/2015 02:39:22 -------
+select id,opzione from nct.elenco_sezioni
+-------------------------
+------- DEBUG DEL 27/08/2015 06:12:47 -------
+select id,opzione from vigi.elenco_tipopratica_esposto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:12:48 -------
+select id,opzione from vigi.elenco_origine
+-------------------------
+------- DEBUG DEL 27/08/2015 06:12:48 -------
+select id,opzione from vigi.select2_infrazioni where id = ANY(ARRAY[])
+-------------------------
+------- DEBUG DEL 27/08/2015 06:12:48 -------
+select id,opzione from admin.elenco_rdp_vigi
+-------------------------
+------- DEBUG DEL 27/08/2015 06:12:48 -------
+select id,opzione from vigi.elenco_statopratica
+-------------------------
+------- DEBUG DEL 27/08/2015 06:14:51 -------
+select id,opzione from vigi.elenco_tipopratica_infrazione
+-------------------------
+------- DEBUG DEL 27/08/2015 06:14:51 -------
+select id,opzione from vigi.select2_esposti where id = ANY(ARRAY[])
+-------------------------
+------- DEBUG DEL 27/08/2015 06:14:51 -------
+select id,opzione from admin.elenco_rdp_vigi
+-------------------------
+------- DEBUG DEL 27/08/2015 06:14:51 -------
+select id,opzione from vigi.elenco_statopratica
+-------------------------
+------- DEBUG DEL 27/08/2015 06:14:59 -------
+select id,opzione from vigi.elenco_tipopratica_esposto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:14:59 -------
+select id,opzione from vigi.elenco_origine
+-------------------------
+------- DEBUG DEL 27/08/2015 06:14:59 -------
+select id,opzione from vigi.select2_infrazioni where id = ANY(ARRAY[])
+-------------------------
+------- DEBUG DEL 27/08/2015 06:14:59 -------
+select id,opzione from admin.elenco_rdp_vigi
+-------------------------
+------- DEBUG DEL 27/08/2015 06:14:59 -------
+select id,opzione from vigi.elenco_statopratica
+-------------------------
+------- DEBUG DEL 27/08/2015 06:18:00 -------
+select id,opzione from vigi.elenco_tipopratica_esposto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:18:00 -------
+select id,opzione from vigi.elenco_origine
+-------------------------
+------- DEBUG DEL 27/08/2015 06:18:00 -------
+select id,opzione from vigi.select2_infrazioni where id = ANY(ARRAY[])
+-------------------------
+------- DEBUG DEL 27/08/2015 06:18:00 -------
+select id,opzione from admin.elenco_rdp_vigi
+-------------------------
+------- DEBUG DEL 27/08/2015 06:18:00 -------
+select id,opzione from vigi.elenco_statopratica
+-------------------------
+------- DEBUG DEL 27/08/2015 06:19:39 -------
+select id,opzione from vigi.elenco_tipopratica_esposto
+-------------------------
+------- DEBUG DEL 27/08/2015 06:19:39 -------
+select id,opzione from vigi.elenco_origine
+-------------------------
+------- DEBUG DEL 27/08/2015 06:19:39 -------
+select id,opzione from vigi.select2_infrazioni where id = ANY(ARRAY[])
+-------------------------
+------- DEBUG DEL 27/08/2015 06:19:39 -------
+select id,opzione from admin.elenco_rdp_vigi
+-------------------------
+------- DEBUG DEL 27/08/2015 06:19:39 -------
+select id,opzione from vigi.elenco_statopratica
+-------------------------
+------- DEBUG DEL 27/08/2015 06:24:12 -------
+select id,opzione from vigi.elenco_tiposcadenze
+-------------------------
+------- DEBUG DEL 27/08/2015 06:24:21 -------
+select id,opzione from vigi.elenco_tiposcadenze
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:04 -------
+select id,opzione from vigi.elenco_tiposcadenze
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:12 -------
+select id,opzione from admin.elenco_utenti_attivi
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:12 -------
+select id,opzione from admin.elenco_utenti_attivi
+-------------------------
+------- DEBUG DEL 27/08/2015 06:25:49 -------
+select id,opzione from nct.elenco_sezioni
+-------------------------
+------- DEBUG DEL 27/08/2015 06:31:30 -------
+select id,opzione from vigi.elenco_tipopratica_infrazione
+-------------------------
+------- DEBUG DEL 27/08/2015 06:31:30 -------
+select id,opzione from vigi.select2_esposti where id = ANY(ARRAY[])
+-------------------------
+------- DEBUG DEL 27/08/2015 06:31:30 -------
+select id,opzione from admin.elenco_rdp_vigi
+-------------------------
+------- DEBUG DEL 27/08/2015 06:31:30 -------
+select id,opzione from vigi.elenco_statopratica
+-------------------------
+------- DEBUG DEL 27/08/2015 06:35:19 -------
+select id,opzione from vigi.elenco_tipopratica_infrazione
+-------------------------
+------- DEBUG DEL 27/08/2015 06:35:19 -------
+select id,opzione from vigi.select2_esposti where id = ANY(ARRAY[])
+-------------------------
+------- DEBUG DEL 27/08/2015 06:35:19 -------
+select id,opzione from admin.elenco_rdp_vigi
+-------------------------
+------- DEBUG DEL 27/08/2015 06:35:19 -------
+select id,opzione from vigi.elenco_statopratica
+-------------------------
+------- DEBUG DEL 27/08/2015 06:40:36 -------
+select id,opzione from vigi.elenco_infrazioni_pratica
+-------------------------
+------- DEBUG DEL 27/08/2015 06:40:36 -------
+select id,opzione from vigi.elenco_sanzioni
+-------------------------
+------- DEBUG DEL 27/08/2015 06:40:47 -------
+select id,opzione from vigi.elenco_violazioni
+-------------------------
+------- DEBUG DEL 27/08/2015 07:12:42 -------
+select id,opzione from vigi.elenco_violazioni
+-------------------------
+------- DEBUG DEL 27/08/2015 07:13:06 -------
+select id,opzione from vigi.elenco_infrazioni_pratica
+-------------------------
+------- DEBUG DEL 27/08/2015 07:13:06 -------
+select id,opzione from vigi.elenco_sanzioni
+-------------------------
+------- DEBUG DEL 27/08/2015 07:14:20 -------
+select id,opzione from vigi.elenco_infrazioni_pratica
+-------------------------
+------- DEBUG DEL 27/08/2015 07:14:20 -------
+select id,opzione from vigi.elenco_sanzioni
+-------------------------
+------- DEBUG DEL 27/08/2015 07:25:31 -------
+select id,opzione from vigi.elenco_infrazioni where pratica='11'
+-------------------------
+------- DEBUG DEL 27/08/2015 07:25:31 -------
+select id,opzione from vigi.elenco_sanzioni
+-------------------------
+------- DEBUG DEL 27/08/2015 07:25:52 -------
+select id,opzione from vigi.elenco_infrazioni where pratica=''
+-------------------------
+------- DEBUG DEL 27/08/2015 07:26:45 -------
+select id,opzione from vigi.elenco_infrazioni where pratica=''
+-------------------------
+------- DEBUG DEL 27/08/2015 07:26:50 -------
+select id,opzione from vigi.elenco_infrazioni where pratica='11'
+-------------------------
+------- DEBUG DEL 27/08/2015 07:27:06 -------
+select id,opzione from vigi.elenco_infrazioni where pratica=''
+-------------------------
+------- DEBUG DEL 27/08/2015 07:28:00 -------
+select id,opzione from vigi.elenco_infrazioni where pratica=''
+-------------------------
+------- DEBUG DEL 27/08/2015 07:31:28 -------
+select id,opzione from vigi.elenco_infrazioni where pratica='11'
+-------------------------
+------- DEBUG DEL 27/08/2015 07:31:55 -------
+select id,opzione from vigi.elenco_infrazioni where pratica='11'
+-------------------------
+------- DEBUG DEL 27/08/2015 07:32:30 -------
+select id,opzione from vigi.elenco_infrazioni where pratica='11'
+-------------------------
+------- DEBUG DEL 27/08/2015 07:32:43 -------
+select id,opzione from vigi.elenco_violazioni
+-------------------------
+------- DEBUG DEL 27/08/2015 07:33:07 -------
+select id,opzione from vigi.elenco_infrazioni where pratica='11'
+-------------------------
+------- DEBUG DEL 27/08/2015 07:33:26 -------
+select id,opzione from vigi.elenco_infrazioni where pratica='11'
+-------------------------
+------- DEBUG DEL 27/08/2015 07:33:26 -------
+select id,opzione from vigi.elenco_sanzioni
+-------------------------
+------- DEBUG DEL 27/08/2015 07:39:00 -------
+select id,opzione from vigi.elenco_infrazioni where pratica='11'
+-------------------------
+------- DEBUG DEL 27/08/2015 07:39:00 -------
+select id,opzione from vigi.elenco_tiposanzioni
+-------------------------
+------- DEBUG DEL 27/08/2015 07:39:22 -------
+select id,opzione from vigi.elenco_infrazioni where pratica='11'
+-------------------------
+------- DEBUG DEL 27/08/2015 07:39:22 -------
+select id,opzione from vigi.elenco_tiposanzioni
+-------------------------
+------- DEBUG DEL 27/08/2015 07:39:47 -------
+select id,opzione from vigi.elenco_infrazioni where pratica='11'
+-------------------------
+------- DEBUG DEL 27/08/2015 07:39:47 -------
+select id,opzione from vigi.elenco_tiposanzioni
+-------------------------
+------- DEBUG DEL 27/08/2015 07:40:01 -------
+select id,opzione from vigi.elenco_infrazioni where pratica='11'
+-------------------------
+------- DEBUG DEL 27/08/2015 07:40:01 -------
+select id,opzione from vigi.elenco_tiposanzioni
+-------------------------
+------- DEBUG DEL 06/10/2015 08:52:52 -------
+select id,opzione from oneri.elenco_anno
+-------------------------
+------- DEBUG DEL 06/10/2015 08:52:52 -------
+select id,opzione from oneri.elenco_funzione
+-------------------------
+------- DEBUG DEL 06/10/2015 08:52:52 -------
+select id,opzione from oneri.elenco_funzione
+-------------------------
+------- DEBUG DEL 06/10/2015 08:52:52 -------
+select id,opzione from oneri.elenco_interventi where tabella
+-------------------------
+------- DEBUG DEL 06/10/2015 08:52:52 -------
+select id,opzione from oneri.elenco_c1 where tabella
+-------------------------
+------- DEBUG DEL 06/10/2015 08:52:52 -------
+select id,opzione from oneri.elenco_c2 where tabella
+-------------------------
+------- DEBUG DEL 06/10/2015 08:52:52 -------
+select id,opzione from oneri.elenco_c3 where tabella
+-------------------------
+------- DEBUG DEL 06/10/2015 08:52:52 -------
+select id,opzione from oneri.elenco_c4 where tabella
+-------------------------
+------- DEBUG DEL 06/10/2015 08:52:52 -------
+select id,opzione from oneri.elenco_d1 where tabella
+-------------------------
+------- DEBUG DEL 06/10/2015 08:52:52 -------
+select id,opzione from oneri.elenco_d2 where tabella
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:41 -------
+select id,opzione from admin.elenco_rdp
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:41 -------
+select id,opzione from vigi.elenco_tipopratica_all where not coalesce(id,0)=0
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:41 -------
+select id,opzione from vigi.elenco_ruoli
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:41 -------
+select id,opzione from vigi.elenco_dataricerca
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:41 -------
+select id,opzione from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:58 -------
+select id,opzione from vigi.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:58 -------
+select id,opzione from vigi.select2_esposti where id = ANY(ARRAY[2,12,15])
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:58 -------
+select id,opzione from admin.elenco_rdp_vigi
+-------------------------
+------- DEBUG DEL 25/01/2016 04:08:58 -------
+select id,opzione from vigi.elenco_statopratica
+-------------------------
+------- DEBUG DEL 25/01/2016 04:40:40 -------
+select id,opzione from vigi.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 25/01/2016 04:40:40 -------
+select id,opzione from vigi.select2_esposti where id = ANY(ARRAY[2,12,15])
+-------------------------
+------- DEBUG DEL 25/01/2016 04:40:40 -------
+select id,opzione from admin.elenco_rdp_vigi
+-------------------------
+------- DEBUG DEL 25/01/2016 04:40:40 -------
+select id,opzione from vigi.elenco_statopratica
+-------------------------
+------- DEBUG DEL 25/01/2016 04:46:09 -------
+select id,opzione from vigi.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 25/01/2016 04:46:09 -------
+select id,opzione from vigi.select2_esposti where id = ANY(ARRAY[2,12,15])
+-------------------------
+------- DEBUG DEL 25/01/2016 04:46:09 -------
+select id,opzione from admin.elenco_rdp_vigi
+-------------------------
+------- DEBUG DEL 25/01/2016 04:46:09 -------
+select id,opzione from vigi.elenco_statopratica
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:19 -------
+select id,opzione from vigi.elenco_infrazioni where pratica='14'
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:19 -------
+select id,opzione from vigi.elenco_tiposanzioni
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:35 -------
+select id,opzione from vigi.elenco_infrazioni where pratica='14'
+-------------------------
+------- DEBUG DEL 25/01/2016 04:57:50 -------
+select id,opzione from vigi.elenco_violazioni
+-------------------------
+------- DEBUG DEL 25/01/2016 04:58:31 -------
+select id,opzione from vigi.elenco_infrazioni where pratica='14'
+-------------------------
+------- DEBUG DEL 25/01/2016 04:58:31 -------
+select id,opzione from vigi.elenco_tiposanzioni
+-------------------------
+------- DEBUG DEL 25/01/2016 04:58:59 -------
+select id,opzione from vigi.elenco_tiposcadenze
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:03 -------
+select id,opzione from admin.elenco_rdp
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:03 -------
+select id,opzione from vigi.elenco_tipopratica_all where not coalesce(id,0)=0
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:03 -------
+select id,opzione from vigi.elenco_ruoli
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:03 -------
+select id,opzione from vigi.elenco_dataricerca
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:03 -------
+select id,opzione from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 25/01/2016 05:19:20 -------
+select id,opzione from vigi.elenco_tiposcadenze
+-------------------------
+------- DEBUG DEL 29/01/2016 08:55:29 -------
+select id,opzione from admin.elenco_rdp
+-------------------------
+------- DEBUG DEL 29/01/2016 08:55:29 -------
+select id,opzione from vigi.elenco_tipopratica_all where not coalesce(id,0)=0
+-------------------------
+------- DEBUG DEL 29/01/2016 08:55:29 -------
+select id,opzione from vigi.elenco_ruoli
+-------------------------
+------- DEBUG DEL 29/01/2016 08:55:29 -------
+select id,opzione from vigi.elenco_dataricerca
+-------------------------
+------- DEBUG DEL 29/01/2016 08:55:29 -------
+select id,opzione from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 29/01/2016 08:59:12 -------
+select id,opzione from vigi.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 29/01/2016 08:59:12 -------
+select id,opzione from vigi.select2_esposti where id = ANY(ARRAY[2,12,15])
+-------------------------
+------- DEBUG DEL 29/01/2016 08:59:12 -------
+select id,opzione from admin.elenco_rdp_vigi
+-------------------------
+------- DEBUG DEL 29/01/2016 08:59:12 -------
+select id,opzione from vigi.elenco_statopratica
+-------------------------
+------- DEBUG DEL 29/01/2016 08:59:36 -------
+select id,opzione from vigi.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 29/01/2016 08:59:36 -------
+select id,opzione from vigi.select2_esposti where id = ANY(ARRAY[2,12,15])
+-------------------------
+------- DEBUG DEL 29/01/2016 08:59:36 -------
+select id,opzione from admin.elenco_rdp_vigi
+-------------------------
+------- DEBUG DEL 29/01/2016 08:59:36 -------
+select id,opzione from vigi.elenco_statopratica
+-------------------------
+------- DEBUG DEL 29/01/2016 09:06:28 -------
+select id,opzione from vigi.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 29/01/2016 09:06:28 -------
+select id,opzione from vigi.select2_esposti where id = ANY(ARRAY[2,12,15])
+-------------------------
+------- DEBUG DEL 29/01/2016 09:06:28 -------
+select id,opzione from admin.elenco_rdp_vigi
+-------------------------
+------- DEBUG DEL 29/01/2016 09:06:28 -------
+select id,opzione from vigi.elenco_statopratica
+-------------------------
+------- DEBUG DEL 29/01/2016 09:13:47 -------
+select id,opzione from vigi.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 29/01/2016 09:13:47 -------
+select id,opzione from vigi.select2_esposti where id = ANY(ARRAY[2,12,15])
+-------------------------
+------- DEBUG DEL 29/01/2016 09:13:47 -------
+select id,opzione from admin.elenco_rdp_vigi
+-------------------------
+------- DEBUG DEL 29/01/2016 09:13:47 -------
+select id,opzione from vigi.elenco_statopratica
+-------------------------
+------- DEBUG DEL 29/01/2016 01:06:47 -------
+select id,opzione from admin.elenco_rdp
+-------------------------
+------- DEBUG DEL 29/01/2016 01:06:47 -------
+select id,opzione from vigi.elenco_tipopratica_all where not coalesce(id,0)=0
+-------------------------
+------- DEBUG DEL 29/01/2016 01:06:47 -------
+select id,opzione from vigi.elenco_ruoli
+-------------------------
+------- DEBUG DEL 29/01/2016 01:06:47 -------
+select id,opzione from vigi.elenco_dataricerca
+-------------------------
+------- DEBUG DEL 29/01/2016 01:06:47 -------
+select id,opzione from pe.elenco_ricerca_responsabili
+-------------------------
