@@ -5,7 +5,9 @@ viewable=""
 editable=""
 
 [edit]
-table="vigi.soggetti"
+table="anagrafiche.soggetti"
+ref_table= "vigi.soggetti"
+save_table= "vigi.soggetti"
 chiave="id"
 campi_ordinamento=""
 campi_obbligatori=""
