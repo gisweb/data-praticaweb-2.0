@@ -1,0 +1,28 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[new]
+
+[edit]
+
+[view]
+
+[list]
+
+[standard]
+table="pe.tabella"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Tipo di pratica;tipo;400xelenco_tipopratica;selectdb"
+data[]="Qualifica dell'intervento;intervento;400xelenco_tipointervento;selectdb"
+data[]="Numero Pratica;numero;25;text|Data presentazione;data_presentazione;10;data"
+data[]="Prot. generale;protocollo;25;text|Data;data_prot;10;data"
+data[]="Prot. interno;protocollo_int;25;text|Data;data_prot_int;10;data"
+data[]="Riferimento;riferimenti;38;text|;riferimenti;70xtrova..xseleziona_via;button"
+data[]="Via;via;35;text|Civico;civico;7;text"
+data[]="Oggetto;oggetto;50x5;textarea"
+data[]="Note;note;50x2;textarea"

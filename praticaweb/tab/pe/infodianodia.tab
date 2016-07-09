@@ -1,0 +1,24 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[new]
+
+[edit]
+
+[view]
+table="pe.informazioni_dia"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Inizio efficacia DIA;dia_dal;10;data"
+data[]="Termine efficacia DIA;dia_al;10;data"
+data[]="Tipo;tipo_opere;;text"
+data[]="Protocollo notifica diniego;diniego_prot;25;text"
+data[]="Data protocollo;diniego_data;10;data"
+data[]="Note;note;50x3;textarea|;diniego;;"
+[list]
+
+[standard]

@@ -1,0 +1,25 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[new]
+
+[edit]
+
+[view]
+
+[list]
+
+[standard]
+table="####vigi"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Direttore Lavori;vigi.elenco_direttori_lavori.nominativo;50;search_text_contains"
+data[]="Progettista;vigi.elenco_progettisti.nominativo;50;search_text_contains"
+
+;data[]="Data di;data;210xvigi.elenco_dataricerca;selectdb|dal;data_dal;10;text|al;data_al;10;text"
+data[]="Oggetto (parte);vigi.avvioproc.oggetto;54;search_text_contains"
+;data[]="Resp. procedimento;vigi.avvioproc.resp_proc;280xvigi.elenco_ricerca_responsabili;search_list"

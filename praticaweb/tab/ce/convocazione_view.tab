@@ -1,0 +1,4 @@
+ce.comm_edilizia
+Tipo di commissione,tipo,50,text|Sede,sede1,50,text
+Data,data_convocazione,10,data|Orario,ora_convocazione,6,ora
+Note,note,200,text

@@ -1,0 +1,27 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[edit]
+table="pe.annotazioni"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori="data_annotazione;note"
+data[]="Data;data_annotazione;10;data"
+data[]="Nota;note;55x8;textarea"
+button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
+
+
+
+[list]
+table="pe.annotazioni"
+chiave="id"
+campi_ordinamento="data_annotazione DESC;tmsins DESC"
+campi_obbligatori=""
+data[]="info;id;3%#pe.annotazioni.php;btn_edit"
+data[]="Data;data_annotazione;15%;data"
+data[]="Note;note;;text"
+
+[standard]

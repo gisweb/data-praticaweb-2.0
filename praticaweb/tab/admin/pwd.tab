@@ -1,0 +1,25 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+
+[edit]
+table="admin.utenti"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Utente;nominativo;;string"
+data[]="Password;pwd;25;pword"
+button="Annulla;azione;;submit|Salva;azione;;submit"
+
+
+[view]
+table="admin.utenti"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Utente;nominativo;50;string"
+data[]="Password;pwd;25;pword"
+

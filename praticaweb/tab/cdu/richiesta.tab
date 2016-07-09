@@ -1,0 +1,44 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable="cdu"
+
+[new]
+table="cdu.richiesta"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori="protocollo"
+data[]="Protocollo;protocollo;25;text|Data;data;10;data"
+data[]="Situazione al;data_certificazione;10;data"
+data[]="Richiedente;richiedente;50;text"
+data[]="Indirizzo;indirizzo;50;text"
+data[]="Titolo;titolo;50;text"
+data[]="Note;note;50x4;textarea"
+button="Salva;azione;;submit|Elimina;azione;#confirmDelete;submit|Annulla;azione;;submit"
+[edit]
+table="cdu.richiesta"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori="protocollo"
+data[]="Protocollo;protocollo;25;text|Data;data;10;data"
+data[]="Situazione al;data_certificazione;10;data"
+data[]="Richiedente;richiedente;50;text"
+data[]="Indirizzo;indirizzo;50;text"
+data[]="Titolo;titolo;50;text"
+data[]="Note;note;50x4;textarea"
+button="Salva;azione;;submit|Elimina;azione;#confirmDelete;submit|Annulla;azione;;submit"
+[view]
+table="cdu.richiesta"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori="protocollo"
+data[]="Protocollo;protocollo;25;text|Data;data;10;data"
+data[]="Situazione al;data_certificazione;10;data"
+data[]="Richiedente;richiedente;50;text"
+data[]="Indirizzo;indirizzo;50;text"
+data[]="Titolo;titolo;50;text"
+data[]="Note;note;50x4;textarea"
+[list]
+
+[standard]

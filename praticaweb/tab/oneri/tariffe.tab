@@ -1,0 +1,38 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[new]
+table="oneri.e_tariffe"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Anno di partenza;base;75xoneri.elenco_anno;selectdb"
+data[]="Incremento %;inc;5;text"
+data[]="Anno di Aggiornamento;anno;4;text"
+button="Salva;azione;;submit|Annulla;azione;;submit"
+[edit]
+table="oneri.e_tariffe"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Anno di partenza;base;75xoneri.elenco_anno;selectdb"
+data[]="Incremento %;inc;5;text"
+data[]="Anno di Aggiornamento;anno;4;text"
+button="Salva;azione;;submit|Elimina;azione;#confirmDelete;submit|Annulla;azione;;submit"
+[view]
+table="oneri.vista_elenco_tariffe"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]=";funzione;20%;text"
+data[]="Descrizione;descrizione;40%;text"
+data[]="tr;tr;10%;valuta"
+data[]="a;a;10%;valuta"
+data[]="ie;ie;10%;text"
+data[]="k;k;10%;text"
+[list]
+
+[standard]

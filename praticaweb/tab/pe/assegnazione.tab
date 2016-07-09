@@ -1,0 +1,41 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[new]
+table="pe.assegnazione_pratiche"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori="userid;groupid"
+data[]="Gruppo di Utenti;groupid;300xadmin.elenco_gruppi;selectdb"
+data[]="Utente;userid;300xadmin.elenco_utenti_gruppi;selectdb"
+data[]="Note;note;60x4;textarea"
+button="Chiudi;azione;#goToView;button|Aggiungi;azione;;submit"
+
+[edit]
+table="pe.assegnazione_pratiche"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Gruppo di Utenti;groupid;300xadmin.elenco_gruppi;selectdb"
+data[]="Utente;userid;15%xadmin.elenco_utenti_gruppi;selectdb"
+data[]="Data;data_assegnazione;8%;data"
+data[]="Note;note;;text"
+
+
+[view]
+table="pe.assegnazione_pratiche"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]=";id;3%;semaforo"
+data[]="Gruppo di Utenti;groupid;300xadmin.elenco_gruppi;selectdb"
+data[]="Utente;userid;15%xadmin.elenco_utenti_gruppi;selectdb"
+data[]="Data;data_assegnazione;8%;data"
+data[]="Note;note;;text"
+
+[list]
+
+[standard]

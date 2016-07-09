@@ -1,0 +1,38 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable="iamm;itec"
+
+[new]
+table="pe.vincoli"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori="vincolo;tavola;zona"
+data[]="Piano o Vincolo;vincolo;300xvincoli.elenco_vincolipratichexxselectTavola;selectRPC"
+data[]="Tavola;tavola;400xxxselectZona;selectRPC"
+data[]="Zona o Vincolo;zona;500;selectdb"
+button="Chiudi;azione;#goToView;button|Aggiungi;azione;;submit"
+[edit]
+table="pe.zone_pratica"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Canc.;id;2%;delete"
+data[]="Tavola;descrizione_tavola;40%;text"
+data[]="Zona;descrizione;40%;text"
+data[]="Sigla Zona;sigla;15%;text"
+
+[view]
+table="pe.zone_pratica"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]=";id;1%;idriga"
+data[]="Tavola;descrizione_tavola;40%;text"
+data[]="Zona;descrizione;40%;text"
+data[]="Sigla Zona;sigla;15%;text"
+
+[list]
+
+[standard]

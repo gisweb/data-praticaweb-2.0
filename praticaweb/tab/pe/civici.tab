@@ -1,0 +1,26 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable="ipre;itec;iamm"
+
+[new]
+table="pe.elenco_civici"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Numero;numero;60;text|Aggiungi;aggiungi;130;submit"
+button="Salva;azione;;submit|Annulla;azione;;submit"
+[edit]
+table="pe.elenco_civici"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Canc.;id;10;delete"
+data[]="Numero;numero;60;text"
+button="Salva;azione;;submit|Elimina;azione;#confirmDelete;submit|Annulla;azione;;submit"
+[view]
+
+[list]
+
+[standard]

@@ -1,0 +1,32 @@
+Esempio File di configurazione : Gruppi-Permessi@Nome Tabella/Permessi@Nome Javascript@Parametri Javascript@Testo del Link@Testo descrittivo
+pareri,dirigente,rdp,itec,iamm,cdu-4@Gestione pratiche
+pareri,dirigente,rdp,itec,iamm,cdu-4@NewWindow@'pe.ricerca.php?new=1','ricercaPraticaweb',0,0,'yes'@Apri pratica esistente@Modalit&agrave; di ricerca di una pratica archiviata.
+rdp,itec,iamm-4@NewWindow@'pe.recenti.php','ricercaPraticaweb',0,0,'yes'@Pratiche recenti@Elenco delle ultime 10 pratiche consultate
+rdp,itec,iamm-4@NewWindow@'pe.avvioproc.php?mode=new','Praticaweb',0,0,'yes'@Nuova Pratica Edilizia@Inserisce una nuova pratica.
+rdp,itec,iamm-4@NewWindow@'pe.ricerca_online.php','ricercaPraticaweb',0,0,'yes'@Pratiche Presentate Online@Elenco delle Pratiche presentate tramite la Procedura OnLine
+-4@NewWindow@'pe.sorteggi_verifiche.php','Praticaweb',0,0,'yes'@Sorteggi e Verifiche@Sorteggi e Elenco Pratiche sorteggiate.
+rdp,itec,iamm-2@NewWindow@'pe.eliminapratica.php?ricerca=1','Praticaweb',0,0,'yes'@Elimina Pratica@Individua ed elimina la pratica scelta.
+-2@NewWindow@'admin.pwd.php?mode=edit','PraticawebUtenti',0,0,'yes'@Gestione PassWord Utenti@- Modifica password dell'utente.
+-4@Gestione pratiche Controlli Edilizi
+-4@NewWindow@'vigi.ricerca.php?new=1','ricercaPraticaweb',0,0,'yes'@Apri pratica esistente@Modalit&agrave; di ricerca di una pratica archiviata.
+-4@NewWindow@'vigi.avvioproc.php?mode=new','Praticaweb',0,0,'yes'@Nuova Pratica di Controllo Edilizio@Inserisce una nuova pratica.
+-4@NewWindow@'vigi.avvioproc.php?mode=new&tipologia_pratica=esposto','Praticaweb',0,0,'yes'@Nuova Esposto@Inserisce unanuovo esposto.
+-3@NewWindow@'vigi.eliminapratica.php?ricerca=1','Praticaweb',0,0,'yes'@Elimina Pratica@Individua ed elimina la pratica scelta.
+-1@Anagrafe Tributaria
+-1@NewWindow@'anagrafe_tributaria.php?mode=view','AnagrafeTributaria',0,0,'yes'@Anagrafe Tributaria@Report della situazione delle pratiche di Anagrafe Tributaria.
+-3@Praticaweb Navigator per la cartografia
+-3@ApriMappa@'sanremo_riservata','gisclient'@Accedi alla cartografia del comune@Quadro d'unione del catastale Piano Regolatore e vincoli
+cdu-3@NewWindow@'cdu.richiesta.php?mode=new','Praticaweb',0,0,'yes'@Nuovo Certificato di Destinazione Urbanistica@
+cdu-4@NewWindow@'cdu.ricerca.php','Praticaweb',0,0,'yes'@Ricerca Certificato di Destinazione Urbanistica@
+-2@Amministrazione Sistema
+-2@NewWindow@'admin.utenti.php?mode=list','PraticawebUtenti',0,0,'yes'@Gestione Profili Utenti@- Aggiunta, Cancellazione, Modifica di un profilo utente.
+-2@NewWindow@'admin.gruppi.php?mode=list','PraticawebUtenti',0,0,'yes'@Gestione Profili Gruppi@- Aggiunta, Cancellazione, Modifica di un profilo gruppo di utenti.
+-2@Modelli di Stampa
+-2@NewWindow@'stp.modelli.php?mode=list','AdminPraticaweb',0,0,'yes'@Elenco Modelli di Stampa@Gestione dei modelli di stampa in formato Word XML.
+-2@NewWindow@'stp.fieldsList.php','AdminPraticaweb',0,0,'yes'@Elenco Campi unione@Elenco dei Campi Unione per i Modelli di Stampa.
+-2@Gestione Elenchi
+-2@NewWindow@'pe.documenti.php?mode=list','ComuniPraticaweb',0,0,'yes'@Allegati@Elenco dei possibili allegati alla pratica.
+-2@NewWindow@'pe.e_stati.php?mode=list','ComuniPraticaweb',0,0,'yes'@Stati Pratica@Elenco dei possibili stati della pratica.
+-2@NewWindow@'pe.e_enti.php?mode=list','ComuniPraticaweb',0,0,'yes'@Elenco Enti@Elenco dei possibili Enti ai quali richiedere pareri.
+-2@NewWindow@'pe.e_scadenze.php?mode=list','ComuniPraticaweb',0,0,'yes'@Elenco Scadenze@Elenco delle possibili Scadenze.
+-1@NewWindow@'oneri.e_tariffe.php','OneriPraticaweb',0,0,'yes'@Oneri@Elenco tariffe impostate.

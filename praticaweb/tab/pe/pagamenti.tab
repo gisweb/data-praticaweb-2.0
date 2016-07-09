@@ -1,0 +1,41 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[edit]
+table="ragioneria.pagamenti"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori="data_pagamento;importo;modalita;tipo"
+data[]="Tipologia Pagamento;tipo;300xragioneria.elenco_tipopagamenti;selectdb"
+data[]="Modalità Pagamento;modalita;200xragioneria.elenco_modalita;selectdb"
+data[]="Data Pagamento;data_pagamento;10;data"
+data[]="Importo;importo;20;valuta"
+data[]="Codice Pagamento;codice_pagamento;40;text"
+data[]="Note;note;50x4;textarea"
+button="Salva;azione;;submit|Elimina;azione;#confirmDelete;submit|Annulla;azione;;submit"
+[view]
+table="ragioneria.pagamenti"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Tipologia Pagamento;tipo;300xragioneria.elenco_tipopagamenti;selectdb"
+data[]="Modalità Pagamento;modalita;200xragioneria.elenco_modalita;selectdb"
+data[]="Data Pagamento;data_pagamento;10;date"
+data[]="Importo;importo;20;valuta"
+data[]="Codice Pagamento;codice;40;text"
+data[]="Note;note;50x4;textarea"
+
+[list]
+table="ragioneria.pagamenti"
+chiave="id"
+campi_ordinamento="data_pagamento"
+campi_obbligatori=""
+data[]=";id;3%#pe.pagamenti;btn_edit"
+data[]="Tipologia;tipo;20%xragioneria.elenco_tipopagamenti;selectdb"
+data[]="Modalità;modalita;20%xragioneria.elenco_modalita;selectdb"
+data[]="Data Pagamento;data_pagamento;10%;data"
+data[]="Importo;importo;20%;valuta"
+data[]="Codice Pagamento;codice_pagamento;20%;text"

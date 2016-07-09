@@ -1,0 +1,22 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[new]
+
+[edit]
+
+[view]
+table="pe.avvio_procedimento"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Numero;numero;15;string"
+data[]="Data di presentazione;data_presentazione;10;string"
+data[]="Tipo di pratica;tipo_pratica;50;string"
+data[]="Qualifica dell'intervento;tipo_intervento;50;string"
+data[]="Oggetto;oggetto;100;string"
+data[]="Nome Responsabile;nome_responsabile;40;string"
+

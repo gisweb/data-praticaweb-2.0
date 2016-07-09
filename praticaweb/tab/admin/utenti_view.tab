@@ -1,0 +1,8 @@
+admin.utenti
+nome,nome,100,string
+utente,username,50,string
+tipo utente,desc_permessi,100,string
+data creazione,data_creazione,12,string
+data modifica,data_modifica,12,string
+N° Telefono,num_tel,15,string
+informazioni,info,200,string

@@ -1,0 +1,25 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+;print_form="oneri.importi"
+print_form="pe.avvioproc"
+
+[new]
+
+[edit]
+
+[view]
+table="oneri.vista_importi"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]=";id;10#oneri.calcolati.php;btn_pwview"
+data[]=";label;210;text"
+data[]="Importo;importo;100;valuta"
+data[]="Scomputo;scomputo;100;valuta"
+data[]="Totale;totale;;valuta"
+[list]
+
+[standard]

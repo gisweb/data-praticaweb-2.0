@@ -1,0 +1,51 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[new]
+table="pe.soggetti"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Tit.;app;65xelenco_tit;select|Cognome;cognome;35;text|Nome;nome;25;text"
+data[]="Ragione Sociale;ragsoc;74;text"
+data[]="Indirizzo;indirizzo;74;text"
+data[]="Citt;comune;40;text|Prov;prov;2;text|CAP;cap;5;text|;comune;70xscegli..xseleziona_comune_i;button"
+data[]="Telefono;telefono;40;text"
+data[]="E-mail;email;40;text"
+data[]="Codice Fiscale;codfis;16;text|P.IVA;piva;21;text"
+data[]="Posizione INAIL;inail;40;text"
+data[]="N° CC.I.AA.;ccia;32;text|Prov;cciaprov;45xelenco_prov;select"
+data[]="Albo;albo;300xelenco_albi;select|Numero;albonumero;20;text|Prov;alboprov;45xelenco_prov;select"
+data[]="Cassa edile;cedile;20;text|Prov;cedileprov;45xelenco_prov;select"
+data[]="Posizione INPS;inps;50;text"
+data[]="Note;note;64x2;textarea"
+data[]="Invio comunicazioni;comunicazioni;45;yesno|;id;;idriga|;voltura;;"
+button="Salva;azione;;submit|Elimina;azione;#confirmDelete;submit|Annulla;azione;;submit"
+[edit]
+table="pe.soggetti"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Tit.;app;65xelenco_tit;select|Cognome;cognome;35;text|Nome;nome;25;text"
+data[]="Ragione Sociale;ragsoc;74;text"
+data[]="Indirizzo;indirizzo;74;text"
+data[]="Citt;comune;40;text|Prov;prov;2;text|CAP;cap;5;text|;comune;70xscegli..xseleziona_comune_i;button"
+data[]="Telefono;telefono;40;text"
+data[]="E-mail;email;40;text"
+data[]="Codice Fiscale;codfis;16;text|P.IVA;piva;21;text"
+data[]="Posizione INAIL;inail;40;text"
+data[]="N° CC.I.AA.;ccia;32;text|Prov;cciaprov;45xelenco_prov;select"
+data[]="Albo;albo;300xelenco_albi;select|Numero;albonumero;20;text|Prov;alboprov;45xelenco_prov;select"
+data[]="Cassa edile;cedile;20;text|Prov;cedileprov;45xelenco_prov;select"
+data[]="Posizione INPS;inps;50;text"
+data[]="Note;note;64x2;textarea"
+data[]="Invio comunicazioni;comunicazioni;45;yesno|;id;;idriga|;voltura;;"
+button="Salva;azione;;submit|Elimina;azione;#confirmDelete;submit|Annulla;azione;;submit"
+[view]
+
+[list]
+
+[standard]

@@ -1,0 +1,25 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[new]
+
+[edit]
+
+[view]
+
+[list]
+
+[standard]
+table="#"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Pratica esistente;numero;25;text"
+data[]="Titolo esistente;titolo;25;text"
+data[]="Via;via;39;text|Civico;civico;5;text|Elenco vie >>;via;100xget_elenco;button"
+data[]="N.C.T. Sezione;ctsezione;30;text|Foglio;ctfoglio;5;text|Mappale;ctmappale;5;text"
+data[]="N.C.E.U Sezione;cusezione;30;text|Foglio;cufoglio;5;text|Mappale;cumappale;5;text"
+data[]="Riferimento;riferimento;62;text"

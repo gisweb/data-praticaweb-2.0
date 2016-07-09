@@ -1,0 +1,27 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable="ivig"
+
+[edit]
+table="pe.sopralluoghi"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Motivo;motivo;60;autosuggest"
+data[]="Data;data;10;data"
+data[]="Note;note;50x3;textarea"
+button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
+
+[view]
+table="pe.sopralluoghi"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Motivo;motivo;60;text"
+data[]="Data;data;10;data"
+data[]="Note;note;50x3;textarea"
+[list]
+
+[standard]

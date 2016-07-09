@@ -1,0 +1,26 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[new]
+
+[edit]
+
+[view]
+
+[list]
+table="pe.abitabi"
+chiave="id"
+campi_ordinamento="data_assegnazione"
+
+[standard]
+table="pe.abitabi"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Richiesta n°;prot_rich;25;text|Data Richiesta;data_rich;10;data"
+data[]="Certificato n°;prot_doc;25;text|Data Certificato;data_doc;10;data"
+data[]="Data Rilascio;data_ril;10;data"
+data[]="Note;note;50x3;textarea"

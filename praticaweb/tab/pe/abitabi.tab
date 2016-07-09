@@ -1,0 +1,30 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable="iagi"
+;print_form="pe.abitabi"
+print_form="pe.avvioproc"
+
+[edit]
+table="pe.abitabi"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Protocollo Richiesta;prot_rich;25;text|Data Richiesta;data_rich;10;data"
+data[]="Certificato n°;numero_doc;25;text|Data Certificato;data_doc;10;data|Protocollo Agibilità;prot_doc;25;text"
+data[]="Data Rilascio;data_ril;10;data"
+data[]="Note;note;50x3;textarea"
+button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
+[view]
+table="pe.abitabi"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Protocollo Richiesta;prot_rich;25;text|Data Richiesta;data_rich;10;data"
+data[]="Certificato n°;numero_doc;25;text|Data Certificato;data_doc;10;data|Protocollo Agibilità;prot_doc;25;text"
+data[]="Data Rilascio;data_ril;10;data"
+data[]="Note;note;50x3;textarea"
+[list]
+
+[standard]
