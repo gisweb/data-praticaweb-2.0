@@ -16,13 +16,14 @@ data[]="Manc.;mancante;30;radio"
 data[]="Nome del Documento;documento;;text"
 
 [view]
-table="pe.doc_allegati"
+table="pe.grouped_allegati"
 chiave="id"
 campi_ordinamento=""
 campi_obbligatori=""
 data[]=";id;3%#pe.scheda_documento;btn_list"
-data[]="Documenti;documento;40%;text"
-data[]="Allegati;doc;55%;text"
+data[]="Iter;iter;8%;text"
+data[]="Tipo;tipo;20%;text"
+data[]="Allegati;doc;50%;text"
 [list]
 
 [standard]
