@@ -1,0 +1,23 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[new]
+
+[edit]
+
+[view]
+
+[list]
+
+[standard]
+table="#"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Anno;vigi.elenco_report.year;10;search_text_equal"
+data[]="Mese;vigi.elenco_report.month;200xvigi.elenco_mesi;search_list"
+
+
