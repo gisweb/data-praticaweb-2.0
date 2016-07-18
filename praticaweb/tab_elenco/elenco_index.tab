@@ -12,6 +12,7 @@ rdp,itec,iamm-2@NewWindow@'pe.eliminapratica.php?ricerca=1','Praticaweb',0,0,'ye
 -4@NewWindow@'vigi.avvioproc.php?mode=new','Praticaweb',0,0,'yes'@Nuova Pratica di Controllo Edilizio@Inserisce una nuova pratica.
 -4@NewWindow@'vigi.avvioproc.php?mode=new&tipologia_pratica=esposto','Praticaweb',0,0,'yes'@Nuova Esposto@Inserisce unanuovo esposto.
 -3@NewWindow@'vigi.eliminapratica.php?ricerca=1','Praticaweb',0,0,'yes'@Elimina Pratica@Individua ed elimina la pratica scelta.
+-4@NewWindow@'vigi.report.php?new=1','ricercaPraticaweb',0,0,'yes'@Report Pratiche di Vigilanza@Modalit&agrave; di ricerca di una pratica archiviata.
 -1@Anagrafe Tributaria
 -1@NewWindow@'anagrafe_tributaria.php?mode=view','AnagrafeTributaria',0,0,'yes'@Anagrafe Tributaria@Report della situazione delle pratiche di Anagrafe Tributaria.
 -3@Praticaweb Navigator per la cartografia
