@@ -4,6 +4,7 @@ prei,Istruttoria
 50,Ubicazione Intervento,vigi.ubicazione,
 70,Pianificazione e Vincoli,vigi.vincoli,
 vigi,Vigilanza
+90,Sospensioni/Diffide,vigi.sospensioni
 100,Infrazioni,vigi.infrazioni,
 110,Sopralluoghi,vigi.sopralluoghi
 120,Sanzioni,vigi.sanzioni,
