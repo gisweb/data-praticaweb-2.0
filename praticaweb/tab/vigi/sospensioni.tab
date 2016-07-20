@@ -1,0 +1,33 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+;print_form="vigi.sospensioni"
+
+[edit]
+table="vigi.sospensioni"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori="data_sospensione"
+data[]="Tipo;tipo;200xvigi.elenco_sosp_diff;selectdb"
+data[]="Protocollo;prot_sospensione;25;text|Data;data_sospensione;10;data"
+data[]="Data Notifica;data_notifica;10;data"
+data[]="Motivo;motivo;55x8;textarea"
+data[]="Note;note;55x8;textarea"
+button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
+
+[view]
+table="vigi.sospensioni"
+chiave="id"
+campi_ordinamento="data_sospensione"
+campi_obbligatori=""
+data[]="Tipo;tipo;200xvigi.elenco_sosp_diff;selectdb"
+data[]="Protocollo;prot_sospensione;25;text|Data;data_sospensione;10;data"
+data[]="Data Notifica;data_notifica;10;data"
+data[]="Motivo;motivo;55x8;textarea"
+data[]="Note;note;55x8;textarea"
+
+[list]
+
+[standard]
