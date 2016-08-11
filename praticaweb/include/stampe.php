@@ -92,7 +92,7 @@ $customFields["ubicazione"]= Array("title"=>"ubicazione");
 
 
 /**************************************   Catasto Terreni  ***********************************************/
-$sql="SELECT DISTINCT coalesce(B.nome,'') as sezione,foglio,A.sezione as sez FROM pe.cterreni A LEFT JOIN nct.sezioni B USING(sezione) WHERE pratica=?";
+$sql="SELECT DISTINCT coalesce(B.sezione,'') as sezione,foglio,A.sezione as sez FROM pe.cterreni A LEFT JOIN nct.sezioni B USING(sezione) WHERE pratica=?";
 $ris=$db->fetchAll($sql,Array($this->pratica));
 for($i=0;$i<count($ris);$i++){
 	$sez=$ris[$i]["sez"];
@@ -112,7 +112,7 @@ $customFields["particelle_ct"]=Array("title"=>"particelle_ct","isFolder"=>"true"
 $customFields["elenco_cterreni"]=Array("title"=>"elenco_cterreni");
 $customData["elenco_cterreni"]=implode(", ",$customData["particelle_fg"]);
 /**************************************   Catasto Terreni  ***********************************************/
-$sql="SELECT DISTINCT coalesce(B.nome,'') as sezione,foglio,A.sezione as sez FROM pe.curbano A LEFT JOIN nct.sezioni B USING(sezione) WHERE pratica=?";
+$sql="SELECT DISTINCT coalesce(B.sezione,'') as sezione,foglio,A.sezione as sez FROM pe.curbano A LEFT JOIN nct.sezioni B USING(sezione) WHERE pratica=?";
 $ris=$db->fetchAll($sql,Array($this->pratica));
 for($i=0;$i<count($ris);$i++){
 	$sez=$ris[$i]["sez"];

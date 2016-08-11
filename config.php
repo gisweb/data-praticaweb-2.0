@@ -62,7 +62,7 @@ define('QTID_PARTICELLE','8');
 define('QTID_CIVICI','34');
 
 //in sessione per pmapper
-define('UPDATE_SW',1);
+define('UPDATE_SW',0);
 
 
 $_SESSION['USER_DATA']=DATA_DIR;
