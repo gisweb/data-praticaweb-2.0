@@ -20,7 +20,7 @@ campi_obbligatori=""
 
 data[]="Data Chiusura Pratica;data_chiusura;10;data"
 data[]="Note di chiusura;note_chiusura;;text"
-data[]="Allegati;id;#ui-icon-folder-open#Carica#action:stp.documenti#plugins:open-page#tipo_documento:allegato#direzione:0#mode:new#pratica;folder";
+data[]="Allegati;id;#ui-icon-folder-open#Carica#action:stp.documenti.php#plugins:open-page#tipo_documento:allegato#direzione:0#mode:new#pratica;folder";
 data[]=";;pe.avvioproc;stampa"
 [list]
 

@@ -28,7 +28,7 @@ rdp,itec,iamm-4@NewWindow@'storage.invio.php?mode=new','Praticaweb',0,0,'yes'@Nu
 -2@Anagrafe Tributaria
 -2@NewWindow@'anagrafe_tributaria.php?mode=view','AnagrafeTributaria',0,0,'yes'@Anagrafe Tributaria@Report della situazione delle pratiche di Anagrafe Tributaria.
 -3@Praticaweb Navigator per la cartografia
--3@ApriMappa@'savona_osm_con_pris','savona'@Accedi alla cartografia del comune@Quadro d'unione del catastale Piano Regolatore e vincoli
+-3@ApriMappa@'imperia_riservata','imperia'@Accedi alla cartografia del comune@Quadro d'unione del catastale Piano Regolatore e vincoli
 cdu-3@NewWindow@'cdu.richiesta.php?mode=new','Praticaweb',0,0,'yes'@Nuovo Certificato di Destinazione Urbanistica@
 cdu-4@NewWindow@'cdu.ricerca.php','Praticaweb',0,0,'yes'@Ricerca Certificato di Destinazione Urbanistica@
 -2@Amministrazione Sistema

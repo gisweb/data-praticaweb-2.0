@@ -17,7 +17,7 @@ campi_ordinamento=""
 campi_obbligatori=""
 
 
-data[]="Allegati;id;#ui-icon-folder-open#Carica#action:stp.documenti#plugins:open-page#tipo_documento:allegato#direzione:0#mode:new#pratica;folder";
+data[]="Allegati;id;#ui-icon-folder-open#Carica#action:stp.documenti.php#plugins:open-page#tipo_documento:allegato#direzione:0#mode:new#pratica;folder";
 
 [list]
 
