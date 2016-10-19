@@ -44,8 +44,8 @@
 /**
  * The root of your DOMPDF installation
  */
-//define("DOMPDF_DIR", realpath(dirname(__FILE__)));
-define("DOMPDF_DIR", '/apps/includes/dompdf');
+define("DOMPDF_DIR", realpath(dirname(__FILE__)."/dompdf"));
+//define("DOMPDF_DIR", './dompdf');
 
 /**
  * The location of the DOMPDF include directory
@@ -191,6 +191,7 @@ define("DOMPDF_ENABLE_REMOTE", false);
  * @param string $class
  */
 function DOMPDF_autoload($class) {
+    echo "<p>$class</p>";
   $filename = mb_strtolower($class) . ".cls.php";
   require_once(DOMPDF_INC_DIR . "/$filename");
 }
