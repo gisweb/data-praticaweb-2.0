@@ -3,8 +3,9 @@
 table=""
 viewable=""
 editable="itec;iamm"
-;print_form="pe.pareri"
-print_form="pe.avvioproc"
+print_form="pe.pareri"
+print_prms="tipo=pe.pareri;pippo=2"
+;print_form="pe.avvioproc"
 [new1]
 table="pe.pareri"
 chiave="id"

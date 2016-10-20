@@ -4,6 +4,7 @@ table=""
 viewable=""
 editable="rdp;iamm"
 print_form="pe.avvioproc"
+print_prms="tipo=pe.avvioproc"
 [edit]
 table="pe.avvioproc"
 chiave="id"
