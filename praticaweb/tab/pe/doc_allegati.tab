@@ -14,6 +14,7 @@ data[]="Elimina;id;50;radio"
 data[]="Alleg.;allegato;30;radio"
 data[]="Manc.;mancante;30;radio"
 data[]="Nome del Documento;documento;;text"
+data[]="Iter;nome_iter;;text"
 
 [view]
 table="pe.grouped_allegati"
