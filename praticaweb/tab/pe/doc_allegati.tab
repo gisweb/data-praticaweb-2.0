@@ -4,6 +4,7 @@ table=""
 viewable=""
 editable="itec;iamm;ivigi;iagi"
 print_form="pe.allegati"
+print_prms="tipo=pe.allegati"
 ;print_form="pe.avvioproc"
 [edit]
 table="pe.doc_allegati"

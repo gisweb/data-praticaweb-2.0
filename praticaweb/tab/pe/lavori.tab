@@ -3,8 +3,9 @@
 table=""
 viewable=""
 editable="ilav"
-;print_form="pe.lavori"
-print_form="pe.avvioproc"
+print_form="pe.lavori"
+print_prms="tipo=pe.lavori"
+;print_form="pe.avvioproc"
 
 [edit]
 table="pe.lavori"
