@@ -4,6 +4,7 @@ table=""
 viewable=""
 editable="rdp;iamm"
 print_form="pe.avvioproc"
+print_prms="tipo=pe.avvioproc"
 [new]
 table="pe.avvio_procedimento_indirizzi"
 ref_table="pe.avvioproc"

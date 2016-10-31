@@ -3,7 +3,7 @@ $(document).ready(function(){
 
     if (mode=='new') {
         $('#tipo').trigger('change');
-        $("#form-avvioproc").bind('submit',function(){
+/*        $("#form-avvioproc").bind('submit',function(){
             $('<div id="wait-div"><center style="font-size:16px;font-weight:bold;">Attendere prego, salvataggio in corso.....</center></div>').dialog({
                 height:200,
                 width:400,
@@ -34,7 +34,7 @@ $(document).ready(function(){
             });
            
             return save;
-        });
+        });*/
     }
     if (mode == 'view'){
         var d = $('#cartella').data();

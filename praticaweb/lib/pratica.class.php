@@ -188,13 +188,13 @@ class pratica extends generalPratica{
 /*********************************************************************************************************/
 	
 	function nuovoTitolo($data){
-		$db=$this->db;
+/*		$db=$this->db;
 		$sql="SELECT protocollo as numero,prog FROM pe.avvioproc WHERE pratica=$this->pratica;";
 		$db->sql_query($sql);
 		$numero=$db->sql_fetchfield('numero');
 		$prog=$db->sql_fetchfield('prog');
 		$sql="UPDATE pe.titolo SET titolo=protocollo WHERE pratica=$this->pratica;";
-		$db->sql_query($sql);
+		$db->sql_query($sql);*/
 		
 	}
 /*********************************************************************************************************/	
@@ -294,14 +294,14 @@ UNION
 		if($rateizzato==1)	// <---- MODIFICA DEL 21/06/2012
 			$sql="DELETE FROM oneri.rate WHERE pratica=$this->pratica and rata in (1,2,3,4);
 INSERT INTO oneri.rate(pratica,rata,totale,versato,uidins,tmsins) (
-(SELECT $this->pratica as pratica,1 as rata,totale/4,totale/4,$this->userid,$t FROM oneri.vista_totali WHERE pratica=$this->pratica)
+(SELECT $this->pratica as pratica,1 as rata,totale*04,totale*0.4,$this->userid,$t FROM oneri.vista_totali WHERE pratica=$this->pratica)
 UNION
-(SELECT $this->pratica as pratica,2 as rata,totale/4,totale/4,$this->userid,$t FROM oneri.vista_totali WHERE pratica=$this->pratica)
+(SELECT $this->pratica as pratica,2 as rata,totale*0.2,totale*0.2,$this->userid,$t FROM oneri.vista_totali WHERE pratica=$this->pratica)
 UNION
-(SELECT $this->pratica as pratica,3 as rata,totale/4,totale/4,$this->userid,$t FROM oneri.vista_totali WHERE pratica=$this->pratica)
+(SELECT $this->pratica as pratica,3 as rata,totale*0.2,totale*0.2,$this->userid,$t FROM oneri.vista_totali WHERE pratica=$this->pratica)
 )
 UNION
-(SELECT $this->pratica as pratica,4 as rata,totale/4,totale/4,$this->userid,$t FROM oneri.vista_totali WHERE pratica=$this->pratica)
+(SELECT $this->pratica as pratica,4 as rata,totale*0.2,totale*0.2,$this->userid,$t FROM oneri.vista_totali WHERE pratica=$this->pratica)
 ;";
 		else
 			$sql="DELETE FROM oneri.rate WHERE pratica=$this->pratica and rata in (1,2,3,4);

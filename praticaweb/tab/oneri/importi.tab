@@ -3,9 +3,9 @@
 table=""
 viewable=""
 editable=""
-;print_form="oneri.importi"
-print_form="pe.avvioproc"
-
+print_form="oneri.importi"
+;print_form="pe.avvioproc"
+print_prms="tipo=oneri.importi"
 [new]
 
 [edit]
