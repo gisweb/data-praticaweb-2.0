@@ -1,0 +1,37 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[new]
+table="oneri.monetizzazione_nta"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Mc;mc;15;numero"
+data[]="Tariffa per mq;tariffa_mq;10;valuta"
+;data[]="Quietanza;quietanza;15;text|Data;data;10;data"
+button="Salva;azione;;submit|Annulla;azione;;submit"
+
+[edit]
+table="oneri.monetizzazione_nta"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Mc;mc;15;numero"
+data[]="Tariffa per mq;tariffa_mq;10;valuta"
+;data[]="Quietanza;quietanza;15;text|Data;data;10;data"
+button="Salva;azione;;submit|Elimina;azione;#confirmDelete;submit|Annulla;azione;;submit"
+[view]
+table="oneri.vista_monetizzazione_nta_tot"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]=";id;5%;idriga"
+data[]="Mq calcolati;mq;15;numero"
+data[]="Tariffa tot;tariffa_tot;10;valuta"
+;data[]="Quietanza;quietanza;15;text|Data;data;10;data"
+[list]
+
+[standard]

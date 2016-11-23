@@ -1,0 +1,43 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+table_list = "1"
+
+[edit]
+table="stp.e_modelli"
+chiave="id"
+campi_obbligatori="nome"
+data[]="Nome;nome;100;text"
+data[]="Form;form;200xstp.elenco_form;selectdb"
+data[]="Descrizione;descrizione;60x4;textarea"
+data[]="Proprietario;proprietario;50;text"
+data[]="Tipo Pratica;tipo_pratica;400xpe.elenco_tipipratiche_stampe;multiselectdb"
+data[]="Documenti Multipli;multiple;50;noyes"
+data[]="File;file;50;upload"
+button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
+
+[view]
+table="stp.e_modelli"
+chiave="id"
+campi_obbligatori="nome"
+data[]="Nome;nome;100;text"
+data[]="Form;form;200xstp.elenco_form;selectdb"
+data[]="Descrizione;descrizione;60x4;textarea"
+data[]="Proprietario;proprietario;50;text"
+data[]="Tipo Pratica;tipo_pratica;400xpe.elenco_tipipratiche_stampe;multiselectdb"
+data[]="Documenti Multipli;multiple;50;yesno"
+button="Annulla;azione;;submit|preview;azione;#preview;button"
+
+[list]
+table="stp.e_modelli"
+chiave="id"
+campi_ordinamento="nome"
+campi_obbligatori=""
+data[]=";nome;2%#stp.modelli;btn_modelli"
+data[]=";id;2%#stp.editor;btn_edit"
+data[]=";id;2%#stp.modelli;btn_view"
+data[]="Nome;nome;200;text"
+data[]="Form;form;200xelenco_form;selectdb"
+data[]="Descrizione;descrizione;50%;text"

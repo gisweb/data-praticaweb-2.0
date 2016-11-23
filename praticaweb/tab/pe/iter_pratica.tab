@@ -12,7 +12,8 @@ campi_obbligatori=""
 data[]=";id;3%#;btn_edit"
 data[]=";row_form;;hidden"
 data[]=";row_class;;hidden"
-data[]="Data;data;10%;text"
+data[]="Data;data;7%;text"
+data[]="Utente;nome;15%;text"
 data[]="Evento;testo;70%;text"
 [list]
 
