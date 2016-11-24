@@ -516,5 +516,83 @@ class appUtils {
         $result=$db->fetchAll($sql,Array($pr));
         return $result[0]["titolo"];
     }
+
+    static function getScadenze($userId){
+            $conn=utils::getDb();
+            //DETTAGLI DELLE SCADENZE
+            $lLimit=(defined('LOWER_LIMIT'))?(LOWER_LIMIT):(5);
+            $uLimit=(defined('UPPER_LIMIT'))?(UPPER_LIMIT):(3);
+            $sql="select * from pe.vista_scadenze_utenti where $userId = ANY(interessati) and scadenza <= CURRENT_DATE +$lLimit  and scadenza >= CURRENT_DATE -$uLimit and completata=0 order by scadenza";
+            
+            $stmt=$conn->prepare($sql);
+            if(!$stmt->execute()){
+                return Array("errore"=>1,"query"=>$sql);
+            }
+            else{
+                $res=$stmt->fetchAll(PDO::FETCH_ASSOC);
+                return Array("totali"=>count($res),"data"=>$res);
+            }
+    }
+    static function getVerifiche($userId){
+            $conn=utils::getDb();
+            $sql="select * from pe.vista_verifiche_utenti where $userId = ANY(interessati);";
+            
+            $stmt=$conn->prepare($sql);
+            if(!$stmt->execute()){
+                return Array("errore"=>1,"query"=>$sql);
+            }
+            else{
+                $res=$stmt->fetchAll(PDO::FETCH_ASSOC);
+                return Array("totali"=>count($res),"data"=>$res);
+            }
+    }
+    static function chooseRespVerifiche($tipo){
+        $res = 'NULL';
+        if ($tipo == 4){
+            $res = 50;
+        }
+        return $res;
+        
+    }
+    static function getNotifiche($userId){
+            $conn=utils::getDb();
+            //DETTAGLI DELLE SCADENZE
+            $lLimit=(defined('LOWER_LIMIT'))?(LOWER_LIMIT):(5);
+            $uLimit=(defined('UPPER_LIMIT'))?(UPPER_LIMIT):(3);
+            $sql="select A.id,A.pratica,B.numero,B.data_prot,testo as oggetto,ARRAY[soggetto_notificato] as interessati from pe.notifiche A inner join pe.avvioproc B using(pratica) where soggetto_notificato=$userId and visionato=0;";
+            
+            $stmt=$conn->prepare($sql);
+            if(!$stmt->execute()){
+                return Array("errore"=>1,"query"=>$sql);
+            }
+            else{
+                $res=$stmt->fetchAll(PDO::FETCH_ASSOC);
+                return Array("totali"=>count($res),"data"=>$res);
+            }
+    }
+
+    static function getAnnotazioni($userId){
+            $conn=utils::getDb();
+            //DETTAGLI DELLE SCADENZE
+            $lLimit=(defined('LOWER_LIMIT'))?(LOWER_LIMIT):(5);
+            $uLimit=(defined('UPPER_LIMIT'))?(UPPER_LIMIT):(3);
+            $sql="select * from pe.vista_verifiche_utenti where $userId = ANY(interessati);";
+            
+            $stmt=$conn->prepare($sql);
+            if(!$stmt->execute()){
+                return Array("errore"=>1,"query"=>$sql);
+            }
+            else{
+                $res=$stmt->fetchAll(PDO::FETCH_ASSOC);
+                return Array("totali"=>0,"data"=>Array());
+            }
+    }
+    static function setVisitata($id,$frm,$user){
+        $sql="INSERT INTO pe.pratiche_visitate(pratica,form,userid) VALUES(?,?,?)";
+        $conn=utils::getDb();
+        $stmt=$conn->prepare($sql);
+        $stmt->execute(Array($id,$frm,$user));
+    }
+
 }
 ?>
