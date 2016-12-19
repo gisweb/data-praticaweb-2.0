@@ -27,6 +27,7 @@ data[]="Nome;nome;50;string"
 data[]="Descrizione;descrizione;50x6;string"
 data[]="Inserimento di Default;default_ins;50;noyes"
 data[]="Abilitato;enabled;50;yesno"
+data[]="On Line;online;50;yesno"
 button="Chiudi;azione;##;submit"
 [list]
 table="pe.e_documenti"
@@ -40,6 +41,7 @@ data[]="Nome;nome;25%;text"
 data[]="Descrizione;descrizione;50%;text"
 data[]="Inserimento di Default;default_ins;10%;yesno"
 data[]="Abilitato;enabled;3%;yesno"
+data[]="On Line;online;3%;yesno"
 
 [standard]
 
