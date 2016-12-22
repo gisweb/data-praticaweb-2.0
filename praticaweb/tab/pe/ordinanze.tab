@@ -1,0 +1,32 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[edit]
+table="vigi.ordinanze"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori="tipo;data_ordinanza"
+data[]="Tipo Ordinanza;tipo;200xelenco_tipo_ordinanza;select"
+data[]="Data ordinanza;data_ordinanza;10;data|Protocollo;protocollo;25;text|Data Notifica;data_notifica;10;data"
+data[]="Stato;stato;200xelenco_stato_demolizione;select"
+data[]="Data demolizione;data_demolizione;10;data"
+;data[]="Data inserimento fascicolo;data_ins_fascicolo;10;data|Data atti;data_atti;10;data"
+data[]="Note;note;50x4;textarea"
+button="Salva;azione;;submit|Elimina;azione;#confirmDelete;submit|Annulla;azione;;submit"
+[view]
+table="vigi.ordinanze"
+chiave="id"
+campi_ordinamento="data_ordinanza"
+campi_obbligatori=""
+data[]="Tipo Ordinanza;tipo;;text"
+data[]="Data ordinanza;data_ordinanza;10;data|Protocollo;protocollo;25;text|Data Notifica;data_notifica;10;data"
+data[]="Stato;stato;;text"
+data[]="Data demolizione;data_demolizione;10;data"
+data[]="Note;note;200;text"
+
+[list]
+
+[standard]

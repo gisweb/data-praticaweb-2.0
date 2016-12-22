@@ -1,0 +1,14 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[standard]
+table="#"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+
+data[]="Data Scadenza;pe.scadenze.scadenza;10;search_date"
+data[]="Tipo Scadenza;pe.scadenze.codice;400x300xpe.elenco_tiposcadenzexordine>=0;search_multilist"

@@ -1,17 +1,18 @@
 prei,PreIstruttoria
-10,Avvio Procedimento,pe.avvioproc,prei
+10,Avvio Procedimento,pe.avvioproc_amb,prei
 20,Soggetti Interessati,pe.elenco_soggetti,prei
 50,Ubicazione Intervento,pe.ubicazione,prei
 40,Elenco Allegati,pe.allegati,prei
 45,Integrazione Documenti,pe.integrazioni,prei
-it,Istruttoria Tecnica
-70,Vincoli Presenti,pe.vincoli,it
-80,Dati di Progetto,pe.progetto,it
+,Istruttoria
+110,Dati Istruttoria,pe.istruttoria,
 92,Sospensioni,pe.sospensioni,it
-ia,Istruttoria Amministrativa
-100,Richiesta Pareri,pe.pareri,
-90,Asservimenti,pe.asservimenti,
-91,Atti e Titoli,pe.atti,ia
+70,Pianificazione e Vincoli,pe.vincoli,it
+80,Dati di Progetto,pe.progetto,it
+94,Conformità Ambientale,pe.conformita_ptcp,it
+95,Conformità Urbanistica,pe.conformita_puc,it
+100,Pareri,pe.pareri,
+,Titolo
 160,Rilascio Titolo,pe.titolo,
 iter,Iter
 295,Scadenze,pe.scadenze,

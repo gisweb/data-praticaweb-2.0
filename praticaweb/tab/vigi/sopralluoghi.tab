@@ -8,20 +8,23 @@ editable="ivig"
 table="vigi.sopralluoghi"
 chiave="id"
 campi_ordinamento=""
-campi_obbligatori=""
-data[]="Motivo;motivo_v;60;autosuggest"
+campi_obbligatori="data;motivo"
+data[]="Motivo;motivo;200xelenco_motivi_sopralluoghi;select"
 data[]="Data;data;10;data"
+data[]="Vigilanza;flag_vigilanza;50;noyes;"
 data[]="Note;note;50x3;textarea"
-button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
+button="Salva;azione;;submit|Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit"
 
 [view]
 table="vigi.sopralluoghi"
 chiave="id"
 campi_ordinamento=""
 campi_obbligatori=""
-data[]="Motivo;motivo_v;60;text"
+data[]="Motivo;motivo;60;text"
 data[]="Data;data;10;data"
+data[]="Vigilanza;flag_vigilanza;50;yesno;"
 data[]="Note;note;50x3;textarea"
+data[]="Allegati;id;#ui-icon-folder-open#Carica#action:vigi.documenti.php##plugins:open-page#tipo_documento:allegato#direzione:0#form:vigi.sopralluoghi#mode:new#pratica;folder";
 [list]
 
 [standard]

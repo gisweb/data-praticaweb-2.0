@@ -77,5 +77,23 @@ data[]="Titolo (Ditta);titolod;;text"
 data[]="Note;note;;text"
 data[]="Invio comunicazioni;comunicazioni;;yesno"
 [list]
-
+table="vigi.elenco_soggetti"
+chiave="id"
+campi_ordinamento="soggetto"
+campi_obbligatori=""
+data[]=";id;2%#vigi.scheda_soggetto;btn_view"
+data[]=";id;2%#vigi.scheda_soggetto;btn_edit"
+data[]="soggetto;soggetto;96%;text"
 [standard]
+
+[search]
+table="no tabella"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Cognome;cognome;60;text"
+data[]="Nome;nome;60;text"
+data[]="Ditta;ragsoc;60;text"
+data[]="Partita IVA;piva;20;text"
+data[]="Codice Fiscale;codfis;20;text"
+button="Annulla;azione;#goToView;button|Avanti;azione;;submit"
