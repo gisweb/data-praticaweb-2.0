@@ -1,6 +1,6 @@
 <?
-define('NOME_COMUNE','Comune di ....... - Pratiche Edilizie');//nome completo del comune che compare nell'intestazione
-
+define('NOME_COMUNE','Comune di Camogli - Pratiche Edilizie');//nome completo del comune che compare nell'intestazione
+error_reporting(E_ALL);
 define('DEBUG', 1); // Debugging 0 off 1 on
 define('DB_DRIVER','pdo_pgsql');
 define('DB_HOST','127.0.0.1');
@@ -11,23 +11,27 @@ if (file_exists(DATA_DIR.'config.local.php')){
 else{
 	define('DB_PORT','5432');
 }
-define('DB_NAME','');
+define('DB_NAME','gw_camogli');
 define('DB_USER','postgres');
 define('DB_PWD','postgres');
 
 
-define('MENU',DATA_DIR."praticaweb/mnu/");//cartella contenente la  configurazione dei menu
-define('TAB',DATA_DIR."praticaweb/tab/");//cartella contenente la  configurazione dei forms via file tab
-define('TAB_ELENCO',DATA_DIR."praticaweb/tab_elenco/");//cartella con elenchi testuali
-define('LIB',DATA_DIR."praticaweb/lib/");//cartella contenente la  configurazione dei forms via file tab
 
-define('MODELLI',DATA_DIR."praticaweb/modelli/");//cartella con i modelli di stampa 
-define('STAMPE',DATA_DIR."praticaweb/documenti/");//cartella con le stampe
+define('ALWAYS_VIEWABLE',1);
+define('ALWAYS_EDITABLE',1);
+
+define('MENU',DATA_DIR."praticaweb".DIRECTORY_SEPARATOR."mnu".DIRECTORY_SEPARATOR);//cartella contenente la  configurazione dei menu
+define('TAB',DATA_DIR."praticaweb".DIRECTORY_SEPARATOR."tab".DIRECTORY_SEPARATOR);//cartella contenente la  configurazione dei forms via file tab
+define('TAB_ELENCO',DATA_DIR."praticaweb".DIRECTORY_SEPARATOR."tab_elenco".DIRECTORY_SEPARATOR);//cartella con elenchi testuali
+define('LIB',APPS_DIR.DIRECTORY_SEPARATOR."lib".DIRECTORY_SEPARATOR);//cartella contenente la  configurazione dei forms via file tab
+
+define('MODELLI',DATA_DIR."praticaweb".DIRECTORY_SEPARATOR."modelli".DIRECTORY_SEPARATOR);//cartella con i modelli di stampa 
+define('STAMPE',DATA_DIR."praticaweb".DIRECTORY_SEPARATOR."documenti".DIRECTORY_SEPARATOR);//cartella con le stampe
 
 
 define('REPO_PATH','D');
-define('DEBUG_DIR',DATA_DIR."praticaweb/debug/");//cartella con i debug
-define('ALLEGATI',DATA_DIR."praticaweb/documenti/");//cartella dei file allegati sotto praticaweb
+define('DEBUG_DIR',DATA_DIR."praticaweb".DIRECTORY_SEPARATOR."debug".DIRECTORY_SEPARATOR);//cartella con i debug
+define('ALLEGATI',DATA_DIR."praticaweb".DIRECTORY_SEPARATOR."documenti".DIRECTORY_SEPARATOR);//cartella dei file allegati sotto praticaweb
 
 
 define('SMB_MODELLI','file://'.REPO_PATH.'/modelli-pe/');
@@ -49,18 +53,24 @@ define('SELF',$_SERVER["PHP_SELF"]);
 define('NEW_VINCOLI',1);
 
 define('THE_GEOM','bordo_gb');
-
-define('MAPSETID','MAPPA DELLE PRATICHE');
-define('CDUMAPSETID','MAPPA DEL CDU');
-define('TEMPLATE','gisclient');
+define('MAPPA_PRATICHE','savona_con_pris');
+define('LAYER_MAPPALI','particelle');
+define('OBJ_LAYER','2183:particelle');
+define('MAPSETID','savona_osm_con_pris');
+define('CDUMAPSETID','savona_osm_con_pris');
+define('TEMPLATE','savona');
 define('GC_VERSION',2);
-define('QTID_PARTICELLE','8');
-define('QTID_CIVICI','34');
+define('QTID_PARTICELLE','170');
+define('QTID_CIVICI','25');
 
 //in sessione per pmapper
 
 $_SESSION['USER_DATA']=DATA_DIR;
 
+
+//LIMITI
+define('UPPER_LIMIT',15);
+define('LOWER_LIMIT',15);
 
 $tmpDir=ini_get('include_path');
 $tmpDir=(in_array('/apps/includes',explode(':',$tmpDir)))?($tmpDir):($tmpDir.':/apps/includes');
@@ -69,4 +79,5 @@ ini_set('include_path',$incDir);
 //includo il file per il database in uso
 require_once (APPS_DIR."wrapdb/postgres.php");
 require_once (APPS_DIR."utils/debugutils.php");
+
 ?>
