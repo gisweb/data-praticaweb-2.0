@@ -388,18 +388,19 @@ class appUtils extends generalAppUtils {
                     $r["$idtipo"][$rec["id"]]=Array("tipo"=>$rec["tipo_pratica"],"modello"=>$rec["modello"],"info"=>Array("id"=>$rec["id"],"text"=>$rec["modello"],"descrizione"=>$rec["modello"]));
 
                 }
+                $modelli=Array();
                 foreach($r as $idTipo=>$values){
-                    $modelli=Array();
+
                     foreach($values as $idMod=>$data){
                         $modelli[]=$data["info"];
-                        $tipoPratica=$data["tipo"];
+                        //$tipoPratica=$data["tipo"];
                     }   
-                    $tipo=Array("id"=>$idTipo,"text"=>$tipoPratica,"state"=>"closed","children"=>$modelli);
-                    $tipi[$idTipo]=$tipo;    
+
                         
                 }
-                
-                $result=  array_values($tipi);
+                $tipo=Array("id"=>"0","text"=>"Tutti i tipi di Pratica","state"=>"open","children"=>$modelli);
+                $tipi=Array($tipo);
+                $result=  $tipi;
                 
                 break;
             case "civico":
