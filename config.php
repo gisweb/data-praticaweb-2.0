@@ -20,7 +20,7 @@ else{
 define('ALWAYS_VIEWABLE',1);
 define('ALWAYS_EDITABLE',1);
 
-define('PRINT_VERSION',1);
+define('PRINT_VERSION',2);
 
 define('MENU',DATA_DIR."praticaweb".DIRECTORY_SEPARATOR."mnu".DIRECTORY_SEPARATOR);//cartella contenente la  configurazione dei menu
 define('TAB',DATA_DIR."praticaweb".DIRECTORY_SEPARATOR."tab".DIRECTORY_SEPARATOR);//cartella contenente la  configurazione dei forms via file tab

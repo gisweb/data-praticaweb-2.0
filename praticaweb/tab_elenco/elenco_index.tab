@@ -34,7 +34,7 @@ cdu-4@NewWindow@'cdu.ricerca.php','Praticaweb',0,0,'yes'@Ricerca Certificato di 
 -2@NewWindow@'admin.utenti.php?mode=list','PraticawebUtenti',0,0,'yes'@Gestione Profili Utenti@- Aggiunta, Cancellazione, Modifica di un profilo utente.
 -2@NewWindow@'admin.gruppi.php?mode=list','PraticawebUtenti',0,0,'yes'@Gestione Profili Gruppi@- Aggiunta, Cancellazione, Modifica di un profilo gruppo di utenti.
 -2@Modelli di Stampa
--2@NewWindow@'stp.modelli.php?mode=list&tipo=html','AdminPraticaweb',0,0,'yes'@Elenco Modelli di Stampa@Gestione dei modelli di stampa in formato Word XML.
+-2@NewWindow@'stp.modelli.php?mode=list','AdminPraticaweb',0,0,'yes'@Elenco Modelli di Stampa@Gestione dei modelli di stampa in formato Word XML.
 -2@NewWindow@'stp.fieldsList.php','AdminPraticaweb',0,0,'yes'@Elenco Campi unione@Elenco dei Campi Unione per i Modelli di Stampa.
 -2@Gestione Elenchi
 -2@NewWindow@'pe.documenti.php?mode=list','ComuniPraticaweb',0,0,'yes'@Allegati@Elenco dei possibili allegati alla pratica.
