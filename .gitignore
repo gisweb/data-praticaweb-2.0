@@ -1,6 +1,6 @@
-/db/export_file/*
-/db/import_file/*
-/db/*
+/db/export_file/*.*
+/db/import_file/*.*
+/db/*.txt
 /praticaweb/documenti/pe/*
 /praticaweb/documenti/cdu/*
 /praticaweb/documenti/vigi/
