@@ -51,11 +51,11 @@ define('SELF',$_SERVER["PHP_SELF"]);
 define('NEW_VINCOLI',1);
 
 define('THE_GEOM','bordo_gb');
-define('MAPPA_PRATICHE','taggia_riservata');
+define('MAPPA_PRATICHE','taggia_pubblica');
 define('LAYER_MAPPALI','particelle');
 define('OBJ_LAYER','2183:particelle');
-define('MAPSETID','taggia_riservata');
-define('CDUMAPSETID','taggia_riservata');
+define('MAPSETID','taggia_pubblica');
+define('CDUMAPSETID','taggia_pubblica');
 define('TEMPLATE','gisclient');
 define('GC_VERSION',2);
 define('QTID_PARTICELLE','8');
