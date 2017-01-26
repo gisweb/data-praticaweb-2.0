@@ -1,0 +1,7 @@
+/praticaweb/documenti/pe/*
+/praticaweb/documenti/cdu/*
+/praticaweb/debug/*.debug
+/praticaweb/tab.orig
+/praticaweb/tab_elenco.orig
+/praticaweb/documenti/anagrafe_tributaria.txt
+config.local.php
