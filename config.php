@@ -55,7 +55,7 @@ define('MAPPA_PRATICHE','taggia_riservata');
 define('LAYER_MAPPALI','particelle');
 define('OBJ_LAYER','2183:particelle');
 define('MAPSETID','taggia_riservata');
-define('CDUMAPSETID','taggia_cdu');
+define('CDUMAPSETID','taggia_riservata');
 define('TEMPLATE','gisclient');
 define('GC_VERSION',2);
 define('QTID_PARTICELLE','8');
