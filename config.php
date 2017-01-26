@@ -53,12 +53,12 @@ define('SELF',$_SERVER["PHP_SELF"]);
 define('NEW_VINCOLI',1);
 
 define('THE_GEOM','bordo_gb');
-define('MAPPA_PRATICHE','savona_con_pris');
+define('MAPPA_PRATICHE','camogli_riservata');
 define('LAYER_MAPPALI','particelle');
 define('OBJ_LAYER','2183:particelle');
-define('MAPSETID','savona_osm_con_pris');
-define('CDUMAPSETID','savona_osm_con_pris');
-define('TEMPLATE','savona');
+define('MAPSETID','camogli_riservata');
+define('CDUMAPSETID','camogli_riservata');
+define('TEMPLATE','gisclient');
 define('GC_VERSION',2);
 define('QTID_PARTICELLE','170');
 define('QTID_CIVICI','25');
