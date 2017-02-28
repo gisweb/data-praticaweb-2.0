@@ -3,6 +3,7 @@
 table=""
 viewable=""
 editable=""
+print_prms="tipo=oneri.monetizzazione_nta;pippo=1"
 
 [new]
 table="oneri.monetizzazione_nta"

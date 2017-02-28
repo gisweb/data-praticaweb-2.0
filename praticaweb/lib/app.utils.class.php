@@ -400,7 +400,7 @@ class appUtils extends generalAppUtils {
                 }
                 $tipo=Array("id"=>"0","text"=>"Tutti i tipi di Pratica","state"=>"open","children"=>$modelli);
                 $tipi=Array($tipo);
-                $result=  $tipi;
+                $result=  array_unique($tipi);
                 
                 break;
             case "civico":
@@ -535,9 +535,6 @@ class appUtils extends generalAppUtils {
     }
     static function chooseRespVerifiche($tipo){
         $res = 'NULL';
-        if ($tipo == 4){
-            $res = 50;
-        }
         return $res;
         
     }
