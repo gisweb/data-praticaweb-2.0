@@ -533,11 +533,7 @@ class appUtils extends generalAppUtils {
                 return Array("totali"=>count($res),"data"=>$res);
             }
     }
-    static function chooseRespVerifiche($tipo){
-        $res = 'NULL';
-        return $res;
-        
-    }
+
     static function getNotifiche($userId){
             $conn=utils::getDb();
             //DETTAGLI DELLE SCADENZE
