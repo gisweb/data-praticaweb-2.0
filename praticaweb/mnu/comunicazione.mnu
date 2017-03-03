@@ -20,6 +20,8 @@ ia,Istruttoria Amministrativa
 135,Sanzioni,pe.sanzioni,
 lav,Lavori
 170,Esecuzione Lavori,pe.lavori,lav
+tit,Titolo
+180,Titolo,pe.titolo,
 agi,Agibilità
 200,Collaudo,pe.collaudo,agi
 210,Agibilità,pe.abitabi,agi

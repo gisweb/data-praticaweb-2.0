@@ -535,7 +535,7 @@ class appUtils extends generalAppUtils {
     static function chooseRespVerifiche($tipo){
         $res = 'NULL';
         if ($tipo == 4){
-            $res = 50;
+            $res = 22;
         }
         return $res;
         

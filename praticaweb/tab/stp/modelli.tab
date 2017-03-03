@@ -8,7 +8,7 @@ table_list = "1"
 [edit]
 table="stp.e_modelli"
 chiave="id"
-campi_obbligatori="nome"
+campi_obbligatori=""
 data[]="Nome;nome;100;text"
 data[]="Form;form;200xstp.elenco_form;selectdb"
 data[]="Descrizione;descrizione;60x4;textarea"
@@ -21,7 +21,7 @@ button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione
 [view]
 table="stp.e_modelli"
 chiave="id"
-campi_obbligatori="nome"
+campi_obbligatori=""
 data[]="Nome;nome;100;text"
 data[]="Form;form;200xstp.elenco_form;selectdb"
 data[]="Descrizione;descrizione;60x4;textarea"
