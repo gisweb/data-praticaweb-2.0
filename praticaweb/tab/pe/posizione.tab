@@ -21,7 +21,7 @@ chiave=""
 campi_ordinamento=""
 campi_obbligatori=""
 data[]="X;coordx;40;text|Y;coordy;40;text"
-data[]="Annotazioni;note;40x5;textarea
+data[]="Annotazioni;note;40x5;textarea"
 data[]=";geometry;50;hidden"
 [list]
 
