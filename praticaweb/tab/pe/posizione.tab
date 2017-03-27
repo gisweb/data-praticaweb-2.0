@@ -10,7 +10,7 @@ chiave="id"
 campi_ordinamento=""
 campi_obbligatori="coordx,coordy"
 data[]="X;coordx;40;text|Y;coordy;40;text"
-data[]="Annotazioni;note;40x5;textarea
+data[]="Annotazioni;note;40x5;textarea"
 data[]=";geometry;50;hidden"
 
 button="Salva;azione;;submit|Annulla;azione;#goToView;button|Elimina;azione;;submit"
