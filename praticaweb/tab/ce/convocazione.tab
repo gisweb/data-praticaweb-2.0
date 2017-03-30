@@ -25,6 +25,7 @@ campi_obbligatori=""
 data[]="Tipo di commissione;tipo;50;text|Sede;sede;50;text"
 data[]="Data;data_convocazione;10;data|Orario;ora_convocazione;6;ora"
 data[]="Note;note;200;text"
+data[]=";;ce.commissione;stampa"
 [list]
 
 [standard]
