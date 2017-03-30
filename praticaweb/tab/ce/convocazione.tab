@@ -3,6 +3,8 @@
 table=""
 viewable=""
 editable=""
+print_form="ce.commissione"
+print_prms="tipo=ce.commissione"
 
 [edit]
 table="ce.commissione"
