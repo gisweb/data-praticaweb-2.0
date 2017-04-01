@@ -25,5 +25,5 @@ if ($stmt->execute(Array($idPratica))){
     }
     $customData["cdu"] = array_values($particella);
 }
-print_array($customData);
+
 ?>
