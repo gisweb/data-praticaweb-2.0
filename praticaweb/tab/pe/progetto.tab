@@ -3,7 +3,7 @@
 table=""
 viewable=""
 editable="itec"
-
+print_form = "pe.istruttoria"
 [edit]
 table="pe.progetto"
 chiave="id"

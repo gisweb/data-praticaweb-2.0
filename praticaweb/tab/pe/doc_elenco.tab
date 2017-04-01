@@ -12,16 +12,16 @@ campi_obbligatori=""
 data[]="Alleg.;allegato;30;radio"
 data[]="Manc.;mancante;30;radio"
 data[]="Nome del Documento;documento;;text"
-
+data[]="Iter;nome_iter;;text"
 [edit]
-table="pe.doc_elenco_all"
+table="pe.doc_elenco"
 chiave="id"
 campi_ordinamento=""
 campi_obbligatori=""
 data[]="Alleg.;allegato;30;radio"
 data[]="Manc.;mancante;30;radio"
 data[]="Nome del Documento;documento;;text"
-
+data[]="Iter;nome_iter;;text"
 [view]
 
 [list]

@@ -1,0 +1,25 @@
+Prot. [protocollo] del [data_protocollo]
+Sig.[richiedente.nominativo;block=w:tr]c/o[progettista.nominativo;block=w:tr]
+[progettista.pec]OGGETTO: Pratica Edilizia n. [numero] - [tipo_pratica] Richiesta/Denuncia/Comunicazione [tipo_pratica;if [val]='Comunicazione art. 22';then 'COI'; if [val]= 'Permesso di Costruire';then 'PC';else 'ne COI ne PC'] - Opere: [oggetto] in [ubicazione]. Specifiche. TipoLettera.
+Con riferimento alla pratica in oggetto _________ 
+1. Elenco 1
+2. Elenco 2
+Pareri:
+1.	[richiedente.cognome;block=w:tr]
+Pertanto ________
+Pareri:
+
+Distinti saluti.
+Sanremo,
+IL RESPONSABILE DEL PROCEDIMENTO
+[responsabile_procedimento]
+IL DIRIGENTE DEL SETTORE TERRITORIO
+Ing Mauro BADII 
+
+Settore Territorio – Sportello Unico per l’Edilizia
+Tel 0184.580.321/3 – fax 0184.580.467 Centralino 0184.5801
+C.so Cavallotti 59 – 18038 Sanremo (IM)
+PEC: sue.comune.sanremo@legalmail.it
+
+Il presente documento è sottoscritto con firma digitale, da soggetto delegato, ai sensi dell’art. 21 del D.lgs 82/2005. La riproduzione dello stesso su supporto analogico è effettuata dal Comune di Sanremo e costituisce una copia integra e fedele dell’originale informatico, disponibile a richiesta presso lo Scrivente Servizio
+

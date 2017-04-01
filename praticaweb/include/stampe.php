@@ -48,11 +48,15 @@ for($i=0;$i<count($ris);$i++){
 	}
 	if ($soggetto["richiedente"] && !$soggetto["voltura"]) {
 		$customData["richiedente"][]=$soggetto;
-		$richiedenti[]="$nominativo, nato a $comunato, il $datanato, C.F. $codfis";
+                if ($piva){
+			$richiedenti[] = "$ragsoc, P.IVA $piva, con sede in $sede, $comuned $capd ($provd)";
+		}
+		else{
+			$richiedenti[]="$nominativo, C.F. $codfis, $indirizzo, $cap $comune ($prov)";		}
 	}
 	if ($soggetto["progettista"] && !$soggetto["voltura"]) {
 		$customData["progettista"][]=$soggetto;
-		$progettisti="$nominativo, nato a $comunato, il $datanato, C.F. $codfis";
+		$progettisti[]="$nominativo, C.F. $codfis, $indirizzo, $cap $comune ($prov)";
 	}
 	if ($soggetto["progettista_ca"] && !$soggetto["voltura"]) {
 		$customData["progettista_ca"][]=$soggetto;
@@ -143,11 +147,12 @@ $sql="SELECT prot_rich as protocollo_richiesta, data_rich as data_richiesta, pro
         (SELECT ente,max(data_rich) as data_rich FROM pe.pareri GROUP BY ente ) BB USING(ente,data_rich)) A 
         INNER JOIN (SELECT * FROM pe.e_enti WHERE enabled=1) B ON (A.ente=B.id) 
         LEFT JOIN pe.e_pareri C ON (A.parere=C.id)
-        WHERE pratica=? ORDER BY data_rich DESC";
+        WHERE pratica=? ORDER BY data_ril DESC";
 $customFields["pareri"]=  parse_query($sql,"pareri");
 $ris=$db->fetchAll($sql,Array($this->pratica));
 for($i=0;$i<count($ris);$i++){
 	$parere=$ris[$i];
+        $parere["con_prescr"]= (trim($parere["prescrizioni"])!='')?(1):(-1);
 	$customData["pareri"][]=$parere;
 	if($parere["codice"]=="ce"){
 		$customData["data_ce"]=$parere["data_ril"];
