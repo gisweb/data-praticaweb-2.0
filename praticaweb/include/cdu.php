@@ -23,7 +23,7 @@ if ($stmt->execute(Array($idPratica))){
         $particella[$res[$i]["particelle"]]["particella"] = $res[$i]["particelle"];
         $particella[$res[$i]["particelle"]]["vincoli"][] = Array("vincolo"=>$res[$i]["vincoli"]);
     }
-    $customData["vincolicdu"] = array_values($particella);
+    $customData["cdu"] = array_values($particella);
 }
 print_array($customData);
 ?>
