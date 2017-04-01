@@ -25,5 +25,5 @@ if ($stmt->execute(Array($idPratica))){
     }
     $customData["vincolicdu"] = array_values($particella);
 }
-
+utils::debug('../debug/CUSTOM_DATA.debug',$customData);
 ?>
