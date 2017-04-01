@@ -21,7 +21,7 @@ if ($stmt->execute(Array($idPratica))){
     $res = $stmt->fetchAll();
     for($i=0;$i<count($res);$i++){
         $particella[$res[$i]["particelle"]]["particella"] = $res[$i]["particelle"];
-        $particella[$res[$i]["particelle"]]["vincoli"][] = $res[$i]["vincoli"];
+        $particella[$res[$i]["particelle"]]["vincoli"][] = Array("vincolo"=>$res[$i]["vincoli"]);
     }
     $customData["vincolicdu"] = array_values($particella);
 }
