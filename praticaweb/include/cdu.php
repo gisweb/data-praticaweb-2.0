@@ -68,5 +68,5 @@ $stmt = $dbh->prepare($sql);
     }*/
     $customData["normativa"] =$norme;
 //}
-print_array($customData);
+//print_array($customData);
 ?>
