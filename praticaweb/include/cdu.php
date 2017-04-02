@@ -37,8 +37,15 @@ EOT;
 $stmt = $dbh->prepare($sql);
 if ($stmt->execute(Array($idPratica))){
     $res = $stmt->fetchAll();
-    for($i=0;$i<count($res);$i++){
-        $incendi[] = Array("particelle"=>$res[$i]["particelle"],"nome_incendio"=>$res[$i]["particelle"]);
+    if (count($res)){
+        for($i=0;$i<count($res);$i++){
+            $incendi[] = Array("particelle"=>$res[$i]["particelle"],"nome_incendio"=>$res[$i]["particelle"]);
+        }
+    }
+    else{
+        $incendi = Array(
+            "che il terreno di cui ai mappali sopra citati non RISULTA percorso dal fuoco."
+        );
     }
     $customData["incendi_cdu"] =$incendi;
 }
