@@ -53,7 +53,7 @@ $sql=<<<EOT
 select DISTINCT A.pratica,D.titolo,norma,articolo,format('art_%s.docx',articolo::varchar) as file_name from cdu.richiesta A inner join cdu.mappali B USING(pratica) INNER JOIN cdu.vincoli_norme C USING(vincolo,tavola,zona) INNER JOIN cdu.normativa D ON (id_normativa=C.id) order by pratica,articolo
 EOT;
 $stmt = $dbh->prepare($sql);
-if ($stmt->execute(Array($idPratica))){
+//if ($stmt->execute(Array($idPratica))){
     require_once APPS_DIR."plugins/openTbs/tbs_class_php5.php";
     require_once APPS_DIR."plugins/openTbs/tbs_plugin_opentbs.php";
     $TBS = new clsTinyButStrong; // new instance of TBS
@@ -67,6 +67,6 @@ if ($stmt->execute(Array($idPratica))){
         $norme[]=$file;
     }*/
     $customData["normativa"] =$norme;
-}
+//}
 print_array($customData);
 ?>
