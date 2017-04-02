@@ -50,23 +50,19 @@ if ($stmt->execute(Array($idPratica))){
     $customData["incendi_cdu"] =$incendi;
 }
 $sql=<<<EOT
-select DISTINCT A.pratica,D.titolo,norma,articolo,format('art_%s.docx',articolo::varchar) as file_name from cdu.richiesta A inner join cdu.mappali B USING(pratica) INNER JOIN cdu.vincoli_norme C USING(vincolo,tavola,zona) INNER JOIN cdu.normativa D ON (id_normativa=C.id) order by pratica,articolo
+select DISTINCT A.pratica,file_name,riferimento,articolo from cdu.richiesta A inner join cdu.mappali B USING(pratica) INNER JOIN cdu.vincoli_norme C USING(vincolo,tavola,zona) INNER JOIN cdu.normativa D ON (id_normativa=C.id) WHERE pratica=? order by pratica,articolo
 EOT;
 $stmt = $dbh->prepare($sql);
-//if ($stmt->execute(Array($idPratica))){
+if ($stmt->execute(Array($idPratica))){
     require_once APPS_DIR."plugins/openTbs/tbs_class_php5.php";
     require_once APPS_DIR."plugins/openTbs/tbs_plugin_opentbs.php";
     $TBS = new clsTinyButStrong; // new instance of TBS
     $TBS->Plugin(TBS_INSTALL, OPENTBS_PLUGIN); // load OpenTBS plugin
     $TBS->LoadTemplate($this->modelliDir."NORMATIVA CAMOGLI.docx",OPENTBS_DEFAULT);
-    $norme[]=$TBS->GetBlockSource("art25", FALSE, FALSE);
-    $norme[]=$TBS->GetBlockSource("art27", FALSE, FALSE);
-    //$res = $stmt->fetchAll();
-    /*for($i=0;$i<count($res);$i++){
-        $file="";
-        $norme[]=$file;
-    }*/
+    $res = $stmt->fetchAll();
+    for($i=0;$i<count($res);$i++){
+        $norme[]=$TBS->GetBlockSource($res[$i]["riferimento"], FALSE, FALSE);
+    }
     $customData["normativa"] =$norme;
-//}
-//print_array($customData);
+}
 ?>
