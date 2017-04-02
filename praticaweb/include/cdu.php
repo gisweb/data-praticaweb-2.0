@@ -68,4 +68,5 @@ if ($stmt->execute(Array($idPratica))){
     }*/
     $customData["normativa"] =$norme;
 }
+print_array($customData);
 ?>
