@@ -54,16 +54,18 @@ select DISTINCT A.pratica,D.titolo,norma,articolo,format('art_%s.docx',articolo:
 EOT;
 $stmt = $dbh->prepare($sql);
 if ($stmt->execute(Array($idPratica))){
-    //require_once APPS_DIR."plugins/openTbs/tbs_class_php5.php";
-    //require_once APPS_DIR."plugins/openTbs/tbs_plugin_opentbs.php";
-   // $TBS = new clsTinyButStrong; // new instance of TBS
-    //$TBS->Plugin(TBS_INSTALL, OPENTBS_PLUGIN); // load OpenTBS plugin
-    //$TBS->LoadTemplate($this->modelliDir."documentLib".DIRECTORY_SEPARATOR."normativa.docx",OPENTBS_DEFAULT);
-    $res = $stmt->fetchAll();
-    for($i=0;$i<count($res);$i++){
+    require_once APPS_DIR."plugins/openTbs/tbs_class_php5.php";
+    require_once APPS_DIR."plugins/openTbs/tbs_plugin_opentbs.php";
+    $TBS = new clsTinyButStrong; // new instance of TBS
+    $TBS->Plugin(TBS_INSTALL, OPENTBS_PLUGIN); // load OpenTBS plugin
+    $TBS->LoadTemplate($this->modelliDir."NORMATIVA CAMOGLI.docx",OPENTBS_DEFAULT);
+    $norme[]=$TBS->GetBlockSource("art25", FALSE, FALSE);
+    $norme[]=$TBS->GetBlockSource("art27", FALSE, FALSE);
+    //$res = $stmt->fetchAll();
+    /*for($i=0;$i<count($res);$i++){
         $file="";
         $norme[]=$file;
-    }
+    }*/
     $customData["normativa"] =$norme;
 }
 ?>
