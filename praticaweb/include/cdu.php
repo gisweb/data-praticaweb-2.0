@@ -50,7 +50,7 @@ if ($stmt->execute(Array($idPratica))){
     $customData["incendi_cdu"] =$incendi;
 }
 $sql=<<<EOT
-select DISTINCT A.pratica,file_name,riferimento,articolo from cdu.richiesta A inner join cdu.mappali B USING(pratica) INNER JOIN cdu.vincoli_norme C USING(vincolo,tavola,zona) INNER JOIN cdu.normativa D ON (id_normativa=C.id) WHERE pratica=? order by pratica,articolo
+select DISTINCT A.pratica,file_name,riferimento,articolo from cdu.richiesta A inner join cdu.mappali B USING(pratica) INNER JOIN cdu.vincoli_norme C USING(vincolo,tavola,zona) INNER JOIN cdu.normativa D ON (id_normativa=C.id_norma) WHERE pratica=? order by pratica,articolo
 EOT;
 $stmt = $dbh->prepare($sql);
 if ($stmt->execute(Array($idPratica))){
