@@ -9,7 +9,11 @@ Esempio File di configurazione : Gruppi-Permessi@Nome Tabella/Permessi@Nome Java
 -3@NewWindow@'report.scadenze.php','Praticaweb',0,0,'yes'@Elenco delle Scadenze@Elenco delle Scadenze.
 -3@NewWindow@'pe.eliminapratica.php?ricerca=1','Praticaweb',0,0,'yes'@Elimina Pratica@Individua ed elimina la pratica scelta.
 -2@NewWindow@'admin.pwd.php?mode=edit','PraticawebUtenti',0,0,'yes'@Gestione PassWord Utenti@- Modifica password dell'utente.
--4@Gestione pratiche Certificati Agibilità
+-3@Commissione Locale Paesaggio
+-4@NewWindow@'ce.ricerca.php','ricercaCommissione',0,0,'yes'@Vedi Commissione Locale Paesaggio@Gestione delle sedute di Commissione Locale Paesaggio, convocazioni, verbali....
+-3@NewWindow@'ce.commissione.php?pratica=0&comm=1&mode=new','CommissioneEdilizia',0,0,'yes'@Nuova Commissione@Gestione delle sedute di Commissioni Locale Paesaggio, convocazioni, verbali....
+-3@NewWindow@'ce.ricerca_commissione.php?mode=cancella','CommissioneEdilizia',0,0,'yes'@Elimina Commissione@Gestione delle sedute di Commissioni Locale Paesaggio, convocazioni, verbali....
+-4@Gestione pratiche Certificati Agibilit&agrave;
 -4@NewWindow@'agi.ricerca.php?new=1','ricercaPraticaweb',0,0,'yes'@Apri pratica esistente@Modalit&agrave; di ricerca di una pratica archiviata.
 rdp,itec,iamm-4@NewWindow@'agi.avvioproc.php?mode=new','Praticaweb',0,0,'yes'@Nuova Pratica Edilizia@Inserisce una nuova pratica.
 rdp,itec,iamm-3@NewWindow@'vigi.eliminapratica.php?ricerca=1','Praticaweb',0,0,'yes'@Elimina Pratica@Individua ed elimina la pratica scelta.
@@ -32,6 +36,7 @@ cdu-4@NewWindow@'cdu.ricerca.php','Praticaweb',0,0,'yes'@Ricerca Certificato di 
 -2@NewWindow@'stp.fieldsList.php','AdminPraticaweb',0,0,'yes'@Elenco Campi unione@Elenco dei Campi Unione per i Modelli di Stampa.
 -2@Gestione Elenchi
 -2@NewWindow@'pe.documenti.php?mode=list','ComuniPraticaweb',0,0,'yes'@Allegati@Elenco dei possibili allegati alla pratica.
+-2@NewWindow@'ce.membri.php?mode=all','membri_CE_Praticaweb',0,0,'yes'@Membri C.L.P.@Elenco membri commissione.
 -2@NewWindow@'pe.e_tipopratica.php?mode=list','ComuniPraticaweb',0,0,'yes'@Tipi pratica@Elenco delle possibili tipologie della pratica.
 -2@NewWindow@'pe.e_verifiche.php?mode=list','ComuniPraticaweb',0,0,'yes'@Verifiche Pratiche@Elenco delle possibili tipologie di verifica sulla pratica.
 -2@NewWindow@'pe.e_stati.php?mode=list','ComuniPraticaweb',0,0,'yes'@Stati Pratica@Elenco dei possibili stati della pratica.
