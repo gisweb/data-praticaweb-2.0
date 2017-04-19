@@ -34,9 +34,9 @@ cdu-4@NewWindow@'cdu.ricerca.php','Praticaweb',0,0,'yes'@Ricerca Certificato di 
 -2@Modelli di Stampa
 -2@NewWindow@'stp.modelli.php?mode=list','AdminPraticaweb',0,0,'yes'@Elenco Modelli di Stampa@Gestione dei modelli di stampa in formato Word XML.
 -2@NewWindow@'stp.fieldsList.php','AdminPraticaweb',0,0,'yes'@Elenco Campi unione@Elenco dei Campi Unione per i Modelli di Stampa.
--2@Gestione Elenchi
+-3@Gestione Elenchi
 -2@NewWindow@'pe.documenti.php?mode=list','ComuniPraticaweb',0,0,'yes'@Allegati@Elenco dei possibili allegati alla pratica.
--2@NewWindow@'ce.membri.php?mode=all','membri_CE_Praticaweb',0,0,'yes'@Membri C.L.P.@Elenco membri commissione.
+-3@NewWindow@'ce.membri.php?mode=all','membri_CE_Praticaweb',0,0,'yes'@Membri C.L.P.@Elenco membri commissione.
 -2@NewWindow@'pe.e_tipopratica.php?mode=list','ComuniPraticaweb',0,0,'yes'@Tipi pratica@Elenco delle possibili tipologie della pratica.
 -2@NewWindow@'pe.e_verifiche.php?mode=list','ComuniPraticaweb',0,0,'yes'@Verifiche Pratiche@Elenco delle possibili tipologie di verifica sulla pratica.
 -2@NewWindow@'pe.e_stati.php?mode=list','ComuniPraticaweb',0,0,'yes'@Stati Pratica@Elenco dei possibili stati della pratica.
