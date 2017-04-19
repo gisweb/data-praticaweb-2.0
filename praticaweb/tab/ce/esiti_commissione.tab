@@ -13,7 +13,7 @@ data[]="Parere espresso;parere;200xpe.elenco_valoripareri;selectdb"
 data[]="Testo;testo;60x8;textarea"
 data[]="Prescrizioni;prescrizioni;60x4;textarea"
 data[]="Note;note;60x4;textarea"
-button="Annulla;azione;;submit|Salva;azione;;submit"
+button="Annulla;azione;;submit|Elimina;azione;;submit|Salva;azione;;submit"
 [view]
 table="pe.pareri"
 chiave="id"
