@@ -37,7 +37,8 @@ var colsDef={
         {title:'Responsabile',sortable:true,field:'responsabile',width:150,styler: function(value,row,index){return 'font-size:11px;';}},
         {title:'Assegnata',sortable:true,field:'assegnata_istruttore',width:70,styler: function(value,row,index){return 'font-size:11px;';},formatter:function(value,row,index){if (value) return 'SI'; else return 'NO';}},
         {title:'Istruttore',sortable:true,field:'responsabile_it',width:150,styler: function(value,row,index){return 'font-size:11px;';}},
-        {title:'Sportello',sortable:true,field:'sportello',width:150,styler: function(value,row,index){return 'font-size:11px;';}}
+        {title:'Sportello',sortable:true,field:'sportello',width:50,styler: function(value,row,index){return 'font-size:11px;';}},
+        {title:'Autorizzazione Paesaggistica',sortable:true,field:'vincolo_paes',width:200,styler: function(value,row,index){return 'font-size:11px;';}}
     ]],
     delete:[[
         {title:'',field:'pratica',sortable:false,width:40,formatter: function(value,row,index){return '<input type="radio" data-testo="' + row['numero'] + '" name="pratica" id="' + value + '"class="textbox delete-radio"/>'}},
