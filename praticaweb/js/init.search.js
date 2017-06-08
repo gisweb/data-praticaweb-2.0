@@ -39,7 +39,8 @@ var colsDef={
         {title:'Progettista',sortable:true,field:'progettista',width:100,styler: function(value,row,index){return 'font-size:11px;';}},
         {title:'Responsabile',sortable:true,field:'responsabile',width:100,styler: function(value,row,index){return 'font-size:11px;';}},
         {title:'Assegnata',sortable:true,field:'assegnata_istruttore',width:70,styler: function(value,row,index){return 'font-size:11px;';},formatter:function(value,row,index){if (value) return 'SI'; else return 'NO';}},
-        {title:'Istruttore',sortable:true,field:'responsabile_it',width:100,styler: function(value,row,index){return 'font-size:11px;';}}
+        {title:'Istr. Tecn.',sortable:true,field:'responsabile_it',width:100,styler: function(value,row,index){return 'font-size:11px;';}},
+        {title:'Istr. Amm.',sortable:true,field:'responsabile_ia',width:100,styler: function(value,row,index){return 'font-size:11px;';}}
     ]],
     delete:[[
         {title:'',field:'pratica',sortable:false,width:40,formatter: function(value,row,index){return '<input type="radio" data-testo="' + row['numero'] + '" name="pratica" id="' + value + '"class="textbox delete-radio"/>'}},
