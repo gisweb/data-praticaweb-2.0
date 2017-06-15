@@ -1,1 +1,0 @@
-var baseURL='http://10.132.48.68//gisclient2/template/';
