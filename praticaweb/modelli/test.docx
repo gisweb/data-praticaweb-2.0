@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it">
+
+    
+    
+    
+    
+    
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    
+        <base href="http://demospezia.iolweb.it:7079/laspezia/" /><!--[if lt IE 7]></base><![endif]-->
+    
+
+    
+        
+
+  
+    <link rel="stylesheet" type="text/css" href="http://demospezia.iolweb.it:7079/laspezia/portal_css/Sunburst%20Theme/reset-cachekey-9de8787879a50a6268f1c92b0277e93a.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="http://demospezia.iolweb.it:7079/laspezia/portal_css/Sunburst%20Theme/base-cachekey-e7dd6e6d2a1db78bdb7e40b421aaa1a9.css" />
+    <link rel="stylesheet" type="text/css" href="http://demospezia.iolweb.it:7079/laspezia/portal_css/Sunburst%20Theme/resourceplone.app.jquerytools.dateinput-cachekey-85665ee0e23e897b01ed0b3ced057c5b.css" media="screen" />
+        <!--[if lt IE 8]>    
+    
+    <link rel="stylesheet" type="text/css" href="http://demospezia.iolweb.it:7079/laspezia/portal_css/Sunburst%20Theme/IEFixes-cachekey-1102cec9ec8d1d37ec63d4713b693680.css" media="screen" />
+        <![endif]-->
+    
+    <link rel="stylesheet" type="text/css" href="http://demospezia.iolweb.it:7079/laspezia/portal_css/Sunburst%20Theme/resourcejquery.datatablesmediacssjquery.dataTables-cachekey-95d81c0860c8684b5582f8ef9f41c0ba.css" media="screen" />
+    <style type="text/css">@import url(http://demospezia.iolweb.it:7079/laspezia/portal_css/Sunburst%20Theme/plomino-cachekey-3af2d218df153e77f7318aeb1c3822cd.css);</style>
+    <link rel="stylesheet" type="text/css" href="http://demospezia.iolweb.it:7079/laspezia/portal_css/Sunburst%20Theme/ploneCustom-cachekey-83c6f314c9a9c1ddf646f801047028f4.css" media="all" />
+
+  
+  
+    <script type="text/javascript" src="http://demospezia.iolweb.it:7079/laspezia/portal_javascripts/Sunburst%20Theme/resourceplone.app.jquery-cachekey-629a62fa17d242ad1abafd01d411ec2a.js"></script>
+    <script type="text/javascript" src="http://demospezia.iolweb.it:7079/laspezia/portal_javascripts/Sunburst%20Theme/resourceplomino.javascriptplomino.debug-cachekey-beea0aeadfdefc1b060118676c01f841.js"></script>
+    <script type="text/javascript" src="http://demospezia.iolweb.it:7079/laspezia/portal_javascripts/Sunburst%20Theme/collective.js.jqueryui.custom.min-cachekey-c0c78a9d652042dfcc294a3e2f015746.js"></script>
+
+
+<title>Sito test Spezia</title>
+        
+    <link rel="canonical" href="http://demospezia.iolweb.it:7079/laspezia" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="http://demospezia.iolweb.it:7079/laspezia/favicon.ico" />
+    <link rel="apple-touch-icon" href="http://demospezia.iolweb.it:7079/laspezia/touch_icon.png" />
+
+
+<script type="text/javascript">
+        jQuery(function($){
+            if (typeof($.datepicker) != "undefined"){
+              $.datepicker.setDefaults(
+                jQuery.extend($.datepicker.regional['it'],
+                {dateFormat: 'dd/mm/yy'}));
+            }
+        });
+        </script>
+
+
+
+    <link rel="alternate" href="http://demospezia.iolweb.it:7079/laspezia/RSS" title="Sito test Spezia - RSS 1.0" type="application/rss+xml" />
+
+    <link rel="alternate" href="http://demospezia.iolweb.it:7079/laspezia/rss.xml" title="Sito test Spezia - RSS 2.0" type="application/rss+xml" />
+
+    <link rel="alternate" href="http://demospezia.iolweb.it:7079/laspezia/atom.xml" title="Sito test Spezia - Atom" type="application/rss+xml" />
+
+
+    <link rel="search" href="http://demospezia.iolweb.it:7079/laspezia/@@search" title="Cerca nel sito" />
+
+
+
+        
+        
+        
+        
+        
+        <script type="text/javascript" src="http://demospezia.iolweb.it:7079/laspezia/login.js">
+        </script>
+    
+
+        <meta name="viewport" content="width=device-width, initial-scale=0.6666, maximum-scale=1.0, minimum-scale=0.6666" />
+        <meta name="generator" content="Plone - http://plone.org" />
+    
+</head>
+
+<body dir="ltr" class="template-login_form portaltype-plone-site site-laspezia icons-on userrole-anonymous">
+
+<div id="visual-portal-wrapper">
+
+        <div id="portal-top" class="row">
+<div class="cell width-full position-0">
+            <div id="portal-header">
+    <p class="hiddenStructure">
+  <a accesskey="2" href="http://demospezia.iolweb.it:7079/laspezia/acl_users/credentials_cookie_auth/require_login?came_from=http%3A//demospezia.iolweb.it%3A7079/laspezia/iol_accreditamenti/plomino_documents/robin/accreditamento.docx#content">Salta ai contenuti.</a> |
+
+  <a accesskey="6" href="http://demospezia.iolweb.it:7079/laspezia/acl_users/credentials_cookie_auth/require_login?came_from=http%3A//demospezia.iolweb.it%3A7079/laspezia/iol_accreditamenti/plomino_documents/robin/accreditamento.docx#portal-globalnav">Salta alla navigazione</a>
+</p>
+
+<div id="portal-personaltools-wrapper">
+
+<p class="hiddenStructure">Strumenti personali</p>
+
+
+
+<ul class="actionMenu deactivated" id="portal-personaltools">
+  <li id="anon-personalbar">
+    
+        <a href="http://demospezia.iolweb.it:7079/laspezia/login" id="personaltools-login">Fatti riconoscere</a>
+    
+  </li>
+</ul>
+
+</div>
+
+
+
+<div id="portal-searchbox">
+
+    <form id="searchGadget_form" action="http://demospezia.iolweb.it:7079/laspezia/@@search">
+
+        <div class="LSBox">
+        <label class="hiddenStructure" for="searchGadget">Cerca nel sito</label>
+
+        <input name="SearchableText" type="text" size="18" title="Cerca nel sito" placeholder="Cerca nel sito" accesskey="4" class="searchField" id="searchGadget" />
+
+        <input class="searchButton" type="submit" value="Cerca" />
+
+        <div class="searchSection">
+            <input id="searchbox_currentfolder_only" class="noborder" type="checkbox" name="path" value="/laspezia" />
+            <label for="searchbox_currentfolder_only" style="cursor: pointer">solo nella sezione corrente</label>
+        </div>
+
+        <div class="LSResult" id="LSResult"><div class="LSShadow" id="LSShadow"></div></div>
+        </div>
+    </form>
+
+    <div id="portal-advanced-search" class="hiddenStructure">
+        <a href="http://demospezia.iolweb.it:7079/laspezia/@@search" accesskey="5">Ricerca avanzata…</a>
+    </div>
+
+</div>
+
+<a id="portal-logo" title="Sito test Spezia" accesskey="1" href="http://demospezia.iolweb.it:7079/laspezia">
+    <img src="http://demospezia.iolweb.it:7079/laspezia/logo.png" alt="Sito test Spezia" title="Sito test Spezia" height="56" width="215" /></a>
+
+
+    <p class="hiddenStructure">Sezioni</p>
+
+    <ul id="portal-globalnav"><li class="selected" id="portaltab-index_html"><a href="http://demospezia.iolweb.it:7079/laspezia" title="">Home</a></li><li class="plain" id="portaltab-istruzioni"><a href="http://demospezia.iolweb.it:7079/laspezia/istruzioni" title="">Istruzioni</a></li></ul>
+
+
+</div>
+
+</div>
+        </div>
+    <div id="portal-columns" class="row">
+
+        <div id="portal-column-content" class="cell width-full position-0">
+
+            <div id="viewlet-above-content"><div id="portal-breadcrumbs">
+
+    <span id="breadcrumbs-you-are-here">Tu sei qui:</span>
+    <span id="breadcrumbs-home">
+        <a href="http://demospezia.iolweb.it:7079/laspezia">Home</a>
+        
+    </span>
+
+</div>
+</div>
+
+            
+                <div class="">
+
+                    
+
+                    
+
+    <dl class="portalMessage info" id="kssPortalMessage" style="display:none">
+        <dt>Info</dt>
+        <dd></dd>
+    </dl>
+    
+    
+    <div id="plominoMessages"></div>
+    <div id="plominoTracebackPopup" style="display: none;">
+        <strong></strong>
+        <pre></pre>
+    </div>
+    <script type="text/javascript">
+        function showTraceback(el, formula_path) {
+            msg = $(el).children().filter(":first").html();
+            popup = $("#plominoTracebackPopup").clone();
+            $(popup).children("strong").html(msg);
+            $.get(formula_path, function(data) {
+                offset = 6;
+                code = "";
+                $.each(data.split('\n'), function(index, value) {
+                    line = index + offset
+                    code = code + line + ": " + value + '\n';
+                });
+            	$(popup).children("pre").html($("<div/>").text(code).html());
+            });
+        	popup.dialog({show: "blind", height: 430, width: 530});
+        }
+        $(document).ready(function () {
+			$("#plominoMessages").load("./statusmessage_load?" + new Date().getTime() + " #plonePortalMessages");
+		});
+    </script>
+
+
+
+                    
+                        <div id="content">
+
+                            
+
+                            
+
+    <div id="content-core">
+        
+
+            <dl class="portalMessage error" id="enable_cookies_message" style="display:none">
+                <dt>Errore</dt>
+                <dd>I cookie non sono abilitati. Devi abilitarli per poterti autenticare.</dd>
+            </dl>
+
+            
+
+            <form class="enableAutoFocus" method="post" id="login_form" action="http://demospezia.iolweb.it:7079/laspezia/login_form">
+
+                <div id="login-form">
+
+                    <input type="hidden" name="came_from" value="http://demospezia.iolweb.it:7079/laspezia/iol_accreditamenti/plomino_documents/robin/accreditamento.docx" />
+
+                    <input type="hidden" name="next" />
+
+                    <input type="hidden" name="ajax_load" />
+
+                    <input type="hidden" name="ajax_include_head" />
+
+                    <input type="hidden" name="target" />
+
+                    <input type="hidden" name="mail_password_url" />
+
+                    <input type="hidden" name="join_url" />
+
+                    <input type="hidden" name="form.submitted" value="1" />
+                    <input type="hidden" name="js_enabled" id="js_enabled" value="0" />
+                    <input type="hidden" name="cookies_enabled" id="cookies_enabled" value="" />
+                    <input type="hidden" name="login_name" id="login_name" value="" />
+                    <input type="hidden" name="pwd_empty" id="pwd_empty" value="0" />
+
+                    <div class="field">
+
+                        <label for="__ac_name">Nome utente</label>
+
+                        
+
+                        
+
+                        <input type="text" size="15" id="__ac_name" name="__ac_name" value="" />
+
+                </div>
+
+                <div class="field">
+
+                        <label for="__ac_password">Password</label>
+
+                        
+
+                        <input type="password" size="15" id="__ac_password" name="__ac_password" />
+                </div>
+
+                    
+
+                    <div class="formControls">
+
+                        <input class="context" type="submit" name="submit" value="Accedi" />
+
+                    </div>
+
+                </div>
+
+            </form>
+
+            
+
+        
+
+            <div id="login-forgotten-password">
+                <strong>Hai dimenticato la tua password?</strong>
+                <p class="discreet">Se hai dimenticato la tua password, <span> <a href="/laspezia/mail_password_form?userid=">possiamo spedirtene una nuova</a></span>.</p>
+            </div>
+
+            
+
+        
+    </div>
+
+    
+                        </div>
+                    
+
+                    
+                </div>
+            
+
+            <div id="viewlet-below-content">
+</div>
+        </div>
+
+        
+        
+
+        
+        
+    </div>
+
+
+    <div id="portal-footer-wrapper" class="row">
+        <div class="cell width-full position-0">
+            <div id="portal-footer">
+          <p>
+               <a href="http://plone.org">Plone<sup>&reg;</sup> CMS — Open Source CMS/WCM</a> è <abbr title="Copyright ©">&copy;</abbr> 2000-2016 della <a href="http://plone.org/foundation">Fondazione Plone</a> ed altri.
+
+               Distribuito sotto licenza <a href="http://creativecommons.org/licenses/GPL/2.0/">GNU GPL</a>.
+          </p>
+
+</div>
+
+<div id="portal-colophon">
+<div class="colophonWrapper">
+<ul>
+  <li>
+    <a href="http://plone.org" title="Questo sito è stato realizzato con Plone, CMS/WCM open source.">Realizzato con Plone &amp; Python</a>
+  </li>
+</ul>
+</div>
+</div>
+
+<ul id="portal-siteactions">
+
+    <li id="siteaction-sitemap"><a href="http://demospezia.iolweb.it:7079/laspezia/sitemap" accesskey="3" title="Mappa del sito">Mappa del sito</a></li>
+    <li id="siteaction-accessibility"><a href="http://demospezia.iolweb.it:7079/laspezia/accessibility-info" accesskey="0" title="Accessibilità">Accessibilità</a></li>
+    <li id="siteaction-contact"><a href="http://demospezia.iolweb.it:7079/laspezia/contact-info" accesskey="9" title="Contatti">Contatti</a></li>
+</ul>
+
+
+        </div>
+    </div>
+
+
+
+</div>
+</body>
+</html>
+
+
