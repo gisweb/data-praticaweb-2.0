@@ -14,9 +14,48 @@ INNER JOIN vincoli.tavola B on (vincolo=B.nome_vincolo AND tavola = B.nome_tavol
 INNER JOIN vincoli.zona C on(vincolo=C.nome_vincolo AND tavola=C.nome_tavola AND zona=nome_zona) 
 WHERE pratica=? ORDER BY ordine_v,ordine_t,ordine_z
 EOT;
-$ris=$db->fetchAll($sql,Array($idPratica));
 
-for($i=0;$i<count($ris);$i++){
+$sql = <<<EOT
+WITH vincoli_puc as (
+SELECT 
+pratica,'' as sezione,foglio,mappale,array_to_string(array_agg(A.descrizione || ' - ' ||C.descrizione),'\n') as puc
+FROM 
+cdu.mappali INNER JOIN vincoli.vincolo A ON(vincolo=A.nome_vincolo) 
+INNER JOIN vincoli.tavola B on (vincolo=B.nome_vincolo AND tavola = B.nome_tavola) 
+INNER JOIN vincoli.zona C on(vincolo=C.nome_vincolo AND tavola=C.nome_tavola AND zona=nome_zona) 
+WHERE pratica=? AND vincolo = 'PUC' 
+GROUP BY 1,2,3,4
+),
+vincoli_ptcp as (
+SELECT 
+pratica,'' as sezione,foglio,mappale,array_to_string(array_agg(B.descrizione || ' - ' ||C.descrizione),'\n') as ptcp
+FROM 
+cdu.mappali INNER JOIN vincoli.vincolo A ON(vincolo=A.nome_vincolo) 
+INNER JOIN vincoli.tavola B on (vincolo=B.nome_vincolo AND tavola = B.nome_tavola) 
+INNER JOIN vincoli.zona C on(vincolo=C.nome_vincolo AND tavola=C.nome_tavola AND zona=nome_zona) 
+WHERE pratica=? AND vincolo = 'PTCP' 
+GROUP BY 1,2,3,4
+),
+altri_vincoli as (
+SELECT 
+pratica,'' as sezione,foglio,mappale,array_to_string(array_agg(A.descrizione || ' - ' ||C.descrizione),'\n') as vincoli
+FROM 
+cdu.mappali INNER JOIN vincoli.vincolo A ON(vincolo=A.nome_vincolo) 
+INNER JOIN vincoli.tavola B on (vincolo=B.nome_vincolo AND tavola = B.nome_tavola) 
+INNER JOIN vincoli.zona C on(vincolo=C.nome_vincolo AND tavola=C.nome_tavola AND zona=nome_zona) 
+WHERE pratica=? AND not vincolo in ('PUC','PTCP') 
+GROUP BY 1,2,3,4
+)
+SELECT pratica,sezione,foglio,mappale,puc,ptcp,vincoli 
+FROM
+vincoli_puc INNER JOIN 
+vincoli_ptcp USING(pratica,sezione,foglio,mappale) INNER JOIN
+altri_vincoli USING(pratica,sezione,foglio,mappale)
+
+EOT;
+$ris=$db->fetchAll($sql,Array($idPratica,$idPratica,$idPratica));
+$mappali = $ris;
+/*for($i=0;$i<count($ris);$i++){
 	$r=$ris[$i];
 	$mappali[$r["key"]]["sezione"]=$r["sezione"];
 	$mappali[$r["key"]]["foglio"]=$r["foglio"];
@@ -33,6 +72,6 @@ for($i=0;$i<count($ris);$i++){
         );
 	//}
 	
-}
-$customData["mappali"]=array_values($mappali);	
+}*/
+$customData["mappali"]=$mappali;	
 ?>
