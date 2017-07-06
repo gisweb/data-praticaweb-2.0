@@ -17,7 +17,8 @@ $.fn.serializeObject = function() {
         var elemValue = null;
         if ($(this).is('select'))
             elemValue = $(this).val();
-        else elemValue = $(this).val();
+        else
+            elemValue = $(this).val();
         if (o[this.name] !== undefined) {
             if (!o[this.name].push) {
                 o[this.name] = [o[this.name]];
@@ -32,17 +33,18 @@ $.fn.serializeObject = function() {
 
 $(document).ready(function(){
     $("#richiesta_prot").button({
-        icons:{primary:'ui-icon-work'}
+        icons:{primary:'ui-icon-gear'}
     }).bind('click',function(event){
         event.preventDefault();
         var formData = $("#comunicazioni").serializeObject();
+        formData["azione"]="protocolla";
         $.ajax({
             url:"/services/local/xServer.php",
             type:'POST',
             dataType:'json',
             data:formData,
             success:function(data){
-				alert("Done");
+
             }
         });
     });

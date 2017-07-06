@@ -15,6 +15,9 @@ $action=(isset($_REQUEST["action"]) && $_REQUEST["action"])?($_REQUEST["action"]
 
 switch($action){
     case "protocolla":
+        require_once DATA_DIR."protocollo.config.php";
+        require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoap.php";
+
         break;
 }
 header('Content-Type: application/json; charset=utf-8');
