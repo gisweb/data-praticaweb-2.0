@@ -9,21 +9,21 @@ table="pe.esposti"
 chiave="id"
 campi_ordinamento=""
 campi_obbligatori="origine;data_esposto"
-data[]="Data presentazione;data_esposto;10;data"
 data[]="Origine;origine;200xpe.elenco_origine_esposti;selectdb"
+data[]="Data Esposto;data_esposto;10;data"
 data[]="Oggetto;oggetto;60x4;textarea"
 data[]="Note;note;60x6;textarea"
-button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
+button="Salva;azione;;submit|Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit"
 
 [view]
 table="pe.esposti"
 chiave="id"
-campi_ordinamento=""
+campi_ordinamento="data_esposto"
 campi_obbligatori=""
-data[]="Data presentazione;data_presentazione_esposto;10;data"
 data[]="Origine;origine;200xpe.elenco_origine_esposti;selectdb"
-data[]="Oggetto;oggetto;60x4;textarea"
-data[]="Note;note;60x6;textarea"
+data[]="Data Esposto;data_esposto;10;data"
+data[]="Oggetto;oggetto;;text"
+data[]="Note;note;;text"
 
 [list]
 

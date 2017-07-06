@@ -12,6 +12,11 @@ campi_obbligatori=""
 data[]="Nome;file_doc;100;text"
 data[]="Descrizione;descrizione;60x3;textarea"
 data[]="File;file;50;upload"
+data[]="Direzione;direzione;150xpe.elenco_direzioni_documenti;selectdb"
+data[]="Tipo Documento;tipo_documento;200xpe.elenco_tipo_documenti;selectdb"
+data[]="Data Invio;data_invio;10;data|Protocollo Uscita;prot_out;15;text"
+data[]="Data Ricezione;data_ricezione;10;data|Protocollo Ricezione;prot_in;15;text"
+
 button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
 
 [list]
