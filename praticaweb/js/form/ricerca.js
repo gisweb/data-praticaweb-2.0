@@ -1,3 +1,4 @@
+var pippo = "";
 var result={};
 var dataPost={};
 $(document).ready(function(){
