@@ -6,19 +6,17 @@ $(document).ready(function(){
         icons:{primary:'ui-icon-work'}
     }).bind('click',function(event){
         event.preventDefault();
-        var data = $("form #comunicazioni").serialize();
-        console.log(data);
-        /*$.ajax({
-            url:localServerUrl,
+        var formData = $("form #comunicazioni").serializeObject();
+
+        $.ajax({
+            url:"/services/local/xServer.php",
             type:'POST',
             dataType:'json',
-            data:{
-
-            },
+            data:formData,
             success:function(data){
-
+				alert("Done");
             }
-        })*/
+        });
     });
 	$("#tipo_comunicazione").change(function () {
 		var v = $(this).val();
