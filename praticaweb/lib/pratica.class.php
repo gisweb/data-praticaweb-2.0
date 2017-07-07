@@ -56,7 +56,7 @@ class pratica extends generalPratica{
 			$anno=($r['anno'])?($r['anno']):($tmp[0]);
 
 			//Struttura delle directory
-			$arrDir[]=DOCUMENTI;
+			$arrDir[]=DOCUMENTI."pe";
             $arrDir[]=$anno;
 			$this->annodir=implode(DIRECTORY_SEPARATOR,$arrDir).DIRECTORY_SEPARATOR;
 			$arrDir[]=$this->pratica;
