@@ -4,7 +4,7 @@ require_once APPS_DIR.'plugins/Doctrine/Common/ClassLoader.php';
 require_once APPS_DIR.DIRECTORY_SEPARATOR.'lib'.DIRECTORY_SEPARATOR.'pratica.class.php';
 
 class pratica extends generalPratica{
-    private function initPratica(){
+    private function initPE(){
 		$db=$this->db1;
 		if ($this->pratica && is_numeric($this->pratica)){
 			//INFORMAZIONI SULLA PRATICA
@@ -45,7 +45,7 @@ class pratica extends generalPratica{
 			$this->url_documenti="/documenti/$anno/".$this->pratica."/";
 			$this->url_allegati="/documenti/$anno/".$this->pratica."/allegati/";
 			$this->smb_documenti=SMB_PATH."$anno\\".$this->pratica."\\";
-            
+
 			$this->createStructure();
 			//INFO PRATICA PREC E SUCC
 			$sql="SELECT max(pratica) as pratica FROM pe.avvioproc WHERE pratica < ?";
