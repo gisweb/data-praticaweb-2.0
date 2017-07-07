@@ -29,8 +29,8 @@ if($stmt->execute(Array($anno))){
             $tmp[0] = (preg_match("|^[89]|", $tmp[0])) ? ("19" . $tmp[0]) : ($tmp[0]);
             $numero = implode('-', $tmp);
         }
-        $oldFolder = DOCUMENTI . "pe" . DIRECTORY_SEPARATOR . $anno . DIRECTORY_SEPARATOR . $numero;
-        $newFolder = DOCUMENTI . "pe" . DIRECTORY_SEPARATOR . $anno . DIRECTORY_SEPARATOR . $r["pratica"];
+        $oldFolder = DOCUMENTI . DIRECTORY_SEPARATOR . "pe" . DIRECTORY_SEPARATOR . $anno . DIRECTORY_SEPARATOR . $numero;
+        $newFolder = DOCUMENTI . DIRECTORY_SEPARATOR . "pe" . DIRECTORY_SEPARATOR . $anno . DIRECTORY_SEPARATOR . $r["pratica"];
         if (is_dir($oldFolder)){
             $foundFolder++;
         }
