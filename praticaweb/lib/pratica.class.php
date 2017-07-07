@@ -21,28 +21,30 @@ class pratica extends generalPratica{
 				$this->tipopratica='ambientale';
 			}
 
-			$numero=appUtils::normalizeNumero($this->info['numero']);
+			/*$numero=appUtils::normalizeNumero($this->info['numero']);
 			$tmp=explode('-',$numero);
 			if (count($tmp)==2 && preg_match("|([A-z0-9]+)|",$tmp[0])){
 				$tmp[0]=(preg_match("|^[89]|",$tmp[0]))?("19".$tmp[0]):($tmp[0]);
 				$numero=implode('-',$tmp);
-			}
+			}*/
+            $numero=appUtils::normalizeNumero($this->info['numero']);
+            $tmp=explode('-',$numero);
 			$anno=($r['anno'])?($r['anno']):($tmp[0]);
 
 			//Struttura delle directory
 			$arrDir=DOCUMENTI_DIR;
             $arrDir[]=$anno;
 			$this->annodir=implode(DIRECTORY_SEPARATOR,$arrDir).DIRECTORY_SEPARATOR;
-			$arrDir[]=$numero;
+			$arrDir[]=$id;
 			$this->documenti=implode(DIRECTORY_SEPARATOR,$arrDir).DIRECTORY_SEPARATOR;
 			$arrDir[]="allegati";
 			$this->allegati=implode(DIRECTORY_SEPARATOR,$arrDir).DIRECTORY_SEPARATOR;
 			$arrDir[]="tmb";
 			$this->allegati_tmb=implode(DIRECTORY_SEPARATOR,$arrDir).DIRECTORY_SEPARATOR;
 
-			$this->url_documenti="/documenti/$anno/$numero/";
-			$this->url_allegati="/documenti/$anno/$numero/allegati/";
-			$this->smb_documenti=SMB_PATH."$anno\\$numero\\";
+			$this->url_documenti="/documenti/$anno/".$this->pratica."/";
+			$this->url_allegati="/documenti/$anno/".$this->pratica."/allegati/";
+			$this->smb_documenti=SMB_PATH."$anno\\".$this->pratica."\\";
             
 			$this->createStructure();
 			//INFO PRATICA PREC E SUCC

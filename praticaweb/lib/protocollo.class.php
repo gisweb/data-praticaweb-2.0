@@ -24,7 +24,7 @@ class protocollo{
     private static function inserisciDocumento($id){
 
     }
-    private function recuperaDocumento(){
+    private function recuperaDocumento($id){
 
     }
 }
