@@ -35,7 +35,7 @@ class pratica extends generalPratica{
 			$arrDir=DOCUMENTI_DIR;
             $arrDir[]=$anno;
 			$this->annodir=implode(DIRECTORY_SEPARATOR,$arrDir).DIRECTORY_SEPARATOR;
-			$arrDir[]=$id;
+			$arrDir[]=$this->pratica;
 			$this->documenti=implode(DIRECTORY_SEPARATOR,$arrDir).DIRECTORY_SEPARATOR;
 			$arrDir[]="allegati";
 			$this->allegati=implode(DIRECTORY_SEPARATOR,$arrDir).DIRECTORY_SEPARATOR;
