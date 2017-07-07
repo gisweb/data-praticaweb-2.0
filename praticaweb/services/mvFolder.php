@@ -19,8 +19,8 @@ $stmt = $dbh->prepare($sql);
 if($stmt->execute(Array($anno))){
     $res = $stmt->fetchAll();
     echo "<p>Trovate ".count($res)." pratiche per anno $anno</p>";
-    $foundFolder =0;
-
+    $foundFolder = 0;
+    $movedFolder = 0;
     foreach($res as $r) {
         $anno = $r["anno"];
         $numero = appUtils::normalizeNumero($r['numero']);
@@ -33,11 +33,17 @@ if($stmt->execute(Array($anno))){
         $newFolder = DOCUMENTI . DIRECTORY_SEPARATOR . "pe" . DIRECTORY_SEPARATOR . $anno . DIRECTORY_SEPARATOR . $r["pratica"];
         if (is_dir($oldFolder)){
             $foundFolder++;
+            if (rename($oldFolder,$newFolder)){
+                $movedFolder++;
+            }
+            else {
+                echo "<p>Impossibile rinominare $oldFolder in $newFolder</p>";
+            }
         }
         else{
             echo "<p>Directory $oldFolder non trovata</p>";
         }
     }
-    echo "<p>Trovate ".$foundFolder." cartelle per anno $anno</p>";
+    echo "<p>Trovate ".$foundFolder." cartelle per anno $anno<br> Rinominate $movedFolder cartelle</p>";
 }
 ?>
