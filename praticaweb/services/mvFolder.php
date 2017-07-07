@@ -34,6 +34,9 @@ if($stmt->execute(Array($anno))){
         if (is_dir($oldFolder)){
             $foundFolder++;
         }
+        else{
+            echo "<p>Directory $oldFolder non trovata</p>";
+        }
     }
     echo "<p>Trovate ".$foundFolder." cartelle per anno $anno</p>";
 }
