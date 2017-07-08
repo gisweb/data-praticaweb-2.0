@@ -53,7 +53,8 @@ class protocollo{
                 $result["message"] = $err;
                 return $result;
             }
-            $client->addAttachment($res["file"],$res["data"]["nomefile"]);
+            $client->addAttachment($res["file"],$res["data"]["nomefile"],$res["mimetype"]);
+            $a = $client->call("insertDocumento",Array($paramsProt["login"],$res["nomefile"],$res["descrizione"]));
         }
     }
 
