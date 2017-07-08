@@ -46,7 +46,7 @@ class protocollo{
         );
         $res = appUtils::getInfoDocumento($id);
         if ($res["success"]==1){
-            $client = new nusoap_client_mime($paramsProt["wsUrl"],false);
+            $client = new nusoap_client_mime($paramsProt["wsUrl"],'wsdl');
             $err = $client->getError();
             if ($err) {
                 $result["success"] = -1;
@@ -55,6 +55,10 @@ class protocollo{
             }
             $client->addAttachment($res["file"],$res["data"]["nomefile"],$res["mimetype"]);
             $a = $client->call("insertDocumento",Array($paramsProt["login"],$res["nomefile"],$res["descrizione"]));
+            $xml = simplexml_load_string($a);
+            $json = json_encode($xml);
+            $response = json_decode($json,TRUE);
+
         }
     }
 
