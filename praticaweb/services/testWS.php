@@ -25,13 +25,15 @@ $result = Array(
     "id" => ""
 );
 $res = appUtils::getInfoDocumento($id);
+print_array($res);exit;
+
 if ($res["success"]==1){
     $client = new nusoap_client_mime($paramsProt["wsUrl"],'wsdl');
     $err = $client->getError();
     if ($err) {
         $result["success"] = -1;
         $result["message"] = $err;
-        return $result;
+        print_array($result);exit;
     }
     $client->addAttachment($res["file"],$res["data"]["nomefile"],$res["mimetype"]);
     $a = $client->call("insertDocumento",Array($paramsProt["login"],$res["nomefile"],$res["descrizione"]));
@@ -40,7 +42,9 @@ if ($res["success"]==1){
     $response = json_decode($json,TRUE);
 
 }
-
+else{
+    print_array($res);exit;
+}
 $xml = simplexml_load_string($response);
 $json = json_encode($xml);
 $array = json_decode($json,TRUE);

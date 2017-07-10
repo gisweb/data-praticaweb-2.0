@@ -3,13 +3,14 @@
         <Nome>%(nome)s</Nome>
         <Cognome>%(cognome)s</Cognome>
         <CodiceFiscale>%(codfis)s</CodiceFiscale>
-        <Denominazione>%(cognome)s %(nome)s</Denominazione>
+        <Denominazione>%(denominazione)s</Denominazione>
     </Persona>
     <IndirizzoTelematico tipo="smtp">%(pec)s</IndirizzoTelematico>
     <IndirizzoPostale>
-        <Denominazione>%(indirizzo)s %(civico)s %(interno)s</Denominazione>
+        <Denominazione>%(indirizzo)s</Denominazione>
         <CAP>%(cap)s</CAP>
         <Comune>%(comune)s</Comune>
         <Provincia>%(prov)s</Provincia>
     </IndirizzoPostale>
+    <ModalitaInvio>%(modalita_invio)s</ModalitaInvio>
 </Destinatario>

@@ -38,6 +38,28 @@ class protocollo{
 
     }
 
+    static function recuperaSoggetto($id,$app="pe"){
+        $sql=<<<EOT
+WITH elenco soggetti AS(        
+SELECT id::varchar as id, coalesce(codfis,piva) as codfis, nome, cognome, coalesce(ragsoc,cognome || ' ' || nome) as denominazione, comune, cap, trim(coalesce(indirizzo, '')|| '' || coalesce(civico,'')) as indirizzo, pec as mail FROM pe.soggetti
+UNION ALL
+SELECT mail as id,codfis, ''::varchar as nome, ''::varchar as cognome, nome as denominazione, comune, cap, trim(coalesce(indirizzo, '')|| '' || coalesce(civico,'')) as indirizzo,mail FROM pe.e_enti
+)
+SELECT * FROM elenco_soggetti WHERE id = ?;
+EOT;
+        $dbh = utils::getDb();
+        $stmt = $dbh->prepare($sql);
+        $res = Array();
+        if($stmt->execute(Array($id))){
+            $res = $stmt->fetch();
+        }
+        return $res;
+    }
+
+    private static function caricaXML($nome,$data){
+
+    }
+
     private static function inserisciDocumento($id){
         $result = Array(
             "success" => 0,
@@ -58,7 +80,7 @@ class protocollo{
             $xml = simplexml_load_string($a);
             $json = json_encode($xml);
             $response = json_decode($json,TRUE);
-
+            return $response;
         }
     }
 
