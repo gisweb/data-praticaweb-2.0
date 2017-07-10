@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Segnatura versione="2001-05-07" xml:lang="it">
+    <Intestazione>
+        <Oggetto>Protocollo in Uscita da Ufficio Edilizia Privata - Pratica Edilizia %(numero)s - %(oggetto)s</Oggetto>
+        <Identificatore>
+            <CodiceAmministrazione>%(codice_amministrazione)s</CodiceAmministrazione>
+            <CodiceAOO>%(cod_aoo)s</CodiceAOO>
+            <NumeroRegistrazione>%(id)s</NumeroRegistrazione>
+            <DataRegistrazione>%(data_registrazione)s</DataRegistrazione>
+            <Flusso>U</Flusso>
+        </Identificatore>
+        <Mittente>
+            <Persona tal:attributes="id view/mittente/CodiceFiscale">
+                <Nome tal:content="view/mittente/Nome">Nome</Nome>
+                <Cognome tal:content="view/mittente/Cognome">Cognome</Cognome>
+                <CodiceFiscale tal:content="view/mittente/CodiceFiscale">Codice fiscale</CodiceFiscale>
+                <IndirizzoTelematico tal:content="view/mittente/IndirizzoTelematico">email</IndirizzoTelematico>
+            </Persona>
+        </Mittente>
+        <Destinatario>
+            <Amministrazione>
+                <Denominazione tal:content="view/destinatario/Denominazione">Denominazione</Denominazione>
+                <CodiceAmministrazione tal:content="view/destinatario/CodiceAmministrazione">1010</CodiceAmministrazione>
+                <IndirizzoTelematico tal:content="view/destinatario/IndirizzoTelematico"></IndirizzoTelematico>
+                <UnitaOrganizzativa/>
+            </Amministrazione>
+            <AOO>
+                <CodiceAOO tal:content="view/destinatario/CodiceA00">codice</CodiceAOO>
+            </AOO>
+            <IndirizzoTelematico />
+        </Destinatario>
+        <Classifica>
+            <CodiceAmministrazione tal:content="view/destinatario/CodiceAmministrazione">1010</CodiceAmministrazione>
+            <CodiceAOO tal:content="view/destinatario/CodiceA00">1</CodiceAOO>
+            <CodiceTitolario tal:content="view/destinatario/CodiceTitolario"></CodiceTitolario>
+        </Classifica>
+    </Intestazione>
+    <Descrizione>
+        <Documento tal:attributes="nome view/fileName;id view/objId">
+            <DescrizioneDocumento tal:content="context/Title">Titolo</DescrizioneDocumento>
+            <TipoDocumento tal:content="python:'PRATICAWEBSUAP' if context.getItem('iol_tipo_proc')=='suap' else 'PRATICAWEBSUE'">TIPO RICHIESTA</TipoDocumento>
+        </Documento>
+        <Allegati/>
+    </Descrizione>
+    <ApplicativoProtocollo nome="AGSPR">
+        <Parametro nome="tipoSmistamento" valore="COMPETENZA"/>
+    </ApplicativoProtocollo>
+</Segnatura>

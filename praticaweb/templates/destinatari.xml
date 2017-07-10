@@ -1,0 +1,24 @@
+<Destinatario>
+    <Persona>
+        <Denominazione>GIUSEPPE VERDI, MARIO ROSSI, COMUNE DI CAMISANO</Denominazione>
+    </Persona>
+</Destinatario>
+<DestinatariMulti>
+    <DestinatarioMulti>
+        <TipoDestinatario>Principale</TipoDestinatario>
+        <Persona id="PPPPLT80R10M082K">
+            <Nome>GIUSEPPE</Nome>
+            <Cognome>VERDI</Cognome>
+            <CodiceFiscale>GSPVRD80R10M082K</CodiceFiscale>
+            <Denominazione>GIUSEPPE VERDI</Denominazione>
+        </Persona>
+        <IndirizzoTelematico tipo="smtp">mailtestGV@comune.it</IndirizzoTelematico>
+        <ModalitaInvio>PEC</ModalitaInvio>
+        <IndirizzoPostale>
+            <Denominazione>VIA MANZONI</Denominazione>
+            <CAP>56100</CAP>
+            <Comune>PISA</Comune>
+            <Provincia>PI</Provincia>
+        </IndirizzoPostale>
+    </DestinatarioMulti>
+</DestinatariMulti>

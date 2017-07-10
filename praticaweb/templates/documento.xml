@@ -1,0 +1,3 @@
+<Allegati>
+    <Documento nome="%(nomefile)s" id="%(idrichiesta)s"></Documento>
+</Allegati>

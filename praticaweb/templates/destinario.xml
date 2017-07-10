@@ -1,0 +1,15 @@
+<Destinatario>
+    <Persona id="%(codfis)s">
+        <Nome>%(nome)s</Nome>
+        <Cognome>%(cognome)s</Cognome>
+        <CodiceFiscale>%(codfis)s</CodiceFiscale>
+        <Denominazione>%(cognome)s %(nome)s</Denominazione>
+    </Persona>
+    <IndirizzoTelematico tipo="smtp">%(pec)s</IndirizzoTelematico>
+    <IndirizzoPostale>
+        <Denominazione>%(indirizzo)s %(civico)s %(interno)s</Denominazione>
+        <CAP>%(cap)s</CAP>
+        <Comune>%(comune)s</Comune>
+        <Provincia>%(prov)s</Provincia>
+    </IndirizzoPostale>
+</Destinatario>
