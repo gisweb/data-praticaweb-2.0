@@ -16,6 +16,7 @@ echo "A";
 $r = protocollo::recuperaSoggetto("27675");
 if ($r["success"]==1){
     $sogg = $r["result"];
+    $sogg["modalita_invio"] = "PEC";
     $r = protocollo::caricaXML("destinatario",$sogg);
     echo "<pre>";print_r($r);echo "</pre>";
 }
