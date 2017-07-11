@@ -1,3 +1,4 @@
 <Allegati>
     <Documento nome="%(nomefile)s" id="%(idrichiesta)s"></Documento>
+    <DescrizioneDocumento>%(descrizione)s</DescrizioneDocumento>
 </Allegati>

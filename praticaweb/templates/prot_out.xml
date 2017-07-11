@@ -3,36 +3,18 @@
     <Intestazione>
         <Oggetto>Protocollo in Uscita da Ufficio Edilizia Privata - Pratica Edilizia %(numero)s - %(oggetto)s</Oggetto>
         <Identificatore>
-            <CodiceAmministrazione>%(codice_amministrazione)s</CodiceAmministrazione>
-            <CodiceAOO>%(cod_aoo)s</CodiceAOO>
+            <CodiceAmministrazione>%(CodiceAmministrazione)s</CodiceAmministrazione>
+            <CodiceAOO>%(CodiceA00)</CodiceAOO>
             <NumeroRegistrazione>%(id)s</NumeroRegistrazione>
             <DataRegistrazione>%(data_registrazione)s</DataRegistrazione>
             <Flusso>U</Flusso>
         </Identificatore>
-        <Mittente>
-            <Persona tal:attributes="id view/mittente/CodiceFiscale">
-                <Nome tal:content="view/mittente/Nome">Nome</Nome>
-                <Cognome tal:content="view/mittente/Cognome">Cognome</Cognome>
-                <CodiceFiscale tal:content="view/mittente/CodiceFiscale">Codice fiscale</CodiceFiscale>
-                <IndirizzoTelematico tal:content="view/mittente/IndirizzoTelematico">email</IndirizzoTelematico>
-            </Persona>
-        </Mittente>
-        <Destinatario>
-            <Amministrazione>
-                <Denominazione tal:content="view/destinatario/Denominazione">Denominazione</Denominazione>
-                <CodiceAmministrazione tal:content="view/destinatario/CodiceAmministrazione">1010</CodiceAmministrazione>
-                <IndirizzoTelematico tal:content="view/destinatario/IndirizzoTelematico"></IndirizzoTelematico>
-                <UnitaOrganizzativa/>
-            </Amministrazione>
-            <AOO>
-                <CodiceAOO tal:content="view/destinatario/CodiceA00">codice</CodiceAOO>
-            </AOO>
-            <IndirizzoTelematico />
-        </Destinatario>
+%(mittente)s
+%(destinatari)s
         <Classifica>
-            <CodiceAmministrazione tal:content="view/destinatario/CodiceAmministrazione">1010</CodiceAmministrazione>
-            <CodiceAOO tal:content="view/destinatario/CodiceA00">1</CodiceAOO>
-            <CodiceTitolario tal:content="view/destinatario/CodiceTitolario"></CodiceTitolario>
+            <CodiceAmministrazione>%(CodiceAmministrazione)s</CodiceAmministrazione>
+            <CodiceAOO>%(CodiceA00)s</CodiceAOO>
+            <CodiceTitolario>%(CodiceTitolario)s</CodiceTitolario>
         </Classifica>
     </Intestazione>
     <Descrizione>

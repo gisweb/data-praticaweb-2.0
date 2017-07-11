@@ -1,18 +1,18 @@
-<Mittente>
-    <Amministrazione>
-        <Denominazione>%(Denominazione)s</Denominazione>
-        <CodiceAmministrazione>%(CodiceAmministrazione)s</CodiceAmministrazione>
-        <UnitaOrganizzativa>
-            <Denominazione>Protocollo1</Denominazione>
-            <Identificativo>4</Identificativo>
-            <IndirizzoPostale>
-                <Denominazione>%(indirizzo)s</Denominazione>
-            </IndirizzoPostale>
-            <IndirizzoTelematico tipo="smtp">%(IndirizzoTelematico)s</IndirizzoTelematico>
-        </UnitaOrganizzativa>
-    </Amministrazione>
-    <AOO>
-        <Denominazione>%(Denominazione)s</Denominazione>
-        <CodiceAOO>%(CodiceA00)</CodiceAOO>
-    </AOO>
-</Mittente>
+    <Mittente>
+        <Amministrazione>
+            <Denominazione>%(Denominazione_Entita)s</Denominazione>
+            <CodiceAmministrazione>%(CodiceAmministrazione)s</CodiceAmministrazione>
+            <UnitaOrganizzativa>
+                <Denominazione>%(Denominazione)s</Denominazione>
+                <Identificativo>%(Identificativo)s</Identificativo>
+                <IndirizzoPostale>
+                    <Denominazione>%(Indirizzo)s</Denominazione>
+                </IndirizzoPostale>
+                <IndirizzoTelematico tipo="smtp">%(IndirizzoTelematico)s</IndirizzoTelematico>
+            </UnitaOrganizzativa>
+        </Amministrazione>
+        <AOO>
+            <Denominazione>%(Denominazione)s</Denominazione>
+            <CodiceAOO>%(CodiceA00)</CodiceAOO>
+        </AOO>
+    </Mittente>
