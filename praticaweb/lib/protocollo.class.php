@@ -9,8 +9,15 @@ require_once LIB."utility.class.php";
 require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoap.php";
 require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoapmime.php";
 require_once DATA_DIR."protocollo.config.php";
+
 class protocollo{
+
     static function richiediProtOut($pratica,$params=Array()){
+        $result = Array(
+            "success" => 0,
+            "message" => "",
+            "result" => ""
+        );
         $documentiOk = 1;
         if (!$params["destinatari"]) return -2;
         if ($params["allegati"]){
@@ -39,6 +46,11 @@ class protocollo{
     }
 
     static function recuperaSoggetto($id,$app="pe"){
+        $result = Array(
+            "success" => 0,
+            "message" => "",
+            "result" => ""
+        );
         $sql=<<<EOT
 WITH elenco soggetti AS(        
 SELECT id::varchar as id, coalesce(codfis,piva) as codfis, nome, cognome, coalesce(ragsoc,cognome || ' ' || nome) as denominazione, comune, cap, trim(coalesce(indirizzo, '')|| '' || coalesce(civico,'')) as indirizzo, pec as mail FROM pe.soggetti
@@ -52,27 +64,43 @@ EOT;
         $res = Array();
         if($stmt->execute(Array($id))){
             $res = $stmt->fetch();
+            $result["result"] = $res;
+            $result["success"] = 1;
         }
-        return $res;
+        else{
+            $result["message"] = "";
+            $result["success"] = -1;
+        }
     }
 
-    private static function caricaXML($nome,$data){
+    static function caricaXML($nome,$data){
+        $result = Array(
+            "success" => 0,
+            "message" => "",
+            "result" => ""
+        );
         $fName = TEMPLATE_DIR.$nome.".xml";
         if (file_exists($fName)){
             $f = fopen($fName,'r');
             $tXml = fread($f,filesize($fName));
             fclose($f);
             $xml = utility::dsprintf($tXml,$data);
+            $result["success"] = 1;
+            $result["result"] = $xml;
             return Array("success"=>1,"result"=>$xml);
         }
-        return Array("success"=>-1,"result"=>"");
+        else{
+            $result["success"] = -1;
+            $result["message"] = "Il file $fName non è stato trovato";
+        }
+        return $result;
     }
 
     private static function inserisciDocumento($id){
         $result = Array(
             "success" => 0,
             "message" => "",
-            "id" => ""
+            "result" => ""
         );
         $res = appUtils::getInfoDocumento($id);
         if ($res["success"]==1){
@@ -81,15 +109,22 @@ EOT;
             if ($err) {
                 $result["success"] = -1;
                 $result["message"] = $err;
-                return $result;
+
             }
-            $client->addAttachment($res["file"],$res["data"]["nomefile"],$res["mimetype"]);
-            $a = $client->call("insertDocumento",Array($paramsProt["login"],$res["nomefile"],$res["descrizione"]));
-            $xml = simplexml_load_string($a);
-            $json = json_encode($xml);
-            $response = json_decode($json,TRUE);
-            return $response;
+            else{
+                $client->addAttachment($res["file"],$res["data"]["nomefile"],$res["mimetype"]);
+                $a = $client->call("insertDocumento",Array($paramsProt["login"],$res["nomefile"],$res["descrizione"]));
+                $xml = simplexml_load_string($a);
+                $json = json_encode($xml);
+                $response = json_decode($json,TRUE);
+                $result["result"] = $response;
+                $result["success"] = 1;
+            }
         }
+        else{
+            $result = $res;
+        }
+        return $result;
     }
 
 }
