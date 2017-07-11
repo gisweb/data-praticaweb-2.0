@@ -12,7 +12,12 @@ require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoapmime.php";
 require_once DATA_DIR."protocollo.config.php";
 
 class protocollo{
-
+    static function subst($txt,$data){
+        foreach($data as $k=>$v){
+            $txt = str_replace("%($k)s",$v,$txt);
+        }
+        return $txt;
+    }
     static function richiediProtOut($pratica,$params=Array()){
         $result = Array(
             "success" => 0,
@@ -86,7 +91,7 @@ EOT;
             $f = fopen($fName,'r');
             $tXml = fread($f,filesize($fName));
             fclose($f);
-            $xml = utility::dsprintf($tXml,$data);
+            $xml = self::subst($tXml,$data);
             $result["success"] = 1;
             $result["result"] = $xml;
             return Array("success"=>1,"result"=>$xml);
