@@ -1,0 +1,17 @@
+<DestinatarioMulti>
+    <TipoDestinatario>Principale</TipoDestinatario>
+    <Persona id="%(codfis)s">
+        <Nome>%(nome)s</Nome>
+        <Cognome>%(cognome)s</Cognome>
+        <CodiceFiscale>%(codfis)s</CodiceFiscale>
+        <Denominazione>%(denominazione)s</Denominazione>
+    </Persona>
+    <IndirizzoTelematico tipo="smtp">%(mail)s</IndirizzoTelematico>
+    <IndirizzoPostale>
+        <Denominazione>%(indirizzo)s</Denominazione>
+        <CAP>%(cap)s</CAP>
+        <Comune>%(comune)s</Comune>
+        <Provincia>%(prov)s</Provincia>
+    </IndirizzoPostale>
+    <ModalitaInvio>%(modalita_invio)s</ModalitaInvio>
+</DestinatarioMulti>

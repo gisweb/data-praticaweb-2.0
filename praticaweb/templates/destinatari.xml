@@ -4,9 +4,5 @@
     </Persona>
 </Destinatario>
 <DestinatariMulti>
-    <DestinatarioMulti>
-        <TipoDestinatario>Principale</TipoDestinatario>
-        %(destinatario)s
-        <ModalitaInvio>PEC</ModalitaInvio>
-    </DestinatarioMulti>
+    %(destinatari_multi)s
 </DestinatariMulti>
