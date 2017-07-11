@@ -72,6 +72,7 @@ EOT;
             $result["message"] = "";
             $result["success"] = -1;
         }
+        return $result;
     }
 
     static function caricaXML($nome,$data){
