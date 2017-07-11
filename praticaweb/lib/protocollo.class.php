@@ -6,6 +6,7 @@
  * Time: 17:55
  */
 require_once LIB."utility.class.php";
+require_once LIB."utils.class.php";
 require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoap.php";
 require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoapmime.php";
 require_once DATA_DIR."protocollo.config.php";
