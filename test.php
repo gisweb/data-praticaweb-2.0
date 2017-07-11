@@ -20,11 +20,11 @@ for($i=0;$i<count($s);$i++){
         $sogg = $r["result"];
         $sogg["modalita_invio"] = "PEC";
         $res = protocollo::caricaXML("destinatario_multi",$sogg);
-        $r[] = $res["result"];
+        $rr[] = $res["result"];
         $soggetti[] = $sogg["denominazione"];
     }
 }
-$data=Array("destinatari"=>implode(", ",$soggetti),"destinatari_multi"=>implode("\n",$r));
+$data=Array("destinatari"=>implode(", ",$soggetti),"destinatari_multi"=>implode("\n",$rr));
 $r = protocollo::caricaXML("destinatari",$data);
 
 echo "<pre>";print_r($r);echo "</pre>";
