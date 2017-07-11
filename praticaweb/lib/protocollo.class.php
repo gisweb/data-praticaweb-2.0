@@ -5,7 +5,7 @@
  * Date: 06/07/17
  * Time: 17:55
  */
-
+require_once LIB."utility.class.php";
 require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoap.php";
 require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoapmime.php";
 require_once DATA_DIR."protocollo.config.php";
@@ -57,7 +57,15 @@ EOT;
     }
 
     private static function caricaXML($nome,$data){
-
+        $fName = TEMPLATE_DIR.$nome.".xml";
+        if (file_exists($fName)){
+            $f = fopen($fName,'r');
+            $tXml = fread($f,filesize($fName));
+            fclose($f);
+            $xml = utility::dsprintf($tXml,$data);
+            return Array("success"=>1,"result"=>$xml);
+        }
+        return Array("success"=>-1,"result"=>"");
     }
 
     private static function inserisciDocumento($id){

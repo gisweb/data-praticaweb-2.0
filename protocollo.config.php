@@ -5,6 +5,9 @@
  * Date=> 06/07/17
  * Time=> 11=>06
  */
+
+define('TEMPLATE_DIR',DATA_DIR."praticaweb".DIRECTORY_SEPARATOR."templates".DIRECTORY_SEPARATOR);
+
 $paramsProt = Array(
     "service"=>"SicraWeb",
     "wsUrl"=> "http://93.57.10.175:50080/client/services/ProWSApi?WSDL",
