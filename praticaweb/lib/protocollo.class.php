@@ -64,7 +64,7 @@ EOT;
         $stmt = $dbh->prepare($sql);
         $res = Array();
         if($stmt->execute(Array($id))){
-            $res = $stmt->fetch();
+            $res = $stmt->fetch(PDO::FETCH_ASSOC);
             $result["result"] = $res;
             $result["success"] = 1;
         }
