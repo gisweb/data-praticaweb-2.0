@@ -27,5 +27,7 @@ for($i=0;$i<count($s);$i++){
 $data=Array("destinatari"=>implode(", ",$soggetti),"destinatari_multi"=>implode("\n",$rr));
 $r = protocollo::caricaXML("destinatari",$data);
 
-echo "<pre>";print_r($r["result"]);echo "</pre>";
+//echo "<pre>";
+print_r($r["result"]);
+//echo "</pre>";
 ?>
