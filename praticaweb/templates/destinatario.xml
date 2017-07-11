@@ -5,7 +5,7 @@
         <CodiceFiscale>%(codfis)s</CodiceFiscale>
         <Denominazione>%(denominazione)s</Denominazione>
     </Persona>
-    <IndirizzoTelematico tipo="smtp">%(pec)s</IndirizzoTelematico>
+    <IndirizzoTelematico tipo="smtp">%(mail)s</IndirizzoTelematico>
     <IndirizzoPostale>
         <Denominazione>%(indirizzo)s</Denominazione>
         <CAP>%(cap)s</CAP>
