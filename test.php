@@ -19,7 +19,8 @@ for($i=0;$i<count($s);$i++){
     if ($r["success"]==1){
         $sogg = $r["result"];
         $sogg["modalita_invio"] = "PEC";
-        $r[] = protocollo::caricaXML("destinatario_multi",$sogg);
+        $res = protocollo::caricaXML("destinatario_multi",$sogg);
+        $r[] = $res["result"];
         $soggetti[] = $sogg["denominazione"];
     }
 }
