@@ -12,7 +12,12 @@ define('APPS_DIR',"/apps/PraticaWeb-2.1-dev/");
 require_once "config.php";
 require_once "protocollo.config.php";
 require_once LOCAL_LIB."protocollo.class.php";
+echo "A";
+$r = protocollo::recuperaSoggetto("27675");
+if ($r["success"]==1){
+    $sogg = $r["result"];
+    $r = protocollo::caricaXML("destinatario",$sogg);
+    echo "<pre>";print_r($r);echo "</pre>";
+}
 
-$sogg = protocollo::recuperaSoggetto("27675");
-echo "<pre>";print_r($sogg);echo "</pre>";
 ?>
