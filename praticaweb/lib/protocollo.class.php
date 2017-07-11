@@ -69,7 +69,7 @@ EOT;
             $result["success"] = 1;
         }
         else{
-            $result["message"] = "";
+            $result["message"] = $stmt->errorInfo();
             $result["success"] = -1;
         }
         return $result;
