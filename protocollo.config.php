@@ -25,6 +25,24 @@ $paramsProtOut = Array(
     )
 );
 
+$paramsProtOut = Array(
+    "service"=>"SicraWeb",
+    "wsUrl"=> "http://93.57.10.175:50080/client/services/ProWSApi?WSDL",
+    "login"=> "!suap/sicraweb@tovosangiacomo/tovosangiacomo",
+    "mittente"=> Array(
+
+        "Denominazione_Entita"=> "Comune di Andora",
+        "Denominazione"=>"URBANISTICA",
+        "CodiceAmministrazione"=>"c_l315",
+        "IndirizzoTelematico"=>"comune@prova.it",
+        "UnitaOrganizzativa"=>"T",
+        "CodiceTitolario"=>"1.1",
+        "CodiceA00"=>"PL",
+        "Indirizzo" => "Via Cavour 94",
+        "Identificativo" => ""
+    )
+);
+
 
 
 
