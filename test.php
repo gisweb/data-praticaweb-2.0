@@ -12,6 +12,12 @@ define('APPS_DIR',"/apps/PraticaWeb-2.1-dev/");
 require_once "config.php";
 require_once "protocollo.config.php";
 require_once LOCAL_LIB."protocollo.class.php";
+
+
+$r = protocollo::infoProtocollo("3","2016");
+print_r($r["result"]);
+exit;
+$docs=Array("1393","1392");
 $s = Array("27675","27674","autostrade@pec.it");
 for($i=0;$i<count($s);$i++){
     $id = $s[$i];

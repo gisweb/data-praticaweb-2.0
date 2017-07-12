@@ -5,7 +5,10 @@
  * Date: 06/07/17
  * Time: 17:55
  */
-require_once LIB."utility.class.php";
+
+
+$paramsProtOut=Array();
+
 require_once LIB."utils.class.php";
 require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoap.php";
 require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoapmime.php";
@@ -47,8 +50,20 @@ class protocollo{
 
     }
 
-    static function infoProtocollo(){
-
+    static function infoProtocollo($prot,$anno){
+        $result = Array(
+            "success" => 0,
+            "message" => "",
+            "result" => ""
+        );
+        $client = new nusoap_client($paramsProtOut["wsUrl"],'wsdl');
+        $a = $client->call("infoProtocollo",Array($paramsProtOut["login"],$prot,$anno));
+        $xml = simplexml_load_string($a);
+        $json = json_encode($xml);
+        $response = json_decode($json,TRUE);
+        $result["result"] = $response;
+        $result["success"] = 1;
+        return $result;
     }
 
     static function recuperaSoggetto($id,$app="pe"){
@@ -111,7 +126,7 @@ EOT;
         );
         $res = appUtils::getInfoDocumento($id);
         if ($res["success"]==1){
-            $client = new nusoap_client_mime($paramsProt["wsUrl"],'wsdl');
+            $client = new nusoap_client_mime($paramsProtOut["wsUrl"],'wsdl');
             $err = $client->getError();
             if ($err) {
                 $result["success"] = -1;
@@ -120,7 +135,7 @@ EOT;
             }
             else{
                 $client->addAttachment($res["file"],$res["data"]["nomefile"],$res["mimetype"]);
-                $a = $client->call("insertDocumento",Array($paramsProt["login"],$res["nomefile"],$res["descrizione"]));
+                $a = $client->call("insertDocumento",Array($paramsProtOut["login"],$res["nomefile"],$res["descrizione"]));
                 $xml = simplexml_load_string($a);
                 $json = json_encode($xml);
                 $response = json_decode($json,TRUE);
