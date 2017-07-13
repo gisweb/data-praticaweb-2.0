@@ -62,8 +62,19 @@ class protocollo{
             else{
                 $client->addAttachment($res["file"],$res["data"]["nomefile"],$res["mimetype"]);
                 $response = $client->call("insertDocumento",Array($prms["login"],$res["data"]["nomefile"],$res["data"]["descrizione"]));
-                $result["result"] = $response;
-                $result["success"] = 1;
+                if(!$response["lngErrNumber"] && $response["lngDocID"]){
+                    $result["success"] = 1;
+
+                    $res["data"]["idrichiesta"] = $response["lngDocID"];
+                    $r = self::caricaXML("documento",$res["data"]);
+                    $xmlAllegato = $r["result"];
+                    $result["result"] = Array("idallegato"=>$response["lngDocID"],"xml"=>$xmlAllegato);
+                }
+                else{
+                    $result["success"] = -2;
+                    $result["message"] = sprintf("Errore Numero %s - %s",$response["lngErrNumber"],$response["strErrString"]);
+                }
+
             }
         }
         else{
@@ -78,22 +89,54 @@ class protocollo{
             "message" => "",
             "result" => ""
         );
+        $dataSubst = self::getParams();
+        $paramsKeys = array_keys($params);
+
+        if (!$params["app"]) $app="pe";
+        else{
+            $app=$params["app"];
+        }
+        $d = self::recuperaPratica($pratica,$app);
+        foreach($d["result"] as $k=>$v){
+            $dataSubst[$k] = $v;
+        }
+        if (!(in_array("destinatari",$paramsKeys) && $params["destinatari"])) return -2;
+
         $documentiOk = 1;
-        if (!$params["destinatari"]) return -2;
-        if ($params["allegati"]){
+        $multiDest =  (count($params["destinatari"]) > 1)?(1):(0);
+        if (in_array("allegati",$paramsKeys) && $params["allegati"]){
             for($i=0;$i<count($params["allegati"]);$i++){
                 $idDoc = $params["allegati"][$i];
                 $res = self::inserisciDocumento($idDoc);
                 $documentiOk = $documentiOk && $res["success"];
                 if ($res["success"]==1){
-
+                    $xmlAll[] = $res["result"]["xml"];
                 }
                 else{
 
                 }
 
             }
+            $dataSubst["allegati"] = implode("\n",$xmlAll);
         }
+
+        for($i=0;$i<count($params["destinatari"]);$i++){
+            $idDest = $params["destinatari"][$i];
+            $res = self::recuperaSoggetto($idDest,$app,$multiDest);
+            if ($res["success"]==1){
+                $denominazioni[] = $res["result"]["data"]["denominazione"];
+                $xmlDest[] = $res["result"]["data"]["xml"];
+            }
+        }
+        if (!$multiDest){
+            $dataSubst["destinatari"] = implode("\n",$xmlDest);
+        }
+        else{
+            $r = self::caricaXML("destinatari",Array("denominazioni"=>implode(", ",$denominazioni),"destinatari"=>implode("\n",$xmlDest)));
+            $dataSubst["destinatari"] = $r["result"];
+        }
+        $r = self::caricaXML("prot_out",$dataSubst);
+        $fileXML = $r["result"];
 
     }
 
@@ -117,7 +160,7 @@ class protocollo{
         return $result;
     }
 
-    static function recuperaSoggetto($id,$app="pe"){
+    static function recuperaSoggetto($id,$app="pe",$multi){
         $result = Array(
             "success" => 0,
             "message" => "",
@@ -136,6 +179,31 @@ EOT;
         $res = Array();
         if($stmt->execute(Array($id))){
             $res = $stmt->fetch(PDO::FETCH_ASSOC);
+            $fileXML = ($multi)?("destinatario_multi"):("destinatario");
+            $xml = self::caricaXML($fileXML,$res);
+            $result["result"] = Array("data"=>$res,"xml"=>$xml["result"]);
+            $result["success"] = 1;
+        }
+        else{
+            $result["message"] = $stmt->errorInfo();
+            $result["success"] = -1;
+        }
+        return $result;
+    }
+    static function recuperaPratica($pr,$app){
+        $result = Array(
+            "success" => 0,
+            "message" => "",
+            "result" => ""
+        );
+        $sql = <<<EOT
+SELECT numero,protocollo as prot,date_part('year',data_prot) as anno_prot,coalesce(oggetto,'') as oggetto FROM pe.avvioproc WHERE pratica=?
+EOT;
+        $dbh = utils::getDb();
+        $stmt = $dbh->prepare($sql);
+        $res = Array();
+        if($stmt->execute(Array($pr))) {
+            $res = $stmt->fetch(PDO::FETCH_ASSOC);
             $result["result"] = $res;
             $result["success"] = 1;
         }
@@ -145,7 +213,6 @@ EOT;
         }
         return $result;
     }
-
     static function caricaXML($nome,$data){
         $result = Array(
             "success" => 0,

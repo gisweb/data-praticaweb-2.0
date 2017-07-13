@@ -7,7 +7,7 @@ require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoap.php";
 require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoapmime.php";
 require_once DATA_DIR."protocollo.config.php";
 
-/*$client = new nusoap_client($paramsProt["wsUrl"],'wsdl');
+$client = new nusoap_client($paramsProtOut["wsUrl"],'wsdl');
 
 $prot = "11471";
 $anno = "2017";
@@ -16,8 +16,8 @@ $err = $client->getError();
 if ($err) {
     echo '<h2>Constructor error</h2><pre>' . $err . '</pre>';
 }
-$response = $client->call("infoProtocollo",Array($paramsProt["login"],$prot,$anno));
-*/
+$response = $client->call("infoProtocollo",Array($paramsProtOut["login"],$prot,$anno));
+print_array($response);exit;
 $id = 1394;
 $result = Array(
     "success" => 0,

@@ -9,7 +9,24 @@
             <DataRegistrazione>%(data_registrazione)s</DataRegistrazione>
             <Flusso>U</Flusso>
         </Identificatore>
-%(mittente)s
+        <Mittente>
+            <Amministrazione>
+                <Denominazione>%(Denominazione_Entita)s</Denominazione>
+                <CodiceAmministrazione>%(CodiceAmministrazione)s</CodiceAmministrazione>
+                <UnitaOrganizzativa>
+                    <Denominazione>%(Denominazione)s</Denominazione>
+                    <Identificativo>%(Identificativo)s</Identificativo>
+                    <IndirizzoPostale>
+                        <Denominazione>%(Indirizzo)s</Denominazione>
+                    </IndirizzoPostale>
+                    <IndirizzoTelematico tipo="smtp">%(IndirizzoTelematico)s</IndirizzoTelematico>
+                </UnitaOrganizzativa>
+            </Amministrazione>
+            <AOO>
+                <Denominazione>%(Denominazione)s</Denominazione>
+                <CodiceAOO>%(CodiceA00)</CodiceAOO>
+            </AOO>
+        </Mittente>
 %(destinatari)s
         <Classifica>
             <CodiceAmministrazione>%(CodiceAmministrazione)s</CodiceAmministrazione>
@@ -18,13 +35,8 @@
         </Classifica>
     </Intestazione>
     <Descrizione>
-        <Documento tal:attributes="nome view/fileName;id view/objId">
-            <DescrizioneDocumento tal:content="context/Title">Titolo</DescrizioneDocumento>
-            <TipoDocumento tal:content="python:'PRATICAWEBSUAP' if context.getItem('iol_tipo_proc')=='suap' else 'PRATICAWEBSUE'">TIPO RICHIESTA</TipoDocumento>
-        </Documento>
-        <Allegati/>
+        %(allegati)s
     </Descrizione>
-    <ApplicativoProtocollo nome="AGSPR">
-        <Parametro nome="tipoSmistamento" valore="COMPETENZA"/>
-    </ApplicativoProtocollo>
+    <ProtocolloPadre numero="%(prot)s" anno="%(anno_prot)s"/>
+
 </Segnatura>
