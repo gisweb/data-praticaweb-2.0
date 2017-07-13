@@ -7,20 +7,71 @@
  */
 
 
-$paramsProtOut=Array();
 
+require_once LOCAL_LIB."app.utils.class.php";
 require_once LIB."utils.class.php";
 require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoap.php";
 require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoapmime.php";
 require_once DATA_DIR."protocollo.config.php";
 
 class protocollo{
+
+    static function getParams(){
+        return Array(
+            "service"=>"SicraWeb",
+            "wsUrl"=> "http://93.57.10.175:50080/client/services/ProWSApi?WSDL",
+            "login"=> "!suap/sicraweb@tovosangiacomo/tovosangiacomo",
+            "mittente"=> Array(
+
+                "Denominazione_Entita"=> "Comune di Andora",
+                "Denominazione"=>"URBANISTICA",
+                "CodiceAmministrazione"=>"c_l315",
+                "IndirizzoTelematico"=>"comune@prova.it",
+                "UnitaOrganizzativa"=>"T",
+                "CodiceTitolario"=>"1.1",
+                "CodiceA00"=>"PL",
+                "Indirizzo" => "Via Cavour 94",
+                "Identificativo" => ""
+            )
+        );
+    }
+
     static function subst($txt,$data){
         foreach($data as $k=>$v){
             $txt = str_replace("%($k)s",$v,$txt);
         }
         return $txt;
     }
+
+    private static function inserisciDocumento($id){
+        $result = Array(
+            "success" => 0,
+            "message" => "",
+            "result" => ""
+        );
+        $res = appUtils::getInfoDocumento($id);
+        $prms = self::getParams();
+        if ($res["success"]==1){
+            $client = new nusoap_client_mime($prms["wsUrl"],'wsdl');
+            $err = $client->getError();
+            if ($err) {
+                $result["success"] = -1;
+                $result["message"] = $err;
+
+            }
+            else{
+                $client->addAttachment($res["file"],$res["data"]["nomefile"],$res["mimetype"]);
+                $response = $client->call("insertDocumento",Array($prms["login"],$res["data"]["nomefile"],$res["data"]["descrizione"]));
+                $result["result"] = $response;
+                $result["success"] = 1;
+            }
+        }
+        else{
+            $result = $res;
+        }
+        return $result;
+    }
+
     static function richiediProtOut($pratica,$params=Array()){
         $result = Array(
             "success" => 0,
@@ -118,36 +169,7 @@ EOT;
         return $result;
     }
 
-    private static function inserisciDocumento($id){
-        $result = Array(
-            "success" => 0,
-            "message" => "",
-            "result" => ""
-        );
-        $res = appUtils::getInfoDocumento($id);
-        if ($res["success"]==1){
-            $client = new nusoap_client_mime($paramsProtOut["wsUrl"],'wsdl');
-            $err = $client->getError();
-            if ($err) {
-                $result["success"] = -1;
-                $result["message"] = $err;
 
-            }
-            else{
-                $client->addAttachment($res["file"],$res["data"]["nomefile"],$res["mimetype"]);
-                $a = $client->call("insertDocumento",Array($paramsProtOut["login"],$res["nomefile"],$res["descrizione"]));
-                $xml = simplexml_load_string($a);
-                $json = json_encode($xml);
-                $response = json_decode($json,TRUE);
-                $result["result"] = $response;
-                $result["success"] = 1;
-            }
-        }
-        else{
-            $result = $res;
-        }
-        return $result;
-    }
 
 }
 ?>
