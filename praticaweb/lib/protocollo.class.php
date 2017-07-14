@@ -23,11 +23,13 @@ class protocollo{
     var $service;
     var $wsClient;
     var $result;
+    var $modalita;
+    var $direzione;
 
     /******************************************************************************************************************/
 
     /******************************************************************************************************************/
-    function __construct(){
+    function __construct($direzione='U',$modo='PEC'){
         $this->wsUrl = "http://93.57.10.175:50080/client/services/ProWSApi?WSDL";
         $this->login = "!suap/sicraweb@tovosangiacomo/tovosangiacomo";
         $this->service = "SicraWeb";
@@ -48,7 +50,8 @@ class protocollo{
             ),
             "destinatario"=> Array()
         );
-
+        $this->direzione = $direzione;
+        $this->modalita = $modo;
         $this->result =  $result = Array(
             "success" => 0,
             "message" => "",
@@ -184,13 +187,14 @@ class protocollo{
     /******************************************************************************************************************/
 
     /******************************************************************************************************************/
-    function recuperaSoggetto($id,$app="pe",$multi){
+    function recuperaSoggetto($id,$multi,$app="pe"){
         $result = $this->result;
+        $modo = $this->modalita;
         $sql=<<<EOT
 WITH elenco_soggetti AS(        
-SELECT id::varchar as id, coalesce(codfis,piva) as codfis, nome, cognome, coalesce(ragsoc,cognome || ' ' || nome) as denominazione, comune, prov, cap, trim(coalesce(indirizzo, '')|| '' || coalesce(civico,'')) as indirizzo, pec as mail FROM pe.soggetti
+SELECT id::varchar as id, coalesce(codfis,piva) as codfis, nome, cognome, coalesce(ragsoc,cognome || ' ' || nome) as denominazione, comune, prov, cap, trim(coalesce(indirizzo, '')|| '' || coalesce(civico,'')) as indirizzo, pec as mail,'$modo' as modalita_invio FROM pe.soggetti
 UNION ALL
-SELECT mail as id,codfis, ''::varchar as nome, ''::varchar as cognome, nome as denominazione, comune, prov, cap, trim(coalesce(indirizzo, '')|| '' || coalesce(civico,'')) as indirizzo,mail FROM pe.e_enti
+SELECT mail as id,codfis, ''::varchar as nome, ''::varchar as cognome, nome as denominazione, comune, prov, cap, trim(coalesce(indirizzo, '')|| '' || coalesce(civico,'')) as indirizzo,mail,'$modo' as modalita_invio FROM pe.e_enti
 )
 SELECT * FROM elenco_soggetti WHERE id = ?;
 EOT;
