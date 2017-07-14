@@ -126,9 +126,7 @@ class protocollo{
         if (in_array("allegati",$paramsKeys) && $params["allegati"]){
             for($i=0;$i<count($params["allegati"]);$i++){
                 $idDoc = $params["allegati"][$i];
-                echo "Inserimento Documento $idDoc \n";
                 $res = $this->inserisciDocumento($idDoc);
-                print_r($res);
                 $documentiOk = $documentiOk && $res["success"];
                 if ($res["success"]==1){
                     $xmlAll[] = $res["result"]["xml"];
@@ -143,7 +141,9 @@ class protocollo{
 
         for($i=0;$i<count($params["destinatari"]);$i++){
             $idDest = $params["destinatari"][$i];
+            echo "Recupero Soggetto $idDest \n";
             $res = $this->recuperaSoggetto($idDest,$app,$multiDest);
+            print_r($res);
             if ($res["success"]==1){
                 $denominazioni[] = $res["result"]["data"]["denominazione"];
                 $xmlDest[] = $res["result"]["data"]["xml"];
@@ -153,7 +153,7 @@ class protocollo{
             $dataSubst["destinatari"] = implode("\n",$xmlDest);
         }
         else{
-            $r = $this->caricaXML("destinatari",Array("denominazioni"=>implode(", ",$denominazioni),"destinatari_multi"=>implode("\n",$xmlDest)));
+            $r = $this->caricaXML("destinatari",Array("destinatari"=>implode(", ",$denominazioni),"destinatari_multi"=>implode("\n",$xmlDest)));
             $dataSubst["destinatari"] = $r["result"];
         }
         $r = $this->caricaXML("prot_out",$dataSubst);
