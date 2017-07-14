@@ -119,7 +119,7 @@ class protocollo{
         foreach($d["result"] as $k=>$v){
             $dataSubst[$k] = $v;
         }
-
+        $dataSubst["data_registrazione"] = date ("d/m/Y");
 
         $documentiOk = 1;
         $multiDest =  (count($params["destinatari"]) > 1)?(1):(0);
