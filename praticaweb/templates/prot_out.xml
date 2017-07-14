@@ -4,7 +4,7 @@
         <Oggetto>Protocollo in Uscita da Ufficio Edilizia Privata - Pratica Edilizia %(numero)s - %(oggetto)s</Oggetto>
         <Identificatore>
             <CodiceAmministrazione>%(CodiceAmministrazione)s</CodiceAmministrazione>
-            <CodiceAOO>%(CodiceA00)</CodiceAOO>
+            <CodiceAOO>%(CodiceA00)s</CodiceAOO>
             <NumeroRegistrazione>%(id)s</NumeroRegistrazione>
             <DataRegistrazione>%(data_registrazione)s</DataRegistrazione>
             <Flusso>U</Flusso>
@@ -24,7 +24,7 @@
             </Amministrazione>
             <AOO>
                 <Denominazione>%(Denominazione)s</Denominazione>
-                <CodiceAOO>%(CodiceA00)</CodiceAOO>
+                <CodiceAOO>%(CodiceA00)s</CodiceAOO>
             </AOO>
         </Mittente>
 %(destinatari)s
