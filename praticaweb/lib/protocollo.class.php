@@ -68,7 +68,7 @@ class protocollo{
     /******************************************************************************************************************/
 
     /******************************************************************************************************************/
-    private function inserisciDocumento($id){
+    function inserisciDocumento($id){
         $result = $this->result;
         $res = appUtils::getInfoDocumento($id);
         if ($res["success"]==1){
@@ -108,7 +108,7 @@ class protocollo{
 
     function richiediProtOut($pratica,$params=Array()){
         $result = $this->result;
-
+        $dataSubst = $this->params["mittente"];
         $paramsKeys = array_keys($params);
         if (!(in_array("destinatari",$paramsKeys) && $params["destinatari"])) return -2;
         $app = ((in_array('app',$paramsKeys) && $params["app"]))?($params["app"]):("pe");
@@ -195,7 +195,7 @@ SELECT mail as id,codfis, ''::varchar as nome, ''::varchar as cognome, nome as d
 SELECT * FROM elenco_soggetti WHERE id = ?;
 EOT;
 
-        $stmt = $dbh->prepare($sql);
+        $stmt = $this->dbh->prepare($sql);
         $res = Array();
         if($stmt->execute(Array($id))){
             $res = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -225,8 +225,8 @@ FROM
 WHERE 
   pratica=?
 EOT;
-        $dbh = utils::getDb();
-        $stmt = $dbh->prepare($sql);
+
+        $stmt = $this->dbh->prepare($sql);
         $res = Array();
         if($stmt->execute(Array($pr))) {
             $res = $stmt->fetch(PDO::FETCH_ASSOC);
