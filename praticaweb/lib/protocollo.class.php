@@ -126,7 +126,9 @@ class protocollo{
         if (in_array("allegati",$paramsKeys) && $params["allegati"]){
             for($i=0;$i<count($params["allegati"]);$i++){
                 $idDoc = $params["allegati"][$i];
+                echo "Inserimento Documento $idDoc \n";
                 $res = $this->inserisciDocumento($idDoc);
+                print_r($res);
                 $documentiOk = $documentiOk && $res["success"];
                 if ($res["success"]==1){
                     $xmlAll[] = $res["result"]["xml"];
@@ -157,6 +159,8 @@ class protocollo{
         $r = $this->caricaXML("prot_out",$dataSubst);
         $fileXML = $r["result"];
         $this->wsClient->clearAttachments();
+
+        echo "\n$fileXML\n";
         $this->wsClient->addAttachment($fileXML,"richiesta_protocollo_out.xml","text/xml");
         $res =$this->wsClient->call("registraProtocollo",Array($this->login));
         return $res;
