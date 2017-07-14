@@ -146,7 +146,7 @@ class protocollo{
             print_r($res);
             if ($res["success"]==1){
                 $denominazioni[] = $res["result"]["data"]["denominazione"];
-                $xmlDest[] = $res["result"]["data"]["xml"];
+                $xmlDest[] = $res["result"]["xml"];
             }
         }
         if (!$multiDest){
