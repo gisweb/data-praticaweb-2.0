@@ -46,7 +46,7 @@ class protocollo{
                 "CodiceTitolario"=>"1.1",
                 "CodiceA00"=>"PL",
                 "Indirizzo" => "Via Cavour 94",
-                "Identificativo" => ""
+                "Identificativo" => "T"
             ),
             "destinatario"=> Array()
         );
