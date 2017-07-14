@@ -153,7 +153,7 @@ class protocollo{
             $dataSubst["destinatari"] = implode("\n",$xmlDest);
         }
         else{
-            $r = $this->caricaXML("destinatari",Array("denominazioni"=>implode(", ",$denominazioni),"destinatari"=>implode("\n",$xmlDest)));
+            $r = $this->caricaXML("destinatari",Array("denominazioni"=>implode(", ",$denominazioni),"destinatari_multi"=>implode("\n",$xmlDest)));
             $dataSubst["destinatari"] = $r["result"];
         }
         $r = $this->caricaXML("prot_out",$dataSubst);
