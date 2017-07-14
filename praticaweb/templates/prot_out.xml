@@ -13,7 +13,7 @@
             <Amministrazione>
                 <Denominazione>%(Denominazione_Entita)s</Denominazione>
                 <CodiceAmministrazione>%(CodiceAmministrazione)s</CodiceAmministrazione>
-                <UnitaOrganizzativa>
+                <UnitaOrganizzativa id="%(Identificativo)s">
                     <Denominazione>%(Denominazione)s</Denominazione>
                     <Identificativo>%(Identificativo)s</Identificativo>
                     <IndirizzoPostale>

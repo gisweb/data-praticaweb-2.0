@@ -42,11 +42,11 @@ class protocollo{
                 "Denominazione"=>"URBANISTICA",
                 "CodiceAmministrazione"=>"c_l315",
                 "IndirizzoTelematico"=>"comune@prova.it",
-                "UnitaOrganizzativa"=>"T",
+                "UnitaOrganizzativa"=>"URB",
                 "CodiceTitolario"=>"1.1",
                 "CodiceA00"=>"PL",
                 "Indirizzo" => "Via Cavour 94",
-                "Identificativo" => "PL"
+                "Identificativo" => "URB"
             ),
             "destinatario"=> Array()
         );
