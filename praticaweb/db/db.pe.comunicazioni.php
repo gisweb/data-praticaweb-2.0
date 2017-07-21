@@ -9,7 +9,7 @@ if (in_array($action,Array("Salva","Elimina","Protocolla"))){
 	if ($action=="Protocolla" && defined('PROT_OUT')  && PROT_OUT==1){
             require_once LOCAL_LIB."wsProtocollo.class.php";
             $allegati = $_POST["allegati"];
-            $destinatari = $_POST["destinatari"]
+            $destinatari = $_POST["destinatari"];
             $prot = new wsProtocollo('U','PEC');
             $params["id"] = $id;
             $params["allegati"] = $allegati;
