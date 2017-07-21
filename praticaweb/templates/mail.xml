@@ -1,0 +1,15 @@
+<messaggioIn>
+    <docId>1</docId>
+    <annoProtocollo>2017</annoProtocollo>
+    <numeroProtocollo>39</numeroProtocollo>
+    <oggettoMail>Test Invio Pec GisWeb</oggettoMail>
+    <testoMail>Questa è una  Pec di prova</testoMail>
+    <mittenteMail>comune@prova.it</mittenteMail>
+    <destinatariMail>
+        <destinatarioMail>carbone.marco@pec.it</destinatarioMail>
+        <destinatarioMail>amministrazione@pec.gisweb.it</destinatarioMail>
+    </destinatariMail>
+    <utente></utente>
+    <Ruolo></Ruolo>
+    <invioInteroperabile>N</invioInteroperabile>
+</messaggioIn>
