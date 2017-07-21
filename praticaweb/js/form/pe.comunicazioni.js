@@ -32,7 +32,7 @@ $.fn.serializeObject = function() {
 }
 
 $(document).ready(function(){
-    $("#richiesta_prot").button({
+/*    $("#richiesta_prot").button({
         icons:{primary:'ui-icon-gear'}
     }).bind('click',function(event){
         event.preventDefault();
@@ -58,4 +58,6 @@ $(document).ready(function(){
 		
 	});
 	$("#tipo_comunicazione").trigger("change");
-});
+}
+*/
+);
