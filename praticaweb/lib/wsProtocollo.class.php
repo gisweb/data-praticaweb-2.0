@@ -6,15 +6,16 @@
  * Time: 17:55
  */
 
-
+define("WSPROT_URL","http://93.57.10.175:50080/client/services/ProWSApi?WSDL");
+define("WSMAIL_URL","http://93.57.10.175:50080/client/services/WSPostaWebSoap?WSDL");
+define('SERVICE_LOGIN',"!suap/sicraweb@tovosangiacomo/tovosangiacomo");
 
 require_once LOCAL_LIB."app.utils.class.php";
 require_once LIB."utils.class.php";
 require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoap.php";
 require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoapmime.php";
-require_once DATA_DIR."protocollo.config.php";
 
-class protocollo{
+class wsProtocollo{
 
     var $params;
     var $dbh;
@@ -30,8 +31,8 @@ class protocollo{
 
     /******************************************************************************************************************/
     function __construct($direzione='U',$modo='PEC'){
-        $this->wsUrl = "http://93.57.10.175:50080/client/services/ProWSApi?WSDL";
-        $this->login = "!suap/sicraweb@tovosangiacomo/tovosangiacomo";
+        $this->wsUrl = WSPROT_URL;
+        $this->login = SERVICE_LOGIN;
         $this->service = "SicraWeb";
         $this->dbh = utils::getDb();
         $this->wsClient =  new nusoap_client_mime($this->wsUrl,'wsdl');
@@ -269,8 +270,50 @@ EOT;
         }
         return $result;
     }
+}
+
+class wsMail{
+    var $params;
+    var $dbh;
+    var $wsUrl;
+    var $login;
+    var $service;
+    var $wsClient;
+    var $result;
+
+    /******************************************************************************************************************/
+
+    /******************************************************************************************************************/
+    function __construct(){
+        $this->wsUrl = WSMAIL_URL;
+        $this->login = SERVICE_LOGIN;
+        $this->service = "SicraWeb";
+        $this->dbh = utils::getDb();
+        $this->wsClient =  new nusoap_client_mime($this->wsUrl,'wsdl');
+
+        $this->params = Array(
+            "mittente"=> Array(
+                "Denominazione_Entita"=> "Comune di Andora",
+                "Denominazione"=>"URBANISTICA",
+                "CodiceAmministrazione"=>"c_l315",
+                "IndirizzoTelematico"=>"comune@prova.it",
+                "UnitaOrganizzativa"=>"T",
+                "CodiceTitolario"=>"1.1",
+                "CodiceA00"=>"PL",
+                "Indirizzo" => "Via Cavour 94",
+                "Identificativo" => "T"
+            ),
+            "destinatario"=> Array()
+        );
+
+        $this->result =  $result = Array(
+            "success" => 0,
+            "message" => "",
+            "result" => ""
+        );
 
 
+    }
 
 }
 ?>
