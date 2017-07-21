@@ -5,8 +5,8 @@ $action = $_REQUEST["azione"];
 if (in_array($action,Array("Salva","Elimina"))){
 	
 	if ($action=="Protocolla" && defined('PROT_OUT')  && PROT_OUT==1){
-        require_once LOCAL_LIB."protocollo.class.php";
-        $prot = new protocollo('U','PEC');
+        require_once LOCAL_LIB."wsProtocollo.class.php";
+        $prot = new wsProtocollo('U','PEC');
         $params["id"] = 1;
         $params["allegati"] = Array(1393,1392);
         $params["destinatari"] = Array(27675,27674);
