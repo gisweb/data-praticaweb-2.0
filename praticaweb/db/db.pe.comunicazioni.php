@@ -16,14 +16,17 @@ if (in_array($action,Array("Salva","Elimina","Protocolla"))){
             $params["destinatari"] = $destinatari;
             $params["app"] = "pe";*/
             $r = $prot->richiediProtOut($idpratica,'pe',$id);
-            print_array($r);
+            //print_array($r);
+
             if ($r["success"]) {
-                $_POST["protocollo"] = $r["result"]["protocollo"];
-                $_POST["data_protocollo"] = $r["result"]["data_protocollo"];
+                $dbh = utils::getDb();
+                $sql = "UPDATE pe.comunicazione SET protocollo = ?, data_protocollo=? WHERE id = ?;";
+                $stmt = $dbh->prepare($sql);
+                $res = $stmt->execute(Array($r["result"]["protocollo"],$r["result"]["data_protocollo"],$id));
             }
 
-            $_REQUEST["mode"]="edit";
-            include_once APPS_DIR."./db/db.savedata.php";
+            //$_REQUEST["mode"]="edit";
+            //include_once APPS_DIR."./db/db.savedata.php";
 	}
 }
 
