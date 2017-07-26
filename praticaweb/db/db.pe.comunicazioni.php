@@ -17,8 +17,13 @@ if (in_array($action,Array("Salva","Elimina","Protocolla"))){
             $params["app"] = "pe";*/
             $r = $prot->richiediProtOut($idpratica,'pe',$id);
             print_array($r);
+            if ($r["success"]) {
+                $_REQUEST["protocollo"] = $r["result"]["protocollo"];
+                $_REQUEST["data_protocollo"] = $r["result"]["data_protocollo"];
+            }
+
             $_REQUEST["mode"]="edit";
-            //include_once APPS_DIR."./db/db.savedata.php";
+            include_once APPS_DIR."./db/db.savedata.php";
 	}
 }
 

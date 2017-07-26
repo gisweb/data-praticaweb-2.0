@@ -188,8 +188,15 @@ class wsProtocollo{
 
         $this->wsClient->addAttachment($fileXML,"richiesta_protocollo_out.xml","text/xml");
         $res =$this->wsClient->call("registraProtocollo",Array($this->login));
-        return $res;
-
+        if ($res["lngErrNumber"]==0){
+            $result["success"]=1;
+            $result["result"] = Array("protocollo"=>$res["lngNumPG"],"data_protocollo"=>date ("d/m/Y"));
+        }
+        else{
+            $result["success"]= -1;
+            $result["message"] = sprintf("Error number %s - %s",(string)$res["lngErrNumber"],$res["lngErrString"]);
+        }
+        return $result;
     }
     /******************************************************************************************************************/
 
