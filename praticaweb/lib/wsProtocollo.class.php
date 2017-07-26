@@ -111,12 +111,37 @@ class wsProtocollo{
 
     /******************************************************************************************************************/
 
-    function richiediProtOut($pratica,$params=Array()){
+    function richiediProtOut($pratica,$app='pe',$id=null){
         $result = $this->result;
         $dataSubst = $this->params["mittente"];
+
+        $sql = "SELECT * FROM pe.comunicazioni WHERE id = ?;";
+        $stmt = $this->dbh->prepare($sql);
+        if($stmt->execute(Array($id))){
+           $res = $stmt->fetch();
+           if ($res["destinatari"] && $res["destinatari"]!="{}"){
+               $params["destinatari"] = explode(",",str_replace("{","",str_replace("}","",$res["destinatari"])));
+           }
+           else{
+               $params["destinatari"] = Array();
+           }
+           if ($res["allegati"] && $res["allegati"]!="{}"){
+               $params["allegati"] = explode(",",str_replace("{","",str_replace("}","",$res["allegati"])));
+           }
+           else{
+               $params["allegati"] = Array();
+           }
+        }
+        else{
+
+        }
         $paramsKeys = array_keys($params);
-        if (!(in_array("destinatari",$paramsKeys) && $params["destinatari"])) return -2;
-        $app = ((in_array('app',$paramsKeys) && $params["app"]))?($params["app"]):("pe");
+        if (!(in_array("destinatari",$paramsKeys) && $params["destinatari"])) {
+            $result["success"] =  -2;
+            $result["message"] = "Nessun destinatario selezionato";
+            return $result;
+        }
+
         $d = $this->recuperaPratica($pratica,$app);
         foreach($d["result"] as $k=>$v){
             $dataSubst[$k] = $v;
@@ -129,6 +154,7 @@ class wsProtocollo{
             for($i=0;$i<count($params["allegati"]);$i++){
                 $idDoc = $params["allegati"][$i];
                 $res = $this->inserisciDocumento($idDoc);
+
                 $documentiOk = $documentiOk && $res["success"];
                 if ($res["success"]==1){
                     $xmlAll[] = $res["result"]["xml"];
