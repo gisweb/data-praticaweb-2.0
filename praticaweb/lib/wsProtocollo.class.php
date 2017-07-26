@@ -9,6 +9,7 @@
 define("WSPROT_URL","http://93.57.10.175:50080/client/services/ProWSApi?WSDL");
 define("WSMAIL_URL","http://93.57.10.175:50080/client/services/WSPostaWebSoap?WSDL");
 define('SERVICE_LOGIN',"!suap/sicraweb@tovosangiacomo/tovosangiacomo");
+define('TEMPLATE_DIR',DATA_DIR."praticaweb".DIRECTORY_SEPARATOR."templates".DIRECTORY_SEPARATOR);
 
 require_once LOCAL_LIB."app.utils.class.php";
 require_once LIB."utils.class.php";

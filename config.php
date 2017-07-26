@@ -15,7 +15,7 @@ if (file_exists(DATA_DIR.'config.local.php')){
 else{
 	define('DB_PORT','5434');
 }
-
+define("PROT_OUT",1);
 define('ALWAYS_VIEWABLE',1);
 define('ALWAYS_EDITABLE',1);
 

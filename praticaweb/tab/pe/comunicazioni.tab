@@ -15,7 +15,7 @@ data[]="Protocollo;protocollo;10;text|Data Protocollo;data_protocollo;10;data"
 data[]="Data Invio;data_invio;10;data|Data Ricezione;data_ricezione;10;data"
 data[]="Oggetto/Titolo;oggetto;100;text"
 data[]="Destinatari;destinatari;600xpe.elenco_destinatari_comunicazionexpratica;_multiselectdb"
-data[]="Allegati;allegati;xelenco_documenti_prodotti;_checkbox"
+data[]="Allegati;allegati;xpe.elenco_documenti_prodottixpratica;_checkbox"
 data[]="Testo Comunicazione;testo;100x6;textarea"
 button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit|Protocolla;azione;;submit"
 

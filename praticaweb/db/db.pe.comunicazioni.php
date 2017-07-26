@@ -7,6 +7,7 @@ if (in_array($action,Array("Salva","Elimina","Protocolla"))){
         include_once APPS_DIR."/db/db.savedata.php";
         $id = ($_REQUEST["id"])?($_REQUEST["id"]):($_SESSION["ADD_NEW"]);
 	if ($action=="Protocolla" && defined('PROT_OUT')  && PROT_OUT==1){
+            echo "PLUTO";
             require_once LOCAL_LIB."wsProtocollo.class.php";
             $allegati = $_POST["allegati"];
             $destinatari = $_POST["destinatari"];
