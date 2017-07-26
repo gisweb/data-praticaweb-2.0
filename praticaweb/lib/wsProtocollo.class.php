@@ -143,9 +143,7 @@ class wsProtocollo{
 
         for($i=0;$i<count($params["destinatari"]);$i++){
             $idDest = $params["destinatari"][$i];
-            echo "Recupero Soggetto $idDest \n";
             $res = $this->recuperaSoggetto($idDest,$app,$multiDest);
-            print_r($res);
             if ($res["success"]==1){
                 $denominazioni[] = $res["result"]["data"]["denominazione"];
                 $xmlDest[] = $res["result"]["xml"];
@@ -162,7 +160,6 @@ class wsProtocollo{
         $fileXML = $r["result"];
         $this->wsClient->clearAttachments();
 
-        echo "\n$fileXML\n";
         $this->wsClient->addAttachment($fileXML,"richiesta_protocollo_out.xml","text/xml");
         $res =$this->wsClient->call("registraProtocollo",Array($this->login));
         return $res;
