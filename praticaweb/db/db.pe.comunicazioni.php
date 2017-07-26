@@ -23,6 +23,9 @@ if (in_array($action,Array("Salva","Elimina","Protocolla"))){
                 $sql = "UPDATE pe.comunicazione SET protocollo = ?, data_protocollo=? WHERE id = ?;";
                 $stmt = $dbh->prepare($sql);
                 $res = $stmt->execute(Array($r["result"]["protocollo"],$r["result"]["data_protocollo"],$id));
+                if (!$res){
+                    print_array($dbh->errorInfo());
+                }
             }
 
             //$_REQUEST["mode"]="edit";
