@@ -20,7 +20,7 @@ if (in_array($action,Array("Salva","Elimina","Protocolla"))){
 
             if ($r["success"]) {
                 $dbh = utils::getDb();
-                $sql = "UPDATE pe.comunicazione SET protocollo = ?, data_protocollo=? WHERE id = ?;";
+                $sql = "UPDATE pe.comunicazioni SET protocollo = ?, data_protocollo=? WHERE id = ?;";
                 $stmt = $dbh->prepare($sql);
                 $res = $stmt->execute(Array($r["result"]["protocollo"],$r["result"]["data_protocollo"],$id));
                 if (!$res){
