@@ -99,7 +99,7 @@ class wsProtocollo{
                     $result["success"] = -2;
                     $result["message"] = sprintf("Errore Numero %s - %s",$response["lngErrNumber"],$response["strErrString"]);
                 }
-
+ 
             }
         }
         else{
@@ -107,9 +107,9 @@ class wsProtocollo{
         }
         return $result;
     }
-    /******************************************************************************************************************/
-
-    /******************************************************************************************************************/
+    /********************************************************************************************************************/
+    /*					RICHIESTA DI PROTOCOLLO IN USCITA						*/
+    /********************************************************************************************************************/
 
     function richiediProtOut($pratica,$app='pe',$id=null){
         $result = $this->result;
@@ -157,7 +157,11 @@ class wsProtocollo{
 
                 $documentiOk = $documentiOk && $res["success"];
                 if ($res["success"]==1){
-                    $xmlAll[] = $res["result"]["xml"];
+                    if($i==0){
+                        $dataSubst["documento"] = $res["result"]["xml"];
+                    }
+                    else
+                        $xmlAll[] = $res["result"]["xml"];
                 }
                 else{
 
@@ -184,8 +188,10 @@ class wsProtocollo{
         }
         $r = $this->caricaXML("prot_out",$dataSubst);
         $fileXML = $r["result"];
+        echo "\n\n\n\n";
+       echo $fileXML;
+        echo "\n\n\n\n";
         $this->wsClient->clearAttachments();
-
         $this->wsClient->addAttachment($fileXML,"richiesta_protocollo_out.xml","text/xml");
         $res =$this->wsClient->call("registraProtocollo",Array($this->login));
         if ($res["lngErrNumber"]==0){
@@ -213,6 +219,7 @@ class wsProtocollo{
         $result = $this->result;
         $a = $this->wsClient->call("infoProtocollo",Array($this->login,$prot,$anno));
         $xml = simplexml_load_string($a);
+        print_r($a);
         $json = json_encode($xml);
         $response = json_decode($json,TRUE);
         $result["result"] = $response;

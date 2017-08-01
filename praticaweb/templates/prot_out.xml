@@ -35,7 +35,10 @@
         </Classifica>
     </Intestazione>
     <Descrizione>
-        %(allegati)s
+        %(documento)s
+        <Allegati>
+            %(allegati)s
+        </Allegati>
     </Descrizione>
     <ProtocolloPadre numero="%(prot)s" anno="%(anno_prot)s"/>
 

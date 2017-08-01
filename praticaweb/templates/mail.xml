@@ -1,10 +1,10 @@
 <messaggioIn>
     <docId></docId>
     <annoProt>2017</annoProt>
-    <numProt>39</numProt>
+    <numProt>68</numProt>
     <oggettoMail>Test Invio Pec GisWeb</oggettoMail>
     <testoMail>Questa è una  Pec di prova</testoMail>
-    <mittenteMail>comune@prova.it</mittenteMail>
+    <mittenteMail>demo@pec.cecsistemi.it</mittenteMail>
     <destinatariMail>
         <destinatarioMail>carbone.marco@pec.it</destinatarioMail>
         <destinatarioMail>amministrazione@pec.gisweb.it</destinatarioMail>
