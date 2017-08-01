@@ -35,6 +35,9 @@ $(document).ready(function() {
     var prot = $('#protocollo').val();
     if (prot) {
         $('[data-plugins="prot-locked"]').prop('disabled', true);
+        $('#comunicazioni').bind("submit",function(){
+            $('[data-plugins="prot-locked"]').prop('disabled', false);
+        });
     }
 
 
