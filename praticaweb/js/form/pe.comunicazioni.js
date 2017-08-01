@@ -31,33 +31,39 @@ $.fn.serializeObject = function() {
     return o;
 }
 
-$(document).ready(function(){
-/*    $("#richiesta_prot").button({
-        icons:{primary:'ui-icon-gear'}
-    }).bind('click',function(event){
-        event.preventDefault();
-        var formData = $("#comunicazioni").serializeObject();
-        formData["azione"]="protocolla";
-        $.ajax({
-            url:"/services/local/xServer.php",
-            type:'POST',
-            dataType:'json',
-            data:formData,
-            success:function(data){
+$(document).ready(function() {
+    var prot = $('#protocollo').val();
+    if (prot) {
+        $('[data-plugins="prot-locked"]').prop('disabled', true);
+    }
 
-            }
+
+    /*    $("#richiesta_prot").button({
+            icons:{primary:'ui-icon-gear'}
+        }).bind('click',function(event){
+            event.preventDefault();
+            var formData = $("#comunicazioni").serializeObject();
+            formData["azione"]="protocolla";
+            $.ajax({
+                url:"/services/local/xServer.php",
+                type:'POST',
+                dataType:'json',
+                data:formData,
+                success:function(data){
+
+                }
+            });
         });
-    });
-	$("#tipo_comunicazione").change(function () {
-		var v = $(this).val();
-		if (!v) $("#destinatari").children('option').show();
-		else {
-			$("#destinatari").children('option').hide();
-			$("#destinatari").children("option[data-metodo='" + v + "']").show()
-		}
-		
-	});
-	$("#tipo_comunicazione").trigger("change");
-}
-*/
-);
+        $("#tipo_comunicazione").change(function () {
+            var v = $(this).val();
+            if (!v) $("#destinatari").children('option').show();
+            else {
+                $("#destinatari").children('option').hide();
+                $("#destinatari").children("option[data-metodo='" + v + "']").show()
+            }
+
+        });
+        $("#tipo_comunicazione").trigger("change");
+    }
+    */
+});
