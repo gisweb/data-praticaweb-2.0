@@ -334,7 +334,7 @@ class wsMail{
                 "Denominazione_Entita"=> "Comune di Andora",
                 "Denominazione"=>"URBANISTICA",
                 "CodiceAmministrazione"=>"c_l315",
-                "IndirizzoTelematico"=>"demo@pec.cecsistemi.itt",
+                "IndirizzoTelematico"=>"demo@pec.cecsistemi.it",
                 "UnitaOrganizzativa"=>"T",
                 "CodiceTitolario"=>"1.1",
                 "CodiceAOO"=>"PL",
