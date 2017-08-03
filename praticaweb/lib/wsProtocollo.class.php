@@ -394,7 +394,7 @@ EOT;
         if($stmt->execute(Array($id))){
             $res = $stmt->fetch();
             $xml = $this->caricaXML('mail',$res);
-            $response = $this->wsClient->call("InviaMail",Array("strXML"=>$xml,"CodiceAmministrazione"=>SERVICE_LOGIN,"CodiceAOO"=>$codAOO));
+            $response = $this->wsClient->call("InviaMail",Array("strXML"=>$xml["result"],"CodiceAmministrazione"=>SERVICE_LOGIN,"CodiceAOO"=>$codAOO));
             $xml = simplexml_load_string($response);
             $json = json_encode($xml);
             $result = json_decode($json,TRUE);
