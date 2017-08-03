@@ -393,11 +393,29 @@ EOT;
         $stmt = $this->dbh->prepare($sql);
         if($stmt->execute(Array($id))){
             $res = $stmt->fetch();
-            $xml = $this->caricaXML('mail',$res);
-            $response = $this->wsClient->call("InviaMail",Array("strXML"=>$xml["result"],"CodiceAmministrazione"=>SERVICE_LOGIN,"CodiceAOO"=>$codAOO));
-            $xml = simplexml_load_string($response);
-            $json = json_encode($xml);
-            $result = json_decode($json,TRUE);
+            $result = $this->caricaXML('mail',$res);
+            if($result["success"]==1){
+                $xml=$result["result"];
+                $response = $this->wsClient->call("InviaMail",Array("strXML"=>$xml,"CodiceAmministrazione"=>SERVICE_LOGIN,"CodiceAOO"=>$codAOO));
+                $f = fopen('../debug/mail.debug','w');
+                ob_start();
+                print_r($this->wsClient);
+                $r = ob_get_contents();
+                ob_end_clean();
+                fwrite($f,$r);
+                fclose($f);
+
+                if (is_array($response)){
+                    $result = $response;
+                }
+                else{
+                    $xml = simplexml_load_string($response);
+                    $json = json_encode($xml);
+                    $result = json_decode($json,TRUE);
+                }
+
+            }
+
         }
         else{
 
