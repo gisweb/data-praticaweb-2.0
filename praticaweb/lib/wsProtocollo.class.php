@@ -7,7 +7,7 @@
  */
 
 define("WSPROT_URL","http://93.57.10.175:50080/client/services/ProWSApi?WSDL");
-define("WSMAIL_URL","http://93.57.10.175:50080/client/services/WSPostaWebSoap?WSDL");
+define("WSMAIL_URL","http://93.57.10.175:50080/client/services/WsPostaWebSoap?WSDL");
 define('SERVICE_LOGIN',"!suap/sicraweb@tovosangiacomo/tovosangiacomo");
 define('TEMPLATE_DIR',DATA_DIR."praticaweb".DIRECTORY_SEPARATOR."templates".DIRECTORY_SEPARATOR);
 
@@ -377,7 +377,7 @@ class wsMail{
     function inviaPec($id){
         $result = $this->result;
         $mittente = $this->params["mittente"]["IndirizzoTelematico"];
-        $codAOO = $this->params["mittente"]["codiceAOO"];
+        $codAOO = $this->params["mittente"]["CodiceAOO"];
 
         $sql =<<<EOT
 WITH destinatari as(
