@@ -188,9 +188,6 @@ class wsProtocollo{
         }
         $r = $this->caricaXML("prot_out",$dataSubst);
         $fileXML = $r["result"];
-        echo "\n\n\n\n";
-       echo $fileXML;
-        echo "\n\n\n\n";
         $this->wsClient->clearAttachments();
         $this->wsClient->addAttachment($fileXML,"richiesta_protocollo_out.xml","text/xml");
         $res =$this->wsClient->call("registraProtocollo",Array($this->login));
@@ -219,7 +216,7 @@ class wsProtocollo{
         $result = $this->result;
         $a = $this->wsClient->call("infoProtocollo",Array($this->login,$prot,$anno));
         $xml = simplexml_load_string($a);
-        print_r($a);
+        //print_r($a);
         $json = json_encode($xml);
         $response = json_decode($json,TRUE);
         $result["result"] = $response;
@@ -389,10 +386,10 @@ mail as (
 UNION ALL
 (SELECT array_to_string(array_agg(format('<destinatarioMail>%s</destinatarioMail>',id)),'') as destinatari from destinatari where not  destinatari.id ~ '^[0-9]*$')
 )
-select protocollo,date_part('year',data_protocollo)::varchar as anno,oggetto,testo,'$mittente' as mittente,array_to_string(array_agg(mail.destinatari),'') as destinatari from pe.comunicazioni,mail group by 1,2,3,4,5
+select protocollo,date_part('year',data_protocollo)::varchar as anno,oggetto,testo,'$mittente' as mittente,array_to_string(array_agg(mail.destinatari),'') as destinatari from pe.comunicazioni,mail WHERE id = ? group by 1,2,3,4,5
 EOT;
         $stmt = $this->dbh->prepare($sql);
-        if($stmt->execute(Array($id))){
+        if($stmt->execute(Array($id,$id))){
             $res = $stmt->fetch();
             $result = $this->caricaXML('mail',$res);
             if($result["success"]==1){
@@ -419,7 +416,7 @@ EOT;
 
         }
         else{
-
+            
         }
         return $result;
     }
