@@ -43,7 +43,7 @@ $(document).ready(function() {
         });
     }
     if (prot && !invio){
-        $('#azione-invia').hide();
+        $('#azione-invia').show();
     }
 
 
