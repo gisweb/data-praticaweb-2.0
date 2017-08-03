@@ -328,7 +328,8 @@ class wsMail{
         $this->service = "SicraWeb";
         $this->dbh = utils::getDb();
         $this->wsClient =  new nusoap_client($this->wsUrl,false,false, false, false, false, 0, 180);
-
+        $this->wsClient->soap_defencoding = 'UTF-8';
+        $this->wsClient->decode_utf8 = false;
         $this->params = Array(
             "mittente"=> Array(
                 "Denominazione_Entita"=> "Comune di Andora",
