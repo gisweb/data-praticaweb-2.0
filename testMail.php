@@ -5,10 +5,7 @@ define('DATA_DIR',$dir.DIRECTORY_SEPARATOR);
 define('APPS_DIR',"/apps/PraticaWeb-2.1-dev/");
 require_once "config.php";
 
-
-
-require_once "praticaweb/nusoap/nusoap.php";
-require_once "praticaweb/nusoap/nusoapmime.php";
+require_once "praticaweb/lib/wsProtocollo.class.php";
 
 $urlSearch = "http://93.57.10.175:50080/client/services/ProtocolloSoap?WSDL";
 $urlMail = "http://93.57.10.175:50080/client/services/WsPostaWebSoap?WSDL";
@@ -23,12 +20,12 @@ $docIds = Array(11533,11534);
 //$res = $client->call("LeggiProtocollo",Array("AnnoProtocollo"=>$anno,"NumeroProtocollo"=>$prot,"Utente"=>"","Ruolo"=>"","CodiceAmministrazione"=>$login,"CodiceAOO"=>$codAOO));
 //print_r($res);
 //exit;
-
+/*
 $client = new nusoap_client($urlMail,false,false, false, false, false, 0, 180);
-//print_r($client);
+print_r($client);
 $f = fopen('praticaweb/templates/mail.xml','r');
 $xml = fread($f,filesize('praticaweb/templates/mail.xml'));
-fclose($f);
+fclose($f);*/
 //$xml = simplexml_load_string($xml);
 
 //print_r($xml);die();
@@ -52,7 +49,7 @@ fclose($f);
 
 //echo $msg;
 //$res = $client->send($msg, $urlMail);
-$res = $client->call("InviaMail",Array("strXML"=>$xml,"CodiceAmministrazione"=>$login,"CodiceAOO"=>$codAOO));
+/*$res = $client->call("InviaMail",Array("strXML"=>$xml,"CodiceAmministrazione"=>$login,"CodiceAOO"=>$codAOO));
 $f = fopen('mail.debug','w');
 ob_start();
 print_r($client);
@@ -60,6 +57,11 @@ $r = ob_get_contents();
 ob_end_clean();
 fwrite($f,$r);
 fclose($f);
+print_r($res);
+*/
+
+$ws = new wsMail();
+$res = $ws->inviaPec(1);
 print_r($res);
 ?>
 
