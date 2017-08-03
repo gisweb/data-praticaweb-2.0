@@ -327,7 +327,7 @@ class wsMail{
         $this->login = SERVICE_LOGIN;
         $this->service = "SicraWeb";
         $this->dbh = utils::getDb();
-        $this->wsClient =  new nusoap_client_mime($this->wsUrl,'wsdl');
+        $this->wsClient =  new nusoap_client($this->wsUrl,false,false, false, false, false, 0, 180);
 
         $this->params = Array(
             "mittente"=> Array(
