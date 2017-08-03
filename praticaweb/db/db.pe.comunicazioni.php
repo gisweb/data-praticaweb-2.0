@@ -2,10 +2,11 @@
 $idpratica=$_REQUEST["pratica"];
 $action = $_REQUEST["azione"];
 
-if (in_array($action,Array("Salva","Elimina","Protocolla"))){
+if (in_array($action,Array("Salva","Elimina","Protocolla","Invia"))){
 	if ($_REQUEST["azione"]=="Protocolla") $_REQUEST["azione"]='Salva';
         include_once APPS_DIR."/db/db.savedata.php";
         $id = ($_REQUEST["id"])?($_REQUEST["id"]):($_SESSION["ADD_NEW"]);
+
 	if ($action=="Protocolla" && defined('PROT_OUT')  && PROT_OUT==1){
             require_once LOCAL_LIB."wsProtocollo.class.php";
             $allegati = $_POST["allegati"];
@@ -31,6 +32,20 @@ if (in_array($action,Array("Salva","Elimina","Protocolla"))){
             //$_REQUEST["mode"]="edit";
             //include_once APPS_DIR."./db/db.savedata.php";
 	}
+	elseif($action=='Invia'){
+        require_once LOCAL_LIB."wsProtocollo.class.php";
+        $ws = new wsMail();
+        $res = $ws->inviaPec($id);
+        if ($res["success"]==1){
+            $dbh = utils::getDb();
+            $sql = "UPDATE pe.comunicazioni SET data_invio=CURRENT_DATE WHERE id = ?;";
+            $stmt = $dbh->prepare($sql);
+            $res = $stmt->execute(Array($id));
+            if (!$res){
+                print_array($dbh->errorInfo());
+            }
+        }
+    }
 }
 
 	
