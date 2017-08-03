@@ -413,7 +413,7 @@ EOT;
                     $json = json_encode($xml);
                     $result = json_decode($json,TRUE);
                 }
-
+                $result["success"]=1;
             }
 
         }
