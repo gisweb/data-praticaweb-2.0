@@ -377,7 +377,7 @@ class wsMail{
     function inviaPec($id){
         $result = $this->result;
         $mittente = $this->params["mittente"]["IndirizzoTelematico"];
-        $codAOO = $this->params["mittente"]["codAOO"];
+        $codAOO = $this->params["mittente"]["codiceAOO"];
 
         $sql =<<<EOT
 WITH destinatari as(
