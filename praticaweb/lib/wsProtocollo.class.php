@@ -350,6 +350,12 @@ class wsMail{
             "result" => ""
         );
     }
+    private function subst($txt,$data){
+        foreach($data as $k=>$v){
+            $txt = str_replace("%($k)s",$v,$txt);
+        }
+        return $txt;
+    }
     function caricaXML($nome,$data){
         $result = $this->result;
         $fName = TEMPLATE_DIR.$nome.".xml";
