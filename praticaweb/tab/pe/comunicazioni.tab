@@ -17,7 +17,7 @@ data[]="Oggetto/Titolo;oggetto;100;text;data-plugins=prot-locked"
 data[]="Destinatari;destinatari;600xpe.elenco_destinatari_comunicazionexpratica;_multiselectdb;data-plugins=prot-locked"
 data[]="Allegati;allegati;xpe.elenco_documenti_prodottixpratica;_checkbox;data-plugins=prot-locked"
 data[]="Testo Comunicazione;testo;100x6;textarea;data-plugins=prot-locked"
-button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit|Protocolla;azione;;submit"
+button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit|Protocolla;azione;;submit|Invia;azione;;submit"
 
 [list]
 table="pe.comunicazioni"

@@ -13,7 +13,7 @@ if (file_exists(DATA_DIR.'config.local.php')){
 	include DATA_DIR.'config.local.php';
 }
 else{
-	define('DB_PORT','5434');
+	define('DB_PORT','5432');
 }
 define("PROT_OUT",1);
 define('ALWAYS_VIEWABLE',1);

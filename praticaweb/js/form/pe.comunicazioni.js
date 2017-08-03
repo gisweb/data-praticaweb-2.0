@@ -33,12 +33,17 @@ $.fn.serializeObject = function() {
 
 $(document).ready(function() {
     var prot = $('#protocollo').val();
+    var invio = $('#data_invio').val();
+    $('#azione-invia').hide();
     if (prot) {
         $('[data-plugins="prot-locked"]').prop('disabled', true);
         $('#azione-protocolla').hide();
         $('#comunicazioni').bind("submit",function(){
             $('[data-plugins="prot-locked"]').prop('disabled', false);
         });
+    }
+    if (prot && !invio){
+        $('#azione-invia').hide();
     }
 
 
