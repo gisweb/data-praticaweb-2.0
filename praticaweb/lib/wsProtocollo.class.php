@@ -334,10 +334,10 @@ class wsMail{
                 "Denominazione_Entita"=> "Comune di Andora",
                 "Denominazione"=>"URBANISTICA",
                 "CodiceAmministrazione"=>"c_l315",
-                "IndirizzoTelematico"=>"comune@prova.it",
+                "IndirizzoTelematico"=>"demo@pec.cecsistemi.itt",
                 "UnitaOrganizzativa"=>"T",
                 "CodiceTitolario"=>"1.1",
-                "CodiceA00"=>"PL",
+                "CodiceAOO"=>"PL",
                 "Indirizzo" => "Via Cavour 94",
                 "Identificativo" => "T"
             ),
@@ -349,8 +349,54 @@ class wsMail{
             "message" => "",
             "result" => ""
         );
+    }
+    function caricaXML($nome,$data){
+        $result = $this->result;
+        $fName = TEMPLATE_DIR.$nome.".xml";
+        if (file_exists($fName)){
+            $f = fopen($fName,'r');
+            $tXml = fread($f,filesize($fName));
+            fclose($f);
+            $xml = $this->subst($tXml,$data);
+            $result["success"] = 1;
+            $result["result"] = $xml;
+            return Array("success"=>1,"result"=>$xml);
+        }
+        else{
+            $result["success"] = -1;
+            $result["message"] = "Il file $fName non è stato trovato";
+        }
+        return $result;
+    }
+    function inviaPec($id){
+        $result = $this->result;
+        $mittente = $this->params["mittente"]["IndirizzoTelematico"];
+        $codAOO = $this->params["mittente"]["codAOO"];
 
+        $sql =<<<EOT
+WITH destinatari as(
+select unnest(destinatari) as id FROM pe.comunicazioni WHERE id = ?
+),
+mail as (
+(SELECT array_to_string(array_agg(format('<destinatarioMail>%s</destinatarioMail>',pec)),'') as destinatari from (select id::varchar,pec from pe.soggetti) A INNER JOIN destinatari USING(id) WHERE destinatari.id ~ '^[0-9]*$')
+UNION ALL
+(SELECT array_to_string(array_agg(format('<destinatarioMail>%s</destinatarioMail>',id)),'') as destinatari from destinatari where not  destinatari.id ~ '^[0-9]*$')
+)
+select protocollo,date_part('year',data_protocollo)::varchar as anno,oggetto,testo,'$mittente' as mittente,array_to_string(array_agg(mail.destinatari),'') as destinatari from pe.comunicazioni,mail group by 1,2,3,4,5
+EOT;
+        $stmt = $this->dbh->prepare($sql);
+        if($stmt->execute(Array($id))){
+            $res = $stmt->fetch();
+            $xml = $this->caricaXML('mail',$res);
+            $response = $this->wsClient->call("InviaMail",Array("strXML"=>$xml,"CodiceAmministrazione"=>SERVICE_LOGIN,"CodiceAOO"=>$codAOO));
+            $xml = simplexml_load_string($response);
+            $json = json_encode($xml);
+            $result = json_decode($json,TRUE);
+        }
+        else{
 
+        }
+        return $result;
     }
 
 }
