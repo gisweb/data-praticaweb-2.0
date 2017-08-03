@@ -66,8 +66,8 @@ class pratica extends generalPratica{
 			$arrDir[]="tmb";
 			$this->allegati_tmb=implode(DIRECTORY_SEPARATOR,$arrDir).DIRECTORY_SEPARATOR;
 
-			$this->url_documenti="/documenti/$anno/".$this->pratica."/";
-			$this->url_allegati="/documenti/$anno/".$this->pratica."/allegati/";
+			$this->url_documenti="/documenti/pe/$anno/".$this->pratica."/";
+			$this->url_allegati="/documenti/pe/$anno/".$this->pratica."/allegati/";
 			$this->smb_documenti=SMB_PATH."$anno\\".$this->pratica."\\";
 
 			$this->createStructure();
