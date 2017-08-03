@@ -36,9 +36,10 @@ if (in_array($action,Array("Salva","Elimina","Protocolla","Invia"))){
         require_once LOCAL_LIB."wsProtocollo.class.php";
         $ws = new wsMail();
         $res = $ws->inviaPec($id);
-        if ($res["success"]==1){
+        if ($res["success"]==1 && $res["codice"]==0){
+            $idCom=$res["descrizione"];
             $dbh = utils::getDb();
-            $sql = "UPDATE pe.comunicazioni SET data_invio=CURRENT_DATE WHERE id = ?;";
+            $sql = "UPDATE pe.comunicazioni SET data_invio=CURRENT_DATE, id_comunicazione=$idCom WHERE id = ?;";
             $stmt = $dbh->prepare($sql);
             $res = $stmt->execute(Array($id));
             if (!$res){
