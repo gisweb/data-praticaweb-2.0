@@ -4,7 +4,30 @@ require_once APPS_DIR.'plugins/Doctrine/Common/ClassLoader.php';
 require_once APPS_DIR.DIRECTORY_SEPARATOR.'lib'.DIRECTORY_SEPARATOR.'pratica.class.php';
 
 class pratica extends generalPratica{
-    private function initPratica(){
+	    function __construct($id,$type=0){
+		
+        $this->pratica=$id;
+        $db = new sql_db(DB_HOST.":".DB_PORT,DB_USER,DB_PWD,DB_NAME, false);
+        if(!$db->db_connect_id)  die( "Impossibile connettersi al database ".DB_NAME);
+        $this->db=$db;
+        $this->db1=$this->setDB();
+        switch($type){
+            case 1:
+                $this->initCdu();
+                break;
+            case 2:
+                $this->initCE();
+                break;
+            case 3:
+                $this->initVigi();
+                break;
+            default:
+                $this->initPE();
+                break;
+        }
+		
+    }
+    private function initPE(){
 		$db=$this->db1;
 		if ($this->pratica && is_numeric($this->pratica)){
 			//INFORMAZIONI SULLA PRATICA
@@ -30,8 +53,9 @@ class pratica extends generalPratica{
 			$anno=($r['anno'])?($r['anno']):($tmp[0]);
 
 			//Struttura delle directory
-			$arrDir=DOCUMENTI_DIR;
+			$arrDir=Array(DOCUMENTI.DIRECTORY_SEPARATOR."pe");
             $arrDir[]=$anno;
+			$numero = $this->pratica;
 			$this->annodir=implode(DIRECTORY_SEPARATOR,$arrDir).DIRECTORY_SEPARATOR;
 			$arrDir[]=$numero;
 			$this->documenti=implode(DIRECTORY_SEPARATOR,$arrDir).DIRECTORY_SEPARATOR;

@@ -26,7 +26,7 @@ define('LIB',APPS_DIR."lib/");//cartella contenente la  configurazione dei forms
 define('MODELLI',DATA_DIR."praticaweb/modelli/");//cartella con i modelli di stampa 
 define('STAMPE',DATA_DIR."praticaweb/documenti/");//cartella con le stampe
 
-
+define('FILE_DISPOSITION','attachment');
 define('REPO_PATH','D');
 define('DEBUG_DIR',DATA_DIR."praticaweb/debug/");//cartella con i debug
 define('ALLEGATI',DATA_DIR."praticaweb/documenti/");//cartella dei file allegati sotto praticaweb
@@ -58,7 +58,7 @@ define('MAPSETID','taggia_pubblica');
 define('CDUMAPSETID','taggia_pubblica');
 define('TEMPLATE','gisclient');
 define('GC_VERSION',2);
-define('QTID_PARTICELLE','8');
+define('QTID_PARTICELLE','6');
 define('QTID_CIVICI','34');
 
 //in sessione per pmapper
