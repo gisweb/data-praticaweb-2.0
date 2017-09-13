@@ -18,12 +18,12 @@ EOT;
 $sql = <<<EOT
 WITH vincoli_puc as (
 SELECT 
-pratica,'' as sezione,foglio,mappale,array_to_string(array_agg(A.descrizione || ' - ' ||C.descrizione),'\n') as puc
+pratica,sezione,foglio,mappale,array_to_string(array_agg(A.descrizione || ' - ' ||C.descrizione),'\n') as puc
 FROM 
 cdu.mappali INNER JOIN vincoli.vincolo A ON(vincolo=A.nome_vincolo) 
 INNER JOIN vincoli.tavola B on (vincolo=B.nome_vincolo AND tavola = B.nome_tavola) 
 INNER JOIN vincoli.zona C on(vincolo=C.nome_vincolo AND tavola=C.nome_tavola AND zona=nome_zona) 
-WHERE pratica=? AND vincolo = 'PUC' 
+WHERE pratica=? AND B.cdu = 1 AND B.tipo='sug' 
 GROUP BY 1,2,3,4
 ),
 vincoli_ptcp as (
@@ -43,7 +43,7 @@ FROM
 cdu.mappali INNER JOIN vincoli.vincolo A ON(vincolo=A.nome_vincolo) 
 INNER JOIN vincoli.tavola B on (vincolo=B.nome_vincolo AND tavola = B.nome_tavola) 
 INNER JOIN vincoli.zona C on(vincolo=C.nome_vincolo AND tavola=C.nome_tavola AND zona=nome_zona) 
-WHERE pratica=? AND not vincolo in ('PUC','PTCP') 
+WHERE pratica=? AND B.tipo <> 'sug' AND not vincolo in ('PUC','PTCP') 
 GROUP BY 1,2,3,4
 )
 SELECT pratica,sezione,foglio,mappale,puc,ptcp,vincoli 
