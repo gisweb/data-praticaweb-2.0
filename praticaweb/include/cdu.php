@@ -28,7 +28,7 @@ GROUP BY 1,2,3,4
 ),
 vincoli_ptcp as (
 SELECT 
-pratica,'' as sezione,foglio,mappale,array_to_string(array_agg(B.descrizione || ' - ' ||C.descrizione),'\n') as ptcp
+pratica,sezione,foglio,mappale,array_to_string(array_agg(B.descrizione || ' - ' ||C.descrizione),'\n') as ptcp
 FROM 
 cdu.mappali INNER JOIN vincoli.vincolo A ON(vincolo=A.nome_vincolo) 
 INNER JOIN vincoli.tavola B on (vincolo=B.nome_vincolo AND tavola = B.nome_tavola) 
@@ -38,7 +38,7 @@ GROUP BY 1,2,3,4
 ),
 altri_vincoli as (
 SELECT 
-pratica,'' as sezione,foglio,mappale,array_to_string(array_agg(A.descrizione || ' - ' ||C.descrizione),'\n') as vincoli
+pratica,sezione,foglio,mappale,array_to_string(array_agg(A.descrizione || ' - ' ||C.descrizione),'\n') as vincoli
 FROM 
 cdu.mappali INNER JOIN vincoli.vincolo A ON(vincolo=A.nome_vincolo) 
 INNER JOIN vincoli.tavola B on (vincolo=B.nome_vincolo AND tavola = B.nome_tavola) 
