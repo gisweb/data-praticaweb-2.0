@@ -37,14 +37,14 @@ $(document).ready(function() {
 
     $("#tipo_pec").change(function(){
         var id = $(this).val();
-        var pr = $("#pratica").val();
+        var pr = $('input[name="pratica"]').val();
         $.ajax({
             url:serverUrl,
             type:"POST",
             dataType:"json",
             data:{action:"fill-mail",id:id, pratica:pr},
             success:function(data,textStatus,jqXHR){
-                console.log($data);
+                console.log(data);
             }
         });
     });
