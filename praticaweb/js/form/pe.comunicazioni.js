@@ -39,7 +39,7 @@ $(document).ready(function() {
         var id = $(this).val();
         var pr = $("#pratica").val();
         $.ajax({
-            url:serverURL,
+            url:serverUrl,
             type:"POST",
             dataType:"json",
             data:{action:"fill-mail",id:id, pratica:pr},
