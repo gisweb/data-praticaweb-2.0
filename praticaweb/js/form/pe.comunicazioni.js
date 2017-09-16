@@ -34,6 +34,20 @@ $.fn.serializeObject = function() {
 $(document).ready(function() {
     var prot = $('#protocollo').val();
     var invio = $('#data_invio').val();
+
+    $("#tipo_pec").change(function(){
+        var id = $(this).val();
+        var pr = $("#pratica").val();
+        $.ajax({
+            url:serverURL,
+            type:"POST",
+            dataType:"json",
+            data:{action:"fill-mail",id:id, pratica:pr},
+            success:function(data,textStatus,jqXHR){
+                console.log($data);
+            }
+        });
+    });
     $('#azione-invia').hide();
     if (prot) {
         $('[data-plugins="prot-locked"]').prop('disabled', true);
