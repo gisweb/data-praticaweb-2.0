@@ -44,7 +44,8 @@ $(document).ready(function() {
             dataType:"json",
             data:{action:"fill-mail",id:id, pratica:pr},
             success:function(data,textStatus,jqXHR){
-                console.log(data);
+                $("#oggetto").val(data["oggetto"]);
+                $("#testo").val(data["testo"]);
             }
         });
     });
