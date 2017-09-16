@@ -4,7 +4,7 @@
     <numProt>%(protocollo)s</numProt>
     <mittenteMail>%(mittente)s</mittenteMail>
     <oggettoMail>%(oggetto)s</oggettoMail>
-    <testoMail>%(testo)s</testoMail>
+    <testoMail><![CDATA[%(testo)s]]></testoMail>
     <destinatariMail>
         %(destinatari)s
     </destinatariMail>
