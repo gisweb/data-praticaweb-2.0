@@ -69,6 +69,7 @@ data[]="Comunicazione Resp.Proc;com_resp;;text|Data;data_com_resp;;data"
 ;data[]="Data Chiusura Pratica;data_chiusura;10;data"
 data[]="Oggetto;oggetto;;text"
 data[]="Note;note;;text"
+data[]="Pratica Online;online;;yesno|Collegamento;foreign_id;;text"
 ;data[]="Diritti Segreteria;diritti_segreteria;400xpe.elenco_diritti_segreteria;selectdb"
 ;data[]="Pagamento D.S.;pagamento_diritti;;yesno|Riduzione D.S.;riduzione_diritti;;yesno"
 [list]
