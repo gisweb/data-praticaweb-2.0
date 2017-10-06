@@ -14,9 +14,11 @@ $dbh = utils::getDb();
 $sql = "select pratica,file_doc,testohtml from stp.stampe A  where file_doc ilike '%\.html'  and not A.form IN ('cdu.vincoli','ce.commissione') order by A.pratica ";
 $stmt = $dbh->prepare($sql);
 if($stmt->execute()){
-    $res = $stmt->fetchAll(PDO::FETCH_GROUP|PDO::FETCH_ASSOC);
-    print count($res);
-    die();
+    $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    for($i=0;$i<count($res);$i++){
+        $info[$res[$i]["pratica"]]= $res[$i];
+    }
+    print_r($info[38]);die();
 }
 
 
