@@ -8,7 +8,7 @@
 $dir = dirname(__FILE__);
 define('DATA_DIR',$dir.DIRECTORY_SEPARATOR);
 define('APPS_DIR',"/apps/praticaweb-2.1/");
-require_once "config.php";
+require_once "../config.php";
 require_once LIB."utils.class.php";
 $dbh = utils::getDb();
 $sql = "select pratica,file_doc,testohtml from stp.stampe A  where file_doc ilike '%\.html'  and not A.form IN ('cdu.vincoli','ce.commissione') order by A.pratica ";
