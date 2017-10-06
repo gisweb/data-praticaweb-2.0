@@ -6,7 +6,7 @@
  * Time: 08:40
  */
 $dir = dirname(__FILE__);
-define('DATA_DIR',$dir.DIRECTORY_SEPARATOR);
+define('DATA_DIR',$dir.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR);
 define('APPS_DIR',"/apps/praticaweb-2.1/");
 require_once "../config.php";
 require_once LIB."utils.class.php";
