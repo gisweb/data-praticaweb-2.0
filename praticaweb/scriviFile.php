@@ -10,20 +10,9 @@ define('DATA_DIR',$dir.DIRECTORY_SEPARATOR);
 define('APPS_DIR',"/apps/praticaweb-2.1/");
 require_once "../config.php";
 require_once LIB."utils.class.php";
-$dbh = utils::getDb();
-$sql = "select pratica,file_doc,testohtml from stp.stampe A  where file_doc ilike '%\.html'  and not A.form IN ('cdu.vincoli','ce.commissione') order by A.pratica ";
-$stmt = $dbh->prepare($sql);
-if($stmt->execute()){
-    $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    for($i=0;$i<count($res);$i++){
-        $info[$res[$i]["pratica"]]= $res[$i];
-    }
-    print_r($info[38]);die();
-}
+require_once LOCAL_LIB."pratica.class.php";
 
-
-
-$html =<<<EOT
+$template =<<<EOT
 <html>
 <head>
     <style>
@@ -43,5 +32,24 @@ $html =<<<EOT
 </body>
 </html>
 EOT;
+
+$dbh = utils::getDb();
+$sql = "select pratica,file_doc,testohtml from stp.stampe A  where file_doc ilike '%\.html'  and not A.form IN ('cdu.vincoli','ce.commissione') order by A.pratica ";
+$stmt = $dbh->prepare($sql);
+if($stmt->execute()){
+    $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    for($i=0;$i<count($res);$i++){
+        $info[$res[$i]["pratica"]][]= $res[$i];
+    }
+    foreach($info as $id=>$v){
+        $pr = new pratica($idpr);
+        $nf = count($v);
+        print $pr->documenti." con $nf documenti\n";
+    }
+}
+die();
+
+
+
 
 ?>
