@@ -16,6 +16,14 @@ var myview = $.extend({}, $.fn.datagrid.defaults.view, {
             cc.push('</td>');
             cc.push('</tr>');
             cc.push('<tr class="">');
+            cc.push('<td field="responsabile">');
+            cc.push('<div style="height:auto;" class=""><span class="c-label">Responsabile Procedimento : </span>' + rowData["responsabile"] + '</div>');
+            cc.push('</td>');
+            cc.push('<td field="responsabile_it" span="2">');
+            cc.push('<div style="height:auto;" class=""><span class="c-label">Istruttore Tecnico : </span>' + (rowData["responsabile_it"] || '') + '</div>');
+            cc.push('</td>')
+            cc.push('</tr>');
+            cc.push('<tr class="">');
             cc.push('<td field="oggetto" colspan="3" style="word-wrap:break-word !important">');
             cc.push('<div style="height:auto;" class=""><span class="c-label">Oggetto : </span>' + rowData["oggetto"] + '</div>');
             cc.push('</td>');
