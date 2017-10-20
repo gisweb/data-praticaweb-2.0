@@ -3,8 +3,8 @@
 table=""
 viewable=""
 editable="ilav"
-print_form="pe.lavori"
-;print_form="pe.avvioproc"
+;print_form="pe.lavori"
+print_form="pe.avvioproc"
 
 [edit]
 table="pe.lavori"
@@ -14,9 +14,13 @@ campi_obbligatori=""
 data[]="Scadenza Inizio Lavori;scade_il;10;data"
 data[]="Scadenza Fine Lavori;scade_fl;10;data"
 data[]="Data Inizio Lavori;il;10;data"
+data[]="Protocollo Inizio Lavori;protocollo_il;10;text"
+data[]="Data Protocollo Inizio Lavori;data_prot_il;10;data"
 data[]="Data Fine Lavori;fl;10;data"
+data[]="Protocollo Fine Lavori;protocollo_fl;10;text"
+data[]="Data Protocollo Fine Lavori;data_prot_fl;10;data"
 data[]="Note;note;50x3;textarea"
-button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
+button="Salva;azione;;submit|Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit"
 
 [view]
 table="pe.lavori"
@@ -24,7 +28,9 @@ chiave="id"
 campi_ordinamento=""
 campi_obbligatori=""
 data[]="Scadenza Inizio Lavori;scade_il;10;data|Data Inizio Lavori;il;10;data"
+data[]="Protocollo Inizio Lavori;protocollo_il;10;text|Data Protocollo Inizio Lavori;data_prot_il;10;data"
 data[]="Scadenza Fine Lavori;scade_fl;10;data|Data Fine Lavori;fl;10;data"
+data[]="Protocollo Fine Lavori;protocollo_fl;15;text|Data Protocollo Fine Lavori;data_prot_fl;10;data"
 data[]="Note;note;50x3;textarea"
 [list]
 

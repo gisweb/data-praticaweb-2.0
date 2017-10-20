@@ -2,6 +2,7 @@ prei,PreIstruttoria
 10,Avvio Procedimento,pe.avvioproc,prei
 20,Soggetti Interessati,pe.elenco_soggetti,prei
 50,Ubicazione Intervento,pe.ubicazione,prei
+55,Posizione,pe.posizione,
 40,Elenco Allegati,pe.allegati,prei
 45,Integrazione Documenti,pe.integrazioni,prei
 it,Istruttoria Tecnica
