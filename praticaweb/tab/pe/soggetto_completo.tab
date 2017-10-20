@@ -30,7 +30,7 @@ data[]="Albo;albo;300xelenco_albi;select|Numero;albonumero;20;text|Prov;alboprov
 data[]="Cassa edile;cedile;20;text|Prov;cedileprov;45xpe.elenco_provincie;selectdb"
 data[]="C.I.P.;cip;10;text|Data Richiesta C.I.P.;data_cip;10;data"
 data[]="Note;note;65x2;textarea"
-data[]=";proprietario;;checkbox;data-plugins=tipo_soggetto#data-value=soggetto|;richiedente;;checkbox;data-plugins=tipo_soggetto#data-value=soggetto|;concessionario;;checkbox;data-plugins=tipo_soggetto#data-value=soggetto|;resp_abuso;;checkbox;data-plugins=tipo_soggetto#data-value=soggetto"
+data[]=";proprietario;;checkbox;data-plugins=tipo_soggetto#data-value=soggetto|;richiedente;;checkbox;data-plugins=tipo_soggetto#data-value=soggetto|;concessionario;;checkbox;data-plugins=tipo_soggetto#data-value=soggetto|;resp_abuso;;checkbox;data-plugins=tipo_soggetto#data-value=soggetto|;referente;;checkbox;data-plugins=tipo_soggetto#data-value=soggetto"
 data[]="Ruolo;progettista;;checkbox;data-plugins=tipo_soggetto#data-value=tecnico|;direttore;;checkbox;data-plugins=tipo_soggetto#data-value=tecnico|;sicurezza;;checkbox;data-plugins=tipo_soggetto#data-value=tecnico|;collaudatore;;checkbox;data-plugins=tipo_soggetto#data-value=tecnico"
 data[]=";esecutore;;checkbox;data-plugins=tipo_soggetto#data-value=esecutore|;geologo;;checkbox;data-plugins=tipo_soggetto#data-value=tecnico|;progettista_ca;;checkbox;data-plugins=tipo_soggetto#data-value=tecnico|;collaudatore_ca;;checkbox;data-plugins=tipo_soggetto#data-value=tecnico"
 data[]="Invio comunicazioni;comunicazioni;45;yesno|;id;;idriga|;voltura;;"
