@@ -1,0 +1,19 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[view]
+table="cdu.vista_iter"
+chiave="id"
+campi_ordinamento="data"
+campi_obbligatori=""
+data[]=";id;3%##form:cdu.iter;btn_edit"
+data[]=";row_form;;hidden"
+data[]=";row_class;;hidden"
+data[]="Data;data;10%;text"
+data[]="Evento;testo;70%;text"
+[list]
+
+[standard]
