@@ -50,9 +50,10 @@ if ($stmt->execute(Array($idPratica))){
     $customData["incendi_cdu"] =$incendi;
 }
 $sql=<<<EOT
-select DISTINCT A.pratica,file_name,riferimento,articolo from cdu.richiesta A inner join cdu.mappali B USING(pratica) INNER JOIN cdu.vincoli_norme C USING(vincolo,tavola,zona) INNER JOIN cdu.normativa D ON (id_normativa=C.id_norma) WHERE pratica=? order by pratica,articolo
+select DISTINCT A.pratica,file_name,riferimento,articolo from cdu.richiesta A inner join cdu.mappali B USING(pratica) INNER JOIN cdu.vincoli_norme C USING(vincolo,tavola,zona) INNER JOIN cdu.normativa D ON (id_normativa=C.id_norma) WHERE not riferimento ilike '%\_p' AND pratica=? order by pratica,articolo
 EOT;
 $stmt = $dbh->prepare($sql);
+$norme = Array();
 if ($stmt->execute(Array($idPratica))){
     require_once APPS_DIR."plugins/openTbs/tbs_class_php5.php";
     require_once APPS_DIR."plugins/openTbs/tbs_plugin_opentbs.php";
@@ -64,5 +65,22 @@ if ($stmt->execute(Array($idPratica))){
         $norme[]=$TBS->GetBlockSource($res[$i]["riferimento"], FALSE, FALSE);
     }
     $customData["normativa"] =$norme;
+}
+$sql=<<<EOT
+select DISTINCT A.pratica,file_name,riferimento,articolo from cdu.richiesta A inner join cdu.mappali B USING(pratica) INNER JOIN cdu.vincoli_norme C USING(vincolo,tavola,zona) INNER JOIN cdu.normativa D ON (id_normativa=C.id_norma) WHERE riferimento ilike '%\_p' AND pratica=? order by pratica,articolo
+EOT;
+$stmt = $dbh->prepare($sql);
+$norme=Array();
+if ($stmt->execute(Array($idPratica))){
+    require_once APPS_DIR."plugins/openTbs/tbs_class_php5.php";
+    require_once APPS_DIR."plugins/openTbs/tbs_plugin_opentbs.php";
+    $TBS = new clsTinyButStrong; // new instance of TBS
+    $TBS->Plugin(TBS_INSTALL, OPENTBS_PLUGIN); // load OpenTBS plugin
+    $TBS->LoadTemplate($this->modelliDir."NORMATIVA CAMOGLI.docx",OPENTBS_DEFAULT);
+    $res = $stmt->fetchAll();
+    for($i=0;$i<count($res);$i++){
+        $norme[]=$TBS->GetBlockSource($res[$i]["riferimento"], FALSE, FALSE);
+    }
+    $customData["normativa_ptcp"] =$norme;
 }
 ?>
