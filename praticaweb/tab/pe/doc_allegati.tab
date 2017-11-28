@@ -19,14 +19,16 @@ data[]="Iter;nome_iter;;text"
 
 [view]
 table="pe.grouped_allegati"
+;table = "pe.allegati_pratica_new"
 chiave="id"
 campi_ordinamento=""
 campi_obbligatori=""
 data[]=";id;3%#pe.scheda_documento;btn_list"
 data[]="Iter;iter;8%;text"
 data[]="Tipo;tipo;20%;text"
-data[]="Allegati;doc;50%;text"
-
+;data[]="Tipo;descrizione;50%;text"
+data[]="Allegati;doc;40%;text"
+;data[]="Stato;stato;20%;text"
 [list]
 
 [standard]
