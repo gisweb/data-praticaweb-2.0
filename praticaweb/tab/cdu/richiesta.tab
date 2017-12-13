@@ -8,7 +8,8 @@ editable="cdu"
 table="cdu.richiesta"
 chiave="id"
 campi_ordinamento=""
-campi_obbligatori="protocollo"
+campi_obbligatori="cod_belfiore;protocollo"
+data[]="Comune;cod_belfiore;200xadmin.elenco_unione_comuni;selectdb"
 data[]="Protocollo;protocollo;25;text|Data;data;10;data"
 data[]="Situazione al;data_certificazione;10;data"
 data[]="Richiedente;richiedente;50;text"
@@ -20,7 +21,8 @@ button="Salva;azione;;submit|Elimina;azione;#confirmDelete;submit|Annulla;azione
 table="cdu.richiesta"
 chiave="id"
 campi_ordinamento=""
-campi_obbligatori="protocollo"
+campi_obbligatori="cod_belfiore;protocollo"
+data[]="Comune;cod_belfiore;200xadmin.elenco_unione_comuni;selectdb"
 data[]="Protocollo;protocollo;25;text|Data;data;10;data"
 data[]="Situazione al;data_certificazione;10;data"
 data[]="Richiedente;richiedente;50;text"
@@ -32,7 +34,7 @@ button="Salva;azione;;submit|Elimina;azione;#confirmDelete;submit|Annulla;azione
 table="cdu.richiesta"
 chiave="id"
 campi_ordinamento=""
-campi_obbligatori="protocollo"
+data[]="Comune;cod_belfiore;200xadmin.elenco_unione_comuni;selectdb"
 data[]="Protocollo;protocollo;25;text|Data;data;10;data"
 data[]="Situazione al;data_certificazione;10;data"
 data[]="Richiedente;richiedente;50;text"
@@ -42,3 +44,4 @@ data[]="Note;note;50x4;textarea"
 [list]
 
 [standard]
+
