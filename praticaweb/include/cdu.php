@@ -78,9 +78,11 @@ if ($stmt->execute(Array($idPratica))){
     $TBS->Plugin(TBS_INSTALL, OPENTBS_PLUGIN); // load OpenTBS plugin
     $TBS->LoadTemplate($this->modelliDir."NORMATIVA CAMOGLI.docx",OPENTBS_DEFAULT);
     $res = $stmt->fetchAll();
+    utils::debug(DEBUG_DIR."NORME.debug",$res);
     for($i=0;$i<count($res);$i++){
         $norme[]=$TBS->GetBlockSource($res[$i]["riferimento"], FALSE, FALSE);
     }
     $customData["normativa_ptcp"] =$norme;
+    utils::debug(DEBUG_DIR."NORMATIVA.debug",$norme);
 }
 ?>

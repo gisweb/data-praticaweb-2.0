@@ -24,5 +24,13 @@ data[]="X;coordx;40;text|Y;coordy;40;text"
 data[]="Annotazioni;note;40x5;textarea"
 data[]=";geometry;50;hidden"
 [list]
+table="pe.posizione"
+chiave=""
+campi_ordinamento=""
+campi_obbligatori=""
+data[]=";id;3%#pe.posizione.php;btn_edit"
+data[]="X;coordx;10%;text"
+data[]="Y;coordy;10%;text"
+data[]="Annotazioni;note;;text"
 
 [standard]
