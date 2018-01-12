@@ -5,6 +5,6 @@
 ./praticaweb/documenti/cdu/*
 ./praticaweb/documenti/vigi/
 ./praticaweb/documenti/ce/*
-./praticaweb/debug/*.debug
+./praticaweb/debug/*
 ./praticaweb/documenti/anagrafe_tributaria.txt
 config.local.php
