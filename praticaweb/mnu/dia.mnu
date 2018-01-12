@@ -23,7 +23,7 @@ lav,Lavori
 170,Esecuzione Lavori,pe.lavori,lav
 agi,Agibilità
 200,Collaudo,pe.collaudo,agi
-210,Agibilità,pe.abitabi,agi
+210,Segnalazione Certificata,pe.abitabi,agi
 vigi,Sorveglianza
 260,Esposti,pe.esposti,
 250,Sopralluoghi,pe.sopralluoghi

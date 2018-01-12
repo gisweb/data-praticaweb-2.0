@@ -32,5 +32,5 @@ data[]=";id;3%#pe.posizione.php;btn_edit"
 data[]="X;coordx;10%;text"
 data[]="Y;coordy;10%;text"
 data[]="Annotazioni;note;;text"
-
+data[]=";geometry;50;hidden"
 [standard]
