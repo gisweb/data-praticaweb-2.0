@@ -1,6 +1,6 @@
 ./praticaweb/debug/*
-./praticaweb/documenti/*
-./praticaweb/documenti/pe/*
-./praticaweb/documenti/cdu/*
-./praticaweb/documenti/vigi/*
-./praticaweb/documenti/ce/*
+praticaweb/documenti/*
+praticaweb/documenti/pe/*
+praticaweb/documenti/cdu/*
+praticaweb/documenti/vigi/*
+praticaweb/documenti/ce/*
