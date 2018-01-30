@@ -204,6 +204,19 @@ $customFields["data_richiesta_agi"]=Array("title"=>"data_richiesta_agi");
 $customFields["numero_agi"]=Array("title"=>"numero_agi"); 
 $customFields["protocollo_agi"]=Array("title"=>"protocollo_agi"); 
 $customFields["data_agi"]=Array("title"=>"data_agi"); 
+
+$sql="SELECT prot_rich as prot_richiesta_integrazione,data_rich as data_richiesta_integrazione, prot_integ as prot_integrazione, data_integ as data_prot_integrazione,note as note_integrazione 
+      FROM pe.integrazioni
+      WHERE pratica=? AND coalesce(prot_integ'')<>''
+      ORDER BY data_integ DESC,id DESC";
+$tmp=parse_query($sql);
+array_merge($tmp,$customFields);
+$ris=$db-> fetchAssoc($sql,Array($this->pratica));
+$customData["prot_richiesta_integrazione"]=$ris["prot_richiesta_integrazione"];
+$customData["data_richiesta_integrazione"]=$ris["data_richiesta_integrazione"];
+$customData["prot_integrazione"]=$ris["prot_integrazione"];
+$customData["data_prot_integrazione"]=$ris["data_prot_integrazione"];
+$customData["note_integrazione "]=$ris["note_integrazione "];
 /***************************************************************************************************/
 //print_debug($customData,NULL,'STAMPA-UNIONE');
 //array_walk_recursive($customData, 'decode');
