@@ -1,0 +1,26 @@
+prei,PreIstruttoria
+10,Avvio Procedimento,pe.avvioproc,prei
+20,Soggetti Interessati,pe.elenco_soggetti,prei
+50,Ubicazione Intervento,pe.ubicazione,prei
+40,Elenco Allegati,pe.allegati,prei
+45,Integrazione Documenti,pe.integrazioni,prei
+it,Istruttoria Tecnica
+70,Pianificazione e Vincoli,pe.vincoli,it
+80,Dati di Progetto,pe.progetto,it
+92,Sospensioni,pe.sospensioni,it
+,Oneri
+110,Importi,oneri.importi,
+120,Rateizzazione,oneri.rate,
+130,Fideiussioni,oneri.fidi,
+ia,Istruttoria Amministrativa
+100,Richiesta Pareri,pe.pareri,
+90,Asservimenti,pe.asservimenti,
+91,Atti e Titoli,pe.atti,ia
+,Titolo
+160,Rilascio Titolo,pe.titolo,
+iter,Iter
+295,Scadenze,pe.scadenze,
+300,Annotazioni,pe.annotazioni,
+293,Documenti Prodotti,stp.documenti
+310,Comunicazioni,pe.comunicazioni
+305,Accesso agli Atti,pe.visione,
