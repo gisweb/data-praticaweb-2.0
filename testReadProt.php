@@ -4,8 +4,8 @@
 $url = "http://93.57.10.175:50080/client/services/ProWSApi?WSDL";
 $login = "!suap/sicraweb@tovosangiacomo/tovosangiacomo";
 
-$prot = "69";
-$anno = 2017;
+$prot = "1";
+$anno = 2018;
 error_reporting(E_ERROR);
 $dir = dirname(__FILE__);
 define('DATA_DIR',$dir.DIRECTORY_SEPARATOR);

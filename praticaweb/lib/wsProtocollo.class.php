@@ -191,6 +191,15 @@ class wsProtocollo{
         $this->wsClient->clearAttachments();
         $this->wsClient->addAttachment($fileXML,"richiesta_protocollo_out.xml","text/xml");
         $res =$this->wsClient->call("registraProtocollo",Array($this->login));
+        $f = fopen(LOCAL_LIB.'../debug/protocollo.debug','w');
+        ob_start();
+        print_r($this->wsClient);
+        $r = ob_get_contents();
+        ob_end_clean();
+        fwrite($f,$r);
+        fclose($f);
+
+
         if ($res["lngErrNumber"]==0){
             $result["success"]=1;
             $result["result"] = Array("protocollo"=>$res["lngNumPG"],"data_protocollo"=>date ("d/m/Y"));
