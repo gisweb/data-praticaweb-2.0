@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Segnatura
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:tal="http://xml.zope.org/namespaces/tal"
+        xmlns:metal="http://xml.zope.org/namespaces/metal"
+        xsi:noNamespaceSchemaLocation=".\DOCAREAProto.xsd">
+    <Intestazione>
+        <Oggetto>[oggetto]</Oggetto>
+        <Identificatore>
+            <CodiceAmministrazione>[identificatore.codamm]</CodiceAmministrazione>
+            <CodiceAOO>[identificatore.codaoo]</CodiceAOO>
+            <NumeroRegistrazione>[identificatore.id]</NumeroRegistrazione>
+            <DataRegistrazione>[identificatore.data_registrazione]</DataRegistrazione>
+            <Flusso>[identificatore.flusso]</Flusso>
+        </Identificatore>
+        <Mittente>
+            <Persona id="[soggetto.id_cf]">
+                <Nome>[soggetto.nome]</Nome>
+                <Cognome>[soggetto.cognome]</Cognome>
+                <CodiceFiscale>[soggetto.cf]</CodiceFiscale>
+                <Denominazione>[soggetto.denominazione]</Denominazione>
+                <IndirizzoTelematico>[soggetto.email]</IndirizzoTelematico>
+            </Persona>
+            <IndirizzoPostale>
+                <Denominazione>[soggetto.via]</Denominazione>
+                <CAP>[soggetto.cap]</CAP>
+                <Comune>[soggetto.comune]</Comune>
+                <Provincia>[soggetto.provincia]</Provincia>
+            </IndirizzoPostale>
+        </Mittente>
+        <Destinatario>
+            <Amministrazione>
+                <Denominazione>[amministrazione.denominazione]</Denominazione>
+                <CodiceAmministrazione>[amministrazione.codice]</CodiceAmministrazione>
+                <UnitaOrganizzativa tipo="permanente" id="[uo.id]">
+                    <Denominazione>[uo.codice]</Denominazione>
+                    <Identificativo>[uo.denominazione]</Identificativo>
+                </UnitaOrganizzativa>
+            </Amministrazione>
+            <AOO>
+                <Denominazione>[aoo.denominazione]</Denominazione>
+                <CodiceAOO>[aoo.codice]</CodiceAOO>
+            </AOO>
+        </Destinatario>
+        
+    </Intestazione>
+    <Descrizione>
+        <Documento nome="[allegato.nome]" id="[allegato.id]">
+            <DescrizioneDocumento>[allegato.descrizione]</DescrizioneDocumento>
+            <TipoDocumento>[allegato.tipo]</TipoDocumento>
+        </Documento>
+        <Allegati>
+            [allegati;block=begin]
+            <Documento nome="[allegati.nome]" id="[allegati.id]">
+                <DescrizioneDocumento>[allegati.descrizione]</DescrizioneDocumento>
+                <TipoDocumento>[allegati.tipo]</TipoDocumento>
+            </Documento>
+            [allegati;block=end]
+        </Allegati>
+    </Descrizione>
+</Segnatura>
