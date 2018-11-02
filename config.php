@@ -1,10 +1,10 @@
 <?php
-define('NOME_COMUNE','Comune di Vezzano Ligure - Pratiche Edilizie');//nome completo del comune che compare nell'intestazione
+define('NOME_COMUNE','Comune di Santa Margherita Ligure - Pratiche Edilizie');//nome completo del comune che compare nell'intestazione
 
 define('DEBUG', 1); // Debugging 0 off 1 on
 define('DB_DRIVER','pdo_pgsql');
 define('DB_HOST','127.0.0.1');
-define('DB_NAME','gw_vezzano_demo');
+define('DB_NAME','gw_sml');
 define('DB_USER','postgres');
 define('DB_PWD','postgres');
 
@@ -13,11 +13,21 @@ if (file_exists(DATA_DIR.'config.local.php')){
 	include DATA_DIR.'config.local.php';
 }
 else{
-	define('DB_PORT','5432');
+	define('DB_PORT','5434');
 }
 
 define('ALWAYS_VIEWABLE',1);
 define('ALWAYS_EDITABLE',1);
+
+
+
+/******************************* DEFINIZIONI DELLE AZIONI STANDARD *******************************/
+
+define('ACTION_SAVE','salva');
+define('ACTION_CANCEL','annulla');
+define('ACTION_DELETE','elimina');
+
+/************************************************************************************************/
 
 define('MENU',DATA_DIR."praticaweb".DIRECTORY_SEPARATOR."mnu".DIRECTORY_SEPARATOR);//cartella contenente la  configurazione dei menu
 define('TAB',DATA_DIR."praticaweb".DIRECTORY_SEPARATOR."tab".DIRECTORY_SEPARATOR);//cartella contenente la  configurazione dei forms via file tab
@@ -52,13 +62,14 @@ define('SELF',$_SERVER["PHP_SELF"]);
 define('NEW_VINCOLI',1);
 
 define('THE_GEOM','bordo_gb');
-define('MAPPA_PRATICHE','vezzano_riservata');
+define('MAPPA_PRATICHE','');
 define('LAYER_MAPPALI','particelle');
 define('OBJ_LAYER','2183:particelle');
-define('MAPSETID','vezzano_riservata');
-define('CDUMAPSETID','vezzano_riservata');
-define('TEMPLATE','vezzano');
-define('GC_VERSION',2);
+define('MAPSETID','santamargherita_sit');
+define('CDUMAPSETID','');
+define('TEMPLATE','gisclient');
+define('GC_VERSION',3);
+define('GC_URL','https://santamargherita.istanze-online.it/gisclient/maps/jquery/sml.html');
 define('QTID_PARTICELLE','170');
 define('QTID_CIVICI','25');
 

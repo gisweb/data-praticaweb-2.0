@@ -29,7 +29,7 @@ class pratica extends generalPratica{
     }
   
 
-    private function initPE(){
+    function initPE(){
 		$db=$this->db1;
 		if ($this->pratica && is_numeric($this->pratica)){
 			//INFORMAZIONI SULLA PRATICA
