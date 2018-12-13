@@ -12,6 +12,8 @@ prei,PreIstruttoria
 94,Conformità Ambientale,pe.conformita_ptcp,it
 95,Conformità Urbanistica,pe.conformita_puc,it
 100,Pareri,pe.pareri,
+,Importi
+115,Pagamenti,pe.pagamenti,oc
 ,Titolo
 160,Rilascio Titolo,pe.titolo,
 iter,Iter

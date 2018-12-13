@@ -12,6 +12,7 @@ oc,Oneri
 110,Importi,oneri.importi,oc
 120,Rateizzazione,oneri.rate,oc
 130,Fideiussioni,oneri.fidi,oc
+115,Pagamenti,pe.pagamenti,oc
 ia,Istruttoria Amministrativa
 100,Richiesta Pareri,pe.pareri,ia
 90,Asservimenti,pe.asservimenti,ia
