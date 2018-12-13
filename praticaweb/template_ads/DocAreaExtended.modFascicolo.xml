@@ -1,0 +1,8 @@
+<xml>
+<ROOT>
+	<ID_DOCUMENTO>%s</ID_DOCUMENTO>
+	<OGGETTO>%s</OGGETTO>
+	<MODALITA>%s</MODALITA>
+	<UTENTE>%s</UTENTE>
+</ROOT>
+</xml>
