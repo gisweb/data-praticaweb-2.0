@@ -1,0 +1,37 @@
+
+11-02-19	11:01:39
+	SELECT opzione FROM pe.elenco_tipopratica_all WHERE id::varchar='130000';
+11-02-19	11:01:39
+	SELECT opzione FROM pe.elenco_categorie WHERE id::varchar='7';
+11-02-19	11:01:39
+	SELECT opzione FROM pe.elenco_tipointervento WHERE id::varchar='7';
+11-02-19	11:01:39
+	SELECT opzione FROM admin.elenco_rdp_sue WHERE id::varchar='9';
+11-02-19	11:01:39
+	SELECT opzione FROM admin.elenco_itec_sue WHERE id::varchar='8';
+11-02-19	11:01:39
+	SELECT opzione FROM admin.elenco_rdp_amb WHERE id::varchar='7';
+11-02-19	11:04:38
+	SELECT opzione FROM pe.elenco_tipopratica_all WHERE id::varchar='130000';
+11-02-19	11:04:38
+	SELECT opzione FROM pe.elenco_categorie WHERE id::varchar='7';
+11-02-19	11:04:38
+	SELECT opzione FROM pe.elenco_tipointervento WHERE id::varchar='7';
+11-02-19	11:04:38
+	SELECT opzione FROM admin.elenco_rdp_sue WHERE id::varchar='9';
+11-02-19	11:04:38
+	SELECT opzione FROM admin.elenco_itec_sue WHERE id::varchar='8';
+11-02-19	11:04:38
+	SELECT opzione FROM admin.elenco_rdp_amb WHERE id::varchar='7';
+11-02-19	11:25:57
+	SELECT opzione FROM pe.elenco_tipopratica_all WHERE id::varchar='130000';
+11-02-19	11:25:57
+	SELECT opzione FROM pe.elenco_categorie WHERE id::varchar='7';
+11-02-19	11:25:57
+	SELECT opzione FROM pe.elenco_tipointervento WHERE id::varchar='7';
+11-02-19	11:25:57
+	SELECT opzione FROM admin.elenco_rdp_sue WHERE id::varchar='9';
+11-02-19	11:25:57
+	SELECT opzione FROM admin.elenco_itec_sue WHERE id::varchar='8';
+11-02-19	11:25:57
+	SELECT opzione FROM admin.elenco_rdp_amb WHERE id::varchar='7';

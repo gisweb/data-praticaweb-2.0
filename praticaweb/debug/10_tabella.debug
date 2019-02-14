@@ -1,0 +1,258 @@
+------- DEBUG DEL 19/10/2018 10:47:12 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 62666  ORDER BY data
+-------------------------
+------- DEBUG DEL 19/10/2018 10:47:51 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 62666  ORDER BY data
+-------------------------
+------- DEBUG DEL 19/10/2018 10:48:03 -------
+select sportello,numero,data_presentazione,tipo,categoria,intervento,protocollo,data_prot,rif_pratica,cartella,resp_proc,data_resp,resp_it,data_resp_it,resp_amb,data_resp_amb,com_resp,data_com_resp,data_chiusura,oggetto,note,vincolo_paes,online,foreign_id,id,pratica,chk from pe.avvioproc where pratica=62666 
+-------------------------
+------- DEBUG DEL 19/10/2018 10:48:15 -------
+select sportello,tipo,categoria,intervento,numero,data_presentazione,protocollo,data_prot,resp_proc,data_resp,com_resp,data_com_resp,resp_it,data_resp_it,resp_amb,data_resp_amb,data_chiusura,oggetto,note,vincolo_paes,id,pratica,chk from pe.avvioproc where pratica=62666 
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:18 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 62666  ORDER BY data
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:21 -------
+select sportello,numero,data_presentazione,tipo,categoria,intervento,protocollo,data_prot,rif_pratica,cartella,resp_proc,data_resp,resp_it,data_resp_it,resp_amb,data_resp_amb,com_resp,data_com_resp,data_chiusura,oggetto,note,vincolo_paes,online,foreign_id,id,pratica,chk from pe.avvioproc where pratica=62666 
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:31 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where richiedente=1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:31 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where richiedente=-1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:31 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where concessionario=1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:31 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where concessionario=-1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:31 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where proprietario=1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:31 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where proprietario=-1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:31 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista=1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:31 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista=-1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:31 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore=1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:31 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore=-1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:31 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where esecutore=1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:31 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where esecutore=-1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:31 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where sicurezza=1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:31 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where sicurezza=-1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:31 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore=1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:31 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore=-1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:31 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where geologo=1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:31 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where geologo=-1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:31 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista_ca=1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:31 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista_ca=-1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:31 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore_ca=1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:31 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore_ca=-1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:31 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore_ca=1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:31 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore_ca=-1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:31 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where economia_diretta=1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:31 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where economia_diretta=-1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:31 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where resp_abuso=1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:32 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where resp_abuso=-1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:32 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where denunciante=1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:32 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where denunciante=-1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:32 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where tecnico=1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:32 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where tecnico=-1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:32 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where referente=1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:32 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where referente=-1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:42 -------
+select sportello,numero,data_presentazione,tipo,categoria,intervento,protocollo,data_prot,rif_pratica,cartella,resp_proc,data_resp,resp_it,data_resp_it,resp_amb,data_resp_amb,com_resp,data_com_resp,data_chiusura,oggetto,note,vincolo_paes,online,foreign_id,id,pratica,chk from pe.avvioproc where pratica=62666 
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:37 -------
+select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=62666 AND protocollo='51166' AND data_protocollo='21/10/2017'::date  ORDER BY ordine,lower(tipo_documento),nome_file
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:39 -------
+select id,id,via,civico,interno,scala,piano,occ_suolo_pubblico,mq_occ,gg_occ,id,pratica,chk from pe.indirizzi where pratica=62666; 
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:39 -------
+select mapkey,id,foglio,mappale,sub,sez_censimento,id,pratica,chk from pe.ct_info where pratica=62666; 
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:39 -------
+select id,id,foglio,mappale,sub,sez_censimento,id,pratica,chk from pe.curbano where pratica=62666; 
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:39 -------
+select id,id,via,civico,interno,scala,piano,sezione,foglio,mappale,sub,destuso,vani,superficie,id,pratica,chk from pe.unita_immobiliari where pratica=62666; 
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:45 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where richiedente=1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:45 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where richiedente=-1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:45 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where concessionario=1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:45 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where concessionario=-1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:45 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where proprietario=1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:45 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where proprietario=-1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:45 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista=1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:46 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista=-1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:46 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore=1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:46 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore=-1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:46 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where esecutore=1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:46 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where esecutore=-1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:46 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where sicurezza=1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:46 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where sicurezza=-1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:46 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore=1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:46 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore=-1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:46 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where geologo=1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:46 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where geologo=-1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:46 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista_ca=1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:46 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista_ca=-1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:46 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore_ca=1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:46 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore_ca=-1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:46 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore_ca=1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:46 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore_ca=-1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:46 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where economia_diretta=1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:46 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where economia_diretta=-1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:46 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where resp_abuso=1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:46 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where resp_abuso=-1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:46 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where denunciante=1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:46 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where denunciante=-1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:46 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where tecnico=1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:46 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where tecnico=-1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:46 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where referente=1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:46 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where referente=-1 and pratica=62666  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 19/10/2018 10:50:54 -------
+select sportello,numero,data_presentazione,tipo,categoria,intervento,protocollo,data_prot,rif_pratica,cartella,resp_proc,data_resp,resp_it,data_resp_it,resp_amb,data_resp_amb,com_resp,data_com_resp,data_chiusura,oggetto,note,vincolo_paes,online,foreign_id,id,pratica,chk from pe.avvioproc where pratica=62666 
+-------------------------
+------- DEBUG DEL 19/10/2018 10:53:51 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 62617  ORDER BY data
+-------------------------
+------- DEBUG DEL 19/10/2018 10:53:54 -------
+select sportello,numero,data_presentazione,tipo,categoria,intervento,protocollo,data_prot,rif_pratica,cartella,resp_proc,data_resp,resp_it,data_resp_it,resp_amb,data_resp_amb,com_resp,data_com_resp,data_chiusura,oggetto,note,vincolo_paes,online,foreign_id,id,pratica,chk from pe.avvioproc where pratica=62617 
+-------------------------
+------- DEBUG DEL 19/10/2018 10:54:45 -------
+select sportello,tipo,categoria,intervento,numero,data_presentazione,protocollo,data_prot,resp_proc,data_resp,com_resp,data_com_resp,resp_it,data_resp_it,resp_amb,data_resp_amb,data_chiusura,oggetto,note,vincolo_paes,id,pratica,chk from pe.avvioproc where pratica=62617 
+-------------------------
+------- DEBUG DEL 19/10/2018 11:45:06 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 61589  ORDER BY data
+-------------------------
+------- DEBUG DEL 21/11/2018 12:16:35 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 61313  ORDER BY data
+-------------------------

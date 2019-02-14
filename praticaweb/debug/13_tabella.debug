@@ -1,0 +1,6 @@
+------- DEBUG DEL 21/11/2018 10:20:22 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 62187  ORDER BY data
+-------------------------
+------- DEBUG DEL 21/11/2018 12:29:56 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 61303  ORDER BY data
+-------------------------

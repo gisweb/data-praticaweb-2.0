@@ -1,0 +1,27 @@
+------- DEBUG DEL 28/09/2018 11:03:04 -------
+select sportello,numero,data_presentazione,tipo,categoria,intervento,protocollo,data_prot,rif_pratica,cartella,resp_proc,data_resp,resp_it,data_resp_it,resp_amb,data_resp_amb,com_resp,data_com_resp,data_chiusura,oggetto,note,vincolo_paes,online,foreign_id,id,pratica,chk from pe.avvioproc where pratica=3 
+-------------------------
+------- DEBUG DEL 28/09/2018 11:03:11 -------
+select id,id,nome,username,desc_permessi,id,pratica,chk from admin.utenti where true  ORDER BY nome
+-------------------------
+------- DEBUG DEL 28/09/2018 11:03:18 -------
+select app,cognome,nominativo,permessi,username,pwd,pwd1,gruppi,attivato,gisclient,info,id,pratica,chk from admin.utenti where id=9 
+-------------------------
+------- DEBUG DEL 28/09/2018 11:03:30 -------
+select app,cognome,nominativo,username,desc_permessi,gruppi,data_creazione,data_modifica,info,id,pratica,chk from admin.utenti where id=9 
+-------------------------
+------- DEBUG DEL 28/09/2018 11:03:32 -------
+select id,id,nome,username,desc_permessi,id,pratica,chk from admin.utenti where true  ORDER BY nome
+-------------------------
+------- DEBUG DEL 05/10/2018 12:11:34 -------
+select sportello,numero,data_presentazione,tipo,categoria,intervento,protocollo,data_prot,rif_pratica,cartella,resp_proc,data_resp,resp_it,data_resp_it,resp_amb,data_resp_amb,com_resp,data_com_resp,data_chiusura,oggetto,note,vincolo_paes,online,foreign_id,id,pratica,chk from pe.avvioproc where pratica=63080 
+-------------------------
+------- DEBUG DEL 05/10/2018 12:11:45 -------
+select sportello,numero,data_presentazione,tipo,categoria,intervento,protocollo,data_prot,rif_pratica,cartella,resp_proc,data_resp,resp_it,data_resp_it,resp_amb,data_resp_amb,com_resp,data_com_resp,data_chiusura,oggetto,note,vincolo_paes,online,foreign_id,id,pratica,chk from pe.avvioproc where pratica=63080 
+-------------------------
+------- DEBUG DEL 05/10/2018 12:11:58 -------
+select sportello,numero,data_presentazione,tipo,categoria,intervento,protocollo,data_prot,rif_pratica,cartella,resp_proc,data_resp,resp_it,data_resp_it,resp_amb,data_resp_amb,com_resp,data_com_resp,data_chiusura,oggetto,note,vincolo_paes,online,foreign_id,id,pratica,chk from pe.avvioproc where pratica=63080 
+-------------------------
+------- DEBUG DEL 05/10/2018 12:13:40 -------
+select sportello,numero,data_presentazione,tipo,categoria,intervento,protocollo,data_prot,rif_pratica,cartella,resp_proc,data_resp,resp_it,data_resp_it,resp_amb,data_resp_amb,com_resp,data_com_resp,data_chiusura,oggetto,note,vincolo_paes,online,foreign_id,id,pratica,chk from pe.avvioproc where pratica=63080 
+-------------------------

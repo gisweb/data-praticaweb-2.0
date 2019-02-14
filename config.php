@@ -1,10 +1,10 @@
 <?php
-define('NOME_COMUNE','Comune di Vezzano Ligure - Pratiche Edilizie');//nome completo del comune che compare nell'intestazione
+define('NOME_COMUNE','Comune di Rapallo - Pratiche Edilizie');//nome completo del comune che compare nell'intestazione
 
 define('DEBUG', 1); // Debugging 0 off 1 on
 define('DB_DRIVER','pdo_pgsql');
 define('DB_HOST','127.0.0.1');
-define('DB_NAME','gw_vezzano_demo');
+define('DB_NAME','gw_rapallo');
 define('DB_USER','postgres');
 define('DB_PWD','postgres');
 
@@ -13,7 +13,7 @@ if (file_exists(DATA_DIR.'config.local.php')){
 	include DATA_DIR.'config.local.php';
 }
 else{
-	define('DB_PORT','5432');
+	define('DB_PORT','5434');
 }
 
 define('ALWAYS_VIEWABLE',1);
@@ -52,12 +52,12 @@ define('SELF',$_SERVER["PHP_SELF"]);
 define('NEW_VINCOLI',1);
 
 define('THE_GEOM','bordo_gb');
-define('MAPPA_PRATICHE','vezzano_riservata');
+define('MAPPA_PRATICHE','');
 define('LAYER_MAPPALI','particelle');
 define('OBJ_LAYER','2183:particelle');
-define('MAPSETID','vezzano_riservata');
-define('CDUMAPSETID','vezzano_riservata');
-define('TEMPLATE','vezzano');
+define('MAPSETID','');
+define('CDUMAPSETID','');
+define('TEMPLATE','gisclient');
 define('GC_VERSION',2);
 define('QTID_PARTICELLE','170');
 define('QTID_CIVICI','25');

@@ -1,0 +1,3060 @@
+------- DEBUG DEL 07/03/2018 03:46:11 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 07/03/2018 03:46:11 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 07/03/2018 03:46:11 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 07/03/2018 03:46:11 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 07/03/2018 03:46:11 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 22/05/2018 10:22:17 -------
+select * from pe.elenco_tipopratica_all
+-------------------------
+------- DEBUG DEL 22/05/2018 10:22:17 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 22/05/2018 10:22:17 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 22/05/2018 10:22:17 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 22/05/2018 10:22:17 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 22/05/2018 10:22:17 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 22/05/2018 10:22:17 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 22/05/2018 10:23:59 -------
+select * from pe.elenco_tipopratica_all
+-------------------------
+------- DEBUG DEL 22/05/2018 10:23:59 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 22/05/2018 10:23:59 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 22/05/2018 10:23:59 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 22/05/2018 10:23:59 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 22/05/2018 10:23:59 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 22/05/2018 10:23:59 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 22/05/2018 10:29:02 -------
+select * from pe.elenco_provincie
+-------------------------
+------- DEBUG DEL 22/05/2018 10:29:02 -------
+select * from pe.elenco_provincie_regioni
+-------------------------
+------- DEBUG DEL 22/05/2018 10:29:02 -------
+select * from pe.elenco_provincie
+-------------------------
+------- DEBUG DEL 22/05/2018 10:34:52 -------
+select * from admin.elenco_utenti_attivi
+-------------------------
+------- DEBUG DEL 22/05/2018 10:34:52 -------
+select * from admin.elenco_utenti_attivi
+-------------------------
+------- DEBUG DEL 22/05/2018 10:35:58 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 22/05/2018 10:35:58 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 22/05/2018 10:35:58 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 22/05/2018 10:35:58 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 22/05/2018 10:35:58 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 22/05/2018 10:36:39 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 22/05/2018 10:36:39 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 22/05/2018 10:36:39 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 22/05/2018 10:36:39 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 22/05/2018 10:36:39 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 22/05/2018 10:41:26 -------
+select * from pe.elenco_enti_edit
+-------------------------
+------- DEBUG DEL 22/05/2018 10:41:26 -------
+select * from admin.elenco_altriuffici where attivato=1
+-------------------------
+------- DEBUG DEL 12/06/2018 05:01:28 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 12/06/2018 05:01:28 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 12/06/2018 05:01:28 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 12/06/2018 05:01:28 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 12/06/2018 05:01:28 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 13/06/2018 07:32:33 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 13/06/2018 07:32:33 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 13/06/2018 07:32:33 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 13/06/2018 07:32:33 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 13/06/2018 07:32:33 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 13/06/2018 06:55:12 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 13/06/2018 06:55:12 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 13/06/2018 06:55:12 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 13/06/2018 06:55:12 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 13/06/2018 06:55:12 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 14/06/2018 09:03:16 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 14/06/2018 09:03:16 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 14/06/2018 09:03:16 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 14/06/2018 09:03:16 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 14/06/2018 09:03:16 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 15/06/2018 11:58:30 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 15/06/2018 11:58:31 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 15/06/2018 11:58:31 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 15/06/2018 11:58:31 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 15/06/2018 11:58:31 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 18/06/2018 04:47:58 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 18/06/2018 04:47:58 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 18/06/2018 04:47:58 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 18/06/2018 04:47:58 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 18/06/2018 04:47:58 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 18/06/2018 04:49:11 -------
+select * from admin.e_permessi
+-------------------------
+------- DEBUG DEL 18/06/2018 04:49:11 -------
+select * from admin.elenco_gruppi
+-------------------------
+------- DEBUG DEL 18/06/2018 04:49:44 -------
+select * from admin.e_permessi
+-------------------------
+------- DEBUG DEL 18/06/2018 04:49:44 -------
+select * from admin.elenco_gruppi
+-------------------------
+------- DEBUG DEL 19/06/2018 04:38:19 -------
+select * from admin.e_permessi
+-------------------------
+------- DEBUG DEL 19/06/2018 04:38:20 -------
+select * from admin.elenco_gruppi
+-------------------------
+------- DEBUG DEL 19/06/2018 04:43:33 -------
+select * from admin.e_permessi
+-------------------------
+------- DEBUG DEL 19/06/2018 04:43:33 -------
+select * from admin.elenco_gruppi
+-------------------------
+------- DEBUG DEL 19/06/2018 04:43:43 -------
+select * from admin.e_permessi
+-------------------------
+------- DEBUG DEL 19/06/2018 04:43:43 -------
+select * from admin.elenco_gruppi
+-------------------------
+------- DEBUG DEL 19/06/2018 04:43:48 -------
+select * from admin.e_permessi
+-------------------------
+------- DEBUG DEL 19/06/2018 04:43:48 -------
+select * from admin.elenco_gruppi
+-------------------------
+------- DEBUG DEL 19/06/2018 04:44:05 -------
+select * from admin.e_permessi
+-------------------------
+------- DEBUG DEL 19/06/2018 04:44:05 -------
+select * from admin.elenco_gruppi
+-------------------------
+------- DEBUG DEL 19/06/2018 04:44:23 -------
+select * from admin.e_permessi
+-------------------------
+------- DEBUG DEL 19/06/2018 04:44:23 -------
+select * from admin.elenco_gruppi
+-------------------------
+------- DEBUG DEL 19/06/2018 04:47:47 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 19/06/2018 04:47:47 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 19/06/2018 04:50:09 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 19/06/2018 04:50:09 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 19/06/2018 04:50:35 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 19/06/2018 04:50:35 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 19/06/2018 04:51:24 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 19/06/2018 04:51:24 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 19/06/2018 04:52:43 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 19/06/2018 04:52:43 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 19/06/2018 04:52:43 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 19/06/2018 04:52:43 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/06/2018 04:52:43 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/06/2018 04:53:52 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 19/06/2018 04:53:52 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 19/06/2018 04:53:52 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 19/06/2018 04:53:52 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/06/2018 04:53:52 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/06/2018 04:54:37 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 19/06/2018 04:54:37 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 19/06/2018 04:55:47 -------
+select * from pe.elenco_tipopratica_all
+-------------------------
+------- DEBUG DEL 19/06/2018 04:55:47 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 19/06/2018 04:55:47 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 19/06/2018 04:55:47 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 19/06/2018 04:55:47 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 19/06/2018 04:55:47 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 19/06/2018 04:55:47 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 19/06/2018 05:13:11 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 19/06/2018 05:13:11 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 20/06/2018 10:03:20 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 20/06/2018 10:03:20 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 20/06/2018 10:03:21 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 20/06/2018 10:03:21 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 20/06/2018 10:03:21 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 20/06/2018 10:03:54 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 20/06/2018 10:03:54 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 20/06/2018 10:03:54 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 20/06/2018 10:03:54 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 20/06/2018 10:03:54 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 20/06/2018 10:03:54 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 20/06/2018 10:03:54 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 20/06/2018 10:49:27 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 20/06/2018 10:49:28 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 20/06/2018 10:49:28 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 20/06/2018 10:49:28 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 20/06/2018 10:49:28 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 20/06/2018 10:51:03 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 20/06/2018 10:51:03 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 20/06/2018 10:51:03 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 20/06/2018 10:51:03 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 20/06/2018 10:51:03 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 20/06/2018 11:58:50 -------
+select * from pe.elenco_tiposcadenze where ordine>=0
+-------------------------
+------- DEBUG DEL 20/06/2018 11:58:50 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 20/06/2018 12:00:20 -------
+select * from vincoli.elenco_vincolipratiche
+-------------------------
+------- DEBUG DEL 20/06/2018 12:00:20 -------
+select * from 
+-------------------------
+------- DEBUG DEL 20/06/2018 12:00:20 -------
+select * from 
+-------------------------
+------- DEBUG DEL 27/09/2018 04:10:53 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 27/09/2018 04:10:53 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 27/09/2018 04:10:54 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 27/09/2018 04:10:54 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 27/09/2018 04:10:54 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 28/09/2018 10:28:16 -------
+select * from pe.elenco_tipopratica_all
+-------------------------
+------- DEBUG DEL 28/09/2018 10:28:16 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 28/09/2018 10:28:16 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 28/09/2018 10:28:16 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 28/09/2018 10:28:16 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 28/09/2018 10:28:16 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 28/09/2018 10:28:16 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 28/09/2018 10:29:21 -------
+select * from pe.elenco_tipopratica_all
+-------------------------
+------- DEBUG DEL 28/09/2018 10:29:21 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 28/09/2018 10:29:21 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 28/09/2018 10:29:21 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 28/09/2018 10:29:21 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 28/09/2018 10:29:21 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 28/09/2018 10:29:21 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 28/09/2018 10:30:04 -------
+select * from admin.e_permessi
+-------------------------
+------- DEBUG DEL 28/09/2018 10:30:04 -------
+select * from admin.elenco_gruppi
+-------------------------
+------- DEBUG DEL 28/09/2018 10:32:04 -------
+select * from admin.e_permessi
+-------------------------
+------- DEBUG DEL 28/09/2018 10:32:04 -------
+select * from admin.elenco_gruppi
+-------------------------
+------- DEBUG DEL 28/09/2018 10:33:03 -------
+select * from admin.e_permessi
+-------------------------
+------- DEBUG DEL 28/09/2018 10:33:03 -------
+select * from admin.elenco_gruppi
+-------------------------
+------- DEBUG DEL 28/09/2018 10:34:17 -------
+select * from pe.elenco_tipopratica_all
+-------------------------
+------- DEBUG DEL 28/09/2018 10:34:17 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 28/09/2018 10:34:17 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 28/09/2018 10:34:17 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 28/09/2018 10:34:17 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 28/09/2018 10:34:17 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 28/09/2018 10:34:17 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 28/09/2018 10:52:18 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 28/09/2018 10:52:18 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 28/09/2018 10:52:18 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 28/09/2018 10:52:18 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 28/09/2018 10:52:18 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 28/09/2018 10:55:43 -------
+select * from pe.elenco_tiposcadenze where ordine>=0
+-------------------------
+------- DEBUG DEL 28/09/2018 10:55:43 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 28/09/2018 11:00:39 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 28/09/2018 11:00:39 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 28/09/2018 11:00:39 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 28/09/2018 11:00:39 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 28/09/2018 11:00:39 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 28/09/2018 11:01:28 -------
+select * from admin.elenco_utenti_attivi
+-------------------------
+------- DEBUG DEL 28/09/2018 11:01:28 -------
+select * from admin.elenco_utenti_attivi
+-------------------------
+------- DEBUG DEL 28/09/2018 11:03:18 -------
+select * from admin.e_permessi
+-------------------------
+------- DEBUG DEL 28/09/2018 11:03:18 -------
+select * from admin.elenco_gruppi
+-------------------------
+------- DEBUG DEL 05/10/2018 11:16:35 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 05/10/2018 11:16:35 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 05/10/2018 11:16:36 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 05/10/2018 11:16:36 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 05/10/2018 11:16:36 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 05/10/2018 11:22:10 -------
+select * from pe.elenco_provincie
+-------------------------
+------- DEBUG DEL 05/10/2018 11:22:10 -------
+select * from pe.elenco_provincie_regioni
+-------------------------
+------- DEBUG DEL 05/10/2018 11:22:10 -------
+select * from pe.elenco_provincie
+-------------------------
+------- DEBUG DEL 05/10/2018 11:59:32 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 05/10/2018 11:59:32 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 05/10/2018 11:59:32 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 05/10/2018 11:59:32 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 05/10/2018 11:59:32 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 05/10/2018 12:01:56 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 05/10/2018 12:01:56 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 05/10/2018 12:01:56 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 05/10/2018 12:01:56 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 05/10/2018 12:01:56 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 05/10/2018 12:02:34 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 05/10/2018 12:02:34 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 05/10/2018 12:02:34 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 05/10/2018 12:02:34 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 05/10/2018 12:02:34 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 05/10/2018 12:03:57 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 05/10/2018 12:03:57 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 05/10/2018 12:03:57 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 05/10/2018 12:03:57 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 05/10/2018 12:03:57 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 05/10/2018 12:09:21 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 05/10/2018 12:09:21 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 05/10/2018 12:09:22 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 05/10/2018 12:09:22 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 05/10/2018 12:09:22 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 05/10/2018 12:09:54 -------
+select * from admin.elenco_utenti_attivi
+-------------------------
+------- DEBUG DEL 05/10/2018 12:09:54 -------
+select * from admin.elenco_utenti_attivi
+-------------------------
+------- DEBUG DEL 05/10/2018 12:12:26 -------
+select * from admin.e_permessi
+-------------------------
+------- DEBUG DEL 05/10/2018 12:12:26 -------
+select * from admin.elenco_gruppi
+-------------------------
+------- DEBUG DEL 05/10/2018 12:14:23 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 05/10/2018 12:14:23 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 05/10/2018 12:14:23 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 05/10/2018 12:14:23 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 05/10/2018 12:14:23 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 09:40:42 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 19/10/2018 09:40:42 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 19/10/2018 09:46:22 -------
+select * from admin.e_permessi
+-------------------------
+------- DEBUG DEL 19/10/2018 09:46:22 -------
+select * from admin.elenco_gruppi
+-------------------------
+------- DEBUG DEL 19/10/2018 09:48:04 -------
+select * from admin.e_permessi
+-------------------------
+------- DEBUG DEL 19/10/2018 09:48:04 -------
+select * from admin.elenco_gruppi
+-------------------------
+------- DEBUG DEL 19/10/2018 09:56:28 -------
+select * from admin.e_permessi
+-------------------------
+------- DEBUG DEL 19/10/2018 09:56:29 -------
+select * from admin.elenco_gruppi
+-------------------------
+------- DEBUG DEL 19/10/2018 09:58:24 -------
+select * from admin.e_permessi
+-------------------------
+------- DEBUG DEL 19/10/2018 09:58:24 -------
+select * from admin.elenco_gruppi
+-------------------------
+------- DEBUG DEL 19/10/2018 09:59:51 -------
+select * from admin.e_permessi
+-------------------------
+------- DEBUG DEL 19/10/2018 09:59:51 -------
+select * from admin.elenco_gruppi
+-------------------------
+------- DEBUG DEL 19/10/2018 10:01:45 -------
+select * from admin.e_permessi
+-------------------------
+------- DEBUG DEL 19/10/2018 10:01:45 -------
+select * from admin.elenco_gruppi
+-------------------------
+------- DEBUG DEL 19/10/2018 10:09:20 -------
+select * from admin.e_permessi
+-------------------------
+------- DEBUG DEL 19/10/2018 10:09:20 -------
+select * from admin.elenco_gruppi
+-------------------------
+------- DEBUG DEL 19/10/2018 10:09:36 -------
+select * from admin.e_permessi
+-------------------------
+------- DEBUG DEL 19/10/2018 10:09:36 -------
+select * from admin.elenco_gruppi
+-------------------------
+------- DEBUG DEL 19/10/2018 10:10:57 -------
+select * from admin.e_permessi
+-------------------------
+------- DEBUG DEL 19/10/2018 10:10:57 -------
+select * from admin.elenco_gruppi
+-------------------------
+------- DEBUG DEL 19/10/2018 10:13:47 -------
+select * from admin.e_permessi
+-------------------------
+------- DEBUG DEL 19/10/2018 10:13:47 -------
+select * from admin.elenco_gruppi
+-------------------------
+------- DEBUG DEL 19/10/2018 10:14:40 -------
+select * from admin.e_permessi
+-------------------------
+------- DEBUG DEL 19/10/2018 10:14:40 -------
+select * from admin.elenco_gruppi
+-------------------------
+------- DEBUG DEL 19/10/2018 10:15:42 -------
+select * from admin.e_permessi
+-------------------------
+------- DEBUG DEL 19/10/2018 10:15:42 -------
+select * from admin.elenco_gruppi
+-------------------------
+------- DEBUG DEL 19/10/2018 10:16:13 -------
+select * from admin.e_permessi
+-------------------------
+------- DEBUG DEL 19/10/2018 10:16:13 -------
+select * from admin.elenco_gruppi
+-------------------------
+------- DEBUG DEL 19/10/2018 10:37:56 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 19/10/2018 10:37:56 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 19/10/2018 10:46:37 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 19/10/2018 10:46:37 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 19/10/2018 10:46:37 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 19/10/2018 10:46:37 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 10:46:37 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 10:47:19 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 19/10/2018 10:47:20 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 19/10/2018 10:47:20 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 19/10/2018 10:47:20 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 10:47:20 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 10:48:09 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 19/10/2018 10:48:09 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 19/10/2018 10:48:15 -------
+select * from pe.elenco_tipopratica_all
+-------------------------
+------- DEBUG DEL 19/10/2018 10:48:15 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 19/10/2018 10:48:15 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 19/10/2018 10:48:15 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 19/10/2018 10:48:15 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 19/10/2018 10:48:15 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 19/10/2018 10:48:15 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:05 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:05 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:05 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:05 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:05 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:20 -------
+select * from pe.elenco_provincie
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:20 -------
+select * from pe.elenco_provincie_regioni
+-------------------------
+------- DEBUG DEL 19/10/2018 10:49:20 -------
+select * from pe.elenco_provincie
+-------------------------
+------- DEBUG DEL 19/10/2018 10:51:39 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 19/10/2018 10:51:39 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 19/10/2018 10:51:39 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 19/10/2018 10:51:39 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 10:51:39 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 10:53:46 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 19/10/2018 10:53:46 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 19/10/2018 10:54:45 -------
+select * from pe.elenco_tipopratica_all
+-------------------------
+------- DEBUG DEL 19/10/2018 10:54:45 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 19/10/2018 10:54:45 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 19/10/2018 10:54:45 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 19/10/2018 10:54:45 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 19/10/2018 10:54:45 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 19/10/2018 10:54:45 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 19/10/2018 11:09:25 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 19/10/2018 11:09:25 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 19/10/2018 11:09:25 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 19/10/2018 11:09:25 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 11:09:25 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 11:10:14 -------
+select * from oneri.elenco_anno
+-------------------------
+------- DEBUG DEL 19/10/2018 11:10:14 -------
+select * from oneri.elenco_funzione
+-------------------------
+------- DEBUG DEL 19/10/2018 11:10:14 -------
+select * from oneri.elenco_interventi where tabella
+-------------------------
+------- DEBUG DEL 19/10/2018 11:10:14 -------
+select * from oneri.elenco_c1 where tabella
+-------------------------
+------- DEBUG DEL 19/10/2018 11:10:14 -------
+select * from oneri.elenco_c2 where tabella
+-------------------------
+------- DEBUG DEL 19/10/2018 11:10:14 -------
+select * from oneri.elenco_c3 where tabella
+-------------------------
+------- DEBUG DEL 19/10/2018 11:10:14 -------
+select * from oneri.elenco_c4 where tabella
+-------------------------
+------- DEBUG DEL 19/10/2018 11:10:14 -------
+select * from oneri.elenco_d1 where tabella
+-------------------------
+------- DEBUG DEL 19/10/2018 11:10:14 -------
+select * from oneri.elenco_d2 where tabella
+-------------------------
+------- DEBUG DEL 19/10/2018 11:30:09 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 19/10/2018 11:30:09 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 19/10/2018 11:30:09 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 19/10/2018 11:30:09 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 11:30:09 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 11:34:16 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 19/10/2018 11:34:16 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 19/10/2018 11:34:16 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 19/10/2018 11:34:16 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 11:34:16 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 11:34:59 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 19/10/2018 11:34:59 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 19/10/2018 11:34:59 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 19/10/2018 11:34:59 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 11:34:59 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 11:36:18 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 19/10/2018 11:36:19 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 19/10/2018 11:36:19 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 19/10/2018 11:36:19 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 11:36:19 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 11:39:02 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 19/10/2018 11:39:02 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 19/10/2018 11:39:02 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 19/10/2018 11:39:02 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 11:39:02 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 11:40:03 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 19/10/2018 11:40:03 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 19/10/2018 11:40:03 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 19/10/2018 11:40:03 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 11:40:03 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 11:42:18 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 19/10/2018 11:42:18 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 19/10/2018 11:42:18 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 19/10/2018 11:42:18 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 11:42:18 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 11:42:45 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 19/10/2018 11:42:45 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 19/10/2018 11:42:45 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 19/10/2018 11:42:45 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 11:42:45 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 11:42:59 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 19/10/2018 11:42:59 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 19/10/2018 11:42:59 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 19/10/2018 11:42:59 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 11:42:59 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 11:43:17 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 19/10/2018 11:43:17 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 19/10/2018 11:43:17 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 19/10/2018 11:43:17 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 11:43:17 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 11:43:22 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 19/10/2018 11:43:22 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 19/10/2018 11:43:22 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 19/10/2018 11:43:22 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 11:43:22 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 11:43:45 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 19/10/2018 11:43:45 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 19/10/2018 11:43:45 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 19/10/2018 11:43:45 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 11:43:45 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 11:44:18 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 19/10/2018 11:44:18 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 19/10/2018 11:44:18 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 19/10/2018 11:44:18 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 11:44:18 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 11:45:34 -------
+select * from pe.elenco_tipo_verifiche
+-------------------------
+------- DEBUG DEL 19/10/2018 11:45:34 -------
+select * from admin.elenco_iveri
+-------------------------
+------- DEBUG DEL 19/10/2018 11:45:34 -------
+select * from pe.elenco_esiti_verifiche
+-------------------------
+------- DEBUG DEL 19/10/2018 11:45:53 -------
+select * from pe.elenco_origine_esposti
+-------------------------
+------- DEBUG DEL 19/10/2018 11:46:07 -------
+select * from pe.elenco_origine_esposti
+-------------------------
+------- DEBUG DEL 19/10/2018 12:19:21 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 19/10/2018 12:19:21 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 19/10/2018 12:19:21 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 19/10/2018 12:19:21 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 12:19:21 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 12:21:28 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 19/10/2018 12:21:29 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 19/10/2018 12:21:29 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 19/10/2018 12:21:29 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 12:21:29 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 12:26:11 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 19/10/2018 12:26:11 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 19/10/2018 12:26:11 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 19/10/2018 12:26:11 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/10/2018 12:26:11 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 24/10/2018 01:16:05 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 24/10/2018 01:16:05 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 24/10/2018 01:16:05 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 24/10/2018 01:16:05 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 24/10/2018 01:16:05 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 24/10/2018 01:24:43 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 24/10/2018 01:24:43 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 24/10/2018 01:24:43 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 24/10/2018 01:24:43 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 24/10/2018 01:24:43 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 25/10/2018 10:37:28 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 25/10/2018 10:37:29 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 25/10/2018 10:37:29 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 25/10/2018 10:37:29 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 25/10/2018 10:37:29 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 25/10/2018 10:38:34 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 25/10/2018 10:38:34 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 25/10/2018 10:38:34 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 25/10/2018 10:38:34 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 25/10/2018 10:38:34 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 25/10/2018 10:39:22 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 25/10/2018 10:39:23 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 25/10/2018 10:39:23 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 25/10/2018 10:39:23 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 25/10/2018 10:39:23 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 25/10/2018 10:47:17 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 25/10/2018 10:47:17 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 25/10/2018 10:47:17 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 25/10/2018 10:47:17 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 25/10/2018 10:47:17 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 26/10/2018 11:47:34 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 26/10/2018 11:47:35 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 26/10/2018 11:47:35 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 26/10/2018 11:47:35 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 26/10/2018 11:47:35 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 12/11/2018 01:46:45 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 12/11/2018 01:46:45 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 12/11/2018 01:46:45 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 12/11/2018 01:46:45 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 12/11/2018 01:46:45 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 12/11/2018 01:47:58 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 12/11/2018 01:47:58 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 12/11/2018 01:47:58 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 12/11/2018 01:47:58 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 12/11/2018 01:47:58 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 12/11/2018 01:51:00 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 12/11/2018 01:51:00 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 12/11/2018 01:51:00 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 12/11/2018 01:51:00 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 12/11/2018 01:51:00 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 13/11/2018 07:39:46 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 13/11/2018 07:39:47 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 13/11/2018 07:39:47 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 13/11/2018 07:39:47 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 13/11/2018 07:39:47 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/11/2018 11:25:32 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 19/11/2018 11:25:32 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 19/11/2018 11:25:32 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 19/11/2018 11:25:32 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/11/2018 11:25:32 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/11/2018 11:27:30 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 19/11/2018 11:27:30 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 19/11/2018 11:27:30 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 19/11/2018 11:27:30 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/11/2018 11:27:30 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/11/2018 11:28:28 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 19/11/2018 11:28:28 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 19/11/2018 11:28:28 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 19/11/2018 11:28:28 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 19/11/2018 11:28:28 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 09:52:57 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 21/11/2018 09:52:57 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 21/11/2018 09:52:57 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 21/11/2018 09:52:57 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 09:52:57 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 09:54:36 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 21/11/2018 09:54:36 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 21/11/2018 09:54:36 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 21/11/2018 09:54:36 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 09:54:36 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 09:55:27 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 21/11/2018 09:55:27 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 21/11/2018 09:55:27 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 21/11/2018 09:55:27 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 21/11/2018 09:55:27 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 21/11/2018 09:55:27 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 21/11/2018 09:55:27 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 21/11/2018 09:55:30 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 21/11/2018 09:55:30 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 21/11/2018 09:55:30 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 21/11/2018 09:55:30 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 09:55:30 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 09:57:51 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 21/11/2018 09:57:51 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 21/11/2018 09:57:51 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 21/11/2018 09:57:51 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 09:57:51 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 09:58:12 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 21/11/2018 09:58:12 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 21/11/2018 09:58:12 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 21/11/2018 09:58:12 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 09:58:12 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 09:58:21 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 21/11/2018 09:58:21 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 21/11/2018 09:58:21 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 21/11/2018 09:58:21 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 09:58:21 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 09:58:44 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 21/11/2018 09:58:44 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 21/11/2018 09:58:44 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 21/11/2018 09:58:44 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 09:58:44 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 09:59:42 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 21/11/2018 09:59:42 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 21/11/2018 09:59:42 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 21/11/2018 09:59:42 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 09:59:42 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 10:02:11 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 21/11/2018 10:02:11 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 21/11/2018 10:02:11 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 21/11/2018 10:02:11 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 10:02:11 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 10:03:21 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 21/11/2018 10:03:21 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 21/11/2018 10:03:21 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 21/11/2018 10:03:21 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 10:03:21 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 10:03:51 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 21/11/2018 10:03:51 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 21/11/2018 10:03:51 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 21/11/2018 10:03:51 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 10:03:51 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 10:04:24 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 21/11/2018 10:04:24 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 21/11/2018 10:04:24 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 21/11/2018 10:04:24 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 10:04:24 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 10:07:49 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 21/11/2018 10:07:49 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 21/11/2018 10:07:49 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 21/11/2018 10:07:49 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 10:07:49 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 10:08:02 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 21/11/2018 10:08:02 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 21/11/2018 10:08:02 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 21/11/2018 10:08:02 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 10:08:02 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 10:13:46 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 21/11/2018 10:13:46 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 21/11/2018 10:13:46 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 21/11/2018 10:13:46 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 10:13:46 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 10:17:03 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 21/11/2018 10:17:03 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 21/11/2018 10:17:03 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 21/11/2018 10:17:03 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 10:17:03 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 10:18:19 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 21/11/2018 10:18:19 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 21/11/2018 10:18:19 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 21/11/2018 10:18:19 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 10:18:19 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 10:19:46 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 21/11/2018 10:19:46 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 21/11/2018 10:19:46 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 21/11/2018 10:19:46 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 10:19:46 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 10:20:54 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 21/11/2018 10:20:54 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 21/11/2018 10:20:54 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 21/11/2018 10:20:54 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 10:20:54 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 12:04:24 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 21/11/2018 12:04:24 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 21/11/2018 12:04:24 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 21/11/2018 12:04:24 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 12:04:24 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 12:06:01 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 21/11/2018 12:06:01 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 21/11/2018 12:06:01 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 21/11/2018 12:06:01 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 12:06:01 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 12:07:16 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 21/11/2018 12:07:16 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 21/11/2018 12:07:16 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 21/11/2018 12:07:16 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 12:07:16 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 12:10:39 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 21/11/2018 12:10:39 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 21/11/2018 12:10:39 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 21/11/2018 12:10:39 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 12:10:39 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 12:11:21 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 21/11/2018 12:11:21 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 21/11/2018 12:11:21 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 21/11/2018 12:11:21 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 12:11:21 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 12:16:04 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 21/11/2018 12:16:04 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 21/11/2018 12:16:04 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 21/11/2018 12:16:04 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 12:16:04 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 12:16:48 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 21/11/2018 12:16:48 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 21/11/2018 12:16:48 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 21/11/2018 12:16:48 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 12:16:48 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 12:17:09 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 21/11/2018 12:17:09 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 21/11/2018 12:17:09 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 21/11/2018 12:17:09 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 12:17:09 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 12:24:58 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 21/11/2018 12:24:58 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 21/11/2018 12:24:58 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 21/11/2018 12:24:58 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 12:24:58 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 12:30:16 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 21/11/2018 12:30:16 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 21/11/2018 12:30:16 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 21/11/2018 12:30:16 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 21/11/2018 12:30:16 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 03/12/2018 10:01:31 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 03/12/2018 10:01:31 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 03/12/2018 10:01:31 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 03/12/2018 10:01:31 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 03/12/2018 10:01:31 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 03/12/2018 10:13:20 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 03/12/2018 10:13:20 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 03/12/2018 10:13:20 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 03/12/2018 10:13:20 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 03/12/2018 10:13:20 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 03/12/2018 10:25:21 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 03/12/2018 10:25:21 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 03/12/2018 10:25:21 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 03/12/2018 10:25:21 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 03/12/2018 10:25:21 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 07/02/2019 03:27:41 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 07/02/2019 03:27:41 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 07/02/2019 03:27:41 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 07/02/2019 03:27:41 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 07/02/2019 03:27:41 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 11/02/2019 10:20:03 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:20:03 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:20:03 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:20:03 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:20:03 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:20:03 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:20:03 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:36:11 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:36:11 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:36:11 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:36:11 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:36:11 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:36:11 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:36:11 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:36:53 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:36:53 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:36:53 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:36:53 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:36:53 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:36:53 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:36:53 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:37:10 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:37:10 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:37:10 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:37:10 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:37:10 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:37:10 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:37:10 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:37:20 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:37:20 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:37:20 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:37:20 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:37:20 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:37:20 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:37:20 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:37:37 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:37:37 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:37:37 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:37:37 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:37:37 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:37:37 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:37:37 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:37:46 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:37:46 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:37:46 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:37:46 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:37:46 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:37:46 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:37:46 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:37:59 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:37:59 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:37:59 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:37:59 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:37:59 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:37:59 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:37:59 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:38:16 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:38:16 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:38:16 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:38:16 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:38:16 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:38:16 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:38:16 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:38:26 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:38:26 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:38:26 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:38:26 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:38:26 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:38:26 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:38:26 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:38:33 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:38:33 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:38:33 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:38:33 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:38:33 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:38:33 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:38:33 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:38:49 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:38:49 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:38:49 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:38:49 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:38:49 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:38:49 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:38:49 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:38:57 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:38:57 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:38:57 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:38:57 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:38:57 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:38:57 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:38:57 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:39:02 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:39:02 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:39:02 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:39:02 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:39:02 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:39:02 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:39:02 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:40:17 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:40:17 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:40:17 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:40:17 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:40:17 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:40:17 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:40:17 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:40:30 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:40:30 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:40:30 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:40:30 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:40:30 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:40:30 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:40:30 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:40:40 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:40:40 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:40:40 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:40:40 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:40:40 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:40:40 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:40:40 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:41:02 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:41:02 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:41:02 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:41:02 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:41:02 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:41:02 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:41:02 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:41:24 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:41:24 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:41:24 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:41:24 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:41:24 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:41:24 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:41:24 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:41:24 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:41:24 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:41:24 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:41:24 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:41:24 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:41:24 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:41:24 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:41:50 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:41:50 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:41:50 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:41:50 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:41:50 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:41:50 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:41:50 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:42:21 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:42:21 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:42:21 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:42:21 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:42:21 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:42:21 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:42:21 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:42:41 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:42:41 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:43:16 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:43:16 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:43:16 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:43:16 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:43:16 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:43:16 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:43:16 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:44:34 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:44:34 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:47:00 -------
+select * from pe.elenco_provincie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:47:00 -------
+select * from pe.elenco_provincie_regioni
+-------------------------
+------- DEBUG DEL 11/02/2019 10:47:00 -------
+select * from pe.elenco_provincie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:48:19 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:48:19 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:48:19 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:48:19 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:48:19 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:48:19 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:48:19 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:48:22 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:48:22 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:48:22 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:48:22 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:48:22 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:48:22 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:48:22 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:48:50 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:48:50 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:48:50 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:48:50 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:48:50 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:48:50 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:48:50 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:49:05 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:49:05 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:49:05 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:49:05 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:49:05 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:49:05 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:49:05 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:49:23 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:49:23 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:49:23 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:49:23 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:49:23 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:49:23 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:49:23 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:52:14 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:52:14 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:52:14 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:52:14 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:52:14 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:52:14 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:52:14 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:52:46 -------
+select * from pe.elenco_provincie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:52:46 -------
+select * from pe.elenco_provincie_regioni
+-------------------------
+------- DEBUG DEL 11/02/2019 10:52:46 -------
+select * from pe.elenco_provincie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:53:35 -------
+select * from pe.elenco_provincie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:53:35 -------
+select * from pe.elenco_provincie_regioni
+-------------------------
+------- DEBUG DEL 11/02/2019 10:53:35 -------
+select * from pe.elenco_provincie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:53:51 -------
+select * from pe.elenco_provincie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:53:51 -------
+select * from pe.elenco_provincie_regioni
+-------------------------
+------- DEBUG DEL 11/02/2019 10:53:51 -------
+select * from pe.elenco_provincie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:54:05 -------
+select * from pe.elenco_provincie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:54:05 -------
+select * from pe.elenco_provincie_regioni
+-------------------------
+------- DEBUG DEL 11/02/2019 10:54:05 -------
+select * from pe.elenco_provincie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:54:16 -------
+select * from pe.elenco_provincie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:54:16 -------
+select * from pe.elenco_provincie_regioni
+-------------------------
+------- DEBUG DEL 11/02/2019 10:54:16 -------
+select * from pe.elenco_provincie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:54:54 -------
+select * from pe.elenco_provincie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:54:54 -------
+select * from pe.elenco_provincie_regioni
+-------------------------
+------- DEBUG DEL 11/02/2019 10:54:54 -------
+select * from pe.elenco_provincie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:55:32 -------
+select * from pe.elenco_provincie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:55:32 -------
+select * from pe.elenco_provincie_regioni
+-------------------------
+------- DEBUG DEL 11/02/2019 10:55:32 -------
+select * from pe.elenco_provincie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:56:08 -------
+select * from pe.elenco_provincie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:56:08 -------
+select * from pe.elenco_provincie_regioni
+-------------------------
+------- DEBUG DEL 11/02/2019 10:56:08 -------
+select * from pe.elenco_provincie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:57:12 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:57:12 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:57:12 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 11/02/2019 10:57:12 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 11/02/2019 10:57:12 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 11/02/2019 10:57:34 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:57:34 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:57:34 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:57:34 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:57:34 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:57:34 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:57:34 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:58:32 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:58:32 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:58:32 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:58:32 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:58:32 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:58:32 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:58:32 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:58:57 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:58:57 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:58:57 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:58:57 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:58:57 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:58:57 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:58:57 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:59:19 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:59:19 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:59:19 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:59:19 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:59:19 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:59:19 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:59:19 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:59:34 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:59:34 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:59:34 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:59:34 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:59:34 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:59:34 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:59:34 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:59:42 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:59:42 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:59:42 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:59:42 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:59:42 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:59:42 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:59:42 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:59:50 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:59:50 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:59:50 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:59:50 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:59:50 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:59:50 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:59:50 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 10:59:51 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 10:59:51 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 10:59:51 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 10:59:51 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:59:51 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 10:59:51 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 10:59:51 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 11:00:06 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 11:00:06 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 11:00:06 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 11:00:06 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 11:00:06 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 11:00:06 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 11:00:06 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 11:00:09 -------
+select * from pe.elenco_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 11:00:09 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 11:00:09 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 11:00:09 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 11:00:09 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 11:00:09 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 11:00:09 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 11:02:26 -------
+select * from pe.elenco_tipopratica_all
+-------------------------
+------- DEBUG DEL 11/02/2019 11:02:26 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 11/02/2019 11:02:26 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 11/02/2019 11:02:26 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 11:02:26 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 11/02/2019 11:02:26 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 11/02/2019 11:02:26 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 11:05:01 -------
+select * from pe.elenco_provincie
+-------------------------
+------- DEBUG DEL 11/02/2019 11:05:01 -------
+select * from pe.elenco_provincie_regioni
+-------------------------
+------- DEBUG DEL 11/02/2019 11:05:01 -------
+select * from pe.elenco_provincie
+-------------------------
+------- DEBUG DEL 11/02/2019 11:06:38 -------
+select * from pe.elenco_provincie
+-------------------------
+------- DEBUG DEL 11/02/2019 11:06:38 -------
+select * from pe.elenco_provincie_regioni
+-------------------------
+------- DEBUG DEL 11/02/2019 11:06:38 -------
+select * from pe.elenco_provincie
+-------------------------
+------- DEBUG DEL 11/02/2019 11:17:53 -------
+select * from pe.elenco_tipo_allegati
+-------------------------
+------- DEBUG DEL 11/02/2019 11:17:53 -------
+select * from pe.elenco_stati_allegato
+-------------------------
+------- DEBUG DEL 11/02/2019 11:20:03 -------
+select * from pe.elenco_tipo_allegati
+-------------------------
+------- DEBUG DEL 11/02/2019 11:20:03 -------
+select * from pe.elenco_stati_allegato
+-------------------------
+------- DEBUG DEL 11/02/2019 11:21:07 -------
+select * from pe.elenco_tipo_allegati
+-------------------------
+------- DEBUG DEL 11/02/2019 11:21:07 -------
+select * from pe.elenco_stati_allegato
+-------------------------
+------- DEBUG DEL 11/02/2019 11:51:32 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 11/02/2019 11:51:33 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 11/02/2019 11:51:33 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 11/02/2019 11:51:33 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 11/02/2019 11:51:33 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 13/02/2019 08:48:47 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 13/02/2019 08:48:47 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 13/02/2019 08:48:47 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 13/02/2019 08:48:47 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 13/02/2019 08:48:47 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 13/02/2019 08:51:53 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 13/02/2019 08:51:53 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 13/02/2019 08:51:53 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 13/02/2019 08:51:53 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 13/02/2019 08:51:53 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 13/02/2019 08:59:57 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 13/02/2019 08:59:57 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 13/02/2019 08:59:57 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 13/02/2019 08:59:57 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 13/02/2019 08:59:57 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 13/02/2019 09:08:13 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 13/02/2019 09:08:13 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 13/02/2019 09:08:13 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 13/02/2019 09:08:13 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 13/02/2019 09:08:13 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 13/02/2019 12:43:59 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 13/02/2019 12:43:59 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 13/02/2019 12:43:59 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 13/02/2019 12:43:59 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 13/02/2019 12:43:59 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 13/02/2019 12:48:28 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 13/02/2019 12:48:28 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 13/02/2019 12:48:28 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 13/02/2019 12:48:28 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 13/02/2019 12:48:28 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 13/02/2019 12:51:32 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 13/02/2019 12:51:32 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 13/02/2019 12:51:32 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 13/02/2019 12:51:32 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 13/02/2019 12:51:32 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 13/02/2019 12:53:40 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 13/02/2019 12:53:40 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 13/02/2019 12:53:40 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 13/02/2019 12:53:40 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 13/02/2019 12:53:40 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 13/02/2019 12:57:20 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 13/02/2019 12:57:20 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 13/02/2019 12:57:20 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 13/02/2019 12:57:20 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 13/02/2019 12:57:20 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 13/02/2019 01:03:40 -------
+select * from pe.elenco_enti_edit
+-------------------------
+------- DEBUG DEL 13/02/2019 01:03:40 -------
+select * from admin.elenco_altriuffici where attivato=1
+-------------------------
