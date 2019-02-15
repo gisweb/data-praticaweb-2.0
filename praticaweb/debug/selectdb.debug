@@ -3058,3 +3058,285 @@ select * from pe.elenco_enti_edit
 ------- DEBUG DEL 13/02/2019 01:03:40 -------
 select * from admin.elenco_altriuffici where attivato=1
 -------------------------
+------- DEBUG DEL 14/02/2019 12:09:57 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 14/02/2019 12:09:57 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 14/02/2019 12:10:42 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 14/02/2019 12:10:42 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 14/02/2019 12:13:47 -------
+select * from pe.elenco_tipopratica_all
+-------------------------
+------- DEBUG DEL 14/02/2019 12:13:47 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 14/02/2019 12:13:47 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 14/02/2019 12:13:47 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 14/02/2019 12:13:47 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 14/02/2019 12:13:47 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 14/02/2019 12:13:47 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 14/02/2019 12:13:59 -------
+select * from pe.elenco_tipopratica_all
+-------------------------
+------- DEBUG DEL 14/02/2019 12:13:59 -------
+select * from pe.elenco_categorie
+-------------------------
+------- DEBUG DEL 14/02/2019 12:13:59 -------
+select * from pe.elenco_tipointervento
+-------------------------
+------- DEBUG DEL 14/02/2019 12:13:59 -------
+select * from admin.elenco_rdp_sue
+-------------------------
+------- DEBUG DEL 14/02/2019 12:13:59 -------
+select * from admin.elenco_itec_sue
+-------------------------
+------- DEBUG DEL 14/02/2019 12:13:59 -------
+select * from admin.elenco_rdp_amb
+-------------------------
+------- DEBUG DEL 14/02/2019 12:13:59 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 14/02/2019 12:15:25 -------
+select * from pe.elenco_provincie
+-------------------------
+------- DEBUG DEL 14/02/2019 12:15:25 -------
+select * from pe.elenco_provincie_regioni
+-------------------------
+------- DEBUG DEL 14/02/2019 12:15:25 -------
+select * from pe.elenco_provincie
+-------------------------
+------- DEBUG DEL 14/02/2019 12:16:02 -------
+select * from pe.elenco_provincie
+-------------------------
+------- DEBUG DEL 14/02/2019 12:16:02 -------
+select * from pe.elenco_provincie_regioni
+-------------------------
+------- DEBUG DEL 14/02/2019 12:16:02 -------
+select * from pe.elenco_provincie
+-------------------------
+------- DEBUG DEL 14/02/2019 12:16:31 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 14/02/2019 12:16:31 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 14/02/2019 12:16:31 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 14/02/2019 12:16:31 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 14/02/2019 12:16:31 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 14/02/2019 12:18:07 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 14/02/2019 12:18:07 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 14/02/2019 12:19:51 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 14/02/2019 12:19:51 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 14/02/2019 12:20:19 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 14/02/2019 12:20:19 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 14/02/2019 12:21:41 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 14/02/2019 12:21:41 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 14/02/2019 12:49:45 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 14/02/2019 12:49:45 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 14/02/2019 12:52:49 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 14/02/2019 12:52:49 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 14/02/2019 12:53:34 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 14/02/2019 12:53:34 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 14/02/2019 12:53:53 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 14/02/2019 12:53:53 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 14/02/2019 01:02:30 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 14/02/2019 01:02:30 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 14/02/2019 01:03:30 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 14/02/2019 01:03:30 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 14/02/2019 01:05:30 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 14/02/2019 01:05:30 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 14/02/2019 01:06:22 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 14/02/2019 01:06:22 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 14/02/2019 01:06:42 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 14/02/2019 01:06:42 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 14/02/2019 01:07:14 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 14/02/2019 01:07:14 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 14/02/2019 01:09:47 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 14/02/2019 01:09:47 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 14/02/2019 01:10:25 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 14/02/2019 01:10:25 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 14/02/2019 01:11:16 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 14/02/2019 01:11:16 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 14/02/2019 01:12:40 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 14/02/2019 01:12:40 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 14/02/2019 01:14:48 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 14/02/2019 01:14:48 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 14/02/2019 01:15:53 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 14/02/2019 01:15:53 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 14/02/2019 01:17:00 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 14/02/2019 01:17:00 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 14/02/2019 03:30:12 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 14/02/2019 03:30:12 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 14/02/2019 03:30:32 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 14/02/2019 03:30:32 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 14/02/2019 03:32:19 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 14/02/2019 03:32:19 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 14/02/2019 03:33:59 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 14/02/2019 03:33:59 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 14/02/2019 03:35:38 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 14/02/2019 03:35:38 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 14/02/2019 03:36:17 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 14/02/2019 03:36:17 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 14/02/2019 03:49:00 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 14/02/2019 03:49:00 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 14/02/2019 03:52:25 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 14/02/2019 03:52:25 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 14/02/2019 03:54:00 -------
+select * from stp.elenco_form
+-------------------------
+------- DEBUG DEL 14/02/2019 03:54:00 -------
+select * from pe.elenco_tipipratiche_stampe
+-------------------------
+------- DEBUG DEL 15/02/2019 04:00:01 -------
+select * from pe.elenco_ricerca_tipopratica
+-------------------------
+------- DEBUG DEL 15/02/2019 04:00:01 -------
+select * from pe.elenco_opzione_ap
+-------------------------
+------- DEBUG DEL 15/02/2019 04:00:01 -------
+select * from pe.elenco_ricerca_responsabili
+-------------------------
+------- DEBUG DEL 15/02/2019 04:00:01 -------
+select * from admin.elenco_utenti
+-------------------------
+------- DEBUG DEL 15/02/2019 04:00:01 -------
+select * from admin.elenco_utenti
+-------------------------
