@@ -5,7 +5,7 @@ viewable=""
 editable=""
 
 [new]
-table="ce.membri_commissione"
+table="ce.membri_commissione_attuali"
 chiave="id"
 campi_ordinamento=""
 campi_obbligatori=""

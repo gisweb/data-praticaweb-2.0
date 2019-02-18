@@ -3,6 +3,8 @@
 table=""
 viewable=""
 editable=""
+print_form="ce.commissione"
+print_prms="tipo=ce.commissione"
 
 [edit]
 table="ce.commissione"
@@ -11,18 +13,21 @@ campi_ordinamento=""
 campi_obbligatori="data_convocazione"
 data[]="Tipo di commissione;tipo_comm;400xce.elenco_tipo_commissione;selectdb"
 data[]="Sede;sede1;50;autosuggest"
-data[]="Data;data_convocazione;10;data|Orario;ora_convocazione;6;ora"
+data[]="Data;data_convocazione;10;data|Numero;numero;2;intero"
+data[]="Orario Convocazione;ora_convocazione;6;ora|Orario Fine;ora_chiusura;6;ora"
 data[]="Note;note;60x4;textarea"
 button="Annulla;azione;;submit|Salva;azione;;submit"
 
 [view]
-table="ce.comm_edilizia"
+table="ce.commissione"
 chiave="id"
 campi_ordinamento=""
 campi_obbligatori=""
-data[]="Tipo di commissione;tipo;50;text|Sede;sede1;50;text"
-data[]="Data;data_convocazione;10;data|Orario;ora_convocazione;6;ora"
+data[]="Tipo di commissione;tipo_comm;400xce.elenco_tipo_commissione;selectdb|Sede;sede1;50;text"
+data[]="Data;data_convocazione;10;data|Numero;numero;2;text"
+data[]="Orario Convocazione;ora_convocazione;6;ora|Orario Fine;ora_chiusura;6;ora"
 data[]="Note;note;200;text"
+data[]=";;ce.commissione;stampa"
 [list]
 
 [standard]
