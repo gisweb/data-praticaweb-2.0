@@ -769,3 +769,21 @@ select data_sanzione,importo,data_scadenza,quietanza,data_pagamento,note,,id,pra
 select sportello,numero,data_presentazione,tipo,categoria,intervento,protocollo,data_prot,rif_pratica,cartella,resp_proc,data_resp,resp_it,data_resp_it,resp_amb,data_resp_amb,com_resp,data_com_resp,data_chiusura,oggetto,note,vincolo_paes,online,foreign_id,id,pratica,chk from pe.avvioproc where pratica=55985 ------- DEBUG DEL 13/02/2019 01:05:37 -------
 select sportello,numero,data_presentazione,tipo,categoria,intervento,protocollo,data_prot,rif_pratica,cartella,resp_proc,data_resp,resp_it,data_resp_it,resp_amb,data_resp_amb,com_resp,data_com_resp,data_chiusura,oggetto,note,vincolo_paes,online,foreign_id,id,pratica,chk from pe.avvioproc where pratica=55985 
 -------------------------
+
+18-02-19	08:02:42
+	pe/iter_pratica.tab
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 64470  ORDER BY data------- DEBUG DEL 18/02/2019 08:02:42 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 64470  ORDER BY data
+-------------------------
+
+18-02-19	08:06:43
+	pe/iter_pratica.tab
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 64394  ORDER BY data------- DEBUG DEL 18/02/2019 08:06:43 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 64394  ORDER BY data
+-------------------------
+
+18-02-19	08:07:51
+	pe/annotazioni.tab
+select data_annotazione,utente,note,notifica,soggetto_notificato,id,pratica,chk from pe.annotazioni where id=1815217 ------- DEBUG DEL 18/02/2019 08:07:51 -------
+select data_annotazione,utente,note,notifica,soggetto_notificato,id,pratica,chk from pe.annotazioni where id=1815217 
+-------------------------

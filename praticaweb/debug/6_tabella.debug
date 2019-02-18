@@ -6358,3 +6358,57 @@ select nome,form,descrizione,proprietario,tipo_pratica,multiple,id from stp.e_mo
 select nome,form,descrizione,proprietario,tipo_pratica,multiple,id from stp.e_modelli where id=20 ------- DEBUG DEL 14/02/2019 03:54:04 -------
 select nome,form,descrizione,proprietario,tipo_pratica,multiple,id from stp.e_modelli where id=20 
 -------------------------
+
+18-02-19	09:48:25
+	stp/modelli.tab
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='pe.avvioproc'  ORDER BY nome------- DEBUG DEL 18/02/2019 09:48:25 -------
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='pe.avvioproc'  ORDER BY nome
+-------------------------
+
+18-02-19	09:48:26
+	stp/modelli.tab
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='pe.istruttoria'  ORDER BY nome------- DEBUG DEL 18/02/2019 09:48:26 -------
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='pe.istruttoria'  ORDER BY nome
+-------------------------
+
+18-02-19	09:48:26
+	stp/modelli.tab
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='pe.allegati'  ORDER BY nome------- DEBUG DEL 18/02/2019 09:48:26 -------
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='pe.allegati'  ORDER BY nome
+-------------------------
+
+18-02-19	09:48:26
+	stp/modelli.tab
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='pe.pareri'  ORDER BY nome------- DEBUG DEL 18/02/2019 09:48:26 -------
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='pe.pareri'  ORDER BY nome
+-------------------------
+
+18-02-19	09:48:26
+	stp/modelli.tab
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='pe.abitabi'  ORDER BY nome------- DEBUG DEL 18/02/2019 09:48:26 -------
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='pe.abitabi'  ORDER BY nome
+-------------------------
+
+18-02-19	09:48:26
+	stp/modelli.tab
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='pe.titolo'  ORDER BY nome------- DEBUG DEL 18/02/2019 09:48:26 -------
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='pe.titolo'  ORDER BY nome
+-------------------------
+
+18-02-19	09:48:26
+	stp/modelli.tab
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='oneri.importi'  ORDER BY nome------- DEBUG DEL 18/02/2019 09:48:26 -------
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='oneri.importi'  ORDER BY nome
+-------------------------
+
+18-02-19	09:48:26
+	stp/modelli.tab
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='cdu.vincoli'  ORDER BY nome------- DEBUG DEL 18/02/2019 09:48:26 -------
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='cdu.vincoli'  ORDER BY nome
+-------------------------
+
+18-02-19	09:48:26
+	stp/modelli.tab
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='ce.commissione'  ORDER BY nome------- DEBUG DEL 18/02/2019 09:48:26 -------
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='ce.commissione'  ORDER BY nome
+-------------------------

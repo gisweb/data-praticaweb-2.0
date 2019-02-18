@@ -3,3 +3,11 @@
 	insert into pe.avvioproc (sportello,tipo,categoria,intervento,data_presentazione,protocollo,data_prot,rif_pratica,resp_proc,data_resp,com_resp,data_com_resp,resp_it,data_resp_it,resp_amb,data_resp_amb,oggetto,note,vincolo_paes,chk,uidins,tmsins) values ('SUE',130000,null,0,'05/02/2019','7118','05/02/2019',NULL,null,NULL,NULL,NULL,null,NULL,null,NULL,NULL,NULL,null,1,1,1549878734)
 11-02-19	11:00:06
 	insert into pe.avvioproc (sportello,tipo,categoria,intervento,data_presentazione,protocollo,data_prot,rif_pratica,resp_proc,data_resp,com_resp,data_com_resp,resp_it,data_resp_it,resp_amb,data_resp_amb,oggetto,note,vincolo_paes,chk,uidins,tmsins) values ('SUE',130000,9,0,'05/02/2019','7118','05/02/2019',NULL,null,NULL,NULL,NULL,null,NULL,null,NULL,NULL,NULL,null,1,1,1549879206)
+18-02-19	12:22:19
+	insert into stp.e_modelli (nome,form,descrizione,proprietario,tipo_pratica,multiple,id) values ('Autoriz_Paesagg_146_SEMPLIFICATA.docx','pe.titolo','Autorizzazione Paesaggistica Semplificata',NULL,'150000',0,(SELECT coalesce(max(id),0)+1 FROM stp.e_modelli))
+18-02-19	14:42:24
+	insert into stp.e_modelli (nome,form,descrizione,proprietario,tipo_pratica,multiple,id) values ('Autorizzazione_Paesaggistica_146.docx','pe.titolo','Autorizzazione Paesaggistica',NULL,'150000',0,(SELECT coalesce(max(id),0)+1 FROM stp.e_modelli))
+18-02-19	14:46:55
+	update stp.e_modelli set nome='Autorizzazione_Paesaggistica_146.docx',form='pe.titolo',descrizione='Autorizzazione Paesaggistica',proprietario=NULL,tipo_pratica='150000',multiple=0 where id=22
+18-02-19	14:47:14
+	update stp.e_modelli set nome='Autoriz_Paesagg_146_SEMPLIFICATA.docx',form='pe.titolo',descrizione='Autorizzazione Paesaggistica Semplificata',proprietario=NULL,tipo_pratica='150000',multiple=0 where id=21
