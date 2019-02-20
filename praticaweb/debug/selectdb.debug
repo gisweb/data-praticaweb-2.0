@@ -3910,3 +3910,6 @@ select * from stp.elenco_form
 ------- DEBUG DEL 18/02/2019 02:47:03 -------
 select * from pe.elenco_tipipratiche_stampe
 -------------------------
+------- DEBUG DEL 20/02/2019 08:40:12 -------
+select * from ce.elenco_tipo_commissione
+-------------------------

@@ -4048,3 +4048,138 @@ select nome,form,descrizione,proprietario,tipo_pratica,multiple,id from stp.e_mo
 select nome,form,descrizione,proprietario,tipo_pratica,multiple,id from stp.e_modelli where id=21 ------- DEBUG DEL 18/02/2019 02:47:14 -------
 select nome,form,descrizione,proprietario,tipo_pratica,multiple,id from stp.e_modelli where id=21 
 -------------------------
+------- DEBUG DEL 20/02/2019 08:20:18 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 100033  ORDER BY data
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:21 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where richiedente=1 and pratica=100033  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:21 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where richiedente=-1 and pratica=100033  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:21 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where concessionario=1 and pratica=100033  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:21 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where concessionario=-1 and pratica=100033  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:21 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where proprietario=1 and pratica=100033  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:21 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where proprietario=-1 and pratica=100033  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:21 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista=1 and pratica=100033  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:21 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista=-1 and pratica=100033  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:21 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore=1 and pratica=100033  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:21 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore=-1 and pratica=100033  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:21 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where esecutore=1 and pratica=100033  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:21 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where esecutore=-1 and pratica=100033  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:21 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where sicurezza=1 and pratica=100033  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:21 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where sicurezza=-1 and pratica=100033  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:21 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore=1 and pratica=100033  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:21 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore=-1 and pratica=100033  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:21 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where geologo=1 and pratica=100033  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:21 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where geologo=-1 and pratica=100033  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:21 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista_ca=1 and pratica=100033  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:21 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista_ca=-1 and pratica=100033  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:21 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore_ca=1 and pratica=100033  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:21 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore_ca=-1 and pratica=100033  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:21 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore_ca=1 and pratica=100033  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:21 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore_ca=-1 and pratica=100033  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:21 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where economia_diretta=1 and pratica=100033  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:21 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where economia_diretta=-1 and pratica=100033  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:21 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where resp_abuso=1 and pratica=100033  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:21 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where resp_abuso=-1 and pratica=100033  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:21 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where denunciante=1 and pratica=100033  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:21 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where denunciante=-1 and pratica=100033  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:21 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where tecnico=1 and pratica=100033  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:21 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where tecnico=-1 and pratica=100033  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:21 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where referente=1 and pratica=100033  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:21 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where referente=-1 and pratica=100033  ORDER BY soggetto
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:22 -------
+select id,id,via,civico,interno,scala,piano,occ_suolo_pubblico,mq_occ,gg_occ,id,pratica,chk from pe.indirizzi where pratica=100033; 
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:22 -------
+select mapkey,id,foglio,mappale,sub,sez_censimento,id,pratica,chk from pe.ct_info where pratica=100033; 
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:22 -------
+select id,id,foglio,mappale,sub,sez_censimento,id,pratica,chk from pe.curbano where pratica=100033; 
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:22 -------
+select id,id,via,civico,interno,scala,piano,sezione,foglio,mappale,sub,destuso,vani,superficie,id,pratica,chk from pe.unita_immobiliari where pratica=100033; 
+-------------------------
+------- DEBUG DEL 20/02/2019 08:20:24 -------
+select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=100033 AND protocollo='10224' AND data_protocollo='20/02/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file
+-------------------------
+------- DEBUG DEL 20/02/2019 08:33:58 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 100034  ORDER BY data
+-------------------------
+------- DEBUG DEL 20/02/2019 08:34:06 -------
+select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=100034 AND protocollo='10224' AND data_protocollo='20/02/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file
+-------------------------
+------- DEBUG DEL 20/02/2019 08:40:12 -------
+select id,nominativo,id,pratica,chk from ce.elenco_membri where id>0 
+-------------------------
+------- DEBUG DEL 20/02/2019 08:40:45 -------
+select tipo_comm,sede1,data_convocazione,numero,ora_convocazione,ora_chiusura,note,id,pratica,chk from ce.commissione where pratica=8 
+-------------------------
+------- DEBUG DEL 20/02/2019 08:40:45 -------
+select id,nominativo,ruolo,presente,id,pratica,chk from ce.scheda_membro_commissione where commissione=8 order by id_ruolo 
+-------------------------
