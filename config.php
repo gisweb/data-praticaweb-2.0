@@ -55,12 +55,13 @@ define('THE_GEOM','bordo_gb');
 define('MAPPA_PRATICHE','');
 define('LAYER_MAPPALI','particelle');
 define('OBJ_LAYER','2183:particelle');
-define('MAPSETID','');
-define('CDUMAPSETID','');
+define('MAPSETID','rapallo_new');
+define('CDUMAPSETID','rapallo_new');
 define('TEMPLATE','gisclient');
-define('GC_VERSION',2);
+define('GC_VERSION',3);
 define('QTID_PARTICELLE','170');
 define('QTID_CIVICI','25');
+define('GC_URL','https://rapallo.istanze-online.it/gisclient/maps/jquery/sml.html');
 
 //in sessione per pmapper
 

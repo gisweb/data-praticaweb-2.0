@@ -205,11 +205,11 @@ class pratica extends generalPratica{
 	function nuovoTitolo($data){
 		$db=$this->db;
 		$sql="SELECT numero,prog FROM pe.avvioproc WHERE pratica=$this->pratica;";
-		$db->sql_query($sql);
-		$numero=$db->sql_fetchfield('numero');
-		$prog=$db->sql_fetchfield('prog');
-		$sql="UPDATE pe.titolo X SET numero=$prog,titolo='$numero' WHERE pratica=$this->pratica;";
-		$db->sql_query($sql);
+		//$db->sql_query($sql);
+		//$numero=$db->sql_fetchfield('numero');
+		//$prog=$db->sql_fetchfield('prog');
+		//$sql="UPDATE pe.titolo X SET numero=$prog,titolo='$numero' WHERE pratica=$this->pratica;";
+		//$db->sql_query($sql);
 		
 	}
 /*********************************************************************************************************/	
