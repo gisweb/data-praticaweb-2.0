@@ -345,14 +345,14 @@ class wsMail{
         $this->wsClient->decode_utf8 = false;
         $this->params = Array(
             "mittente"=> Array(
-                "Denominazione_Entita"=> "Comune di Andora",
+                "Denominazione_Entita"=> "Comune diRapallo",
                 "Denominazione"=>"URBANISTICA",
-                "CodiceAmministrazione"=>"c_l315",
-                "IndirizzoTelematico"=>"demo@pec.cecsistemi.it",
+                "CodiceAmministrazione"=>"c_h183",
+                "IndirizzoTelematico"=>"pec@pec.comune.rapallo.ge.it",
                 "UnitaOrganizzativa"=>"T",
                 "CodiceTitolario"=>"1.1",
                 "CodiceAOO"=>"PL",
-                "Indirizzo" => "Via Cavour 94",
+                "Indirizzo" => "Piazza Nazioni 4",
                 "Identificativo" => "T"
             ),
             "destinatario"=> Array()
