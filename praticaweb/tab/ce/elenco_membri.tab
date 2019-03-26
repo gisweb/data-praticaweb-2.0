@@ -16,5 +16,6 @@ chiave="id"
 campi_ordinamento=""
 campi_obbligatori=""
 data[]="id;id;5%;checkbox"
-data[]="nome;nominativo;90%;text"
+data[]="nome;nominativo;30%;text"
+;data[]="Tipo Commissione;tipo_comm;40%xce.elenco_tipo_commissione;selectdb"
 [standard]

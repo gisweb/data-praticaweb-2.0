@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Segnatura versione="2001-05-07" xml:lang="it">
+    <Intestazione>
+        <Oggetto>Protocollo in Uscita da Ufficio Edilizia Privata - Pratica Edilizia %(numero)s - %(oggetto)s</Oggetto>
+        <Identificatore>
+            <CodiceAmministrazione>%(CodiceAmministrazione)s</CodiceAmministrazione>
+            <CodiceAOO>%(CodiceA00)s</CodiceAOO>
+            <NumeroRegistrazione>%(id)s</NumeroRegistrazione>
+            <DataRegistrazione>%(data_registrazione)s</DataRegistrazione>
+            <Flusso>U</Flusso>
+        </Identificatore>
+        <Mittente>
+            <Amministrazione>
+                <Denominazione>%(Denominazione_Entita)s</Denominazione>
+                <CodiceAmministrazione>%(CodiceAmministrazione)s</CodiceAmministrazione>
+                <UnitaOrganizzativa id="%(Identificativo)s">
+                    <Denominazione>%(Denominazione)s</Denominazione>
+                    <Identificativo>%(Identificativo)s</Identificativo>
+                    <IndirizzoPostale>
+                        <Denominazione>%(Indirizzo)s</Denominazione>
+                    </IndirizzoPostale>
+                    <IndirizzoTelematico tipo="smtp">%(IndirizzoTelematico)s</IndirizzoTelematico>
+                </UnitaOrganizzativa>
+            </Amministrazione>
+            <AOO>
+                <Denominazione>%(Denominazione)s</Denominazione>
+                <CodiceAOO>%(CodiceA00)s</CodiceAOO>
+            </AOO>
+        </Mittente>
+%(destinatari)s
+        <Classifica>
+            <CodiceAmministrazione>%(CodiceAmministrazione)s</CodiceAmministrazione>
+            <CodiceAOO>%(CodiceA00)s</CodiceAOO>
+            <CodiceTitolario>%(CodiceTitolario)s</CodiceTitolario>
+        </Classifica>
+    </Intestazione>
+    <Descrizione>
+        %(documento)s
+        <Allegati>
+            %(allegati)s
+        </Allegati>
+    </Descrizione>
+    <ProtocolloPadre numero="%(prot)s" anno="%(anno_prot)s"/>
+
+</Segnatura>

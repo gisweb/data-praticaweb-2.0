@@ -1,0 +1,8 @@
+        <Destinatario>
+            <Persona>
+                <Denominazione>%(destinatari)s</Denominazione>
+            </Persona>
+        </Destinatario>
+        <DestinatariMulti>
+            %(destinatari_multi)s
+        </DestinatariMulti>

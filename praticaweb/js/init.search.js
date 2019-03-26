@@ -29,8 +29,8 @@ var colsDef={
         {title:'Tipo Pratica',field:'tipo_pratica',sortable:true,width:200,styler: function(value,row,index){return 'font-size:11px;';}},
         {title:'Numero',field:'numero',sortable:true,width:70,styler: function(value,row,index){return 'font-size:11px;';}},
         {title:'Data Pres.',sortable:true,field:'data_presentazione',width:100,styler: function(value,row,index){return 'font-size:11px;';}},
-        {title:'Prot.',sortable:true,field:'protocollo',width:100,styler: function(value,row,index){return 'font-size:11px;';}},
-        {title:'Data Prot.',sortable:true,field:'data_prot',width:100,styler: function(value,row,index){return 'font-size:11px;';}},
+        {title:'Prot.',sortable:true,field:'protocollo',sortable:true,width:100,styler: function(value,row,index){return 'font-size:11px;';}},
+	{title:'Iter',sortable:true,field:'testo',sortable:true,field:'testo',width:100,styler: function(value,row,index){return 'font-size:11px;';}},
         //{title:'Intervento',sortable:true,field:'tipo_intervento',width:150,formatter: function(value,row,index){if (value) return value; else return 'Da Definire';},styler: function(value,row,index){return 'font-size:11px;';}},
         {title:'Oggetto',sortable:true,field:'oggetto',width:150,styler: function(value,row,index){return 'font-size:11px;';}},
         {title:'Richiedenti',sortable:true,field:'richiedente',width:150,styler: function(value,row,index){return 'font-size:11px;';}},
@@ -38,7 +38,7 @@ var colsDef={
         {title:'Responsabile',sortable:true,field:'responsabile',width:150,styler: function(value,row,index){return 'font-size:11px;';}},
         {title:'Assegnata',sortable:true,field:'assegnata_istruttore',width:70,styler: function(value,row,index){return 'font-size:11px;';},formatter:function(value,row,index){if (value) return 'SI'; else return 'NO';}},
         {title:'Istruttore',sortable:true,field:'responsabile_it',width:150,styler: function(value,row,index){return 'font-size:11px;';}},
-        {title:'Sportello',sortable:true,field:'sportello',width:50,styler: function(value,row,index){return 'font-size:11px;';}},
+        //{title:'Sportello',sortable:true,field:'sportello',width:50,styler: function(value,row,index){return 'font-size:11px;';}},
         {title:'Autorizzazione Paesaggistica',sortable:true,field:'vincolo_paes',width:200,styler: function(value,row,index){return 'font-size:11px;';}}
     ]],
     delete:[[

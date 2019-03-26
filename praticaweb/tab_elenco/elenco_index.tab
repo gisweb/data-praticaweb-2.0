@@ -1,5 +1,5 @@
 Esempio File di configurazione : Gruppi-Permessi@Nome Tabella/Permessi@Nome Javascript@Parametri Javascript@Testo del Link@Testo descrittivo
-4@Gestione pratiche
+-4@Gestione pratiche
 -4@NewWindow@'pe.ricerca.php?new=1','ricercaPraticaweb',0,0,'yes'@Apri pratica esistente@Modalit&agrave; di ricerca di una pratica archiviata.
 -4@NewWindow@'pe.recenti.php','ricercaPraticaweb',0,0,'yes'@Pratiche recenti@Elenco delle ultime 10 pratiche consultate
 -4@NewWindow@'pe.avvioproc.php?mode=new','Praticaweb',0,0,'yes'@Nuova Pratica Edilizia@Inserisce una nuova pratica.
@@ -13,10 +13,10 @@ rdp,itec,iamm-3@NewWindow@'pe.eliminapratica.php?ricerca=1','Praticaweb',0,0,'ye
 -3@ApriMappa3@'rapallo_new','gisclient'@Accedi alla cartografia del comune di Rapallo@Quadro d'unione del catastale Piano Regolatore e vincoli
 cdu-3@NewWindow@'cdu.richiesta.php?mode=new','Praticaweb',0,0,'yes'@Nuovo Certificato di Destinazione Urbanistica@
 cdu-4@NewWindow@'cdu.ricerca.php','Praticaweb',0,0,'yes'@Ricerca Certificato di Destinazione Urbanistica@
-4@Commissione Edilizia
-4@NewWindow@'ce.ricerca.php?comm=1','ricercaCommissioneEdilizia',0,0,'yes'@Vedi Commissione Edilizia@Gestione delle sedute di Commissione Edilizia, convocazioni, verbali....
-4@NewWindow@'ce.commissione.php?pratica=0&comm=1&mode=new','CommissioneEdilizia',0,0,'yes'@Nuova Commissione Edilizia@Gestione delle sedute di Commissione Edilizia, convocazioni, verbali....
-3@NewWindow@'ce.ricerca_commissione.php?mode=cancella&comm=1','CommissioneEdilizia',0,0,'yes'@Elimina Commissione Edilizia@Gestione delle sedute di Commissione Edilizia, convocazioni, verbali....
+-4@Commissione Edilizia
+-4@NewWindow@'ce.ricerca.php?comm=1','ricercaCommissioneEdilizia',0,0,'yes'@Vedi Commissione Edilizia@Gestione delle sedute di Commissione Edilizia, convocazioni, verbali....
+-4@NewWindow@'ce.commissione.php?pratica=0&comm=1&mode=new','CommissioneEdilizia',0,0,'yes'@Nuova Commissione Edilizia@Gestione delle sedute di Commissione Edilizia, convocazioni, verbali....
+-3@NewWindow@'ce.ricerca_commissione.php?mode=cancella&comm=1','CommissioneEdilizia',0,0,'yes'@Elimina Commissione Edilizia@Gestione delle sedute di Commissione Edilizia, convocazioni, verbali....
 -2@Amministrazione Sistema
 -2@NewWindow@'admin.utenti.php?mode=list','PraticawebUtenti',0,0,'yes'@Gestione Profili Utenti@- Aggiunta, Cancellazione, Modifica di un profilo utente.
 -2@NewWindow@'admin.gruppi.php?mode=list','PraticawebUtenti',0,0,'yes'@Gestione Profili Gruppi@- Aggiunta, Cancellazione, Modifica di un profilo gruppo di utenti.
