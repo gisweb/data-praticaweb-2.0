@@ -39,11 +39,11 @@ class wsProtocollo{
 
         $this->params = Array(
             "mittente"=> Array(
-                "Denominazione_Entita"=> "Comune di Andora",
-                "Denominazione"=>"URBANISTICA",
-                "CodiceAmministrazione"=>"c_l315",
-                "IndirizzoTelematico"=>"comune@prova.it",
-                "UnitaOrganizzativa"=>"T",
+                "Denominazione_Entita"=> "Comune di Rapallo",
+                "Denominazione"=>"S.U.E. - EDILIZIA PRIVATA",
+                "CodiceAmministrazione"=>"c_h183",
+                "IndirizzoTelematico"=>"protocollo@pec.comune.rapallo.ge.it",
+                "UnitaOrganizzativa"=>"ED.PR",
                 "CodiceTitolario"=>"1.1",
                 "CodiceA00"=>"PL",
                 "Indirizzo" => "Via Cavour 94",
@@ -317,7 +317,7 @@ EOT;
         }
         else{
             $result["success"] = -1;
-            $result["message"] = "Il file $fName non è stato trovato";
+            $result["message"] = "Il file $fName non ï¿½ stato trovato";
         }
         return $result;
     }
@@ -384,7 +384,7 @@ class wsMail{
         }
         else{
             $result["success"] = -1;
-            $result["message"] = "Il file $fName non è stato trovato";
+            $result["message"] = "Il file $fName non ï¿½ stato trovato";
         }
         return $result;
     }
