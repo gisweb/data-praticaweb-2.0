@@ -237,7 +237,7 @@ class appUtils extends generalAppUtils{
             }
             catch(Exception $e){}
         }
-        //Indice di Fabbricabilità
+        //Indice di Fabbricabilitï¿½
         if (self::isNumeric($data[$prms["v"]]) && self::isNumeric($data[$prms["slot"]])){
             $v=(double)self::toNumber($data[$prms["v"]])/(double)self::toNumber($data[$prms["slot"]]);
             try{
@@ -355,7 +355,7 @@ class appUtils extends generalAppUtils{
                     $cartella=($rec["cartella"])?($rec["cartella"]):($rec["pratica"]);
                     $civico=($rec["civico"])?($rec["civico"]):('n.c.');
                     $interno=($rec["interno"])?($rec["interno"]):('n.i.');
-                    $r[$via][$civico][$interno][$cartella][]=Array("pratica"=>$rec["pratica"],"interno"=>$interno,"via"=>$via,"civico"=>$civico,"info"=>Array("id"=>$rec["pratica"],"civico"=>$rec["civico"],"interno"=>$rec["interno"],"numero"=>$rec["numero"],"cartella"=>$rec["cartella"],"text"=>sprintf("%s n° %s del %s - Richiedenti : %s",$rec["tipo"],$rec["numero"],$rec["data"],$rec["richiedente"])));
+                    $r[$via][$civico][$interno][$cartella][]=Array("pratica"=>$rec["pratica"],"interno"=>$interno,"via"=>$via,"civico"=>$civico,"info"=>Array("id"=>$rec["pratica"],"civico"=>$rec["civico"],"interno"=>$rec["interno"],"numero"=>$rec["numero"],"cartella"=>$rec["cartella"],"text"=>sprintf("%s nï¿½ %s del %s - Richiedenti : %s",$rec["tipo"],$rec["numero"],$rec["data"],$rec["richiedente"])));
 
                 }
                 
@@ -422,7 +422,7 @@ class appUtils extends generalAppUtils{
                     $civico=preg_replace("([\.]+)","",$civico);
                     $interno=preg_replace("([\\/]+)","-",$rec["interno"]);
                     $interno=preg_replace("([\.]+)","",$interno);
-                    $descrizione=sprintf("Pratica n° %s del %s",$rec["numero"],$rec["data_presentazione"]);
+                    $descrizione=sprintf("Pratica nï¿½ %s del %s",$rec["numero"],$rec["data_presentazione"]);
                     $ct=$rec["elenco_ct"];
                     $cu=$rec["elenco_cu"];
                     $linkToPratica=$rec["pratica"];
@@ -460,7 +460,7 @@ class appUtils extends generalAppUtils{
                     $mp=preg_replace("/[^A-Za-z0-9 ]/", '',$rec["mappale"]);
                     $sub=preg_replace("/[^A-Za-z0-9 ]/", '',$rec["sub"]);
                     $sub=($sub)?($sub):('ns');
-                    $descrizione=sprintf("Pratica n° %s del %s",$rec["numero"],$rec["data_presentazione"]);
+                    $descrizione=sprintf("Pratica nï¿½ %s del %s",$rec["numero"],$rec["data_presentazione"]);
                     $ubicazione=$rec["ubicazione"];
                     $cu=$rec["elenco_cu"];
                     $r[$sez][$fg][$mp][$sub][$rec["pratica"]]=Array(
@@ -605,9 +605,14 @@ class appUtils extends generalAppUtils{
         $stmt->execute(Array($id,$frm,$user));
     }
    
-    static function getInfoDocumento($id){
+    static function getInfoDocumento($id,$type=0){
 	$dbh = self::getPDODB();
-	$sql = "SELECT file_doc, descrizione,pratica FROM stp.stampe WHERE id = ?";
+        if(!$type){
+            $sql = "SELECT file_doc, descrizione,pratica FROM stp.stampe WHERE id = ?";
+        }
+        else{
+            $sql = "SELECT nome_file as file_doc,note as descrizione,pratica FROM pe.file_allegati WHERE id = ?";
+        }
         $stmt = $dbh->prepare($sql);
         if($stmt->execute(Array($id))){
             $res = $stmt->fetch();
@@ -616,7 +621,7 @@ class appUtils extends generalAppUtils{
             $desc = $res["descrizione"];
 	    $pratica = $res["pratica"];
             $pr = new pratica($pratica);
-	    $fname = $pr->documenti.$fname;
+	    $fname = (!$type)?($pr->documenti.$fname):($pr->allegati.$fname);
             //print "File $fname\n";
             $result = Array("success"=>1,"file"=>"","mimetype"=>"","data"=>Array("descrizione"=>$desc,"nomefile"=>$fname));
 

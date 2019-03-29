@@ -72,9 +72,9 @@ class wsProtocollo{
     /******************************************************************************************************************/
 
     /******************************************************************************************************************/
-    function inserisciDocumento($id){
+    function inserisciDocumento($id,$type=0){
         $result = $this->result;
-        $res = appUtils::getInfoDocumento($id);
+        $res = appUtils::getInfoDocumento($id,$type);
         
         if ($res["success"]==1){
  
@@ -131,6 +131,12 @@ class wsProtocollo{
            else{
                $params["allegati"] = Array();
            }
+           if ($res["allegati_1"] && $res["allegati_1"]!="{}"){
+               $params["allegati_1"] = explode(",",str_replace("{","",str_replace("}","",$res["allegati_1"])));
+           }
+           else{
+               $params["allegati_1"] = Array();
+           }
         }
         else{
 
@@ -167,9 +173,29 @@ class wsProtocollo{
                 }
                 $this->wsClient->clearAttachments();
             }
-            $dataSubst["allegati"] = implode("\n",$xmlAll);
+            
         }
 
+        if (in_array("allegati_1",$paramsKeys) && $params["allegati_1"]){
+            for($i=0;$i<count($params["allegati_1"]);$i++){
+                $idDoc = $params["allegati_1"][$i];                
+		$res = $this->inserisciDocumento($idDoc,1);
+                $documentiOk = $documentiOk && $res["success"];
+                if ($res["success"]==1){
+                    if($i==0){
+                        $dataSubst["documento"] = $res["result"]["xml"];
+                    }
+                    else
+                        $xmlAll[] = $res["result"]["xml"];
+                }
+                else{
+
+                }
+                $this->wsClient->clearAttachments();
+            }
+            
+        }
+        $dataSubst["allegati"] = implode("\n",$xmlAll);
         for($i=0;$i<count($params["destinatari"]);$i++){
             $idDest = $params["destinatari"][$i];
             $res = $this->recuperaSoggetto($idDest,$multiDest,$app);
