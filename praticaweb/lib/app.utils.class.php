@@ -2,8 +2,14 @@
 use Doctrine\Common\ClassLoader;
 require_once APPS_DIR.'plugins/Doctrine/Common/ClassLoader.php';
 require_once APPS_DIR.DIRECTORY_SEPARATOR.'lib'.DIRECTORY_SEPARATOR.'app.utils.class.php';
-
-
+$localClassPr = DATA_DIR.DIRECTORY_SEPARATOR."praticaweb".DIRECTORY_SEPARATOR."lib".DIRECTORY_SEPARATOR."pratica.class.php";
+$mainClassPr = APPS_DIR.DIRECTORY_SEPARATOR.'lib'.DIRECTORY_SEPARATOR.'pratica.class.php';
+if (file_exists($localClassPr)){
+    require_once $localClassPr;
+}
+else{
+    require_once $mainClassPr;
+}
 class appUtils extends generalAppUtils{
    static function getDB(){
 		$classLoader = new ClassLoader('Doctrine', APPS_DIR.'plugins/');
@@ -20,6 +26,11 @@ class appUtils extends generalAppUtils{
 		$conn = \Doctrine\DBAL\DriverManager::getConnection($connectionParams, $config);
 		return $conn;
 	}
+    static function getPDODB(){
+	$dsn = sprintf('pgsql:dbname=%s;host=%s;port=%s',DB_NAME,DB_HOST,DB_PORT);
+        $conn = new PDO($dsn, DB_USER, DB_PWD);
+        return $conn;
+    }
     static function getLastId($db,$tab,$sk=null,$tb=null){
 		if(!$sk || !$tb) list($sk,$tb)=explode('.',$tab);
 		//$db=self::getDB();
@@ -226,7 +237,7 @@ class appUtils extends generalAppUtils{
             }
             catch(Exception $e){}
         }
-        //Indice di FabbricabilitÃ 
+        //Indice di Fabbricabilità
         if (self::isNumeric($data[$prms["v"]]) && self::isNumeric($data[$prms["slot"]])){
             $v=(double)self::toNumber($data[$prms["v"]])/(double)self::toNumber($data[$prms["slot"]]);
             try{
@@ -344,7 +355,7 @@ class appUtils extends generalAppUtils{
                     $cartella=($rec["cartella"])?($rec["cartella"]):($rec["pratica"]);
                     $civico=($rec["civico"])?($rec["civico"]):('n.c.');
                     $interno=($rec["interno"])?($rec["interno"]):('n.i.');
-                    $r[$via][$civico][$interno][$cartella][]=Array("pratica"=>$rec["pratica"],"interno"=>$interno,"via"=>$via,"civico"=>$civico,"info"=>Array("id"=>$rec["pratica"],"civico"=>$rec["civico"],"interno"=>$rec["interno"],"numero"=>$rec["numero"],"cartella"=>$rec["cartella"],"text"=>sprintf("%s nÂ° %s del %s - Richiedenti : %s",$rec["tipo"],$rec["numero"],$rec["data"],$rec["richiedente"])));
+                    $r[$via][$civico][$interno][$cartella][]=Array("pratica"=>$rec["pratica"],"interno"=>$interno,"via"=>$via,"civico"=>$civico,"info"=>Array("id"=>$rec["pratica"],"civico"=>$rec["civico"],"interno"=>$rec["interno"],"numero"=>$rec["numero"],"cartella"=>$rec["cartella"],"text"=>sprintf("%s n° %s del %s - Richiedenti : %s",$rec["tipo"],$rec["numero"],$rec["data"],$rec["richiedente"])));
 
                 }
                 
@@ -411,7 +422,7 @@ class appUtils extends generalAppUtils{
                     $civico=preg_replace("([\.]+)","",$civico);
                     $interno=preg_replace("([\\/]+)","-",$rec["interno"]);
                     $interno=preg_replace("([\.]+)","",$interno);
-                    $descrizione=sprintf("Pratica nÂ° %s del %s",$rec["numero"],$rec["data_presentazione"]);
+                    $descrizione=sprintf("Pratica n° %s del %s",$rec["numero"],$rec["data_presentazione"]);
                     $ct=$rec["elenco_ct"];
                     $cu=$rec["elenco_cu"];
                     $linkToPratica=$rec["pratica"];
@@ -449,7 +460,7 @@ class appUtils extends generalAppUtils{
                     $mp=preg_replace("/[^A-Za-z0-9 ]/", '',$rec["mappale"]);
                     $sub=preg_replace("/[^A-Za-z0-9 ]/", '',$rec["sub"]);
                     $sub=($sub)?($sub):('ns');
-                    $descrizione=sprintf("Pratica nÂ° %s del %s",$rec["numero"],$rec["data_presentazione"]);
+                    $descrizione=sprintf("Pratica n° %s del %s",$rec["numero"],$rec["data_presentazione"]);
                     $ubicazione=$rec["ubicazione"];
                     $cu=$rec["elenco_cu"];
                     $r[$sez][$fg][$mp][$sub][$rec["pratica"]]=Array(
@@ -506,10 +517,10 @@ class appUtils extends generalAppUtils{
         if (!$_REQUEST["pratica"]) return "";
         $pr=$_REQUEST["pratica"];
         if ($_REQUEST["cdu"]){
-            $sql="SELECT 'Certificato di Destinazione Urbanitica Prot nÂ° '||protocollo as titolo FROM cdu.richiesta WHERE pratica=?";
+            $sql="SELECT 'Certificato di Destinazione Urbanitica Prot n. '||protocollo as titolo FROM cdu.richiesta WHERE pratica=?";
         }
         else{
-            $sql="SELECT B.nome|| coalesce(' - '||C.nome,'') ||' nÂ° '||A.numero as titolo FROM pe.avvioproc A INNER JOIN pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN pe.e_categoriapratica C ON (coalesce(A.categoria,0)=C.id)  WHERE pratica=?;";
+            $sql="SELECT B.nome|| coalesce(' - '||C.nome,'') ||' n. '||A.numero as titolo FROM pe.avvioproc A INNER JOIN pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN pe.e_categoriapratica C ON (coalesce(A.categoria,0)=C.id)  WHERE pratica=?;";
         }
         //echo $pr;
         $db=self::getDb();
@@ -593,6 +604,28 @@ class appUtils extends generalAppUtils{
         $stmt=$conn->prepare($sql);
         $stmt->execute(Array($id,$frm,$user));
     }
+   
+    static function getInfoDocumento($id){
+	$dbh = self::getPDODB();
+	$sql = "SELECT file_doc, descrizione,pratica FROM stp.stampe WHERE id = ?";
+        $stmt = $dbh->prepare($sql);
+        if($stmt->execute(Array($id))){
+            $res = $stmt->fetch();
+            
+            $fname = $res["file_doc"];
+            $desc = $res["descrizione"];
+	    $pratica = $res["pratica"];
+            $pr = new pratica($pratica);
+	    $fname = $pr->documenti.$fname;
+            //print "File $fname\n";
+            $result = Array("success"=>1,"file"=>"","mimetype"=>"","data"=>Array("descrizione"=>$desc,"nomefile"=>$fname));
 
+        }
+        else{
+            $result = Array("success"=>0,"file"=>"","mimetype"=>"","data"=>Array("descrizione"=>"","nomefile"=>""));
+            echo "Errore";
+        }
+        return $result;
+    }
 }
 ?>

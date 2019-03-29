@@ -4,11 +4,11 @@
     <numProt>%(protocollo)s</numProt>
     <mittenteMail>%(mittente)s</mittenteMail>
     <oggettoMail>%(oggetto)s</oggettoMail>
-    <testoMail><![CDATA[%(testo)s]]></testoMail>
+    <testoMail>%(testo)s</testoMail>
     <destinatariMail>
         %(destinatari)s
     </destinatariMail>
     <utente></utente>
     <ruolo></ruolo>
-    <invioInteroperabile>N</invioInteroperabile>
+    <invioInteroperabile>S</invioInteroperabile>
 </messaggioIn>

@@ -1,9 +1,0 @@
-
-13-02-19	13:00:38
-	SELECT opzione FROM pe.elenco_tipopratica_all WHERE id::varchar='1040';
-13-02-19	13:02:27
-	SELECT opzione FROM pe.elenco_tipopratica_all WHERE id::varchar='1040';
-13-02-19	13:04:27
-	SELECT opzione FROM pe.elenco_tipopratica_all WHERE id::varchar='1040';
-13-02-19	13:05:37
-	SELECT opzione FROM pe.elenco_tipopratica_all WHERE id::varchar='1040';

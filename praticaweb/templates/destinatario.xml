@@ -13,4 +13,4 @@
                 <Provincia>%(prov)s</Provincia>
             </IndirizzoPostale>
             <ModalitaInvio>%(modalita_invio)s</ModalitaInvio>
-        </Destinatario
+        </Destinatario>

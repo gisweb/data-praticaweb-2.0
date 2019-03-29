@@ -27,7 +27,7 @@
                 <CodiceAOO>%(CodiceA00)s</CodiceAOO>
             </AOO>
         </Mittente>
-%(destinatari)s
+        %(destinatari)s
         <Classifica>
             <CodiceAmministrazione>%(CodiceAmministrazione)s</CodiceAmministrazione>
             <CodiceAOO>%(CodiceA00)s</CodiceAOO>

@@ -44,10 +44,10 @@ class wsProtocollo{
                 "CodiceAmministrazione"=>"c_h183",
                 "IndirizzoTelematico"=>"protocollo@pec.comune.rapallo.ge.it",
                 "UnitaOrganizzativa"=>"ED.PR",
-                "CodiceTitolario"=>"1.1",
-                "CodiceA00"=>"PL",
-                "Indirizzo" => "Via Cavour 94",
-                "Identificativo" => "T"
+                "CodiceTitolario"=>"6.3",
+                "CodiceA00"=>"c_h183",
+                "Indirizzo" => "Piazza Nazioni 4",
+                "Identificativo" => "ED.PR"
             ),
             "destinatario"=> Array()
         );
@@ -75,6 +75,7 @@ class wsProtocollo{
     function inserisciDocumento($id){
         $result = $this->result;
         $res = appUtils::getInfoDocumento($id);
+        
         if ($res["success"]==1){
  
             $err = $this->wsClient->getError();
@@ -85,11 +86,11 @@ class wsProtocollo{
             }
             else{
                 $this->wsClient->addAttachment($res["file"],$res["data"]["nomefile"],$res["mimetype"]);
+                $res["data"]["nomefile"] = basename($res["data"]["nomefile"]);
                 $response = $this->wsClient->call("insertDocumento",Array($this->login,$res["data"]["nomefile"],$res["data"]["descrizione"]));
                 if(!$response["lngErrNumber"] && $response["lngDocID"]){
                     $result["success"] = 1;
-
-                    $res["data"]["idrichiesta"] = $response["lngDocID"];
+		    $res["data"]["idrichiesta"] = $response["lngDocID"];
                     $r = $this->caricaXML("documento",$res["data"]);
                     $xmlAllegato = $r["result"];
                     $result["result"] = Array("idallegato"=>$response["lngDocID"],"xml"=>$xmlAllegato);
@@ -110,7 +111,7 @@ class wsProtocollo{
     /*					RICHIESTA DI PROTOCOLLO IN USCITA						*/
     /********************************************************************************************************************/
 
-    function richiediProtOut($pratica,$app='pe',$id=null){
+    function richiediProtOut($pratica,$id=null,$app='pe'){
         $result = $this->result;
         $dataSubst = $this->params["mittente"];
 
@@ -151,9 +152,8 @@ class wsProtocollo{
         $multiDest =  (count($params["destinatari"]) > 1)?(1):(0);
         if (in_array("allegati",$paramsKeys) && $params["allegati"]){
             for($i=0;$i<count($params["allegati"]);$i++){
-                $idDoc = $params["allegati"][$i];
-                $res = $this->inserisciDocumento($idDoc);
-
+                $idDoc = $params["allegati"][$i];                
+		$res = $this->inserisciDocumento($idDoc);
                 $documentiOk = $documentiOk && $res["success"];
                 if ($res["success"]==1){
                     if($i==0){
@@ -172,7 +172,7 @@ class wsProtocollo{
 
         for($i=0;$i<count($params["destinatari"]);$i++){
             $idDest = $params["destinatari"][$i];
-            $res = $this->recuperaSoggetto($idDest,$app,$multiDest);
+            $res = $this->recuperaSoggetto($idDest,$multiDest,$app);
             if ($res["success"]==1){
                 $denominazioni[] = $res["result"]["data"]["denominazione"];
                 $xmlDest[] = $res["result"]["xml"];
@@ -345,15 +345,15 @@ class wsMail{
         $this->wsClient->decode_utf8 = false;
         $this->params = Array(
             "mittente"=> Array(
-                "Denominazione_Entita"=> "Comune diRapallo",
-                "Denominazione"=>"URBANISTICA",
+                "Denominazione_Entita"=> "Comune di Rapallo",
+                "Denominazione"=>"S.U.E. - EDILIZIA PRIVATA",
                 "CodiceAmministrazione"=>"c_h183",
-                "IndirizzoTelematico"=>"pec@pec.comune.rapallo.ge.it",
-                "UnitaOrganizzativa"=>"T",
+                "IndirizzoTelematico"=>"protocollo@pec.comune.rapallo.ge.it",
+                "UnitaOrganizzativa"=>"ED.PR",
                 "CodiceTitolario"=>"1.1",
-                "CodiceAOO"=>"PL",
+                "CodiceAOO"=>"c_h183",
                 "Indirizzo" => "Piazza Nazioni 4",
-                "Identificativo" => "T"
+                "Identificativo" => "ED.PR"
             ),
             "destinatario"=> Array()
         );
@@ -402,18 +402,21 @@ mail as (
 UNION ALL
 (SELECT array_to_string(array_agg(format('<destinatarioMail>%s</destinatarioMail>',id)),'') as destinatari from destinatari where not  destinatari.id ~ '^[0-9]*$')
 )
-select protocollo,date_part('year',data_protocollo)::varchar as anno,oggetto,testo,'$mittente' as mittente,array_to_string(array_agg(mail.destinatari),'') as destinatari from pe.comunicazioni,mail WHERE id = ? group by 1,2,3,4,5
+select pratica,protocollo,date_part('year',data_protocollo)::varchar as anno,oggetto,testo,'$mittente' as mittente,array_to_string(array_agg(mail.destinatari),'') as destinatari FROM pe.comunicazioni,mail WHERE id = ? group by 1,2,3,4,5,6
 EOT;
         $stmt = $this->dbh->prepare($sql);
         if($stmt->execute(Array($id,$id))){
             $res = $stmt->fetch();
+            //$res["testo"] = $res["link"]."\n".$res["testo"];
+	    $res["testo"] = htmlspecialchars($res["testo"], ENT_XML1, 'UTF-8');
             $result = $this->caricaXML('mail',$res);
+	    //print_r($result); die();
             if($result["success"]==1){
                 $xml=$result["result"];
                 $response = $this->wsClient->call("InviaMail",Array("strXML"=>$xml,"CodiceAmministrazione"=>SERVICE_LOGIN,"CodiceAOO"=>$codAOO));
                 $f = fopen(LOCAL_LIB.'../debug/mail.debug','w');
                 ob_start();
-                print_r($this->wsClient);
+                print_r($xml);
                 $r = ob_get_contents();
                 ob_end_clean();
                 fwrite($f,$r);

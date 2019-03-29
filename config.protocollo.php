@@ -1,7 +1,7 @@
 <?php
 
-define("WSPROT_URL","http://servizi.comune.rapallo.ge.it:50080/client/services/ProWSApi?wsdl");
-define("WSMAIL_URL","http://servizi.comune.rapallo.ge.it:50080/client/services/WsPostaWebSoap?WSDL");
+define("WSPROT_URL","http://sicrawebappserver:50080/client/services/ProWSApi?wsdl");
+define("WSMAIL_URL","http://sicrawebappserver:50080/client/services/WsPostaWebSoap?WSDL");
 //define('SERVICE_LOGIN','!gisweb/cec.gisweb@sicraweb/sicraweb');
 define('SERVICE_LOGIN',"!wsgisweb/rap.1885.gis@sicraweb/sicraweb");
 
