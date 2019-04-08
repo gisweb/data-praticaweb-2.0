@@ -1,6 +1,15 @@
 var result={};
 var dataPost={};
+
+
+
 $(document).ready(function(){
+
+    /*Hide Filter*/
+    $(hiddenFilterOnline).each(function(i,el){
+        $('#'+el).hide();
+    });
+    
     $("#chk-avanzata").bind("change",function(event){
         event.preventDefault();
         $("#ricerca-avanzata").toggle();

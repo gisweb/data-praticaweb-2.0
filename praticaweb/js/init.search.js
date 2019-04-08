@@ -66,3 +66,5 @@ var colsDef={
     ]]
 
 }
+
+var hiddenFilterOnline = ['tr-assegnata_istruttore','tr-sportello'];
