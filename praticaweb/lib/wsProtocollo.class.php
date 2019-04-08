@@ -46,7 +46,7 @@ class wsProtocollo{
                 "UnitaOrganizzativa"=>"ED.PR",
                 "CodiceTitolario"=>"6.3",
                 "CodiceA00"=>"c_h183",
-                "Indirizzo" => "Piazza Nazioni 4",
+                "Indirizzo" => "Piazza Molfino 10",
                 "Identificativo" => "ED.PR"
             ),
             "destinatario"=> Array()
@@ -376,9 +376,9 @@ class wsMail{
                 "CodiceAmministrazione"=>"c_h183",
                 "IndirizzoTelematico"=>"protocollo@pec.comune.rapallo.ge.it",
                 "UnitaOrganizzativa"=>"ED.PR",
-                "CodiceTitolario"=>"1.1",
+                "CodiceTitolario"=>"6.3",
                 "CodiceAOO"=>"c_h183",
-                "Indirizzo" => "Piazza Nazioni 4",
+                "Indirizzo" => "Piazza Molfino 10",
                 "Identificativo" => "ED.PR"
             ),
             "destinatario"=> Array()

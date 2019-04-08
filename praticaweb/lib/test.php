@@ -37,6 +37,16 @@ $xmlMail = <<<EOT
 
 EOT;
 
+$xmlVerifica = <<<EOT
+<messaggioIn>
+    <docId></docId>
+    <annoProt>2019</annoProt>
+    <numProt>16987</numProt>
+    <utente></utente>
+    <ruolo></ruolo>    
+</messaggioIn>
+EOT;
+
 define('DATA_DIR','/data/rapallo/pe/');
 define('APPS_DIR','/apps/praticaweb-2.1/');
 
@@ -72,21 +82,21 @@ $login = SERVICE_LOGIN;
 $a = $ws->call("infoProtocollo",Array($login,$prot,$anno));
 print $a;
 */
-
+/*
 //INVIO PEC
 $idCom = 7;
 $ws = new wsMail();
 $res = $ws->inviaPec($idCom);
 print_r($res);
+*/
 
-/*
-
+// RICEVUTA INVIO PEC
 $wsClient =  new nusoap_client(WSMAIL_URL,false,false, false, false, false, 0, 180);
 $wsClient->soap_defencoding = 'UTF-8';
 $wsClient->decode_utf8 = false;
 $codAOO = "c_h183";
-$response = $wsClient->call("InviaMail",Array("strXML"=>$xmlMail,"CodiceAmministrazione"=>SERVICE_LOGIN,"CodiceAOO"=>$codAOO));
+$response = $wsClient->call("VerificaInvio",Array("strXML"=>$xmlVerifica,"CodiceAmministrazione"=>SERVICE_LOGIN,"CodiceAOO"=>$codAOO));
 print_r($response);
-*/
+
  ?>
  

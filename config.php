@@ -19,6 +19,10 @@ else{
 define('ALWAYS_VIEWABLE',1);
 define('ALWAYS_EDITABLE',1);
 
+/*Definizioni per scadenze*/
+define('UPPER_LIMIT',3);
+define('LOWER_LIMIT',7);
+/**/
 define('MENU',DATA_DIR."praticaweb".DIRECTORY_SEPARATOR."mnu".DIRECTORY_SEPARATOR);//cartella contenente la  configurazione dei menu
 define('TAB',DATA_DIR."praticaweb".DIRECTORY_SEPARATOR."tab".DIRECTORY_SEPARATOR);//cartella contenente la  configurazione dei forms via file tab
 define('TAB_ELENCO',DATA_DIR."praticaweb".DIRECTORY_SEPARATOR."tab_elenco".DIRECTORY_SEPARATOR);//cartella con elenchi testuali
@@ -61,7 +65,7 @@ define('TEMPLATE','gisclient');
 define('GC_VERSION',3);
 define('QTID_PARTICELLE','170');
 define('QTID_CIVICI','25');
-define('GC_URL','https://rapallo.istanze-online.it/gisclient/maps/jquery/sml.html');
+define('GC_URL','https://sue.comune.rapallo.ge.it/gisclient/maps/jquery/sml.html');
 
 //in sessione per pmapper
 
