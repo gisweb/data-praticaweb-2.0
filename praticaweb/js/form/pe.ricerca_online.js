@@ -46,8 +46,8 @@ $(document).ready(function(){
     $('[data-plugins="dynamic-search"]').bind('change',function(event){
         event.preventDefault();
         dataPost=getSearchFilter();
-        dataPost['action'] = 'search-online';
-        $('#result-table').datagrid('load',{data:dataPost});
+//        dataPost['action'] = 'search-online';
+        $('#result-table').datagrid('load',{data:dataPost,action:'search-online'});
     });
     var oper='AND';
     var dataPost=getSearchFilter();
@@ -73,8 +73,11 @@ $(document).ready(function(){
                 return 'color:#0e2d5f;background-color:#83F784';
             } 
             else if (row.stato_istruttoria == 'chiusa_istruttoria') {
-                return 'color:#0e2d5f;background-color:#3FF5E5';
+                return 'color:#0e2d5f;background-color:#FFA500';
             } 
+	    else if(row.stato_istruttoria == 'richiesta_integrazioni'){
+		return 'color:#0e2d5f;background-color:#ffff00';
+	    }
 	    else{
 		return 'color:#0e2d5f';
 	    }

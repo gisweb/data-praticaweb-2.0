@@ -25,11 +25,12 @@ data[]="Oggetto;oggetto;50;text"
 [view]
 table="ce.clp_pratiche_discusse"
 chiave="id"
-campi_ordinamento=""
+campi_ordinamento="ordine;data_presentazione"
 campi_obbligatori=""
 data[]="Numero pratica;numero;12%;text"
 data[]="Data;data_presentazione;10%;data"
 data[]="Oggetto;oggetto;78%;text"
+data[]="Ordine;ordine;5%;text"
 [list]
 
 [standard]
