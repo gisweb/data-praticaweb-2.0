@@ -11,7 +11,7 @@ chiave="id"
 campi_obbligatori=""
 data[]="Nome;file_doc;100;text"
 data[]="Descrizione;descrizione;60x3;textarea"
-data[]="File;file;50;upload"
+data[]="File;file;500;upload"
 button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
 
 [list]

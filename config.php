@@ -8,6 +8,8 @@ define('DB_NAME','gw_sml');
 define('DB_USER','postgres');
 define('DB_PWD','postgres');
 
+define('UPDATE_SW',0);
+
 if (file_exists(DATA_DIR.'config.local.php')){
 /*LOCAL CONFIGURATION FOR TEST*/
 	include DATA_DIR.'config.local.php';
@@ -66,7 +68,7 @@ define('MAPPA_PRATICHE','');
 define('LAYER_MAPPALI','particelle');
 define('OBJ_LAYER','2183:particelle');
 define('MAPSETID','santamargherita_sit');
-define('CDUMAPSETID','');
+define('CDUMAPSETID','santamargherita_sit');
 define('TEMPLATE','gisclient');
 define('GC_VERSION',3);
 define('GC_URL','https://santamargherita.istanze-online.it/gisclient/maps/jquery/sml.html');

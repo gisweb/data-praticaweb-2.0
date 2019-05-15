@@ -27,7 +27,64 @@ class pratica extends generalPratica{
         }
 
     }
-  
+function initCE(){
+        $conn = utils::getDb();
+        if ($this->pratica && is_numeric($this->pratica)){
+            //INFORMAZIONI SULLA PRATICA
+            $sql="SELECT A.pratica,C.nome,A.numero,A.data_convocazione,A.ora_convocazione,date_part('year',data_convocazione) as anno,A.sede1 as sede,C.tipologia FROM ce.commissione A inner join pe.e_enti B ON(A.tipo_comm=B.id) inner join ce.e_tipopratica C ON(B.codice=C.tipologia)  WHERE A.pratica=?";
+            $stmt = $conn->prepare($sql);
+            if (!$stmt->execute(Array($this->pratica))){
+                return;
+            }
+            $r=$stmt->fetch(PDO::FETCH_ASSOC);
+            $this->info=$r;
+            $this->titolo=sprintf("%s n° %s del %s",$r["tipo_pratica"],$r["numero"],$r["data_convocazione"]);
+            /*if($this->info['tipo'] < 10000 || in_array($this->info['tipo'],Array(14000,15000))){
+                    $this->tipopratica='pratica';
+            }
+            elseif($this->info['tipo'] < 13000){
+                    $this->tipopratica='dia';
+            }
+            else{
+                    $this->tipopratica='ambientale';
+            }*/
+            $this->tipopratica=$info["tipologia"];
+            $numero=appUtils::normalizeNumero($this->info['numero']);
+            $tmp=explode('-',$numero);
+            if (count($tmp)==2 && preg_match("|([A-z0-9]+)|",$tmp[0])){
+                    $tmp[0]=(preg_match("|^[89]|",$tmp[0]))?("19".$tmp[0]):($tmp[0]);
+                    $numero=implode('-',$tmp);
+            }
+            $anno=($r['anno'])?($r['anno']):($tmp[0]);
+
+            //Struttura delle directory
+            //$arrDir=Array('/data','sanremo','pe','praticaweb','documenti','pe',$anno);
+            $arrDir=Array(DATA_DIR,'praticaweb','documenti','ce',$anno);
+            $this->annodir=implode(DIRECTORY_SEPARATOR,$arrDir).DIRECTORY_SEPARATOR;
+            $arrDir[]=$numero;
+            $this->documenti=implode(DIRECTORY_SEPARATOR,$arrDir).DIRECTORY_SEPARATOR;
+            $arrDir[]="allegati";
+            $this->allegati=implode(DIRECTORY_SEPARATOR,$arrDir).DIRECTORY_SEPARATOR;
+            $arrDir[]="tmb";
+            $this->allegati_tmb=implode(DIRECTORY_SEPARATOR,$arrDir).DIRECTORY_SEPARATOR;
+
+            $this->url_documenti="/documenti/ce/$anno/$numero/";
+            $this->url_allegati="/documenti/ce/$anno/$numero/allegati/";
+            $this->smb_documenti=SMB_PATH."$anno/$numero/";
+
+
+            //INFO PRATICA PREC E SUCC
+            $sql="SELECT max(pratica) as pratica FROM pe.avvioproc WHERE pratica < ?";
+            $stmt = $conn->prepare($sql);
+            $stmt->execute(Array($this->pratica));
+            $this->prev=$stmt->fetchColumn();
+            $sql="SELECT min(pratica) as pratica FROM pe.avvioproc WHERE pratica > ?";
+            $stmt = $conn->prepare($sql);
+            $stmt->execute(Array($this->pratica));
+            $this->prev=$stmt->fetchColumn();
+        }
+        
+    }  
 
     function initPE(){
 		$db=$this->db1;

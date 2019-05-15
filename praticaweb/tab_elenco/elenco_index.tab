@@ -8,13 +8,13 @@ Esempio File di configurazione : Gruppi-Permessi@Nome Tabella/Permessi@Nome Java
 -1@NewWindow@'pe.raggruppamenti.php','ricercaPraticaweb',0,0,'yes'@Raggruppamenti di pratiche @Modalit&agrave; di ricerca di pratiche raggruppate per indirizzo/particella.
 -3@NewWindow@'report.scadenze.php','Praticaweb',0,0,'yes'@Elenco delle Scadenze@Elenco delle Scadenze.
 rdp,itec,iamm-3@NewWindow@'pe.eliminapratica.php?ricerca=1','Praticaweb',0,0,'yes'@Elimina Pratica@Individua ed elimina la pratica scelta.
--2@NewWindow@'admin.pwd.php?mode=edit','PraticawebUtenti',0,0,'yes'@Gestione PassWord Utenti@- Modifica password dell'utente.
+-3@NewWindow@'admin.pwd.php?mode=edit','PraticawebUtenti',0,0,'yes'@Gestione PassWord Utenti@- Modifica password dell'utente.
 -3@Praticaweb Navigator per la cartografia
--3@ApriMappa@'','gisclient'@Accedi alla cartografia del comune di Santa Margherita Ligure@Quadro d'unione del catastale Piano Regolatore e vincoli
+-3@ApriMappa3@'santamargherita_sit','',@Accedi alla cartografia del comune di Santa Margherita Ligure@Quadro d'unione del catastale Piano Regolatore e vincoli
 cdu-3@NewWindow@'cdu.richiesta.php?mode=new','Praticaweb',0,0,'yes'@Nuovo Certificato di Destinazione Urbanistica@
 cdu-4@NewWindow@'cdu.ricerca.php','Praticaweb',0,0,'yes'@Ricerca Certificato di Destinazione Urbanistica@
 -4@Commissione Edilizia
--4@NewWindow@'ce.ricerca_commissione.php?comm=1','ricercaCommissioneEdilizia',0,0,'yes'@Vedi Commissione Edilizia@Gestione delle sedute di Commissione Edilizia, convocazioni, verbali....
+-4@NewWindow@'ce.ricerca.php','ricercaCommissioneEdilizia',0,0,'yes'@Vedi Commissione Edilizia@Gestione delle sedute di Commissione Edilizia, convocazioni, verbali....
 -4@NewWindow@'ce.commissione.php?pratica=0&comm=1&mode=new','CommissioneEdilizia',0,0,'yes'@Nuova Commissione Edilizia@Gestione delle sedute di Commissione Edilizia, convocazioni, verbali....
 -4@NewWindow@'ce.ricerca_commissione.php?mode=cancella&comm=1','CommissioneEdilizia',0,0,'yes'@Elimina Commissione Edilizia@Gestione delle sedute di Commissione Edilizia, convocazioni, verbali....
 -2@Amministrazione Sistema
