@@ -78,6 +78,9 @@ $(document).ready(function(){
 	    else if(row.stato_istruttoria == 'richiesta_integrazioni'){
 		return 'color:#0e2d5f;background-color:#ffff00';
 	    }
+            else if(row.stato_istruttoria == 'soprintendenza'){
+                return 'color:#0e2d5f;background-color:#cc99ff';
+            }
 	    else{
 		return 'color:#0e2d5f';
 	    }

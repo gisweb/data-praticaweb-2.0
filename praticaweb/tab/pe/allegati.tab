@@ -54,8 +54,8 @@ data[]=";id;2%#pe.allegati;btn_view"
 data[]=";id;2%#pe.allegati;btn_edit"
 data[]="Tipo;tipo_documento;30%;text"
 data[]="File;nome_file;20%;allegato"
-data[]="Stato;stato_allegato;5%xpe.elenco_stati_allegato;selectdb"
-data[]="Note;note;37%;text"
+data[]="Stato;stato_allegato;15%xpe.elenco_stati_allegato;selectdb-editable;data-table=pe.file_allegati"
+data[]="Note;note;25%;text"
 data[]="Ordine;ordine;3%;text"
 [standard]
 
