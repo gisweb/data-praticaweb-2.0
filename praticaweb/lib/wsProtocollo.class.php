@@ -155,6 +155,7 @@ class wsProtocollo{
         $dataSubst["data_registrazione"] = date ("d/m/Y");
 
         $documentiOk = 1;
+        $altriAllegati = 0;
         $multiDest =  (count($params["destinatari"]) > 1)?(1):(0);
         if (in_array("allegati",$paramsKeys) && $params["allegati"]){
             for($i=0;$i<count($params["allegati"]);$i++){
@@ -164,6 +165,7 @@ class wsProtocollo{
                 if ($res["success"]==1){
                     if($i==0){
                         $dataSubst["documento"] = $res["result"]["xml"];
+                        $altriAllegati = 1;
                     }
                     else
                         $xmlAll[] = $res["result"]["xml"];
@@ -182,7 +184,7 @@ class wsProtocollo{
 		$res = $this->inserisciDocumento($idDoc,1);
                 $documentiOk = $documentiOk && $res["success"];
                 if ($res["success"]==1){
-                    if($i==0){
+                    if($i==0 && $altriAllegati==0){
                         $dataSubst["documento"] = $res["result"]["xml"];
                     }
                     else
