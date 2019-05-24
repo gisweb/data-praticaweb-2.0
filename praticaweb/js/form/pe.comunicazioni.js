@@ -52,10 +52,10 @@ $(document).ready(function() {
     });
     $('#azione-invia').hide();
     if (prot) {
-        $('[data-plugins="prot-locked"]').prop('disabled', true);
+        $('[data-plugins="prot-locked"]').prop('readonly', true);
         $('#azione-protocolla').hide();
         $('#comunicazioni').bind("submit",function(){
-            $('[data-plugins="prot-locked"]').prop('disabled', false);
+            $('[data-plugins="prot-locked"]').prop('readonly', false);
         });
     }
     if (prot && !invio){
