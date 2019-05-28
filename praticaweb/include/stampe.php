@@ -144,7 +144,7 @@ $customFields["elenco_curbano"]=Array("title"=>"elenco_curbano");
 $sql="SELECT prot_rich as protocollo_richiesta, data_rich as data_richiesta, prot_soll as protocollo_sollecito, data_soll as data_sollecito, prot_ril as protocollo_rilascio, data_ril as data_rilascio, prot_rice as protocollo_ricezione, data_rice as data_ricezione, 
        C.nome as parere,testo,prescrizioni, note,numero_doc as numero_parere,B.nome as ente,B.codice
         FROM (SELECT AA.* FROM pe.pareri AA INNER JOIN 
-        (SELECT ente,max(data_rich) as data_rich FROM pe.pareri GROUP BY ente ) BB USING(ente,data_rich)) A 
+        (SELECT ente,pratica,max(data_rich) as data_rich FROM pe.pareri GROUP BY pratica,ente ) BB USING(ente,pratica,data_rich)) A 
         INNER JOIN (SELECT * FROM pe.e_enti WHERE enabled=1) B ON (A.ente=B.id) 
         LEFT JOIN pe.e_pareri C ON (A.parere=C.id)
         WHERE pratica=? ORDER BY data_ril DESC";
@@ -207,7 +207,7 @@ $customFields["data_agi"]=Array("title"=>"data_agi");
 
 $sql="SELECT prot_rich as prot_richiesta_integrazione,data_rich as data_richiesta_integrazione, prot_integ as prot_integrazione, data_integ as data_prot_integrazione,note as note_integrazione 
       FROM pe.integrazioni
-      WHERE pratica=? AND coalesce(prot_integ'')<>''
+      WHERE pratica=? AND coalesce(prot_integ,'')<>''
       ORDER BY data_integ DESC,id DESC";
 $tmp=parse_query($sql);
 array_merge($tmp,$customFields);
