@@ -14,3 +14,19 @@ admin.users D ON(A.resp_proc=D.userid) LEFT JOIN
 WHERE completata=0 AND pratica IN ((SELECT DISTINCT pratica FROM pe.scadenze WHERE scadenza >= '19/03/2018'::date AND scadenza <= '18/04/2018'::date AND codice IN ('sfl'))) 
 ORDER BY data_presentazione DESC LIMIT 10 OFFSET 0     
 -------------------------
+------- DEBUG DEL 23/05/2019 09:45:19 -------
+SELECT DISTINCT A.pratica,A.numero,A.protocollo,A.data_prot,A.data_presentazione,A.oggetto,B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata')  as responsabile,E.richiedente,F.progettista,G.scadenza,G.testo,G.uidins,G.diff,G.cod_scadenza
+FROM pe.avvioproc A LEFT JOIN 
+pe.e_tipopratica B ON(A.tipo=B.id) LEFT JOIN
+pe.e_intervento C ON (A.intervento=C.id) LEFT JOIN
+admin.users D ON(A.resp_proc=D.userid) LEFT JOIN 
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as richiedente FROM pe.soggetti WHERE richiedente=1 AND voltura=0 GROUP BY pratica) E USING(pratica) LEFT JOIN
+(SELECT pratica,trim(array_to_string(array_agg(coalesce(app||' ','')||coalesce(' '||nome,'')||coalesce(' '||cognome)||coalesce(' - '||ragsoc,'')),',')) as progettista FROM pe.soggetti WHERE progettista=1 AND voltura=0 GROUP BY pratica) F USING(pratica) LEFT JOIN
+(SELECT a.id, a.pratica,a.completata,a.codice as cod_scadenza, a.scadenza, aaa.nome, COALESCE(b.nome, ''::character varying)::text || COALESCE(' - '::text || a.note, ''::text) AS testo, a.uidins,(a.scadenza-CURRENT_DATE) as diff
+    FROM pe.scadenze a
+    LEFT JOIN admin.users aaa ON aaa.userid = COALESCE(a.uidins, a.uidupd)
+    LEFT JOIN pe.e_scadenze b USING (codice) WHERE (scadenza >= '23/05/2019'::date AND scadenza <= '22/06/2019'::date AND codice IN ('sas'))
+) G USING (pratica)    
+WHERE completata=0 AND pratica IN ((SELECT DISTINCT pratica FROM pe.scadenze WHERE scadenza >= '23/05/2019'::date AND scadenza <= '22/06/2019'::date AND codice IN ('sas')) INTERSECT (SELECT DISTINCT pratica FROM pe.avvioproc WHERE tipo IN ('11110'))) 
+ORDER BY data_presentazione DESC LIMIT 10 OFFSET 0     
+-------------------------

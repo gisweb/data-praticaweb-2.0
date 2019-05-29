@@ -2320,3 +2320,1029 @@ select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk 
 select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=76308 AND protocollo='16278' AND data_protocollo='07/05/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file------- DEBUG DEL 15/05/2019 09:34:19 -------
 select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=76308 AND protocollo='16278' AND data_protocollo='07/05/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file
 -------------------------
+
+15-05-19	10:45:01
+	pe/iter_pratica.tab
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76275  ORDER BY data------- DEBUG DEL 15/05/2019 10:45:01 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76275  ORDER BY data
+-------------------------
+
+15-05-19	10:45:08
+	pe/allegati.tab
+select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=76275 AND protocollo='13818' AND data_protocollo='16/04/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file------- DEBUG DEL 15/05/2019 10:45:08 -------
+select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=76275 AND protocollo='13818' AND data_protocollo='16/04/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file
+-------------------------
+
+15-05-19	10:54:51
+	pe/integrazioni.tab
+select prot_rich,data_rich,prot_integ,data_integ,note,id,pratica,chk from pe.integrazioni where pratica=76275 order by id ------- DEBUG DEL 15/05/2019 10:54:51 -------
+select prot_rich,data_rich,prot_integ,data_integ,note,id,pratica,chk from pe.integrazioni where pratica=76275 order by id 
+-------------------------
+
+15-05-19	10:54:51
+	pe/doc_mancanti.tab
+select id,documento,id,pratica,chk from pe.doc_allegati1 where pratica=76275 and mancante=1 ------- DEBUG DEL 15/05/2019 10:54:51 -------
+select id,documento,id,pratica,chk from pe.doc_allegati1 where pratica=76275 and mancante=1 
+-------------------------
+
+27-05-19	10:04:02
+	pe/iter_pratica.tab
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76272  ORDER BY data------- DEBUG DEL 27/05/2019 10:04:02 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76272  ORDER BY data
+-------------------------
+
+27-05-19	10:04:25
+	pe/iter_pratica.tab
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76272  ORDER BY data------- DEBUG DEL 27/05/2019 10:04:25 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76272  ORDER BY data
+-------------------------
+
+27-05-19	10:05:28
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where richiedente=1 and pratica=76272  ORDER BY soggetto------- DEBUG DEL 27/05/2019 10:05:28 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where richiedente=1 and pratica=76272  ORDER BY soggetto
+-------------------------
+
+27-05-19	10:05:28
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where richiedente=-1 and pratica=76272  ORDER BY soggetto------- DEBUG DEL 27/05/2019 10:05:28 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where richiedente=-1 and pratica=76272  ORDER BY soggetto
+-------------------------
+
+27-05-19	10:05:28
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where concessionario=1 and pratica=76272  ORDER BY soggetto------- DEBUG DEL 27/05/2019 10:05:28 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where concessionario=1 and pratica=76272  ORDER BY soggetto
+-------------------------
+
+27-05-19	10:05:28
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where concessionario=-1 and pratica=76272  ORDER BY soggetto------- DEBUG DEL 27/05/2019 10:05:28 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where concessionario=-1 and pratica=76272  ORDER BY soggetto
+-------------------------
+
+27-05-19	10:05:28
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where proprietario=1 and pratica=76272  ORDER BY soggetto------- DEBUG DEL 27/05/2019 10:05:28 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where proprietario=1 and pratica=76272  ORDER BY soggetto
+-------------------------
+
+27-05-19	10:05:28
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where proprietario=-1 and pratica=76272  ORDER BY soggetto------- DEBUG DEL 27/05/2019 10:05:28 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where proprietario=-1 and pratica=76272  ORDER BY soggetto
+-------------------------
+
+27-05-19	10:05:28
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista=1 and pratica=76272  ORDER BY soggetto------- DEBUG DEL 27/05/2019 10:05:28 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista=1 and pratica=76272  ORDER BY soggetto
+-------------------------
+
+27-05-19	10:05:28
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista=-1 and pratica=76272  ORDER BY soggetto------- DEBUG DEL 27/05/2019 10:05:28 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista=-1 and pratica=76272  ORDER BY soggetto
+-------------------------
+
+27-05-19	10:05:28
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore=1 and pratica=76272  ORDER BY soggetto------- DEBUG DEL 27/05/2019 10:05:28 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore=1 and pratica=76272  ORDER BY soggetto
+-------------------------
+
+27-05-19	10:05:28
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore=-1 and pratica=76272  ORDER BY soggetto------- DEBUG DEL 27/05/2019 10:05:28 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore=-1 and pratica=76272  ORDER BY soggetto
+-------------------------
+
+27-05-19	10:05:28
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where esecutore=1 and pratica=76272  ORDER BY soggetto------- DEBUG DEL 27/05/2019 10:05:28 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where esecutore=1 and pratica=76272  ORDER BY soggetto
+-------------------------
+
+27-05-19	10:05:28
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where esecutore=-1 and pratica=76272  ORDER BY soggetto------- DEBUG DEL 27/05/2019 10:05:28 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where esecutore=-1 and pratica=76272  ORDER BY soggetto
+-------------------------
+
+27-05-19	10:05:28
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where sicurezza=1 and pratica=76272  ORDER BY soggetto------- DEBUG DEL 27/05/2019 10:05:28 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where sicurezza=1 and pratica=76272  ORDER BY soggetto
+-------------------------
+
+27-05-19	10:05:28
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where sicurezza=-1 and pratica=76272  ORDER BY soggetto------- DEBUG DEL 27/05/2019 10:05:28 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where sicurezza=-1 and pratica=76272  ORDER BY soggetto
+-------------------------
+
+27-05-19	10:05:28
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore=1 and pratica=76272  ORDER BY soggetto------- DEBUG DEL 27/05/2019 10:05:28 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore=1 and pratica=76272  ORDER BY soggetto
+-------------------------
+
+27-05-19	10:05:28
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore=-1 and pratica=76272  ORDER BY soggetto------- DEBUG DEL 27/05/2019 10:05:28 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore=-1 and pratica=76272  ORDER BY soggetto
+-------------------------
+
+27-05-19	10:05:28
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where geologo=1 and pratica=76272  ORDER BY soggetto------- DEBUG DEL 27/05/2019 10:05:28 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where geologo=1 and pratica=76272  ORDER BY soggetto
+-------------------------
+
+27-05-19	10:05:28
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where geologo=-1 and pratica=76272  ORDER BY soggetto------- DEBUG DEL 27/05/2019 10:05:28 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where geologo=-1 and pratica=76272  ORDER BY soggetto
+-------------------------
+
+27-05-19	10:05:28
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista_ca=1 and pratica=76272  ORDER BY soggetto------- DEBUG DEL 27/05/2019 10:05:28 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista_ca=1 and pratica=76272  ORDER BY soggetto
+-------------------------
+
+27-05-19	10:05:28
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista_ca=-1 and pratica=76272  ORDER BY soggetto------- DEBUG DEL 27/05/2019 10:05:28 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista_ca=-1 and pratica=76272  ORDER BY soggetto
+-------------------------
+
+27-05-19	10:05:28
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore_ca=1 and pratica=76272  ORDER BY soggetto------- DEBUG DEL 27/05/2019 10:05:28 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore_ca=1 and pratica=76272  ORDER BY soggetto
+-------------------------
+
+27-05-19	10:05:28
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore_ca=-1 and pratica=76272  ORDER BY soggetto------- DEBUG DEL 27/05/2019 10:05:28 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore_ca=-1 and pratica=76272  ORDER BY soggetto
+-------------------------
+
+27-05-19	10:05:28
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore_ca=1 and pratica=76272  ORDER BY soggetto------- DEBUG DEL 27/05/2019 10:05:28 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore_ca=1 and pratica=76272  ORDER BY soggetto
+-------------------------
+
+27-05-19	10:05:28
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore_ca=-1 and pratica=76272  ORDER BY soggetto------- DEBUG DEL 27/05/2019 10:05:28 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore_ca=-1 and pratica=76272  ORDER BY soggetto
+-------------------------
+
+27-05-19	10:05:28
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where economia_diretta=1 and pratica=76272  ORDER BY soggetto------- DEBUG DEL 27/05/2019 10:05:28 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where economia_diretta=1 and pratica=76272  ORDER BY soggetto
+-------------------------
+
+27-05-19	10:05:28
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where economia_diretta=-1 and pratica=76272  ORDER BY soggetto------- DEBUG DEL 27/05/2019 10:05:28 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where economia_diretta=-1 and pratica=76272  ORDER BY soggetto
+-------------------------
+
+27-05-19	10:05:28
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where resp_abuso=1 and pratica=76272  ORDER BY soggetto------- DEBUG DEL 27/05/2019 10:05:28 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where resp_abuso=1 and pratica=76272  ORDER BY soggetto
+-------------------------
+
+27-05-19	10:05:28
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where resp_abuso=-1 and pratica=76272  ORDER BY soggetto------- DEBUG DEL 27/05/2019 10:05:28 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where resp_abuso=-1 and pratica=76272  ORDER BY soggetto
+-------------------------
+
+27-05-19	10:05:28
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where denunciante=1 and pratica=76272  ORDER BY soggetto------- DEBUG DEL 27/05/2019 10:05:28 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where denunciante=1 and pratica=76272  ORDER BY soggetto
+-------------------------
+
+27-05-19	10:05:28
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where denunciante=-1 and pratica=76272  ORDER BY soggetto------- DEBUG DEL 27/05/2019 10:05:28 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where denunciante=-1 and pratica=76272  ORDER BY soggetto
+-------------------------
+
+27-05-19	10:05:28
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where tecnico=1 and pratica=76272  ORDER BY soggetto------- DEBUG DEL 27/05/2019 10:05:28 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where tecnico=1 and pratica=76272  ORDER BY soggetto
+-------------------------
+
+27-05-19	10:05:28
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where tecnico=-1 and pratica=76272  ORDER BY soggetto------- DEBUG DEL 27/05/2019 10:05:28 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where tecnico=-1 and pratica=76272  ORDER BY soggetto
+-------------------------
+
+27-05-19	10:05:28
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where referente=1 and pratica=76272  ORDER BY soggetto------- DEBUG DEL 27/05/2019 10:05:28 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where referente=1 and pratica=76272  ORDER BY soggetto
+-------------------------
+
+27-05-19	10:05:28
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where referente=-1 and pratica=76272  ORDER BY soggetto------- DEBUG DEL 27/05/2019 10:05:28 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where referente=-1 and pratica=76272  ORDER BY soggetto
+-------------------------
+
+27-05-19	10:05:50
+	pe/indirizzi.tab
+select id,id,via,civico,interno,scala,piano,occ_suolo_pubblico,mq_occ,gg_occ,id,pratica,chk from pe.indirizzi where pratica=76272; ------- DEBUG DEL 27/05/2019 10:05:50 -------
+select id,id,via,civico,interno,scala,piano,occ_suolo_pubblico,mq_occ,gg_occ,id,pratica,chk from pe.indirizzi where pratica=76272; 
+-------------------------
+
+27-05-19	10:05:50
+	pe/catasto_terreni.tab
+select mapkey,id,foglio,mappale,sub,sez_censimento,id,pratica,chk from pe.ct_info where pratica=76272; ------- DEBUG DEL 27/05/2019 10:05:50 -------
+select mapkey,id,foglio,mappale,sub,sez_censimento,id,pratica,chk from pe.ct_info where pratica=76272; 
+-------------------------
+
+27-05-19	10:05:50
+	pe/catasto_urbano.tab
+select id,id,foglio,mappale,sub,sez_censimento,id,pratica,chk from pe.curbano where pratica=76272; ------- DEBUG DEL 27/05/2019 10:05:50 -------
+select id,id,foglio,mappale,sub,sez_censimento,id,pratica,chk from pe.curbano where pratica=76272; 
+-------------------------
+
+27-05-19	10:05:50
+	pe/uiu.tab
+select id,id,via,civico,interno,scala,piano,sezione,foglio,mappale,sub,destuso,vani,superficie,id,pratica,chk from pe.unita_immobiliari where pratica=76272; ------- DEBUG DEL 27/05/2019 10:05:50 -------
+select id,id,via,civico,interno,scala,piano,sezione,foglio,mappale,sub,destuso,vani,superficie,id,pratica,chk from pe.unita_immobiliari where pratica=76272; 
+-------------------------
+
+27-05-19	10:12:48
+	pe/iter_pratica.tab
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76272  ORDER BY data------- DEBUG DEL 27/05/2019 10:12:48 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76272  ORDER BY data
+-------------------------
+
+27-05-19	10:12:58
+	pe/allegati.tab
+select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=76272 AND protocollo='13775' AND data_protocollo='16/04/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file------- DEBUG DEL 27/05/2019 10:12:58 -------
+select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=76272 AND protocollo='13775' AND data_protocollo='16/04/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file
+-------------------------
+
+27-05-19	11:07:31
+	pe/iter_pratica.tab
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 72772  ORDER BY data------- DEBUG DEL 27/05/2019 11:07:31 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 72772  ORDER BY data
+-------------------------
+
+27-05-19	11:07:35
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where richiedente=1 and pratica=72772  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:07:35 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where richiedente=1 and pratica=72772  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:07:35
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where richiedente=-1 and pratica=72772  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:07:35 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where richiedente=-1 and pratica=72772  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:07:35
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where concessionario=1 and pratica=72772  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:07:35 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where concessionario=1 and pratica=72772  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:07:35
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where concessionario=-1 and pratica=72772  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:07:35 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where concessionario=-1 and pratica=72772  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:07:35
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where proprietario=1 and pratica=72772  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:07:35 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where proprietario=1 and pratica=72772  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:07:35
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where proprietario=-1 and pratica=72772  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:07:35 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where proprietario=-1 and pratica=72772  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:07:35
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista=1 and pratica=72772  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:07:35 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista=1 and pratica=72772  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:07:35
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista=-1 and pratica=72772  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:07:35 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista=-1 and pratica=72772  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:07:35
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore=1 and pratica=72772  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:07:35 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore=1 and pratica=72772  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:07:35
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore=-1 and pratica=72772  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:07:35 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore=-1 and pratica=72772  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:07:35
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where esecutore=1 and pratica=72772  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:07:35 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where esecutore=1 and pratica=72772  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:07:35
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where esecutore=-1 and pratica=72772  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:07:35 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where esecutore=-1 and pratica=72772  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:07:35
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where sicurezza=1 and pratica=72772  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:07:35 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where sicurezza=1 and pratica=72772  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:07:35
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where sicurezza=-1 and pratica=72772  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:07:35 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where sicurezza=-1 and pratica=72772  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:07:35
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore=1 and pratica=72772  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:07:35 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore=1 and pratica=72772  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:07:35
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore=-1 and pratica=72772  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:07:35 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore=-1 and pratica=72772  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:07:35
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where geologo=1 and pratica=72772  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:07:35 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where geologo=1 and pratica=72772  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:07:35
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where geologo=-1 and pratica=72772  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:07:35 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where geologo=-1 and pratica=72772  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:07:35
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista_ca=1 and pratica=72772  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:07:35 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista_ca=1 and pratica=72772  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:07:35
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista_ca=-1 and pratica=72772  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:07:35 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista_ca=-1 and pratica=72772  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:07:35
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore_ca=1 and pratica=72772  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:07:35 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore_ca=1 and pratica=72772  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:07:35
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore_ca=-1 and pratica=72772  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:07:35 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore_ca=-1 and pratica=72772  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:07:35
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore_ca=1 and pratica=72772  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:07:35 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore_ca=1 and pratica=72772  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:07:35
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore_ca=-1 and pratica=72772  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:07:35 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore_ca=-1 and pratica=72772  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:07:35
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where economia_diretta=1 and pratica=72772  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:07:35 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where economia_diretta=1 and pratica=72772  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:07:35
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where economia_diretta=-1 and pratica=72772  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:07:35 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where economia_diretta=-1 and pratica=72772  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:07:35
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where resp_abuso=1 and pratica=72772  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:07:35 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where resp_abuso=1 and pratica=72772  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:07:35
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where resp_abuso=-1 and pratica=72772  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:07:35 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where resp_abuso=-1 and pratica=72772  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:07:35
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where denunciante=1 and pratica=72772  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:07:35 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where denunciante=1 and pratica=72772  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:07:35
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where denunciante=-1 and pratica=72772  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:07:35 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where denunciante=-1 and pratica=72772  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:07:35
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where tecnico=1 and pratica=72772  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:07:35 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where tecnico=1 and pratica=72772  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:07:35
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where tecnico=-1 and pratica=72772  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:07:35 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where tecnico=-1 and pratica=72772  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:07:35
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where referente=1 and pratica=72772  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:07:35 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where referente=1 and pratica=72772  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:07:35
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where referente=-1 and pratica=72772  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:07:35 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where referente=-1 and pratica=72772  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:08:06
+	pe/soggetto_completo.tab
+select app,cognome,nome,indirizzo,civico,comune,prov,cap,telefono,cellulare,fax,email,pec,datanato,sesso,comunato,provnato,codfis,piva,codfisd,titolo,ragsoc,sede,civicod,comuned,provd,capd,economia_diretta,ccia,cciaprov,inail,inps,albo,albonumero,alboprov,cedile,cedileprov,cip,data_cip,note,comunicazioni,id,pratica,chk from pe.soggetti where id = 86246 ------- DEBUG DEL 27/05/2019 11:08:06 -------
+select app,cognome,nome,indirizzo,civico,comune,prov,cap,telefono,cellulare,fax,email,pec,datanato,sesso,comunato,provnato,codfis,piva,codfisd,titolo,ragsoc,sede,civicod,comuned,provd,capd,economia_diretta,ccia,cciaprov,inail,inps,albo,albonumero,alboprov,cedile,cedileprov,cip,data_cip,note,comunicazioni,id,pratica,chk from pe.soggetti where id = 86246 
+-------------------------
+
+27-05-19	11:09:09
+	pe/iter_pratica.tab
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 47419  ORDER BY data------- DEBUG DEL 27/05/2019 11:09:09 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 47419  ORDER BY data
+-------------------------
+
+27-05-19	11:09:13
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where richiedente=1 and pratica=47419  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:09:13 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where richiedente=1 and pratica=47419  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:09:13
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where richiedente=-1 and pratica=47419  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:09:13 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where richiedente=-1 and pratica=47419  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:09:13
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where concessionario=1 and pratica=47419  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:09:13 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where concessionario=1 and pratica=47419  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:09:13
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where concessionario=-1 and pratica=47419  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:09:13 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where concessionario=-1 and pratica=47419  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:09:13
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where proprietario=1 and pratica=47419  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:09:13 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where proprietario=1 and pratica=47419  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:09:13
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where proprietario=-1 and pratica=47419  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:09:13 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where proprietario=-1 and pratica=47419  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:09:13
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista=1 and pratica=47419  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:09:13 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista=1 and pratica=47419  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:09:13
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista=-1 and pratica=47419  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:09:13 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista=-1 and pratica=47419  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:09:13
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore=1 and pratica=47419  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:09:13 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore=1 and pratica=47419  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:09:13
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore=-1 and pratica=47419  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:09:13 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore=-1 and pratica=47419  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:09:13
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where esecutore=1 and pratica=47419  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:09:13 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where esecutore=1 and pratica=47419  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:09:13
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where esecutore=-1 and pratica=47419  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:09:13 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where esecutore=-1 and pratica=47419  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:09:13
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where sicurezza=1 and pratica=47419  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:09:13 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where sicurezza=1 and pratica=47419  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:09:13
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where sicurezza=-1 and pratica=47419  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:09:13 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where sicurezza=-1 and pratica=47419  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:09:13
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore=1 and pratica=47419  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:09:13 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore=1 and pratica=47419  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:09:13
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore=-1 and pratica=47419  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:09:13 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore=-1 and pratica=47419  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:09:13
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where geologo=1 and pratica=47419  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:09:13 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where geologo=1 and pratica=47419  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:09:13
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where geologo=-1 and pratica=47419  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:09:13 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where geologo=-1 and pratica=47419  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:09:13
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista_ca=1 and pratica=47419  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:09:13 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista_ca=1 and pratica=47419  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:09:13
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista_ca=-1 and pratica=47419  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:09:13 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista_ca=-1 and pratica=47419  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:09:13
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore_ca=1 and pratica=47419  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:09:13 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore_ca=1 and pratica=47419  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:09:13
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore_ca=-1 and pratica=47419  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:09:13 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore_ca=-1 and pratica=47419  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:09:13
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore_ca=1 and pratica=47419  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:09:13 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore_ca=1 and pratica=47419  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:09:13
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore_ca=-1 and pratica=47419  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:09:13 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore_ca=-1 and pratica=47419  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:09:13
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where economia_diretta=1 and pratica=47419  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:09:13 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where economia_diretta=1 and pratica=47419  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:09:13
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where economia_diretta=-1 and pratica=47419  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:09:13 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where economia_diretta=-1 and pratica=47419  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:09:13
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where resp_abuso=1 and pratica=47419  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:09:13 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where resp_abuso=1 and pratica=47419  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:09:13
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where resp_abuso=-1 and pratica=47419  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:09:13 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where resp_abuso=-1 and pratica=47419  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:09:13
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where denunciante=1 and pratica=47419  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:09:13 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where denunciante=1 and pratica=47419  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:09:13
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where denunciante=-1 and pratica=47419  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:09:13 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where denunciante=-1 and pratica=47419  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:09:13
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where tecnico=1 and pratica=47419  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:09:13 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where tecnico=1 and pratica=47419  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:09:13
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where tecnico=-1 and pratica=47419  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:09:13 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where tecnico=-1 and pratica=47419  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:09:13
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where referente=1 and pratica=47419  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:09:13 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where referente=1 and pratica=47419  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:09:13
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where referente=-1 and pratica=47419  ORDER BY soggetto------- DEBUG DEL 27/05/2019 11:09:13 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where referente=-1 and pratica=47419  ORDER BY soggetto
+-------------------------
+
+27-05-19	11:09:17
+	pe/soggetto_completo.tab
+select app,cognome,nome,indirizzo,civico,comune,prov,cap,telefono,cellulare,fax,email,pec,datanato,sesso,comunato,provnato,codfis,piva,codfisd,titolo,ragsoc,sede,civicod,comuned,provd,capd,economia_diretta,ccia,cciaprov,inail,inps,albo,albonumero,alboprov,cedile,cedileprov,cip,data_cip,note,comunicazioni,id,pratica,chk from pe.soggetti where id = 85194 ------- DEBUG DEL 27/05/2019 11:09:17 -------
+select app,cognome,nome,indirizzo,civico,comune,prov,cap,telefono,cellulare,fax,email,pec,datanato,sesso,comunato,provnato,codfis,piva,codfisd,titolo,ragsoc,sede,civicod,comuned,provd,capd,economia_diretta,ccia,cciaprov,inail,inps,albo,albonumero,alboprov,cedile,cedileprov,cip,data_cip,note,comunicazioni,id,pratica,chk from pe.soggetti where id = 85194 
+-------------------------
+
+27-05-19	12:03:23
+	pe/iter_pratica.tab
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 10000168  ORDER BY data------- DEBUG DEL 27/05/2019 12:03:23 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 10000168  ORDER BY data
+-------------------------
+
+28-05-19	09:52:19
+	pe/iter_pratica.tab
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76262  ORDER BY data------- DEBUG DEL 28/05/2019 09:52:19 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76262  ORDER BY data
+-------------------------
+
+28-05-19	09:52:25
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where richiedente=1 and pratica=76262  ORDER BY soggetto------- DEBUG DEL 28/05/2019 09:52:25 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where richiedente=1 and pratica=76262  ORDER BY soggetto
+-------------------------
+
+28-05-19	09:52:25
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where richiedente=-1 and pratica=76262  ORDER BY soggetto------- DEBUG DEL 28/05/2019 09:52:25 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where richiedente=-1 and pratica=76262  ORDER BY soggetto
+-------------------------
+
+28-05-19	09:52:25
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where concessionario=1 and pratica=76262  ORDER BY soggetto------- DEBUG DEL 28/05/2019 09:52:25 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where concessionario=1 and pratica=76262  ORDER BY soggetto
+-------------------------
+
+28-05-19	09:52:25
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where concessionario=-1 and pratica=76262  ORDER BY soggetto------- DEBUG DEL 28/05/2019 09:52:25 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where concessionario=-1 and pratica=76262  ORDER BY soggetto
+-------------------------
+
+28-05-19	09:52:25
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where proprietario=1 and pratica=76262  ORDER BY soggetto------- DEBUG DEL 28/05/2019 09:52:25 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where proprietario=1 and pratica=76262  ORDER BY soggetto
+-------------------------
+
+28-05-19	09:52:25
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where proprietario=-1 and pratica=76262  ORDER BY soggetto------- DEBUG DEL 28/05/2019 09:52:25 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where proprietario=-1 and pratica=76262  ORDER BY soggetto
+-------------------------
+
+28-05-19	09:52:25
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista=1 and pratica=76262  ORDER BY soggetto------- DEBUG DEL 28/05/2019 09:52:25 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista=1 and pratica=76262  ORDER BY soggetto
+-------------------------
+
+28-05-19	09:52:25
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista=-1 and pratica=76262  ORDER BY soggetto------- DEBUG DEL 28/05/2019 09:52:25 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista=-1 and pratica=76262  ORDER BY soggetto
+-------------------------
+
+28-05-19	09:52:25
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore=1 and pratica=76262  ORDER BY soggetto------- DEBUG DEL 28/05/2019 09:52:25 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore=1 and pratica=76262  ORDER BY soggetto
+-------------------------
+
+28-05-19	09:52:25
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore=-1 and pratica=76262  ORDER BY soggetto------- DEBUG DEL 28/05/2019 09:52:25 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore=-1 and pratica=76262  ORDER BY soggetto
+-------------------------
+
+28-05-19	09:52:25
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where esecutore=1 and pratica=76262  ORDER BY soggetto------- DEBUG DEL 28/05/2019 09:52:25 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where esecutore=1 and pratica=76262  ORDER BY soggetto
+-------------------------
+
+28-05-19	09:52:25
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where esecutore=-1 and pratica=76262  ORDER BY soggetto------- DEBUG DEL 28/05/2019 09:52:25 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where esecutore=-1 and pratica=76262  ORDER BY soggetto
+-------------------------
+
+28-05-19	09:52:25
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where sicurezza=1 and pratica=76262  ORDER BY soggetto------- DEBUG DEL 28/05/2019 09:52:25 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where sicurezza=1 and pratica=76262  ORDER BY soggetto
+-------------------------
+
+28-05-19	09:52:25
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where sicurezza=-1 and pratica=76262  ORDER BY soggetto------- DEBUG DEL 28/05/2019 09:52:25 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where sicurezza=-1 and pratica=76262  ORDER BY soggetto
+-------------------------
+
+28-05-19	09:52:25
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore=1 and pratica=76262  ORDER BY soggetto------- DEBUG DEL 28/05/2019 09:52:25 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore=1 and pratica=76262  ORDER BY soggetto
+-------------------------
+
+28-05-19	09:52:25
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore=-1 and pratica=76262  ORDER BY soggetto------- DEBUG DEL 28/05/2019 09:52:25 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore=-1 and pratica=76262  ORDER BY soggetto
+-------------------------
+
+28-05-19	09:52:25
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where geologo=1 and pratica=76262  ORDER BY soggetto------- DEBUG DEL 28/05/2019 09:52:25 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where geologo=1 and pratica=76262  ORDER BY soggetto
+-------------------------
+
+28-05-19	09:52:25
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where geologo=-1 and pratica=76262  ORDER BY soggetto------- DEBUG DEL 28/05/2019 09:52:25 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where geologo=-1 and pratica=76262  ORDER BY soggetto
+-------------------------
+
+28-05-19	09:52:25
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista_ca=1 and pratica=76262  ORDER BY soggetto------- DEBUG DEL 28/05/2019 09:52:25 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista_ca=1 and pratica=76262  ORDER BY soggetto
+-------------------------
+
+28-05-19	09:52:25
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista_ca=-1 and pratica=76262  ORDER BY soggetto------- DEBUG DEL 28/05/2019 09:52:25 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where progettista_ca=-1 and pratica=76262  ORDER BY soggetto
+-------------------------
+
+28-05-19	09:52:25
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore_ca=1 and pratica=76262  ORDER BY soggetto------- DEBUG DEL 28/05/2019 09:52:25 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore_ca=1 and pratica=76262  ORDER BY soggetto
+-------------------------
+
+28-05-19	09:52:25
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore_ca=-1 and pratica=76262  ORDER BY soggetto------- DEBUG DEL 28/05/2019 09:52:25 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where direttore_ca=-1 and pratica=76262  ORDER BY soggetto
+-------------------------
+
+28-05-19	09:52:25
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore_ca=1 and pratica=76262  ORDER BY soggetto------- DEBUG DEL 28/05/2019 09:52:25 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore_ca=1 and pratica=76262  ORDER BY soggetto
+-------------------------
+
+28-05-19	09:52:25
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore_ca=-1 and pratica=76262  ORDER BY soggetto------- DEBUG DEL 28/05/2019 09:52:25 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where collaudatore_ca=-1 and pratica=76262  ORDER BY soggetto
+-------------------------
+
+28-05-19	09:52:25
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where economia_diretta=1 and pratica=76262  ORDER BY soggetto------- DEBUG DEL 28/05/2019 09:52:25 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where economia_diretta=1 and pratica=76262  ORDER BY soggetto
+-------------------------
+
+28-05-19	09:52:25
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where economia_diretta=-1 and pratica=76262  ORDER BY soggetto------- DEBUG DEL 28/05/2019 09:52:25 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where economia_diretta=-1 and pratica=76262  ORDER BY soggetto
+-------------------------
+
+28-05-19	09:52:25
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where resp_abuso=1 and pratica=76262  ORDER BY soggetto------- DEBUG DEL 28/05/2019 09:52:25 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where resp_abuso=1 and pratica=76262  ORDER BY soggetto
+-------------------------
+
+28-05-19	09:52:25
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where resp_abuso=-1 and pratica=76262  ORDER BY soggetto------- DEBUG DEL 28/05/2019 09:52:25 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where resp_abuso=-1 and pratica=76262  ORDER BY soggetto
+-------------------------
+
+28-05-19	09:52:25
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where denunciante=1 and pratica=76262  ORDER BY soggetto------- DEBUG DEL 28/05/2019 09:52:25 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where denunciante=1 and pratica=76262  ORDER BY soggetto
+-------------------------
+
+28-05-19	09:52:25
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where denunciante=-1 and pratica=76262  ORDER BY soggetto------- DEBUG DEL 28/05/2019 09:52:25 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where denunciante=-1 and pratica=76262  ORDER BY soggetto
+-------------------------
+
+28-05-19	09:52:25
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where tecnico=1 and pratica=76262  ORDER BY soggetto------- DEBUG DEL 28/05/2019 09:52:25 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where tecnico=1 and pratica=76262  ORDER BY soggetto
+-------------------------
+
+28-05-19	09:52:25
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where tecnico=-1 and pratica=76262  ORDER BY soggetto------- DEBUG DEL 28/05/2019 09:52:25 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where tecnico=-1 and pratica=76262  ORDER BY soggetto
+-------------------------
+
+28-05-19	09:52:25
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where referente=1 and pratica=76262  ORDER BY soggetto------- DEBUG DEL 28/05/2019 09:52:25 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where referente=1 and pratica=76262  ORDER BY soggetto
+-------------------------
+
+28-05-19	09:52:25
+	pe/soggetto.tab
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where referente=-1 and pratica=76262  ORDER BY soggetto------- DEBUG DEL 28/05/2019 09:52:25 -------
+select id,id,soggetto,id,pratica,chk from pe.elenco_soggetti where referente=-1 and pratica=76262  ORDER BY soggetto
+-------------------------
+
+28-05-19	10:50:41
+	pe/iter_pratica.tab
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76279  ORDER BY data------- DEBUG DEL 28/05/2019 10:50:41 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76279  ORDER BY data
+-------------------------
+
+28-05-19	10:50:44
+	pe/allegati.tab
+select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=76279 AND protocollo='14050' AND data_protocollo='17/04/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file------- DEBUG DEL 28/05/2019 10:50:44 -------
+select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=76279 AND protocollo='14050' AND data_protocollo='17/04/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file
+-------------------------
+
+28-05-19	10:50:45
+	pe/allegati.tab
+select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=76279 AND protocollo='15285' AND data_protocollo='29/04/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file------- DEBUG DEL 28/05/2019 10:50:45 -------
+select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=76279 AND protocollo='15285' AND data_protocollo='29/04/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file
+-------------------------
+
+28-05-19	10:54:41
+	pe/avvio_procedimento.tab
+select sportello,numero,data_presentazione,tipo,categoria,intervento,protocollo,data_prot,rif_pratica,cartella,resp_proc,data_resp,resp_it,data_resp_it,resp_amb,data_resp_amb,com_resp,data_com_resp,data_chiusura,oggetto,note,vincolo_paes,online,foreign_id,id,pratica,chk from pe.avvioproc where pratica=76279 ------- DEBUG DEL 28/05/2019 10:54:41 -------
+select sportello,numero,data_presentazione,tipo,categoria,intervento,protocollo,data_prot,rif_pratica,cartella,resp_proc,data_resp,resp_it,data_resp_it,resp_amb,data_resp_amb,com_resp,data_com_resp,data_chiusura,oggetto,note,vincolo_paes,online,foreign_id,id,pratica,chk from pe.avvioproc where pratica=76279 
+-------------------------
+
+28-05-19	10:54:58
+	pe/allegati.tab
+select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=76279 AND protocollo='14050' AND data_protocollo='17/04/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file------- DEBUG DEL 28/05/2019 10:54:58 -------
+select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=76279 AND protocollo='14050' AND data_protocollo='17/04/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file
+-------------------------
+
+28-05-19	10:54:58
+	pe/allegati.tab
+select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=76279 AND protocollo='15285' AND data_protocollo='29/04/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file------- DEBUG DEL 28/05/2019 10:54:58 -------
+select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=76279 AND protocollo='15285' AND data_protocollo='29/04/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file
+-------------------------
+
+28-05-19	10:59:14
+	pe/iter_pratica.tab
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76279  ORDER BY data------- DEBUG DEL 28/05/2019 10:59:14 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76279  ORDER BY data
+-------------------------
+
+28-05-19	10:59:24
+	pe/avvio_procedimento.tab
+select sportello,numero,data_presentazione,tipo,categoria,intervento,protocollo,data_prot,rif_pratica,cartella,resp_proc,data_resp,resp_it,data_resp_it,resp_amb,data_resp_amb,com_resp,data_com_resp,data_chiusura,oggetto,note,vincolo_paes,online,foreign_id,id,pratica,chk from pe.avvioproc where pratica=76279 ------- DEBUG DEL 28/05/2019 10:59:24 -------
+select sportello,numero,data_presentazione,tipo,categoria,intervento,protocollo,data_prot,rif_pratica,cartella,resp_proc,data_resp,resp_it,data_resp_it,resp_amb,data_resp_amb,com_resp,data_com_resp,data_chiusura,oggetto,note,vincolo_paes,online,foreign_id,id,pratica,chk from pe.avvioproc where pratica=76279 
+-------------------------
+
+28-05-19	11:02:21
+	pe/allegati.tab
+select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=76279 AND protocollo='14050' AND data_protocollo='17/04/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file------- DEBUG DEL 28/05/2019 11:02:21 -------
+select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=76279 AND protocollo='14050' AND data_protocollo='17/04/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file
+-------------------------
+
+28-05-19	11:02:21
+	pe/allegati.tab
+select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=76279 AND protocollo='15285' AND data_protocollo='29/04/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file------- DEBUG DEL 28/05/2019 11:02:21 -------
+select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=76279 AND protocollo='15285' AND data_protocollo='29/04/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file
+-------------------------
+
+28-05-19	11:12:50
+	pe/iter_pratica.tab
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76279  ORDER BY data------- DEBUG DEL 28/05/2019 11:12:50 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76279  ORDER BY data
+-------------------------
+
+28-05-19	11:12:53
+	pe/allegati.tab
+select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=76279 AND protocollo='14050' AND data_protocollo='17/04/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file------- DEBUG DEL 28/05/2019 11:12:53 -------
+select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=76279 AND protocollo='14050' AND data_protocollo='17/04/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file
+-------------------------
+
+28-05-19	11:12:53
+	pe/allegati.tab
+select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=76279 AND protocollo='15285' AND data_protocollo='29/04/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file------- DEBUG DEL 28/05/2019 11:12:53 -------
+select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=76279 AND protocollo='15285' AND data_protocollo='29/04/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file
+-------------------------
+
+28-05-19	11:25:41
+	pe/iter_pratica.tab
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76278  ORDER BY data------- DEBUG DEL 28/05/2019 11:25:41 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76278  ORDER BY data
+-------------------------
+
+28-05-19	11:26:23
+	pe/iter_pratica.tab
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76279  ORDER BY data------- DEBUG DEL 28/05/2019 11:26:23 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76279  ORDER BY data
+-------------------------
+
+28-05-19	11:26:25
+	pe/allegati.tab
+select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=76279 AND protocollo='14050' AND data_protocollo='17/04/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file------- DEBUG DEL 28/05/2019 11:26:25 -------
+select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=76279 AND protocollo='14050' AND data_protocollo='17/04/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file
+-------------------------
+
+28-05-19	11:26:25
+	pe/allegati.tab
+select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=76279 AND protocollo='15285' AND data_protocollo='29/04/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file------- DEBUG DEL 28/05/2019 11:26:25 -------
+select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=76279 AND protocollo='15285' AND data_protocollo='29/04/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file
+-------------------------

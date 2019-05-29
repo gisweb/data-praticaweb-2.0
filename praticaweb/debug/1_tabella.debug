@@ -6934,3 +6934,255 @@ select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk 
 select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=46084 AND protocollo='10491' AND data_protocollo='22/03/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file------- DEBUG DEL 15/05/2019 09:07:46 -------
 select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=46084 AND protocollo='10491' AND data_protocollo='22/03/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file
 -------------------------
+
+23-05-19	11:02:48
+	pe/iter_pratica.tab
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76339  ORDER BY data------- DEBUG DEL 23/05/2019 11:02:48 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76339  ORDER BY data
+-------------------------
+
+23-05-19	11:02:52
+	pe/avvio_procedimento.tab
+select sportello,numero,data_presentazione,tipo,categoria,intervento,protocollo,data_prot,rif_pratica,cartella,resp_proc,data_resp,resp_it,data_resp_it,resp_amb,data_resp_amb,com_resp,data_com_resp,data_chiusura,oggetto,note,vincolo_paes,online,foreign_id,id,pratica,chk from pe.avvioproc where pratica=76339 ------- DEBUG DEL 23/05/2019 11:02:52 -------
+select sportello,numero,data_presentazione,tipo,categoria,intervento,protocollo,data_prot,rif_pratica,cartella,resp_proc,data_resp,resp_it,data_resp_it,resp_amb,data_resp_amb,com_resp,data_com_resp,data_chiusura,oggetto,note,vincolo_paes,online,foreign_id,id,pratica,chk from pe.avvioproc where pratica=76339 
+-------------------------
+
+23-05-19	11:02:59
+	pe/pareri.tab
+select nome_ente,prot_rich,data_rich,data_ricezione_richiesta,prot_ril,data_ril,prot_rice,data_rice,numero_doc,parere,prescrizioni,testo,note,id,pratica,chk from pe.elenco_pareri where pratica=76339 ------- DEBUG DEL 23/05/2019 11:02:59 -------
+select nome_ente,prot_rich,data_rich,data_ricezione_richiesta,prot_ril,data_ril,prot_rice,data_rice,numero_doc,parere,prescrizioni,testo,note,id,pratica,chk from pe.elenco_pareri where pratica=76339 
+-------------------------
+
+23-05-19	11:03:09
+	pe/pareri.tab
+select nome_ente,prot_rich,data_rich,data_ricezione_richiesta,prot_ril,data_ril,prot_rice,data_rice,numero_doc,parere,prescrizioni,testo,note,id,pratica,chk from pe.elenco_pareri where pratica=76339 ------- DEBUG DEL 23/05/2019 11:03:09 -------
+select nome_ente,prot_rich,data_rich,data_ricezione_richiesta,prot_ril,data_ril,prot_rice,data_rice,numero_doc,parere,prescrizioni,testo,note,id,pratica,chk from pe.elenco_pareri where pratica=76339 
+-------------------------
+
+23-05-19	11:03:17
+	pe/pareri.tab
+select prot_rich,data_rich,data_ricezione_richiesta,prot_ril,data_ril,prot_rice,data_rice,numero_doc,parere,prescrizioni,testo,note,id,pratica,chk from pe.pareri where id=43946 ------- DEBUG DEL 23/05/2019 11:03:17 -------
+select prot_rich,data_rich,data_ricezione_richiesta,prot_ril,data_ril,prot_rice,data_rice,numero_doc,parere,prescrizioni,testo,note,id,pratica,chk from pe.pareri where id=43946 
+-------------------------
+
+23-05-19	11:03:21
+	pe/pareri.tab
+select nome_ente,prot_rich,data_rich,data_ricezione_richiesta,prot_ril,data_ril,prot_rice,data_rice,numero_doc,parere,prescrizioni,testo,note,id,pratica,chk from pe.elenco_pareri where pratica=76339 ------- DEBUG DEL 23/05/2019 11:03:21 -------
+select nome_ente,prot_rich,data_rich,data_ricezione_richiesta,prot_ril,data_ril,prot_rice,data_rice,numero_doc,parere,prescrizioni,testo,note,id,pratica,chk from pe.elenco_pareri where pratica=76339 
+-------------------------
+
+23-05-19	11:03:42
+	pe/iter_pratica.tab
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76201  ORDER BY data------- DEBUG DEL 23/05/2019 11:03:42 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76201  ORDER BY data
+-------------------------
+
+23-05-19	11:03:55
+	pe/pareri.tab
+select nome_ente,prot_rich,data_rich,data_ricezione_richiesta,prot_ril,data_ril,prot_rice,data_rice,numero_doc,parere,prescrizioni,testo,note,id,pratica,chk from pe.elenco_pareri where pratica=76201 ------- DEBUG DEL 23/05/2019 11:03:55 -------
+select nome_ente,prot_rich,data_rich,data_ricezione_richiesta,prot_ril,data_ril,prot_rice,data_rice,numero_doc,parere,prescrizioni,testo,note,id,pratica,chk from pe.elenco_pareri where pratica=76201 
+-------------------------
+
+23-05-19	11:03:57
+	pe/pareri.tab
+select prot_rich,data_rich,data_ricezione_richiesta,prot_ril,data_ril,prot_rice,data_rice,numero_doc,parere,prescrizioni,testo,note,id,pratica,chk from pe.pareri where id=43647 ------- DEBUG DEL 23/05/2019 11:03:57 -------
+select prot_rich,data_rich,data_ricezione_richiesta,prot_ril,data_ril,prot_rice,data_rice,numero_doc,parere,prescrizioni,testo,note,id,pratica,chk from pe.pareri where id=43647 
+-------------------------
+
+23-05-19	11:04:00
+	pe/pareri.tab
+select nome_ente,prot_rich,data_rich,data_ricezione_richiesta,prot_ril,data_ril,prot_rice,data_rice,numero_doc,parere,prescrizioni,testo,note,id,pratica,chk from pe.elenco_pareri where pratica=76201 ------- DEBUG DEL 23/05/2019 11:04:00 -------
+select nome_ente,prot_rich,data_rich,data_ricezione_richiesta,prot_ril,data_ril,prot_rice,data_rice,numero_doc,parere,prescrizioni,testo,note,id,pratica,chk from pe.elenco_pareri where pratica=76201 
+-------------------------
+
+23-05-19	11:04:52
+	pe/pareri.tab
+select nome_ente,prot_rich,data_rich,data_ricezione_richiesta,prot_ril,data_ril,prot_rice,data_rice,numero_doc,parere,prescrizioni,testo,note,id,pratica,chk from pe.elenco_pareri where pratica=76201 ------- DEBUG DEL 23/05/2019 11:04:52 -------
+select nome_ente,prot_rich,data_rich,data_ricezione_richiesta,prot_ril,data_ril,prot_rice,data_rice,numero_doc,parere,prescrizioni,testo,note,id,pratica,chk from pe.elenco_pareri where pratica=76201 
+-------------------------
+
+24-05-19	16:25:31
+	stp/modelli.tab
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='pe.avvioproc'  ORDER BY nome------- DEBUG DEL 24/05/2019 04:25:31 -------
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='pe.avvioproc'  ORDER BY nome
+-------------------------
+
+24-05-19	16:25:31
+	stp/modelli.tab
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='pe.allegati'  ORDER BY nome------- DEBUG DEL 24/05/2019 04:25:31 -------
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='pe.allegati'  ORDER BY nome
+-------------------------
+
+24-05-19	16:25:31
+	stp/modelli.tab
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='pe.pareri'  ORDER BY nome------- DEBUG DEL 24/05/2019 04:25:31 -------
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='pe.pareri'  ORDER BY nome
+-------------------------
+
+24-05-19	16:25:31
+	stp/modelli.tab
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='pe.comm_edilizia'  ORDER BY nome------- DEBUG DEL 24/05/2019 04:25:31 -------
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='pe.comm_edilizia'  ORDER BY nome
+-------------------------
+
+24-05-19	16:25:31
+	stp/modelli.tab
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='oneri.importi'  ORDER BY nome------- DEBUG DEL 24/05/2019 04:25:31 -------
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='oneri.importi'  ORDER BY nome
+-------------------------
+
+24-05-19	16:25:31
+	stp/modelli.tab
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='pe.abitabi'  ORDER BY nome------- DEBUG DEL 24/05/2019 04:25:31 -------
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='pe.abitabi'  ORDER BY nome
+-------------------------
+
+24-05-19	16:25:31
+	stp/modelli.tab
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='pe.titolo'  ORDER BY nome------- DEBUG DEL 24/05/2019 04:25:31 -------
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='pe.titolo'  ORDER BY nome
+-------------------------
+
+24-05-19	16:25:31
+	stp/modelli.tab
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='cdu.vincoli'  ORDER BY nome------- DEBUG DEL 24/05/2019 04:25:31 -------
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='cdu.vincoli'  ORDER BY nome
+-------------------------
+
+24-05-19	16:25:31
+	stp/modelli.tab
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='ce.commissione'  ORDER BY nome------- DEBUG DEL 24/05/2019 04:25:31 -------
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='ce.commissione'  ORDER BY nome
+-------------------------
+
+24-05-19	16:25:31
+	stp/modelli.tab
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='pe.istruttoria'  ORDER BY nome------- DEBUG DEL 24/05/2019 04:25:31 -------
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='pe.istruttoria'  ORDER BY nome
+-------------------------
+
+24-05-19	16:25:31
+	stp/modelli.tab
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='pe.lavori'  ORDER BY nome------- DEBUG DEL 24/05/2019 04:25:31 -------
+select nome,id,id,nome,form,descrizione,id from stp.e_modelli where form='pe.lavori'  ORDER BY nome
+-------------------------
+
+24-05-19	16:28:01
+	stp/modelli.tab
+select nome,form,descrizione,proprietario,tipo_pratica,multiple,id from stp.e_modelli where id=19 ------- DEBUG DEL 24/05/2019 04:28:01 -------
+select nome,form,descrizione,proprietario,tipo_pratica,multiple,id from stp.e_modelli where id=19 
+-------------------------
+
+27-05-19	11:16:21
+	pe/iter_pratica.tab
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76330  ORDER BY data------- DEBUG DEL 27/05/2019 11:16:21 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76330  ORDER BY data
+-------------------------
+
+27-05-19	11:16:29
+	pe/allegati.tab
+select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=76330 AND protocollo='18039' AND data_protocollo='17/05/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file------- DEBUG DEL 27/05/2019 11:16:29 -------
+select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=76330 AND protocollo='18039' AND data_protocollo='17/05/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file
+-------------------------
+
+27-05-19	11:16:29
+	pe/allegati.tab
+select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=76330 AND protocollo='18496' AND data_protocollo='21/05/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file------- DEBUG DEL 27/05/2019 11:16:29 -------
+select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=76330 AND protocollo='18496' AND data_protocollo='21/05/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file
+-------------------------
+
+27-05-19	11:16:48
+	pe/iter_pratica.tab
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76330  ORDER BY data------- DEBUG DEL 27/05/2019 11:16:48 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76330  ORDER BY data
+-------------------------
+
+27-05-19	11:17:47
+	stp/documenti.tab
+select file_doc,descrizione,id,pratica,chk from stp.stampe where id=380 ------- DEBUG DEL 27/05/2019 11:17:47 -------
+select file_doc,descrizione,id,pratica,chk from stp.stampe where id=380 
+-------------------------
+
+27-05-19	11:17:50
+	stp/documenti.tab
+select id,data_creazione_doc,file_doc,descrizione,id,pratica,chk from stp.stampe where pratica='76330' AND NOT coalesce(form,'') IN ('cdu.vincoli')  ORDER BY data_creazione_doc,file_doc------- DEBUG DEL 27/05/2019 11:17:50 -------
+select id,data_creazione_doc,file_doc,descrizione,id,pratica,chk from stp.stampe where pratica='76330' AND NOT coalesce(form,'') IN ('cdu.vincoli')  ORDER BY data_creazione_doc,file_doc
+-------------------------
+
+27-05-19	11:18:07
+	pe/iter_pratica.tab
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76330  ORDER BY data------- DEBUG DEL 27/05/2019 11:18:07 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76330  ORDER BY data
+-------------------------
+
+27-05-19	11:19:46
+	pe/titolo.tab
+select titolo,protocollo,data_rilascio,data_notifica,data_ritiro,diniego,intervento,note,id,pratica,chk from pe.titolo where pratica=76330 ------- DEBUG DEL 27/05/2019 11:19:46 -------
+select titolo,protocollo,data_rilascio,data_notifica,data_ritiro,diniego,intervento,note,id,pratica,chk from pe.titolo where pratica=76330 
+-------------------------
+
+27-05-19	11:20:06
+	pe/iter_pratica.tab
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76330  ORDER BY data------- DEBUG DEL 27/05/2019 11:20:06 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76330  ORDER BY data
+-------------------------
+
+27-05-19	11:20:22
+	pe/iter_pratica.tab
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76330  ORDER BY data------- DEBUG DEL 27/05/2019 11:20:22 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76330  ORDER BY data
+-------------------------
+
+29-05-19	08:19:18
+	pe/iter_pratica.tab
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76330  ORDER BY data------- DEBUG DEL 29/05/2019 08:19:18 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76330  ORDER BY data
+-------------------------
+
+29-05-19	08:19:20
+	pe/visione_pratiche.tab
+select id,nominativo,motivo,data,id,pratica,chk from pe.visione where pratica=76330  ORDER BY data DESC,tmsins DESC------- DEBUG DEL 29/05/2019 08:19:20 -------
+select id,nominativo,motivo,data,id,pratica,chk from pe.visione where pratica=76330  ORDER BY data DESC,tmsins DESC
+-------------------------
+
+29-05-19	08:27:40
+	pe/iter_pratica.tab
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76330  ORDER BY data------- DEBUG DEL 29/05/2019 08:27:40 -------
+select id,row_form,row_class,data,testo,id,pratica,chk from pe.vista_iter where pratica = 76330  ORDER BY data
+-------------------------
+
+29-05-19	08:27:41
+	pe/avvio_procedimento.tab
+select sportello,numero,data_presentazione,tipo,categoria,intervento,protocollo,data_prot,rif_pratica,cartella,resp_proc,data_resp,resp_it,data_resp_it,resp_amb,data_resp_amb,com_resp,data_com_resp,data_chiusura,oggetto,note,vincolo_paes,online,foreign_id,id,pratica,chk from pe.avvioproc where pratica=76330 ------- DEBUG DEL 29/05/2019 08:27:41 -------
+select sportello,numero,data_presentazione,tipo,categoria,intervento,protocollo,data_prot,rif_pratica,cartella,resp_proc,data_resp,resp_it,data_resp_it,resp_amb,data_resp_amb,com_resp,data_com_resp,data_chiusura,oggetto,note,vincolo_paes,online,foreign_id,id,pratica,chk from pe.avvioproc where pratica=76330 
+-------------------------
+
+29-05-19	08:27:44
+	pe/allegati.tab
+select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=76330 AND protocollo='18039' AND data_protocollo='17/05/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file------- DEBUG DEL 29/05/2019 08:27:44 -------
+select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=76330 AND protocollo='18039' AND data_protocollo='17/05/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file
+-------------------------
+
+29-05-19	08:27:44
+	pe/allegati.tab
+select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=76330 AND protocollo='18496' AND data_protocollo='21/05/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file------- DEBUG DEL 29/05/2019 08:27:44 -------
+select id,id,tipo_documento,nome_file,stato_allegato,note,ordine,id,pratica,chk from pe.elenco_allegati_pratica where coalesce(id,0)<>0 AND pratica=76330 AND protocollo='18496' AND data_protocollo='21/05/2019'::date  ORDER BY ordine,lower(tipo_documento),nome_file
+-------------------------
+
+29-05-19	08:27:53
+	pe/titolo.tab
+select titolo,protocollo,data_rilascio,data_notifica,data_ritiro,diniego,intervento,note,id,pratica,chk from pe.titolo where pratica=76330 ------- DEBUG DEL 29/05/2019 08:27:53 -------
+select titolo,protocollo,data_rilascio,data_notifica,data_ritiro,diniego,intervento,note,id,pratica,chk from pe.titolo where pratica=76330 
+-------------------------
+
+29-05-19	08:27:58
+	pe/visione_pratiche.tab
+select id,nominativo,motivo,data,id,pratica,chk from pe.visione where pratica=76330  ORDER BY data DESC,tmsins DESC------- DEBUG DEL 29/05/2019 08:27:58 -------
+select id,nominativo,motivo,data,id,pratica,chk from pe.visione where pratica=76330  ORDER BY data DESC,tmsins DESC
+-------------------------
+
+29-05-19	08:27:59
+	pe/visione_pratiche.tab
+select id,nominativo,motivo,data,id,pratica,chk from pe.visione where pratica=76330  ORDER BY data DESC,tmsins DESC------- DEBUG DEL 29/05/2019 08:27:59 -------
+select id,nominativo,motivo,data,id,pratica,chk from pe.visione where pratica=76330  ORDER BY data DESC,tmsins DESC
+-------------------------
