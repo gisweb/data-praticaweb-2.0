@@ -75,6 +75,9 @@ define('GC_URL','https://santamargherita.istanze-online.it/gisclient/maps/jquery
 define('QTID_PARTICELLE','170');
 define('QTID_CIVICI','25');
 
+
+define('DROPZONE_ENABLED',1);
+
 //in sessione per pmapper
 
 $_SESSION['USER_DATA']=DATA_DIR;
