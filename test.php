@@ -3,9 +3,11 @@ session_start();
 $_SESSION["USER_ID"]=1;
 define('APPS_DIR','/apps/praticaweb-2.1/');
 define('DATA_DIR','/data/rapallo/pe/');
-require_once APPS_DIR."login.php";
-require_once DATA_DIR."config.protocollo.php";
 
+require_once DATA_DIR."config.php";
+require_once DATA_DIR."config.protocollo.php";
+require_once LIB.'utils.class.php';
+require_once LOCAL_LIB."wsProtocollo.class.php";
 //require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoap.php";
 //require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoapmime.php";
 
