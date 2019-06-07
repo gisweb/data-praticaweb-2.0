@@ -1,0 +1,441 @@
+
+13-03-19	10:53:03	 --- STAMPA DI UN ARRAY ---
+	Array
+(
+    [success] => 1
+    [data] => Array
+        (
+            [DOC] => Array
+                (
+                    [ID_DOCUMENTO] => 1598953
+                    [IDRIF] => 497692
+                    [ANNO] => 2018
+                    [NUMERO] => 92583
+                    [TIPO_REGISTRO] => PROT
+                    [DESCRIZIONE_TIPO_REGISTRO] => Registro di Protocollo Generale
+                    [DATA] => 27/12/2018 12:00:00
+                    [OGGETTO] => MANUTENZIONE ORDINARIA CONDOMINIO PIAZZA DEL POPOLO 10
+                    [DATA_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [NUMERO_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [CLASS_COD] => 06-03
+                    [CLASS_DAL] => 01/01/2014 12:00:00
+                    [FASCICOLO_ANNO] => 2019
+                    [FASCICOLO_NUMERO] => 2981
+                    [RISERVATO] => N
+                    [STATO_PR] => PR
+                    [DOCUMENTO_TRAMITE] => PEC
+                    [TIPO_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [DESCRIZIONE_TIPO_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [UNITA_ESIBENTE] => Array
+                        (
+                        )
+
+                    [UNITA_PROTOCOLLANTE] => 010402
+                    [UTENTE_PROTOCOLLANTE] => 243
+                    [ANNULLATO] => Array
+                        (
+                        )
+
+                    [DATA_ANN] => Array
+                        (
+                        )
+
+                    [UTENTE_ANN] => Array
+                        (
+                        )
+
+                    [MODALITA] => ARR
+                )
+
+            [FILE_PRINCIPALE] => Array
+                (
+                    [FILE] => Array
+                        (
+                            [ID_OGGETTO_FILE] => 1105354
+                            [ID_DOCUMENTO] => 1598953
+                            [FILENAME] => 30307_COMUNESVML_13112018-2.pdf.p7m
+                        )
+
+                )
+
+            [ALLEGATI] => Array
+                (
+                    [ALLEGATO] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1598966
+                                    [DESC_TIPO_ALLEGATO] => Array
+                                        (
+                                        )
+
+                                    [TIPO_ALLEGATO] => Array
+                                        (
+                                        )
+
+                                    [DESCRIZIONE] => TestodelMessaggio.txt
+                                    [IDRIF] => 497692
+                                    [NUMERO_PAG] => Array
+                                        (
+                                        )
+
+                                    [QUANTITA] => Array
+                                        (
+                                        )
+
+                                    [RISERVATO] => Array
+                                        (
+                                        )
+
+                                    [TITOLO_DOCUMENTO] => Array
+                                        (
+                                        )
+
+                                    [FILE_ALLEGATI] => Array
+                                        (
+                                            [FILE] => Array
+                                                (
+                                                    [ID_OGGETTO_FILE] => 1105352
+                                                    [ID_DOCUMENTO] => 1598966
+                                                    [FILENAME] => TestodelMessaggio.txt
+                                                )
+
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1598967
+                                    [DESC_TIPO_ALLEGATO] => Array
+                                        (
+                                        )
+
+                                    [TIPO_ALLEGATO] => Array
+                                        (
+                                        )
+
+                                    [DESCRIZIONE] => delega digitale man ord.pdf.p7m
+                                    [IDRIF] => 497692
+                                    [NUMERO_PAG] => Array
+                                        (
+                                        )
+
+                                    [QUANTITA] => Array
+                                        (
+                                        )
+
+                                    [RISERVATO] => Array
+                                        (
+                                        )
+
+                                    [TITOLO_DOCUMENTO] => Array
+                                        (
+                                        )
+
+                                    [FILE_ALLEGATI] => Array
+                                        (
+                                            [FILE] => Array
+                                                (
+                                                    [ID_OGGETTO_FILE] => 1105353
+                                                    [ID_DOCUMENTO] => 1598967
+                                                    [FILENAME] => delega digitale man ord.pdf.p7m
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [SMISTAMENTI] => Array
+                (
+                    [SMISTAMENTO] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1598965
+                                    [DES_UFFICIO_SMISTAMENTO] => SETTORE 4 - PIANIFICAZIONE TERRITORIALE E SISTEMI INFORMATIVI
+                                    [DES_UFFICIO_TRASMISSIONE] => U.O. ARCHIVIO E PROTOCOLLO
+                                    [IDRIF] => 497692
+                                    [SMISTAMENTO_DAL] => 27/12/2018 12:00:00
+                                    [STATO_SMISTAMENTO] => F
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 05
+                                    [UFFICIO_TRASMISSIONE] => 010402
+                                    [UTENTE_TRASMISSIONE] => 243
+                                )
+
+                            [1] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1667232
+                                    [DES_UFFICIO_SMISTAMENTO] => SERVIZIO EDILIZIA PRIVATA
+                                    [DES_UFFICIO_TRASMISSIONE] => SETTORE 4 - PIANIFICAZIONE TERRITORIALE E SISTEMI INFORMATIVI
+                                    [IDRIF] => 497692
+                                    [SMISTAMENTO_DAL] => 29/01/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => F
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 0502
+                                    [UFFICIO_TRASMISSIONE] => 05
+                                    [UTENTE_TRASMISSIONE] => 383
+                                )
+
+                            [2] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1692646
+                                    [DES_UFFICIO_SMISTAMENTO] => U.O. AMMINISTRATIVO
+                                    [DES_UFFICIO_TRASMISSIONE] => SERVIZIO EDILIZIA PRIVATA
+                                    [IDRIF] => 497692
+                                    [SMISTAMENTO_DAL] => 08/02/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => E
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 050001
+                                    [UFFICIO_TRASMISSIONE] => 0502
+                                    [UTENTE_TRASMISSIONE] => 404
+                                )
+
+                        )
+
+                )
+
+            [RAPPORTI] => Array
+                (
+                    [RAPPORTO] => Array
+                        (
+                            [ID_DOCUMENTO] => 1598964
+                            [COGNOME_NOME] => ARCH TARAMASCO ELISABETTA
+                            [CODICE_FISCALE] => TRMLBT73S54I480V
+                            [EMAIL] => elisabetta.taramasco@archiworldpec.it
+                            [DENOMINAZIONE] => Array
+                                (
+                                )
+
+                            [INDIRIZZO] => Array
+                                (
+                                )
+
+                            [CAP] => Array
+                                (
+                                )
+
+                            [IDRIF] => 497692
+                            [CONOSCENZA] => N
+                            [COD_AMM] => Array
+                                (
+                                )
+
+                            [COD_AOO] => Array
+                                (
+                                )
+
+                            [COD_UO] => Array
+                                (
+                                )
+
+                            [DESCRIZIONE_AMM] => Array
+                                (
+                                )
+
+                            [DESCRIZIONE_AOO] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [message] => 
+)
+
+18-03-19	10:47:58	 --- STAMPA DI UN ARRAY ---
+	Array
+(
+    [success] => 1
+    [data] => Array
+        (
+            [DOC] => Array
+                (
+                    [ID_DOCUMENTO] => 1598953
+                    [IDRIF] => 497692
+                    [ANNO] => 2018
+                    [NUMERO] => 92583
+                    [TIPO_REGISTRO] => PROT
+                    [DESCRIZIONE_TIPO_REGISTRO] => Registro di Protocollo Generale
+                    [DATA] => 27/12/2018 12:00:00
+                    [OGGETTO] => MANUTENZIONE ORDINARIA CONDOMINIO PIAZZA DEL POPOLO 10
+                    [DATA_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [DATA_ARRIVO] => 26/12/2018 12:00:00
+                    [NUMERO_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [CLASS_COD] => 06-03
+                    [CLASS_DAL] => 01/01/2014 12:00:00
+                    [FASCICOLO_ANNO] => 2019
+                    [FASCICOLO_NUMERO] => 2981
+                    [RISERVATO] => N
+                    [STATO_PR] => PR
+                    [DOCUMENTO_TRAMITE] => PEC
+                    [TIPO_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [DESCRIZIONE_TIPO_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [UNITA_ESIBENTE] => Array
+                        (
+                        )
+
+                    [UNITA_PROTOCOLLANTE] => 010402
+                    [UTENTE_PROTOCOLLANTE] => 243
+                    [ANNULLATO] => Array
+                        (
+                        )
+
+                    [DATA_ANN] => Array
+                        (
+                        )
+
+                    [UTENTE_ANN] => Array
+                        (
+                        )
+
+                    [MODALITA] => ARR
+                )
+
+            [FILE_PRINCIPALE] => Array
+                (
+                    [FILE] => Array
+                        (
+                            [ID_OGGETTO_FILE] => 1105354
+                            [ID_DOCUMENTO] => 1598953
+                            [FILENAME] => 30307_COMUNESVML_13112018-2.pdf.p7m
+                        )
+
+                )
+
+            [ALLEGATI] => Array
+                (
+                )
+
+            [SMISTAMENTI] => Array
+                (
+                    [SMISTAMENTO] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1598965
+                                    [DES_UFFICIO_SMISTAMENTO] => SETTORE 4 - PIANIFICAZIONE TERRITORIALE E SISTEMI INFORMATIVI
+                                    [DES_UFFICIO_TRASMISSIONE] => U.O. ARCHIVIO E PROTOCOLLO
+                                    [IDRIF] => 497692
+                                    [SMISTAMENTO_DAL] => 27/12/2018 12:00:00
+                                    [STATO_SMISTAMENTO] => F
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 05
+                                    [UFFICIO_TRASMISSIONE] => 010402
+                                    [UTENTE_TRASMISSIONE] => 243
+                                )
+
+                            [1] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1667232
+                                    [DES_UFFICIO_SMISTAMENTO] => SERVIZIO EDILIZIA PRIVATA
+                                    [DES_UFFICIO_TRASMISSIONE] => SETTORE 4 - PIANIFICAZIONE TERRITORIALE E SISTEMI INFORMATIVI
+                                    [IDRIF] => 497692
+                                    [SMISTAMENTO_DAL] => 29/01/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => F
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 0502
+                                    [UFFICIO_TRASMISSIONE] => 05
+                                    [UTENTE_TRASMISSIONE] => 383
+                                )
+
+                            [2] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1692646
+                                    [DES_UFFICIO_SMISTAMENTO] => U.O. AMMINISTRATIVO
+                                    [DES_UFFICIO_TRASMISSIONE] => SERVIZIO EDILIZIA PRIVATA
+                                    [IDRIF] => 497692
+                                    [SMISTAMENTO_DAL] => 08/02/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => E
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 050001
+                                    [UFFICIO_TRASMISSIONE] => 0502
+                                    [UTENTE_TRASMISSIONE] => 404
+                                )
+
+                        )
+
+                )
+
+            [RAPPORTI] => Array
+                (
+                    [RAPPORTO] => Array
+                        (
+                            [ID_DOCUMENTO] => 1598964
+                            [COGNOME_NOME] => ARCH TARAMASCO ELISABETTA
+                            [CODICE_FISCALE] => TRMLBT73S54I480V
+                            [EMAIL] => elisabetta.taramasco@archiworldpec.it
+                            [DENOMINAZIONE] => Array
+                                (
+                                )
+
+                            [INDIRIZZO] => Array
+                                (
+                                )
+
+                            [CAP] => Array
+                                (
+                                )
+
+                            [IDRIF] => 497692
+                            [CONOSCENZA] => N
+                            [COD_AMM] => Array
+                                (
+                                )
+
+                            [COD_AOO] => Array
+                                (
+                                )
+
+                            [COD_UO] => Array
+                                (
+                                )
+
+                            [DESCRIZIONE_AMM] => Array
+                                (
+                                )
+
+                            [DESCRIZIONE_AOO] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [message] => 
+)

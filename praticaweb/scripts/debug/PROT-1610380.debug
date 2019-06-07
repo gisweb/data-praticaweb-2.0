@@ -1,0 +1,425 @@
+
+13-03-19	10:53:01	 --- STAMPA DI UN ARRAY ---
+	Array
+(
+    [success] => 1
+    [data] => Array
+        (
+            [DOC] => Array
+                (
+                    [ID_DOCUMENTO] => 1610380
+                    [IDRIF] => 501144
+                    [ANNO] => 2019
+                    [NUMERO] => 634
+                    [TIPO_REGISTRO] => PROT
+                    [DESCRIZIONE_TIPO_REGISTRO] => Registro di Protocollo Generale
+                    [DATA] => 04/01/2019 12:00:00
+                    [OGGETTO] => COMUNICAZIONE INIZIO LAVORI DI ORDINARIA MANUTENZIONE VIA MARTIRI DELLA DEPORTAZIONE 47
+                    [DATA_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [NUMERO_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [CLASS_COD] => 06-03
+                    [CLASS_DAL] => 01/01/2014 12:00:00
+                    [FASCICOLO_ANNO] => 2019
+                    [FASCICOLO_NUMERO] => 2981
+                    [RISERVATO] => N
+                    [STATO_PR] => PR
+                    [DOCUMENTO_TRAMITE] => 002
+                    [TIPO_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [DESCRIZIONE_TIPO_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [UNITA_ESIBENTE] => Array
+                        (
+                        )
+
+                    [UNITA_PROTOCOLLANTE] => 010402
+                    [UTENTE_PROTOCOLLANTE] => 243
+                    [ANNULLATO] => Array
+                        (
+                        )
+
+                    [DATA_ANN] => Array
+                        (
+                        )
+
+                    [UTENTE_ANN] => Array
+                        (
+                        )
+
+                    [MODALITA] => ARR
+                )
+
+            [FILE_PRINCIPALE] => Array
+                (
+                    [FILE] => Array
+                        (
+                            [ID_OGGETTO_FILE] => 1113247
+                            [ID_DOCUMENTO] => 1610380
+                            [FILENAME] => SI_0001610380_0.pdf
+                        )
+
+                )
+
+            [ALLEGATI] => Array
+                (
+                )
+
+            [SMISTAMENTI] => Array
+                (
+                    [SMISTAMENTO] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1610379
+                                    [DES_UFFICIO_SMISTAMENTO] => SETTORE 4 - PIANIFICAZIONE TERRITORIALE E SISTEMI INFORMATIVI
+                                    [DES_UFFICIO_TRASMISSIONE] => U.O. ARCHIVIO E PROTOCOLLO
+                                    [IDRIF] => 501144
+                                    [SMISTAMENTO_DAL] => 04/01/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => F
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 05
+                                    [UFFICIO_TRASMISSIONE] => 010402
+                                    [UTENTE_TRASMISSIONE] => 243
+                                )
+
+                            [1] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1613114
+                                    [DES_UFFICIO_SMISTAMENTO] => SERVIZIO EDILIZIA PRIVATA
+                                    [DES_UFFICIO_TRASMISSIONE] => SETTORE 4 - PIANIFICAZIONE TERRITORIALE E SISTEMI INFORMATIVI
+                                    [IDRIF] => 501144
+                                    [SMISTAMENTO_DAL] => 07/01/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => F
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 0502
+                                    [UFFICIO_TRASMISSIONE] => 05
+                                    [UTENTE_TRASMISSIONE] => 383
+                                )
+
+                            [2] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1641290
+                                    [DES_UFFICIO_SMISTAMENTO] => U.O. EDILIZIA CERTIFICATA
+                                    [DES_UFFICIO_TRASMISSIONE] => SERVIZIO EDILIZIA PRIVATA
+                                    [IDRIF] => 501144
+                                    [SMISTAMENTO_DAL] => 17/01/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => F
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 050202
+                                    [UFFICIO_TRASMISSIONE] => 0502
+                                    [UTENTE_TRASMISSIONE] => 404
+                                )
+
+                            [3] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1641685
+                                    [DES_UFFICIO_SMISTAMENTO] => U.O. AMMINISTRATIVO
+                                    [DES_UFFICIO_TRASMISSIONE] => SERVIZIO EDILIZIA PRIVATA
+                                    [IDRIF] => 501144
+                                    [SMISTAMENTO_DAL] => 17/01/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => F
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 050001
+                                    [UFFICIO_TRASMISSIONE] => 0502
+                                    [UTENTE_TRASMISSIONE] => 404
+                                )
+
+                            [4] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1658016
+                                    [DES_UFFICIO_SMISTAMENTO] => U.O. ARCHIVIO E PROTOCOLLO
+                                    [DES_UFFICIO_TRASMISSIONE] => U.O. AMMINISTRATIVO
+                                    [IDRIF] => 501144
+                                    [SMISTAMENTO_DAL] => 24/01/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => E
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 010402
+                                    [UFFICIO_TRASMISSIONE] => 050001
+                                    [UTENTE_TRASMISSIONE] => 339
+                                )
+
+                            [5] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1641303
+                                    [DES_UFFICIO_SMISTAMENTO] => SERVIZIO EDILIZIA PRIVATA
+                                    [DES_UFFICIO_TRASMISSIONE] => U.O. EDILIZIA CERTIFICATA
+                                    [IDRIF] => 501144
+                                    [SMISTAMENTO_DAL] => 17/01/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => E
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 0502
+                                    [UFFICIO_TRASMISSIONE] => 050202
+                                    [UTENTE_TRASMISSIONE] => 273
+                                )
+
+                        )
+
+                )
+
+            [RAPPORTI] => Array
+                (
+                    [RAPPORTO] => Array
+                        (
+                            [ID_DOCUMENTO] => 1610378
+                            [COGNOME_NOME] => BIANCAVILLA MAURO
+                            [CODICE_FISCALE] => BNCMRA48T22I480Y
+                            [EMAIL] => Array
+                                (
+                                )
+
+                            [DENOMINAZIONE] => BIANCAVILLA MAURO
+                            [INDIRIZZO] => VIA BARTOLOMEO GUIDOBONO 4/7
+                            [CAP] => 17100
+                            [IDRIF] => 501144
+                            [CONOSCENZA] => N
+                            [COD_AMM] => Array
+                                (
+                                )
+
+                            [COD_AOO] => Array
+                                (
+                                )
+
+                            [COD_UO] => Array
+                                (
+                                )
+
+                            [DESCRIZIONE_AMM] => Array
+                                (
+                                )
+
+                            [DESCRIZIONE_AOO] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [message] => 
+)
+
+18-03-19	10:47:56	 --- STAMPA DI UN ARRAY ---
+	Array
+(
+    [success] => 1
+    [data] => Array
+        (
+            [DOC] => Array
+                (
+                    [ID_DOCUMENTO] => 1610380
+                    [IDRIF] => 501144
+                    [ANNO] => 2019
+                    [NUMERO] => 634
+                    [TIPO_REGISTRO] => PROT
+                    [DESCRIZIONE_TIPO_REGISTRO] => Registro di Protocollo Generale
+                    [DATA] => 04/01/2019 12:00:00
+                    [OGGETTO] => COMUNICAZIONE INIZIO LAVORI DI ORDINARIA MANUTENZIONE VIA MARTIRI DELLA DEPORTAZIONE 47
+                    [DATA_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [DATA_ARRIVO] => 04/01/2019 12:00:00
+                    [NUMERO_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [CLASS_COD] => 06-03
+                    [CLASS_DAL] => 01/01/2014 12:00:00
+                    [FASCICOLO_ANNO] => 2019
+                    [FASCICOLO_NUMERO] => 2981
+                    [RISERVATO] => N
+                    [STATO_PR] => PR
+                    [DOCUMENTO_TRAMITE] => 002
+                    [TIPO_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [DESCRIZIONE_TIPO_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [UNITA_ESIBENTE] => Array
+                        (
+                        )
+
+                    [UNITA_PROTOCOLLANTE] => 010402
+                    [UTENTE_PROTOCOLLANTE] => 243
+                    [ANNULLATO] => Array
+                        (
+                        )
+
+                    [DATA_ANN] => Array
+                        (
+                        )
+
+                    [UTENTE_ANN] => Array
+                        (
+                        )
+
+                    [MODALITA] => ARR
+                )
+
+            [FILE_PRINCIPALE] => Array
+                (
+                    [FILE] => Array
+                        (
+                            [ID_OGGETTO_FILE] => 1113247
+                            [ID_DOCUMENTO] => 1610380
+                            [FILENAME] => SI_0001610380_0.pdf
+                        )
+
+                )
+
+            [ALLEGATI] => Array
+                (
+                )
+
+            [SMISTAMENTI] => Array
+                (
+                    [SMISTAMENTO] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1610379
+                                    [DES_UFFICIO_SMISTAMENTO] => SETTORE 4 - PIANIFICAZIONE TERRITORIALE E SISTEMI INFORMATIVI
+                                    [DES_UFFICIO_TRASMISSIONE] => U.O. ARCHIVIO E PROTOCOLLO
+                                    [IDRIF] => 501144
+                                    [SMISTAMENTO_DAL] => 04/01/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => F
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 05
+                                    [UFFICIO_TRASMISSIONE] => 010402
+                                    [UTENTE_TRASMISSIONE] => 243
+                                )
+
+                            [1] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1613114
+                                    [DES_UFFICIO_SMISTAMENTO] => SERVIZIO EDILIZIA PRIVATA
+                                    [DES_UFFICIO_TRASMISSIONE] => SETTORE 4 - PIANIFICAZIONE TERRITORIALE E SISTEMI INFORMATIVI
+                                    [IDRIF] => 501144
+                                    [SMISTAMENTO_DAL] => 07/01/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => F
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 0502
+                                    [UFFICIO_TRASMISSIONE] => 05
+                                    [UTENTE_TRASMISSIONE] => 383
+                                )
+
+                            [2] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1641290
+                                    [DES_UFFICIO_SMISTAMENTO] => U.O. EDILIZIA CERTIFICATA
+                                    [DES_UFFICIO_TRASMISSIONE] => SERVIZIO EDILIZIA PRIVATA
+                                    [IDRIF] => 501144
+                                    [SMISTAMENTO_DAL] => 17/01/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => F
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 050202
+                                    [UFFICIO_TRASMISSIONE] => 0502
+                                    [UTENTE_TRASMISSIONE] => 404
+                                )
+
+                            [3] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1641685
+                                    [DES_UFFICIO_SMISTAMENTO] => U.O. AMMINISTRATIVO
+                                    [DES_UFFICIO_TRASMISSIONE] => SERVIZIO EDILIZIA PRIVATA
+                                    [IDRIF] => 501144
+                                    [SMISTAMENTO_DAL] => 17/01/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => F
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 050001
+                                    [UFFICIO_TRASMISSIONE] => 0502
+                                    [UTENTE_TRASMISSIONE] => 404
+                                )
+
+                            [4] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1658016
+                                    [DES_UFFICIO_SMISTAMENTO] => U.O. ARCHIVIO E PROTOCOLLO
+                                    [DES_UFFICIO_TRASMISSIONE] => U.O. AMMINISTRATIVO
+                                    [IDRIF] => 501144
+                                    [SMISTAMENTO_DAL] => 24/01/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => E
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 010402
+                                    [UFFICIO_TRASMISSIONE] => 050001
+                                    [UTENTE_TRASMISSIONE] => 339
+                                )
+
+                            [5] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1641303
+                                    [DES_UFFICIO_SMISTAMENTO] => SERVIZIO EDILIZIA PRIVATA
+                                    [DES_UFFICIO_TRASMISSIONE] => U.O. EDILIZIA CERTIFICATA
+                                    [IDRIF] => 501144
+                                    [SMISTAMENTO_DAL] => 17/01/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => E
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 0502
+                                    [UFFICIO_TRASMISSIONE] => 050202
+                                    [UTENTE_TRASMISSIONE] => 273
+                                )
+
+                        )
+
+                )
+
+            [RAPPORTI] => Array
+                (
+                    [RAPPORTO] => Array
+                        (
+                            [ID_DOCUMENTO] => 1610378
+                            [COGNOME_NOME] => BIANCAVILLA MAURO
+                            [CODICE_FISCALE] => BNCMRA48T22I480Y
+                            [EMAIL] => Array
+                                (
+                                )
+
+                            [DENOMINAZIONE] => BIANCAVILLA MAURO
+                            [INDIRIZZO] => VIA BARTOLOMEO GUIDOBONO 4/7
+                            [CAP] => 17100
+                            [IDRIF] => 501144
+                            [CONOSCENZA] => N
+                            [COD_AMM] => Array
+                                (
+                                )
+
+                            [COD_AOO] => Array
+                                (
+                                )
+
+                            [COD_UO] => Array
+                                (
+                                )
+
+                            [DESCRIZIONE_AMM] => Array
+                                (
+                                )
+
+                            [DESCRIZIONE_AOO] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [message] => 
+)

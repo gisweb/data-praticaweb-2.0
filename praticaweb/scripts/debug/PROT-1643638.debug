@@ -1,0 +1,369 @@
+
+13-03-19	10:52:57	 --- STAMPA DI UN ARRAY ---
+	Array
+(
+    [success] => 1
+    [data] => Array
+        (
+            [DOC] => Array
+                (
+                    [ID_DOCUMENTO] => 1643638
+                    [IDRIF] => 511803
+                    [ANNO] => 2019
+                    [NUMERO] => 4329
+                    [TIPO_REGISTRO] => PROT
+                    [DESCRIZIONE_TIPO_REGISTRO] => Registro di Protocollo Generale
+                    [DATA] => 17/01/2019 12:00:00
+                    [OGGETTO] => COMUNICA IN DATA 17/1/2019 INIZIO LAVORI IMMOBILE IN VIA RUSCA 7/6
+                    [DATA_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [NUMERO_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [CLASS_COD] => 06-03
+                    [CLASS_DAL] => 01/01/2014 12:00:00
+                    [FASCICOLO_ANNO] => 2019
+                    [FASCICOLO_NUMERO] => 2981
+                    [RISERVATO] => N
+                    [STATO_PR] => PR
+                    [DOCUMENTO_TRAMITE] => 002
+                    [TIPO_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [DESCRIZIONE_TIPO_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [UNITA_ESIBENTE] => Array
+                        (
+                        )
+
+                    [UNITA_PROTOCOLLANTE] => 010402
+                    [UTENTE_PROTOCOLLANTE] => 283
+                    [ANNULLATO] => Array
+                        (
+                        )
+
+                    [DATA_ANN] => Array
+                        (
+                        )
+
+                    [UTENTE_ANN] => Array
+                        (
+                        )
+
+                    [MODALITA] => ARR
+                )
+
+            [FILE_PRINCIPALE] => Array
+                (
+                    [FILE] => Array
+                        (
+                            [ID_OGGETTO_FILE] => 1137864
+                            [ID_DOCUMENTO] => 1643638
+                            [FILENAME] => rivaroli.pdf
+                        )
+
+                )
+
+            [ALLEGATI] => Array
+                (
+                )
+
+            [SMISTAMENTI] => Array
+                (
+                    [SMISTAMENTO] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1643637
+                                    [DES_UFFICIO_SMISTAMENTO] => SETTORE 4 - PIANIFICAZIONE TERRITORIALE E SISTEMI INFORMATIVI
+                                    [DES_UFFICIO_TRASMISSIONE] => U.O. ARCHIVIO E PROTOCOLLO
+                                    [IDRIF] => 511803
+                                    [SMISTAMENTO_DAL] => 17/01/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => F
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 05
+                                    [UFFICIO_TRASMISSIONE] => 010402
+                                    [UTENTE_TRASMISSIONE] => 283
+                                )
+
+                            [1] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1658044
+                                    [DES_UFFICIO_SMISTAMENTO] => U.O. ARCHIVIO E PROTOCOLLO
+                                    [DES_UFFICIO_TRASMISSIONE] => U.O. AMMINISTRATIVO
+                                    [IDRIF] => 511803
+                                    [SMISTAMENTO_DAL] => 24/01/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => E
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 010402
+                                    [UFFICIO_TRASMISSIONE] => 050001
+                                    [UTENTE_TRASMISSIONE] => 339
+                                )
+
+                            [2] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1643646
+                                    [DES_UFFICIO_SMISTAMENTO] => SERVIZIO EDILIZIA PRIVATA
+                                    [DES_UFFICIO_TRASMISSIONE] => SETTORE 4 - PIANIFICAZIONE TERRITORIALE E SISTEMI INFORMATIVI
+                                    [IDRIF] => 511803
+                                    [SMISTAMENTO_DAL] => 17/01/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => E
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 0502
+                                    [UFFICIO_TRASMISSIONE] => 05
+                                    [UTENTE_TRASMISSIONE] => 383
+                                )
+
+                            [3] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1653841
+                                    [DES_UFFICIO_SMISTAMENTO] => U.O. AMMINISTRATIVO
+                                    [DES_UFFICIO_TRASMISSIONE] => SERVIZIO EDILIZIA PRIVATA
+                                    [IDRIF] => 511803
+                                    [SMISTAMENTO_DAL] => 23/01/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => F
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 050001
+                                    [UFFICIO_TRASMISSIONE] => 0502
+                                    [UTENTE_TRASMISSIONE] => 404
+                                )
+
+                        )
+
+                )
+
+            [RAPPORTI] => Array
+                (
+                    [RAPPORTO] => Array
+                        (
+                            [ID_DOCUMENTO] => 1643636
+                            [COGNOME_NOME] => RIVAROLI DIEGO
+                            [CODICE_FISCALE] => RVRDGI76L07I138H
+                            [EMAIL] => Array
+                                (
+                                )
+
+                            [DENOMINAZIONE] => RIVAROLI DIEGO
+                            [INDIRIZZO] => VIA N.S. DELL'OLMO 15/9
+                            [CAP] => 17100
+                            [IDRIF] => 511803
+                            [CONOSCENZA] => N
+                            [COD_AMM] => Array
+                                (
+                                )
+
+                            [COD_AOO] => Array
+                                (
+                                )
+
+                            [COD_UO] => Array
+                                (
+                                )
+
+                            [DESCRIZIONE_AMM] => Array
+                                (
+                                )
+
+                            [DESCRIZIONE_AOO] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [message] => 
+)
+
+18-03-19	10:47:51	 --- STAMPA DI UN ARRAY ---
+	Array
+(
+    [success] => 1
+    [data] => Array
+        (
+            [DOC] => Array
+                (
+                    [ID_DOCUMENTO] => 1643638
+                    [IDRIF] => 511803
+                    [ANNO] => 2019
+                    [NUMERO] => 4329
+                    [TIPO_REGISTRO] => PROT
+                    [DESCRIZIONE_TIPO_REGISTRO] => Registro di Protocollo Generale
+                    [DATA] => 17/01/2019 12:00:00
+                    [OGGETTO] => COMUNICA IN DATA 17/1/2019 INIZIO LAVORI IMMOBILE IN VIA RUSCA 7/6
+                    [DATA_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [DATA_ARRIVO] => 17/01/2019 12:00:00
+                    [NUMERO_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [CLASS_COD] => 06-03
+                    [CLASS_DAL] => 01/01/2014 12:00:00
+                    [FASCICOLO_ANNO] => 2019
+                    [FASCICOLO_NUMERO] => 2981
+                    [RISERVATO] => N
+                    [STATO_PR] => PR
+                    [DOCUMENTO_TRAMITE] => 002
+                    [TIPO_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [DESCRIZIONE_TIPO_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [UNITA_ESIBENTE] => Array
+                        (
+                        )
+
+                    [UNITA_PROTOCOLLANTE] => 010402
+                    [UTENTE_PROTOCOLLANTE] => 283
+                    [ANNULLATO] => Array
+                        (
+                        )
+
+                    [DATA_ANN] => Array
+                        (
+                        )
+
+                    [UTENTE_ANN] => Array
+                        (
+                        )
+
+                    [MODALITA] => ARR
+                )
+
+            [FILE_PRINCIPALE] => Array
+                (
+                    [FILE] => Array
+                        (
+                            [ID_OGGETTO_FILE] => 1137864
+                            [ID_DOCUMENTO] => 1643638
+                            [FILENAME] => rivaroli.pdf
+                        )
+
+                )
+
+            [ALLEGATI] => Array
+                (
+                )
+
+            [SMISTAMENTI] => Array
+                (
+                    [SMISTAMENTO] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1643637
+                                    [DES_UFFICIO_SMISTAMENTO] => SETTORE 4 - PIANIFICAZIONE TERRITORIALE E SISTEMI INFORMATIVI
+                                    [DES_UFFICIO_TRASMISSIONE] => U.O. ARCHIVIO E PROTOCOLLO
+                                    [IDRIF] => 511803
+                                    [SMISTAMENTO_DAL] => 17/01/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => F
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 05
+                                    [UFFICIO_TRASMISSIONE] => 010402
+                                    [UTENTE_TRASMISSIONE] => 283
+                                )
+
+                            [1] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1658044
+                                    [DES_UFFICIO_SMISTAMENTO] => U.O. ARCHIVIO E PROTOCOLLO
+                                    [DES_UFFICIO_TRASMISSIONE] => U.O. AMMINISTRATIVO
+                                    [IDRIF] => 511803
+                                    [SMISTAMENTO_DAL] => 24/01/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => E
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 010402
+                                    [UFFICIO_TRASMISSIONE] => 050001
+                                    [UTENTE_TRASMISSIONE] => 339
+                                )
+
+                            [2] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1643646
+                                    [DES_UFFICIO_SMISTAMENTO] => SERVIZIO EDILIZIA PRIVATA
+                                    [DES_UFFICIO_TRASMISSIONE] => SETTORE 4 - PIANIFICAZIONE TERRITORIALE E SISTEMI INFORMATIVI
+                                    [IDRIF] => 511803
+                                    [SMISTAMENTO_DAL] => 17/01/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => E
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 0502
+                                    [UFFICIO_TRASMISSIONE] => 05
+                                    [UTENTE_TRASMISSIONE] => 383
+                                )
+
+                            [3] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1653841
+                                    [DES_UFFICIO_SMISTAMENTO] => U.O. AMMINISTRATIVO
+                                    [DES_UFFICIO_TRASMISSIONE] => SERVIZIO EDILIZIA PRIVATA
+                                    [IDRIF] => 511803
+                                    [SMISTAMENTO_DAL] => 23/01/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => F
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 050001
+                                    [UFFICIO_TRASMISSIONE] => 0502
+                                    [UTENTE_TRASMISSIONE] => 404
+                                )
+
+                        )
+
+                )
+
+            [RAPPORTI] => Array
+                (
+                    [RAPPORTO] => Array
+                        (
+                            [ID_DOCUMENTO] => 1643636
+                            [COGNOME_NOME] => RIVAROLI DIEGO
+                            [CODICE_FISCALE] => RVRDGI76L07I138H
+                            [EMAIL] => Array
+                                (
+                                )
+
+                            [DENOMINAZIONE] => RIVAROLI DIEGO
+                            [INDIRIZZO] => VIA N.S. DELL&aposOLMO 15/9
+                            [CAP] => 17100
+                            [IDRIF] => 511803
+                            [CONOSCENZA] => N
+                            [COD_AMM] => Array
+                                (
+                                )
+
+                            [COD_AOO] => Array
+                                (
+                                )
+
+                            [COD_UO] => Array
+                                (
+                                )
+
+                            [DESCRIZIONE_AMM] => Array
+                                (
+                                )
+
+                            [DESCRIZIONE_AOO] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [message] => 
+)

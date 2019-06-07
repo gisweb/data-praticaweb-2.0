@@ -545,7 +545,7 @@ class appUtils extends generalAppUtils {
             //DETTAGLI DELLE SCADENZE
             $lLimit=(defined('LOWER_LIMIT'))?(LOWER_LIMIT):(5);
             $uLimit=(defined('UPPER_LIMIT'))?(UPPER_LIMIT):(3);
-            $sql="select A.id,A.pratica,B.numero,B.data_prot,testo as oggetto,ARRAY[soggetto_notificato] as interessati from pe.notifiche A inner join pe.avvioproc B using(pratica) where soggetto_notificato=$userId and visionato=0;";
+            $sql="select A.id,A.pratica,B.numero,B.data_prot,A.data_notifica,testo as oggetto,ARRAY[soggetto_notificato] as interessati,C.elenco_richiedenti as richiedenti from pe.notifiche A inner join pe.avvioproc B using(pratica) left join stp.single_elenco_richiedenti C USING(pratica) where soggetto_notificato=$userId and visionato=0 order by data_notifica DESC,A.tmsins DESC;";
             
             $stmt=$conn->prepare($sql);
             if(!$stmt->execute()){

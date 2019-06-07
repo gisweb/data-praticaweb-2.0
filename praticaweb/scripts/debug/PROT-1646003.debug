@@ -1,0 +1,403 @@
+
+13-03-19	10:52:57	 --- STAMPA DI UN ARRAY ---
+	Array
+(
+    [success] => 1
+    [data] => Array
+        (
+            [DOC] => Array
+                (
+                    [ID_DOCUMENTO] => 1646003
+                    [IDRIF] => 512544
+                    [ANNO] => 2019
+                    [NUMERO] => 4598
+                    [TIPO_REGISTRO] => PROT
+                    [DESCRIZIONE_TIPO_REGISTRO] => Registro di Protocollo Generale
+                    [DATA] => 18/01/2019 12:00:00
+                    [OGGETTO] => COMUNICAZIONE  INIZIO LAVORI OPERE ESTERNE RIPRISTINO PILASTRINI DELLA RECINZIONE CON RIFACIMENTO DELL'INTONACO E MANIFESTAZIONE DELLE STESSE CARATTERISTICHE ESISTENTI IMMOBILE SITO IN VIA DEI DE MARI 8
+                    [DATA_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [NUMERO_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [CLASS_COD] => 06-03
+                    [CLASS_DAL] => 01/01/2014 12:00:00
+                    [FASCICOLO_ANNO] => 2019
+                    [FASCICOLO_NUMERO] => 2981
+                    [RISERVATO] => N
+                    [STATO_PR] => PR
+                    [DOCUMENTO_TRAMITE] => 002
+                    [TIPO_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [DESCRIZIONE_TIPO_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [UNITA_ESIBENTE] => Array
+                        (
+                        )
+
+                    [UNITA_PROTOCOLLANTE] => 010402
+                    [UTENTE_PROTOCOLLANTE] => 243
+                    [ANNULLATO] => Array
+                        (
+                        )
+
+                    [DATA_ANN] => Array
+                        (
+                        )
+
+                    [UTENTE_ANN] => Array
+                        (
+                        )
+
+                    [MODALITA] => ARR
+                )
+
+            [FILE_PRINCIPALE] => Array
+                (
+                    [FILE] => Array
+                        (
+                            [ID_OGGETTO_FILE] => 1139515
+                            [ID_DOCUMENTO] => 1646003
+                            [FILENAME] => SI_0001646003_0.pdf
+                        )
+
+                )
+
+            [ALLEGATI] => Array
+                (
+                )
+
+            [SMISTAMENTI] => Array
+                (
+                    [SMISTAMENTO] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1646002
+                                    [DES_UFFICIO_SMISTAMENTO] => SETTORE 4 - PIANIFICAZIONE TERRITORIALE E SISTEMI INFORMATIVI
+                                    [DES_UFFICIO_TRASMISSIONE] => U.O. ARCHIVIO E PROTOCOLLO
+                                    [IDRIF] => 512544
+                                    [SMISTAMENTO_DAL] => 18/01/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => F
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 05
+                                    [UFFICIO_TRASMISSIONE] => 010402
+                                    [UTENTE_TRASMISSIONE] => 243
+                                )
+
+                            [1] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1663181
+                                    [DES_UFFICIO_SMISTAMENTO] => U.O. AMMINISTRATIVO
+                                    [DES_UFFICIO_TRASMISSIONE] => SERVIZIO EDILIZIA PRIVATA
+                                    [IDRIF] => 512544
+                                    [SMISTAMENTO_DAL] => 25/01/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => F
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 050001
+                                    [UFFICIO_TRASMISSIONE] => 0502
+                                    [UTENTE_TRASMISSIONE] => 404
+                                )
+
+                            [2] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1646051
+                                    [DES_UFFICIO_SMISTAMENTO] => SERVIZIO EDILIZIA PRIVATA
+                                    [DES_UFFICIO_TRASMISSIONE] => SETTORE 4 - PIANIFICAZIONE TERRITORIALE E SISTEMI INFORMATIVI
+                                    [IDRIF] => 512544
+                                    [SMISTAMENTO_DAL] => 18/01/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => E
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 0502
+                                    [UFFICIO_TRASMISSIONE] => 05
+                                    [UTENTE_TRASMISSIONE] => 383
+                                )
+
+                            [3] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1761175
+                                    [DES_UFFICIO_SMISTAMENTO] => U.O. ARCHIVIO E PROTOCOLLO
+                                    [DES_UFFICIO_TRASMISSIONE] => SERVIZIO INFORMATICA
+                                    [IDRIF] => 512544
+                                    [SMISTAMENTO_DAL] => 06/03/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => R
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 010402
+                                    [UFFICIO_TRASMISSIONE] => 0202
+                                    [UTENTE_TRASMISSIONE] => 218
+                                )
+
+                            [4] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1757271
+                                    [DES_UFFICIO_SMISTAMENTO] => SERVIZIO INFORMATICA
+                                    [DES_UFFICIO_TRASMISSIONE] => U.O. AMMINISTRATIVO
+                                    [IDRIF] => 512544
+                                    [SMISTAMENTO_DAL] => 05/03/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => F
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 0202
+                                    [UFFICIO_TRASMISSIONE] => 050001
+                                    [UTENTE_TRASMISSIONE] => 339
+                                )
+
+                        )
+
+                )
+
+            [RAPPORTI] => Array
+                (
+                    [RAPPORTO] => Array
+                        (
+                            [ID_DOCUMENTO] => 1646001
+                            [COGNOME_NOME] => MINUTO ROBERTO
+                            [CODICE_FISCALE] => MNTRRT31E20I480F
+                            [EMAIL] => Array
+                                (
+                                )
+
+                            [DENOMINAZIONE] => Array
+                                (
+                                )
+
+                            [INDIRIZZO] => via de mari 8/1
+                            [CAP] => 17100
+                            [IDRIF] => 512544
+                            [CONOSCENZA] => N
+                            [COD_AMM] => Array
+                                (
+                                )
+
+                            [COD_AOO] => Array
+                                (
+                                )
+
+                            [COD_UO] => Array
+                                (
+                                )
+
+                            [DESCRIZIONE_AMM] => Array
+                                (
+                                )
+
+                            [DESCRIZIONE_AOO] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [message] => 
+)
+
+18-03-19	10:47:52	 --- STAMPA DI UN ARRAY ---
+	Array
+(
+    [success] => 1
+    [data] => Array
+        (
+            [DOC] => Array
+                (
+                    [ID_DOCUMENTO] => 1646003
+                    [IDRIF] => 512544
+                    [ANNO] => 2019
+                    [NUMERO] => 4598
+                    [TIPO_REGISTRO] => PROT
+                    [DESCRIZIONE_TIPO_REGISTRO] => Registro di Protocollo Generale
+                    [DATA] => 18/01/2019 12:00:00
+                    [OGGETTO] => COMUNICAZIONE  INIZIO LAVORI OPERE ESTERNE RIPRISTINO PILASTRINI DELLA RECINZIONE CON RIFACIMENTO DELL&aposINTONACO E MANIFESTAZIONE DELLE STESSE CARATTERISTICHE ESISTENTI IMMOBILE SITO IN VIA DEI DE MARI 8
+                    [DATA_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [DATA_ARRIVO] => 18/01/2019 12:00:00
+                    [NUMERO_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [CLASS_COD] => 06-03
+                    [CLASS_DAL] => 01/01/2014 12:00:00
+                    [FASCICOLO_ANNO] => 2019
+                    [FASCICOLO_NUMERO] => 2981
+                    [RISERVATO] => N
+                    [STATO_PR] => PR
+                    [DOCUMENTO_TRAMITE] => 002
+                    [TIPO_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [DESCRIZIONE_TIPO_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [UNITA_ESIBENTE] => Array
+                        (
+                        )
+
+                    [UNITA_PROTOCOLLANTE] => 010402
+                    [UTENTE_PROTOCOLLANTE] => 243
+                    [ANNULLATO] => Array
+                        (
+                        )
+
+                    [DATA_ANN] => Array
+                        (
+                        )
+
+                    [UTENTE_ANN] => Array
+                        (
+                        )
+
+                    [MODALITA] => ARR
+                )
+
+            [FILE_PRINCIPALE] => Array
+                (
+                    [FILE] => Array
+                        (
+                            [ID_OGGETTO_FILE] => 1139515
+                            [ID_DOCUMENTO] => 1646003
+                            [FILENAME] => SI_0001646003_0.pdf
+                        )
+
+                )
+
+            [ALLEGATI] => Array
+                (
+                )
+
+            [SMISTAMENTI] => Array
+                (
+                    [SMISTAMENTO] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1646002
+                                    [DES_UFFICIO_SMISTAMENTO] => SETTORE 4 - PIANIFICAZIONE TERRITORIALE E SISTEMI INFORMATIVI
+                                    [DES_UFFICIO_TRASMISSIONE] => U.O. ARCHIVIO E PROTOCOLLO
+                                    [IDRIF] => 512544
+                                    [SMISTAMENTO_DAL] => 18/01/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => F
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 05
+                                    [UFFICIO_TRASMISSIONE] => 010402
+                                    [UTENTE_TRASMISSIONE] => 243
+                                )
+
+                            [1] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1663181
+                                    [DES_UFFICIO_SMISTAMENTO] => U.O. AMMINISTRATIVO
+                                    [DES_UFFICIO_TRASMISSIONE] => SERVIZIO EDILIZIA PRIVATA
+                                    [IDRIF] => 512544
+                                    [SMISTAMENTO_DAL] => 25/01/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => F
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 050001
+                                    [UFFICIO_TRASMISSIONE] => 0502
+                                    [UTENTE_TRASMISSIONE] => 404
+                                )
+
+                            [2] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1646051
+                                    [DES_UFFICIO_SMISTAMENTO] => SERVIZIO EDILIZIA PRIVATA
+                                    [DES_UFFICIO_TRASMISSIONE] => SETTORE 4 - PIANIFICAZIONE TERRITORIALE E SISTEMI INFORMATIVI
+                                    [IDRIF] => 512544
+                                    [SMISTAMENTO_DAL] => 18/01/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => E
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 0502
+                                    [UFFICIO_TRASMISSIONE] => 05
+                                    [UTENTE_TRASMISSIONE] => 383
+                                )
+
+                            [3] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1761175
+                                    [DES_UFFICIO_SMISTAMENTO] => U.O. ARCHIVIO E PROTOCOLLO
+                                    [DES_UFFICIO_TRASMISSIONE] => SERVIZIO INFORMATICA
+                                    [IDRIF] => 512544
+                                    [SMISTAMENTO_DAL] => 06/03/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => R
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 010402
+                                    [UFFICIO_TRASMISSIONE] => 0202
+                                    [UTENTE_TRASMISSIONE] => 218
+                                )
+
+                            [4] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1757271
+                                    [DES_UFFICIO_SMISTAMENTO] => SERVIZIO INFORMATICA
+                                    [DES_UFFICIO_TRASMISSIONE] => U.O. AMMINISTRATIVO
+                                    [IDRIF] => 512544
+                                    [SMISTAMENTO_DAL] => 05/03/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => F
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 0202
+                                    [UFFICIO_TRASMISSIONE] => 050001
+                                    [UTENTE_TRASMISSIONE] => 339
+                                )
+
+                        )
+
+                )
+
+            [RAPPORTI] => Array
+                (
+                    [RAPPORTO] => Array
+                        (
+                            [ID_DOCUMENTO] => 1646001
+                            [COGNOME_NOME] => MINUTO ROBERTO
+                            [CODICE_FISCALE] => MNTRRT31E20I480F
+                            [EMAIL] => Array
+                                (
+                                )
+
+                            [DENOMINAZIONE] => Array
+                                (
+                                )
+
+                            [INDIRIZZO] => via de mari 8/1
+                            [CAP] => 17100
+                            [IDRIF] => 512544
+                            [CONOSCENZA] => N
+                            [COD_AMM] => Array
+                                (
+                                )
+
+                            [COD_AOO] => Array
+                                (
+                                )
+
+                            [COD_UO] => Array
+                                (
+                                )
+
+                            [DESCRIZIONE_AMM] => Array
+                                (
+                                )
+
+                            [DESCRIZIONE_AOO] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [message] => 
+)

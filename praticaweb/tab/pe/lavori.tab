@@ -28,7 +28,7 @@ campi_obbligatori=""
 data[]="Tipo Comunicazione;tipo_comunicazione;xpe.elenco_tipicomunicazioni;selectdb|Data Lavori;data;;data"
 data[]="Data Comunicazione;data_comunicazione;10;data"
 data[]="Protocollo;protocollo;;text|Data Protocollo;data_protocollo;;data"
-data[]="Comunicazione Online;online;;yesno|Collegamento;foreign_id;;text" 
+data[]="Comunicazione Online;online;;yesno|Collegamento;foreign_id;;link" 
 data[]="Note;note;50x3;textarea"
 
 [standard]

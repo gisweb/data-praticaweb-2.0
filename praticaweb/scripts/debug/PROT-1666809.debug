@@ -1,0 +1,268 @@
+
+13-03-19	10:52:59	 --- STAMPA DI UN ARRAY ---
+	Array
+(
+    [success] => 1
+    [data] => Array
+        (
+            [DOC] => Array
+                (
+                    [ID_DOCUMENTO] => 1666809
+                    [IDRIF] => 518860
+                    [ANNO] => 2019
+                    [NUMERO] => 6934
+                    [TIPO_REGISTRO] => PROT
+                    [DESCRIZIONE_TIPO_REGISTRO] => Registro di Protocollo Generale
+                    [DATA] => 28/01/2019 12:00:00
+                    [OGGETTO] => RIPRISTINO DEI MURI ATRIO E DELLA PRIMA RAMPA DI SCALE COMPRESA LA TINTEGGIATURA DELLA GABBIA ASCENSORE.
+                    [DATA_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [NUMERO_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [CLASS_COD] => 06-03
+                    [CLASS_DAL] => 01/01/2014 12:00:00
+                    [FASCICOLO_ANNO] => 2019
+                    [FASCICOLO_NUMERO] => 2981
+                    [RISERVATO] => N
+                    [STATO_PR] => PR
+                    [DOCUMENTO_TRAMITE] => Array
+                        (
+                        )
+
+                    [TIPO_DOCUMENTO] => 043
+                    [DESCRIZIONE_TIPO_DOCUMENTO] => PRATICAWEBSUE
+                    [UNITA_ESIBENTE] => Array
+                        (
+                        )
+
+                    [UNITA_PROTOCOLLANTE] => 010402
+                    [UTENTE_PROTOCOLLANTE] => AGSPRWS
+                    [ANNULLATO] => Array
+                        (
+                        )
+
+                    [DATA_ANN] => Array
+                        (
+                        )
+
+                    [UTENTE_ANN] => Array
+                        (
+                        )
+
+                    [MODALITA] => ARR
+                )
+
+            [FILE_PRINCIPALE] => Array
+                (
+                    [FILE] => Array
+                        (
+                            [ID_OGGETTO_FILE] => 1154959
+                            [ID_DOCUMENTO] => 1666809
+                            [FILENAME] => istanza-di-comunicazione-art.21.pdf.p7m
+                        )
+
+                )
+
+            [ALLEGATI] => Array
+                (
+                )
+
+            [SMISTAMENTI] => Array
+                (
+                    [SMISTAMENTO] => Array
+                        (
+                            [ID_DOCUMENTO] => 1666807
+                            [DES_UFFICIO_SMISTAMENTO] => U.O. AMMINISTRATIVO
+                            [DES_UFFICIO_TRASMISSIONE] => U.O. ARCHIVIO E PROTOCOLLO
+                            [IDRIF] => 518860
+                            [SMISTAMENTO_DAL] => 28/01/2019 12:00:00
+                            [STATO_SMISTAMENTO] => E
+                            [TIPO_SMISTAMENTO] => COMPETENZA
+                            [UFFICIO_SMISTAMENTO] => 050001
+                            [UFFICIO_TRASMISSIONE] => 010402
+                            [UTENTE_TRASMISSIONE] => AGSPRWS
+                        )
+
+                )
+
+            [RAPPORTI] => Array
+                (
+                    [RAPPORTO] => Array
+                        (
+                            [ID_DOCUMENTO] => 1666808
+                            [COGNOME_NOME] => BAGNASCO BARBARA
+                            [CODICE_FISCALE] => BGNBBR63T49I480X
+                            [EMAIL] => STUDIORICOTTA@GMAIL.COM
+                            [DENOMINAZIONE] => BAGNASCO
+                            [INDIRIZZO] => VIA GARASSINO 1/1
+                            [CAP] => 17100
+                            [IDRIF] => 518860
+                            [CONOSCENZA] => N
+                            [COD_AMM] => Array
+                                (
+                                )
+
+                            [COD_AOO] => Array
+                                (
+                                )
+
+                            [COD_UO] => Array
+                                (
+                                )
+
+                            [DESCRIZIONE_AMM] => Array
+                                (
+                                )
+
+                            [DESCRIZIONE_AOO] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [message] => 
+)
+
+18-03-19	10:47:53	 --- STAMPA DI UN ARRAY ---
+	Array
+(
+    [success] => 1
+    [data] => Array
+        (
+            [DOC] => Array
+                (
+                    [ID_DOCUMENTO] => 1666809
+                    [IDRIF] => 518860
+                    [ANNO] => 2019
+                    [NUMERO] => 6934
+                    [TIPO_REGISTRO] => PROT
+                    [DESCRIZIONE_TIPO_REGISTRO] => Registro di Protocollo Generale
+                    [DATA] => 28/01/2019 12:00:00
+                    [OGGETTO] => RIPRISTINO DEI MURI ATRIO E DELLA PRIMA RAMPA DI SCALE COMPRESA LA TINTEGGIATURA DELLA GABBIA ASCENSORE.
+                    [DATA_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [DATA_ARRIVO] => Array
+                        (
+                        )
+
+                    [NUMERO_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [CLASS_COD] => 06-03
+                    [CLASS_DAL] => 01/01/2014 12:00:00
+                    [FASCICOLO_ANNO] => 2019
+                    [FASCICOLO_NUMERO] => 2981
+                    [RISERVATO] => N
+                    [STATO_PR] => PR
+                    [DOCUMENTO_TRAMITE] => Array
+                        (
+                        )
+
+                    [TIPO_DOCUMENTO] => 043
+                    [DESCRIZIONE_TIPO_DOCUMENTO] => PRATICAWEBSUE
+                    [UNITA_ESIBENTE] => Array
+                        (
+                        )
+
+                    [UNITA_PROTOCOLLANTE] => 010402
+                    [UTENTE_PROTOCOLLANTE] => AGSPRWS
+                    [ANNULLATO] => Array
+                        (
+                        )
+
+                    [DATA_ANN] => Array
+                        (
+                        )
+
+                    [UTENTE_ANN] => Array
+                        (
+                        )
+
+                    [MODALITA] => ARR
+                )
+
+            [FILE_PRINCIPALE] => Array
+                (
+                    [FILE] => Array
+                        (
+                            [ID_OGGETTO_FILE] => 1154959
+                            [ID_DOCUMENTO] => 1666809
+                            [FILENAME] => istanza-di-comunicazione-art.21.pdf.p7m
+                        )
+
+                )
+
+            [ALLEGATI] => Array
+                (
+                )
+
+            [SMISTAMENTI] => Array
+                (
+                    [SMISTAMENTO] => Array
+                        (
+                            [ID_DOCUMENTO] => 1666807
+                            [DES_UFFICIO_SMISTAMENTO] => U.O. AMMINISTRATIVO
+                            [DES_UFFICIO_TRASMISSIONE] => U.O. ARCHIVIO E PROTOCOLLO
+                            [IDRIF] => 518860
+                            [SMISTAMENTO_DAL] => 28/01/2019 12:00:00
+                            [STATO_SMISTAMENTO] => E
+                            [TIPO_SMISTAMENTO] => COMPETENZA
+                            [UFFICIO_SMISTAMENTO] => 050001
+                            [UFFICIO_TRASMISSIONE] => 010402
+                            [UTENTE_TRASMISSIONE] => AGSPRWS
+                        )
+
+                )
+
+            [RAPPORTI] => Array
+                (
+                    [RAPPORTO] => Array
+                        (
+                            [ID_DOCUMENTO] => 1666808
+                            [COGNOME_NOME] => BAGNASCO BARBARA
+                            [CODICE_FISCALE] => BGNBBR63T49I480X
+                            [EMAIL] => STUDIORICOTTA@GMAIL.COM
+                            [DENOMINAZIONE] => BAGNASCO
+                            [INDIRIZZO] => VIA GARASSINO 1/1
+                            [CAP] => 17100
+                            [IDRIF] => 518860
+                            [CONOSCENZA] => N
+                            [COD_AMM] => Array
+                                (
+                                )
+
+                            [COD_AOO] => Array
+                                (
+                                )
+
+                            [COD_UO] => Array
+                                (
+                                )
+
+                            [DESCRIZIONE_AMM] => Array
+                                (
+                                )
+
+                            [DESCRIZIONE_AOO] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [message] => 
+)

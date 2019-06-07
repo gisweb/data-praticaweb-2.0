@@ -5,6 +5,20 @@ viewable=""
 editable=""
 print_form="pe.avvioproc"
 
+[new]
+table="stp.stampe"
+chiave="id"
+campi_obbligatori=""
+data[]="Nome;file_doc;70;text"
+data[]="File;file;50;upload"
+data[]="Descrizione;descrizione;60x3;textarea"
+data[]="Direzione;direzione;150xpe.elenco_direzioni_documenti;selectdb"
+data[]="Tipo Documento;tipo_documento;200xpe.elenco_tipo_documenti;selectdb"
+data[]="Data Invio;data_invio;10;data|Protocollo Uscita;prot_out;15;text"
+data[]="Data Ricezione;data_ricezione;10;data|Protocollo Ricezione;prot_in;15;text"
+
+button="Annulla;azione;;submit|Salva;azione;;submit"
+
 [edit]
 table="stp.stampe"
 chiave="id"
@@ -17,7 +31,7 @@ data[]="Tipo Documento;tipo_documento;200xpe.elenco_tipo_documenti;selectdb"
 data[]="Data Invio;data_invio;10;data|Protocollo Uscita;prot_out;15;text"
 data[]="Data Ricezione;data_ricezione;10;data|Protocollo Ricezione;prot_in;15;text"
 
-button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
+button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit|prisma;azione;;submit"
 
 [list]
 table="stp.stampe"

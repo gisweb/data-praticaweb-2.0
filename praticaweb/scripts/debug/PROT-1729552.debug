@@ -1,0 +1,334 @@
+
+13-03-19	10:52:58	 --- STAMPA DI UN ARRAY ---
+	Array
+(
+    [success] => 1
+    [data] => Array
+        (
+            [DOC] => Array
+                (
+                    [ID_DOCUMENTO] => 1729552
+                    [IDRIF] => 541071
+                    [ANNO] => 2019
+                    [NUMERO] => 13760
+                    [TIPO_REGISTRO] => PROT
+                    [DESCRIZIONE_TIPO_REGISTRO] => Registro di Protocollo Generale
+                    [DATA] => 26/02/2019 12:00:00
+                    [OGGETTO] => COMUNICAZIONE ATTIVITÀ EDILIZIA LIBERA AI SENSI DELL’ART. 6 DEL DPR 380/01 RELATIVA A “INSTALLAZIONE PERGOTENDA” PRESSO VIA PIETRAGROSSA 1F.
+RICHIESTA DI DOCUMENTAZIONE INTEGRATIVA.
+                    [DATA_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [NUMERO_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [CLASS_COD] => 06-03
+                    [CLASS_DAL] => 01/01/2014 12:00:00
+                    [FASCICOLO_ANNO] => 2019
+                    [FASCICOLO_NUMERO] => 2981
+                    [RISERVATO] => N
+                    [STATO_PR] => PR
+                    [DOCUMENTO_TRAMITE] => Array
+                        (
+                        )
+
+                    [TIPO_DOCUMENTO] => 009
+                    [DESCRIZIONE_TIPO_DOCUMENTO] => COMUNICAZIONE
+                    [UNITA_ESIBENTE] => Array
+                        (
+                        )
+
+                    [UNITA_PROTOCOLLANTE] => 050202
+                    [UTENTE_PROTOCOLLANTE] => 273
+                    [ANNULLATO] => Array
+                        (
+                        )
+
+                    [DATA_ANN] => Array
+                        (
+                        )
+
+                    [UTENTE_ANN] => Array
+                        (
+                        )
+
+                    [MODALITA] => PAR
+                )
+
+            [FILE_PRINCIPALE] => Array
+                (
+                    [FILE] => Array
+                        (
+                            [ID_OGGETTO_FILE] => 1201451
+                            [ID_DOCUMENTO] => 1729552
+                            [FILENAME] => Lettera_PROT_2019_13760.pdf.p7m
+                        )
+
+                )
+
+            [ALLEGATI] => Array
+                (
+                )
+
+            [SMISTAMENTI] => Array
+                (
+                )
+
+            [RAPPORTI] => Array
+                (
+                    [RAPPORTO] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1729553
+                                    [COGNOME_NOME] => VASSALLO FABIO
+                                    [CODICE_FISCALE] => Array
+                                        (
+                                        )
+
+                                    [EMAIL] => Array
+                                        (
+                                        )
+
+                                    [DENOMINAZIONE] => VASSALLO  FABIO
+                                    [INDIRIZZO] => via pietragrossa 1
+                                    [CAP] => 17100
+                                    [IDRIF] => 541071
+                                    [CONOSCENZA] => N
+                                    [COD_AMM] => Array
+                                        (
+                                        )
+
+                                    [COD_AOO] => Array
+                                        (
+                                        )
+
+                                    [COD_UO] => Array
+                                        (
+                                        )
+
+                                    [DESCRIZIONE_AMM] => Array
+                                        (
+                                        )
+
+                                    [DESCRIZIONE_AOO] => Array
+                                        (
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1729554
+                                    [COGNOME_NOME] => GALLO MASSIMO
+                                    [CODICE_FISCALE] => Array
+                                        (
+                                        )
+
+                                    [EMAIL] => ARCH.GALLO@PEC.IT
+                                    [DENOMINAZIONE] => GALLO MASSIMO
+                                    [INDIRIZZO] => VIA VERZELLINO 11
+                                    [CAP] => 17100
+                                    [IDRIF] => 541071
+                                    [CONOSCENZA] => N
+                                    [COD_AMM] => Array
+                                        (
+                                        )
+
+                                    [COD_AOO] => Array
+                                        (
+                                        )
+
+                                    [COD_UO] => Array
+                                        (
+                                        )
+
+                                    [DESCRIZIONE_AMM] => Array
+                                        (
+                                        )
+
+                                    [DESCRIZIONE_AOO] => Array
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [message] => 
+)
+
+18-03-19	10:47:53	 --- STAMPA DI UN ARRAY ---
+	Array
+(
+    [success] => 1
+    [data] => Array
+        (
+            [DOC] => Array
+                (
+                    [ID_DOCUMENTO] => 1729552
+                    [IDRIF] => 541071
+                    [ANNO] => 2019
+                    [NUMERO] => 13760
+                    [TIPO_REGISTRO] => PROT
+                    [DESCRIZIONE_TIPO_REGISTRO] => Registro di Protocollo Generale
+                    [DATA] => 26/02/2019 12:00:00
+                    [OGGETTO] => COMUNICAZIONE ATTIVITÀ EDILIZIA LIBERA AI SENSI DELL’ART. 6 DEL DPR 380/01 RELATIVA A “INSTALLAZIONE PERGOTENDA” PRESSO VIA PIETRAGROSSA 1F.
+RICHIESTA DI DOCUMENTAZIONE INTEGRATIVA.
+                    [DATA_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [DATA_ARRIVO] => Array
+                        (
+                        )
+
+                    [NUMERO_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [CLASS_COD] => 06-03
+                    [CLASS_DAL] => 01/01/2014 12:00:00
+                    [FASCICOLO_ANNO] => 2019
+                    [FASCICOLO_NUMERO] => 2981
+                    [RISERVATO] => N
+                    [STATO_PR] => PR
+                    [DOCUMENTO_TRAMITE] => Array
+                        (
+                        )
+
+                    [TIPO_DOCUMENTO] => 009
+                    [DESCRIZIONE_TIPO_DOCUMENTO] => COMUNICAZIONE
+                    [UNITA_ESIBENTE] => Array
+                        (
+                        )
+
+                    [UNITA_PROTOCOLLANTE] => 050202
+                    [UTENTE_PROTOCOLLANTE] => 273
+                    [ANNULLATO] => Array
+                        (
+                        )
+
+                    [DATA_ANN] => Array
+                        (
+                        )
+
+                    [UTENTE_ANN] => Array
+                        (
+                        )
+
+                    [MODALITA] => PAR
+                )
+
+            [FILE_PRINCIPALE] => Array
+                (
+                    [FILE] => Array
+                        (
+                            [ID_OGGETTO_FILE] => 1201451
+                            [ID_DOCUMENTO] => 1729552
+                            [FILENAME] => Lettera_PROT_2019_13760.pdf.p7m
+                        )
+
+                )
+
+            [ALLEGATI] => Array
+                (
+                )
+
+            [SMISTAMENTI] => Array
+                (
+                )
+
+            [RAPPORTI] => Array
+                (
+                    [RAPPORTO] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1729553
+                                    [COGNOME_NOME] => VASSALLO FABIO
+                                    [CODICE_FISCALE] => Array
+                                        (
+                                        )
+
+                                    [EMAIL] => Array
+                                        (
+                                        )
+
+                                    [DENOMINAZIONE] => VASSALLO  FABIO
+                                    [INDIRIZZO] => via pietragrossa 1
+                                    [CAP] => 17100
+                                    [IDRIF] => 541071
+                                    [CONOSCENZA] => N
+                                    [COD_AMM] => Array
+                                        (
+                                        )
+
+                                    [COD_AOO] => Array
+                                        (
+                                        )
+
+                                    [COD_UO] => Array
+                                        (
+                                        )
+
+                                    [DESCRIZIONE_AMM] => Array
+                                        (
+                                        )
+
+                                    [DESCRIZIONE_AOO] => Array
+                                        (
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1729554
+                                    [COGNOME_NOME] => GALLO MASSIMO
+                                    [CODICE_FISCALE] => Array
+                                        (
+                                        )
+
+                                    [EMAIL] => ARCH.GALLO@PEC.IT
+                                    [DENOMINAZIONE] => GALLO MASSIMO
+                                    [INDIRIZZO] => VIA VERZELLINO 11
+                                    [CAP] => 17100
+                                    [IDRIF] => 541071
+                                    [CONOSCENZA] => N
+                                    [COD_AMM] => Array
+                                        (
+                                        )
+
+                                    [COD_AOO] => Array
+                                        (
+                                        )
+
+                                    [COD_UO] => Array
+                                        (
+                                        )
+
+                                    [DESCRIZIONE_AMM] => Array
+                                        (
+                                        )
+
+                                    [DESCRIZIONE_AOO] => Array
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [message] => 
+)

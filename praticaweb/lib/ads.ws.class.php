@@ -19,6 +19,10 @@ class adsWS{
 		$this->passwd = $pwd;
 		$this->codEnte = $codEnte;
 	}
+	
+	function login(){
+		
+	}
 }
 
 ?>

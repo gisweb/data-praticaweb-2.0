@@ -1,0 +1,335 @@
+
+13-03-19	10:52:53	 --- STAMPA DI UN ARRAY ---
+	Array
+(
+    [success] => 1
+    [data] => Array
+        (
+            [DOC] => Array
+                (
+                    [ID_DOCUMENTO] => 1649529
+                    [IDRIF] => 513585
+                    [ANNO] => 2019
+                    [NUMERO] => 4993
+                    [TIPO_REGISTRO] => PROT
+                    [DESCRIZIONE_TIPO_REGISTRO] => Registro di Protocollo Generale
+                    [DATA] => 22/01/2019 12:00:00
+                    [OGGETTO] => INIZIO LAVORI DI MANUTENZIONE ORDINARIA IN CORSO VITTORIO VENETO 20/9
+                    [DATA_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [NUMERO_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [CLASS_COD] => 06-03
+                    [CLASS_DAL] => 01/01/2014 12:00:00
+                    [FASCICOLO_ANNO] => 2019
+                    [FASCICOLO_NUMERO] => 2981
+                    [RISERVATO] => N
+                    [STATO_PR] => PR
+                    [DOCUMENTO_TRAMITE] => 002
+                    [TIPO_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [DESCRIZIONE_TIPO_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [UNITA_ESIBENTE] => Array
+                        (
+                        )
+
+                    [UNITA_PROTOCOLLANTE] => 010402
+                    [UTENTE_PROTOCOLLANTE] => 435
+                    [ANNULLATO] => Array
+                        (
+                        )
+
+                    [DATA_ANN] => Array
+                        (
+                        )
+
+                    [UTENTE_ANN] => Array
+                        (
+                        )
+
+                    [MODALITA] => ARR
+                )
+
+            [FILE_PRINCIPALE] => Array
+                (
+                    [FILE] => Array
+                        (
+                            [ID_OGGETTO_FILE] => 1142109
+                            [ID_DOCUMENTO] => 1649529
+                            [FILENAME] => CALVI.pdf
+                        )
+
+                )
+
+            [ALLEGATI] => Array
+                (
+                )
+
+            [SMISTAMENTI] => Array
+                (
+                    [SMISTAMENTO] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1649528
+                                    [DES_UFFICIO_SMISTAMENTO] => SETTORE 4 - PIANIFICAZIONE TERRITORIALE E SISTEMI INFORMATIVI
+                                    [DES_UFFICIO_TRASMISSIONE] => U.O. ARCHIVIO E PROTOCOLLO
+                                    [IDRIF] => 513585
+                                    [SMISTAMENTO_DAL] => 22/01/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => F
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 05
+                                    [UFFICIO_TRASMISSIONE] => 010402
+                                    [UTENTE_TRASMISSIONE] => 435
+                                )
+
+                            [1] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1663177
+                                    [DES_UFFICIO_SMISTAMENTO] => U.O. AMMINISTRATIVO
+                                    [DES_UFFICIO_TRASMISSIONE] => SERVIZIO EDILIZIA PRIVATA
+                                    [IDRIF] => 513585
+                                    [SMISTAMENTO_DAL] => 25/01/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => E
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 050001
+                                    [UFFICIO_TRASMISSIONE] => 0502
+                                    [UTENTE_TRASMISSIONE] => 404
+                                )
+
+                            [2] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1655845
+                                    [DES_UFFICIO_SMISTAMENTO] => SERVIZIO EDILIZIA PRIVATA
+                                    [DES_UFFICIO_TRASMISSIONE] => SETTORE 4 - PIANIFICAZIONE TERRITORIALE E SISTEMI INFORMATIVI
+                                    [IDRIF] => 513585
+                                    [SMISTAMENTO_DAL] => 23/01/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => E
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 0502
+                                    [UFFICIO_TRASMISSIONE] => 05
+                                    [UTENTE_TRASMISSIONE] => 383
+                                )
+
+                        )
+
+                )
+
+            [RAPPORTI] => Array
+                (
+                    [RAPPORTO] => Array
+                        (
+                            [ID_DOCUMENTO] => 1649527
+                            [COGNOME_NOME] => CALVI LUCIANO
+                            [CODICE_FISCALE] => CLVLCN48L01C816J
+                            [EMAIL] => ING.FERRANTE@ALICE.IT
+                            [DENOMINAZIONE] => CALVI LUCIANO
+                            [INDIRIZZO] => CORSO VITTORIO VENETO 20/9
+                            [CAP] => 17100
+                            [IDRIF] => 513585
+                            [CONOSCENZA] => N
+                            [COD_AMM] => Array
+                                (
+                                )
+
+                            [COD_AOO] => Array
+                                (
+                                )
+
+                            [COD_UO] => Array
+                                (
+                                )
+
+                            [DESCRIZIONE_AMM] => Array
+                                (
+                                )
+
+                            [DESCRIZIONE_AOO] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [message] => 
+)
+
+18-03-19	10:47:46	 --- STAMPA DI UN ARRAY ---
+	Array
+(
+    [success] => 1
+    [data] => Array
+        (
+            [DOC] => Array
+                (
+                    [ID_DOCUMENTO] => 1649529
+                    [IDRIF] => 513585
+                    [ANNO] => 2019
+                    [NUMERO] => 4993
+                    [TIPO_REGISTRO] => PROT
+                    [DESCRIZIONE_TIPO_REGISTRO] => Registro di Protocollo Generale
+                    [DATA] => 22/01/2019 12:00:00
+                    [OGGETTO] => INIZIO LAVORI DI MANUTENZIONE ORDINARIA IN CORSO VITTORIO VENETO 20/9
+                    [DATA_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [DATA_ARRIVO] => 21/01/2019 12:00:00
+                    [NUMERO_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [CLASS_COD] => 06-03
+                    [CLASS_DAL] => 01/01/2014 12:00:00
+                    [FASCICOLO_ANNO] => 2019
+                    [FASCICOLO_NUMERO] => 2981
+                    [RISERVATO] => N
+                    [STATO_PR] => PR
+                    [DOCUMENTO_TRAMITE] => 002
+                    [TIPO_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [DESCRIZIONE_TIPO_DOCUMENTO] => Array
+                        (
+                        )
+
+                    [UNITA_ESIBENTE] => Array
+                        (
+                        )
+
+                    [UNITA_PROTOCOLLANTE] => 010402
+                    [UTENTE_PROTOCOLLANTE] => 435
+                    [ANNULLATO] => Array
+                        (
+                        )
+
+                    [DATA_ANN] => Array
+                        (
+                        )
+
+                    [UTENTE_ANN] => Array
+                        (
+                        )
+
+                    [MODALITA] => ARR
+                )
+
+            [FILE_PRINCIPALE] => Array
+                (
+                    [FILE] => Array
+                        (
+                            [ID_OGGETTO_FILE] => 1142109
+                            [ID_DOCUMENTO] => 1649529
+                            [FILENAME] => CALVI.pdf
+                        )
+
+                )
+
+            [ALLEGATI] => Array
+                (
+                )
+
+            [SMISTAMENTI] => Array
+                (
+                    [SMISTAMENTO] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1649528
+                                    [DES_UFFICIO_SMISTAMENTO] => SETTORE 4 - PIANIFICAZIONE TERRITORIALE E SISTEMI INFORMATIVI
+                                    [DES_UFFICIO_TRASMISSIONE] => U.O. ARCHIVIO E PROTOCOLLO
+                                    [IDRIF] => 513585
+                                    [SMISTAMENTO_DAL] => 22/01/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => F
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 05
+                                    [UFFICIO_TRASMISSIONE] => 010402
+                                    [UTENTE_TRASMISSIONE] => 435
+                                )
+
+                            [1] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1663177
+                                    [DES_UFFICIO_SMISTAMENTO] => U.O. AMMINISTRATIVO
+                                    [DES_UFFICIO_TRASMISSIONE] => SERVIZIO EDILIZIA PRIVATA
+                                    [IDRIF] => 513585
+                                    [SMISTAMENTO_DAL] => 25/01/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => E
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 050001
+                                    [UFFICIO_TRASMISSIONE] => 0502
+                                    [UTENTE_TRASMISSIONE] => 404
+                                )
+
+                            [2] => Array
+                                (
+                                    [ID_DOCUMENTO] => 1655845
+                                    [DES_UFFICIO_SMISTAMENTO] => SERVIZIO EDILIZIA PRIVATA
+                                    [DES_UFFICIO_TRASMISSIONE] => SETTORE 4 - PIANIFICAZIONE TERRITORIALE E SISTEMI INFORMATIVI
+                                    [IDRIF] => 513585
+                                    [SMISTAMENTO_DAL] => 23/01/2019 12:00:00
+                                    [STATO_SMISTAMENTO] => E
+                                    [TIPO_SMISTAMENTO] => COMPETENZA
+                                    [UFFICIO_SMISTAMENTO] => 0502
+                                    [UFFICIO_TRASMISSIONE] => 05
+                                    [UTENTE_TRASMISSIONE] => 383
+                                )
+
+                        )
+
+                )
+
+            [RAPPORTI] => Array
+                (
+                    [RAPPORTO] => Array
+                        (
+                            [ID_DOCUMENTO] => 1649527
+                            [COGNOME_NOME] => CALVI LUCIANO
+                            [CODICE_FISCALE] => CLVLCN48L01C816J
+                            [EMAIL] => ING.FERRANTE@ALICE.IT
+                            [DENOMINAZIONE] => CALVI LUCIANO
+                            [INDIRIZZO] => CORSO VITTORIO VENETO 20/9
+                            [CAP] => 17100
+                            [IDRIF] => 513585
+                            [CONOSCENZA] => N
+                            [COD_AMM] => Array
+                                (
+                                )
+
+                            [COD_AOO] => Array
+                                (
+                                )
+
+                            [COD_UO] => Array
+                                (
+                                )
+
+                            [DESCRIZIONE_AMM] => Array
+                                (
+                                )
+
+                            [DESCRIZIONE_AOO] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [message] => 
+)
