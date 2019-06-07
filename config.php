@@ -69,6 +69,8 @@ define('GC_URL','https://sue.comune.rapallo.ge.it/gisclient/maps/jquery/sml.html
 
 //in sessione per pmapper
 
+define('DROPZONE_ENABLED',1);
+
 $_SESSION['USER_DATA']=DATA_DIR;
 
 

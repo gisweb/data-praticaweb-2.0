@@ -1,6 +1,6 @@
         
  <?php
-    if (defined('DROPZONE_ENABLED') && DROPZONE_ENABLED){
+    if (defined('DROPZONE_ENABLED') && DROPZONE_ENABLED && $_SESSION["USER_ID"]==1){
  ?>
         
 <script>
@@ -37,8 +37,8 @@
         
         $tabella=new tabella_h("$tabpath/visione_documenti","view");
         $titolo = "Documenti Relativi al titolo";
-		$nrec=$tabella->set_dati("pratica = $idpratica and form='pe.titolo'");	?>			
-
+		$nrec=$tabella->set_dati("pratica = $idpratica and form='pe.titolo'");	
+?>
 		<TABLE cellPadding=0  cellspacing=0 border=0 class="stiletabella" width="100%">		
 		  <TR> 
 			<TD> 
