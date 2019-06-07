@@ -470,7 +470,7 @@ EOT;
     
     function verificaInvio($prot,$anno,$id){
         $res = $this->result;
-        $result = $this->caricaXML('verificaInvio',Array("annoProt"=>$anno,"numProt"=>$prot,"docId"=>$id));
+        $result = $this->caricaXML('verificaInvio',Array("anno"=>$anno,"protocollo"=>$prot,"docId"=>$id));
         if($result["success"]==1){
             $xml=$result["result"];
             $response = $this->wsClient->call("verificaInvio",Array("strXML"=>$xml,"CodiceAmministrazione"=>SERVICE_LOGIN,"CodiceAOO"=>$codAOO));
