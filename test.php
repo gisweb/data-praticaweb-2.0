@@ -24,11 +24,11 @@ $xml =<<<EOT
 ]]>
 EOT;
 
-$client = new SoapClient(WSMAIL_URL);
+$ws = new wsMail();
 //var_dump($client->__getFunctions());die();
 $data = Array("strXML"=>$xml,"CodiceAmministrazione"=>SERVICE_LOGIN,"CodiceAOO"=>"c_h183");
-print_r($data);
-$res = $client->__call('VerificaInvio',$data);
+
+$res = $ws->wsClient->call('VerificaInvio',$data);
 print_r($res);
 
 ?>
