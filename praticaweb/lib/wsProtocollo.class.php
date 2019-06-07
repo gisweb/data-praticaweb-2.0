@@ -467,6 +467,11 @@ EOT;
         }
         return $result;
     }
+    
+    function vericaInvio($prot,$anno,$id){
+        $result = $this->result;
+        return $result;
+    }
 
 }
 ?>
