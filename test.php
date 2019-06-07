@@ -1,13 +1,15 @@
 <?php
+session_start();
+$_SESSION["USER_ID"]=1;
 define('APPS_DIR','/apps/praticaweb-2.1/');
 define('DATA_DIR','/data/rapallo/pe/');
-require_once "config.php";
-require_once "config.protocollo.php";
+require_once APPS_DIR."login.php";
+require_once DATA_DIR."config.protocollo.php";
 
 //require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoap.php";
 //require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoapmime.php";
 
-
+die("test");
 $xml =<<<EOT
 <![CDATA[
 <messaggioIn>
