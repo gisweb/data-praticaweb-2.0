@@ -14,21 +14,22 @@ require_once LOCAL_LIB."wsProtocollo.class.php";
 
 $xml =<<<EOT
 <![CDATA[
-<messaggioIn>
-<annoProt>2019</annoProt>
-<numProt>29548</numProt>
-<docId>326338</docId>
-<utente></utente>
-<ruolo></ruolo>
-</messaggioIn>
+    <messaggioIn>
+        <annoProt>2019</annoProt>
+        <numProt>29548</numProt>
+        <docId>326338</docId>
+        <utente></utente>
+        <ruolo></ruolo>
+    </messaggioIn>
 ]]>
 EOT;
 
 $ws = new wsMail();
+$r = $ws->verificaInvio("29548","2019",326338);
 //var_dump($client->__getFunctions());die();
-$data = Array("strXML"=>$xml,"CodiceAmministrazione"=>SERVICE_LOGIN,"CodiceAOO"=>"c_h183");
+//$data = Array("strXML"=>$xml,"CodiceAmministrazione"=>SERVICE_LOGIN,"CodiceAOO"=>"c_h183");
 
-$res = $ws->wsClient->call('VerificaInvio',$data);
-print_r($res);
+//$res = $ws->wsClient->call('VerificaInvio',$data);
+print_r($r);
 
 ?>

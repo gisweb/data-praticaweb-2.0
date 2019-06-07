@@ -469,8 +469,30 @@ EOT;
     }
     
     function vericaInvio($prot,$anno,$id){
-        $result = $this->result;
-        return $result;
+        $res = $this->result;
+        $result = $this->caricaXML('verificaInvio',Array("annoProt"=>$anno,"numProt"=>$prot,"docId"=>$id));
+        if($result["success"]==1){
+            $xml=$result["result"];
+            $response = $this->wsClient->call("verificaInvio",Array("strXML"=>$xml,"CodiceAmministrazione"=>SERVICE_LOGIN,"CodiceAOO"=>$codAOO));
+            $f = fopen(LOCAL_LIB.'../debug/verificaInvio.debug','w');
+            ob_start();
+            print_r($xml);
+            $r = ob_get_contents();
+            ob_end_clean();
+            fwrite($f,$r);
+            fclose($f);
+
+            if (is_array($response)){
+                $res = $response;
+            }
+            else{
+                $xml = simplexml_load_string($response);
+                $json = json_encode($xml);
+                $res = json_decode($json,TRUE);
+            }
+            $res["success"]=1;
+        }    
+        return $res;
     }
 
 }

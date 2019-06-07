@@ -1,0 +1,7 @@
+<messaggioIn>
+    <annoProt>%(anno)s</annoProt>
+    <numProt>%(protocollo)s</numProt>
+    <docId>%(docId)s</docId>
+    <utente></utente>
+    <ruolo></ruolo>
+</messaggioIn>
