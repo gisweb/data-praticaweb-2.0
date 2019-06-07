@@ -468,7 +468,7 @@ EOT;
         return $result;
     }
     
-    function vericaInvio($prot,$anno,$id){
+    function verificaInvio($prot,$anno,$id){
         $res = $this->result;
         $result = $this->caricaXML('verificaInvio',Array("annoProt"=>$anno,"numProt"=>$prot,"docId"=>$id));
         if($result["success"]==1){
