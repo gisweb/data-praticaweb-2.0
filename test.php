@@ -11,13 +11,13 @@ require_once LOCAL_LIB."wsProtocollo.class.php";
 //require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoap.php";
 //require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoapmime.php";
 
-die("test");
+
 $xml =<<<EOT
 <![CDATA[
 <messaggioIn>
 <annoProt>2019</annoProt>
-<numProt>23432</numProt>
-<docId></docId>
+<numProt>29548</numProt>
+<docId>326338</docId>
 <utente></utente>
 <ruolo></ruolo>
 </messaggioIn>
