@@ -25,7 +25,7 @@ $xml =<<<EOT
 EOT;
 
 $ws = new wsMail();
-$r = $ws->verificaInvio("29548","2019",326338);
+$r = $ws->verificaInvio("29597","2019",326404);
 //var_dump($client->__getFunctions());die();
 //$data = Array("strXML"=>$xml,"CodiceAmministrazione"=>SERVICE_LOGIN,"CodiceAOO"=>"c_h183");
 
