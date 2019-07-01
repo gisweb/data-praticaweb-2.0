@@ -99,6 +99,7 @@ function getInfoDocumento($cl,$template,$strDST,$user,$idDoc){
 		return Array("success"=>0,"data"=>Array(),"message"=>"NO XML Response");
 	}
 	$r = json_decode(json_encode($xml),true);
+//print_array($r);
 	$result = Array(
 		"data" => $r["DOC"]["DATA"],
 		"oggetto" => $r["DOC"]["OGGETTO"],
@@ -124,7 +125,6 @@ $auth = array(
 );
 
 $result = getDocumentiProtocollati($clientDocs,$xmlTemplate["documenti_protocollati"],$strDST,SERVICE_USER,$fascicolo,$anno,"%");
-
 if ($result["success"]!==1){
 	die("Nessun Risposta");
 }
