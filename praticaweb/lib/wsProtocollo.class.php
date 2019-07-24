@@ -497,7 +497,7 @@ EOT;
                 if (array_key_exists("consegne",$res) && is_array($res["consegne"])){
                     $r["consegna"] = $res["consegne"]["datiConsegne"]["consegna"];
                 }
-                $r["success"]=1
+                $r["success"]=1;
             }
         }    
         return $r;
