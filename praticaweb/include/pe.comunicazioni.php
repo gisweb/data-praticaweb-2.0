@@ -12,13 +12,13 @@ for($i=0;$i<count($arrayData);$i++){
             $tmp = Array();
             for($j=0;$j<count($res["accettazione"]);$j++){
                 $r = $res["accettazione"][$j];
-                $tmp[] = sprintf("Comunicazione accettata il %s con id %s",$r["dataAccetazione"],$r["idRepAccetazione"]);
+                $tmp[] = sprintf("Comunicazione accettata il %s con id %s",$r["dataAccettazione"],$r["idRepAccettazione"]);
             }
             $d["accettazione"] = implode("\n",$tmp);
             $tmp = Array();
             for($j=0;$j<count($res["consegna"]);$j++){
                 $r = $res["consegna"][$j];
-                $tmp[] = sprintf("Comunicazione consegnata il %s con id %s a %s",$r["dataAccetazione"],$r["idRepAccetazione"],$r["emailDestinatario"]);
+                $tmp[] = sprintf("Comunicazione consegnata il %s con id %s a %s",$r["dataConsegna"],$r["idRepConsegna"],$r["emailDestinatario"]);
             }
             $d["consegna"] = implode("\n",$tmp);
         }
