@@ -492,10 +492,10 @@ EOT;
                 $json = json_encode($xml);
                 $res = json_decode($json,TRUE);
                 if (array_key_exists("accettazioni",$res) && is_array($res["accettazioni"])){
-                    $r["accettazione"] = $res["accettazioni"]["datiAccettazioni"]["accettazione"];
+                    $r["accettazione"] = ($res["numAccettazioni"]==1)?(Array($res["accettazioni"]["datiAccettazioni"]["accettazione"])):($res["accettazioni"]["datiAccettazioni"]["accettazione"]);
                 }
                 if (array_key_exists("consegne",$res) && is_array($res["consegne"])){
-                    $r["consegna"] = $res["consegne"]["datiConsegne"]["consegna"];
+                    $r["consegna"] = ($res["numConsegne"]==1)?(Array($res["consegne"]["datiConsegne"]["consegna"])):($res["consegne"]["datiConsegne"]["consegna"]);
                 }
                 $r["success"]=1;
             }
