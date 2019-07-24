@@ -14,13 +14,13 @@ for($i=0;$i<count($arrayData);$i++){
                 $r = $res["accettazione"][$j];
                 $tmp[] = sprintf("Comunicazione accettata il %s con id %s",$r["dataAccettazione"],$r["idRepAccettazione"]);
             }
-            $d["accettazione"] = implode("\n",$tmp);
+            $d["accettazione"] = implode("<br>",$tmp);
             $tmp = Array();
             for($j=0;$j<count($res["consegna"]);$j++){
                 $r = $res["consegna"][$j];
                 $tmp[] = sprintf("Comunicazione consegnata il %s con id %s a %s",$r["dataConsegna"],$r["idRepConsegna"],$r["emailDestinatario"]);
             }
-            $d["consegna"] = implode("\n",$tmp);
+            $d["consegna"] = implode("<br>",$tmp);
         }
         else{
             $d["accettazione"]=" --- ";
