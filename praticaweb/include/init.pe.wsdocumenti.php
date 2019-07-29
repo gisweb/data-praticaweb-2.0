@@ -47,21 +47,32 @@ function getDocumentiProtocollati($cl,$template,$strDST,$user,$fascicolo,$anno,$
 	$r = json_decode(json_encode($res),true);
 
 	$xml = simplexml_load_string($r["return"]);
+   
 	if($xml===FALSE){
 		return Array("success"=>0,"data"=>Array(),"message"=>"NO XML Response");
 	}
 	
 	$r = json_decode(json_encode($xml),true);
 	
-	if(!in_array("DOCUMENTO",array_keys($r))) return Array("success"=>1,"data"=>Array(),"message"=>"Nessun documento trovato");
+	if(!in_array("DOCUMENTO",array_keys($r))){ 
+        return Array("success"=>1,"data"=>Array(),"message"=>"Nessun documento trovato");
+    }
+    
 	$docMax = count($r["DOCUMENTO"]);
-        if ($docMax > 50 ) $docMax = 50;
-	for($k=0;$k<$docMax;$k++){
-		$r["DOCUMENTO"][$k]["data"] = str_replace("/","-",$r["DOCUMENTO"][$k]["data"]);
-	}
-	if(count($r["DOCUMENTO"])==1) $r["DOCUMENTO"] = Array($r["DOCUMENTO"]);
-	
-	return Array("success"=>1,"data"=>$r["DOCUMENTO"],"message"=>"");
+    if ($docMax > 50 ) $docMax = 50;
+    if($docMax > 1){
+        for($k=0;$k<$docMax;$k++){
+            $r["DOCUMENTO"][$k]["data"] = str_replace("/","-",$r["DOCUMENTO"][$k]["data"]);
+        }
+    }
+	if(count($r["DOCUMENTO"])==1) {
+        $dataRes[0] = $r["DOCUMENTO"];
+        
+    }
+    else{
+        $dataRes = $r["DOCUMENTO"];
+    }
+	return Array("success"=>1,"data"=>$dataRes,"message"=>"");
 }
 
 function getDocumentiNonProtocollati($cl,$template,$strDST,$user,$fascicolo,$anno,$oggetto){
@@ -129,9 +140,12 @@ if ($result["success"]!==1){
 	die("Nessun Risposta");
 }
 
+
 //if (!count($result["data"])) print "Nessun documento protocollato per il fascicolo $fascicolo dell'anno $anno\n";
+//print_r($result);
 for($i=0;$i<count($result["data"]);$i++){
 	$idDoc = $result["data"][$i]["ID_DOCUMENTO"];
+    
 	$res = getInfoDocumento($clientDocs,$xmlTemplate["documento"],$strDST,SERVICE_USER,$idDoc);
 	if ($res["success"]!==1){
 		die("Nessun Risposta");
@@ -148,9 +162,10 @@ if ($result["success"]!==1){
 }
 
 //if (!count($result["data"])) print "Nessun documento non protocollato per il fascicolo $fascicolo dell'anno $anno\n";
-
+//print_r($result);
 for($i=0;$i<count($result["data"]);$i++){
 	$idDoc = $result["data"][$i]["ID_DOCUMENTO"];
+    
 	//$clientDocs->__setSoapHeaders($header);
 	$res = getInfoDocumento($clientDocs,$xmlTemplate["documento"],$strDST,SERVICE_USER,$idDoc);
 	if ($res["success"]!==1){

@@ -8,7 +8,7 @@ require_once TEMPLATE_FILE;
 
 $anno = "2019";
 //$fascicolo="3108.1";
-$fascicolo="2943.1";
+$fascicolo="3368.1";
 
 
 
@@ -145,6 +145,8 @@ function creaDocumento($cl,$user,$fascicolo,$anno,$oggetto,$id,$documento){
 		$allegato = Array("idRiferimento"=>$id,"contentType"=>$contentType,"nomeFile"=>$filename,"file"=>$file);*/
 		$params = Array($operatore,$ente,$protocollo);
 		//$res = $cl->creaLettera($operatore,$ente,$protocollo);
+//        print_r($protocollo);
+
 		try{
 			$res = $cl->creaLettera($operatore,$ente,$protocollo);
 		}
@@ -309,7 +311,7 @@ $fname= "/data/savona/pe/praticaweb/scripts/Test-CreaLettera.odt";
 $clientCreation = new SoapClient(WSDL_DOCUM_URL,array("login"=>SERVICE_USER,"password"=>SERVICE_PASSWD,"trace" => true,'exceptions' => true));
 $result = creaDocumento($clientCreation,'GMACARIO',$fascicolo,$anno,"PROVA CREAZIONE DOCUMENTO CON METODO WS CREA_LETTERA",'9999955',$fname);
 print_r($result);
-//echo "REQUEST:\n" . $clientDocs->__getLastRequest() . "\n";
+echo "REQUEST:\n" . $clientDocs->__getLastRequest() . "\n";
 
 
 /**********************************************************************************************************************/

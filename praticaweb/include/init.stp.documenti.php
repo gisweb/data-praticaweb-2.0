@@ -55,6 +55,8 @@ function creaDocumento($cl,$user,$fascicolo,$anno,$oggetto,$id,$documento){
 			preg_match_all($esitoRE,$text,$res1);
 			$esito = $res1[1][0];
 			if ($esito=='OK'){
+                $textSent = $cl->__getLastRequest();
+                
 					preg_match_all($idRE,$text,$res2);
 					$id = $res2[1][0];
 					preg_match_all($idDocumentoEsternoRE,$text,$res3);
