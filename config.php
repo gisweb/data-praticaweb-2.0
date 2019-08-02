@@ -1,10 +1,10 @@
 <?php
-define('NOME_COMUNE','Comune di Rapallo - Pratiche Edilizie');//nome completo del comune che compare nell'intestazione
+define('NOME_COMUNE','Comune di Alghero - Pratiche Edilizie');//nome completo del comune che compare nell'intestazione
 
 define('DEBUG', 1); // Debugging 0 off 1 on
 define('DB_DRIVER','pdo_pgsql');
 define('DB_HOST','127.0.0.1');
-define('DB_NAME','gw_rapallo');
+define('DB_NAME','gw_alghero');
 define('DB_USER','postgres');
 define('DB_PWD','postgres');
 
@@ -79,6 +79,6 @@ $tmpDir=(in_array('/apps/includes',explode(':',$tmpDir)))?($tmpDir):($tmpDir.':/
 $incDir=(in_array('/apps/includes/utils',explode(':',$tmpDir)))?($tmpDir):($tmpDir.':/apps/includes/utils');
 ini_set('include_path',$incDir);
 //includo il file per il database in uso
-require_once (APPS_DIR."wrapdb/postgres.php");
+require_once (APPS_DIR."wrapdb/postgres.pdo.php");
 require_once (APPS_DIR."utils/debugutils.php");
 ?>
