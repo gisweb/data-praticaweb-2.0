@@ -10,7 +10,8 @@ it,Istruttoria Tecnica
 80,Dati di Progetto,pe.progetto,it
 92,Sospensioni,pe.sospensioni,it
 ,Oneri
-110,Importi,oneri.importi,
+105,Importi,pe.pagamenti,oc
+110,Oneri,oneri.importi,oc
 120,Rateizzazione,oneri.rate,
 130,Fideiussioni,oneri.fidi,
 ia,Istruttoria Amministrativa

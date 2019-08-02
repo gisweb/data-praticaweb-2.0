@@ -1,0 +1,24 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+e
+[new]
+
+[edit]
+
+[view]
+
+[list]
+
+[standard]
+table="#"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Pratica;search_pagamenti.numero;10;search_text_equal"
+data[]="Protocollo;search_pagamenti.protocollo;10;search_text_equal"
+data[]="Pagatore;search_pagamenti.anagrafica;40;search_text_contains"
+data[]="Data Pagamento;search_pagamenti.data_pagamento;10;search_date"
+data[]="Tipo Pagamento;search_pagamenti.codice_tipo_pagamento;400xragioneria.elenco_codici_pagamento;search_list"

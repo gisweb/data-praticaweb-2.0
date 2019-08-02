@@ -9,7 +9,8 @@ it,Istruttoria Tecnica
 70,Pianificazione e Vincoli,pe.vincoli,it
 80,Dati di Progetto,pe.progetto,it
 oc,Oneri
-110,Importi,oneri.importi,oc
+105,Importi,pe.pagamenti,oc
+110,Oneri,oneri.importi,oc
 120,Rateizzazione,oneri.rate,oc
 130,Fideiussioni,oneri.fidi,oc
 ia,Istruttoria Amministrativa

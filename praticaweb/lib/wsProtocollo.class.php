@@ -223,7 +223,34 @@ class wsProtocollo{
     }
     
     function richiediProt(){
+        $res = $this->caricaXML("prot_out");
+        if($res["success"]==1){
+            $fileXML = $res["result"];
+            print_r($fileXML);
+            $this->wsClient->clearAttachments();
+            $this->wsClient->addAttachment($fileXML,"richiesta_protocollo_out.xml","text/xml");
+            $response =$this->wsClient->call("registraProtocollo",Array($this->login));
+            
+        }
+        else{
+            $response = Array("success"=>-1);
+        }
+        return $response;
+    }
+}
+
+class wsMail{
+    function __construct() {
+        
+    }
+    
+    function inviaPEC($prot,$anno){
+        
+    }
+    
+    function verificaPEC(){
         
     }
 }
+
 ?>

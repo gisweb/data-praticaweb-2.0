@@ -1,0 +1,47 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[edit]
+table="ragioneria.importi_versati"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori="data_pagamento;importo;metodo;tipo"
+data[]="Tipologia Pagamento;tipo;300xragioneria.elenco_codici_pagamento;selectdb"
+data[]="Modalità Pagamento;metodo;200xragioneria.elenco_metodi_pagamento;selectdb"
+data[]="Data Pagamento;data_pagamento;10;data"
+data[]="Importo;importo;20;valuta"
+data[]="Codice Pagamento;codice_univoco;40;text"
+data[]="Causale;causale;60x4;textarea"
+data[]="Nominativo;anagrafica;60;text"
+data[]="C.F. / P.IVA;identificativofiscale;20;text"
+data[]="Note;note;50x4;textarea"
+button="Salva;azione;;submit|Elimina;azione;#confirmDelete;submit|Annulla;azione;;submit"
+[view]
+table="ragioneria.importi_versati"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Tipologia Pagamento;tipo;300xragioneria.elenco_codici_pagamento;selectdb"
+data[]="Modalità Pagamento;metodo;200xragioneria.elenco_metodi_pagamento;selectdb"
+data[]="Data Pagamento;data_pagamento;10;data"
+data[]="Importo;importo;20;valuta"
+data[]="Codice Pagamento;codice_univoco;40;text"
+data[]="Causale;causale;60x4;textarea"
+data[]="Note;note;50x4;textarea"
+
+
+[list]
+table="ragioneria.importi_versati"
+chiave="id"
+campi_ordinamento="data_pagamento"
+campi_obbligatori=""
+data[]=";id;3%#pe.pagamenti;btn_edit"
+data[]="Tipologia;tipo;20%xragioneria.elenco_codici_pagamento;selectdb"
+data[]="Modalità;metodo;10%xragioneria.elenco_metodi_pagamento;selectdb"
+data[]="Data Pagamento;data_pagamento;12%;data"
+data[]="Importo;importo;8%;valuta"
+data[]="Nominativo;anagrafica;20%;text"
+data[]="Codice Pagamento;codice_univoco;20%;text"
