@@ -9,11 +9,33 @@ define('DATA_DIR','/data/andora/pe/');
 define('LIB',DATA_DIR.'praticaweb'.DIRECTORY_SEPARATOR.'lib/');
 define('TEMPLATE_DIR',DATA_DIR."praticaweb".DIRECTORY_SEPARATOR."templates".DIRECTORY_SEPARATOR);
 
+/*
+$params = Array(
+    "UO"=>Array(
+        "SUE" => Array(
+            "Denominazione" => "Sportello Unico Edilizia",
+//            "Codice"=>"SUE",   
+            "Codice" => "X"
+        ),
+    ),
+    "Amministrazione" =>Array(
+        "Codice"=>"udcvem",
+        "Denominazione" => "Unione dei Comuni Valmerula e Montarosio",
+        "Indirizzo" => "Via Cavour 94",
+        "IndirizzoTelematico"=>"comune@prova.it",
+    ),
+    "AOO" => Array(
+//        "Codice"=>"udcvem",
+        "Codice" => "PL",
+        "Denominazione" => "Unione dei Comuni Valmerula e Montarosio",
+    )
+);
+*/
 
 $params = Array(
     "UO"=>Array(
         "SUE" => Array(
-            "Denominazione" => "URBANISTICA",
+            "Denominazione" => "Sportello Unico Edilizia",
             "Codice"=>"URB"   
             //"Codice" => "c_l315"
         ),
@@ -25,8 +47,8 @@ $params = Array(
         "IndirizzoTelematico"=>"comune@prova.it",
     ),
     "AOO" => Array(
-        "Codice" => "c_h183",
-        "Denominazione" => "Comune di Andora",
+        "Codice" => "PL",
+        "Denominazione" => "Unione dei Comuni Valmerula e Montarosio",
     )
 );
 ?>
