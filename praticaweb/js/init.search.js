@@ -72,7 +72,8 @@ var colsDef={
         {title:'Tipo Pagam.',sortable:true,field:'tipo_pagamento',width:200},
         {title:'Anagrafica',sortable:true,field:'anagrafica',width:100},
         {title:'Causale',sortable:true,field:'causale',width:200},
-        {title:'Codice Pagam.',sortable:true,field:'codice_univoco',width:100}
+        {title:'Codice Pagam.',sortable:true,field:'codice_univoco',width:100},
+        {title:'Flusso',sortable:true,field:'flusso',width:100}
     ]],
     default_cols:[[
         {title:'',sortable:true,field:'',width:100},
