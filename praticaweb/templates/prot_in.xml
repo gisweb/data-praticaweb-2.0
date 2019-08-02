@@ -4,59 +4,51 @@
         xmlns:xsd="http://www.w3.org/2001/XMLSchema"
         xmlns:tal="http://xml.zope.org/namespaces/tal"
         xmlns:metal="http://xml.zope.org/namespaces/metal"
-        xsi:noNamespaceSchemaLocation=".\DOCAREAProto.xsd">
+        xsi:noNamespaceSchemaLocation=".\DOCAREAProto.xsd"
+        tal:define="mittente view/document">
     <Intestazione>
-        <Oggetto>[oggetto]</Oggetto>
+        <Oggetto tal:content="python:context.getItem('descrizione_intervento','manca la descrizione intervento')"></Oggetto>
         <Identificatore>
-            <CodiceAmministrazione>[identificatore.codamm]</CodiceAmministrazione>
-            <CodiceAOO>[identificatore.codaoo]</CodiceAOO>
-            <NumeroRegistrazione>[identificatore.id]</NumeroRegistrazione>
-            <DataRegistrazione>[identificatore.data_registrazione]</DataRegistrazione>
-            <Flusso>[identificatore.flusso]</Flusso>
+            <CodiceAmministrazione  tal:content="view/destinatario/CodiceAmministrazione">1</CodiceAmministrazione>
+            <CodiceAOO tal:content="view/destinatario/CodiceA00">1</CodiceAOO>
+            <NumeroRegistrazione>0</NumeroRegistrazione>
+            <DataRegistrazione>0</DataRegistrazione>
+            <Flusso>E</Flusso>
         </Identificatore>
         <Mittente>
-            <Persona id="[soggetto.id_cf]">
-                <Nome>[soggetto.nome]</Nome>
-                <Cognome>[soggetto.cognome]</Cognome>
-                <CodiceFiscale>[soggetto.cf]</CodiceFiscale>
-                <Denominazione>[soggetto.denominazione]</Denominazione>
-                <IndirizzoTelematico>[soggetto.email]</IndirizzoTelematico>
+            <Persona tal:attributes="id view/mittente/CodiceFiscale">
+                <Nome tal:content="view/mittente/Nome">Nome</Nome>
+                <Cognome tal:content="view/mittente/Cognome">Cognome</Cognome>
+                <CodiceFiscale tal:content="view/mittente/CodiceFiscale">Codice fiscale</CodiceFiscale>
+                <IndirizzoTelematico tal:content="view/mittente/IndirizzoTelematico">email</IndirizzoTelematico>
             </Persona>
-            <IndirizzoPostale>
-                <Denominazione>[soggetto.via]</Denominazione>
-                <CAP>[soggetto.cap]</CAP>
-                <Comune>[soggetto.comune]</Comune>
-                <Provincia>[soggetto.provincia]</Provincia>
-            </IndirizzoPostale>
         </Mittente>
         <Destinatario>
             <Amministrazione>
-                <Denominazione>[amministrazione.denominazione]</Denominazione>
-                <CodiceAmministrazione>[amministrazione.codice]</CodiceAmministrazione>
-                <UnitaOrganizzativa tipo="permanente" id="[uo.id]">
-                    <Denominazione>[uo.codice]</Denominazione>
-                    <Identificativo>[uo.denominazione]</Identificativo>
-                </UnitaOrganizzativa>
+                <Denominazione tal:content="view/destinatario/Denominazione">Denominazione</Denominazione>
+                <CodiceAmministrazione tal:content="view/destinatario/CodiceAmministrazione">1010</CodiceAmministrazione>
+                <IndirizzoTelematico tal:content="view/destinatario/IndirizzoTelematico"></IndirizzoTelematico>
+                <UnitaOrganizzativa/>
             </Amministrazione>
             <AOO>
-                <Denominazione>[aoo.denominazione]</Denominazione>
-                <CodiceAOO>[aoo.codice]</CodiceAOO>
+                <CodiceAOO tal:content="view/destinatario/CodiceA00">codice</CodiceAOO>
             </AOO>
+            <IndirizzoTelematico />
         </Destinatario>
-        
+        <Classifica>
+            <CodiceAmministrazione tal:content="view/destinatario/CodiceAmministrazione">1010</CodiceAmministrazione>
+            <CodiceAOO tal:content="view/destinatario/CodiceA00">1</CodiceAOO>
+            <CodiceTitolario tal:content="view/destinatario/CodiceTitolario"></CodiceTitolario>
+        </Classifica>
     </Intestazione>
     <Descrizione>
-        <Documento nome="[allegato.nome]" id="[allegato.id]">
-            <DescrizioneDocumento>[allegato.descrizione]</DescrizioneDocumento>
-            <TipoDocumento>[allegato.tipo]</TipoDocumento>
+        <Documento tal:attributes="nome view/fileName;id view/objId">
+            <DescrizioneDocumento tal:content="context/Title">Titolo</DescrizioneDocumento>
+            <TipoDocumento tal:content="python:'PRATICAWEBSUAP' if context.getItem('iol_tipo_proc')=='suap' else 'PRATICAWEBSUE'">TIPO RICHIESTA</TipoDocumento>
         </Documento>
-        <Allegati>
-            [allegati;block=begin]
-            <Documento nome="[allegati.nome]" id="[allegati.id]">
-                <DescrizioneDocumento>[allegati.descrizione]</DescrizioneDocumento>
-                <TipoDocumento>[allegati.tipo]</TipoDocumento>
-            </Documento>
-            [allegati;block=end]
-        </Allegati>
+        <Allegati/>
     </Descrizione>
+    <ApplicativoProtocollo nome="AGSPR">
+        <Parametro nome="tipoSmistamento" valore="COMPETENZA"/>
+    </ApplicativoProtocollo>
 </Segnatura>
