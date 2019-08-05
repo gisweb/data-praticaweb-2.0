@@ -45,9 +45,12 @@ function creaDocumento($cl,$user,$fascicolo,$anno,$oggetto,$id,$documento){
 		//$res = $cl->creaLettera($operatore,$ente,$protocollo);
 		try{
 			$res = $cl->creaLettera($operatore,$ente,$protocollo);
+                        $textSent = $cl->__getLastRequest();
 		}
 		catch (Exception $e) {
 			$text = $cl->__getLastResponse();
+                        $textSent = $cl->__getLastRequest();
+                        print_debug($textSent,null,"CREA_LETTERA");
 			$esitoRE="/<esito>(.+)<\/esito>/";
 			$idRE="/<id>(.+)<\/id>/";
 			$idDocumentoEsternoRE="/<idDocumentoEsterno>(.+)<\/idDocumentoEsterno>/";
@@ -55,16 +58,15 @@ function creaDocumento($cl,$user,$fascicolo,$anno,$oggetto,$id,$documento){
 			preg_match_all($esitoRE,$text,$res1);
 			$esito = $res1[1][0];
 			if ($esito=='OK'){
-                $textSent = $cl->__getLastRequest();
-                
-					preg_match_all($idRE,$text,$res2);
-					$id = $res2[1][0];
-					preg_match_all($idDocumentoEsternoRE,$text,$res3);
-					$idDoc = $res3[1][0];
-					preg_match_all($urlRE,$text,$res4);
-					$url = $res4[1][0];
-					$r = Array("esito"=>$esito,"id"=>$id,"idDocumentoEsterno"=>$idDoc,"url"=>$url);
-					return Array("success"=>1,"data"=>$r,"message"=>"");
+		                $textSent = $cl->__getLastRequest();
+				preg_match_all($idRE,$text,$res2);
+				$id = $res2[1][0];
+				preg_match_all($idDocumentoEsternoRE,$text,$res3);
+				$idDoc = $res3[1][0];
+				preg_match_all($urlRE,$text,$res4);
+				$url = $res4[1][0];
+				$r = Array("esito"=>$esito,"id"=>$id,"idDocumentoEsterno"=>$idDoc,"url"=>$url);
+				return Array("success"=>1,"data"=>$r,"message"=>"");
 			}
 			else{
 				return Array("success"=>0,"data"=>Array(),"message"=>"Errore nella richiesta Crealettera");
