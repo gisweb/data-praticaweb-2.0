@@ -1,6 +1,6 @@
 <?php
-if (!defined(DATA_DIR)) define("DATA_DIR",dirname(dirname(dirname(__FILE__))));
-require_once DATA_DIR."config.protocollo.php";
+if (!defined('DATA_DIR')) define("DATA_DIR",dirname(dirname(dirname(__FILE__))));
+require_once DATA_DIR.DIRECTORY_SEPARATOR."config.protocollo.php";
 
 class protocollo{
     
@@ -33,5 +33,16 @@ class protocollo{
             return $result;
         }
     }
+
+    function listaFascicoli(){
+        $res = $this->login();
+        if ($res["success"]===1){
+            $dst = $res["dst"];
+            $cl = new SoapClient(DIZIONARI_URL,array("trace" => 1, "exception" => 0));
+            $result = $cl->listaFascicoli(Array("strUserName"=>SERVICE_USER,"strDST"=>$dst));
+            return $result;
+        }
+    }
+
 }
 ?>
