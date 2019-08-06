@@ -88,6 +88,7 @@ function flussi($da,$a) {
             $idflusso=$field;
             echo "Considero il flusso $idflusso\n";
             $res[$idflusso]= flusso_singolo($idflusso);
+            if (count($res[$idflusso])==0) echo "\tIl flusso $idflusso è vuoto\n";
 
         }
     }
@@ -96,7 +97,7 @@ function flussi($da,$a) {
 }
 
 function inserisciflussi($record){
-    $dsn = sprintf('pgsql:dbname=%s;host=%s;port=%s',"gw_andora",'51.77.117.13','5434');
+    $dsn = sprintf('pgsql:dbname=%s;host=%s;port=%s',"gw_andora",'127.0.0.1','5434');
     $dbh = new PDO($dsn, 'postgres', 'postgres');
     $sql = "INSERT INTO ragioneria.flussi(flusso,iuv,importo,capitolo,indice) VALUES(?,?,?,?,?)";
     $stmt = $dbh->prepare($sql);
@@ -105,10 +106,10 @@ function inserisciflussi($record){
             $r = $flusso[$i];
             $data=Array($idflusso,$r["iuv"],$r["importo"],$r["capitoloBilancio"],$r["indiceDati"]);
             if(!$stmt->execute($data)){
-                logging("Errore nel Flusso $idflusso\n");
-                print "$idflusso\n";
+                logging("Errore nel Flusso $idflusso con IUV ".$r["iuv"]."\n");
+                /*print "$idflusso\n";
                 print_r($r);
-                print "\n";
+                print "\n";*/
             }
             
         }
@@ -120,7 +121,7 @@ $urlFlusso = "https://nodopagamenti.regione.liguria.it/portale/nodopagamenti/res
 
 $ente = "Unione Dei Comuni Valmerula e Montarosio";
 $da = "01/01/2019";
-$a = "03/08/2019";
+$a = "09/08/2019";
 $res = flussi($da,$a);
 inserisciflussi($res)
 
