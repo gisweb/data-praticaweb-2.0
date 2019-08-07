@@ -1,4 +1,21 @@
 <?php
+
+function recurse_copy($src,$dst) {
+    $dir = opendir($src);
+    @mkdir($dst);
+    while(false !== ( $file = readdir($dir)) ) {
+        if (( $file != '.' ) && ( $file != '..' )) {
+            if ( is_dir($src . '/' . $file) ) {
+                recurse_copy($src . '/' . $file,$dst . '/' . $file);
+            }
+            else {
+                copy($src . '/' . $file,$dst . '/' . $file);
+            }
+        }
+    }
+    closedir($dir);
+}
+
 session_start();
 $_SESSION["USER_ID"] = 1;
 error_reporting(E_ERROR);
@@ -11,7 +28,7 @@ require_once LOCAL_LIB."app.utils.class.php";
 $anni = Array(2019,2018,2017,2016,2015,2014);
 $anni=Array(2019,2018,2017,2016,2015,2014,2013);
 $dbh = utils::getDb();
-$sql = "SELECT * FROM pe.avvioproc WHERE anno = ?;";
+$sql = "SELECT * FROM pe.avvioproc WHERE coalesce(cod_belfiore,'A278') IN ('C578','C657','I947','L152') and anno = ?;";
 $sqlAll = "SELECT id,nome_file,prot_allegato,data_prot_allegato FROM pe.file_allegati WHERE pratica = ?;";
 $sqlDoc = "SELECT * FROM stp.documenti WHERE pratica = ?;";
 $stmtAll = $dbh->prepare($sqlAll);
@@ -26,15 +43,25 @@ foreach($anni as $anno){
     if($stmt->execute(Array($anno))){
         $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
         //Ciclo sulle pratiche dell'anno
+        mkdir(DATA_DIR."praticaweb".DIRECTORY_SEPARATOR."export".DIRECTORY_SEPARATOR."C578".DIRECTORY_SEPARATOR.$anno);
+        mkdir(DATA_DIR."praticaweb".DIRECTORY_SEPARATOR."export".DIRECTORY_SEPARATOR."C657".DIRECTORY_SEPARATOR.$anno);
+        mkdir(DATA_DIR."praticaweb".DIRECTORY_SEPARATOR."export".DIRECTORY_SEPARATOR."I947".DIRECTORY_SEPARATOR.$anno);
+        mkdir(DATA_DIR."praticaweb".DIRECTORY_SEPARATOR."export".DIRECTORY_SEPARATOR."L152".DIRECTORY_SEPARATOR.$anno);
         for($i=0;$i<count($res);$i++){
             $datiPr = $res[$i];
             $message = sprintf("Considero la Pratica %s\n",$datiPr["numero"]);
 //            print $message;
             $pr = $datiPr["pratica"];
+            $comune = $datiPr["cod_belfiore"];
+            $numero = $datiPr["numero"];
             $pratica = new pratica($pr);
             $allegatiDir = $pratica->allegati;
+            //$stampeDir = $pratica->documenti;
+            $prDir = DATA_DIR."praticaweb".DIRECTORY_SEPARATOR."export".DIRECTORY_SEPARATOR.$comune.DIRECTORY_SEPARATOR.$anno.DIRECTORY_SEPARATOR.$numero;
+            mkdir($prDir);
+            recurse_copy($allegatiDir, $prDir);
             //Ciclo sugli allegati della pratica
-            if($stmtAll->execute(Array($pr))){
+            /*if($stmtAll->execute(Array($pr))){
                 $error = 0;
                 $rr = $stmtAll->fetchAll(PDO::FETCH_ASSOC);
                 for($j=0;$j<count($rr);$j++){
@@ -75,10 +102,12 @@ foreach($anni as $anno){
             //Ciclo sui documenti generati/caricati della pratica
             //TODO
             unset($pratica);
+             
+            */
         }
     }
 }
-$message = sprintf("Trovati %d File di cui %d mancanti\n",($k+$h),$k);
-print $message;
+//$message = sprintf("Trovati %d File di cui %d mancanti\n",($k+$h),$k);
+//print $message;
         
 ?>
