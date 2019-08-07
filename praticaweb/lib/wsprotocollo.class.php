@@ -2,12 +2,19 @@
 if (!defined('DATA_DIR')) define("DATA_DIR",dirname(dirname(dirname(__FILE__))));
 require_once DATA_DIR.DIRECTORY_SEPARATOR."config.protocollo.php";
 
+define('TEMPLATE_DIR',DATA_DIR."praticaweb".DIRECTORY_SEPARATOR."templates".DIRECTORY_SEPARATOR);
+
+require_once LOCAL_LIB."app.utils.class.php";
+require_once LIB."utils.class.php";
+require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoap.php";
+require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoapmime.php";
+
 class protocollo{
     
     
     function login(){
-        $cl = new SoapClient(SERVICE_URL,array("trace" => 1, "exception" => 0));
-        $res = $cl->Login(Array("strCodEnte"=>CODICE_AMMINISTRAZIONE,"strUserName"=>SERVICE_USER,"strPassword"=>SERVICE_PASSWD));
+        $cl = new nusoap_client_mime(SERVICE_URL,'wsdl');
+        $res = $cl->call('Login',Array("strCodEnte"=>CODICE_AMMINISTRAZIONE,"strUserName"=>SERVICE_USER,"strPassword"=>SERVICE_PASSWD));
         $res = json_decode(json_encode($res),TRUE);
         
         if(array_key_exists("LoginResult",$res)){
