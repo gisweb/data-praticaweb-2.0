@@ -49,11 +49,12 @@ foreach($anni as $anno){
         mkdir(DATA_DIR."praticaweb".DIRECTORY_SEPARATOR."export".DIRECTORY_SEPARATOR."L152".DIRECTORY_SEPARATOR.$anno);
         for($i=0;$i<count($res);$i++){
             $datiPr = $res[$i];
-            $message = sprintf("Considero la Pratica %s\n",$datiPr["numero"]);
-//            print $message;
-            $pr = $datiPr["pratica"];
             $comune = $datiPr["cod_belfiore"];
             $numero = $datiPr["numero"];
+            $message = sprintf("Considero la Pratica %s del comune %s\n",$numero,$comune);
+            print $message;
+            $pr = $datiPr["pratica"];
+            
             $pratica = new pratica($pr);
             $allegatiDir = $pratica->allegati;
             //$stampeDir = $pratica->documenti;
