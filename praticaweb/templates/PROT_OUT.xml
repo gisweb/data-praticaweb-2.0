@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<Segnatura xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Intestazione>
+		<Oggetto>[oggetto]</Oggetto>
+		<Identificatore>
+			<CodiceAmministrazione>[COD_AMMINISTRAZIONE]</CodiceAmministrazione>
+			<CodiceAOO>[COD_A00]</CodiceAOO>
+			<NumeroRegistrazione>0</NumeroRegistrazione>
+			<DataRegistrazione>0</DataRegistrazione>
+			<Flusso>U</Flusso>
+		</Identificatore>
+		<Mittente>
+			<Amministrazione>
+				<Denominazione>HALLEY TEST</Denominazione>
+				<CodiceAmministrazione>[COD_AMMINISTRAZIONE]</CodiceAmministrazione>
+				<IndirizzoTelematico />
+				<UnitaOrganizzativa id="[COD_UO]" />
+			</Amministrazione>
+			<AOO>         
+				<CodiceAOO>[COD_A00]</CodiceAOO>
+			</AOO>       
+			<IndirizzoTelematico /> 
+			<Classifica>
+				<CodiceAmministrazione>[COD_AMMINISTRAZIONE]</CodiceAmministrazione>
+				<CodiceAOO>[COD_A00]</CodiceAOO>
+				<CodiceTitolario>[COD_TITOLARIO]</CodiceTitolario>
+			</Classifica>
+			
+		</Mittente>
+		<Destinatario>
+			<Persona id="[codfis]">
+				<Nome>[nome]</Nome>
+				<Cognome>[cognome]</Cognome>
+				<CodiceFiscale>[codfis]</CodiceFiscale>
+				<IndirizzoTelematico>[mail]</IndirizzoTelematico>
+			</Persona>
+			    
+		</Destinatario>     
+		
+	</Intestazione>
+	<Descrizione>
+		<Documento nome="CI.jpg" id="122">
+			<DescrizioneDocumento>Fotocopia Carta di Identità</DescrizioneDocumento>
+			<TipoDocumento>Richiesta</TipoDocumento>
+		</Documento>  
+		<Allegati>
+			<Documento nome="CertificatoNascita.pdf" id="110">         
+				<DescrizioneDocumento>Certificato di nascita</DescrizioneDocumento>
+				<TipoDocumento>Richiesta</TipoDocumento>
+			</Documento>
+		</Allegati>   
+	</Descrizione>   
+	<ApplicativoProtocollo nome="ArchiPRO">     
+		<Parametro nome="TipoSpedizione" valore="LETTERA" />     
+		<Parametro nome="uo" valore="5" />     
+		<Parametro nome="MittenteIndirizzo" valore="" />     
+		<Parametro nome="MittenteLocalita" valore="" />     
+		<Parametro nome="MittenteProvincia" valore="" />
+		<Parametro nome="MittenteCap" valore="" />     
+		<Parametro nome="OperatoreInserimento" valore="PLLLRD60M29E202G" />     
+		<Parametro nome="TipoInvio" valore="E-mail" />   
+	</ApplicativoProtocollo> 
+</Segnatura>
