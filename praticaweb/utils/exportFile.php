@@ -9,7 +9,7 @@ require_once LIB.'utils.class.php';
 require_once LOCAL_LIB."pratica.class.php";
 require_once LOCAL_LIB."app.utils.class.php";
 $anni = Array(2019,2018,2017,2016,2015,2014);
-$anni=Array(2019,2018,2017,2016,2015);
+$anni=Array(2019,2018,2017,2016,2015,2014,2013);
 $dbh = utils::getDb();
 $sql = "SELECT * FROM pe.avvioproc WHERE anno = ?;";
 $sqlAll = "SELECT id,nome_file,prot_allegato,data_prot_allegato FROM pe.file_allegati WHERE pratica = ?;";
@@ -19,6 +19,9 @@ $stmtDoc = $dbh->prepare($sqlDoc);
 $stmt = $dbh->prepare($sql);
 $h=0;
 $k=0;
+
+$allegatiTmp = DATA_DIR."praticaweb".DIRECTORY_SEPARATOR."documenti".DIRECTORY_SEPARATOR."pe".DIRECTORY_SEPARATOR."allegati".DIRECTORY_SEPARATOR;
+
 foreach($anni as $anno){
     if($stmt->execute(Array($anno))){
         $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -38,10 +41,21 @@ foreach($anni as $anno){
                     $r = $rr[$j];
                     $fileName = sprintf("%s%s",$allegatiDir,$r["nome_file"]);
                     if (!file_exists($fileName)){
-                        $k++;
-                        $message = sprintf("\t%d) Il file %s non esiste\n",$k,$fileName);
-                        print $message;
-                        $error = 1;
+                        $tmpFileName=sprintf("%s%s",$allegatiTmp,$r["nome_file"]);
+                        if (file_exists($tmpFileName)){
+                            if(!copy($tmpFileName,$fileName)){
+                                $k++;
+                                $message = sprintf("\t%d) Impossibile copiare il file %s in %s\n",$k,$r["nome_file"],$allegatiDir);
+                                #print $message;
+                                $error = 1;
+                            }
+                        }
+                        else{
+                            $k++;
+                            $message = sprintf("\t%d) Il file %s non esiste\n",$k,$fileName);
+                            print $message;
+                            $error = 1;
+                        }
                     }
                     else{
                         $h++;
