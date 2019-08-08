@@ -105,7 +105,7 @@ class protocollo{
         if(count($allegati)>0){
             for($i=0;$i<count($allegati);$i++){
                 //$res = $cl->call('Inserimento',Array(SERVICE_USER,$dst,$allegati[$i]["nome_documento"],$allegati[$i]["file"]));
-                $res = Array("lngErrNumber"=>0,"lngDocID"=>random_int(100,999999));
+                $res = Array("lngErrNumber"=>0,"lngDocID"=>rand(100,999999));
                 if($res["lngErrNumber"]===0){
                     $allegato = $allegati[$i];
                     $allegato["id_documento"] = $res["lngDocID"];
