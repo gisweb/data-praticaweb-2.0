@@ -4,7 +4,9 @@ define('DIZIONARI_URL','http://93.63.112.4:4080/SuapDOCAREA/dizionario.php?wsdl'
 define('SERVICE_USER','protocollo sue');
 define('SERVICE_PASSWD','Prot/2018');
 
-define('LIB',DATA_DIR.'praticaweb'.DIRECTORY_SEPARATOR.'lib/');
+if (!defined('LOCAL_LIB')) define('LOCAL_LIB',DATA_DIR.'praticaweb'.DIRECTORY_SEPARATOR.'lib/');
+if (!defined('APPS_DIR')) define('APPS_DIR',DIRECTORY_SEPARATOR.'apps'.DIRECTORY_SEPARATOR."praticaweb-2.1".DIRECTORY_SEPARATOR);
+if (!defined('LIB')) define('LIB',APPS_DIR."lib".DIRECTORY_SEPARATOR);
 define('TEMPLATE_DIR',DATA_DIR."praticaweb".DIRECTORY_SEPARATOR."templates".DIRECTORY_SEPARATOR);
 
 define('DENOMINAZIONE',"EDILIZIA PRIVATA");

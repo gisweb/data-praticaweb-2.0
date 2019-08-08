@@ -1,0 +1,32 @@
+<?php
+$dataOut=Array(
+    "mittente"=>Array(
+        Array(
+            "codice_amministrazione"=>CODICE_AMMINISTRAZIONE,
+            "codice_a00"=>CODICE_A00,
+            "codice_titolario"=>CODICE_TITOLARIO,
+            "codice_uo"=>CODICE_UO,
+            "denominazione_amministrazione"=>DENOMINAZIONE
+        )
+    ),
+    "destinatari"=>Array(
+        Array("nome"=>"MARCO","cognome"=>"CARBONE","codfis"=>"CRBMRC74D19D969P","mail"=>"marco.carbone@gisweb.it"),
+        Array("nome"=>"PIPPO","cognome"=>"PLUTO","codfis"=>"CRBMRC74D19D969Z","mail"=>"marco.carbone.gw@gmail.com")
+    ),
+    "allegati"=>Array(
+        Array("nome_documento"=>"7622-ballestrero.pdf","descrizione_documento"=>"Documenti d'identità","tipo_documento"=>"LETTERA"),
+        Array("nome_documento"=>"istruttoria-pdc.docx","descrizione_documento"=>"Documento","tipo_documento"=>"LETTERA"),
+        Array("nome_documento"=>"7622-parodi-fabio-spostamento-olivi.pdf.p7m","descrizione_documento"=>"Documento","tipo_documento"=>"LETTERA")
+    )
+);
+
+$dataIn=Array(
+    "mittente"=>Array(
+        Array()
+    ),
+    "destinatari"=>Array(
+        Array(),
+    ),
+    "allegati"=>Array()
+);
+?>

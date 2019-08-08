@@ -1,0 +1,8 @@
+        <Destinatario>
+			<Persona id="(codfis)s">
+				<Nome>(nome)s</Nome>
+				<Cognome>(cognome)s</Cognome>
+				<CodiceFiscale>(codfis)s</CodiceFiscale>
+				<IndirizzoTelematico>(mail)s</IndirizzoTelematico>
+			</Persona>  
+		</Destinatario>
