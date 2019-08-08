@@ -8,6 +8,7 @@ require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoapmime.php";
 
 class protocollo{
     var $data = Array(
+        "oggetto"=>"",
         "altri_documenti"=>"",
         "mittente"=>"",
         "destinatari"=>"",
@@ -24,7 +25,7 @@ class protocollo{
     
     private function subst($txt,$data){
         foreach($data as $k=>$v){
-            $txt = str_replace("%($k)s",htmlspecialchars($v, ENT_XML1, 'UTF-8'),$txt);
+            $txt = str_replace("($k)s",$v,$txt);
         }
         return $txt;
     }
@@ -86,7 +87,7 @@ class protocollo{
         }
     }
     
-    function protocolla($mode='U',$mittente,$destinatari,$allegati){
+    function protocolla($mode='U',$oggetto,$mittente,$destinatari,$allegati){
         $xmlData = "";
         $res = $this->login();
         if ($res["success"]===1){
@@ -96,12 +97,9 @@ class protocollo{
             return -1;
         }
         $cl = new nusoap_client_mime(SERVICE_URL,'wsdl');
-        if($mode=='U'){
-            $fileProt = "PROT-OUT";
-            $fileDest = "DESTINATARIO-OUT";
-            $fileMitt = "MITTENTE-OUT";
-        }
+
         $suffix = ($mode=='U')?("OUT"):("IN");
+        $this->data["oggetto"] = $oggetto;
         if(count($allegati)>0){
             for($i=0;$i<count($allegati);$i++){
                 //$res = $cl->call('Inserimento',Array(SERVICE_USER,$dst,$allegati[$i]["nome_documento"],$allegati[$i]["file"]));
