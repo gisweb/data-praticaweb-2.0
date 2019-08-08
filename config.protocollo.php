@@ -14,6 +14,6 @@ define('CODICE_AMMINISTRAZIONE',"1");
 define('INDIRIZZO_TELEMATICO',"protocollo@comune.ge.it");
 define('CODICE_UO',"7");
 define('CODICE_TITOLARIO',"1702");
-define('Codice_A00',"1");
+define('CODICE_A00',"1");
 
 ?>
