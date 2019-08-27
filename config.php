@@ -1,4 +1,4 @@
-<?
+<?php
 define('NOME_COMUNE','Comune di Camogli - Pratiche Edilizie');//nome completo del comune che compare nell'intestazione
 error_reporting(E_ERROR);
 
@@ -77,6 +77,9 @@ $_SESSION['USER_DATA']=DATA_DIR;
 //LIMITI
 define('UPPER_LIMIT',15);
 define('LOWER_LIMIT',15);
+
+
+define('STP_FILTER_FORM',1);
 
 $tmpDir=ini_get('include_path');
 $tmpDir=(in_array('/apps/includes',explode(':',$tmpDir)))?($tmpDir):($tmpDir.':/apps/includes');
