@@ -81,6 +81,7 @@ data[]="Assegnazione Istr. Tecn..;resp_it;280xadmin.elenco_itec;selectdb|Data;da
 data[]="Oggetto;oggetto;;text"
 data[]="Note;note;;text"
 data[]="Pratica Completa;pratica_completa;45xpe.elenco_stati_pratica;selectdb"
+data[]=";;pe.avvioproc;stampa"
 ;data[]="Diritti Segreteria;diritti_segreteria;400xpe.elenco_diritti_segreteria;selectdb"
 ;data[]="Pagamento D.S.;pagamento_diritti;;yesno|Riduzione D.S.;riduzione_diritti;;yesno"
 [list]
