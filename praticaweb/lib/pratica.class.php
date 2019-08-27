@@ -194,7 +194,7 @@ class pratica extends generalPratica{
 		$numero=$db->sql_fetchfield('numero');
 		$prog=$db->sql_fetchfield('prog');
 		$sql="UPDATE pe.titolo SET titolo=protocollo WHERE pratica=$this->pratica;";
-		$db->sql_query($sql);
+		//$db->sql_query($sql);
 		
 	}
 /*********************************************************************************************************/	

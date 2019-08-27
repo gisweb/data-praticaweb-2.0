@@ -1,19 +1,25 @@
 <?
 define('NOME_COMUNE','Comune di Camogli - Pratiche Edilizie');//nome completo del comune che compare nell'intestazione
-error_reporting(E_ALL);
+error_reporting(E_ERROR);
+
+
 define('DEBUG', 1); // Debugging 0 off 1 on
 define('DB_DRIVER','pdo_pgsql');
 define('DB_HOST','127.0.0.1');
+define('DB_NAME','gw_camogli');
+define('DB_USER','gwAdmin');
+define('DB_PWD','!{!dpQ3!Hg7kdCA9');
+
+define('UPDATE_SW',0);
+
 if (file_exists(DATA_DIR.'config.local.php')){
-	/*LOCAL CONFIGURATION FOR TEST*/
+/*LOCAL CONFIGURATION FOR TEST*/
 	include DATA_DIR.'config.local.php';
 }
 else{
-	define('DB_PORT','5432');
+	define('DB_PORT','5434');
 }
-define('DB_NAME','gw_camogli');
-define('DB_USER','postgres');
-define('DB_PWD','postgres');
+
 
 
 

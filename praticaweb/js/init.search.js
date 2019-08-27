@@ -34,7 +34,7 @@ var colsDef={
         {title:'Data Prot.',sortable:true,field:'data_prot',width:70},
         {title:'Oggetto',sortable:true,field:'oggetto',width:200},
         {title:'Note',sortable:true,field:'note',width:150},
-        {title:'Pos. Arch.',sortable:true,field:'pos_archivio',width:100},
+        {title:'Riferimento',sortable:true,field:'rif_pratica',width:100},
         {title:'Ubicazione',sortable:true,field:'ubicazione',width:150},
         {title:'Richiedente',sortable:true,field:'richiedente',width:150},
         {title:'Progettista',sortable:true,field:'progettista',width:150}

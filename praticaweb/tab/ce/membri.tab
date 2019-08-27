@@ -15,6 +15,7 @@ data[]="Tel.Cellulare;telefono_cell;12;text"
 data[]="Fax;fax;12;text"
 data[]="Città;citta;25;autosuggest|CAP;cap;6;text"
 data[]="Indirizzo;indirizzo;50;text"
+data[]="Membro Attuale;attuale;50;yesno"
 button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
 [view]
 table="ce.e_membri"
