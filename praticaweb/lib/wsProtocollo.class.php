@@ -90,14 +90,14 @@ class wsProtocollo{
                 $response = $this->wsClient->call("insertDocumento",Array($this->login,$res["data"]["nomefile"],$res["data"]["descrizione"]));
                 if(!$response["lngErrNumber"] && $response["lngDocID"]){
                     $result["success"] = 1;
-		    $res["data"]["idrichiesta"] = $response["lngDocID"];
+                    $res["data"]["idrichiesta"] = $response["lngDocID"];
                     $r = $this->caricaXML("documento",$res["data"]);
                     $xmlAllegato = $r["result"];
                     $result["result"] = Array("idallegato"=>$response["lngDocID"],"xml"=>$xmlAllegato);
                 }
                 else{
                     $result["success"] = -2;
-                    $result["message"] = sprintf("Errore Numero %s - %s",$response["lngErrNumber"],$response["strErrString"]);
+                    $result["message"] = sprintf("Errore Numero %s - %s nel file %s",$response["lngErrNumber"],$response["strErrString"],$res["data"]["nomefile"]);
                 }
  
             }
@@ -160,7 +160,7 @@ class wsProtocollo{
         if (in_array("allegati",$paramsKeys) && $params["allegati"]){
             for($i=0;$i<count($params["allegati"]);$i++){
                 $idDoc = $params["allegati"][$i];                
-		$res = $this->inserisciDocumento($idDoc);
+            	$res = $this->inserisciDocumento($idDoc);
                 $documentiOk = $documentiOk && $res["success"];
                 if ($res["success"]==1){
                     if($i==0){
@@ -171,7 +171,8 @@ class wsProtocollo{
                         $xmlAll[] = $res["result"]["xml"];
                 }
                 else{
-
+                    $errors[] =  sprintf("Pratica %s : %s",$pratica,$res["message"]);
+                    
                 }
                 $this->wsClient->clearAttachments();
             }
@@ -181,7 +182,7 @@ class wsProtocollo{
         if (in_array("allegati_1",$paramsKeys) && $params["allegati_1"]){
             for($i=0;$i<count($params["allegati_1"]);$i++){
                 $idDoc = $params["allegati_1"][$i];                
-		$res = $this->inserisciDocumento($idDoc,1);
+                $res = $this->inserisciDocumento($idDoc,1);
                 $documentiOk = $documentiOk && $res["success"];
                 if ($res["success"]==1){
                     if($i==0 && $altriAllegati==0){
@@ -191,11 +192,20 @@ class wsProtocollo{
                         $xmlAll[] = $res["result"]["xml"];
                 }
                 else{
-
+                    $errors[] =  sprintf("Pratica %s : %s",$pratica,$res["message"]);
                 }
                 $this->wsClient->clearAttachments();
             }
             
+        }
+        if ($errors){
+            $f = fopen(LOCAL_LIB.'../debug/ERRORI-DOCUMENTI.debug','w');
+            ob_start();
+            print_r($errors);
+            $r = ob_get_contents();
+            ob_end_clean();
+            fwrite($f,$r);
+            fclose($f);
         }
         $dataSubst["allegati"] = implode("\n",$xmlAll);
         for($i=0;$i<count($params["destinatari"]);$i++){
