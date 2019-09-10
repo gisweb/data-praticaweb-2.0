@@ -22,8 +22,14 @@ if(!$protocollata){
 
 	}
 }
+
+$sql = "SELECT id_comunicazione FROM pe.comunicazioni WHERE id = ?;"; 
+$stmt = $dbh->prepare($sql);
+$stmt->execute(Array($id));
+$inviata = $stmt->fetchColumn();
+
 if(!$inviata and $prot){
-	//echo "<p>Comunicazione $id della pratica $idpratica da Inviare</p>"; 
+	echo "<p>Comunicazione $id della pratica $idpratica da Inviare</p>"; 
         $dataInvio = date('d/m/Y');
         if(!$_REQUEST["oggetto"]){
 	    $sql = "UPDATE pe.comunicazioni SET oggetto = ? WHERE id = ?;";
@@ -31,13 +37,14 @@ if(!$inviata and $prot){
             //print "<h3>$oggetto</h3>";
 	    $stmt = $dbh->prepare($sql);
             if(!$stmt->execute(Array($oggetto,$id))){
-	echo "<h3 style='color:red; font-weight:bold;'>Errore nell'aggiornamento dell'oggetto della comunicazione $id</h3>";
+	        echo "<h3 style='color:red; font-weight:bold;'>Errore nell'aggiornamento dell'oggetto della comunicazione $id</h3>";
 		
             }
 
         }
 	$ws = new wsMail();
 	$res = $ws->inviaPec($id);
+        //print_array($res);
 	if($res["success"]==1){
 	    $idComun = $res["descrizione"];
 	    $dataInvio = date('d/m/Y');
