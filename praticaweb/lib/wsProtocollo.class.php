@@ -452,9 +452,16 @@ EOT;
             if($result["success"]==1){
                 $xml=$result["result"];
                 $response = $this->wsClient->call("InviaMail",Array("strXML"=>$xml,"CodiceAmministrazione"=>SERVICE_LOGIN,"CodiceAOO"=>$codAOO));
-                $f = fopen(LOCAL_LIB.'../debug/mail.debug','w');
+                $f = fopen(LOCAL_LIB."../debug/mail_$id.debug",'w');
                 ob_start();
                 print_r($xml);
+                $r = ob_get_contents();
+                ob_end_clean();
+                fwrite($f,$r);
+                fclose($f);
+                $f = fopen(LOCAL_LIB."../debug/response_mail_$id.debug",'w');
+                ob_start();
+                print_r($response);
                 $r = ob_get_contents();
                 ob_end_clean();
                 fwrite($f,$r);

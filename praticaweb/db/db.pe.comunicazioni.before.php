@@ -29,7 +29,7 @@ $stmt->execute(Array($id));
 $inviata = $stmt->fetchColumn();
 
 if(!$inviata and $prot){
-	echo "<p>Comunicazione $id della pratica $idpratica da Inviare</p>"; 
+//	echo "<p>Comunicazione $id della pratica $idpratica da Inviare</p>"; 
         $dataInvio = date('d/m/Y');
         if(!$_REQUEST["oggetto"]){
 	    $sql = "UPDATE pe.comunicazioni SET oggetto = ? WHERE id = ?;";

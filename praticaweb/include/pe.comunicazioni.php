@@ -30,7 +30,7 @@ for($i=0;$i<count($arrayData);$i++){
     else{
         $d["accettazione"]=" --- ";
         $d["consegna"] = " --- ";
-        $d["data_invio"] = " --- ";
+        $d["data_invio"] = "<b style=color:red>Non Inviata</b>";
     }
     $arrayData[$i] = $d;
 }
