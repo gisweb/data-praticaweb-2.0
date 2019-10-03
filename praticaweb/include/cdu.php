@@ -1,0 +1,76 @@
+<?php
+$idPratica=(defined('FIELDS_LIST'))?(0):($this->pratica);
+
+
+$sql="SELECT pratica, protocollo, data, richiedente, indirizzo, note, data_certificazione FROM cdu.richiesta WHERE pratica=?";
+$ris=$db->fetchAll($sql,Array($idPratica));
+array_walk_recursive($ris, 'decode');
+$customData["cdu_richiesta"]=$ris;
+
+
+$sql=<<<EOT
+select distinct
+pratica, foglio||'_'||mappale as key, foglio,mappale
+FROM 
+cdu.mappali
+WHERE pratica=? 
+order by foglio, mappale
+EOT;
+$ris=$db->fetchAll($sql,Array($idPratica));
+
+for($i=0;$i<count($ris);$i++){
+	$r=$ris[$i];
+	//$mappali[$r["key"]]["sezione"]=$r["sezione"];
+	$mappali[$r["key"]]["foglio"]=$r["foglio"];
+	$mappali[$r["key"]]["mappale"]=$r["mappale"];
+	//if(!is_array($mappali[$r["key"]]["piani"])) $mappali[$r["key"]]["piani"]=Array();
+	//$r["perc_area"]=($r["perc_area"]==100)?(''):('in parte');
+	//if(in_array($r["gruppo"],Array('1','2'))){
+        /*$mappali[$r["key"]]["piani"][]=Array(
+                "vincolo"=>$r["descrizione_vincolo"],
+                "tavola"=>$r["descrizione_tavola"],
+                "zona"=>$r["descrizione_zona"],
+                "sigla"=>$r["sigla"],
+                "percentuale"=>$r["perc_area"]
+        );*/
+	//}
+	
+}
+$customData["cdu_mappali"]=array_values($mappali);
+
+
+$sql=<<<EOT
+select distinct
+pratica, foglio||'_'||mappale as key, foglio,mappale,vincolo,tavola,zona,perc_area,C.sigla,A.descrizione as descrizione_vincolo,B.descrizione as descrizione_tavola,C.descrizione  as descrizione_zona,A.ordine as ordine_v,B.ordine as ordine_t,C.ordine as ordine_z
+FROM 
+cdu.mappali
+INNER JOIN vincoli.vincolo A ON(vincolo=A.nome_vincolo)
+INNER JOIN vincoli.tavola B on (vincolo=B.nome_vincolo AND tavola = B.nome_tavola) 
+INNER JOIN vincoli.zona C on(vincolo=C.nome_vincolo AND tavola=C.nome_tavola AND zona=nome_zona)
+WHERE vincolo='PUC' and tavola in ('AMBITI','SERVIZI_STANDARDS_URBANISTICI','DISTRETTI') and pratica=? 
+ORDER BY ordine_v,ordine_t,ordine_z
+EOT;
+$ris=$db->fetchAll($sql,Array($idPratica));
+
+for($i=0;$i<count($ris);$i++){
+	$r=$ris[$i];
+	//$mappali[$r["key"]]["sezione"]=$r["sezione"];
+	$mappali[$r["key"]]["foglio"]=$r["foglio"];
+	$mappali[$r["key"]]["mappale"]=$r["mappale"];
+	if(!is_array($mappali[$r["key"]]["piani"])) $mappali[$r["key"]]["piani"]=Array();
+	
+	$r["perc_area"]=('('.$r["perc_area"].'%)');
+	//$r["perc_area"]=($r["perc_area"]==100)?(''):('(in parte)');
+	//if(in_array($r["gruppo"],Array('1','2'))){
+        $mappali[$r["key"]]["piani"][]=Array(
+                "vincolo"=>$r["descrizione_vincolo"],
+                "tavola"=>$r["descrizione_tavola"],
+                "zona"=>$r["descrizione_zona"],
+                "sigla"=>$r["sigla"],
+                "percentuale"=>$r["perc_area"]
+        );
+	//}
+	
+}
+$customData["cduvincoli"]=array_values($mappali);
+?>

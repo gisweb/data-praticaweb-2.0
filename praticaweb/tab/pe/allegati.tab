@@ -1,0 +1,62 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable="itec;iamm;ivigi;iagi"
+print_form="pe.allegati"
+print_prms="tipo=pe.allegati"
+;print_form="pe.avvioproc"
+
+[new]
+table="pe.file_allegati"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Prot.;prot_allegato;10;text|Data Prot.;data_prot_allegato;10;data"
+data[]="Prot. Richiesta;prot_richiesta;10;text|Data Richiesta;data_richiesta;10;data"
+data[]="Tipologia Allegato;tipo_allegato;500xpe.elenco_tipo_allegati;selectdb"
+data[]="Stato;stato_allegato;200xpe.elenco_stati_allegato;selectdb"
+data[]="Note;note;55x3;textarea"
+data[]="Nuovo Allegato;file_allegato;400xmultiple;upload"
+button="Salva;azione;;submit|Annulla;azione;;submit|Elimina;azione;;submit"
+[edit]
+table="pe.file_allegati"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Prot.;prot_allegato;10;text|Data Prot.;data_prot_allegato;10;data"
+data[]="Prot. Richiesta;prot_richiesta;10;text|Data Richiesta;data_richiesta;10;data"
+data[]="Tipologia Allegato;tipo_allegato;500xpe.elenco_tipo_allegati;selectdb"
+data[]="Stato;stato_allegato;200xpe.elenco_stati_allegato;selectdb"
+data[]="Note;note;55x3;textarea"
+data[]="Ordine di Visualizzazione;ordine;2;intero"
+data[]="Allegato;nome_file;100;allegato"
+data[]="Nuovo Allegato;file_allegato;400;upload"
+button="Salva;azione;;submit|Annulla;azione;;submit|Elimina;azione;;submit"
+
+[view]
+table="pe.file_allegati"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Prot.;prot_allegato;10;text|Data Prot.;data_prot_allegato;10;data"
+data[]="Prot. Richiesta;prot_richiesta;10;text|Data Richiesta;data_richiesta;10;data"
+data[]="Tipologia Allegato;tipo_allegato;500xpe.elenco_tipo_allegati;selectdb"
+data[]="Stato;stato_allegato;200xpe.elenco_stati_allegato;selectdb"
+data[]="Note;note;55x3;textarea"
+data[]="Allegato;nome_file;100;allegato"
+[list]
+table="pe.elenco_allegati_pratica"
+chiave="id"
+campi_ordinamento="ordine,lower(tipo_documento);nome_file"
+campi_obbligatori=""
+data[]=";id;2%#pe.allegati;btn_view"
+data[]=";id;2%#pe.allegati;btn_edit"
+data[]="Tipo;tipo_documento;30%;text"
+data[]="File;nome_file;20%;allegato"
+data[]="Stato;stato_allegato;5%xpe.elenco_stati_allegato;selectdb"
+data[]="Note;note;37%;text"
+data[]="Ordine;ordine;3%;text"
+[standard]
+
+
