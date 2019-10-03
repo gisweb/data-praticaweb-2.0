@@ -5,11 +5,13 @@
  * Date: 06/10/17
  * Time: 08:40
  */
-$dir = dirname(__FILE__);
-define('DATA_DIR',$dir.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR);
+$dir = dirname(dirname(__FILE__));
+error_reporting(E_ERROR);
+define('DATA_DIR',$dir.DIRECTORY_SEPARATOR);
 define('APPS_DIR',"/apps/praticaweb-2.1/");
 require_once "../config.php";
 require_once LIB."utils.class.php";
+require_once LOCAL_LIB."app.utils.class.php";
 require_once LOCAL_LIB."pratica.class.php";
 
 $template =<<<EOT
@@ -42,9 +44,23 @@ if($stmt->execute()){
         $info[$res[$i]["pratica"]][]= $res[$i];
     }
     foreach($info as $id=>$v){
-        $pr = new pratica($idpr);
+        $pr = new pratica($id);
         $nf = count($v);
         print $pr->documenti." con $nf documenti\n";
+	for($j=0;$j<count($v);$j++){
+            $doc = $v[$j];
+	    $fname = $pr->documenti.$doc["file_doc"];
+            if (!file_exists($fname)){
+                $f = fopen($fname,'w');
+                $html = sprintf($template,$doc["testohtml"]);
+                fwrite($f,$html);
+                fclose($f);
+                print "\tFile $fname scritto correttamente\n";
+            }
+            else{
+               print "\tFile $fname esistente\n";
+            }
+        }
     }
 }
 die();
