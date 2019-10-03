@@ -57,10 +57,11 @@ foreach($anni as $anno){
             
             $pratica = new pratica($pr);
             $allegatiDir = $pratica->allegati;
-            //$stampeDir = $pratica->documenti;
+            $stampeDir = $pratica->documenti;
             $prDir = DATA_DIR."praticaweb".DIRECTORY_SEPARATOR."export".DIRECTORY_SEPARATOR.$comune.DIRECTORY_SEPARATOR.$anno.DIRECTORY_SEPARATOR.$numero;
+//            print "$stampeDir\n";
             mkdir($prDir);
-            recurse_copy($allegatiDir, $prDir);
+            recurse_copy($stampeDir, $prDir);
             //Ciclo sugli allegati della pratica
             /*if($stmtAll->execute(Array($pr))){
                 $error = 0;

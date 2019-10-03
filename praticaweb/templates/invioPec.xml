@@ -1,0 +1,17 @@
+<messaggioIn>
+    <annoProt>[anno]</annoProt>
+    <numProt>[protocollo]</numProt>
+    <docId></docId>
+    <oggettoMail>[oggetto]</oggettoMail>
+    <testoMail>[testo]</testoMail>
+    <mittenteMail>[mittente]</mittenteMail>
+    <destinatariMail>
+        <destinatarioMail></destinatarioMail>
+    </destinatariMail>
+    <destinatariCCMail>
+        <destinatarioCCMail></destinatarioCCMail>
+    </destinatariCCMail>
+    <utente></utente>
+    <ruolo></ruolo>
+    <invioInteroperabile>S</invioInteroperabile>
+</messaggioIn>

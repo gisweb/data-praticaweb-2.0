@@ -97,8 +97,8 @@ function flussi($da,$a) {
 }
 
 function inserisciflussi($record){
-    $dsn = sprintf('pgsql:dbname=%s;host=%s;port=%s',"gw_andora",'127.0.0.1','5434');
-    $dbh = new PDO($dsn, 'postgres', 'postgres');
+//    $dsn = sprintf('pgsql:dbname=%s;host=%s;port=%s',"gw_andora",'127.0.0.1','5434');
+    $dbh = new PDO(DSN, 'gwAdmin', '!{!dpQ3!Hg7kdCA9');
     $sql = "INSERT INTO ragioneria.flussi(flusso,iuv,importo,capitolo,indice) VALUES(?,?,?,?,?)";
     $stmt = $dbh->prepare($sql);
     foreach($record as $idflusso=>$flusso){
@@ -115,13 +115,18 @@ function inserisciflussi($record){
         }
     }
 }
-
+$dsn = sprintf('pgsql:dbname=%s;host=%s;port=%s',"gw_andora",'127.0.0.1','5434');
+define('DSN',$dsn);
 $urlFlussi = "https://nodopagamenti.regione.liguria.it/portale/nodopagamenti/rest/riconciliazione/listaflussi";
 $urlFlusso = "https://nodopagamenti.regione.liguria.it/portale/nodopagamenti/rest/riconciliazione/flusso";
 
 $ente = "Unione Dei Comuni Valmerula e Montarosio";
-$da = "01/01/2019";
-$a = "09/08/2019";
+//$da = "01/01/2019";
+//$a = "19/08/2019";
+
+$a = date("d/m/Y");
+$da = date("d/m/Y",mktime(0, 0, 0, date("m"), date("d")-5,   date("Y")));
+
 $res = flussi($da,$a);
 inserisciflussi($res)
 
