@@ -22,9 +22,10 @@ chiave="id"
 campi_ordinamento=""
 campi_obbligatori=""
 data[]="Canc.;id;30;delete"
+data[]="Sezione;sezione;200xnct.elenco_sezioni;selectdb"
 data[]="Foglio;foglio;70;text"
 data[]="Mappale;mappale;70;text"
-data[]="Superficie;sup;100;superficie"
+;data[]="Superficie;sup;100;superficie"
 data[]="Sup.asservita;supass;;superficie"
 
 [view]
@@ -36,7 +37,7 @@ data[]=";id;2%;idriga"
 data[]="Sezione;sezione;200xnct.elenco_sezioni;selectdb"
 data[]="Foglio;foglio;70;text"
 data[]="Mappale;mappale;70;text"
-data[]="Superficie;sup;100;superficie"
+;data[]="Superficie;sup;100;superficie"
 data[]="Sup. asservita;supass;;superficie"
 [list]
 
