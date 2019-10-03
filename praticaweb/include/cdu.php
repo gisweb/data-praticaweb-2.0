@@ -1,7 +1,7 @@
 <?php
 $idPratica=(defined('FIELDS_LIST'))?(0):($this->pratica);
 
-$sql="SELECT A.*,B.dovuto as diritti_segreteria FROM cdu.richiesta A inner join cdu.diritti_segreteria B using(pratica) WHERE pratica=?";
+$sql="SELECT A.*,coalesce(B.dovuto::varchar,' --- ') as diritti_segreteria FROM cdu.richiesta A left join cdu.diritti_segreteria B using(pratica) WHERE pratica=?";
 $ris=$db->fetchAll($sql,Array($idPratica));
 array_walk_recursive($ris, 'decode');
 $customData["cdu_richiesta"]=$ris;
