@@ -28,6 +28,7 @@ var colsDef={
     ]],
     online:[[
         {title:'',field:'pratica',sortable:false,width:20,formatter: function(value,row,index){return '<a target="new" href="praticaweb.php?pratica=' + value + '"><div class="ui-icon ui-icon-search"/></a>'}},
+        {title:'Tipo Istanza',field:'tipo_istanza',sortable:true,width:100,styler: function(value,row,index){return 'font-size:11px;';}},
         {title:'Tipo Pratica',field:'tipo_pratica',sortable:true,width:150,styler: function(value,row,index){return 'font-size:11px;';}},
         {title:'Numero',field:'numero',sortable:true,width:70,styler: function(value,row,index){return 'font-size:11px;';}},
         {title:'Data Pres.',sortable:true,field:'data_presentazione',width:70,styler: function(value,row,index){return 'font-size:11px;';}},
