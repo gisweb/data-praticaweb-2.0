@@ -33,7 +33,7 @@ $.fn.serializeObject = function() {
 
 $(document).ready(function() {
     var prot = $('#protocollo').val();
-    var invio = $('#data_invio').val();
+    var invio = $('#id_comunicazione').val();
 
     $("#tipo_pec").change(function(){
         var id = $(this).val();
@@ -50,7 +50,7 @@ $(document).ready(function() {
             }
         });
     });
-    $('#azione-invia').hide();
+    $('#azione-mail').hide();
     if (prot) {
         $('[data-plugins="prot-locked"]').prop('readonly', true);
         $('#azione-protocolla').hide();
@@ -59,7 +59,7 @@ $(document).ready(function() {
         });
     }
     if (prot && !invio){
-        $('#azione-invia').show();
+        $('#azione-mail').show();
     }
 
 

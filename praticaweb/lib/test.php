@@ -56,8 +56,8 @@ require_once "wsProtocollo.class.php";
 require_once LIB."utils.class.php";
 
 
-//require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoap.php";
-//require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoapmime.php";
+require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoap.php";
+require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoapmime.php";
 
 
 // RICHIESTA PROTOCOLLO OUT
@@ -72,8 +72,8 @@ print_r($res);
 */
 
 // INFO PROTOCOLLO
-/*
-$prot = "16745";
+
+$prot = "47352";
 $anno = "2019";
 
 $ws = new nusoap_client_mime(WSPROT_URL,'wsdl');
@@ -81,7 +81,7 @@ $login = SERVICE_LOGIN;
 
 $a = $ws->call("infoProtocollo",Array($login,$prot,$anno));
 print $a;
-*/
+die();
 /*
 //INVIO PEC
 $idCom = 7;

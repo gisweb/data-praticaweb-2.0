@@ -19,6 +19,7 @@ data[]="Destinatari;destinatari;600xpe.elenco_destinatari_comunicazionexpratica;
 data[]="Documenti Prodotti;allegati;xpe.elenco_documenti_prodottixpratica;_checkbox;data-plugins=prot-locked"
 data[]="Allegati;allegati_1;xpe.elenco_allegati_firma_digitalexpratica;_checkbox;data-plugins=prot-locked"
 data[]="Testo Comunicazione;testo;100x6;textarea;data-plugins=prot-locked"
+data[]=";id_comunicazione;;hidden"
 button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit|mail;azione;;submit"
 
 [list]
