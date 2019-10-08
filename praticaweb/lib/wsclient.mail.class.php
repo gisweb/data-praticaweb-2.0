@@ -9,11 +9,11 @@ class wsClientMail{
     const serviceURL = "http://10.95.10.42/wsPECMail.asmx?WSDL";
     const user = "gisweb_auth";
     
-    static function getInfoPEC($objId,$remoteIds=Array()){
+    static function getInfoPEC($objId){
         $req = Array(
             "utente"=>self::user,
             "objectid"=>$objId,
-            "remoteids"=>$remoteIds,
+            "remoteids"=>Array(),
         );
         $jReq = json_encode($req);
         $client = new SoapClient(self::serviceURL, array("trace" => 1, "exception" => 0));
