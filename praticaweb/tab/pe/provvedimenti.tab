@@ -2,24 +2,24 @@
 [general]
 table=""
 viewable=""
-editable=""
+editable="iamm"
 
 [new]
-table="vigi.provvedimenti"
+table="pe.provvedimenti"
 chiave="id"
 campi_ordinamento=""
 campi_obbligatori=""
 data[]="Tipo di provvedimento;tipo;300xelenco_provvedimenti;selectdb"
 button="Salva;azione;;submit|Elimina;azione;#confirmDelete;submit|Annulla;azione;;submit"
 [edit]
-table="vigi.provvedimenti"
+table="pe.provvedimenti"
 chiave="id"
 campi_ordinamento=""
 campi_obbligatori=""
 data[]="Tipo di provvedimento;tipo;300xelenco_provvedimenti;selectdb"
 button="Salva;azione;;submit|Elimina;azione;#confirmDelete;submit|Annulla;azione;;submit"
 [view]
-table="vigi."
+table="pe."
 chiave="id"
 campi_ordinamento=""
 campi_obbligatori=""

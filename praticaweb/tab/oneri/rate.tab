@@ -17,13 +17,14 @@ data[]="Importo Versato;versato;12;valuta";
 data[]="Quietanza n°;quietanza;20;text"
 button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
 [view]
-table="oneri.rate"
+table="oneri.vista_rate"
 chiave="id"
 campi_ordinamento="rata"
 campi_obbligatori=""
 data[]="Rata;rata;xoneri.elenco_tiporate;selectdb|Importo;totale;12;valuta";
 data[]="Data Scadenza;data_scadenza;;data|Avviso spedito il;data_avviso;;data"
 data[]="Data Pagamento;data_pagata;;data|Importo Versato;versato;12;valuta|Quietanza n°;quietanza;;text"
+data[]="Urbanizzazione 10%;urb_10;;valuta|Urb. Secondaria 7%;urb2_7;;valuta"
 [list]
 
 [standard]

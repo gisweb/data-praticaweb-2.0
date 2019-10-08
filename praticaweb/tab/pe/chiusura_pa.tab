@@ -1,0 +1,26 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable="rdp;itec;iamm"
+print_form="pe.avvioproc"
+[edit]
+table="pe.avvioproc"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Data Chiusura P.A.;data_chiusura_pa;10;data"
+data[]="Note di chiusura P.A.;note_chiusura_pa;50x2;textarea"
+button="Salva;azione;;submit|Annulla;azione;;submit"
+[view]
+table="pe.avvioproc"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+
+data[]="Data Chiusura Pratica P.A.;data_chiusura_pa;10;data"
+data[]="Note di chiusura P.A.;note_chiusura_pa;;text"
+data[]="Allegati;id;#ui-icon-folder-open#Carica#action:stp.documenti#plugins:open-page#tipo_documento:allegato#direzione:0#mode:new#pratica;folder";
+[list]
+
+[standard]

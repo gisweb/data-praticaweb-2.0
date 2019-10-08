@@ -2,7 +2,7 @@
 [general]
 table=""
 viewable=""
-editable=""
+editable="itec;iamm;ivigi;iagi;ipre"
 
 [new]
 table="pe.doc_elenco"

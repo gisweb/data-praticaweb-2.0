@@ -1,0 +1,24 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[new]
+
+[edit]
+
+[view]
+
+[list]
+
+[standard]
+table="#"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori="modalita"
+data[]="Modalità Pagamento;estrattoconto.idmodalita;200xragioneria.elenco_modalita;search_list"
+data[]="Data Operazione;estrattoconto.data_pagamento;10;search_date"
+data[]="Resp.Proc;estrattoconto.uidins;280xadmin.elenco_rdp;search_list"
+data[]="Raggruppa per pratica;groupprat;;yesno"
+data[]="Versamenti provvisori;showprov;;yesno"

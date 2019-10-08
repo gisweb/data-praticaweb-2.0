@@ -3,25 +3,34 @@
 table=""
 viewable=""
 editable="itec;iamm;ivigi;iagi"
-;print_form="pe.allegati"
-print_form="pe.avvioproc"
+print_form="pe.allegati"
+print_prms="tipo=pe.allegati"
+;print_form="pe.avvioproc"
 [edit]
-table="pe.doc_allegati"
+table="pe.grouped_allegati"
 chiave="id"
 campi_ordinamento=""
 campi_obbligatori=""
 data[]="Elimina;id;50;radio"
 data[]="Alleg.;allegato;30;radio"
 data[]="Manc.;mancante;30;radio"
-data[]="Nome del Documento;documento;;text"
+data[]="Nome del Documento;tipo;;text"
+;data[]="Iter;nome_iter;;text"
 
 [view]
-table="pe.doc_allegati"
+table="pe.grouped_allegati"
 chiave="id"
-campi_ordinamento=""
+campi_ordinamento="mancante DESC"
 campi_obbligatori=""
-data[]=";id;5%#pe.scheda_documento;btn_info"
-data[]="Documenti allegati;documento;100%;text"
+data[]=";id;3%#pe.scheda_documento#protocollo;btn_list"
+;data[]="Iter;iter;8%;text"
+data[]="Presentato;allegato;5%;yesno"
+data[]="Integrato;integrato;5%;yesno"
+data[]="Mancante;mancante;5%;yesno"
+data[]="Tipo;tipo;20%;text"
+data[]="Allegati;doc;50%;text"
+
 [list]
 
 [standard]
+

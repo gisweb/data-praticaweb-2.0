@@ -1,0 +1,21 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[view]
+table=""
+chiave=""
+campi_ordinamento=""
+campi_obbligatori=""
+
+data[]="Data;data;10%;text"
+data[]="Oggetto;oggetto;40%;text"
+data[]="Destinatari;destinatari;30%;text"
+data[]="Accettazione;accettazione;10%;text"
+data[]="Consegna;consegna;10%;text"
+
+button=""
+
+

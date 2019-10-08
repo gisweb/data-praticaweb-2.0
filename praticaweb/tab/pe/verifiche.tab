@@ -1,0 +1,30 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable="rdp"
+
+[edit]
+table="pe.verifiche"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Data Sorteggio;data_sorteggio;10;data|Tipo Verifica;tipo;200xpe.elenco_tipo_verifiche;selectdb"
+data[]="Resp. Proc.;resp_proc_verifica;280xadmin.elenco_iveri;selectdb"
+data[]="Data Avvio;data_avvio;10;data|Data Chiusura;data_chiusura;10;data"
+data[]="Esito;esito;200xpe.elenco_esiti_verifiche;selectdb"
+data[]="Note;note;60x6;textarea"
+button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
+
+[view]
+table="pe.verifiche"
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Data Sorteggio;data_sorteggio;10;data|Tipo Verifica;tipo;200xpe.elenco_tipo_verifiche;selectdb"
+data[]="Resp. Proc.;resp_proc_verifica;280xadmin.elenco_utenti;selectdb"
+data[]="Data Avvio;data_avvio;10;data|Data Chiusura;data_chiusura;10;data"
+data[]="Esito;esito;200xpe.elenco_esiti_verifiche;selectdb"
+data[]="Note;note;;text"
+
+[list]
