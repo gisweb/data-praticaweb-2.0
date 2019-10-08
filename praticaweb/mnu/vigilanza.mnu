@@ -14,4 +14,5 @@ iter,Iter
 210,Annotazioni,vigi.annotazioni,
 220,Documenti Prodotti,stp.documenti
 500,Firma Digitale,pe.firma_digitale
+550,Stato Comunicazioni,pe.mail_status
 230,Accesso agli Atti,vigi.visione,

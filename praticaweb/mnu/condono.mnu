@@ -36,4 +36,5 @@ iter,Iter
 300,Annotazioni,pe.annotazioni,
 293,Documenti Prodotti,stp.documenti
 500,Firma Digitale,pe.firma_digitale
+550,Stato Comunicazioni,pe.mail_status
 305,Accesso agli Atti,pe.visione,
