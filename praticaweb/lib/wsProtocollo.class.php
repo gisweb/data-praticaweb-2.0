@@ -171,7 +171,17 @@ class wsProtocollo{
                         $xmlAll[] = $res["result"]["xml"];
                 }
                 else{
-                    $errors[] =  sprintf("Pratica %s : %s",$pratica,$res["message"]);
+                    $result["success"]= -3;
+                    $result["message"] = sprintf("Pratica %s : %s",$pratica,$res["message"]);
+                    $f = fopen(DATA_DIR."/praticaweb/debug/ERRORI-DOCUMENTI-$pratica.debug",'w');
+                    ob_start();
+                    print_r($result["message"]);
+                    $r = ob_get_contents();
+                    ob_end_clean();
+                    fwrite($f,$r);
+                    fclose($f);
+
+                    return $result;
                     
                 }
                 $this->wsClient->clearAttachments();
@@ -192,21 +202,24 @@ class wsProtocollo{
                         $xmlAll[] = $res["result"]["xml"];
                 }
                 else{
-                    $errors[] =  sprintf("Pratica %s : %s",$pratica,$res["message"]);
+                    $result["success"]= -3;
+                    $result["message"] = sprintf("Pratica %s : %s",$pratica,$res["message"]);
+  
+                    $f = fopen(DATA_DIR."/praticaweb/debug/ERRORI-DOCUMENTI-$pratica.debug",'w');
+                    ob_start();
+                    print_r($result["message"]);
+                    $r = ob_get_contents();
+                    ob_end_clean();
+                    fwrite($f,$r);
+                    fclose($f);
+
+                    return $result;
                 }
                 $this->wsClient->clearAttachments();
             }
             
         }
-        if ($errors){
-            $f = fopen(LOCAL_LIB.'../debug/ERRORI-DOCUMENTI.debug','w');
-            ob_start();
-            print_r($errors);
-            $r = ob_get_contents();
-            ob_end_clean();
-            fwrite($f,$r);
-            fclose($f);
-        }
+        
         $dataSubst["allegati"] = implode("\n",$xmlAll);
         for($i=0;$i<count($params["destinatari"]);$i++){
             $idDest = $params["destinatari"][$i];
