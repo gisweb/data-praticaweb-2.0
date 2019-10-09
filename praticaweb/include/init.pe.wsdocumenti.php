@@ -121,9 +121,7 @@ function getInfoDocumento($cl,$template,$strDST,$user,$idDoc){
 		"soggetti" => ($r["RAPPORTI"]["RAPPORTO"]["DENOMINAZIONE"])?($r["RAPPORTI"]["RAPPORTO"]["DENOMINAZIONE"]):($r["RAPPORTI"]["RAPPORTO"]["COGNOME_NOME"]),
 		"direzione" => ""
 	);
-if ($_SESSION["USER_ID"]==1){
-    print_array($result);
-}
+
 
 	return Array("success"=>1,"data"=>$result,"message"=>"");
 }
