@@ -110,7 +110,7 @@ function getInfoDocumento($cl,$template,$strDST,$user,$idDoc){
 		return Array("success"=>0,"data"=>Array(),"message"=>"NO XML Response");
 	}
 	$r = json_decode(json_encode($xml),true);
-//print_array($r);
+
 	$result = Array(
 		"data" => $r["DOC"]["DATA"],
 		"oggetto" => $r["DOC"]["OGGETTO"],
@@ -121,6 +121,10 @@ function getInfoDocumento($cl,$template,$strDST,$user,$idDoc){
 		"soggetti" => ($r["RAPPORTI"]["RAPPORTO"]["DENOMINAZIONE"])?($r["RAPPORTI"]["RAPPORTO"]["DENOMINAZIONE"]):($r["RAPPORTI"]["RAPPORTO"]["COGNOME_NOME"]),
 		"direzione" => ""
 	);
+if ($_SESSION["USER_ID"]==1){
+    print_array($result);
+}
+
 	return Array("success"=>1,"data"=>$result,"message"=>"");
 }
 

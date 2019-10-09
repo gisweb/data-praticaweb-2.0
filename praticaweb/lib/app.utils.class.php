@@ -546,13 +546,17 @@ class appUtils extends generalAppUtils {
             $lLimit=(defined('LOWER_LIMIT'))?(LOWER_LIMIT):(5);
             $uLimit=(defined('UPPER_LIMIT'))?(UPPER_LIMIT):(3);
             $sql="select A.id,A.pratica,B.numero,B.data_prot,A.data_notifica,testo as oggetto,ARRAY[soggetto_notificato] as interessati,C.elenco_richiedenti as richiedenti from pe.notifiche A inner join pe.avvioproc B using(pratica) left join stp.single_elenco_richiedenti C USING(pratica) where soggetto_notificato=$userId and visionato=0 order by data_notifica DESC,A.tmsins DESC;";
-            
+//            $sql="select A.id,A.pratica,B.numero,B.data_prot,A.data_notifica,testo as oggetto,ARRAY[soggetto_notificato] as interessati,' --- '::varchar as richiedenti from pe.notifiche A inner join pe.avvioproc B using(pratica) where soggetto_notificato=$userId and visionato=0 order by data_notifica DESC,A.tmsins DESC;";
             $stmt=$conn->prepare($sql);
+//            $tms = time();
             if(!$stmt->execute()){
                 return Array("errore"=>1,"query"=>$sql);
             }
             else{
                 $res=$stmt->fetchAll(PDO::FETCH_ASSOC);
+//                $dt = time()-$tms;
+//                $message = sprintf("Delta Time : %s",$dt);
+//                utils::debugAdmin($message);
                 return Array("totali"=>count($res),"data"=>$res);
             }
     }

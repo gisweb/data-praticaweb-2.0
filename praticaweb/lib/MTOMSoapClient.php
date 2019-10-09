@@ -10,10 +10,10 @@
  * @licence   MIT
  */
 
-//namespace KeepItSimple\Http\Soap;
+namespace KeepItSimple\Http\Soap;
 
-//use SoapClient;
-//use Exception;
+use SoapClient;
+use Exception;
 
 /**
  * Class MTOMSoapClient
@@ -76,8 +76,8 @@ class MTOMSoapClient extends SoapClient
                 // Get Binary
                 $binary = null;
                 preg_match('/Content-ID:[\s\S].+?'.$cid.'[\s\S].+?>([\s\S]*?)--uuid/', $response, $binary);
-                //$binary = trim($binary[1]);
-                $binary = $binary[1];
+                $binary = trim($binary[1]);
+
                 $binary = base64_encode($binary);
 
                 // Replace xop:Include tag by base64_encode(binary)

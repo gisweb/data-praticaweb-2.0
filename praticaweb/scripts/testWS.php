@@ -2,6 +2,10 @@
 require_once "/data/savona/pe/config.ads.php";
 require_once "WSSoapClient.php";
 require_once "template.php";
+require_once "MTOMSoapClient.php";
+
+
+
 $client = new SoapClient(WSDL_LOGIN_URL);
 
 $xmlData =<<<EOT
@@ -31,13 +35,28 @@ $xmlData1 =<<<EOT
 EOT;
 
 
-
+$xmlData2 =<<<EOT
+<xml>
+<![CDATA[
+        <ROOT>
+                <ID_DOCUMENTO>2184390</ID_DOCUMENTO>
+                <IDOBJFILE>15582231</IDOBJFILE>
+                <FILENAME>comunicazione-integrazione.pdf.p7m</FILENAME>
+                <UTENTE>%s</UTENTE>
+        </ROOT>
+]]>
+</xml>
+EOT;
+$xml = sprintf($xmlData2,SERVICE_USER);
 $res = $client->login(Array("strCodEnte"=>CODICE_ENTE,"strUserName"=>SERVICE_USER,"strPassword"=>SERVICE_PASSWD));
 $r = json_decode(json_encode($res),true);
 //print_r($r);
 $strDST=$r["LoginResult"]["strDST"];
 //echo "$strDST\n";
-$clientDocs = new SoapClient(WSDL_PROTEXT_URL,array("login"=>SERVICE_USER,"password"=>SERVICE_PASSWD,'trace' => true, 'exceptions' => true));
+
+
+
+//$clientDocs = new SoapClient(WSDL_PROTEXT_URL,array("login"=>SERVICE_USER,"password"=>SERVICE_PASSWD,'trace' => true, 'exceptions' => true));
 
 //$clientDocs->__setUsernameToken(SERVICE_USER,SERVICE_PASSWD);
 $auth = array(
@@ -45,6 +64,16 @@ $auth = array(
     'Password' => SERVICE_PASSWD
 );
 
+
+$clientDocs = new MTOMSoapClient(WSDL_DOWNLOAD,array("login"=>SERVICE_USER,"password"=>SERVICE_PASSWD,'trace' => true, 'exceptions' => true));
+$header = new SoapHeader(WSDL_DOWNLOAD,'Authorization',"Basic ".base64_encode(SERVICE_USER.":".SERVICE_PASSWD));
+$clientDocs->__setSoapHeaders($header);
+
+$res = $clientDocs->downloadAttach(Array("idDocumento"=>"2184390","idObjFile"=>"1558231","fileName"=>"comunicazione-integrazione.pdf.p7m","utenteApplicativo"=>SERVICE_USER));
+
+//$res = $clientDocs->downloadAttach(Array("user"=>SERVICE_USER,"DST"=>$strDST,"xml"=>$xml));
+print_r($res);
+/*
 $header = new SoapHeader(WSDL_PROTEXT_URL,'Authorization',"Basic ".base64_encode(SERVICE_USER.":".SERVICE_PASSWD));
 $clientDocs->__setSoapHeaders($header);
 
@@ -76,6 +105,8 @@ for($i=0;$i<count($r["DOCUMENTO"]);$i++){
 	$rrr = json_decode(json_encode($xml),true);
 	print_r($rrr);
 }
+*/
+
 //print_r($r);
 
 //echo "REQUEST:\n" . $clientDocs->__getLastRequest() . "\n";

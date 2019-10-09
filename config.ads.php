@@ -4,7 +4,7 @@ define('WSDL_LOGIN_URL',"http://documentale.comune.savona.it/JProtocolloDocArea/
 define('WSDL_SFERA_URL',"http://documentale.comune.savona.it/Atti/services/atti?wsdl");
 define('WSDL_PROTEXT_URL',"http://documentale.comune.savona.it/agspr/services/ProtocolloExtendedServicePort?wsdl");
 define('WSDL_DOCUM_URL',"http://documentale.comune.savona.it/Protocollo/services/protocollo?wsdl");
-define('WSDL_DOWNLOAD','http://documentale.comune.savona.it//DMServerWSCXF/AttachServicePort?wsdl');
+define('WSDL_DOWNLOAD','http://documentale.comune.savona.it/DMServerWSCXF/AttachServicePort?wsdl');
 
 define('SERVICE_USER','AGSPRWS');
 define('SERVICE_PASSWD','password');

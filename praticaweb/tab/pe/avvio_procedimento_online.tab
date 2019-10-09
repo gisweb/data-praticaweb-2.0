@@ -85,8 +85,8 @@ data[]="Responsabile Vigilanza;resp_vigilanza;280xadmin.elenco_utenti;selectdb"
 data[]="Oggetto;oggetto;;text"
 data[]="Note;note;;text"
 data[]="Pratica Online;online;;yesno|Collegamento;foreign_id;;link"
-;data[]="Richiesta Pareri;pareri_da_richiedere;;yesno"
-;data[]="Pratica Onerosa;onerosa;xpe.elenco_onerosa;selectdb"
+data[]="Richiesta Pareri;pareri_da_richiedere;;yesno"
+data[]="Pratica Onerosa;onerosa;xpe.elenco_onerosa;selectdb"
 ;data[]="Pagamento D.S.;pagamento_diritti;;yesno|Riduzione D.S.;riduzione_diritti;;yesno"
 [list]
 
