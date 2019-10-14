@@ -91,7 +91,7 @@ class pagopa extends generalPagopa{
 
                     );
                 }
-                $post_string = json_encode($dataPost);
+                $post["data"] = json_encode($dataPost);
             }
             else{
                 return $result;
@@ -116,7 +116,7 @@ class pagopa extends generalPagopa{
             //            curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_ANY);
             curl_setopt($ch, CURLOPT_TIMEOUT, 30);
             curl_setopt($ch, CURLOPT_POST, true);
-            curl_setopt($ch, CURLOPT_POSTFIELDS, $post_string); // the SOAP request
+            curl_setopt($ch, CURLOPT_POSTFIELDS, $post); // the SOAP request
             curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 
             // converting
