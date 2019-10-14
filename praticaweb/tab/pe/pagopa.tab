@@ -1,0 +1,17 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable="iamm"
+
+[list]
+table=""
+chiave="id"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Data Pagamento;data;10%;data"
+data[]="Modalità;metodo_pagamento;10%;text"
+data[]="Importo;importo;10%;valuta"
+data[]="Tipologia;tipo_pagamento;20%;text"
+data[]="Causale;causale;30%;text"
+data[]="Anagrafica;anagrafica;20%;text"
