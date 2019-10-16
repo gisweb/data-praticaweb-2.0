@@ -50,7 +50,7 @@ $(document).ready(function() {
             }
         });
     });
-    $('#azione-mail').hide();
+//    $('#azione-mail').hide();
     if (prot) {
         $('[data-plugins="prot-locked"]').prop('readonly', true);
         $('#azione-protocolla').hide();
@@ -58,8 +58,8 @@ $(document).ready(function() {
             $('[data-plugins="prot-locked"]').prop('readonly', false);
         });
     }
-    if (prot && !invio){
-        $('#azione-mail').show();
+    if (prot && invio){
+        $('#azione-mail').hide();
     }
 
 
