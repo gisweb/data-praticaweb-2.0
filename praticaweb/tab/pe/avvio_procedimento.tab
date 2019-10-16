@@ -81,7 +81,7 @@ data[]="Note;note;;text"
 ;data[]="Diritti Segreteria;diritti_segreteria;400xpe.elenco_diritti_segreteria;selectdb"
 ;data[]="Pagamento D.S.;pagamento_diritti;;yesno|Riduzione D.S.;riduzione_diritti;;yesno"
 data[]="Autorizzazione Paesaggistica;vincolo_paes;280xpe.elenco_opzione_ap;selectdb"
-data[]="Pratica Online;online;;yesno|Collegamento;foreign_id;;text"
+data[]="Pratica Online;online;;yesno|Collegamento;foreign_id;;link"
 data[]=";;pe.avvioproc;stampa"
 [list]
 
