@@ -9,20 +9,20 @@ class pagopa extends generalPagopa{
     const user = "marco.carbone@gisweb.it";
     const passwd = "pipino";
     
-    
+    const base_url = "https://www.istanze.spezianet.it/iol_praticaweb";
     
     static function readPagamenti($pratica){
         $result = Array("success"=>0,"message"=>Array(),"data"=>Array());
-        $sql = "SELECT * FROM pe.istanze WHERE pratica=?";
+        $sql = "SELECT DISTINCT url,foreign_id FROM pe.istanze WHERE pratica=?";
         $dbh = utils::getDb();
         $stmt = $dbh->prepare($sql);
         if($stmt->execute(Array($pratica))){
-            $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
-            for($i=0;$i<count($res);$i++){
-                $url = sprintf("%s/%s",$res[$i]["url"],self::actionRead);
+            $res1 = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            for($i=0;$i<count($res1);$i++){
+                $url = sprintf("%s/%s/%s",self::base_url,$res1[$i]["foreign_id"],self::actionRead);
                 //$url = "https://www.istanze.spezianet.it/iol_sp/04028-2019-dehor/iol-GetElencoImportiPagamenti";
 
-
+//                echo "<p>$url</p>";
                 $headers = array(
                     "Content-type: text/json;charset=\"utf-8\"",
                     //"Accept: text/json",
