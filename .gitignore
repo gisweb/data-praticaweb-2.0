@@ -1,7 +1,10 @@
-
+config.local.php
 praticaweb/debug/*
 praticaweb/documenti/pe/*
 praticaweb/documenti/cdu/*
 praticaweb/documenti/vigi/*
 praticaweb/documenti/ce/*
 /nbproject/private/
+scripts
+importDatabase
+tmp
