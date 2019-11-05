@@ -1,0 +1,50 @@
+;Example file tab
+[general]
+table=""
+viewable=""
+editable=""
+
+[new]
+table="firma_digitale.documenti"
+chiave="iddocumento"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Richiesta di Protocollazione<br>e Invio;protocolla;80;yesno"
+;data[]="Invio alla firma;invio;80;yesno"
+data[]="Alla firma di;idutentedst;300xadmin.elenco_utenti_attivi;selectdb"
+data[]="Oggetto Comunicazione;object;70;text"
+data[]="Testo Comunicazione;body;70x6;textarea"
+data[]="Documenti Prodotti da Firmare;oggetto;3xstp.documenti_da_firmarexpratica;_checkbox"
+data[]="Documenti Allegati da Firmare;allegati;3xpe.elenco_allegati_firma_digitalexpratica;_checkbox"
+data[]="Destinatari;destinatari;3xpe.elenco_destinatari_comunicazionexpratica;_checkbox"
+button="Salva;azione;;submit|Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit"
+
+[edit]
+table="firma_digitale.documenti"
+chiave="iddocumento"
+campi_ordinamento=""
+campi_obbligatori=""
+data[]="Alla firma di;idutentedst;300xadmin.elenco_utenti_attivi;selectdb"
+data[]="Documenti Prodotti da Firmare digitalmente;oggetto;1xstp.documenti_da_firmarexpratica;_checkbox"
+button="Salva;azione;;submit|Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit"
+
+[view]
+table="firma_digitale.documenti"
+chiave="iddocumento"
+campi_ordinamento="datainvio"
+campi_obbligatori=""
+data[]=";iddocumento;3%#pe.firma_digitale;btn_edit"
+data[]="Richiesta di Protocollazione;protocolla;5%;yesno"
+data[]="Data Invio;datainvio;6%;text"
+data[]="Oggetto;object;6%;text"
+data[]="Inviato da;idutentesrc;8%xadmin.elenco_utenti;selectdb"
+data[]="Alla firma di;idutentedst;8%xadmin.elenco_utenti;selectdb"
+data[]="Destinatari;destinatari;10%;text"
+data[]="Documento;nomedocumento;10%;text"
+data[]="Data Firma;firma;5%;text"
+;data[]="Accettazione;accettazione;4%;text"
+;data[]="Consegna;consegna;4%;text"
+button=""
+
+
+
