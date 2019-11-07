@@ -73,6 +73,16 @@ define('QTID_CIVICI','25');
 
 $_SESSION['USER_DATA']=DATA_DIR;
 
+/******************************* DEFINIZIONI DELLE AZIONI STANDARD *******************************/
+
+define('ACTION_SAVE','salva');
+define('ACTION_CANCEL','annulla');
+define('ACTION_DELETE','elimina');
+
+/*******************************  COSTANTI DELLA FIRMA DIGITALE  *******************************/
+
+define('FIRMA_STATO_DEFAULT','IMM');
+
 
 //LIMITI
 define('UPPER_LIMIT',15);
