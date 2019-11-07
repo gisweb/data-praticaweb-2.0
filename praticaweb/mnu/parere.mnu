@@ -25,7 +25,7 @@ lav,Lavori
 170,Esecuzione Lavori,pe.lavori,lav
 agi,AgibilitÃ 
 200,Collaudo,pe.collaudo,agi
-210,Segnalazione Certificata ,pe.abitabi,agi
+210,Segnalazione Certificataï¿½,pe.abitabi,agi
 vigi,Sorveglianza
 260,Esposti,pe.esposti,
 250,Sopralluoghi,pe.sopralluoghi
@@ -34,5 +34,7 @@ iter,Iter
 285,Verifiche,pe.verifiche
 295,Scadenze,pe.scadenze,
 300,Annotazioni,pe.annotazioni,
+500,Firma Digitale,pe.firma_digitale
+310,Comunicazioni,pe.comunicazioni
 293,Documenti Prodotti,stp.documenti
 305,Accesso agli Atti,pe.visione,

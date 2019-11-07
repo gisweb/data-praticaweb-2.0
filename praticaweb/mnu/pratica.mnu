@@ -35,5 +35,6 @@ iter,Iter
 295,Scadenze,pe.scadenze,
 300,Annotazioni,pe.annotazioni,
 500,Firma Digitale,pe.firma_digitale
+310,Comunicazioni,pe.comunicazioni
 293,Documenti Prodotti,stp.documenti
 305,Accesso agli Atti,pe.visione,
