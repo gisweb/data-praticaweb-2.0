@@ -21,7 +21,7 @@ else{
 }
 
 
-
+define('PROJECT','camogli');
 
 define('ALWAYS_VIEWABLE',1);
 define('ALWAYS_EDITABLE',1);
@@ -78,7 +78,9 @@ $_SESSION['USER_DATA']=DATA_DIR;
 define('ACTION_SAVE','salva');
 define('ACTION_CANCEL','annulla');
 define('ACTION_DELETE','elimina');
-
+define('ACTION_MAIL','mail');
+define('PROT_OUT',1);
+define('PROT_IN',0);
 /*******************************  COSTANTI DELLA FIRMA DIGITALE  *******************************/
 
 define('FIRMA_STATO_DEFAULT','IMM');
