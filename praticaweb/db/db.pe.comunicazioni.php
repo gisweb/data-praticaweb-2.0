@@ -8,37 +8,81 @@ function generateRandomString($length = 32) {
 //utils::debugAdmin($_REQUEST);
 //$r = appUtils::getComunicazione($id);
 //utils::debugAdmin($r);
+$dbh = utils::getDb();
 if ($action==ACTION_MAIL){
-	$r = appUtils::getComunicazione($id);
-	if (!$r["protocollo"]){
+	$res = appUtils::getComunicazione($id);
+	$com = $res["comunicazione"];
+	if (!$com["protocollo"]){
 		require_once LOCAL_LIB."wsprotocollo.class.php";
-		$Errors["protocollo"]="Si sono verificati degli errori durante la protocollazione della comunicazione";
+		
+		
+		if ($res["success"]==1)
+		{
+			$com = $res["comunicazione"];
+			$destinatari = $com["persone"];
+			for($i=0;$i<count($com["attachments"]);$i++){
+				$allegati[]=Array(
+					"id"=>$com["attachments"][$i]["id"],
+					"nome_documento"=>$com["attachments"][$i]["name"],
+					"descrizione_documento"=>"Documento Generico",
+					"tipo_documento"=>"LETTERA",
+					"file"=>$com["attachments"][$i]["file"]
+				);
+			}
+		}	
+
+		$mittente=Array(
+			Array(
+				"codice_amministrazione"=>CODICE_AMMINISTRAZIONE,
+				"codice_a00"=>CODICE_A00,
+				"codice_titolario"=>CODICE_TITOLARIO,
+				"codice_uo"=>CODICE_UO,
+				"denominazione_amministrazione"=>DENOMINAZIONE
+			)
+		);
+		$ws = new protocollo();
+		$prot = $ws->protocolla("U",$com["subject"],$mittente,$destinatari,$allegati);
+		if (!$prot["protocollo"]){
+			$Errors["protocollo"]="Si sono verificati degli errori durante la protocollazione della comunicazione";
 		//$_REQUEST["destinatari"] = sprintf("{%s}",implode(',',$_REQUEST["destinatari"]));
 		//$_REQUEST["allegati"] = sprintf("{%s}",implode(',',$_REQUEST["allegati"]));
 		//$_REQUEST["allegati_1"] = sprintf("{%s}",implode(',',$_REQUEST["allegati_1"]));
-		include_once $active_form;
-		exit;
+			include_once $active_form;
+			exit;
+		}
+		else{
+			
+			$sql = "UPDATE pe.comunicazioni SET protocollo=?, data_protocollo=? WHERE pratica=? AND id=?;";
+			$stmt = $dbh->prepare($sql);
+			if(!$stmt->execute(Array($prot["protocollo"],$prot["data"],$idpratica,$id))){
+				$err = $stmt->errorInfo();
+				$Errors["protocollo"]=$err[2];
+				include_once $active_form;
+				exit;
+			}
+			
+		}
 	}
-	if($r["success"]==1){
+	if(!$com["id_comunicazione"]==1){
 		require_once DATA_DIR."config.mail.php";
 		require_once LIB."mail.class.php";
-		$rr = gwMail::inviaPec("",$r["comunicazione"]["to"],$r["comunicazione"]["subject"],$r["comunicazione"]["text"],$r["comunicazione"]["attachments"]);
+		$rr = gwMail::inviaPec("",$com["to"],$com["subject"],$com["text"],$com["attachments"]);
 		
 		
 		if($rr["success"]==1){
-			//$dbh = utils::getDb();
-			//$sql = "UPDATE pe.comunicazioni SET data_invio=?, id_comunicazione=? WHERE pratica=? AND id=?;";
-			//$stmt = $dbh->prepare->sql($sql);
-			//if(!$stmt->execute(Array(date('d/m/Y'),$rr["uuid"],$idpratica,$id)){
-			//	$err = $stmt->errorInfo();
-			//	$Errors["data_invio"]=$err[2];
-			//	include_once $active_form;
-			//	exit;
-			//	utils::debugAdmin($err);
-			//}
+			
+			$sql = "UPDATE pe.comunicazioni SET data_invio=?, id_comunicazione=? WHERE pratica=? AND id=?;";
+			$stmt = $dbh->prepare($sql);
+			if(!$stmt->execute(Array(date('d/m/Y'),$rr["uuid"],$idpratica,$id))){
+				$err = $stmt->errorInfo();
+				$Errors["data_invio"]=$err[2];
+				include_once $active_form;
+				exit;
+			}
+			
 		}
 		else{
-			$Errors["data_invio"]="Si sono verificati degli errori durante l'invio della comunicazione";
+			$Errors["data_invio"]="Si sono verificati degli errori durante l\'invio della comunicazione";
 			include_once $active_form;
 			exit;
 		}
