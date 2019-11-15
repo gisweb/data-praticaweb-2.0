@@ -3,9 +3,10 @@ if (!defined('DATA_DIR')) define("DATA_DIR",dirname(dirname(dirname(__FILE__))))
 require_once DATA_DIR.DIRECTORY_SEPARATOR."config.protocollo.php";
 require_once LOCAL_LIB."app.utils.class.php";
 require_once LIB."utils.class.php";
+require_once LIB."wsprotocollo.class.php";
 require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoap.php";
 require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoapmime.php";
-class protocollo{
+class protocollo extends generalWSProtocollo{
     var $data = Array(
         "oggetto"=>"",
         "altri_documenti"=>"",
@@ -22,31 +23,6 @@ class protocollo{
         "tipo_documento"=>""
     );
     
-    private function subst($txt,$data){
-        foreach($data as $k=>$v){
-            $txt = str_replace("($k)s",$v,$txt);
-        }
-        return $txt;
-    }
-    
-    function caricaXML($nome,$data){
-        $result = $this->result;
-        $fName = TEMPLATE_DIR.$nome.".xml";
-        if (file_exists($fName)){
-            $f = fopen($fName,'r');
-            $tXml = fread($f,filesize($fName));
-            fclose($f);
-            $xml = $this->subst($tXml,$data);
-            $result["success"] = 1;
-            $result["result"] = $xml;
-            return Array("success"=>1,"result"=>$xml);
-        }
-        else{
-            $result["success"] = -1;
-            $result["message"] = "Il file $fName non è stato trovato";
-        }
-        return $result;
-    }
     function login(){
         $cl = new SoapClient(SERVICE_URL,array("trace" => 1, "exception" => 0));
         $res = $cl->Login(Array("strCodEnte"=>CODICE_AMMINISTRAZIONE,"strUserName"=>SERVICE_USER,"strPassword"=>SERVICE_PASSWD));
@@ -100,10 +76,16 @@ class protocollo{
 
         $suffix = ($mode=='U')?("OUT"):("IN");
         $this->data["oggetto"] = $oggetto;
-		$clientDocs = new SoapClient(SERVICE_URL,array('trace' => true, 'exceptions' => true,'keep_alive' => true,
-    'connection_timeout' => 5000,
-    'cache_wsdl' => WSDL_CACHE_NONE,
-    'compression'   => SOAP_COMPRESSION_ACCEPT | SOAP_COMPRESSION_GZIP | SOAP_COMPRESSION_DEFLATE,));
+		$clientDocs = new SoapClient(
+            SERVICE_URL, 
+            array(
+                'trace' => true, 
+                'exceptions' => true,
+                'keep_alive' => true,
+                'connection_timeout' => 30,
+                'cache_wsdl' => WSDL_CACHE_NONE
+            )
+        );
         if(count($allegati)>0){
             for($i=0;$i<count($allegati);$i++){
 				//$cl->addAttachment($allegati[$i]["file"],$allegati[$i]["nome"]);
