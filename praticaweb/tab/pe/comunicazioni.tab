@@ -35,7 +35,7 @@ data[]="Protocollo;protocollo;4%;text"
 data[]="Data Protocollo;data_protocollo;6%;text"
 data[]="Data Invio;data_invio;6%;text"
 data[]="Oggetto/Titolo;oggetto;15%;text"
-data[]="ID Comunicazione;id_comunicazione;1%;hidden"
+data[]="ID Comunicazione;id_comunicazione;5%;verifica-pec"
 ;data[]="Accettazione;accettazione;20%;text"
 ;data[]="Consegna;consegna;40%;text"
 
