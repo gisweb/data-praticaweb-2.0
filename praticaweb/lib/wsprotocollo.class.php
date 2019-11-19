@@ -3,10 +3,10 @@ if (!defined('DATA_DIR')) define("DATA_DIR",dirname(dirname(dirname(__FILE__))))
 require_once DATA_DIR.DIRECTORY_SEPARATOR."config.protocollo.php";
 require_once LOCAL_LIB."app.utils.class.php";
 require_once LIB."utils.class.php";
-require_once LIB."wsprotocollo.class.php";
+require_once LIB."protocollo.halley.class.php";
 require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoap.php";
 require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoapmime.php";
-class protocollo extends generalWSProtocollo{
+class protocollo extends HProtocollo{
     var $data = Array(
         "oggetto"=>"",
         "altri_documenti"=>"",
@@ -22,7 +22,7 @@ class protocollo extends generalWSProtocollo{
         "descrizione_documento"=>"",
         "tipo_documento"=>""
     );
-    
+/*    
     function login(){
         $cl = new SoapClient(SERVICE_URL,array("trace" => 1, "exception" => 0));
         $res = $cl->Login(Array("strCodEnte"=>CODICE_AMMINISTRAZIONE,"strUserName"=>SERVICE_USER,"strPassword"=>SERVICE_PASSWD));
@@ -162,26 +162,7 @@ class protocollo extends generalWSProtocollo{
 			catch (Exception $e){
 				utils::debugAdmin($postData);return;
 			}
-/*$xml =<<<EOT
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
-   <soapenv:Header/>
-   <soapenv:Body>
-      <tem:Protocollazione>
-         <!--Optional:-->
-         <tem:strUserName>SERVIZIO PROTOCOLLO</tem:strUserName>
-         <!--Optional:-->
-         <tem:strDST>%s</tem:strDST>
-         <!--Optional:-->
-         <tem:strDocumentInfo>
-%s
-	    </tem:strDocumentInfo>
-      </tem:Protocollazione>
-   </soapenv:Body>
-</soapenv:Envelope>
-EOT;
-			$xml = sprintf($xml,$dst,$xmlData);
-			$res = $clientDocs->__doRequest($xml,SERVICE_URL,"Protocollazione");
-			*/
+
 			$res = json_decode(json_encode($res->ProtocollazioneResult),true);
 			
 			if($res["lngErrNumber"]){
@@ -198,6 +179,6 @@ EOT;
 		return $xmlData;
 		
     }
-    
+*/    
 }
 ?>

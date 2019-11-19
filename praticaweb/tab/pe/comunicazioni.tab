@@ -20,7 +20,7 @@ data[]="Testo Comunicazione;testo;100x6;textarea;data-locked=protocollo"
 data[]="Destinatari;destinatari;600xpe.elenco_destinatari_comunicazionexpratica;_multiselectdb;data-plugins=multi-select#data-locked=protocollo"
 data[]="Documenti Prodotti;allegati;xpe.elenco_documenti_prodottixpratica;_multiselectdb;data-plugins=multi-select#data-locked=protocollo"
 data[]="Allegati;allegati_1;xpe.elenco_allegati_firma_digitalexpratica;_multiselectdb;data-plugins=multi-select#data-locked=protocollo"
-data[]=";id_comunicazione;;hidden"
+;data[]=";id_comunicazione;;hidden"
 button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit|mail;azione;;submit"
 
 [list]
