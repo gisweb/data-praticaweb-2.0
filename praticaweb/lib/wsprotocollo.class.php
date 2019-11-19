@@ -3,10 +3,10 @@ if (!defined('DATA_DIR')) define("DATA_DIR",dirname(dirname(dirname(__FILE__))))
 require_once DATA_DIR.DIRECTORY_SEPARATOR."config.protocollo.php";
 require_once LOCAL_LIB."app.utils.class.php";
 require_once LIB."utils.class.php";
+require_once LIB."protocollo.halley.class.php";
 require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoap.php";
 require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoapmime.php";
-
-class protocollo{
+class protocollo extends HProtocollo{
     var $data = Array(
         "oggetto"=>"",
         "altri_documenti"=>"",
@@ -22,32 +22,7 @@ class protocollo{
         "descrizione_documento"=>"",
         "tipo_documento"=>""
     );
-    
-    private function subst($txt,$data){
-        foreach($data as $k=>$v){
-            $txt = str_replace("($k)s",$v,$txt);
-        }
-        return $txt;
-    }
-    
-    function caricaXML($nome,$data){
-        $result = $this->result;
-        $fName = TEMPLATE_DIR.$nome.".xml";
-        if (file_exists($fName)){
-            $f = fopen($fName,'r');
-            $tXml = fread($f,filesize($fName));
-            fclose($f);
-            $xml = $this->subst($tXml,$data);
-            $result["success"] = 1;
-            $result["result"] = $xml;
-            return Array("success"=>1,"result"=>$xml);
-        }
-        else{
-            $result["success"] = -1;
-            $result["message"] = "Il file $fName non è stato trovato";
-        }
-        return $result;
-    }
+/*    
     function login(){
         $cl = new SoapClient(SERVICE_URL,array("trace" => 1, "exception" => 0));
         $res = $cl->Login(Array("strCodEnte"=>CODICE_AMMINISTRAZIONE,"strUserName"=>SERVICE_USER,"strPassword"=>SERVICE_PASSWD));
@@ -88,6 +63,7 @@ class protocollo{
     }
     
     function protocolla($mode='U',$oggetto,$mittente,$destinatari,$allegati){
+		return Array("success"=>1,"message"=>"","protocollo"=>rand(22300,22600),"anno"=>'2019',"data"=>date('d/m/Y',time()));
         $xmlData = "";
         $res = $this->login();
         if ($res["success"]===1){
@@ -96,19 +72,46 @@ class protocollo{
         else{
             return -1;
         }
-        $cl = new nusoap_client_mime(SERVICE_URL,'wsdl');
+//       $cl = new nusoap_client_mime(SERVICE_URL,'wsdl');
 
         $suffix = ($mode=='U')?("OUT"):("IN");
         $this->data["oggetto"] = $oggetto;
+		$clientDocs = new SoapClient(
+            SERVICE_URL, 
+            array(
+                'trace' => true, 
+                'exceptions' => true,
+                'keep_alive' => true,
+                'connection_timeout' => 30,
+                'cache_wsdl' => WSDL_CACHE_NONE
+            )
+        );
         if(count($allegati)>0){
             for($i=0;$i<count($allegati);$i++){
-                //$res = $cl->call('Inserimento',Array(SERVICE_USER,$dst,$allegati[$i]["nome_documento"],$allegati[$i]["file"]));
-                $res = Array("lngErrNumber"=>0,"lngDocID"=>rand(100,999999));
-                if($res["lngErrNumber"]===0){
+				//$cl->addAttachment($allegati[$i]["file"],$allegati[$i]["nome"]);
+                //$res = $cl->call('Inserimento',Array(Array(SERVICE_USER,$dst,$allegati[$i]["nome"],base64_encode($allegati[$i]["file"]))));
+				//$res = $cl->call('Inserimento',Array(SERVICE_USER,$dst,$allegati[$i]["nome"]));
+				$parm = array();
+				$parm[] = new SoapVar(SERVICE_USER, XSD_STRING, null, null, 'strUserName' );
+				$parm[] = new SoapVar($dst, XSD_STRING, null, null, 'strDST' );
+				$parm[] = new SoapVar($allegati[$i]["nome_documento"], XSD_STRING, null, null, 'strDocument' );
+				$parm[] = new SoapVar(base64_encode($allegati[$i]["file"]), XSD_BASE64BINARY, null, null, 'objDocument' );
+				$res = $clientDocs->Inserimento(new SoapVar($parm, SOAP_ENC_OBJECT,null,null,'Inserimento'));
+				//$res = $clientDocs->__soapCall('Inserimento',Array(SERVICE_USER,$dst,$allegati[$i]["nome"],base64_encode($allegati[$i]["file"])));
+				
+				$res = json_decode(json_encode($res->InserimentoResult),true);
+				utils::debugAdmin($res);
+				utils::debug(DEBUG_DIR."FILE_PROTOCOLLO.debug",$res,'w');
+                //$res = Array("lngErrNumber"=>0,"lngDocID"=>rand(100,999999));
+				
+                if($res["lngDocID"]){
                     $allegato = $allegati[$i];
                     $allegato["id_documento"] = $res["lngDocID"];
                     $resAllegati[] = $allegato;
                 }
+				else{
+					return Array("success"=>0,"message"=>sprintf("Errore Numero %s nell'inserimento del file %s - %s",$res["lngErrNumber"],$allegati[$i]["nome_documento"],$res["strErrString"]));
+				}
             }
             $allegato = array_shift($resAllegati);
             $this->data = array_merge($this->data,$allegato);
@@ -119,6 +122,7 @@ class protocollo{
                 }
             }
         }
+
         for($i=0;$i<count($mittente);$i++){
             $res = $this->caricaXML("MITTENTE-".$suffix,$mittente[$i]);
             if($res["success"]==1){
@@ -134,9 +138,47 @@ class protocollo{
         $res = $this->caricaXML("PROT-".$suffix,$this->data);
         if($res["success"]==1){
             $xmlData=$res["result"];
+			utils::debug(DEBUG_DIR."XML_PROTOCOLLO.debug",$xmlData,'w');
+			$parm = array();
+			$parm[] = new SoapVar(SERVICE_USER, XSD_STRING, null, null, 'strUserName' );
+			$parm[] = new SoapVar($dst, XSD_STRING, null, null, 'strDST' );
+			$parm[] = new SoapVar($xmlData, XSD_ANYXML, null, null, 'strDocumentInfo' );
+			
+			$soapVarUser = new SoapVar(SERVICE_USER, XSD_STRING, null, null, 'strUserName' );
+			$soapVarDst = new SoapVar($dst, XSD_STRING, null, null, 'strDST' );
+			$soapVarXml = new SoapVar($xmlData, XSD_STRING, null, null, 'strDocumentInfo' );
+			//utils::debugAdmin($xmlData);return;
+			//$res = $clientDocs->Protocollazione(new SoapVar($parm,SOAP_ENC_OBJECT,null,null,'Protocollazione'));
+			//utils::debugAdmin($xmlData);
+			$postData = Array("strUserName"=>SERVICE_USER,"strDST"=>$dst,"strDocumentInfo"=>$xmlData);
+			try{
+				
+				//$res = $clientDocs->__soapCall('Protocollazione',$parm);
+				//$res = $clientDocs->__getTypes();
+				$res = $clientDocs->Protocollazione($postData);
+				//$res = $clientDocs->Protocollazione(new SoapVar($parm,SOAP_ENC_OBJECT,null,null,'Protocollazione'));
+				utils::debugAdmin($postData);return;
+			}
+			catch (Exception $e){
+				utils::debugAdmin($postData);return;
+			}
+
+			$res = json_decode(json_encode($res->ProtocollazioneResult),true);
+			
+			if($res["lngErrNumber"]){
+				return Array("success"=>0,"message"=>sprintf("Errore durante la protocollazione numero %s - %s",$res["lngErrNumber"],$res["strErrString"]));
+			}
+			else{
+				return Array("success"=>1,"message"=>"","protocollo"=>$res["lngNumPG"],"anno"=>$res["lngAnnoPG"],"data"=>$res["strDataPG"]);
+			}
         }
-        return $xmlData;
+        else{
+			return Array("success"=>0,"message"=>"Errore nella creazione dell'XML per la protocollazione");
+		}
+		
+		return $xmlData;
+		
     }
-    
+*/    
 }
 ?>

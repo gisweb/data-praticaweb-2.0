@@ -3,6 +3,6 @@
 				<Nome>(nome)s</Nome>
 				<Cognome>(cognome)s</Cognome>
 				<CodiceFiscale>(codfis)s</CodiceFiscale>
-				<IndirizzoTelematico>(mail)s</IndirizzoTelematico>
+				<IndirizzoTelematico>(pec)s</IndirizzoTelematico>
 			</Persona>  
 		</Destinatario>
