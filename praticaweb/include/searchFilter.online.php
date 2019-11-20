@@ -22,8 +22,9 @@ $radio =<<<EOT
                             <label for="%_pe-avvioproc-istruttore" class="value">%s</label><br/>        
 EOT;
 
-if($stmt->execute($sql)){
+if($stmt->execute()){
     $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    
     for($i=0;$i<count($res);$i++){
         $_radioHTML[]=sprintf($radio,$res[$i]["value"],($i+1),($i+1),$res[$i]["label"]);
     }
