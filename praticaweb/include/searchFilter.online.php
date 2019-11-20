@@ -28,7 +28,7 @@ if($stmt->execute($sql)){
         $_radioHTML[]=sprintf($radio,$res[$i]["value"],($i+1),($i+1),$res[$i]["label"]);
     }
     $_radioHTML[]=sprintf($radio,"0",($i+1),($i+1),"Tutti");
-    $radioHHTML = implode("",$_radioHTML);
+    $radioHTML = implode("",$_radioHTML);
 }
 
 ?>
