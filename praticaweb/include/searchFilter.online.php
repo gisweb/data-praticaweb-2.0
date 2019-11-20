@@ -18,8 +18,8 @@ ORDER BY A.nome;
 EOT;
 $stmt = $dbh->prepare($sql);
 $radio =<<<EOT
-                            <input type="radio" value="%s" id="%s_pe-avvioproc-istruttore" name="istruttore"  data-plugins="dynamic-search">
-                            <label for="%_pe-avvioproc-istruttore" class="value">%s</label><br/>        
+                            <input type="radio" value="%s" id="%s_pe-utenti_interessati-interessati" name="interessati"  data-plugins="dynamic-search">
+                            <label for="%_pe-utenti_interessati-interessati" class="value">%s</label><br/>        
 EOT;
 
 if($stmt->execute()){
@@ -48,10 +48,10 @@ if($stmt->execute()){
                             <label for="3_pe-vista_assegante-assegnata_istruttore" class="value">Tutte</label><br/>
                         </td>
                     </tr>
-					<tr id="flt-sportello">
+					<tr id="flt-interessato">
                         <td valign="middle">
-                            <label for="istruttore" class="title">Istruttore</label><br/>
-                            <input type="hidden" datatable="pe.avvioproc" id="op_pe-avvioproc-istruttore" class="search text check" name="istruttore" value="equal">                           
+                            <label for="interessati" class="title">Istruttore</label><br/>
+                            <input type="hidden" datatable="pe.utenti_interessati" id="op_pe-utenti_interessati-interessati" class="search text check" name="interessati" value="inarray">                           
 <?php
 print $radioHTML;
 ?>
