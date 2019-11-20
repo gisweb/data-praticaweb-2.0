@@ -51,7 +51,7 @@ if($stmt->execute()){
 					<tr id="flt-interessato">
                         <td valign="middle">
                             <label for="interessati" class="title">Istruttore</label><br/>
-                            <input type="hidden" datatable="pe.utenti_interessati" id="op_pe-utenti_interessati-interessati" class="search text check" name="interessati" value="inarray">                           
+                            <input type="hidden" datatable="pe.utenti_interessati" id="op_pe-utenti_interessati-interessati" class="search integer check" name="interessati" value="inarray">                           
 <?php
 print $radioHTML;
 ?>
