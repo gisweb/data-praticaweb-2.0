@@ -1,0 +1,35 @@
+<ns1:strDocumentInfo>
+<![CDATA[
+<Segnatura xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Intestazione>
+		<Oggetto>(oggetto)s</Oggetto>
+		<Identificatore>
+			<CodiceAmministrazione>(codice_amministrazione)s</CodiceAmministrazione>
+			<CodiceAOO>(codice_a00)s</CodiceAOO>
+			<NumeroRegistrazione>0</NumeroRegistrazione>
+			<DataRegistrazione>0</DataRegistrazione>
+			<Flusso>U</Flusso>
+		</Identificatore>
+(mittente)s
+		<Destinatario>
+(destinatari)s
+		</Destinatario>
+		<Classifica>
+			<CodiceAmministrazione>(codice_amministrazione)s</CodiceAmministrazione>
+			<CodiceAOO>(codice_a00)s</CodiceAOO>
+			<CodiceTitolario>(codice_titolario)s</CodiceTitolario>
+		</Classifica>
+		
+	</Intestazione>
+	<Descrizione>
+		<Documento nome="(nome_documento)s" id="(id_documento)s">
+			<DescrizioneDocumento>(descrizione_documento)s</DescrizioneDocumento>
+			<TipoDocumento>(tipo_documento)s</TipoDocumento>
+		</Documento>  
+		<Allegati>
+(altri_documenti)s
+		</Allegati>   
+	</Descrizione>   
+</Segnatura>
+]]>
+</ns1:strDocumentInfo>

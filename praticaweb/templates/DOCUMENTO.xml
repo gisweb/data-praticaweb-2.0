@@ -1,0 +1,4 @@
+			<Documento nome="(nome_documento)s" id="(id_documento)s">         
+				<DescrizioneDocumento>(descrizione_documento)s</DescrizioneDocumento>
+				<TipoDocumento>(tipo_documento)s</TipoDocumento>
+			</Documento>

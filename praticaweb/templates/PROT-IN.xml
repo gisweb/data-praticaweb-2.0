@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<Segnatura xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Intestazione>
+		<Oggetto>(oggetto)s</Oggetto>
+		<Identificatore>
+			<CodiceAmministrazione>(codice_amministrazione)s</CodiceAmministrazione>
+			<CodiceAOO>(codice_a00)s</CodiceAOO>
+			<NumeroRegistrazione>0</NumeroRegistrazione>
+			<DataRegistrazione>0</DataRegistrazione>
+			<Flusso>E</Flusso>
+		</Identificatore>
+(mittente)s
+(destinatari)s
+		<Classifica>
+			<CodiceAmministrazione>(codice_amministrazione)s</CodiceAmministrazione>
+			<CodiceAOO>(codice_a00)s</CodiceAOO>
+			<CodiceTitolario>(codice_titolario)s</CodiceTitolario>
+		</Classifica>
+		<Fascicolo>6/2013.L653.SS</Fascicolo> 
+	</Intestazione>
+	<Descrizione>
+		<Documento nome="(nome_documento)s" id="id_documento">
+			<DescrizioneDocumento>(descrizione_documento)s</DescrizioneDocumento>
+			<TipoDocumento>(tipo_documento)s</TipoDocumento>
+		</Documento>  
+		<Allegati>
+(altri_documenti)s
+		</Allegati>   
+	</Descrizione>   
+	<ApplicativoProtocollo nome="ArchiPRO">     
+		<Parametro nome="TipoSpedizione" valore="LETTERA" />     
+		<Parametro nome="uo" valore="5" />     
+		<Parametro nome="MittenteIndirizzo" valore="" />     
+		<Parametro nome="MittenteLocalita" valore="" />     
+		<Parametro nome="MittenteProvincia" valore="" />
+		<Parametro nome="MittenteCap" valore="" />     
+		<Parametro nome="OperatoreInserimento" valore="PLLLRD60M29E202G" />     
+		<Parametro nome="TipoInvio" valore="E-mail" />   
+	</ApplicativoProtocollo> 
+</Segnatura>
