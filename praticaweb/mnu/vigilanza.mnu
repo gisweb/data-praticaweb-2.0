@@ -11,6 +11,7 @@ vigi,Vigilanza
 280,Ordinanze,pe.ordinanze
 ,Sanzioni
 135,Sanzioni,pe.sanzioni,
+115,Pagamenti,pe.wspagamenti,oc
 iter,Iter
 295,Scadenze,pe.scadenze,
 300,Annotazioni,pe.annotazioni,

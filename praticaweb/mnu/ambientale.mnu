@@ -13,6 +13,7 @@ it,Istruttoria Tecnica
 110,Importi,oneri.importi,
 120,Rateizzazione,oneri.rate,
 130,Fideiussioni,oneri.fidi,
+115,Pagamenti,pe.wspagamenti,oc
 ia,Istruttoria Amministrativa
 100,Richiesta Pareri,pe.pareri,
 90,Asservimenti,pe.asservimenti,
