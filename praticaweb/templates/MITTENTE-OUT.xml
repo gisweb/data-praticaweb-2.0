@@ -9,10 +9,4 @@
 				<CodiceAOO>(codice_a00)s</CodiceAOO>
 			</AOO>       
 			<IndirizzoTelematico /> 
-			<Classifica>
-				<CodiceAmministrazione>(codice_amministrazione)s</CodiceAmministrazione>
-				<CodiceAOO>(codice_a00)s</CodiceAOO>
-				<CodiceTitolario>(codice_titolario)s</CodiceTitolario>
-			</Classifica>
-			
 		</Mittente>
