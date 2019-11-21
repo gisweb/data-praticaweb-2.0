@@ -8,5 +8,5 @@
 			<AOO>         
 				<CodiceAOO>(codice_a00)s</CodiceAOO>
 			</AOO>       
-			<IndirizzoTelematico /> 
+            <IndirizzoTelematico>(indirizzo_telematico)s</IndirizzoTelematico> 
 		</Mittente>

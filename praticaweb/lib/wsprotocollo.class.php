@@ -17,6 +17,7 @@ class protocollo extends HProtocollo{
         "codice_titolario"=>CODICE_TITOLARIO,
         "codice_uo"=>CODICE_UO,
         "denominazione_amministrazione"=>DENOMINAZIONE,
+        "indirizzo_telematico" => INDIRIZZO_TELEMATICO,
         "id_documento"=>"",
         "nome_documento"=>"",
         "descrizione_documento"=>"",
