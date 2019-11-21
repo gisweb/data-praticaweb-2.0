@@ -26,9 +26,7 @@
 			<DescrizioneDocumento>(descrizione_documento)s</DescrizioneDocumento>
 			<TipoDocumento>(tipo_documento)s</TipoDocumento>
 		</Documento>  
-		<Allegati>
 (altri_documenti)s
-		</Allegati>   
 	</Descrizione>   
 </Segnatura>
 ]]>
