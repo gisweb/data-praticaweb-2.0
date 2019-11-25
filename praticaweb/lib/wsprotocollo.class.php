@@ -27,7 +27,7 @@ class protocollo extends HProtocollo{
     );
     //Metodo di protocollazione che sfrutta il WS di IOL
     function protocolla($mode = 'U', $oggetto, $mittenti = array(), $destinatari = array(), $allegati = array()) {
-        $postData = Array("data"=>Array());
+        $postData = Array();
 		if($mode=='TEST') return Array("success"=>1,"message"=>"","protocollo"=>rand(10000,99900),"anno"=>'2019',"data"=>date('d/m/Y',time()));
         $documento = array_shift($allegati);
         $postData["flusso"]=$mode;
@@ -36,7 +36,7 @@ class protocollo extends HProtocollo{
         $postData["documento"] = $documento;
         $postData["allegati"] = $allegati;
         $auth = base64_encode(IOL_USER.":".IOL_PWD);
-        $res = utils::curlJsonCall($this->wsUrl, json_encode($postData),Array("Authorization"=>sprintf("Basic %s",$auth)));
+        $res = utils::curlJsonCall($this->wsUrl, Array("data"=>json_encode($postData)),Array("Authorization"=>sprintf("Basic %s",$auth)));
         $data = json_encode($res,TRUE);
         if ($data && $data["success"]==1 && $data["NumeroProtocollo"]){
             return Array("success"=>1,"message"=>"","protocollo"=>$data["NumeroProtocollo"],"anno"=>'2019',"data"=>date('d/m/Y',time()));
