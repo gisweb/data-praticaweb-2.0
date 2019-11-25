@@ -16,4 +16,8 @@ define('CODICE_UO',"18");
 define('CODICE_TITOLARIO',"6728");
 define('CODICE_A00',"1");
 define('CODICE_ENTE',"1");
+
+define('WS_URL_PROT','https://camogli.istanze-online.it/iol_praticaweb/protocolla_comunicazione');
+define('IOL_USER','marco.carbone@gisweb.it');
+define('IOL_PWD','pipino')
 ?>

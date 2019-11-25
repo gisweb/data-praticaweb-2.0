@@ -7,6 +7,8 @@ require_once LIB."protocollo.halley.class.php";
 require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoap.php";
 require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoapmime.php";
 class protocollo extends HProtocollo{
+    var $wsUrl = WS_URL_PROT;
+    
     var $data = Array(
         "oggetto"=>"",
         "altri_documenti"=>"",
@@ -23,6 +25,24 @@ class protocollo extends HProtocollo{
         "descrizione_documento"=>"",
         "tipo_documento"=>""
     );
+    //Metodo di protocollazione che sfrutta il WS di IOL
+    function protocolla($mode = 'U', $oggetto, $mittenti = array(), $destinatari = array(), $allegati = array()) {
+        $postData = Array("data"=>Array());
+		if($mode=='TEST') return Array("success"=>1,"message"=>"","protocollo"=>rand(10000,99900),"anno"=>'2019',"data"=>date('d/m/Y',time()));
+        $documento = array_shift($allegati);
+        $postData["flusso"]=$mode;
+        $postData["soggetti"] = ($mode=='U')?($destinatari):($mittenti);
+        $postData["oggetto"] = $oggetto;
+        $postData["documento"] = $documento;
+        $postData["allegati"] = $allegati;
+        $auth = base64_encode(IOL_USER.":".IOL_PWD);
+        $res = utils::curlJsonCall($this->wsUrl, json_encode($postData),Array("Authorization"=>sprintf("Basic %s",$auth)));
+        $data = json_encode($res,TRUE);
+        if ($data && $data["success"]==1 && $data["NumeroProtocollo"]){
+            return Array("success"=>1,"message"=>"","protocollo"=>$data["NumeroProtocollo"],"anno"=>'2019',"data"=>date('d/m/Y',time()));
+        }
+        return Array("success"=>0,"message"=>$data["message"],"protocollo"=>"","anno"=>"2019","data"=>"");
+    }
 /*    
     function login(){
         $cl = new SoapClient(SERVICE_URL,array("trace" => 1, "exception" => 0));
