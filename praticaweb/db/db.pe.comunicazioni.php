@@ -19,7 +19,15 @@ if ($action==ACTION_MAIL){
 		if ($res["success"]==1)
 		{
 			$com = $res["comunicazione"];
-			$destinatari = $com["persone"];
+            for($i=0;$i<count($com["persone"]);$i++){
+                $persone[]=Array(
+                    "Nome"=>$com["persone"][$i]["nome"],
+                    "Cognome"=>$com["persone"][$i]["cognome"],
+                    "CodiceFiscale"=>$com["persone"][$i]["codfis"],
+                    "IndirizzoTelematico"=>$com["persone"][$i]["pec"],
+                );
+            }
+			$destinatari = $persone;
 			for($i=0;$i<count($com["attachments"]);$i++){
 				$allegati[]=Array(
 					"id"=>$com["attachments"][$i]["id"],
