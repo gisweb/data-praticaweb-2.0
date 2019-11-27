@@ -37,7 +37,7 @@ class protocollo extends HProtocollo{
         $postData["allegati"] = $allegati;
         $auth = base64_encode(IOL_USER.":".IOL_PWD);
         $xxxData = Array("data"=> json_encode($postData));
-        $res = curlJsonCall(WS_URL_PROT, $xxxData,Array());
+        $res = utils::curlJsonCall(WS_PROT_URL, $xxxData,Array());
 
         $data = json_encode($res,TRUE);
         if ($data && $data["success"]==1 && $data["NumeroProtocollo"]){
