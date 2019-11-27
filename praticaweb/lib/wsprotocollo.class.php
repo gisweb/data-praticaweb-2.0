@@ -25,8 +25,29 @@ class protocollo extends HProtocollo{
         "descrizione_documento"=>"",
         "tipo_documento"=>""
     );
+    
+    function protocolla($mode = 'U', $oggetto, $destinatari = array(), $allegati = array()) {
+        $postData = Array();
+        if($mode=='TEST') return Array("success"=>1,"message"=>"","protocollo"=>rand(10000,99900),"anno"=>'2019',"data"=>date('d/m/Y',time()));
+        $documento = array_shift($allegati);
+        $postData["flusso"]=$mode;
+        $postData["soggetti"] = ($mode=='U')?($destinatari):($mittenti);
+        $postData["oggetto"] = $oggetto;
+        $postData["documento"] = $documento;
+        $postData["allegati"] = $allegati;
+        $auth = base64_encode(IOL_USER.":".IOL_PWD);
+        $xxxData = Array("data"=> json_encode($postData));
+        $res = curlJsonCall(WS_URL_PROT, $xxxData,Array());
+
+        $data = json_encode($res,TRUE);
+        if ($data && $data["success"]==1 && $data["NumeroProtocollo"]){
+            return Array("success"=>1,"message"=>"","protocollo"=>$data["NumeroProtocollo"],"anno"=>'2019',"data"=>date('d/m/Y',time()));
+        }
+        return Array("success"=>0,"message"=>$data["message"],"protocollo"=>"","anno"=>"","data"=>"");
+    }
+    
     //Metodo di protocollazione che sfrutta il WS di IOL
-    function protocolla($mode = 'U', $oggetto, $mittenti = array(), $destinatari = array(), $allegati = array()) {
+    /*function protocolla($mode = 'U', $oggetto, $mittenti = array(), $destinatari = array(), $allegati = array()) {
         $postData = Array();
 		if($mode=='TEST') return Array("success"=>1,"message"=>"","protocollo"=>rand(10000,99900),"anno"=>'2019',"data"=>date('d/m/Y',time()));
         $documento = array_shift($allegati);
@@ -41,8 +62,8 @@ class protocollo extends HProtocollo{
         if ($data && $data["success"]==1 && $data["NumeroProtocollo"]){
             return Array("success"=>1,"message"=>"","protocollo"=>$data["NumeroProtocollo"],"anno"=>'2019',"data"=>date('d/m/Y',time()));
         }
-        return Array("success"=>0,"message"=>$data["message"],"protocollo"=>"","anno"=>"2019","data"=>"");
-    }
+        return Array("success"=>0,"message"=>$data["message"],"protocollo"=>"","anno"=>"","data"=>"");
+    }*/
 /*    
     function login(){
         $cl = new SoapClient(SERVICE_URL,array("trace" => 1, "exception" => 0));
