@@ -7,32 +7,28 @@ editable="ilav"
 print_form="pe.avvioproc"
 
 [edit]
-table="pe.lavori"
+table="pe.comunicazioni_lavori"
 chiave="id"
-campi_ordinamento=""
+campi_ordinamento="data"
 campi_obbligatori=""
-data[]="Scadenza Inizio Lavori;scade_il;10;data"
-data[]="Scadenza Fine Lavori;scade_fl;10;data"
-data[]="Data Inizio Lavori;il;10;data"
-data[]="Protocollo Inizio Lavori;protocollo_il;10;text"
-data[]="Data Protocollo Inizio Lavori;data_prot_il;10;data"
-data[]="Data Fine Lavori;fl;10;data"
-data[]="Protocollo Fine Lavori;protocollo_fl;10;text"
-data[]="Data Protocollo Fine Lavori;data_prot_fl;10;data"
+data[]="Tipo Comunicazione;tipo_comunicazione;300xpe.elenco_tipicomunicazioni;selectdb|Data Lavori;data;;data"
+data[]="Data Comunicazione;data_comunicazione;10;data"
+data[]="Protocollo;protocollo;;text|Data Protocollo;data_protocollo;;data"
+data[]="Comunicazione Online;online;;yesno" 
 data[]="Note;note;50x3;textarea"
 button="Salva;azione;;submit|Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit"
 
+
 [view]
-table="pe.lavori"
+
+table="pe.comunicazioni_lavori"
 chiave="id"
-campi_ordinamento=""
+campi_ordinamento="data"
 campi_obbligatori=""
-data[]="Scadenza Inizio Lavori;scade_il;10;data|Data Inizio Lavori;il;10;data"
-data[]="Protocollo Inizio Lavori;protocollo_il;10;text|Data Protocollo Inizio Lavori;data_prot_il;10;data"
-data[]="Scadenza Fine Lavori;scade_fl;10;data|Data Fine Lavori;fl;10;data"
-data[]="Protocollo Fine Lavori;protocollo_fl;15;text|Data Protocollo Fine Lavori;data_prot_fl;10;data"
+data[]="Tipo Comunicazione;tipo_comunicazione;xpe.elenco_tipicomunicazioni;selectdb|Data Lavori;data;;data"
+data[]="Data Comunicazione;data_comunicazione;10;data"
+data[]="Protocollo;protocollo;;text|Data Protocollo;data_protocollo;;data"
+data[]="Comunicazione Online;online;;yesno|Collegamento;foreign_id;;link" 
 data[]="Note;note;50x3;textarea"
-[list]
 
 [standard]
-

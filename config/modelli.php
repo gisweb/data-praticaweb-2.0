@@ -1,0 +1,5 @@
+<?php
+
+define('MODELLO_DISTINTA_PAGOPA',151);
+define('MODELLO_RATEIZZAZIONE_ONERI',0);
+?>

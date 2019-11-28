@@ -30,4 +30,21 @@ foreach($vincoli as $key=>$params){
         $customData[$key]=$sth->fetchColumn(1);
     }
 }
+
+if($_REQUEST["STAMPE_ORDINATIVO_PAGOPA"]==1){
+    $richiesta = $_REQUEST["codice_richiesta"];
+    $sql= "SELECT coalesce(SUM(importo),0) as totale FROM ragioneria.importi_dovuti WHERE pratica=? and codice_richiesta=?";
+    $stmt = $dbh->prepare($sql);
+    $stmt->execute(Array($pratica,$richiesta));
+    $totale=$stmt->fetchColumn();
+    $sql = <<<EOT
+SELECT A.pratica,A.causale,B.nome as pagamento_tipo,B.capitolo as pagamento_capitolo,A.quantita as pagamento_numero,A.importo as pagamento_importo,A.importo as importo_totale
+FROM ragioneria.importi_dovuti A left join ragioneria.e_codici_pagamento B ON (A.tipo=B.codice) WHERE pratica=? and codice_richiesta=?;            
+EOT;
+    $stmt = $dbh->prepare($sql);
+    if($stmt->execute(Array($pratica,$richiesta))){
+        $customData["pagamenti"] = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        $customData["pagamenti_totale"] = $totale;
+    }
+}
 ?>

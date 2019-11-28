@@ -8,7 +8,7 @@ class pratica extends generalPratica{
 		$db=$this->db1;
 		if ($this->pratica && is_numeric($this->pratica)){
 			//INFORMAZIONI SULLA PRATICA
-			$sql="SELECT numero,tipo,resp_proc,resp_it,resp_ia,date_part('year',coalesce(data_prot,data_presentazione)) as anno,data_presentazione,data_prot FROM pe.avvioproc  WHERE pratica=?";
+			$sql="SELECT numero,tipo,resp_proc,resp_it,resp_ia,date_part('year',coalesce(data_prot,data_presentazione)) as anno,data_presentazione,data_prot,online FROM pe.avvioproc  WHERE pratica=?";
 			$r=$db->fetchAssoc($sql, Array($this->pratica));
 			$this->info=$r;
 			if($this->info['tipo'] < 10000 || in_array($this->info['tipo'],Array(14000,15000))){
@@ -282,35 +282,48 @@ UNION
 	}
 	//Calcolo Totale Oneri Costruzione
 	function setOC(){
-		$db=$this->db;
+		$dbh=utils::getDb();
 		$sql="UPDATE oneri.oneri_concessori SET totale = coalesce(oneri_urbanizzazione,0) + coalesce(oneri_costruzione,0)-(coalesce(scomputo_urb,0)+coalesce(scomputo_costr,0)) WHERE pratica=$this->pratica;";
-		$db->sql_query($sql);
+		$dbh->exec($sql);
 	}
 	
 	//Calcolo Rate Oneri Costruzione
-    function setRateOC($rateizzato=1){
+    function setRateOC($rateizzato=1,$data="",$pagopa=0){
 		$db=$this->db;
         $t=time();
-		if($rateizzato==1)	// <---- MODIFICA DEL 21/06/2012
-			$sql="DELETE FROM oneri.rate WHERE pratica=$this->pratica and rata in (1,2,3,4);
-INSERT INTO oneri.rate(pratica,rata,totale,versato,uidins,tmsins) (
-(SELECT $this->pratica as pratica,1 as rata,totale/4,totale/4,$this->userid,$t FROM oneri.vista_totali WHERE pratica=$this->pratica)
-UNION
-(SELECT $this->pratica as pratica,2 as rata,totale/4,totale/4,$this->userid,$t FROM oneri.vista_totali WHERE pratica=$this->pratica)
-UNION
-(SELECT $this->pratica as pratica,3 as rata,totale/4,totale/4,$this->userid,$t FROM oneri.vista_totali WHERE pratica=$this->pratica)
-)
-UNION
-(SELECT $this->pratica as pratica,4 as rata,totale/4,totale/4,$this->userid,$t FROM oneri.vista_totali WHERE pratica=$this->pratica)
-;";
-		else
-			$sql="DELETE FROM oneri.rate WHERE pratica=$this->pratica and rata in (1,2,3,4);
-INSERT INTO oneri.rate(pratica,rata,totale,versato,uidins,tmsins) (SELECT $this->pratica as pratica,5 as rata,totale,totale,$this->userid,$t FROM oneri.vista_totali WHERE pratica=$this->pratica);";
-        //$db->sql_query($sql);
-	utils::debug('calcolo_rate', $sql);
+        if(!$data) $data=date("d/m/Y");
+		if($rateizzato==1){ // <---- MODIFICA DEL 21/06/2012
+			
+            $sqlArr[]="DELETE FROM oneri.rate WHERE pratica=$this->pratica and rata in (1,2,3,4);";
+            $sqlArr[]=<<<EOT
+INSERT INTO oneri.rate(pratica,rata,totale,versato,data_scadenza,pagopa,uidins,tmsins) 
+(SELECT $this->pratica as pratica,1 as rata,totale/4,totale/4,('$data'::date+10)::date,1,$this->userid,$t FROM oneri.vista_totali WHERE pratica=$this->pratica);
+EOT;
+            $sqlArr[]=<<<EOT
+INSERT INTO oneri.rate(pratica,rata,totale,versato,data_scadenza,pagopa,uidins,tmsins) 
+(SELECT $this->pratica as pratica,2 as rata,totale/4,totale/4,('$data'::date+10+'6 MONTH'::interval)::date,1,$this->userid,$t FROM oneri.vista_totali WHERE pratica=$this->pratica)
+EOT;
+            $sqlArr[]=<<<EOT
+INSERT INTO oneri.rate(pratica,rata,totale,versato,data_scadenza,pagopa,uidins,tmsins) 
+(SELECT $this->pratica as pratica,3 as rata,totale/4,totale/4,('$data'::date+10+'12 MONTH'::interval)::date,1,$this->userid,$t FROM oneri.vista_totali WHERE pratica=$this->pratica)
+EOT;
+            $sqlArr[]=<<<EOT
+INSERT INTO oneri.rate(pratica,rata,totale,versato,data_scadenza,pagopa,uidins,tmsins) 
+(SELECT $this->pratica as pratica,4 as rata,totale/4,totale/4,('$data'::date+10+'18 MONTH'::interval)::date,1,$this->userid,$t FROM oneri.vista_totali WHERE pratica=$this->pratica)
+EOT;
+}
+		else{
+			$sqlArr[]="DELETE FROM oneri.rate WHERE pratica=$this->pratica and rata in (1,2,3,4);";
+            $sqlArr[] = "INSERT INTO oneri.rate(pratica,rata,totale,versato,data_scadenza,pagopa,uidins,tmsins) (SELECT $this->pratica as pratica,5 as rata,totale,totale,('$data'::date+10)::date,1,$this->userid,$t FROM oneri.vista_totali WHERE pratica=$this->pratica);";
+        }
+        $dbh=utils::getDb();
+        for($i=0;$i<count($sqlArr);$i++){
+            $dbh->exec($sqlArr[$i]);
+        }
+
 		$menu=new Menu('pratica','pe');
 		$menu->add_menu($this->pratica,'120');
-                $menu->add_menu($this->pratica,'130');
+        $menu->add_menu($this->pratica,'130');
     }
 	//Calcolo date scadenza rate OC
 	function setDateRateOC($data){

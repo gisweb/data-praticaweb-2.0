@@ -34,6 +34,7 @@ campi_obbligatori=""
 data[]="Prot. Richiesta;prot_rich;25;text|Data;data_rich;10;data"
 data[]="Prot. Integrazione;prot_integ;25;text|Data;data_integ;10;data"
 data[]="Note;note;50x3;textarea"
+data[]="Collegamento;foreign_id;;link"
 [list]
 
 [standard]

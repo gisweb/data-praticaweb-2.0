@@ -15,6 +15,7 @@ data[]="Avviso spedito il;data_avviso;10;data"
 data[]="Data Pagamento;data_pagata;10;data"
 data[]="Importo Versato;versato;12;valuta";
 data[]="Quietanza n°;quietanza;20;text"
+;data[]="Invia a PagoPA;pagopa;50;yesno"
 button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
 [view]
 table="oneri.vista_rate"

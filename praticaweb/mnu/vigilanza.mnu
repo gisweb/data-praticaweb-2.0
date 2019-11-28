@@ -8,7 +8,7 @@ vigi,Vigilanza
 110,Sopralluoghi,vigi.sopralluoghi
 120,Sanzioni,vigi.sanzioni,
 130,Ordinanze,vigi.ordinanze
-115,Pagamenti,vigi.pagamenti,oc
+115,Pagamenti,vigi.wspagamenti,oc
 iter,Iter
 200,Scadenze,vigi.scadenze,
 210,Annotazioni,vigi.annotazioni,

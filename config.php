@@ -86,6 +86,8 @@ define('QTID_CIVICI','34');
 
 $_SESSION['USER_DATA']=DATA_DIR;
 
+require_once DATA_DIR."config".DIRECTORY_SEPARATOR."pagopa.php";
+require_once DATA_DIR."config".DIRECTORY_SEPARATOR."modelli.php";
 
 $tmpDir=ini_get('include_path');
 $tmpDir=(in_array('/apps/includes',explode(':',$tmpDir)))?($tmpDir):($tmpDir.':/apps/includes');

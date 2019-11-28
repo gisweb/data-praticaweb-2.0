@@ -15,7 +15,9 @@ data[]="Avviso spedito il;data_avviso;10;data"
 data[]="Data Pagamento;data_pagata;10;data"
 data[]="Importo Versato;versato;12;valuta";
 data[]="Quietanza n°;quietanza;20;text"
+data[]="Causale;causale;80;text"
 data[]="Note;note;60x3;textarea"
+data[]="Invia a Pagopa;pagopa;50;yesno"
 button="Annulla;azione;;submit|Elimina;azione;#confirmDelete;submit|Salva;azione;;submit"
 [view]
 table="oneri.sanzioni"
