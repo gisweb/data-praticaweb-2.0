@@ -31,7 +31,7 @@ foreach($vincoli as $key=>$params){
     }
 }
 
-if($_REQUEST["STAMPE_ORDINATIVO_PAGOPA"]==1){
+if($_REQUEST["PAGOPA_RICHIESTA"]==1){
     $richiesta = $_REQUEST["codice_richiesta"];
     $sql= "SELECT coalesce(SUM(importo),0) as totale FROM ragioneria.importi_dovuti WHERE pratica=? and codice_richiesta=?";
     $stmt = $dbh->prepare($sql);
