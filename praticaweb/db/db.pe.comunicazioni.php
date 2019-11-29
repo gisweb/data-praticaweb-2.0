@@ -27,16 +27,16 @@ if ($action==ACTION_MAIL){
                     "IndirizzoTelematico"=>$com["persone"][$i]["pec"],
                 );
             }
-			$destinatari = $persone;
-			for($i=0;$i<count($com["attachments"]);$i++){
-				$allegati[]=Array(
-					"id"=>$com["attachments"][$i]["id"],
-					"nome_documento"=>$com["attachments"][$i]["name"],
-					"descrizione_documento"=>"Documento Generico",
-					"tipo_documento"=>"LETTERA",
-					"file"=>$com["attachments"][$i]["file"]
-				);
-			}
+            $destinatari = $persone;
+            for($i=0;$i<count($com["attachments"]);$i++){
+                $allegati[]=Array(
+                        "id"=>$com["attachments"][$i]["id"],
+                        "nome_documento"=>$com["attachments"][$i]["name"],
+                        "descrizione_documento"=>"Documento Generico",
+                        "tipo_documento"=>"Richiesta",
+                        "file"=>base64_encode($com["attachments"][$i]["file"])
+                );
+            }
 		}	
 
 		$mittente=Array(
