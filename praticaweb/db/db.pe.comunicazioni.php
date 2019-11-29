@@ -49,7 +49,7 @@ if ($action==ACTION_MAIL){
 			)
 		);
 		$ws = new protocollo();
-		$prot = $ws->protocolla("U",$com["subject"],$mittente,$destinatari,$allegati);
+		$prot = $ws->protocolla("U",$com["subject"],$destinatari,$allegati);
 		if (!$prot["protocollo"]){
 			$Errors["protocollo"]="Si sono verificati degli errori durante la protocollazione della comunicazione";
 		//$_REQUEST["destinatari"] = sprintf("{%s}",implode(',',$_REQUEST["destinatari"]));
