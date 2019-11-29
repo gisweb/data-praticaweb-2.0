@@ -4,8 +4,7 @@ require_once DATA_DIR.DIRECTORY_SEPARATOR."config.protocollo.php";
 require_once LOCAL_LIB."app.utils.class.php";
 require_once LIB."utils.class.php";
 require_once LIB."protocollo.halley.class.php";
-require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoap.php";
-require_once LIB."nusoap".DIRECTORY_SEPARATOR."nusoapmime.php";
+
 class protocollo extends HProtocollo{
     var $wsUrl = WS_URL_PROT;
     
@@ -26,12 +25,12 @@ class protocollo extends HProtocollo{
         "tipo_documento"=>""
     );
     
-    function protocolla($mode = 'U', $oggetto, $destinatari = array(), $allegati = array()) {
+    function protocolla($mode = 'U', $oggetto, $soggetti = array(), $allegati = array()) {
         $postData = Array();
         if($mode=='TEST') return Array("success"=>1,"message"=>"","protocollo"=>rand(10000,99900),"anno"=>'2019',"data"=>date('d/m/Y',time()));
         $documento = array_shift($allegati);
         $postData["flusso"]=$mode;
-        $postData["soggetti"] = ($mode=='U')?($destinatari):($mittenti);
+        $postData["soggetti"] = $soggetti;
         $postData["oggetto"] = $oggetto;
         $postData["documento"] = $documento;
         $postData["allegati"] = $allegati;
@@ -39,11 +38,16 @@ class protocollo extends HProtocollo{
         $xxxData = Array("data"=> json_encode($postData));
         $res = utils::curlJsonCall(WS_URL_PROT, $xxxData,Array());
         
-        $data = json_encode($res,TRUE);
-        if ($data && $data["success"]==1 && $data["NumeroProtocollo"]){
-            return Array("success"=>1,"message"=>"","protocollo"=>$data["NumeroProtocollo"],"anno"=>'2019',"data"=>date('d/m/Y',time()));
+        if ($res["success"]==1 ){
+            $data = json_decode($res["result"], TRUE);
+            if ($data["success"]==1){
+                return Array("success"=>1,"message"=>"","protocollo"=>$data["NumeroProtocollo"],"anno"=>'2019',"data"=>date('d/m/Y',time()));
+            }
+            else{
+                return Array("success"=>0,"message"=>$data["message"],"protocollo"=>"","anno"=>"","data"=>"");
+            }
         }
-        return Array("success"=>0,"message"=>$data["message"],"protocollo"=>"","anno"=>"","data"=>"");
+        return Array("success"=>0,"message"=>$res["result"],"protocollo"=>"","anno"=>"","data"=>"");
     }
     
     //Metodo di protocollazione che sfrutta il WS di IOL

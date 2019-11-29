@@ -5,9 +5,8 @@ error_reporting(E_ERROR);
 
 define('DEBUG', 1); // Debugging 0 off 1 on
 define('DB_DRIVER','pdo_pgsql');
-define('DB_HOST','127.0.0.1');
-define('DB_NAME','gw_camogli');
-define('DB_USER','gwAdmin');
+
+
 define('DB_PWD','!{!dpQ3!Hg7kdCA9');
 
 define('UPDATE_SW',0);
@@ -17,7 +16,10 @@ if (file_exists(DATA_DIR.'config.local.php')){
 	include DATA_DIR.'config.local.php';
 }
 else{
+    define('DB_HOST','127.0.0.1');
 	define('DB_PORT','5434');
+    define('DB_NAME','gw_camogli');
+    define('DB_USER','gwAdmin');
 }
 
 
@@ -98,7 +100,7 @@ $tmpDir=(in_array('/apps/includes',explode(':',$tmpDir)))?($tmpDir):($tmpDir.':/
 $incDir=(in_array('/apps/includes/utils',explode(':',$tmpDir)))?($tmpDir):($tmpDir.':/apps/includes/utils');
 ini_set('include_path',$incDir);
 //includo il file per il database in uso
-require_once (APPS_DIR."wrapdb/postgres.php");
+require_once (APPS_DIR."wrapdb/postgres.pdo.php");
 require_once (APPS_DIR."utils/debugutils.php");
 
 ?>
