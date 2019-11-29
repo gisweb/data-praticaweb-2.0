@@ -1,42 +1,41 @@
 Esempio File di configurazione : Gruppi-Permessi@Nome Tabella/Permessi@Nome Javascript@Parametri Javascript@Testo del Link@Testo descrittivo
--4@Gestione pratiche Edilizia Privata
--4@NewWindow@'pe.ricerca.php?new=1','ricercaPraticaweb',0,0,'yes'@Apri pratica esistente@Modalit&agrave; di ricerca di una pratica archiviata.
--4@NewWindow@'pe.recenti.php','ricercaPraticaweb',0,0,'yes'@Pratiche recenti@Elenco delle ultime 10 pratiche consultate
--4@NewWindow@'pe.ricerca_online.php','ricercaPraticaweb',0,0,'yes'@Pratiche Presentate Online@Elenco delle Pratiche presentate tramite la Procedura OnLine
--4@NewWindow@'pe.avvioproc.php?mode=new','Praticaweb',0,0,'yes'@Nuova Pratica Edilizia@Inserisce una nuova pratica.
--3@NewWindow@'pe.sorteggi_verifiche.php','Praticaweb',0,0,'yes'@Sorteggi@Sorteggi e Elenco Pratiche sorteggiate.
--4@NewWindow@'pe.raggruppamenti.php','ricercaPraticaweb',0,0,'yes'@Raggruppamenti di pratiche @Modalit&agrave; di ricerca di pratiche raggruppate per indirizzo/particella.
--3@NewWindow@'report.scadenze.php','Praticaweb',0,0,'yes'@Elenco delle Scadenze@Elenco delle Scadenze.
--3@NewWindow@'pe.eliminapratica.php?ricerca=1','Praticaweb',0,0,'yes'@Elimina Pratica@Individua ed elimina la pratica scelta.
--2@NewWindow@'admin.pwd.php?mode=edit','PraticawebUtenti',0,0,'yes'@Gestione PassWord Utenti@- Modifica password dell'utente.
--3@Commissione Locale Paesaggio
--4@NewWindow@'ce.ricerca.php','ricercaCommissione',0,0,'yes'@Vedi Commissione Locale Paesaggio@Gestione delle sedute di Commissione Locale Paesaggio, convocazioni, verbali....
--3@NewWindow@'ce.commissione.php?pratica=0&comm=1&mode=new','CommissioneEdilizia',0,0,'yes'@Nuova Commissione@Gestione delle sedute di Commissioni Locale Paesaggio, convocazioni, verbali....
--3@NewWindow@'ce.ricerca_commissione.php?mode=cancella','CommissioneEdilizia',0,0,'yes'@Elimina Commissione@Gestione delle sedute di Commissioni Locale Paesaggio, convocazioni, verbali....
--4@Gestione pratiche Certificati Agibilit&agrave;
--4@NewWindow@'agi.ricerca.php?new=1','ricercaPraticaweb',0,0,'yes'@Apri pratica esistente@Modalit&agrave; di ricerca di una pratica archiviata.
-rdp,itec,iamm-4@NewWindow@'agi.avvioproc.php?mode=new','Praticaweb',0,0,'yes'@Nuova Pratica Edilizia@Inserisce una nuova pratica.
-rdp,itec,iamm-3@NewWindow@'vigi.eliminapratica.php?ricerca=1','Praticaweb',0,0,'yes'@Elimina Pratica@Individua ed elimina la pratica scelta.
--4@Gestione pratiche Controlli Edilizi
--4@NewWindow@'vigi.ricerca.php?new=1','ricercaPraticaweb',0,0,'yes'@Apri pratica esistente@Modalit&agrave; di ricerca di una pratica archiviata.
--4@NewWindow@'vigi.avvioproc.php?mode=new','Praticaweb',0,0,'yes'@Nuova Pratica di Controllo Edilizio@Inserisce una nuova pratica.
--4@NewWindow@'vigi.avvioproc.php?mode=new&tipologia_pratica=esposto','Praticaweb',0,0,'yes'@Nuova Esposto@Inserisce unanuovo esposto.
--3@NewWindow@'vigi.eliminapratica.php?ricerca=1','Praticaweb',0,0,'yes'@Elimina Pratica@Individua ed elimina la pratica scelta.
+itec_sue,iamm_sue,rdp_sue-3@Gestione pratiche Edilizia Privata
+itec_sue,iamm_sue,rdp_sue-3@NewWindow@'pe.ricerca.php?new=1','ricercaPraticaweb',0,0,'yes'@Apri pratica esistente@Modalit&agrave; di ricerca di una pratica archiviata.
+itec_sue,iamm_sue,rdp_sue-3@NewWindow@'pe.recenti.php','ricercaPraticaweb',0,0,'yes'@Pratiche recenti@Elenco delle ultime 10 pratiche consultate
+itec_sue,iamm_sue,rdp_sue-3@NewWindow@'pe.ricerca_online.php','ricercaPraticaweb',0,0,'yes'@Pratiche Presentate Online@Elenco delle Pratiche presentate tramite la Procedura OnLine
+itec_sue,iamm_sue,rdp_sue-3@NewWindow@'pe.avvioproc.php?mode=new','Praticaweb',0,0,'yes'@Nuova Pratica Edilizia@Inserisce una nuova pratica.
+itec_sue,iamm_sue,rdp_sue-1@NewWindow@'pe.sorteggi_verifiche.php','Praticaweb',0,0,'yes'@Sorteggi@Sorteggi e Elenco Pratiche sorteggiate.
+itec_sue,iamm_sue,rdp_sue-1@NewWindow@'pe.raggruppamenti.php','ricercaPraticaweb',0,0,'yes'@Raggruppamenti di pratiche @Modalit&agrave; di ricerca di pratiche raggruppate per indirizzo/particella.
+itec_sue,iamm_sue,rdp_sue-1@NewWindow@'report.scadenze.php','Praticaweb',0,0,'yes'@Elenco delle Scadenze@Elenco delle Scadenze.
+itec_sue,iamm_sue,rdp_sue-2@NewWindow@'pe.eliminapratica.php?ricerca=1','Praticaweb',0,0,'yes'@Elimina Pratica@Individua ed elimina la pratica scelta.
+itec_sue,iamm_sue,rdp_sue-2@NewWindow@'admin.pwd.php?mode=edit','PraticawebUtenti',0,0,'yes'@Gestione PassWord Utenti@- Modifica password dell'utente.
+itec_sue,iamm_sue,rdp_sue-3@Commissione Locale Paesaggio
+itec_sue,iamm_sue,rdp_sue-4@NewWindow@'ce.ricerca.php','ricercaCommissione',0,0,'yes'@Vedi Commissione Locale Paesaggio@Gestione delle sedute di Commissione Locale Paesaggio, convocazioni, verbali....
+itec_sue,iamm_sue,rdp_sue-3@NewWindow@'ce.commissione.php?pratica=0&comm=1&mode=new','CommissioneEdilizia',0,0,'yes'@Nuova Commissione@Gestione delle sedute di Commissioni Locale Paesaggio, convocazioni, verbali....
+itec_sue,iamm_sue,rdp_sue-3@NewWindow@'ce.ricerca_commissione.php?mode=cancella','CommissioneEdilizia',0,0,'yes'@Elimina Commissione@Gestione delle sedute di Commissioni Locale Paesaggio, convocazioni, verbali....
+itec_sue,iamm_sue,rdp_sue-4@Gestione pratiche Certificati Agibilit&agrave;
+itec_sue,iamm_sue,rdp_sue-4@NewWindow@'agi.ricerca.php?new=1','ricercaPraticaweb',0,0,'yes'@Apri pratica esistente@Modalit&agrave; di ricerca di una pratica archiviata.
+itec_sue,iamm_sue,rdp_sue-4@NewWindow@'agi.avvioproc.php?mode=new','Praticaweb',0,0,'yes'@Nuova Pratica Edilizia@Inserisce una nuova pratica.
+a-2@Gestione pratiche Controlli Edilizi
+a-2@NewWindow@'vigi.ricerca.php?new=1','ricercaPraticaweb',0,0,'yes'@Apri pratica esistente@Modalit&agrave; di ricerca di una pratica archiviata.
+a-2@NewWindow@'vigi.avvioproc.php?mode=new','Praticaweb',0,0,'yes'@Nuova Pratica di Controllo Edilizio@Inserisce una nuova pratica.
+a-2@NewWindow@'vigi.avvioproc.php?mode=new&tipologia_pratica=esposto','Praticaweb',0,0,'yes'@Nuova Esposto@Inserisce unanuovo esposto.
+a-2@NewWindow@'vigi.eliminapratica.php?ricerca=1','Praticaweb',0,0,'yes'@Elimina Pratica@Individua ed elimina la pratica scelta.
 -2@Anagrafe Tributaria
 -2@NewWindow@'anag_trib.ricerca.php?mode=view','AnagrafeTributaria',0,0,'yes'@Anagrafe Tributaria@Report della situazione delle pratiche di Anagrafe Tributaria.
--3@Praticaweb Navigator per la cartografia
--3@ApriMappa@'camogli_riservata','gisclient'@Accedi alla cartografia del comune@Quadro d'unione del catastale Piano Regolatore e vincoli
--3@NewWindow@'cdu.richiesta.php?mode=new','Praticaweb',0,0,'yes'@Nuovo Certificato di Destinazione Urbanistica@
--4@NewWindow@'cdu.ricerca.php','Praticaweb',0,0,'yes'@Ricerca Certificato di Destinazione Urbanistica@
+-4@Praticaweb Navigator per la cartografia
+-4@ApriMappa@'camogli_riservata','gisclient'@Accedi alla cartografia del comune@Quadro d'unione del catastale Piano Regolatore e vincoli
+icdu-3@NewWindow@'cdu.richiesta.php?mode=new','Praticaweb',0,0,'yes'@Nuovo Certificato di Destinazione Urbanistica@
+icdu-4@NewWindow@'cdu.ricerca.php','Praticaweb',0,0,'yes'@Ricerca Certificato di Destinazione Urbanistica@
 -2@Amministrazione Sistema
 -2@NewWindow@'admin.utenti.php?mode=list','PraticawebUtenti',0,0,'yes'@Gestione Profili Utenti@- Aggiunta, Cancellazione, Modifica di un profilo utente.
 -2@NewWindow@'admin.gruppi.php?mode=list','PraticawebUtenti',0,0,'yes'@Gestione Profili Gruppi@- Aggiunta, Cancellazione, Modifica di un profilo gruppo di utenti.
 -2@Modelli di Stampa
 -2@NewWindow@'stp.modelli.php?mode=list','AdminPraticaweb',0,0,'yes'@Elenco Modelli di Stampa@Gestione dei modelli di stampa in formato Word XML.
 -2@NewWindow@'stp.fieldsList.php','AdminPraticaweb',0,0,'yes'@Elenco Campi unione@Elenco dei Campi Unione per i Modelli di Stampa.
--3@Gestione Elenchi
+-2@Gestione Elenchi
 -2@NewWindow@'pe.documenti.php?mode=list','ComuniPraticaweb',0,0,'yes'@Allegati@Elenco dei possibili allegati alla pratica.
--3@NewWindow@'ce.membri.php?mode=all','membri_CE_Praticaweb',0,0,'yes'@Membri C.L.P.@Elenco membri commissione.
+-2@NewWindow@'ce.membri.php?mode=all','membri_CE_Praticaweb',0,0,'yes'@Membri C.L.P.@Elenco membri commissione.
 -2@NewWindow@'pe.e_tipopratica.php?mode=list','ComuniPraticaweb',0,0,'yes'@Tipi pratica@Elenco delle possibili tipologie della pratica.
 -2@NewWindow@'pe.e_verifiche.php?mode=list','ComuniPraticaweb',0,0,'yes'@Verifiche Pratiche@Elenco delle possibili tipologie di verifica sulla pratica.
 -2@NewWindow@'pe.e_stati.php?mode=list','ComuniPraticaweb',0,0,'yes'@Stati Pratica@Elenco dei possibili stati della pratica.
