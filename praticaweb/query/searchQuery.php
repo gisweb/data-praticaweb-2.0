@@ -13,12 +13,6 @@ SELECT
     END
 FROM pe.istanze
     order by 5
-UNION ALL
-select id,pratica,protocollo_il::varchar as protocollo,data_prot_il as data_protocollo,'Inizio Lavori'::varchar as tipo,3 as ordine from pe.lavori where il_online=1
-UNION ALL
-select id,pratica,protocollo_fl::varchar as protocollo,data_prot_fl as data_protocollo,'Fine Lavori'::varchar as tipo,4 as ordine from pe.lavori where fl_online=1
-UNION ALL
-SELECT id,pratica,protocollo::varchar,data_prot as data_protocollo,'Istanza'::varchar as tipo,1 as ordine from pe.avvioproc WHERE online=1
 )
 SELECT
     XX.tipo as tipo_istanza,A.pratica,XX.data_presentazione as data_ordinamento,A.numero,XX.protocollo,XX.data_protocollo as data_prot,XX.data_presentazione,A.oggetto,1 as online,
