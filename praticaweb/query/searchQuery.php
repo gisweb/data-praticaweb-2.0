@@ -10,17 +10,19 @@ SELECT
         WHEN tipo IN ('iniziolavori','il') THEN 'Inizio Lavori'
         WHEN tipo IN ('finelavori','fl') THEN 'Fine Lavori'
         ELSE '------'
-    END
+    END as tipo
 FROM pe.istanze
     order by 5
 )
 SELECT
-    XX.tipo as tipo_istanza,A.pratica,XX.data_presentazione as data_ordinamento,A.numero,XX.protocollo,XX.data_protocollo as data_prot,XX.data_presentazione,A.oggetto,1 as online,
-    B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
+    XX.tipo as tipo_istanza,A.pratica,XX.data_presentazione as data_ordinamento,A.numero,XX.protocollo,XX.data_protocollo as data_prot,to_char(XX.data_presentazione,'DD/MM/YYYY HH24:MI:SS') as data_presentazione,A.oggetto,1 as online,
+    B.nome as tipo_pratica,C.descrizione as tipo_intervento,
+    coalesce(D.nome,'non assegnata') as responsabile,A.resp_proc,
     E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
     CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
-    ,coalesce(O.nome,'non assegnata') as responsabile_it,M.titolo,M.data_rilascio,A.sportello,Q.opzione as vincolo_paes
-    ,coalesce(R.nome,'non assegnata') as responsabile_ia
+    ,coalesce(O.nome,'non assegnata') as responsabile_it,A.resp_it
+    ,coalesce(R.nome,'non assegnata') as responsabile_ia,A.resp_ia
+    ,M.titolo,M.data_rilascio,A.sportello,Q.opzione as vincolo_paes
 FROM 
 istanze_online XX INNER JOIN 
 pe.avvioproc A USING (pratica) LEFT JOIN 
