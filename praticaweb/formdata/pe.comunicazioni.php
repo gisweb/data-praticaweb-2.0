@@ -6,6 +6,6 @@
  * and open the template in the editor.
  */
 $initData= Array(
-    "oggetto"=>"Vedasi Allegati"
+    "testo"=>"Vedasi Allegati"
 );
 ?>
