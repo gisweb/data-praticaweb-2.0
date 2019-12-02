@@ -2,7 +2,17 @@
 
 $query["search-online"]=<<<EOT
 WITH istanze_online AS (
-select id,pratica,prot_integ::varchar as protocollo,data_integ as data_protocollo,'Integrazione'::varchar as tipo,2 as ordine from pe.integrazioni where online=1
+SELECT
+    id,pratica,protocollo,data_protocollo,tmsupd as data_presentazione,
+    CASE 
+        WHEN tipo='istanza' THEN 'Istanza'
+        WHEN tipo='integrazione' THEN 'Integrazione'
+        WHEN tipo IN ('iniziolavori','il') THEN 'Inizio Lavori'
+        WHEN tipo IN ('finelavori','fl') THEN 'Fine Lavori'
+        ELSE '------'
+    END
+FROM pe.istanze
+    order by 5
 UNION ALL
 select id,pratica,protocollo_il::varchar as protocollo,data_prot_il as data_protocollo,'Inizio Lavori'::varchar as tipo,3 as ordine from pe.lavori where il_online=1
 UNION ALL
@@ -11,7 +21,7 @@ UNION ALL
 SELECT id,pratica,protocollo::varchar,data_prot as data_protocollo,'Istanza'::varchar as tipo,1 as ordine from pe.avvioproc WHERE online=1
 )
 SELECT
-    XX.tipo as tipo_istanza,A.pratica,XX.data_protocollo as data_ordinamento,A.numero,XX.protocollo,XX.data_protocollo as data_prot,A.data_presentazione,A.oggetto,1 as online,
+    XX.tipo as tipo_istanza,A.pratica,XX.data_presentazione as data_ordinamento,A.numero,XX.protocollo,XX.data_protocollo as data_prot,XX.data_presentazione,A.oggetto,1 as online,
     B.nome as tipo_pratica,C.descrizione as tipo_intervento,coalesce(D.nome,'non assegnata') as responsabile,
     E.richiedente,F.progettista,L.esecutore,G.elenco_ct,H.elenco_cu,I.ubicazione,
     CASE WHEN (coalesce(A.resp_it,coalesce(A.resp_ia,0)) = 0) THEN 0 ELSE 1 END as assegnata_istruttore
