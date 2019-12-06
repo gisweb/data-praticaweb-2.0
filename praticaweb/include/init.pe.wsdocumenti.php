@@ -110,8 +110,8 @@ function getInfoDocumento($cl,$template,$strDST,$user,$idDoc){
 		return Array("success"=>0,"data"=>Array(),"message"=>"NO XML Response");
 	}
 	$r = json_decode(json_encode($xml),true);
-
-	$result = Array(
+        $result = Array();
+	$result[] = Array(
 		"data" => $r["DOC"]["DATA"],
 		"oggetto" => $r["DOC"]["OGGETTO"],
 		"protocollo" => $r["DOC"]["NUMERO"],
@@ -119,9 +119,27 @@ function getInfoDocumento($cl,$template,$strDST,$user,$idDoc){
 		"id_oggetto" => $r["FILE_PRINCIPALE"]["FILE"]["ID_OGGETTO_FILE"],
 		"documento" => $r["FILE_PRINCIPALE"]["FILE"]["FILENAME"],
 		"soggetti" => ($r["RAPPORTI"]["RAPPORTO"]["DENOMINAZIONE"])?($r["RAPPORTI"]["RAPPORTO"]["DENOMINAZIONE"]):($r["RAPPORTI"]["RAPPORTO"]["COGNOME_NOME"]),
+                "tipologia" => "Documento Principale",
 		"direzione" => ""
 	);
+        if (array_key_exists('ALLEGATO',$r['ALLEGATI'])){
+            $d = $r['ALLEGATI']['ALLEGATO'];
+            if (array_key_exists('FILE_ALLEGATI',$d)) $d=Array($d);
+            for($i=0;$i<count($d);$i++){
+                $result[] = Array(
+                    "data" => $r["DOC"]["DATA"],
+                    "oggetto" => $r["DOC"]["OGGETTO"],
+                    "protocollo" => $r["DOC"]["NUMERO"],
+                    "id_documento" => $d[$i]["FILE_ALLEGATI"]["FILE"]["ID_DOCUMENTO"],
+                    "id_oggetto" => $d[$i]["FILE_ALLEGATI"]["FILE"]["ID_OGGETTO_FILE"],
+                    "documento" => $d[$i]["FILE_ALLEGATI"]["FILE"]["FILENAME"],
+                    "soggetti" => ($r["RAPPORTI"]["RAPPORTO"]["DENOMINAZIONE"])?($r["RAPPORTI"]["RAPPORTO"]["DENOMINAZIONE"]):($r["RAPPORTI"]["RAPPORTO"]["COGNOME_NOME"]),
+                    "tipologia" => "Allegato",
+                    "direzione" => ""
+                );
 
+            }
+        }
 
 	return Array("success"=>1,"data"=>$result,"message"=>"");
 }
@@ -154,7 +172,9 @@ for($i=0;$i<count($result["data"]);$i++){
 	}
 	else{
 		//print_debug($res,"PROT-".$idDoc);
-		$wsData[] = $res["data"];
+                for($kk=0;$kk<count($res["data"]);$kk++){
+                    $wsData[] = $res["data"][$kk];
+                }
 	}
 	
 }
@@ -175,7 +195,9 @@ for($i=0;$i<count($result["data"]);$i++){
 	}
 	else{
 		//print_debug($res,"NONPROT-".$idDoc);
-		$wsData[] = $res["data"];
+                for($kk=0;$kk<count($res["data"]);$kk++){ 
+                    $wsData[] = $res["data"][$kk];
+                }
 	}
 	
 }

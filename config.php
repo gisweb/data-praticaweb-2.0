@@ -16,7 +16,7 @@ else{
 }
 
 
-
+define('NO_CACHE',1);
 define('ALWAYS_VIEWABLE',1);
 define('ALWAYS_EDITABLE',1);
 

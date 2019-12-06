@@ -34,4 +34,5 @@ iter,Iter
 295,Scadenze,pe.scadenze,
 300,Annotazioni,pe.annotazioni,
 293,Documenti Prodotti,stp.documenti
+292,Documenti Prisma,pe.wsdocumenti
 305,Accesso agli Atti,pe.visione,

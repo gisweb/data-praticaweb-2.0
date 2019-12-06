@@ -1,7 +1,7 @@
 <?php
 
 
-function creaDocumento($cl,$user,$fascicolo,$anno,$oggetto,$id,$documento){
+function creaDocumento($cl,$user,$fascicolo,$anno,$oggetto,$id,$documento,$tipo_lettera=TIPO_LETTERA){
 		//Raccolgo informazioni sul file da inviare 
 		if (file_exists($documento)){
 			$info = pathinfo($documento);
@@ -21,7 +21,7 @@ function creaDocumento($cl,$user,$fascicolo,$anno,$oggetto,$id,$documento){
 		$operatore = new SoapVar(Array("utenteAd4"=>$user),SOAP_ENC_OBJECT);
 		$ente = new SoapVar(ENTE_CREA_LETTERA,XSD_STRING);
 		$protocollo = new SoapVar(Array(
-			"tipo"=>TIPO_LETTERA,
+			"tipo"=>$tipo_lettera,
 			"schema"=>SCHEMA_LETTERA,
 			"classificazione"=>CLASSIFICAZIONE,
 			"numeroFascicolo"=>$fascicolo,

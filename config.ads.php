@@ -12,7 +12,7 @@ define('SERVICE_PASSWD','password');
 define("CODICE_A00","AOOCOMUNESV");
 define("CODICE_ENTE","C_I480");
 define('TIPO_LETTERA','LETTERA_PAR');
-define('SCHEMA_LETTERA','999');
+define('SCHEMA_LETTERA','');
 define('CLASSIFICAZIONE','06-03');
 define('ENTE_CREA_LETTERA','1');
 ?>

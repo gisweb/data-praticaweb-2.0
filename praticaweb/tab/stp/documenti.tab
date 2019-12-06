@@ -28,6 +28,7 @@ data[]="File;file;50;upload"
 data[]="Descrizione;descrizione;60x3;textarea"
 data[]="Direzione;direzione;150xpe.elenco_direzioni_documenti;selectdb"
 data[]="Tipo Documento;tipo_documento;200xpe.elenco_tipo_documenti;selectdb"
+data[]="Tipologia di Lettera;tipo_lettera;200xstp.elenco_tipo_lettera;selectdb"
 data[]="Data Invio;data_invio;10;data|Protocollo Uscita;prot_out;15;text"
 data[]="Data Ricezione;data_ricezione;10;data|Protocollo Ricezione;prot_in;15;text"
 

@@ -71,5 +71,39 @@ $(document).ready(function(){
         
     }
     
+$("select[data-plugins='select2']").each(function(){
+        var data =  $(this).data();
+        var id = this.id;
+        $(this).select2(
+        {
+            ajax: {
+                url:data["src"],
+                dataType: 'json',
+                method:'POST',
+                delay: 250,
+                data: function (params) {
+                  return {
+                    q: params.term, // search term
+                    page: params.page,
+                    field:data['field']
+                  };
+                },
+                processResults: function (data, page) {
+                  // parse the results into the format expected by Select2.
+                  // since we are using custom formatting functions we do not need to
+                  // alter the remote JSON data
+                  var result = new Array();
+                  for (i=0;i<data.length;i++) {
+                    result.push({id:data[i]['id'],text:data[i]['label']});
+                  }
+                  return {
+                    results: result
+                  };
+                }
+            },
+            escapeMarkup: function (markup) { return markup; }, // let our custom formatter work
+            minimumInputLength: 1
+        });
+    });
         
 });
