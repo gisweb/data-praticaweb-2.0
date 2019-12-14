@@ -110,6 +110,7 @@ function getInfoDocumento($cl,$template,$strDST,$user,$idDoc){
 		return Array("success"=>0,"data"=>Array(),"message"=>"NO XML Response");
 	}
 	$r = json_decode(json_encode($xml),true);
+//        utils::debugAdmin($r);
         $result = Array();
 	$result[] = Array(
 		"data" => $r["DOC"]["DATA"],
@@ -120,27 +121,28 @@ function getInfoDocumento($cl,$template,$strDST,$user,$idDoc){
 		"documento" => $r["FILE_PRINCIPALE"]["FILE"]["FILENAME"],
 		"soggetti" => ($r["RAPPORTI"]["RAPPORTO"]["DENOMINAZIONE"])?($r["RAPPORTI"]["RAPPORTO"]["DENOMINAZIONE"]):($r["RAPPORTI"]["RAPPORTO"]["COGNOME_NOME"]),
                 "tipologia" => "Documento Principale",
-		"direzione" => ""
+		"direzione" => $r["DOC"]["MODALITA"]
 	);
         if (array_key_exists('ALLEGATO',$r['ALLEGATI'])){
             $d = $r['ALLEGATI']['ALLEGATO'];
-            if (array_key_exists('FILE_ALLEGATI',$d)) $d=Array($d);
-            for($i=0;$i<count($d);$i++){
+            if (array_key_exists('FILE_ALLEGATI',$d) && array_key_exists('FILE',$d["FILE_ALLEGATI"]) && !array_key_exists('FILENAME',$d["FILE_ALLEGATI"]["FILE"])) $kk = $d["FILE_ALLEGATI"]["FILE"];
+            elseif (array_key_exists('FILE_ALLEGATI',$d)) $kk=Array($d["FILE_ALLEGATI"]["FILE"]);
+            else $d = Array();
+            for($i=0;$i<count($kk);$i++){
                 $result[] = Array(
                     "data" => $r["DOC"]["DATA"],
                     "oggetto" => $r["DOC"]["OGGETTO"],
                     "protocollo" => $r["DOC"]["NUMERO"],
-                    "id_documento" => $d[$i]["FILE_ALLEGATI"]["FILE"]["ID_DOCUMENTO"],
-                    "id_oggetto" => $d[$i]["FILE_ALLEGATI"]["FILE"]["ID_OGGETTO_FILE"],
-                    "documento" => $d[$i]["FILE_ALLEGATI"]["FILE"]["FILENAME"],
+                    "id_documento" => $kk[$i]["ID_DOCUMENTO"],
+                    "id_oggetto" => $kk[$i]["ID_OGGETTO_FILE"],
+                    "documento" => $kk[$i]["FILENAME"],
                     "soggetti" => ($r["RAPPORTI"]["RAPPORTO"]["DENOMINAZIONE"])?($r["RAPPORTI"]["RAPPORTO"]["DENOMINAZIONE"]):($r["RAPPORTI"]["RAPPORTO"]["COGNOME_NOME"]),
                     "tipologia" => "Allegato",
-                    "direzione" => ""
+                    "direzione" =>$r["DOC"]["MODALITA"]
                 );
 
             }
         }
-
 	return Array("success"=>1,"data"=>$result,"message"=>"");
 }
 
